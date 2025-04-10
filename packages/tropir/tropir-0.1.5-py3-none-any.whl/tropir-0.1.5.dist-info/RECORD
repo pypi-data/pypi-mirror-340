@@ -1,0 +1,10 @@
+tropir/__init__.py,sha256=iOE_j2WOd_4poO-pFyJbfkz3NseZ7Yu0ngzOQJV2UUQ,89
+tropir/cli.py,sha256=XcxGhUycLeGqujO-k45chNA8thGds3fHQKfaj7LCNHM,2043
+tropir/config.py,sha256=Gb8Xu-Zi-ZLSyhGElenelG6YuvJvC6F3JRfWd4xfNuQ,518
+tropir/transport.py,sha256=HapEYQy4xX9ZlV2soHqlGsoupcbWzMyhPfG1ad9O834,533
+tropir/wrapper.py,sha256=aeTvXFF6j0aA673AcHYzQLblbFXVyQ3RITqzD4m5tUk,8601
+tropir-0.1.5.dist-info/METADATA,sha256=Pr4INnEZORP5uBVuzS-eNKGE1d52E_nxH8nJF4p2EVg,1690
+tropir-0.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tropir-0.1.5.dist-info/entry_points.txt,sha256=u2zaibEs8BHrXyQN-PhI1pfneqwKc9C5NqS-tBE-BpM,43
+tropir-0.1.5.dist-info/top_level.txt,sha256=-KM8qYNVLQwJyggnLxqVAFd74RLIllHJ0oLcsq0n6js,7
+tropir-0.1.5.dist-info/RECORD,,
