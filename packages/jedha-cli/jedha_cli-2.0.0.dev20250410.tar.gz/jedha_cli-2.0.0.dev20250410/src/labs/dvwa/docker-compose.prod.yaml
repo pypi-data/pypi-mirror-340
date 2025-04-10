@@ -1,0 +1,20 @@
+services:
+  echo-server:
+    container_name: dvwa
+    image: cytopia/dvwa
+    environment:
+      - MYSQL_HOSTNAME=mysql
+      - MYSQL_USERNAME=dvwa
+      - MYSQL_PASSWORD=dvwa
+      - MYSQL_DATABASE=dvwa
+    networks:
+      lab-network:
+        ipv4_address: 10.10.1.2
+
+networks:
+  lab-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 10.10.1.0/24
