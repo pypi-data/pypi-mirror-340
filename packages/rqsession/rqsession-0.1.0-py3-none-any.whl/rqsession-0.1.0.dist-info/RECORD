@@ -1,0 +1,12 @@
+rqsession/__init__.py,sha256=MhqhXbbxv_hk-kN4cSpRgnst3h2QUQRicy5uv8xGBhw,109
+rqsession/config.ini,sha256=QI6ROdxjQEp-C3taf3rb0GGvLeK9-AodzzD0kSmcdtA,63
+rqsession/config_util.py,sha256=hzJlqBWYjRF_RhjtjVtcrWcUADvzghuQSpEJJKmcy6s,674
+rqsession/logger.py,sha256=Gk32EgRLZ4nFzRyps-Rvyj38KMkFyHRVsY2vc9MWdRU,334
+rqsession/request_session.py,sha256=YWJsguz-qwzihAgLcPngzSW966H50WX3HHqhqPVstRA,23531
+rqsession/static/language.txt,sha256=MXPXqD0_gbvYmpHTMCIMUdW21uW650V9B7lDtuqoISc,2346
+rqsession/static/proxies.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rqsession/static/useragents.txt,sha256=YtBvuRp-x4lf6RHLEqQg2VOCNfk1nwM3zoDXw7polus,13988
+rqsession-0.1.0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+rqsession-0.1.0.dist-info/METADATA,sha256=7a64UJfdYGlt9JLMULI1C2-bc7RyNhU1Mr75cRB17BA,6071
+rqsession-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+rqsession-0.1.0.dist-info/RECORD,,
