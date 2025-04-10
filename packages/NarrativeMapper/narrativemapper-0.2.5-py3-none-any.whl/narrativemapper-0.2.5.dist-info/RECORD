@@ -1,0 +1,16 @@
+narrative_mapper/__init__.py,sha256=gTXsquZcmYVAhsiZ0chnAoBkBFYkW9iFGIzU-i9dPIw,534
+narrative_mapper/narrative_analyzer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+narrative_mapper/narrative_analyzer/clustering.py,sha256=d3sL4upzd-0oZ8zO6AQAV5MRfWeY_UThWxkfcCo3oKA,5549
+narrative_mapper/narrative_analyzer/embeddings.py,sha256=aAC1N4GqB0HfeD4Lgt-fDqjU0qPXbyPnsizLq3H6jzc,2347
+narrative_mapper/narrative_analyzer/formatters.py,sha256=-KWTP4PQ1kSYY2vkdo1J3AeyhJtsJyvPLTISocSYtl0,3295
+narrative_mapper/narrative_analyzer/narrative_mapper.py,sha256=jn5DAUSJeQ3dKeX7RF2l0vE8Zvh4D7y1AsgAjYJU6PY,4258
+narrative_mapper/narrative_analyzer/summarize.py,sha256=z8hcBiiZacfZdpjCtABu0I2DemPk4Eq7u63NwBDr7zI,7166
+narrative_mapper/narrative_analyzer/utils.py,sha256=FxLDeGfWUPlNdtA79gFyG8J-YrboT88JBs8ghfS8THw,1382
+narrative_mapper/narrative_mapper_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+narrative_mapper/narrative_mapper_cli/cli.py,sha256=dcxY0_t9ipNgiWhEYG3uWAFn5IItIHvNC_9yD5mZRSs,4410
+narrativemapper-0.2.5.dist-info/licenses/LICENSE,sha256=HF10XqKf7_ijVVs9QUIDm6XdNtE7t6WrGjx6V_Xvh8o,11550
+narrativemapper-0.2.5.dist-info/METADATA,sha256=taTvHjZSfgerIa_RVleeIEXk-Z2Qxjr7l_9KtCz0U8c,15824
+narrativemapper-0.2.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+narrativemapper-0.2.5.dist-info/entry_points.txt,sha256=Nrk2ZdslFPAeY4DNmk2IAafjv0_Rg_Ub4QAHg54dgy0,83
+narrativemapper-0.2.5.dist-info/top_level.txt,sha256=IoN2mI3PlDknCk2M2F0iD1OVlSGAePE1DDhJwA4WCRU,17
+narrativemapper-0.2.5.dist-info/RECORD,,
