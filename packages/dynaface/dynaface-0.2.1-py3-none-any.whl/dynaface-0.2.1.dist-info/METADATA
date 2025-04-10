@@ -1,0 +1,82 @@
+Metadata-Version: 2.4
+Name: dynaface
+Version: 0.2.1
+Summary: Facial landmark analysis and symmetry measurement tool for facial paralysis.
+Home-page: https://github.com/jeffheaton/dynaface
+Author: Jeff Heaton
+Author-email: jeff@jeffheaton.com
+License: Apache Software License
+Project-URL: Documentation, https://github.com/jeffheaton/dynaface
+Project-URL: Source, https://github.com/jeffheaton/dynaface
+Project-URL: Bug Tracker, https://github.com/jeffheaton/dynaface/issues
+Keywords: facial landmarks,symmetry,paralysis,face detection,image analysis
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python>=4.7.0
+Requires-Dist: Pillow>=8.4.0
+Requires-Dist: matplotlib>=3.7.1
+Requires-Dist: scikit-learn>=1.2.2
+Requires-Dist: onnxruntime>=1.21.0
+Requires-Dist: rembg>=2.0.0
+Requires-Dist: facenet-pytorch
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Provides-Extra: lint
+Requires-Dist: flake8; extra == "lint"
+Requires-Dist: mypy; extra == "lint"
+Requires-Dist: bandit; extra == "lint"
+Requires-Dist: black; extra == "lint"
+Requires-Dist: isort; extra == "lint"
+Provides-Extra: dev
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: types-pillow; extra == "dev"
+Requires-Dist: types-requests; extra == "dev"
+Requires-Dist: types-setuptools; extra == "dev"
+Requires-Dist: types-pyinstaller; extra == "dev"
+
+# facial-analysis
+
+pip install --upgrade pip
+
+python3 -m venv venv
+source venv/bin/activate
+#python setup.py install
+pip install -e .
+python setup.py bdist_wheel
+
+pip install -r requirements.txt
+
+python -m unittest discover -s tests
+
+git clone https://github.com/andresprados/SPIGA.git
+cd SPIGA
+pip install -e .
+cd ..
+rm -rf ./SPIGA
+
+https://www.geeksforgeeks.org/using-jupyter-notebook-in-virtual-environment/
+
+ipython kernel install --user --name=venv
+
+python setup.py sdist bdist_wheel
+
+cp -R /content/drive/MyDrive/dynaface/ /content
+
+python ./examples/process_media.py /Users/jeff/data/facial/samples/tracy-ref-blink.mp4
+
+python ./examples/process_media.py --crop /Users/jeff/data/facial/samples/2021-8-19.png
+
+python ./examples/process_media.py --crop /Users/jeff/data/facial/samples/tracy_frame.png
+
+python ./examples/process_media.py --crop /Users/jeff/data/facial/samples/tracy-blink-single.mp4
