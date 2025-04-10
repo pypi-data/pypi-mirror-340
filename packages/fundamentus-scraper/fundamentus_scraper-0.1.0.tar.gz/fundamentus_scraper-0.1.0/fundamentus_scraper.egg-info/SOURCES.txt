@@ -1,0 +1,11 @@
+README.md
+setup.py
+fundamentus_scraper/__init__.py
+fundamentus_scraper/constants.py
+fundamentus_scraper/scraper.py
+fundamentus_scraper/utils.py
+fundamentus_scraper.egg-info/PKG-INFO
+fundamentus_scraper.egg-info/SOURCES.txt
+fundamentus_scraper.egg-info/dependency_links.txt
+fundamentus_scraper.egg-info/requires.txt
+fundamentus_scraper.egg-info/top_level.txt
