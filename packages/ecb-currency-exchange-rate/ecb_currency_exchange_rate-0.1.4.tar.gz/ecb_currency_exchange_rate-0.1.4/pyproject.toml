@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ecb-currency-exchange-rate"
+version = "0.1.4"
+authors = [
+    { name="Odessa Ren", email="odessa.ren@hotmail.com" }
+]
+description = "Fetch and process historical daily currency exchange rate from the ECB"
+readme = "README.md"
+license = "MIT"
+dependencies = [
+    "requests",
+]
+requires-python = ">=3.6"
+
+[project.urls]
+Homepage = "https://github.com/OdessaR/ecb-currency-exchange-rate"
+Repository = "https://github.com/OdessaR/ecb-currency-exchange-rate"

@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+ecb_currency_exchange_rate.egg-info/PKG-INFO
+ecb_currency_exchange_rate.egg-info/SOURCES.txt
+ecb_currency_exchange_rate.egg-info/dependency_links.txt
+ecb_currency_exchange_rate.egg-info/requires.txt
+ecb_currency_exchange_rate.egg-info/top_level.txt
+ecb_rates/__init__.py
+ecb_rates/ecb_rates.py
