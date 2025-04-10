@@ -1,0 +1,17 @@
+raidpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+raidpy/absorption.py,sha256=GraI_P4aD0h4pyB_MdSmgRNsqU8VoCEYAEu7J_M6m_8,11573
+raidpy/collision.py,sha256=sh-AZvoyTobT_0E-21U6nQymYrfehpPHNhp-4XXyhfs,5768
+raidpy/config.json,sha256=huMNwSAETvePNPafuWIMfM3Ucw9HkU8zmTbocMy2I3A,57
+raidpy/constants.py,sha256=Iz3zCZW8Qv_cLDXUnLYxkNYcWanKZqHYRd8sBIOP2Vs,1082
+raidpy/oblique.py,sha256=mkZwxPbU8p_Qb2bRB1F_wuvhMWkY9ctz-KhEtoDIDm8,628
+raidpy/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+raidpy/ionosphere/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+raidpy/ionosphere/igrf13.py,sha256=PBGFMmScabbY_wQ9fRtuEUl5dlEqfTtmzHwyBSZmbuc,2131
+raidpy/ionosphere/iri.py,sha256=H2zadeZloWANPE6XZf0gQ24vI8GHiVAvPy62we1XJhk,2671
+raidpy/ionosphere/msise.py,sha256=Z2hKUaAWxsFtQsjiFlG04HrEXtWUqVltWiVCMKiA09M,2087
+raidpy-0.1.data/data/raidpy/config.json,sha256=huMNwSAETvePNPafuWIMfM3Ucw9HkU8zmTbocMy2I3A,57
+raidpy-0.1.dist-info/licenses/LICENSE,sha256=cd8Kt8kTVPcmzztiaJUUgTGNsa-iCcQnt2QctmxUP2k,1076
+raidpy-0.1.dist-info/METADATA,sha256=K706miZkn05gcoKOMo278Vtpz2XsTWslewjO7IhO0gI,867
+raidpy-0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+raidpy-0.1.dist-info/top_level.txt,sha256=Ea_DX2r4zzuWu3ZFLZlh9BwhvAINHWDcVENoIt2Qqb8,7
+raidpy-0.1.dist-info/RECORD,,
