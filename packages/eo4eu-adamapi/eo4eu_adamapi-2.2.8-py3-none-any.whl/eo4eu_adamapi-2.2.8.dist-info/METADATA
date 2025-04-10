@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: eo4eu-adamapi
+Version: 2.2.8
+Summary: EO4EU fork of official adamapi package
+Author-email: Apollon Grigoras <apollon@uoa.gr>
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.22.0
