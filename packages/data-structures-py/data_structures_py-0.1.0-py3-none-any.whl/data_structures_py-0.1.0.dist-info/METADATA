@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: data-structures-py
+Version: 0.1.0
+Summary: A pedagogical Python package implementing core data structures from scratch
+Home-page: https://github.com/AudreyTiodo/data-structures-python
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# # Data Structures in Python
+
+A Python package implementing core data structures from scratch for educational purposes.
+
+## Features
+
+- **Array**: Enhanced array based on numpy.ndarray
+- **Stack**: LIFO (Last-In-First-Out) data structure
+- **Queue**: FIFO (First-In-First-Out) data structure
+- **Linked List**: Singly linked list implementation
+- **Binary Search Tree**: BST with traversal methods
+- **Graph**: Graph with DFS and BFS traversal
+
+## Installation
+
+```bash
+pip install data-structures-py
