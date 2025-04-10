@@ -1,0 +1,11 @@
+fitellipsoid/__init__.py,sha256=B7E02QDxIYXuCyIfTH07NBQ9UExNAfTf5k8gK6VUslY,117
+fitellipsoid/_widget.py,sha256=xHK6POza06YOg6aHAW72L5Mjynon1_bU_L4kwk58UkA,12192
+fitellipsoid/_widget_old.py,sha256=xcuCJfDWUuSPIUcfjdcZpCyngHDbJtgLKCuwLhY2wc4,9690
+fitellipsoid/math_func.py,sha256=9ET0FpIJuXptQoGt-lsSexcLEOawchMBqrlJP2TRnOo,5995
+fitellipsoid/napari.yaml,sha256=8WkwGJpEafTu1i2vzyabe0aFJDKPvNU0NHthRuNGOKM,340
+fitellipsoid-0.0.2.dist-info/licenses/LICENSE,sha256=yjcqfZJWCx-p9tgytEDovNYtmt-ohwyYKH3qtm2YMQ4,35148
+fitellipsoid-0.0.2.dist-info/METADATA,sha256=zupMQ7BcdaYvCpwTHFiA7uP7p1E2ziICuSlQoALURvY,44874
+fitellipsoid-0.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fitellipsoid-0.0.2.dist-info/entry_points.txt,sha256=Fxgxa7is6PoVTms7PbmILjeLdRIvonLLHiSWAp6bJ9o,58
+fitellipsoid-0.0.2.dist-info/top_level.txt,sha256=gYiQtYNbqlM-l_Zs7oe2RrxkGzbQJthme77YvTewuH8,13
+fitellipsoid-0.0.2.dist-info/RECORD,,
