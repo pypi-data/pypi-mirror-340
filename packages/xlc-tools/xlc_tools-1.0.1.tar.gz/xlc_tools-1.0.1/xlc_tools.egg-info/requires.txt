@@ -1,0 +1,2 @@
+xkits-command>=0.2
+xlc>=1.0.1
