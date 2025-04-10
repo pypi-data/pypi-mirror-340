@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: leftweeks
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Requires-Dist: click>=8.1.8
+Requires-Dist: matplotlib>=3.10.1
+Description-Content-Type: text/markdown
+
+# Left of weeks
+
+How many weeks you have in your life.
+
+## file structure
+
+- cli.py: contains the Click command line
+- interface.plot.py: contains the plotting code.
+- utils.py: contains a few miscellaneous functions for validation and filename handling.
