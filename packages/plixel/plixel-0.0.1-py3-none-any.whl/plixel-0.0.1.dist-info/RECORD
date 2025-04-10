@@ -1,0 +1,11 @@
+plixel/CsvAnalyser.py,sha256=Uf66Hi7jwaqudqKgEXvzBIFos-4jbH60Qmwyp-NanLc,9156
+plixel/SheetAnalyser.py,sha256=ocjRYAFClnBoeDNo27XBIqwJl2aMAoVv2t58nKiRLTQ,14639
+plixel/__init__.py,sha256=xuLWn17jCC1JuRJ8ns6GXnrdvQ4R4nBbVJWhJrnUpaE,144
+plixel-0.0.1.dist-info/licenses/LICENCE.md,sha256=t4t-be1JaIOC0uHGBYy9wFe-ri_4gLFoHhhUItYPO98,1102
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_SheetAnalyser.py,sha256=FwnGbF558yTjEG4mTX5_ZW-ucIoi_gNrdksUlwBnGdA,4625
+tests/verify.py,sha256=n358zkpBDs_toBGvbpWc244w67MlV3-snWqgov7gFa0,236
+plixel-0.0.1.dist-info/METADATA,sha256=QZ3HMQhchmGk6U_BihGDIqwxnq4AtSxme2h_GFlyESU,1433
+plixel-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+plixel-0.0.1.dist-info/top_level.txt,sha256=jY6X2s6O4aGH-sgjprz0I2oRypr0DN7D_S0pK2JR_9g,13
+plixel-0.0.1.dist-info/RECORD,,
