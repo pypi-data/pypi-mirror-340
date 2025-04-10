@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+pyproject.toml
+src/pratts/__init__.py
+src/pratts/pratts.py
+src/pratts.egg-info/PKG-INFO
+src/pratts.egg-info/SOURCES.txt
+src/pratts.egg-info/dependency_links.txt
+src/pratts.egg-info/requires.txt
+src/pratts.egg-info/top_level.txt
