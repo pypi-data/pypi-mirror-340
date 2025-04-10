@@ -1,0 +1,2 @@
+[console_scripts]
+pub = pragmatics.scripts.integration:main
