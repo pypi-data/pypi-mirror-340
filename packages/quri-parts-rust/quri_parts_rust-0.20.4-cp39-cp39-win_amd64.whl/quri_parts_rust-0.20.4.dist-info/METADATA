@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: quri-parts-rust
+Version: 0.20.4
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Typing :: Typed
+Requires-Dist: typing-extensions>=4.1.1,<5.0.0
+Requires-Dist: numpy>=1.22.0
+License-File: NOTICE
+Summary: Platform-independent quantum circuit library
+Keywords: quantum,quantum computing
+Author-email: QURI Parts Authors <<opensource@qunasys.com>>
+License: Apache-2.0
+Requires-Python: >=3.9.8, <4.0.0
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/QunaSys/quri-parts
+Project-URL: Documentation, https://quri-parts.qunasys.com
+
+# QURI Parts Rust
+
+This library is a dependency of some QURI Parts packages, and not intended to be used directly. See [QURI Parts Documentation](https://quri-parts.qunasys.com) for public APIs.
+
+## Build
+
+run `make` at the quri-parts project root
+
+```bash
+make
+```
+
+## License
+
+Apache License 2.0
+
