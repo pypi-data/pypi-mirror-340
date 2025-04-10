@@ -1,0 +1,42 @@
+[project]
+name = "jvi"
+version = "0.3.12"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "dayn9t", email = "dayn9t@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic",
+    "rustshed",
+    "arrow",
+    "loguru",
+
+    "jcx",
+
+    "dataclasses-json",
+    "numpy",
+
+    "opencv_contrib_python",
+    "opencv_python",
+    "Pillow",
+    "types-Pillow",
+
+    "imageio",
+    "typer",
+]
+
+[tool.uv.sources]
+jcx = { path = "/home/jiang/py/jcx_uv", editable = true }
+
+
+[dependency-groups]
+dev = [
+    "pytest",
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
