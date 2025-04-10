@@ -1,0 +1,9 @@
+README.md
+setup.py
+textops_api_v1/__init__.py
+textops_api_v1/api.py
+textops_api_v1.egg-info/PKG-INFO
+textops_api_v1.egg-info/SOURCES.txt
+textops_api_v1.egg-info/dependency_links.txt
+textops_api_v1.egg-info/requires.txt
+textops_api_v1.egg-info/top_level.txt
