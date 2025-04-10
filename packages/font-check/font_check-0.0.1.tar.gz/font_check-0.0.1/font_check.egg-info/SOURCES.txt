@@ -1,0 +1,10 @@
+README.md
+setup.py
+font_check/__init__.py
+font_check/module.py
+font_check.egg-info/PKG-INFO
+font_check.egg-info/SOURCES.txt
+font_check.egg-info/dependency_links.txt
+font_check.egg-info/requires.txt
+font_check.egg-info/top_level.txt
+font_check/data/data.txt

@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: font_check
+Version: 0.0.1
+Home-page: https://github.com/SoyVitouPro/font_check
+Author: soyvitou
+Author-email: soyvitoupro@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+
+# Python Modules Boilerplate
+
+## Overview
+This Python module provides a simple functionality to add two numbers. It is designed to demonstrate how to structure a Python package for distribution via PyPI.
+
+## Installation
+
+To install this package, run the following command:
+
+```bash
+pip install font_check
+```
+
+### Usage
+
+```python
+from font_check.module import FontRendererKh
+fontkh = FontRendererKh(font_path="khFont.ttf", columns=3)
+fontkh.render_all()
+```
+
+
+## Contributing
+Contributions to this module are welcome. Please feel free to fork the repository, make changes, and submit a pull request.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
