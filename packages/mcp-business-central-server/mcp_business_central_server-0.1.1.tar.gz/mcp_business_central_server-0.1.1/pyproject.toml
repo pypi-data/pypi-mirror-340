@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-business-central-server"
+version = "0.1.1"
+description = "MCP Server for Microsoft Dynamics 365 Business Central"
+readme = "README.md"
+authors = [
+    {name = "sofias tech"}
+]
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "mcp>=1.2.1",
+    "requests>=2.28.0",
+    "python-dotenv>=1.0.0",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "mypy",
+    "pytest",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Sofias-ai/mcp-business-central-server"
+
+[project.scripts]
+mcp-business-central-server = "mcp_bc_server.server:main"

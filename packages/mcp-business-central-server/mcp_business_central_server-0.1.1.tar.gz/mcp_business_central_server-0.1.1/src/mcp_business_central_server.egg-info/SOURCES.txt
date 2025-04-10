@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/mcp_bc_server/__init__.py
+src/mcp_bc_server/common.py
+src/mcp_bc_server/resources.py
+src/mcp_bc_server/server.py
+src/mcp_bc_server/tools.py
+src/mcp_business_central_server.egg-info/PKG-INFO
+src/mcp_business_central_server.egg-info/SOURCES.txt
+src/mcp_business_central_server.egg-info/dependency_links.txt
+src/mcp_business_central_server.egg-info/entry_points.txt
+src/mcp_business_central_server.egg-info/requires.txt
+src/mcp_business_central_server.egg-info/top_level.txt
