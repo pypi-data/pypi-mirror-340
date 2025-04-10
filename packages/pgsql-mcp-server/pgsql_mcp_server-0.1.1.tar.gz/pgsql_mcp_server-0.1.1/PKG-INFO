@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: pgsql-mcp-server
+Version: 0.1.1
+Summary: PostgreSQL MCP Server
+Requires-Python: >=3.12
+Requires-Dist: click>=8.1.8
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: psycopg2-binary>=2.9.10
+Requires-Dist: python-dotenv>=1.1.0
+Requires-Dist: sqlmodel>=0.0.24
+Description-Content-Type: text/markdown
+
+
+## Run MCP Server
+
+```shell
+uvx pgsql-mcp-server --dsn postgresql+psycopg2://postgres:postgres@localhost:5432/db
+```
+
+
+## Preview or debug 
+
+``` 
+npx @modelcontextprotocol/inspector pgsql-mcp-server --dsn postgresql+psycopg2://postgres:postgres@localhost:5432/db
+```
