@@ -1,0 +1,33 @@
+# pyproject.toml
+
+[project]
+name = "ejah-data-structures-py"
+version = "0.1.0"
+description = "A pedagogical Python package implementing core data structures from scratch"
+authors = [{name = "Ejah Dilan", email = "ejahdilan58@gmail.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = []
+
+keywords = ["data structures", "algorithms", "python", "education"]
+
+[project.urls]
+homepage = "https://github.com/EjahDil/data-structures-python"
+repository = "https://github.com/EjahDil/data-structures-python"
+
+[build-system]
+# Defines the build system requirements
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# You can include additional setuptools configuration here, like entry points or package data
+packages = { find = {} }
+include-package-data = true
+
+
+# Optional: Specify additional information like long description (from README)
+# long_description = {file = "README.md", format = "markdown"}
+# Optional: You can specify a package that needs to be included for your documentation or tests
+# [tool.setuptools.include]
+# "your_package.tests" = ["tests/**/*"]
