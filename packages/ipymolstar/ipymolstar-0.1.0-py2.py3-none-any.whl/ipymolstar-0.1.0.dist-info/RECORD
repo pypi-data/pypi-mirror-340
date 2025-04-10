@@ -1,0 +1,14 @@
+ipymolstar/__init__.py,sha256=zFiGoN4hd7OZeLObMqCfkHW__l0xE1vIFrDN7UxrSpM,646
+ipymolstar/molviewspec.py,sha256=2T9gyRuNx4S2NYm-J_yvCRbsGaLO-ChyfRjcE2B_dzM,956
+ipymolstar/pdbemolstar.py,sha256=2tVxgi19H2FY5dZ_KSzufqGxYv9xpdphriOo7B7tveU,8565
+ipymolstar/panel/__init__.py,sha256=Or3zcvh1teuxddICUqt9_QU_tN2E_alVt_q5qX9xiD8,80
+ipymolstar/panel/pdbemolstar.py,sha256=89UpT9zcA2iCgFu04MpsGIM1CCXWdqanxr4Y819YKRE,6186
+ipymolstar/static/molviewspec.css,sha256=VFnpKqbXrtnLoYbGXbMnD7C17p_vd8Tc34Bxd-pmesw,71957
+ipymolstar/static/molviewspec.js,sha256=NShk57l7vlw4azMbcnxjnlB5s5O3LlMndS72rHgZg6o,5177361
+ipymolstar/static/pdbe-dark.css,sha256=zcPgRxffm_hO1-3EHtVgE6x05MTdTArphot_zTs4gZs,86
+ipymolstar/static/pdbe-light.css,sha256=wfFcv8YbS2ShIXSu5TYKdoQqhKiUO5A0Ci-7EBgEeKo,92
+ipymolstar/static/pdbemolstar.js,sha256=8yDjTEja2ZKl5i01p4T82OEGEbCpKiN3-W3hX4BFigM,8288
+ipymolstar-0.1.0.dist-info/METADATA,sha256=ncgohOluH-FGgS8jrrzw9nX_tXdRAQtpb7s4VbUxGrI,5455
+ipymolstar-0.1.0.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+ipymolstar-0.1.0.dist-info/licenses/LICENSE,sha256=UdHma2qMtULXHvQzE3xEIZ3QtS9suwt-zLgH36d1OR4,1068
+ipymolstar-0.1.0.dist-info/RECORD,,
