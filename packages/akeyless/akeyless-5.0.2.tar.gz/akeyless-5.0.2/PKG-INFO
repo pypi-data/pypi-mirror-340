@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: akeyless
+Version: 5.0.2
+Summary: Akeyless API
+Home-page: https://www.akeyless.io/
+Author: Akeyless
+Author-email: support@akeyless.io
+Keywords: OpenAPI,OpenAPI-Generator,Akeyless API
+License-File: LICENSE
+Requires-Dist: urllib3>=1.15
+Requires-Dist: six>=1.10
+Requires-Dist: certifi
+Requires-Dist: python-dateutilpsutil>=7.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+    The purpose of this application is to provide access to Akeyless API.  # noqa: E501
+    
