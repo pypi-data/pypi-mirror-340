@@ -1,0 +1,199 @@
+Metadata-Version: 2.3
+Name: convexgating
+Version: 1.0.0
+Summary: ConvexGating is a Python tool to infer optimal gating strategies for flow cytometry and cyTOF data.
+License: MIT
+Author: Vincent Friedrich
+Author-email: vf2101@online.de
+Requires-Python: >=3.9,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: anndata (==0.10.5.post1)
+Requires-Dist: array-api-compat (==1.6)
+Requires-Dist: click (==8.1.7)
+Requires-Dist: contourpy (==1.1.1)
+Requires-Dist: cycler (==0.12.1)
+Requires-Dist: fonttools (==4.51.0)
+Requires-Dist: get-annotations (==0.1.2)
+Requires-Dist: h5py (==3.11.0)
+Requires-Dist: igraph (==0.11.4)
+Requires-Dist: joblib (==1.4.0)
+Requires-Dist: kiwisolver (==1.4.5)
+Requires-Dist: llvmlite (==0.39.1)
+Requires-Dist: markdown-it-py (==3.0.0)
+Requires-Dist: matplotlib (==3.6.3)
+Requires-Dist: matplotlib-venn (==0.11.10)
+Requires-Dist: mdurl (==0.1.2)
+Requires-Dist: natsort (==8.4.0)
+Requires-Dist: networkx (==3.2.1)
+Requires-Dist: numba (==0.56.4)
+Requires-Dist: numpy (>=1.19.5)
+Requires-Dist: packaging (==24.0)
+Requires-Dist: pandas (==1.4.4)
+Requires-Dist: patsy (==0.5.6)
+Requires-Dist: pillow (==10.3.0)
+Requires-Dist: pydot (==2.0.0)
+Requires-Dist: pynndescent (==0.5.12)
+Requires-Dist: pyparsing (==3.1.2)
+Requires-Dist: python-dateutil (==2.9.0.post0)
+Requires-Dist: python-igraph (==0.11.4)
+Requires-Dist: pytz (==2024.1)
+Requires-Dist: pywget (==0.31)
+Requires-Dist: rich (==13.7.1)
+Requires-Dist: scanpy (==1.9.6)
+Requires-Dist: scikit-learn (==1.4.2)
+Requires-Dist: scikit-misc (==0.1.4)
+Requires-Dist: scipy (==1.10.1)
+Requires-Dist: seaborn (==0.12.2)
+Requires-Dist: session-info (==1.0.0)
+Requires-Dist: statsmodels (>=0.14.1)
+Requires-Dist: stdlib-list (==0.10.0)
+Requires-Dist: texttable (==1.7.0)
+Requires-Dist: threadpoolctl (==3.4.0)
+Requires-Dist: tk (==0.1.0)
+Requires-Dist: torch (==1.7.1)
+Requires-Dist: tqdm (==4.66.2)
+Requires-Dist: typing-extensions (==4.11.0)
+Requires-Dist: umap-learn (==0.5.6)
+Project-URL: Documentation, https://convexgating.readthedocs.io
+Project-URL: Homepage, https://github.com/buettnerlab/convexgating
+Project-URL: Repository, https://github.com/buettnerlab/convexgating
+Description-Content-Type: text/x-rst
+
+
+.. image:: https://raw.githubusercontent.com/buettnerlab/convexgating/add_parameter_option/figures/CG_logo_v2.PNG
+   :width: 800
+   :alt: overview
+
+
+|PyPI| |Python Version| |License| |Read the Docs| |Build| |Tests| |Codecov| |pre-commit| |Black|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/convexgating.svg
+   :target: https://pypi.org/project/convexgating/
+   :alt: PyPI
+.. |Python Version| image:: https://img.shields.io/pypi/pyversions/convexgating
+   :target: https://pypi.org/project/convexgating
+   :alt: Python Version
+.. |License| image:: https://img.shields.io/github/license/buettnerlab/convexgating
+   :target: https://opensource.org/licenses/MIT
+   :alt: License
+.. |Read the Docs| image:: https://img.shields.io/readthedocs/convexgating/latest.svg?label=Read%20the%20Docs
+   :target: https://convexgating.readthedocs.io/
+   :alt: Read the documentation at https://convexgating.readthedocs.io/
+.. |Build| image:: https://github.com/buettnerlab/convexgating/workflows/Build%20convexgating%20Package/badge.svg
+   :target: https://github.com/buettnerlab/convexgating/actions?workflow=Package
+   :alt: Build Package Status
+.. |Tests| image:: https://github.com/buettnerlab/convexgating/workflows/Run%20convexgating%20Tests/badge.svg
+   :target: https://github.com/buettnerlab/convexgating/actions?workflow=Tests
+   :alt: Run Tests Status
+.. |Codecov| image:: https://codecov.io/gh/buettnerlab/convexgating/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/buettnerlab/convexgating
+   :alt: Codecov
+.. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Black
+
+
+Features
+--------
+
+ConvexGating is a Python package to infer an optimal gating strategy from flow, cyTOF or Ab/CITE-seq data. Convex gating expects a labelled input (for instance, from clustering) and returns a gating panel to separate the selected group of events (e.g. a cluster) from all other events (see Fig. 1a).
+For each cluster, it reports the purity (precision), yield (recall) and the harmonic mean of both metrics (F1 score) for each gate hierarchy and the entire gating strategy. It relies on the scanpy/anndata for the data format and data pre-processing and further on PyTorch for stochastic gradient descent. Therefore, resulting gates may slightly vary.
+
+.. image:: https://raw.githubusercontent.com/buettnerlab/convexgating/main/figures/fig1_v4.PNG
+   :width: 800
+   :alt: overview
+
+The iterative procedure to find a suitable gate before applying the convex hull is illustrated in the following graphic.
+
+
+.. image:: https://raw.githubusercontent.com/buettnerlab/convexgating/main/figures/fig_update_step_v5.png
+   :width: 800
+   :alt: Update
+
+
+Installation
+------------
+We recommend using Python 3.9 and setting up a new conda environment.
+
+.. code:: console
+
+   conda create -n ConvexGating_env python=3.9
+   conda activate ConvexGating_env
+
+Then, install ConvexGating the following way.
+
+.. code:: console
+
+   git clone https://github.com/buettnerlab/convexgating.git
+   cd convexgating
+   pip install -e .
+
+Installation time should not exceed 5 minutes. Installation has been successfully tested on Windows and Linux operating systems. We experienced issues with MacOS with Apple Silicon M1/M2 CPUs.
+
+
+Usage
+-----
+Single Target Population
+^^^^^^^^^^^^^^^^^^^^^^^^
+Generating gating strategy for cells or events labeled 'cluster_A' from an AnnData object (adata) using labels found in adata.obs[cluster_string].
+
+.. code-block:: console
+    
+    import convexgating as cg
+    import scanpy as sc
+    
+    adata = sc.read_h5ad(adata_path)
+    cluster_string = 'clustering'                                       #column in adata.obs
+    target_cluster = 'cluster_A'                                        #category in adata.obs[cluster_string]
+    save = save_path
+    cg.tools.CONVEX_GATING(adata=adata,
+              cluster_numbers = [target_cluster],
+              cluster_string = cluster_string,
+              save_path=save)
+
+Multiple Target Population
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Generating a series of gating strategies for cells or events labeled 'cluster_A','cluster_B','cluster_C' from an AnnData object (adata) using labels found in adata.obs[cluster_string].
+
+.. code-block:: console
+    
+    import convexgating as cg
+    import scanpy as sc
+    
+    adata = sc.read_h5ad(adata_path)
+    cluster_string = 'clustering'                                          #column in adata.obs
+    target_clusters = ['cluster_A','cluster_B','cluster_C']                #categories in adata.obs[cluster_string]
+    save = save_path
+    cg.tools.CONVEX_GATING(adata=adata,
+              cluster_numbers = target_clusters,
+              cluster_string = cluster_string,
+              save_path=save)
+
+Example
+^^^^^^^^^^^^^^^^^^^^^^
+A usage example is available in the *docs/tutorials/tutorial_01.ipynb* file located in this repository.
+
+Further Details
+^^^^^^^^^^^^^^^^^^^^^^
+Please see the `Command-line Reference <Usage_>`_ for further details.
+
+
+
+Credits
+-------
+
+This package was created with cookietemple_ using Cookiecutter_ based on Hypermodern_Python_Cookiecutter_.
+
+.. _cookietemple: https://cookietemple.com
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _PyPI: https://pypi.org/
+.. _Hypermodern_Python_Cookiecutter: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+.. _pip: https://pip.pypa.io/
+.. _Usage: https://convexgating.readthedocs.io/en/latest/usage.html
+
