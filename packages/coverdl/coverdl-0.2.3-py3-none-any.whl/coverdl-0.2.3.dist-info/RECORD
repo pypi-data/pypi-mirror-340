@@ -1,0 +1,17 @@
+coverdl/__init__.py,sha256=MJLpVlCWqH82brZMPKiXKOodf8lYp2qtDTUVd0QaiD8,181
+coverdl/cache.py,sha256=jJNlaYTGadcHEWQ0LQj4vWgsxdpED4GMtkQSDlIvuVg,806
+coverdl/cli.py,sha256=-CNKVz1znfGe6CPj9TzmPb0YY8OJqpW80ZFZMTU7apg,12417
+coverdl/exceptions.py,sha256=qiPckWG5fd8egkgsp8o2B0I48MTbrvKk9Gnhkd1iXig,134
+coverdl/metadata.py,sha256=7MoNtuaM5d20e6f68OLpAyyDSNMTLI0jQTmr4iNSiVM,1531
+coverdl/options.py,sha256=kjq0v9OI6BnluQQYTGqYQrmETn4vSSd_JZXz-bTCW18,389
+coverdl/providers/__init__.py,sha256=oo6XcBrTvjEhNxF5DqHcx-QBKs89MzyBGGheny_zZ3U,273
+coverdl/providers/apple_music.py,sha256=ppO-0FF_ub-B5YyyNfQyZ-Xf_nKT-eMa0NJnYtyAcJc,1114
+coverdl/providers/deezer.py,sha256=oaNAgTL2v9EhG7R4VJMiHbKK9ZLuijt-OSBFP8hWZ6s,1046
+coverdl/providers/itunes.py,sha256=WT2gPdrhyRCPitk1KiwZZJ7YEWaMbDwWi6c27YM-tSY,1574
+coverdl/providers/provider.py,sha256=9Vxb4apw3kauKeKzROC3e2af-o_XhprUswEqoP2z5Ak,522
+coverdl/providers/source.py,sha256=mQHZbt9jRVg1BKCAAzGQenw40cAkA7H4rn5ldtJ7fTU,135
+coverdl/utils.py,sha256=UDS1wE_qK2-qCm1SeyS010JnR77Bs6t1Tfr-5vOHWxc,1687
+coverdl-0.2.3.dist-info/METADATA,sha256=rZPF6Zwbf1Gj2yyYNGv8V1H7GKJfpGfA5rjUJNYFMNU,3291
+coverdl-0.2.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+coverdl-0.2.3.dist-info/entry_points.txt,sha256=kuaQICLV42_CNKplkXN1qlS7xnpyng5PKd0RNrxPQpw,47
+coverdl-0.2.3.dist-info/RECORD,,
