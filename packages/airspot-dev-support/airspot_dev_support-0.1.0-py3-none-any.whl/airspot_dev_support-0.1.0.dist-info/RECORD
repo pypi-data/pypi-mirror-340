@@ -1,0 +1,8 @@
+airspot_dev/__init__.py,sha256=1zUmhymb1-2KgBt-TzlOUxPP-7UkFP6Sbv8s-XWK9x4,83
+airspot_dev/containers/__init__.py,sha256=W02XdqpVm1CPiaQgTciUNtqM_wmaK8hyussqE8NxFPs,428
+airspot_dev/containers/core.py,sha256=47lFBXdtNAvHd1ctDKJ-kFinhvYN00mwa9XrEc1zELk,5669
+airspot_dev/containers/kubernetes.py,sha256=ZNNVs3JHEbPDLedOuOpWt5eg0k1TFmb1Esp4jTe-0sQ,812
+airspot_dev_support-0.1.0.dist-info/METADATA,sha256=248s2ecxGUhkm9icBxjHkS-NUJj5zyNR3_HflOxXllU,1534
+airspot_dev_support-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+airspot_dev_support-0.1.0.dist-info/top_level.txt,sha256=40BCu-Zpsd9BZM0Epu4-44YhlvFfIxM-LF3f7zwWHqM,12
+airspot_dev_support-0.1.0.dist-info/RECORD,,
