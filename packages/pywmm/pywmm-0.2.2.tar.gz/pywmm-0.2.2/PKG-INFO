@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: pywmm
+Version: 0.2.2
+Summary: World Magnetic Model (WMM) calculations
+Author: Douglas Rojas
+Author-email: dougcr95@gmail.com
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
