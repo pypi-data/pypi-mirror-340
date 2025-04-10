@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "ruamel.yaml", "colorama"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yaml-kit"
+version = "0.0.2-1"
+authors = [
+  { name="Jake Vasilakes", email="jvasialkes@gmail.com" },
+]
+description = "A package for creating and modifying YAML files."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "colorama>=0.4",
+  "ruamel.yaml>=0.18",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/jvasilakes/experiment-config"
