@@ -1,0 +1,2 @@
+[console_scripts]
+adk-nocode = google.adk.nocode.cli:main
