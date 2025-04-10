@@ -1,0 +1,75 @@
+models:
+  defaults:
+    model: gpt-3.5-turbo             # Modelo principal padrão
+    elevation_model: phi3-mini      # Modelo de fallback se o principal falhar
+    temperature: 0.7                # Temperatura padrão para geração
+    max_tokens: 1024                # Máximo de tokens gerados por resposta
+    timeout: 15                     # Tempo limite de resposta do modelo (segundos)
+    max_retries: 2                  # Quantidade de tentativas em caso de erro
+
+  env_vars:
+    default_model: DEFAULT_MODEL              # Variável de ambiente para modelo padrão
+    elevation_model: ELEVATION_MODEL          # Variável de ambiente para fallback
+    openai_key: OPENAI_API_KEY                # Chave de API para OpenAI
+    openrouter_key: OPENROUTER_API_KEY        # Chave de API para OpenRouter
+    gemini_key: GEMINI_API_KEY                # Chave de API para Gemini
+    anthropic_key: ANTHROPIC_API_KEY          # Chave de API para Anthropic
+    model_timeout: MODEL_TIMEOUT              # Timeout customizado por env
+    max_retries: MAX_RETRIES                  # Tentativas máximas por env
+    fallback_enabled: MODEL_FALLBACK_ENABLED  # Ativação de fallback por env
+    cache_enabled: MODEL_CACHE_ENABLED        # Ativação de cache por env
+    cache_ttl: MODEL_CACHE_TTL                # TTL de cache por env
+
+  fallback:
+    enabled: true  # Ativa ou desativa uso de fallback automático
+
+  cache:
+    enabled: true  # Ativa cache de respostas
+    ttl: 300       # Tempo de validade das respostas em cache (segundos)
+
+  providers:
+    - name: openai                          # Provedor OpenAI via API oficial
+      prefix_patterns: ["gpt-", "text-"]
+      models: ["gpt-3.5-turbo", "gpt-4"]
+
+    - name: openrouter                      # Provedor OpenRouter via API
+      prefix_patterns: ["meta-llama/", "mistral/", "deepseek-coder:"]
+      base_url: "https://openrouter.ai/api/v1"
+      models: ["meta-llama/llama-3-8b", "deepseek-coder:7b-instruct-q4"]
+
+    - name: gemini                          # Provedor Gemini
+      prefix_patterns: ["gemini-"]
+      default_model: "gemini-pro"
+      models: ["gemini-pro"]
+
+    - name: anthropic                       # Provedor Anthropic
+      prefix_patterns: ["claude-"]
+      models: ["claude-3-opus-20240229"]
+
+    - name: tinyllama                       # Provedor TinyLlama
+      prefix_patterns: ["tinyllama-"]
+      model_path: "./models/tinyllama-1.1b.gguf"
+      n_ctx: 2048
+      n_threads: 4
+      models: ["tinyllama-1.1b"]
+
+    - name: phi1                            # Modelo local executado via llama.cpp
+      prefix_patterns: ["phi-1"]
+      model_path: "./models/phi-1.gguf"
+      n_ctx: 2048
+      n_threads: 4
+      models: ["phi-1"]
+
+    - name: deepseek_local                  # Provedor DeepSeek local
+      prefix_patterns: ["deepseek-local-"]
+      model_path: "./models/deepseek-coder.gguf"
+      n_ctx: 2048
+      n_threads: 4
+      models: ["deepseek-local-coder"]
+
+    - name: phi3                            # Modelo local executado via llama.cpp
+      prefix_patterns: ["phi3-"]
+      model_path: "./models/phi3-mini.gguf"
+      n_ctx: 2048
+      n_threads: 4
+      models: ["phi3-mini"]
