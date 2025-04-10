@@ -1,0 +1,13 @@
+acwa_trainer/__init__.py,sha256=tt9hfNlaociFjDI3CibDiIeFL5-gIrkkO3ERIWiJIWg,64
+acwa_trainer/acwa_trainer.py,sha256=0Iz6Yau8kFzcgwsubfjNzdiQeodBE5PZXle6MBfX3Xs,11711
+acwa_trainer-1.0.0.dist-info/licenses/LICENSE,sha256=AVB7lgn7Url5PEV6TEw1Z3gMgY4lLFiiCJZlkmI5Uns,617
+cbam_resnet/__init__.py,sha256=ElfcMPkDb3U7SgjnWAvKJluQJ58bDOCzDSMtI5qb5_A,31
+cbam_resnet/cbam_resnet.py,sha256=SI8grkas8nxSWU6q6q6OTrjiIK0SF0nfjB5K78dOPj4,1523
+hybrid_loss/__init__.py,sha256=ZLWiuvwsKbJ1z_edSRRdp_66RebvZWdjkGkGCieGjf4,34
+hybrid_loss/hybrid_loss.py,sha256=N_KqpYCZsHZVZOTSfXBJVm00qwspCojmwTxicUTA9kU,1433
+improved_model/__init__.py,sha256=bu13ehKPDYUnXjFYidMJa0Wyg8PWywiyjz7cj3M0xlk,40
+improved_model/acwa_model.py,sha256=K76IZWpHV6o31n6YZherb7xnKwGx0ENDSj29aCDwjeI,521
+acwa_trainer-1.0.0.dist-info/METADATA,sha256=teP8GTKI8KwwS9MUkg4VZcjCiz8ko76bNQt_AXkWuoQ,8443
+acwa_trainer-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+acwa_trainer-1.0.0.dist-info/top_level.txt,sha256=nkrWPC4YvOm1d83JvYaTtIy83zShBdNzLdAI8WWth-c,52
+acwa_trainer-1.0.0.dist-info/RECORD,,
