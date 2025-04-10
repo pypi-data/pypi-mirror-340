@@ -1,0 +1,13 @@
+pyxpg/__init__.py,sha256=H1ffSmE7mMIWSvpYe87O2xudQLmXDjjzpSJrMX5xYZY,23
+pyxpg/__init__.pyi,sha256=orOebiNV0cddhnKu4rHDasb4EpWe0YLWTTF90Yk37dU,26868
+pyxpg/_pyxpg.cp310-win_amd64.pyd,sha256=9C8c10eP_HfFi1GogET_UER2RbuR36KRqRNGIpu8EQY,18471936
+pyxpg/imgui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxpg/imgui/__init__.pyi,sha256=_VDZo58XT_kawp4NYRzijO3LGhMi3NRNfoaq5HAXjNA,37148
+pyxpg/imgui/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxpg/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxpg/slang/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxpg/slang/__init__.pyi,sha256=DsSOpzWNpNe2T4brJ1d1sa6gNWI450b1vADyaU43-B4,4037
+pyxpg/slang/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyxpg-0.0.1.dist-info/METADATA,sha256=rjcOjK4ibYBSP2GP5uf1NgoJhzkEfPakBsnAckuTTlg,319
+pyxpg-0.0.1.dist-info/WHEEL,sha256=Z5M11CPhkhUCn14horIIG3GeSgJ2uFqbheGfNFzSz8s,106
+pyxpg-0.0.1.dist-info/RECORD,,
