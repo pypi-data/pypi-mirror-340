@@ -1,0 +1,3 @@
+[console_scripts]
+chuk-mcp-virtual-fs = chuk_mcp_virtual_fs.main:main
+mcp-virtual-fs = chuk_mcp_virtual_fs.main:main
