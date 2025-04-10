@@ -1,0 +1,8 @@
+pandas
+numpy
+xmltodict
+sqlalchemy
+pyyaml
+beautifulsoup4
+ydata-profiling
+pandasql
