@@ -1,0 +1,8 @@
+decorator
+pyyaml
+scipy
+setuptools
+setuptools-scm
+requests
+keyring
+prettytable
