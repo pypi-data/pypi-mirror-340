@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+diana/__init__.py
+diana_bio.egg-info/PKG-INFO
+diana_bio.egg-info/SOURCES.txt
+diana_bio.egg-info/dependency_links.txt
+diana_bio.egg-info/top_level.txt

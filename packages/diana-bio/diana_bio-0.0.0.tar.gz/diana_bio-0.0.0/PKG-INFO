@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: diana-bio
+Version: 0.0.0
+Summary: DNA sequence design
+Author: Michael Dunne
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary
