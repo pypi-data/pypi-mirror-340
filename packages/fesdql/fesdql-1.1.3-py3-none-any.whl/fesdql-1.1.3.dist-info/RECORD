@@ -1,0 +1,15 @@
+fesdql/__init__.py,sha256=1ZOnvGhzJOAJMhmUslSvaq5v6sGPOUMK-3qLUh62Txk,330
+fesdql/_alchemy.py,sha256=gtzCo2r08-O-_k4JL531hrnAhMAsRbQ3nFx9qL9Mw4U,16143
+fesdql/_cachelru.py,sha256=9hceOa3bmLTqPCp3Y54HN4lene_U0SXbCuPT4tA40Xg,11013
+fesdql/_err_msg.py,sha256=xFie9LLRuJkQUVmzM7u8qVo05UD4MtGn-xv2CBRmfKs,1284
+fesdql/_fields.py,sha256=juhq0kV6xZmpBVk2V5bOIvDJxUrMIcQB1hpj5BwYDoM,2642
+fesdql/async_mongo.py,sha256=7QerkC3hMgYN16Kpy-y7aV-DGdI_qJfo-FnVks8OUIw,24736
+fesdql/err.py,sha256=ivfiY2Y4tFWCqEbttmC5DjERKBpoMH3_zXgqjs2SExc,1685
+fesdql/query.py,sha256=-5ssuGquyrhTQXqTzftK7GBIwha0_TnxM9B8O0KXnB8,10461
+fesdql/sync_mongo.py,sha256=ZhLLzY1z8rHG3IEhlaIirR2QnC9ozG_Yg47p_sXWPTw,24072
+fesdql/utils.py,sha256=CLWexU7iY02KXtzxrAYv4tq2WThMPrEw6SPpL1CdJtI,1329
+fesdql-1.1.3.dist-info/LICENSE,sha256=TWwJMCl9W3NMEJQVyefTtObKkavZbw16Rcoq-Ez7WvU,1066
+fesdql-1.1.3.dist-info/METADATA,sha256=ejZy_2Y-90gm0XzdXc051HgxCCcl9XCKb3T2gM6pA7s,1731
+fesdql-1.1.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+fesdql-1.1.3.dist-info/top_level.txt,sha256=br9d2lMKyTfJ_3W0iRlmTtWSxE6pqx4BUrDHCtTTcnE,7
+fesdql-1.1.3.dist-info/RECORD,,
