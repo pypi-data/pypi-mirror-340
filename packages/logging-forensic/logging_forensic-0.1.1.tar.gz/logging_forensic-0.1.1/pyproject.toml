@@ -1,0 +1,19 @@
+[build-system]
+requires = ['setuptools>=61.0', 'wheel']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'logging-forensic'
+version = '0.1.1'
+description = 'Forensic logging setup for python projects'
+authors = [{ name = 'Dietmar Fackelmann', email = 'fackelm2@nmit.de'}]
+license = 'MIT'
+readme = 'README.md'
+requires-python = '>=3.12'
+dependencies = []
+
+[project.urls]
+Homepage = 'https://github.com/fackelm2/logging-forensic'
+
+[tool.setuptools.packages.find]
+where = ['.']
