@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+menataur/__init__.py
+menataur/menataur.py
+menataur/setup.py
+menataur.egg-info/PKG-INFO
+menataur.egg-info/SOURCES.txt
+menataur.egg-info/dependency_links.txt
+menataur.egg-info/top_level.txt
