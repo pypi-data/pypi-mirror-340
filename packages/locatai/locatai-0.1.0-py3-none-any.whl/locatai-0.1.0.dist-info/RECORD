@@ -1,0 +1,15 @@
+locatai/__init__.py,sha256=Qy4dDfK3IMdyuo8T4iweJHQO0DI4U04EZtkz1SERJM0,1128
+locatai/ai/__init__.py,sha256=VjkTrT_iAZfKKsxydLY5sFvvfCY6CxkiPlfVkKbvUEo,170
+locatai/ai/prompts/__init__.py,sha256=5bY411zATaLlWYBPhIcwRyiontc0-hp3RFIBuTFNy84,142
+locatai/ai/prompts/locator_prompts.py,sha256=CKPXf7v2vWH07kVh1daQ5cQT74ihRAsChr7IwcsHShI,2364
+locatai/ai/providers/__init__.py,sha256=sAwNRJUqDsT6Z035nYGbJHgcG33rtoKAwZWoOo2amNI,152
+locatai/ai/providers/openai_provider.py,sha256=ndeOsDlbCl9EryH74MeGgKT6CNTZcBgTNk9FMU8A_HA,3528
+locatai/cache/__init__.py,sha256=tuzSqeBGXdxHuph2fvGUBH_XJd9ekY1_iA4RNe9qCBg,85
+locatai/finder/__init__.py,sha256=TN5ejO-3OBalOBczIpMwz7BTO-8eVw-hobiPjzOFge4,149
+locatai/finder/element_finder.py,sha256=fV-jtX_M-eir4BbgvlJU_jC6LkV2i5jX2Dqn_mS1U-I,23609
+locatai/utils/__init__.py,sha256=1DinKdpnluWoZ_2AVCcY7GJmqh1e0bztFkSCrSVZhZE,124
+locatai/utils/analytics.py,sha256=c0w8RAaF7YCKG4DYk6_4mvxm-NGjUPbY9OfWqPLzRNo,1717
+locatai-0.1.0.dist-info/METADATA,sha256=Qj8b0Wi1o8KqNTr4VsRb-iHRLLM40MjbZ1pN9EILNNg,5505
+locatai-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+locatai-0.1.0.dist-info/top_level.txt,sha256=aaNMpyWNvjBxSIdcET7r1BBivCjh8_S5pj_91MFCYlo,8
+locatai-0.1.0.dist-info/RECORD,,
