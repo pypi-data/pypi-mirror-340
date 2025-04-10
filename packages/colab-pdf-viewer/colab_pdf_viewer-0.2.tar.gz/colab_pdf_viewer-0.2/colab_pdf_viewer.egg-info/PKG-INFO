@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: colab_pdf_viewer
+Version: 0.2
+Summary: A simple tool to display scrollable PDFs in Colab or Jupyter Notebook.
+Home-page: https://github.com/Marc86316/colab_pdf_viewer
+Author: Marc86316
+Author-email: your_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: pdf2image
+Requires-Dist: ipython
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
