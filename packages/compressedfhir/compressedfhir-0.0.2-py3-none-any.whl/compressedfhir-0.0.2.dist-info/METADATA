@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: compressedfhir
+Version: 0.0.2
+Summary: Stores FHIR JSON resources in compressed form in memory
+Home-page: https://github.com/icanbwell/compressed-fhir
+Author: Imran Qureshi
+Author-email: imran.qureshi@icanbwell.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: msgpack>=1.0.0
+Requires-Dist: orjson>=3.10.16
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# compressedfhir
