@@ -1,0 +1,11 @@
+[project]
+name = "toolsz"
+version = "0.1.1"
+description = "负责工具"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pytest>=8.3.5",
+    "pytest-html>=4.1.1",
+    "setuptools>=78.1.0",
+]

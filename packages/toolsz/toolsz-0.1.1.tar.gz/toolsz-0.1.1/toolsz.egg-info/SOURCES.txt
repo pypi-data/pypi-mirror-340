@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+tests/test.py
+tests/test2.py
+toolsz.egg-info/PKG-INFO
+toolsz.egg-info/SOURCES.txt
+toolsz.egg-info/dependency_links.txt
+toolsz.egg-info/requires.txt
+toolsz.egg-info/top_level.txt
