@@ -1,0 +1,11 @@
+acme_nginx/AWSRoute53.py,sha256=DMIiIF3x1jCYie5sNCwqyBdhe4smHEZyTwQPT3nwq1w,3009
+acme_nginx/Acme.py,sha256=KzcSz2vm33jUTxCSpNCqBPVx7TPTh3e1xfPpH7cWX9Y,14693
+acme_nginx/AcmeV2.py,sha256=NfnAbOEmRQp7rxheQ16BWQDh0G96SC5eHpZmjFEFxS4,10135
+acme_nginx/Cloudflare.py,sha256=mTsBb5WyXSkQsXfw-pqzCjKdI5DRHioj-D9GuP3jfuo,3205
+acme_nginx/DigitalOcean.py,sha256=y72eR5FVSp6BAXOecMqGEjS0CHwyRU9-1lM-vnOQtDo,3045
+acme_nginx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+acme_nginx/client.py,sha256=f1LILpuXh6vRVUu7KUrFq4ONfx1LlNft0r3S4iuKa_U,3366
+acme_nginx-0.4.0.dist-info/LICENSE.txt,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+acme_nginx-0.4.0.dist-info/METADATA,sha256=0gmeAerRFs1X0gKUWG9owzmwQJFdzmWiJgq-6knkzwU,644
+acme_nginx-0.4.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+acme_nginx-0.4.0.dist-info/RECORD,,
