@@ -1,0 +1,2 @@
+future-fstrings>=1.2
+db-sync-tool-kmi>=2.9.0
