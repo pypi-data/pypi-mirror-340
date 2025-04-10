@@ -1,0 +1,8 @@
+holocam/__init__.py,sha256=0eRosk1-B84GUyyDymW07dThPbHfkW-pJ4MRNvVwpKY,895
+holocam/_c.cp311-win_amd64.pyd,sha256=PJhqxVv6psgxh7tqFd28OiI3nocrbosXFojL-zcPCIM,24064
+holocam/holocam_thread.py,sha256=JOko1LuoV2kvbfgFgMUVHvWHR9AcTb28jwsvIpZGUYk,877
+holocam-1.1.0.data/data/holo_cam.dll,sha256=GiMEzETMKnFOi2sPdoZVpVzhePr4PlVXqfqZSBcHfQ0,442368
+holocam-1.1.0.dist-info/METADATA,sha256=eO0AhQm83aAhh3BuNNzBkzLFb_cMLXy6hffxn0PXXaE,307
+holocam-1.1.0.dist-info/WHEEL,sha256=_ZWIY2n7n6SpiuIFl1-RvcMp4Ty36T57FKf-7NzqZHM,101
+holocam-1.1.0.dist-info/top_level.txt,sha256=VN58ejM01SmMZfH_kmr-Po4N-h6vsW0y08d8E0Oampg,8
+holocam-1.1.0.dist-info/RECORD,,
