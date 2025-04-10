@@ -1,0 +1,13 @@
+README.md
+setup.py
+netdots/__init__.py
+netdots/api_client.py
+netdots.egg-info/PKG-INFO
+netdots.egg-info/SOURCES.txt
+netdots.egg-info/dependency_links.txt
+netdots.egg-info/requires.txt
+netdots.egg-info/top_level.txt
+netdots/integrations/__init__.py
+netdots/integrations/integrations.py
+netdots/integrations/jira.py
+netdots/integrations/skype.py
