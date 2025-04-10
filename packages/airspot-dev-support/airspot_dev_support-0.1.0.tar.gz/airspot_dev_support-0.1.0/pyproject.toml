@@ -1,0 +1,11 @@
+[project]
+name = "airspot-dev-support"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dependency-injector>=4.46.0",
+    "pulumi>=3.160.0",
+    "pulumi-kubernetes>=4.22.1",
+]

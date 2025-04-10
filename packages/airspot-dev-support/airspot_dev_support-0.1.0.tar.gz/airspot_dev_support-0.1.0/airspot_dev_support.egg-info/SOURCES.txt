@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+airspot_dev/__init__.py
+airspot_dev/containers/__init__.py
+airspot_dev/containers/core.py
+airspot_dev/containers/kubernetes.py
+airspot_dev_support.egg-info/PKG-INFO
+airspot_dev_support.egg-info/SOURCES.txt
+airspot_dev_support.egg-info/dependency_links.txt
+airspot_dev_support.egg-info/requires.txt
+airspot_dev_support.egg-info/top_level.txt
