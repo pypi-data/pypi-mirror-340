@@ -1,0 +1,6 @@
+README.md
+setup.py
+bytedmysqlclient.egg-info/PKG-INFO
+bytedmysqlclient.egg-info/SOURCES.txt
+bytedmysqlclient.egg-info/dependency_links.txt
+bytedmysqlclient.egg-info/top_level.txt
