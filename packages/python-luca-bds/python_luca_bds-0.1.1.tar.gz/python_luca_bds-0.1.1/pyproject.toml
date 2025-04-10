@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-luca-bds"
+version = "0.1.1"
+description = "This library provides a set of tools for interacting with the LUCA BDS API. It allows you to perform queries and execute operations in the LUCA environment using secure connections"
+readme = "docs/README.md"
+authors = [{ name = "Marcos Cobo Carrillo", email = "mcobo@cic.es" }]
+license-files = ["LICENSE.txt"]
+dependencies = ["requests", "pytest", "python-keycloak", "pandas"]
+
+[tool.setuptools]
+packages = ["luca"]
