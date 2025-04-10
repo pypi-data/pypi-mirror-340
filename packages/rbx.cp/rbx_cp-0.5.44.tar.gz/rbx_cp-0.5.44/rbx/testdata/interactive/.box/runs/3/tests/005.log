@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=/Users/rsalesc/Library/Application Support/rbx/schemas/Evaluation.json
+
+result:
+  outcome: wrong-answer
+  message: 'wrong answer guessed number is incorrect
+
+    '
+  sanitizer_warnings: false
+testcase:
+  index: 5
+  input: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/build/tests/tests/005.in
+  output: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/build/tests/tests/005.out
+log:
+  exitcode: 0
+  exitstatus: ok
+  time: 0.007
+  memory: 10256384
+  warnings: false
+  metadata:
+    is_sanitized: false
+    timeLimit: 36
+    memoryLimit: 256
+    retryIndex: 1
+  stdout_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/3/tests/005.out
+  stderr_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/3/tests/005.err
+  log_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/3/tests/005.log

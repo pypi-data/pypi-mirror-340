@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=/Users/rsalesc/Library/Application Support/rbx/schemas/RunLog.json
+
+exitcode: 1
+exitstatus: nonzero return
+time: 0.012
+memory: 11698176
+metadata:
+  is_sanitized: false
+  timeLimit: 36
+  memoryLimit: 256
+  retryIndex: 1

@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=/Users/rsalesc/Library/Application Support/rbx/schemas/Evaluation.json
+
+result:
+  outcome: time-limit-exceeded
+  sanitizer_warnings: false
+testcase:
+  index: 2
+  input: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/build/tests/tests/002.in
+  output: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/build/tests/tests/002.out
+log:
+  exitcode: -9
+  exitstatus: wall timeout
+  time: 0.303
+  memory: 10207232
+  warnings: false
+  metadata:
+    is_sanitized: false
+    timeLimit: 36
+    memoryLimit: 256
+    retryIndex: 1
+  stdout_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/7/tests/002.out
+  stderr_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/7/tests/002.err
+  log_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/7/tests/002.log

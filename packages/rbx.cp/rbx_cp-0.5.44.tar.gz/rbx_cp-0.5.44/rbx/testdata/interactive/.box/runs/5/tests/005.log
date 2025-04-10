@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=/Users/rsalesc/Library/Application Support/rbx/schemas/Evaluation.json
+
+result:
+  outcome: runtime-error
+  sanitizer_warnings: false
+testcase:
+  index: 5
+  input: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/build/tests/tests/005.in
+  output: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/build/tests/tests/005.out
+log:
+  exitcode: -6
+  exitstatus: signal
+  time: 0.006
+  memory: 10256384
+  warnings: false
+  metadata:
+    is_sanitized: false
+    timeLimit: 36
+    memoryLimit: 256
+    retryIndex: 1
+  stdout_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/5/tests/005.out
+  stderr_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/5/tests/005.err
+  log_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/5/tests/005.log

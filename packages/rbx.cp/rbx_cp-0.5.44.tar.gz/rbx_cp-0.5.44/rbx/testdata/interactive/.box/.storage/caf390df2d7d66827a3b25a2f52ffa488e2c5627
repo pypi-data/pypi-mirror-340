@@ -1,0 +1,6 @@
+"n": max-value-hit
+"x":
+constant-bounds "n": 1 1000000
+constant-bounds "x": 1 1000000
+variable "n"
+variable "x"

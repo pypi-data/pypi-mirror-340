@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=/Users/rsalesc/Library/Application Support/rbx/schemas/Evaluation.json
+
+result:
+  outcome: accepted
+  message: 'ok Number 33 is guessed successfully (range [1..100]) with 7 queries
+
+    '
+  sanitizer_warnings: false
+testcase:
+  index: 1
+  input: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/build/tests/tests/001.in
+  output: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/build/tests/tests/001.out
+log:
+  exitcode: 0
+  exitstatus: ok
+  time: 0.007
+  memory: 10256384
+  warnings: false
+  metadata:
+    is_sanitized: false
+    timeLimit: 36
+    memoryLimit: 256
+    retryIndex: 1
+  stdout_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/5/tests/001.out
+  stderr_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/5/tests/001.err
+  log_absolute_path: /Users/rsalesc/Dev/robox.io/rbx/testdata/interactive/.box/runs/5/tests/001.log
