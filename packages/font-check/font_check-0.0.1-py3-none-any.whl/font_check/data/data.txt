@@ -1,0 +1,26 @@
+កខគងចឆជញដឋឌណត
+ថទធនបផពភមយរ្លវសហឡអ
+ឈ្លោះ​គ្នា​ក្នុង​គ្រួសារ
+ដូច​ស្រាត​កាយា​បង្ហាញ​ញាតិ
+abcdefghijklmnopqrstuvwxyz
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0123456789
+!@#$%^&*()_+-=[]{}|;:',.<>?/`~
+Hello World
+ខ្ញុំ សួស្តី
+ជំរាបសួរ ភាសាខ្មែរ
+Cambodia
+Language
+ខ្ញុំ Hello
+សួស្តី World
+ជំរាបសួរ Cambodia
+ភាសាខ្មែរ Language
+ខ្មែរ 123
+Hello ខ្មែរ
+123 Language ភាសាខ្មែរ
+ភាសាខ្មែរ 123 Language
+Hello 123 World
+ខ្មែរ អស្ចារ្យ
+Good Morning ជំរាបសួរ
+Have a nice day សូមអរគុណ
+ខ្ញុំ love អ្នក
