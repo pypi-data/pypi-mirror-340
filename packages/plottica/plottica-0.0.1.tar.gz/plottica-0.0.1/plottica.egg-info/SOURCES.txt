@@ -1,0 +1,7 @@
+README.md
+setup.py
+plottica.egg-info/PKG-INFO
+plottica.egg-info/SOURCES.txt
+plottica.egg-info/dependency_links.txt
+plottica.egg-info/requires.txt
+plottica.egg-info/top_level.txt
