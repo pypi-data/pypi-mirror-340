@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+include config.yaml.example
+recursive-include ec2_restore *.py
+recursive-include ec2_restore/config *.yaml
+recursive-include ec2_restore/modules *.py 
