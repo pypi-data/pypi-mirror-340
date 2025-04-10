@@ -1,0 +1,13 @@
+threedi_schema/__init__.py,sha256=zPw00OwFTnSUk_U5PzFmhh9Sf6lERs3m9YoI1QHLAw8,143
+threedi_schema/beta_features.py,sha256=JzkZELAtwPyiDlbgcnDwbKW2FDLIIIPca_Vl7Ho6rsw,733
+threedi_schema/scripts.py,sha256=RqBKWhWtXWhqh_-iZM11xyPqdi4F4Fkyvdy_IsaY50U,1704
+threedi_schema/migrations/versions/data/0223_dry_weather_flow_distribution.csv,sha256=KHw1bjOC8_GTg6JDNr3Ifgbage1BdaEeXK1_HAOEpS0,71
+threedi_schema/migrations/versions/data/0223_surface_parameters_contents.json,sha256=NCuSGJR3LkndB4fDcFh8xPNcapwjZfL3L8R1ZvObR2c,5231
+threedi_schema/migrations/versions/data/0223_surface_parameters_id.csv,sha256=AsFCBmLJ9IJo1zUfB4khbldyI6XCnCHcwk0Nfdeb4lo,436
+threedi_schema/migrations/versions/data/0228_materials.csv,sha256=Ue_PNBYZAeBD-3wYF6l-tBp-59ZvJV-NZNcIbmhX4HE,218
+threedi_schema-0.300.25.dist-info/licenses/LICENSE,sha256=FOEGDu5nY3cMWLpE5ri0Z-iZMZnDGWo311mjCU_3hCQ,1103
+threedi_schema-0.300.25.dist-info/METADATA,sha256=_U4mHXGZFOaBnO-sl7JfKBOdLdrNXzOVDkrSwN-WLkw,19981
+threedi_schema-0.300.25.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+threedi_schema-0.300.25.dist-info/entry_points.txt,sha256=MZ8j9FB9g9Vin_VgGuU-ewqTAEO_8_c2NuHfCC6aVP4,63
+threedi_schema-0.300.25.dist-info/top_level.txt,sha256=_em10khSlPDdg-MVj4OPHVfmn4z-O8LHQ6BJ-JuVwss,15
+threedi_schema-0.300.25.dist-info/RECORD,,
