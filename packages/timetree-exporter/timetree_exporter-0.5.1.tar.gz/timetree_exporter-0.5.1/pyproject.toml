@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "timetree-exporter"
+version = "0.5.1"
+description = "A Tool for Exporting TimeTree Calendar and Convert to iCal format(.ics)"
+authors = ["Fong-Chun Tsai <eoleedimin@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+keywords = ["timetree", "exporter", "icalendar", "ics"]
+classifiers = [
+  # Supported Python versions
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  # License
+  "License :: OSI Approved :: MIT License",
+  # OS
+  "Operating System :: OS Independent",
+]
+packages = [
+    { include = "timetree_exporter" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+icalendar = "^5.0.12"
+tzdata = "^2024.2"
+requests = "^2.32.3"
+
+[tool.poetry.urls]
+Homepage = "https://github.com/eoleedi/TimeTree-Exporter"
+Repository = "https://github.com/eoleedi/TimeTree-Exporter"
+Issues = "https://github.com/eoleedi/TimeTree-Exporter/issues"
+Changelog = "https://github.com/eoleedi/TimeTree-exporter/blob/main/CHANGELOG.md"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "^3.3.2"
+pre-commit = "^4.0.1"
+black = "^24.10.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+timetree-exporter = "timetree_exporter.__main__:main"
