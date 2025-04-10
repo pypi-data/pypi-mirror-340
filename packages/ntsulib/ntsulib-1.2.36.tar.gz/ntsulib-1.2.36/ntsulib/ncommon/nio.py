@@ -1,0 +1,187 @@
+import sys
+import os
+from enum import Enum
+import inspect
+from pathlib import Path
+
+__all__ = ["Auto_Mode",
+           "getProjectPath",
+           "get_temp_path",
+           "is_nuitka_packaged",
+           "is_pyinstaller_packaged",
+           "get_real_exe_dir"]
+
+class Auto_Mode(Enum):
+    disable = 0  # 禁用自动查找，仅按层级查找 会获取当前使用的py文件所在的位置
+    normal = 1  # 普通模式：仅检测常规Python项目标记
+    high = 2  # 高敏感模式：额外检测.venv/.idea等特殊标记
+    highest = 3  # 最高敏感模式：合并normal和high的所有标记
+
+def get_real_exe_dir() -> str:
+    """
+    获取 .exe 文件的真实目录（兼容 Nuitka 深度打包）
+    适用于所有情况，即使 sys.executable 被重定向
+
+    返回:
+        str: 规范化后的绝对路径（如 "C:\\Program Files\\MyApp"）
+    """
+    # 1. 尝试从 sys.argv[0] 获取线索（Nuitka 可能会修改它）
+    exe_path = sys.argv[0]
+
+    # 2. 如果是相对路径，尝试结合当前工作目录
+    if not os.path.isabs(exe_path):
+        exe_path = os.path.join(os.getcwd(), exe_path)
+
+    # 3. 解析可能的符号链接/短路径（如 ONEFIL~1）
+    exe_path = os.path.realpath(exe_path)
+
+    # 4. 如果是临时目录（如 AppData\Local\Temp），尝试向上查找
+    temp_dir = os.path.join(os.environ.get("TEMP", ""), "")
+    if exe_path.startswith(temp_dir):
+        # 回溯到第一个非临时目录的父级
+        parent = Path(exe_path).parent
+        while str(parent).startswith(temp_dir):
+            parent = parent.parent
+        exe_path = str(parent)
+
+    # 5. 最终验证
+    if not os.path.exists(exe_path):
+        raise RuntimeError(f"无法定位 .exe 真实路径: {exe_path}")
+
+    return os.path.normpath(exe_path)
+
+def get_temp_path(relative_path=""):
+    """
+    获取应用程序资源路径（兼容普通运行和PyInstaller打包环境）
+    总是基于调用者脚本的位置进行解析
+
+    参数:
+        relative_path (str): 相对于基础路径的子路径
+
+    返回:
+        str: 完整的资源路径
+    """
+    if (not is_nuitka_packaged()) and (not is_pyinstaller_packaged()):
+        return getProjectPath(auto=Auto_Mode.highest)
+    try:
+        # PyInstaller打包后，从临时目录_MEIPASS加载
+        if getattr(sys, 'frozen', False):
+            base_path = sys._MEIPASS
+        else:
+            # 获取调用者脚本的路径
+            frame = inspect.stack()[1]
+            caller_path = frame.filename
+            base_path = str(Path(caller_path).parent.absolute())
+
+        # 拼接完整路径并规范化路径分隔符
+        full_path = os.path.normpath(os.path.join(base_path, relative_path))
+        return full_path
+    except Exception as e:
+        raise RuntimeError(f"Failed to determine resource path: {e}") from e
+
+def is_nuitka_packaged() -> bool:
+    """检测是否为Nuitka打包环境"""
+    return "__compiled__" in globals()
+def is_pyinstaller_packaged() -> bool:
+    """检测是否为PyInstaller打包环境"""
+    return getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS')
+
+# 目前支持nuitka, pyinstaller, py工程的路径获取
+def getProjectPath(layer: int = 0, auto: Auto_Mode = Auto_Mode.normal) -> str:
+    """
+    获取项目路径（统一打包环境行为）
+
+    参数:
+        layer: 向上回溯的目录层数（0=不回溯）
+        auto: 自动检测模式（打包环境下强制禁用）
+
+    返回:
+        str: 规范化后的绝对路径
+        - 开发环境: 工程根目录
+        - 打包环境: .exe所在目录（考虑层级回溯）
+
+    异常:
+        ValueError: 如果layer是负数
+        RuntimeError: 如果路径解析失败
+    """
+    if layer < 0:
+        raise ValueError("layer参数不能为负数")
+
+    # ==============================================
+    # 打包环境处理
+    # ==============================================
+    if is_pyinstaller_packaged() or is_nuitka_packaged():
+        layer += 1 # 去除文件名
+        base_path = get_real_exe_dir()
+
+        # 处理层级回溯
+        for _ in range(layer):
+            parent = os.path.dirname(base_path)
+            if parent == base_path:  # 到达根目录
+                break
+            base_path = parent
+
+        return os.path.normpath(base_path)
+
+    # ==============================================
+    # 开发环境处理（Python工程文件模式）
+    # ==============================================
+    main_module = sys.modules.get('__main__')
+    if not hasattr(main_module, '__file__'):
+        raise RuntimeError("无法确定主模块路径")
+
+    current_path = os.path.dirname(os.path.abspath(main_module.__file__))
+
+    # 禁用自动检测模式
+    if auto == Auto_Mode.disable:
+        project_path = current_path
+    else:
+        # 项目标记检测函数
+        def is_project_dir(path: str) -> bool:
+            """检查给定路径是否是项目根目录"""
+            normal_markers = ['pyproject.toml', '.git', 'requirements.txt']
+            high_markers = ['.idea', '.venv', '.vscode']
+
+            markers = []
+            if auto.value >= Auto_Mode.normal.value:
+                markers += normal_markers
+            if auto.value >= Auto_Mode.high.value:
+                markers += high_markers
+
+            for marker in markers:
+                target = os.path.join(path, marker)
+                if os.path.exists(target):
+                    if marker.startswith('.'):
+                        parent_marker = os.path.join(os.path.dirname(path), marker)
+                        if os.path.exists(parent_marker):
+                            continue
+                    return True
+            return False
+
+        # 向上查找项目根目录
+        project_path = current_path
+        while True:
+            if is_project_dir(project_path):
+                break
+            parent = os.path.dirname(project_path)
+            if parent == project_path:
+                break
+            project_path = parent
+
+    # 处理层级回溯
+    for _ in range(layer):
+        parent = os.path.dirname(project_path)
+        if parent == project_path:
+            break
+        project_path = parent
+
+    return os.path.normpath(project_path)
+
+def is_executable() -> bool:
+    return not sys.executable.endswith('python.exe')
+
+def is_dir_exists(path: str) -> bool:
+    return os.path.isdir(path)
+
+def is_file_exists(path: str) -> bool:
+    return os.path.isfile(path)
