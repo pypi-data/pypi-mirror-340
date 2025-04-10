@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/pragmatics/__init__.py
+src/pragmatics/collections.py
+src/pragmatics/constants.py
+src/pragmatics/exceptions.py
+src/pragmatics.egg-info/PKG-INFO
+src/pragmatics.egg-info/SOURCES.txt
+src/pragmatics.egg-info/dependency_links.txt
+src/pragmatics.egg-info/entry_points.txt
+src/pragmatics.egg-info/requires.txt
+src/pragmatics.egg-info/top_level.txt
+src/pragmatics/scripts/__init__.py
+src/pragmatics/scripts/integration.py
