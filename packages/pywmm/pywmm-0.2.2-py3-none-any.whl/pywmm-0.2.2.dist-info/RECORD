@@ -1,0 +1,11 @@
+pywmm/__init__.py,sha256=PTChiW8-82GcWqjQdCrQeTDN3g956vilQhGY14fU1q4,47
+pywmm/calculator.py,sha256=1j8x5p4cmUrVGLC9P5oGRkJauS3ZBNyf3lAxORdOhUA,8809
+pywmm/coefficients.py,sha256=ciWACeJjy11tENnTZpz34fmgbpQfPKQdQBgWQYjOY7c,2956
+pywmm/core.py,sha256=gV74BW2PYrBhlsBpMA2FWdYsoNHqWFYptVzcIyHcouU,11218
+pywmm/date_utils.py,sha256=9ApEfziNJfHHmzHGPXPEplx3bTWeJGv8H6GmYPP0bkg,2385
+pywmm/data/WMM.COF,sha256=SFUiDwKImbkV9vv9JC6_8apvgo8Zd3ZlNfRZr5Z5Ric,4553
+pywmm-0.2.2.dist-info/licenses/LICENSE,sha256=RgtXwpo-QWP459XmCiOAoiBEK4LVdXwdPlyF4h5trt0,1069
+pywmm-0.2.2.dist-info/METADATA,sha256=iJ2gF1Lf02sAq8oQD9yiI7kuAaq-xxMv7VsjndBe_00,296
+pywmm-0.2.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pywmm-0.2.2.dist-info/top_level.txt,sha256=Q1_rMc3WUAcma8qEOqxSkXr5NM5HFnFvkPHCfevKGzM,6
+pywmm-0.2.2.dist-info/RECORD,,
