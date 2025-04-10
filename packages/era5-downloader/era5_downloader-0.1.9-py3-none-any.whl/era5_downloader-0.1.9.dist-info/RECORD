@@ -1,0 +1,7 @@
+era5_downloader/__init__.py,sha256=qphOWMVRsB4kQMJb4TuMQog4aFk3iaQfbzvwTM6tz7k,359
+era5_downloader/core.py,sha256=v0mkwIDrVihhlx5_8fwN7U5R4mlHmR6dPWHvnrfe1qo,33173
+era5_downloader/defaults.py,sha256=jFs4AgjDfn8mk6V7DyK65p0SiMef5VdUgrkRweFJBEQ,1065
+era5_downloader/utils.py,sha256=ZaPp-U25Unb5aDnYcWAn-JAV7QfodQL8q5c6xpKeriM,2248
+era5_downloader-0.1.9.dist-info/METADATA,sha256=8FyHbPxGaoegdoW-pEpMStjzLQCiHLwoSKP_Suz9g28,16302
+era5_downloader-0.1.9.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+era5_downloader-0.1.9.dist-info/RECORD,,
