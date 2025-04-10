@@ -1,0 +1,26 @@
+[project]
+name = "pragmatics"
+version = "0.0.1dev2"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kosmolebryce", email = "k.lebryce@pm.me" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipython>=9.1.0",
+    "ipywidgets>=8.1.5",
+    "jupyterlab>=4.4.0",
+    "numpy>=2.2.4",
+    "pandas>=2.2.3",
+    "python-dotenv>=1.1.0",
+    "seaborn>=0.13.2",
+    "tomlkit>=0.13.2",
+]
+
+[project.scripts]
+pragmatics = "pragmatics:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

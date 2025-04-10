@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: pragmatics
+Version: 0.0.1.dev2
+Summary: Add your description here
+Author-email: kosmolebryce <k.lebryce@pm.me>
+Requires-Python: >=3.13
+Requires-Dist: ipython>=9.1.0
+Requires-Dist: ipywidgets>=8.1.5
+Requires-Dist: jupyterlab>=4.4.0
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: python-dotenv>=1.1.0
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: tomlkit>=0.13.2
