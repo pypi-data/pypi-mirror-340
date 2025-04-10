@@ -1,0 +1,2 @@
+[console_scripts]
+create-daca = create_daca.cli:main
