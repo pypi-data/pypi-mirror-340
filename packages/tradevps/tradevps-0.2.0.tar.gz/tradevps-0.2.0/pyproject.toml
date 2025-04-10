@@ -1,0 +1,38 @@
+[project]
+name = "tradevps"
+version = "0.2.0"
+description = "Official Python client for TradeVPS APIs"
+authors = [
+    { name = "TradeVPS", email = "dev@tradevps.net" },
+    { name = "moezehdev", email = "hi@moezeh.dev" },
+]
+dependencies = [
+    "requests>=2.31.0,<3.0.0",
+    "pydantic>=2.5.0,<3.0.0",
+    "python-dotenv>=1.0.0,<2.0.0",
+    "urllib3>=2.0.0,<2.3.0",
+    "email-validator>=2.1.0,<3.0.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+ignore_package_warnings = [
+    "urllib3",
+]
+
+[tool.pdm.dev-dependencies]
+test = [
+    "pytest>=7.4.3",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+]
