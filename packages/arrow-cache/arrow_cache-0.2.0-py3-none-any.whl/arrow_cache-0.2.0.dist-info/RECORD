@@ -1,0 +1,17 @@
+arrow_cache/__init__.py,sha256=mk60AcFF1eXiFTJKkZj9K56-9Z5gZ0YmoK-oNfY-Rb0,1792
+arrow_cache/cache.py,sha256=mR9QsCmh8HgCJvcyr4RHmMHL3-k6DAni1Uw9sBzaE8w,74940
+arrow_cache/cache_entry.py,sha256=aaYnOmLb8Brk0T_rzPIlw-LrB6-yMjzABrFwADNnlPY,9030
+arrow_cache/config.py,sha256=zCrU-IFFYWLz2RNNG6YHzw7MObELfRyU4D3cjs0YO8U,4907
+arrow_cache/converters.py,sha256=bosQgfRjl-GQYXst28J_vNkYCBuLHMlfxoCWXQLsZ1k,26865
+arrow_cache/eviction_policy.py,sha256=JaaRrjDx7AEnRzWT7mzrW1HwPaek14UqRNfLRcYWgo4,13578
+arrow_cache/memory.py,sha256=J4Y7a00s39rlAFQs3-nLAAGnO-PF-phfAy2f3G604nQ,36599
+arrow_cache/metadata_store.py,sha256=0hkeURyr31yIjjHZAhTb5m92ZA-8O4GP_zq8-FjogAM,24623
+arrow_cache/partitioning.py,sha256=SKUYyBEN9quAuaNhtkhGQF1lXy8STPKe8Nd88s_r_Oc,44607
+arrow_cache/query_optimization.py,sha256=YeOlaYTv_cp21dQAvXlUTt5s4XOxF5NYFEwiLcc0peg,29581
+arrow_cache/threading.py,sha256=mM61z9mLMQwHzQy3kkj3C3X7tmI2jinMcTLk0FfHCPc,21268
+arrow_cache/utils.py,sha256=Z-j2euj0JBIOLfHEOA578OvutMiGZ18PIDBWyahkBsk,4822
+arrow_cache-0.2.0.dist-info/METADATA,sha256=RZHOoIkXFYqoy7itqivOjaSAKDz-ZTIAljfp8nh1kfs,592
+arrow_cache-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+arrow_cache-0.2.0.dist-info/entry_points.txt,sha256=OTsl2NWmyjXafvNuWBK6lMRH9xqEtyWDAzVd_l9b8ZE,74
+arrow_cache-0.2.0.dist-info/top_level.txt,sha256=h7yI8q4CJr4KqVgNP9q9mJWPG4X0V1vuWKz-Gvkfz9U,12
+arrow_cache-0.2.0.dist-info/RECORD,,
