@@ -1,0 +1,5 @@
+setup.py
+llmfile.egg-info/PKG-INFO
+llmfile.egg-info/SOURCES.txt
+llmfile.egg-info/dependency_links.txt
+llmfile.egg-info/top_level.txt
