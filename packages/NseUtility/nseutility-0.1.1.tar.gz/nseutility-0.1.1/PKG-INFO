@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: NseUtility
+Version: 0.1.1
+Summary: A utility to fetch NSE India data
+Author: Prasad
+Requires-Python: >=3.8
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: feedparser
+Requires-Dist: urllib3
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
