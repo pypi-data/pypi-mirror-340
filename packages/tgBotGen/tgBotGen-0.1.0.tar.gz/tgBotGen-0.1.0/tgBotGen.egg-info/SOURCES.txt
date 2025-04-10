@@ -1,0 +1,12 @@
+LICENSE.txt
+pyproject.toml
+setup.py
+tgBotGen/__init__.py
+tgBotGen/__main__.py
+tgBotGen/scaffold.py
+tgBotGen.egg-info/PKG-INFO
+tgBotGen.egg-info/SOURCES.txt
+tgBotGen.egg-info/dependency_links.txt
+tgBotGen.egg-info/entry_points.txt
+tgBotGen.egg-info/requires.txt
+tgBotGen.egg-info/top_level.txt
