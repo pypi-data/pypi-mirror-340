@@ -1,0 +1,72 @@
+Metadata-Version: 2.4
+Name: tropir
+Version: 0.1.4
+Summary: A thin client for tracking OpenAI API calls
+Home-page: https://tropir.ai
+Author: Tropir
+Author-email: info@tropir.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.0
+Requires-Dist: openai>=1.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Tropir
+
+A client for tracking LLM API calls and sending logs to your Tropir API.
+
+## Installation
+
+```bash
+pip install tropir
+```
+
+## Usage
+
+### Command Line Interface (Recommended)
+
+Simply run your Python scripts or modules with the `tropir` command instead of `python`:
+
+```bash
+# Run a Python script with Tropir tracking
+tropir python your_script.py
+
+# Run a Python module with Tropir tracking
+tropir python -m your_module
+```
+
+No code changes required! The Tropir agent automatically tracks all OpenAI API calls in your code.
+
+### Advanced: As a Python Library
+
+For more control, you can also use Tropir as a library:
+
+```python
+# Import and initialize the agent at the start of your program
+from tropir import initialize
+initialize()
+
+# Now all your OpenAI API calls will be tracked automatically
+```
+
+## Configuration
+
+Configuration is done via environment variables:
+
+- `TROPIR_ENABLED`: Set to "0" to disable tracking (defaults to "1")
+- `TROPIR_API_URL`: Custom API URL (defaults to "https://tropir.fly.dev/api/log")
+
+## License
+
+MIT 
