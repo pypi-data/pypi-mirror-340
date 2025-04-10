@@ -1,0 +1,10 @@
+geopandasai/__init__.py,sha256=s3muSJUh7GcbyWWme9n6jYLi3YSDAW4vXUVfymX6IVA,178
+geopandasai/config.py,sha256=30DaZBPjkedePCzqL0lV8se2E794rKKBXsxZRp9qINw,559
+geopandasai/geodataframe_ai.py,sha256=ns_3go-9pEWPUoXog4u-QzQTPOE0mua6zHziaJBgVsI,921
+geopandasai/prompt.py,sha256=cUJT3XjFAvxrx63fxIlHTT27uDgY073_aXh6yeEUDNw,5766
+geopandasai/types.py,sha256=ov0TxETn6F4AeY2aFVg7zTUnVE7jcgPYLnP9IHAUWcI,623
+geopandasai/wrapper.py,sha256=Zwu-Dxi86Dj4PoBOIumc9un1pABZrx7kuHirV4uAOFE,2468
+geopandas_ai-0.0.1.dist-info/METADATA,sha256=PvuKn7bCeMWr6vkxvOrF88he6uklfVvMzy9HPjFztGs,4169
+geopandas_ai-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+geopandas_ai-0.0.1.dist-info/top_level.txt,sha256=koZxfImtMUUGWbTr8Z5qFR_tokgd11EZ5OrOWw4x9jM,12
+geopandas_ai-0.0.1.dist-info/RECORD,,
