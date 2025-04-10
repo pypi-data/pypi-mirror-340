@@ -1,0 +1,13 @@
+convexgating/__init__.py,sha256=_cYN7PbnB3F6WYLJ9uiDCYbvfeU1BwZfA2NhnnIJA6g,1792
+convexgating/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+convexgating/helper.py,sha256=cTRk8lFcYYJ87aeYwa5uETv38JOgaoGxjoGa3VC1cyM,57841
+convexgating/hyperparameters.py,sha256=ftnLUWxW6WHzXAHZE-O_GUn1VjMAzzWE7q0-UCWHiCU,1298
+convexgating/plotting.py,sha256=rs1uskR_V55npRFYvNjwW7YJpKHyuxK-JbyGb00PRS8,10147
+convexgating/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+convexgating/simulation.py,sha256=UvDiw-Al0kYft34jW9eFThNG-qVZIA6W2diN2khYReI,3250
+convexgating/tools.py,sha256=G6cZtwTr4-etCn8CGTeVSHLGzi5Qm20ce9bmzaeNXH0,46272
+convexgating-1.0.0.dist-info/entry_points.txt,sha256=S2JOOzsUr7k6yyVQkdyp_5mSWA8QqyVBvl0pr-ZF80I,59
+convexgating-1.0.0.dist-info/LICENSE,sha256=1loek6ccTBCOF55zu6qHLzss4oLdhy904wGPiB0si50,1075
+convexgating-1.0.0.dist-info/METADATA,sha256=uFAQsHkY38duMt6FZs_sP5maeyIqdI2pQzBIXSuT888,8019
+convexgating-1.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+convexgating-1.0.0.dist-info/RECORD,,

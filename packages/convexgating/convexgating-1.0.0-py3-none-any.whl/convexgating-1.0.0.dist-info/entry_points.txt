@@ -1,0 +1,3 @@
+[console_scripts]
+convexgating=convexgating.__main__:main
+
