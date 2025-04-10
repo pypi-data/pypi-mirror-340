@@ -1,0 +1,9 @@
+TextExtraction/__init__.py,sha256=NwGQiOb4xkgV8SdGVaH8fKSJvmu8GlAMKnd1uApBy9A,261
+TextExtraction/image_text.py,sha256=BN4vEdI218fvczgJv47PW_OHj7ygbywJ2llTsx4uQ9U,2670
+TextExtraction/pdf_text.py,sha256=c_UQmBWBBiIuWpZvdf0FxNNPGqEKp4h1tlsqE9Nzp-M,3395
+TextExtraction/scanned_pdf_text.py,sha256=Q6y9HqlMUY8enKwzXzv1J3zUGFfs03VLl2OmEkEwrPw,2996
+textextraction-0.1.0.dist-info/licenses/LICENSE,sha256=sHj3ASqagylri0gigBhLat152XwrzC4S0D7c3yyQ6hA,1099
+textextraction-0.1.0.dist-info/METADATA,sha256=tvLUdxLlC53C70Ai4QTE_8LeJFTqaR1daz2dXSVWPkA,6382
+textextraction-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+textextraction-0.1.0.dist-info/top_level.txt,sha256=m3RvKNlJsKadyIfASziO_XjsBzIXg2MpioRyN73CcQ8,15
+textextraction-0.1.0.dist-info/RECORD,,
