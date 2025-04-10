@@ -1,0 +1,51 @@
+global:
+  Condition:
+    - LambdaPyPackager:
+        Or(Condition('LambdaPyPackagerARM'),Condition('LambdaPyPackagerAMD'))
+  Lambda:
+    - PyPackagerARM:
+        Create: 'no'
+        Architectures:
+          - arm64
+        Code:
+          ZipFile: PyPackager
+        Environment:
+          Variables:
+            - BUCKET: Sub(cfg.BucketNameAppRepository)
+        Description: 'Lambda to create packages for aarch64 based LambdaLayers'
+        MemorySize: 1024
+        Runtime: python3.13
+        Timeout: 120
+    - PyPackagerAMD:
+        Create: 'no'
+        Architectures:
+          - x86_64
+        Code:
+          ZipFile: PyPackager
+        Environment:
+          Variables:
+            - BUCKET: Sub(cfg.BucketNameAppRepository)
+        Description: 'Lambda to create packages for x86_64 based LambdaLayers'
+        MemorySize: 1024
+        Runtime: python3.13
+        Timeout: 120
+  IAMPolicy:
+    - LambdaPyPackager:
+        Condition: LambdaPyPackager
+        Roles:
+          - Ref("RoleLambdaPyPackagerARM")
+          - Ref("RoleLambdaPyPackagerAMD")
+        PolicyDocument:
+          Statement:
+            - 1:
+                Action: 
+                  - 's3:List*'
+                  - 's3:Put*'
+                Effect: Allow
+                Resource:
+                  - Sub('arn:aws:s3:::%s' % cfg.BucketNameAppRepository)
+                  - Sub('arn:aws:s3:::%s/lambda-layers/python*' % cfg.BucketNameAppRepository)
+
+dev:
+  LambdaPyPackagerAMDCreate: 'yes'
+  LambdaPyPackagerARMCreate: 'yes'
