@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: mufzk
+Version: 0.4.0
+Requires-Dist: numpy>=1.11.1
+Requires-Dist: scipy>=1.13.1
+Requires-Dist: Faker>=37.1.0
