@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "pyhydrophone"
+version = "0.2.0"
+description = "python package to read and calibrate hydrophone data"
+authors = ["Clea Parcerisas <clea.parcerisas@vliz.be>"]
+license = "OSI Approved :: MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9, <3.13.0"
+pandas = "^2.0.2"
+requests = "^2.31.0"
+soundfile = "^0.12.1"
+
+openpyxl = "^3.1.2"
+scipy = "1.13.1"
+
+
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pyyaml = "^6.0"
+pytest = "^7.3.1"
+coverage = "^7.2.5"
+python-dotenv = "^1.0.0"
+pytest-cov = "^4.1.0"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "6.1.2"
+numpydoc = "^1.5.0"
+sphinx-rtd-theme = "^1.2.2"
+sphinx-gallery = "^0.13.0"
+pillow = "^10.0.0"
+matplotlib = "^3.7.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+testpaths = ["tests",]
+pythonpath = ["."]
