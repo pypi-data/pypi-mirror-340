@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=3.11,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "egritools_kivy"
+version = "0.2.0"
+description = "Local utility toolkit by Egrigor86"
+authors = [{name = "Christopher (Egrigor86)", email = "egrigor86@gmail.com"}]
+license = {file = "LICENSE"}
+readme = "README.md"
+
+[project.scripts]
+change-extension-kv = "egritools_kivy.change_extension_kv:main"
+create-venv-kv = "egritools_kivy.create_venv_kv:main"
+hf-upload-kv = "egritools_kivy.hf_upload_kv:main"
+preclean-gui-kv = "egritools_kivy.preclean_gui_kv:main"
+wheel-manager-kv = "egritools_kivy.wheel_manager_kv:main"
+gpt2-trainer-kv = "egritools_kivy.gpt2_trainer_kv:main"
+combine-txt-kv = "egritools_kivy.combine_txt_kv:main"
+egritools-kv = "egritools_kivy.__main__:main"  # optional unified launcher
