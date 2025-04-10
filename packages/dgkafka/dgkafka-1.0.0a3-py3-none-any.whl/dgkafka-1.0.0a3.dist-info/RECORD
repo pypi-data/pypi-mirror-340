@@ -1,0 +1,13 @@
+dgkafka/__init__.py,sha256=fnqVZROyHXipdmhqZaa9XUjvQe795JJKFakwTndAiIw,286
+dgkafka/avro_consumer.py,sha256=Hk1_vexqd5F2g2D0IC2n1HAwXR-cQrbYDsSYr616ASY,2875
+dgkafka/avro_producer.py,sha256=51p9GeavU3M21LfQZuidEkhIpzA-KGQOXhB0xMfNUus,4247
+dgkafka/config.py,sha256=-rsJO_xAEEFJ9wZtN0LnbxHKpvruC8uOkLipI77a4zk,5425
+dgkafka/consumer.py,sha256=OSryUsowjpPA4ZbTSs3dwWgIgd2HOAdGeqM-Y1R1XLk,4427
+dgkafka/errors.py,sha256=PaH46tXameS--hrrUXKhQkZlBHvMSMPmjhVeRkmFvV0,95
+dgkafka/json_consumer.py,sha256=7Gzn7C9WpyCTPDV6eFDugAx5gC9vdV-HrTh3Nv--zIE,1152
+dgkafka/producer.py,sha256=4tKIYUs1zlrie5TOxnL0J38BON2HreOLf2rYW1hVrIs,5085
+dgkafka-1.0.0a3.dist-info/licenses/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+dgkafka-1.0.0a3.dist-info/METADATA,sha256=MIQLUYWf8BYy1Ty88EveT5dnrR5ROL5j6boiW4DR240,6037
+dgkafka-1.0.0a3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dgkafka-1.0.0a3.dist-info/top_level.txt,sha256=GyNrxOh7IPdL0t2SxH8DWxg3fUma-ezQ1Kz4zIr2B7U,8
+dgkafka-1.0.0a3.dist-info/RECORD,,
