@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "niktokenizer"
+version = "0.1.0"
+description = "A simple tokenizer using ascii values"
+authors = [
+    {name = "nikhilh", email = "nikhilhadawale95@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/NikhilHadawale/niktokenizer.git"

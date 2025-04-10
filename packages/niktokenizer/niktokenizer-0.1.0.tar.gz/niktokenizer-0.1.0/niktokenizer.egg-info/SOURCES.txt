@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+niktokenizer/__init__.py
+niktokenizer/tokenizer.py
+niktokenizer.egg-info/PKG-INFO
+niktokenizer.egg-info/SOURCES.txt
+niktokenizer.egg-info/dependency_links.txt
+niktokenizer.egg-info/top_level.txt
+tests/test_tokenizer.py
