@@ -1,0 +1,8 @@
+setup.py
+bin/new.ps1
+cli/cli.py
+mypypack.egg-info/PKG-INFO
+mypypack.egg-info/SOURCES.txt
+mypypack.egg-info/dependency_links.txt
+mypypack.egg-info/entry_points.txt
+mypypack.egg-info/top_level.txt

@@ -1,0 +1,1 @@
+Write-Output "My first Python package"
