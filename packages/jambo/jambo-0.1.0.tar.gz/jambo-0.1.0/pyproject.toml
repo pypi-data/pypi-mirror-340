@@ -1,0 +1,45 @@
+[project]
+name = "jambo"
+dynamic = ["version"]
+description = "Add your description here"
+requires-python = ">=3.10,<4.0"
+readme = "README.md"
+
+# Project Dependencies
+dependencies = [
+    "jsonschema>=4.23.0",
+    "pydantic>=2.10.6",
+]
+
+[dependency-groups]
+dev = [
+    "coverage>=7.8.0",
+    "poethepoet>=0.33.1",
+    "pre-commit>=4.2.0",
+    "ruff>=0.11.4",
+]
+
+
+# POE Tasks
+[tool.poe.tasks]
+create-hooks        = "bash .githooks/set-hooks.sh"
+tests               = "python -m unittest discover -s tests -v"
+
+# Build System
+[tool.hatch.version]
+source = "vcs"
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+
+# Linters
+[tool.ruff.lint.isort]
+section-order=[
+    "future",
+    "first-party",
+    "local-folder",
+    "third-party",
+    "standard-library",
+]
