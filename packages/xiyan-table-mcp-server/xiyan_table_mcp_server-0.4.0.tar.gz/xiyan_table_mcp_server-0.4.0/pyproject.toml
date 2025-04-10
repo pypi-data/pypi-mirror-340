@@ -1,0 +1,33 @@
+[project]
+name = "xiyan_table_mcp_server"
+version = "0.4.0"
+description = "A Model Context Protocol (MCP) server that allows AI assistants to display table contents and perform natural language queries."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.2.0",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "pydantic>=2.0.0",
+    "pandas>=2.0.0",
+    "pyyaml>=6.0.0"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+server = "server:main"
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+
+packages = ["src"]

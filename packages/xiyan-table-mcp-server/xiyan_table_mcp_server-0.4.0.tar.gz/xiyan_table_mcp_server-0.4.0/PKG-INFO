@@ -1,0 +1,146 @@
+Metadata-Version: 2.4
+Name: xiyan_table_mcp_server
+Version: 0.4.0
+Summary: A Model Context Protocol (MCP) server that allows AI assistants to display table contents and perform natural language queries.
+Requires-Python: >=3.10
+Requires-Dist: fastapi>=0.109.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.2.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pyyaml>=6.0.0
+Requires-Dist: uvicorn>=0.27.0
+Description-Content-Type: text/markdown
+
+# Xiyan Table MCP Server
+
+A Model Control Protocol (MCP) server for table data querying that allows users to configure local table data and query it using natural language.
+
+## Features
+
+- Local CSV file configuration and reading
+- Table data preview functionality (first 20 rows)
+- Natural language querying support
+- Intelligent responses powered by Large Language Models
+- Flexible configuration using YAML
+- Easy-to-use MCP tools and resources
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/xiyan-table-mcp-server.git
+cd xiyan-table-mcp-server
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Configuration
+
+1. Copy the example configuration file:
+```bash
+cp config.yml.example config.yml
+```
+
+2. Edit `config.yml` with your settings:
+```yaml
+table:
+  path: "data/example.csv"  # Path to your CSV file
+  encoding: "utf-8"         # File encoding
+  preview_rows: 20          # Number of preview rows
+
+model:
+  type: "openai"           # Model type
+  api_key: ""             # Your API key
+  model_name: "gpt-4"     # Model name
+  temperature: 0.1        # Temperature parameter
+
+server:
+  name: "xiyan-table"     # Server name
+  version: "0.1.0"        # Version number
+```
+
+## Usage
+
+1. Start the server:
+```bash
+python server.py
+```
+
+2. Connect using an MCP client:
+```python
+from mcp.client import MCPClient
+
+# Connect to the server
+client = MCPClient()
+
+# Get table preview
+preview = client.get_table_preview()
+print(f"Table columns: {preview['columns']}")
+print(f"Preview rows: {preview['preview_rows']}")
+
+# Query data
+result = client.query_table("What is the total number of rows in the table?")
+print(f"Query result: {result}")
+```
+
+## API Reference
+
+### Resources
+
+#### get_table_preview
+Returns a preview of the table data.
+
+Response format:
+```python
+{
+    "columns": List[str],        # Column names
+    "data": List[List[Any]],     # Table data
+    "total_rows": int,           # Total number of rows
+    "preview_rows": int          # Number of preview rows
+}
+```
+
+### Tools
+
+#### query_table
+Query the table using natural language.
+
+Parameters:
+- `question` (str): The natural language query
+
+Returns:
+- String response containing the answer to the query
+
+## Development
+
+### Requirements
+- Python 3.8+
+- pandas
+- pyyaml
+- openai
+- mcp-core
+
+### Project Structure
+```
+xiyan-table-mcp-server/
+├── config.yml          # Configuration file
+├── server.py          # Main server implementation
+├── requirements.txt   # Project dependencies
+└── README.md         # Documentation
+```
+
+## License
+
+MIT License
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
