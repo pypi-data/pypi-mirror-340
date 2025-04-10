@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "cerrax-py"
+version = "1.1.0"
+description = "A collection of different modules for Python that make life a little bit easier."
+authors = ["Charlie Koch <charles@cerrax.com>"]
+license = "BSD-2-Clause"
+readme = "pypi_doc.md"
+packages = [{ include = "cerrax", from = "src" }]
+
+[tool.poetry.urls]
+Homepage = "http://cerrax.com"
+#Documentation = "https://readthedocs.org"
+Repository = "https://gitlab.com/charles.w.koch/cerrax-python-utilities"
+#Issues = "https://github.com/me/spam/issues"
+#Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+candk = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
