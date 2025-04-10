@@ -1,0 +1,6 @@
+main.py
+setup.py
+yhddnotification.egg-info/PKG-INFO
+yhddnotification.egg-info/SOURCES.txt
+yhddnotification.egg-info/dependency_links.txt
+yhddnotification.egg-info/top_level.txt
