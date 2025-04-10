@@ -1,0 +1,15 @@
+pyjwt
+requests
+jupyterhub
+
+[hubservice]
+flask
+
+[serverextension]
+jupyter-server
+tornado
+
+[test]
+pytest
+pytest-jupyter[server]
+jupyter-smart-on-fhir[hubservice,serverextension]
