@@ -1,0 +1,9 @@
+pydatamorph-0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ui/app.py,sha256=dhkWH_HK3X2zgs_2wPiiVFrRP85sWfZaSTbR6dzvqfc,1331
+ui/pipeline_utils.py,sha256=R-blQMPesASNiBu78KNyI1dhzsgYVH8nvRcnh3QxDXw,275
+pydatamorph-0.1.dist-info/METADATA,sha256=bIwa2ZCInKZPJ8nLb4ZEb7pqM9hzNTW8cNs84bFM_L4,219
+pydatamorph-0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pydatamorph-0.1.dist-info/entry_points.txt,sha256=WXgqeK-ZgUK6FrJe_qe8JerF_JhfEmVU_tkEHCzqX4I,57
+pydatamorph-0.1.dist-info/top_level.txt,sha256=CcwdCkJzwoZAHNOMm_ZzXvCrKfCF37ccp8QI20pe1yg,3
+pydatamorph-0.1.dist-info/RECORD,,
