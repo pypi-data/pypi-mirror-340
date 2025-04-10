@@ -1,0 +1,4 @@
+financial_dataset_preprocessor>=0.2.9
+aws_s3_controller>=0.7.5
+mongodb_controller>=0.2.1
+shining_pebbles>=0.1.0
