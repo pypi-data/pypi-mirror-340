@@ -1,0 +1,233 @@
+Metadata-Version: 2.2
+Name: cipherShad0w
+Version: 0.1.6
+Summary: Utilities by Jannis
+Home-page: https://github.com/cipher-shad0w/sorting_visualizer
+Author: cipher-shad0w
+Author-email: Jannis.krija@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# CipherShad0w
+
+CipherShad0w is a Python package that provides utilities for sorting visualizations, doubly linked list operations, and automaton simulations (deterministic finite automata and pushdown automata). It includes a command-line interface (CLI) for easy interaction with these utilities.
+
+---
+
+## Features
+
+- **Sorting Algorithms**:
+  - Bubble Sort
+  - Quick Sort
+  - Merge Sort
+  - Heap Sort
+  - Shell Sort
+  - Radix Sort
+  - Selection Sort
+  - Insertion Sort
+
+- **Doubly Linked List**:
+  - Append, Prepend, Delete, Display, and Search operations.
+
+- **Automaton Simulations**:
+  - Deterministic Finite Automaton (DEA)
+  - Pushdown Automaton (PDA)
+
+- **CLI Support**:
+  - Perform sorting operations.
+  - Retrieve the source code of implemented algorithms and classes.
+  - Operate on a doubly linked list.
+  - Simulate automaton behavior.
+
+---
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install cipherShad0w
+```
+
+---
+
+## Usage
+
+### Command-Line Interface (CLI)
+
+The CLI provides an easy way to interact with the utilities. Once installed, you can use the `cipherShad0w` command.
+
+#### 1. Sorting Operations
+
+Sort an array using the desired algorithm:
+
+```bash
+cipherShad0w sort -a 7 2 5 1 9 -alg bubble
+```
+
+- `-a` or `--array`: The array to sort (required).
+- `-alg` or `--algorithm`: The sorting algorithm to use (default: `bubble`).
+
+Supported algorithms:
+- `bubble`
+- `quick`
+- `merge`
+- `heap`
+- `shell`
+- `radix`
+
+#### 2. Retrieve Source Code
+
+Get the source code of a specific algorithm or class:
+
+```bash
+cipherShad0w get bubble
+```
+
+Retrieve the entire `Sort` class:
+
+```bash
+cipherShad0w get all
+```
+
+Retrieve the code for `DoublyLinkedList` or `Pushdown`:
+
+```bash
+cipherShad0w get DoublyLinkedList
+cipherShad0w get Pushdown
+```
+
+#### 3. Doubly Linked List Operations
+
+Perform operations on a doubly linked list:
+
+- Append an element:
+  ```bash
+  cipherShad0w dll append -d 10
+  ```
+
+- Prepend an element:
+  ```bash
+  cipherShad0w dll prepend -d 5
+  ```
+
+- Delete an element:
+  ```bash
+  cipherShad0w dll delete -d 10
+  ```
+
+- Display the list:
+  ```bash
+  cipherShad0w dll display
+  ```
+
+- Search for an element:
+  ```bash
+  cipherShad0w dll search -d 5
+  ```
+
+#### 4. Pushdown Automaton Simulation
+
+Simulate a pushdown automaton with an input string:
+
+```bash
+cipherShad0w pda -i "aab"
+```
+
+---
+
+## Examples
+
+### Sorting Example
+
+```bash
+cipherShad0w sort -a 8 3 1 6 7 -alg quick
+```
+
+Output:
+```
+Result (quick): [1, 3, 6, 7, 8]
+Steps: 10
+```
+
+### Doubly Linked List Example
+
+```bash
+cipherShad0w dll append -d 15
+cipherShad0w dll display
+```
+
+Output:
+```
+Appended 15 to the list.
+List contents: [15]
+```
+
+### Pushdown Automaton Example
+
+```bash
+cipherShad0w pda -i "aab"
+```
+
+Output:
+```
+Input 'aab' is accepted by the Pushdown Automaton.
+```
+
+---
+
+## Development
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/cipher-shad0w/sorting_visualizer.git
+cd sorting_visualizer
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Tests
+
+```bash
+pytest
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes and push them to your fork.
+4. Submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contact
+
+For questions or feedback, contact **Jannis Krija** at [Jannis.krija@icloud.com](mailto:Jannis.krija@icloud.com).
