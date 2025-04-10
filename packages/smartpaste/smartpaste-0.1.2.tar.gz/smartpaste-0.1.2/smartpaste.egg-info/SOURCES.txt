@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+smartpaste/__init__.py
+smartpaste/smartpaste.py
+smartpaste.egg-info/PKG-INFO
+smartpaste.egg-info/SOURCES.txt
+smartpaste.egg-info/dependency_links.txt
+smartpaste.egg-info/requires.txt
+smartpaste.egg-info/top_level.txt

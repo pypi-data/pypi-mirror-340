@@ -1,0 +1,64 @@
+# SmartPaste
+
+Paste anything, reliably. This Python library uses the system clipboard for cross-platform (Win/Mac/Linux) text input, ensuring emojis and complex characters work correctly. Automatically saves/restores clipboard. Ideal for GUI automation.
+
+## Features
+
+*   **Reliable Pasting:** Uses the system clipboard (copy/paste) which is generally the most robust way to handle complex characters, emojis, and different scripts compared to simulated typing.
+*   **Cross-Platform:** Automatically detects the OS (Windows, macOS, Linux) and uses the correct paste shortcut (`Ctrl+V` or `Cmd+V`).
+*   **Clipboard Preservation:** Saves the current clipboard content before pasting and restores it afterward, minimizing disruption to the user's workflow.
+*   **Error Handling:** Includes basic error handling for clipboard operations.
+*   **Configurable Delay:** Allows adding a small delay after pasting to ensure the target application processes the input, especially useful for large text blocks or slower applications.
+
+## Installation
+
+```bash
+pip install smartpaste
+```
+
+## Usage
+
+Import the package and call it directly with the text you want to paste:
+
+```python
+import smartpaste # Import the package
+import time
+
+# Give yourself time to focus the target input field
+print("Focus the target input field now. Pasting in 5 seconds...")
+time.sleep(5)
+
+text_to_paste = "Hello, world! 👋 This text will be pasted reliably."
+try:
+    # Call the package directly!
+    smartpaste(text_to_paste)
+    # You can still optionally provide a delay:
+    # smartpaste("Some text", delay_after_paste=0.2)
+    print("Pasting successful!")
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+# The original function is still accessible if needed:
+# smartpaste.reliable_paste_text("Original function call")
+```
+
+**Important:** The script requires a target input field (like a text editor, browser address bar, etc.) to have focus *before* the paste function is called.
+
+## How it Works
+
+The package uses a callable class instance assigned to `sys.modules[__name__]` in its `__init__.py`. When you call `smartpaste(...)`, it invokes the `__call__` method of this instance, which in turn calls the underlying `reliable_paste_text` function.
+
+1.  **Save Clipboard:** Reads and stores the current clipboard content.
+2.  **Copy Target Text:** Copies the desired text to the clipboard.
+3.  **Paste:** Simulates the platform-specific paste keyboard shortcut (e.g., `Ctrl+V` or `Cmd+V`).
+4.  **Delay (Optional):** Pauses briefly to allow the paste action to complete.
+5.  **Restore Clipboard:** Copies the original content back to the clipboard.
+
+## Dependencies
+
+*   [pyperclip](https://pypi.org/project/pyperclip/)
+*   [PyAutoGUI](https://pypi.org/project/PyAutoGUI/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

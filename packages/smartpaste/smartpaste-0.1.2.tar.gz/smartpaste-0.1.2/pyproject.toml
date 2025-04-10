@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smartpaste"
+version = "0.1.2" # Update version to match __init__.py
+authors = [
+  { name="Alex M", email="alexmalone489@gmail.com" },
+]
+description = "Reliable cross-platform clipboard pasting for Python." # Keep original description relevant to smartpaste
+readme = "README.md"
+license = "MIT" # Add license from example
+keywords=["smartpaste", "paste", "automation", "gui", "pyautogui", "pyperclip", "emoji", "clipboard"] # Add keywords, tailored for smartpaste
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    # "License :: OSI Approved :: MIT License", # Removed based on build error
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "pyperclip >= 1.8.2",
+    "PyAutoGUI >= 0.9.53", # Keep original dependencies
+]
+
+[project.urls]
+# Update URLs based on convention, assuming a similar repo structure
+"Homepage" = "https://github.com/AMAMazing/smartpaste"
+"Bug Tracker" = "https://github.com/AMAMazing/smartpaste/issues"
+"Repository" = "https://github.com/AMAMazing/smartpaste"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["smartpaste*"]
+exclude = ["tests*"] # Example exclusion
