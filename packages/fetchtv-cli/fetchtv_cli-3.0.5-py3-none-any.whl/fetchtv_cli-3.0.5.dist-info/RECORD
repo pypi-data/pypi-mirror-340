@@ -1,0 +1,10 @@
+fetchtv_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fetchtv_cli/_version.py,sha256=FBTLvhZpu4swMbdaD3Gxhh2tRMdQdoVS9o_whqpSAKI,511
+fetchtv_cli/fetchtv_cli.py,sha256=kcAlQ977MpacKlN_IECoZ5bNWSyxkSAko35A9xIQepE,15319
+fetchtv_cli/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fetchtv_cli/helpers/upnp.py,sha256=xYP5Z3kkllHjwofDUY_CYivndU14lxSpz9A9Ogmfp_U,15957
+fetchtv_cli-3.0.5.dist-info/METADATA,sha256=EiDBsR6oe9d5FZrHQpfTY2vSeVafxiCNYFXZgnpj7pE,7283
+fetchtv_cli-3.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fetchtv_cli-3.0.5.dist-info/entry_points.txt,sha256=RvfS8FKLL4VmAMl997bTaAaqdLQ8kKnvdCG1uUqOw_o,57
+fetchtv_cli-3.0.5.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fetchtv_cli-3.0.5.dist-info/RECORD,,
