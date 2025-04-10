@@ -1,0 +1,53 @@
+import os
+import shutil
+import sys
+
+import click
+
+from biolib._internal import llm_instructions
+
+
+@click.group(name='sdk', help='Advanced commands for developers')
+def sdk():
+    pass
+
+
+@sdk.command(
+    name='add-copilot-prompts', help='Add BioLib-specific GitHub Copilot prompts and instructions to your repository'
+)
+@click.option('--force', is_flag=True, help='Force overwrite existing files.')
+def add_copilot_prompts(force: bool) -> None:
+    current_working_directory = os.getcwd()
+    config_file_path = f'{current_working_directory}/.biolib/config.yml'
+    if not os.path.exists(config_file_path):
+        err_string = """
+Error: Current directory has not been initialized as a BioLib application.
+       Please run the "biolib init" command first"""
+        click.echo(err_string, file=sys.stderr)
+        exit(1)
+    source_path = os.path.join(os.path.dirname(llm_instructions.__file__), '.github')
+    destination_path = os.path.join(current_working_directory, '.github')
+
+    conflicting_files = []
+
+    for root, _, files in os.walk(source_path):
+        relative_dir = os.path.relpath(root, source_path)
+        destination_dir = os.path.join(destination_path, relative_dir)
+        for file in files:
+            source_file = os.path.join(root, file)
+            destination_file = os.path.join(destination_dir, file)
+            if os.path.exists(destination_file) and not force:
+                with open(source_file, 'rb') as fsrc, open(destination_file, 'rb') as fdest:
+                    if fsrc.read() != fdest.read():
+                        conflicting_files.append(os.path.relpath(destination_file, current_working_directory))
+            else:
+                os.makedirs(destination_dir, exist_ok=True)
+                shutil.copy2(source_file, destination_file)
+
+    if conflicting_files:
+        click.echo('The following files were not overwritten. Use --force to override them:', file=sys.stderr)
+        for conflicting_file in conflicting_files:
+            click.echo(f'  {conflicting_file}', file=sys.stderr)
+        exit(1)
+
+    click.echo(f'Prompt and instruction files added to {destination_path}/')
