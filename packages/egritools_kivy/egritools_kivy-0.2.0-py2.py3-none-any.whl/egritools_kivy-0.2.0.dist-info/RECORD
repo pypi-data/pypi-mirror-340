@@ -1,0 +1,14 @@
+egritools_kivy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+egritools_kivy/__main__.py,sha256=BFP0B6lpYTIt6PICHUsPyj676MygM3Prkg7ZJrNGjRw,769
+egritools_kivy/change_extension_kv.py,sha256=ZAYt61kQEc1Xt_HbxIzmhUWKILZebEws-1LV8ct5sDQ,3422
+egritools_kivy/combine_txt_kv.py,sha256=0g3KDne58NscUnyx_H8Q2tLg2VsBuX-aUxko2JGMlGk,4737
+egritools_kivy/create_venv_kv.py,sha256=2Tf1ZlolxywgyBH74WeSYVbWokLubTnV76lI5hK2ZmY,5591
+egritools_kivy/gpt2_trainer_kv.py,sha256=029SHDH068jdi_uadfchn42vFZsVMwsoeCZIN1XUrj8,8486
+egritools_kivy/hf_upload_kv.py,sha256=mXV418WOAYcqAdM3ANHBtSq3sVac5wOfJglRpeej8QI,10622
+egritools_kivy/preclean_gui_kv.py,sha256=onoaG_qI4UlpGIU7jZWIYFwvj2v2csafuU589SbI9-o,3956
+egritools_kivy/wheel_manager_kv.py,sha256=PqX4QlkIrtPUEsa71zx9Ad5prbsEkkXVdmS7gCN1beA,13553
+egritools_kivy-0.2.0.dist-info/entry_points.txt,sha256=l_Mfgct7b3uJVR_d5RAdcC5a0Od2Kn7n8xMr-ngKSeI,425
+egritools_kivy-0.2.0.dist-info/licenses/LICENSE,sha256=c5Ev2Z9uVg7K6OAMHIUGiIkyWIJ3Dl9PuTrBQSrvreY,1097
+egritools_kivy-0.2.0.dist-info/WHEEL,sha256=Dyt6SBfaasWElUrURkknVFAZDHSTwxg3PaTza7RSbkY,100
+egritools_kivy-0.2.0.dist-info/METADATA,sha256=EQsdsfT03p48N3Z3lqPSfgolZWh811hk3Ee3qbCyxrM,481
+egritools_kivy-0.2.0.dist-info/RECORD,,

@@ -1,0 +1,10 @@
+[console_scripts]
+change-extension-kv=egritools_kivy.change_extension_kv:main
+combine-txt-kv=egritools_kivy.combine_txt_kv:main
+create-venv-kv=egritools_kivy.create_venv_kv:main
+egritools-kv=egritools_kivy.__main__:main
+gpt2-trainer-kv=egritools_kivy.gpt2_trainer_kv:main
+hf-upload-kv=egritools_kivy.hf_upload_kv:main
+preclean-gui-kv=egritools_kivy.preclean_gui_kv:main
+wheel-manager-kv=egritools_kivy.wheel_manager_kv:main
+
