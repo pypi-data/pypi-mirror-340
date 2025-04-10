@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: qasi
+Version: 0.1.0
+Summary: AI assistant for answering job application questions
+Home-page: https://github.com/gramo37/qas
+Author: Prasanna Gramopadhye
+Author-email: gramopadhye37@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# job_assistant_ai
+
+This Python package provides a function to query a language model (like OpenAI) with candidate context and questions, and returns short, clean answers.

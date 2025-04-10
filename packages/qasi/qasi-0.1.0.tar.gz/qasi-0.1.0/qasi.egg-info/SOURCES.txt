@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+qas/__init__.py
+qas/core.py
+qasi.egg-info/PKG-INFO
+qasi.egg-info/SOURCES.txt
+qasi.egg-info/dependency_links.txt
+qasi.egg-info/requires.txt
+qasi.egg-info/top_level.txt
+tests/test_core.py
