@@ -1,0 +1,9 @@
+vbi_evaluate_blogs/__init__.py,sha256=5uIcFh3tbWCBZFrJsxcgTC6XqP9w2FWCo7UpJArBqro,228
+vbi_evaluate_blogs/check_fact_module.py,sha256=yVTnSufbZ65AlCqv1lEXPmmWF3my9O9oMyS8ZqVjpzs,10386
+vbi_evaluate_blogs/check_image_module.py,sha256=lBmHYdh9qG2QgIXmhc9krMg-ezgzJZ2hDjigaUOQMFk,2572
+vbi_evaluate_blogs/check_text_module.py,sha256=cE2dhkaDGzUx5hzWHBFl5GyidcxPFgeMtG1kTrK5rEA,45960
+vbi_evaluate_blogs/extract_module.py,sha256=QgrZXvBTkO19AmnjpD9J-jPWN1-xnN_Fub2LyDOiRa8,7409
+vbi_evaluate_blogs-0.1.5.dist-info/METADATA,sha256=3zCsHjMhafs0T9eivzvGAIQATe957kWofMNl-vSCUpw,5012
+vbi_evaluate_blogs-0.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+vbi_evaluate_blogs-0.1.5.dist-info/top_level.txt,sha256=rZ4mNvvgshWNktKmfJQWHn_-nookbBpHoYMqGWmk71Y,19
+vbi_evaluate_blogs-0.1.5.dist-info/RECORD,,
