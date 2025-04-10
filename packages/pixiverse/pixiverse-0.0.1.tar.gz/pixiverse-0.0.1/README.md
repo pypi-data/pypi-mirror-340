@@ -1,0 +1,157 @@
+# pixiverse
+
+
+Pixiverse is a versatile image processing library designed to seamlessly handle various image formats. It includes useful utility functions for efficient image manipulation and transformation.
+
+------
+
+## Installation
+
+Install Pixiverse easily using pip:
+
+```bash
+pip install pixiverse
+```
+
+------
+
+## Main Features
+
+### 1. Image Reading and Writing
+
+Pixiverse allows users to effortlessly read from and write to diverse image formats including HEIF, AVIF, WebP, PNG, JPG, among others.
+
+**Reading Images**
+
+```python
+from pixiverse import imread
+
+img = imread("image.heic")
+```
+
+**Writing Images**
+
+```python
+from pixiverse import imwrite
+
+imwrite("output.avif", img)
+```
+
+**Supported Formats:**
+
+- HEIF/HEIC
+- AVIF
+- WebP
+- PNG
+- JPG/JPEG
+- BMP
+- PGM
+
+------
+
+### 2. Image Utility Functions
+
+Pixiverse includes a set of practical functions for creating and modifying images.
+
+**Create Blank Image**
+
+```python
+from pixiverse import from_blank
+
+blank_img = from_blank(width=500, height=500, BGR=(255, 255, 255))
+```
+
+**Load Image from URL**
+
+```python
+from pixiverse import from_url
+
+img = from_url("https://example.com/image.png")
+```
+
+**PIL Image Conversion**
+
+```python
+from pixiverse import from_pil, to_pil
+
+pil_img = to_pil(img)
+opencv_img = from_pil(pil_img)
+```
+
+**Base64 Encoding and Decoding**
+
+```python
+from pixiverse import to_base64, from_base64
+
+b64str = to_base64(img)
+img_decoded = from_base64(b64str)
+```
+
+**Resize Images**
+
+```python
+from pixiverse import resize
+
+resized_img = resize(img, width=200)
+```
+
+**Overlay Images**
+
+```python
+from pixiverse import overlay
+
+overlay_img = overlay(bg_img, fg_img_with_alpha)
+```
+
+**Image Padding**
+
+```python
+from pixiverse import center_pad, letterbox
+
+padded_img = center_pad(img, width=500, height=500)
+letterboxed_img = letterbox(img, value=0)
+```
+
+**Concatenate Images**
+
+```python
+from pixiverse import hconcat, vconcat
+
+horizontal_img = hconcat(img1, img2)
+vertical_img = vconcat(img1, img2)
+```
+
+**Edge Detection**
+
+```python
+from pixiverse import canny
+
+edges_img = canny(img)
+```
+
+------
+
+## Usage Examples
+
+Here is an example demonstrating image loading, resizing, and saving:
+
+```python
+from pixiverse import imread, imwrite, resize
+
+img = imread("input.heic")
+resized_img = resize(img, width=1024)
+imwrite("output.png", resized_img)
+```
+
+Another example illustrates fetching an image from a URL and encoding it to Base64:
+
+```python
+from pixiverse import from_url, to_base64
+
+img = from_url("https://example.com/photo.jpg")
+b64_string = to_base64(img)
+```
+
+------
+
+Enhance your image processing workflow effortlessly with Pixiverse.

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pixiverse"
+version = "0.0.1"
+description = "📸 Pixiverse: A lightweight, intuitive library for reading, processing, and saving images in all popular formats—effortlessly."
+readme = "README.md"
+license = { text = "MIT" }
+keywords = [
+    "python",
+    "opencv",
+    "heif",
+    "heic",
+    "avif",
+    "pillow"
+]
+authors = [
+    { name = "spring", email = "springnode@gmail.com" }
+]
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "opencv-python",
+    "pillow",
+    "pillow_heif",
+    "pillow-avif-plugin"
+]
+[project.urls]
+Homepage = "https://github.com/VisNViz/pixiverse"
+Issues = "https://github.com/VisNViz/pixiverse/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pixiverse"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["*.pyc", "*.pyo", "*.so", "*.pyd", "__pycache__"]
