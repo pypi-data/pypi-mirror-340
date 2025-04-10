@@ -1,0 +1,10 @@
+dekprompt-0.1.5.dist-info/METADATA,sha256=ZRxlK27FQJwi2kKrDxansoF8suGQEbP4fJMOVNVD-EE,301
+dekprompt-0.1.5.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+dekprompt-0.1.5.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+dekprompt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dekprompt/cfg/__init__.py,sha256=LlSpoxhI3iBwOwJJqB78suvlk5pZbjL-r-tAtj-jSG8,2849
+dekprompt/func.py,sha256=46_yll_70znPp2VbjOE7AyOq_3sf0KhrKsvbtVmhR50,1692
+dekprompt/prompt.py,sha256=v4O60wUdTT9FuX5xHiSO6mWbOfZ83ac4YEsgp7MEPQs,2866
+dekprompt/unit.py,sha256=xGd53RpYisgHSci76WnKvgXJ1yrpfEfm7BQ1nUZ6gqQ,4556
+dekprompt/utils/__init__.py,sha256=rGEGij2RJfymJaYyea6APEHd95ZRv-D30kfr0vP3Yqo,1001
+dekprompt-0.1.5.dist-info/RECORD,,
