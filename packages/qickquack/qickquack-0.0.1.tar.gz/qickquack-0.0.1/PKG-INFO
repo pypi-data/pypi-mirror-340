@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: qickquack
+Version: 0.0.1
+Summary: Quantum Analog Control Kit QuACK, an add-on for qick
+Author-email: Ellie <esundheim@hmc.edu>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/hrl-labs-clinic-24-25/QuACK
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# QICK QuACK
+
+QuACK (**Qu**antum **A**nalog **C**ontrol **K**it) is a project written by students at Harvey Mudd College for HRL Laborartories, LLC as part of the HMC Engineering Clinic Program. It extends the open-source qick package to work with a custom Digital-to-Analog Converter (DAC) set-up.
+
+See our website for more details.
