@@ -1,0 +1,12 @@
+combgc.py,sha256=PVcv2ldBiJL5QFxRtJ_gOE_1DHejFo8P-t7PYu5NSB0,14820
+combgc-0.6.9.dist-info/licenses/LICENSE,sha256=fjABiA0IvW5uK2aBMASdXWyXUmkIlRWik2els0HJqqM,1092
+functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+functions/antismash_workflow.py,sha256=H0vg9BGhQ4Nt-Xlpi30IUtmDWAqZLUZcf1A4mxMM3hY,9878
+functions/deepbgc_workflow.py,sha256=sFUw5bjEhaJeyzWfZzHikoCkeUuzJqv39G1ZVPSdca4,2449
+functions/filter.py,sha256=biVPWujnQsRa_QK56TSuVgsX2y2O2NcUj3WZvm3EEig,13072
+functions/gecco_workflow.py,sha256=8N6SRhkSWK-fBZZ29BTCyxjwaQC0hATuDC49BDJ85sI,3260
+combgc-0.6.9.dist-info/METADATA,sha256=j1m_6-YmBML-WR_JcTBJViTHCNVqNhGpR4eJ9xvtuHA,3145
+combgc-0.6.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+combgc-0.6.9.dist-info/entry_points.txt,sha256=9VEivkJZ2q0l4b_5lz9WjRlzeIY2EPiR5NsbzBhmjCE,39
+combgc-0.6.9.dist-info/top_level.txt,sha256=2jgY2g75fW9kadDX0NVJjiPaHDBsXQ7ypUEXiBCYPG8,17
+combgc-0.6.9.dist-info/RECORD,,
