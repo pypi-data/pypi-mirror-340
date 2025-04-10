@@ -1,0 +1,9 @@
+README.md
+setup.py
+Eliza/__init__.py
+Eliza/main.py
+elizaquant.egg-info/PKG-INFO
+elizaquant.egg-info/SOURCES.txt
+elizaquant.egg-info/dependency_links.txt
+elizaquant.egg-info/requires.txt
+elizaquant.egg-info/top_level.txt
