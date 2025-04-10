@@ -1,0 +1,95 @@
+# SincPro Logger
+
+A structured logging module for the SincPro framework, built on top of `structlog` for enhanced logging capabilities.
+
+## Features
+
+- Structured logging with JSON and console output formats
+- Automatic timestamp and log level inclusion
+- File and line number tracking
+- Configurable log levels (DEBUG, INFO)
+- Context binding for additional metadata
+- Type-safe logging interface
+
+## Installation
+
+```bash
+pip install sincpro-logger
+```
+
+## Usage
+
+### Basic Setup
+
+```python
+from sincpro_logger import create_logger
+
+# Create a logger instance
+logger = create_logger("my_app")
+
+# Log messages
+logger.info("Application started")
+logger.debug("Processing data", data={"id": 123})
+logger.error("Failed to process request", error="Connection timeout")
+```
+
+### Context Binding
+
+```python
+# Add context to all subsequent logs
+logger.bind(user_id=123, request_id="abc123").info("User action")
+
+# Remove context
+logger.unbind("user_id").info("Context removed")
+```
+
+### Log Levels
+
+The logger supports the following log levels:
+- `debug`
+- `info`
+- `warning`
+- `error`
+- `exception`
+- `critical`
+
+### Configuration
+
+The logger is automatically configured based on the framework settings. You can check the current log level:
+
+```python
+from sincpro_logger import is_logger_in_debug
+
+if is_logger_in_debug():
+    print("Logger is in debug mode")
+```
+
+## Architecture
+
+The module follows clean architecture principles with:
+
+- **Domain Layer**: Core logging functionality (`LoggerProxy`)
+- **Application Layer**: Configuration and logger creation
+- **Infrastructure Layer**: Integration with `structlog` and logging system
+
+## Development
+
+### Requirements
+
+- Python 3.8+
+- structlog
+- typing-extensions
+
+### Testing
+
+```bash
+pytest tests/
+```
+
+## License
+
+[Your License Here]
+
+## Contributing
+
+[Your Contributing Guidelines Here]
