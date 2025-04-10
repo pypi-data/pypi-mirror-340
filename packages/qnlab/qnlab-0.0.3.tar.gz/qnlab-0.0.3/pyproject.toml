@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "qnlab"
+version = "0.0.3"
+authors = [
+  { name="Hiroki Hamaguchi", email="hari64boli64@gmail.com" },
+]
+description = "L-BFGS variants for academic research"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Documentation = "https://qnlab.readthedocs.io/"
+Repository = "https://github.com/HirokiHamaguchi/qnlab"
+Issues = "https://github.com/HirokiHamaguchi/qnlab/issues"
+
+[tool.hatch.version]
+path = "qnlab/__init__.py"
+
+[tool.hatch.build]
+sources = ["qnlab", "README.md", "LICENSE"]
+exclude = [
+    "test",
+    "doc",
+    "submodules",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["qnlab"]
+
+[tool.pydocstyle]
+convention = "google"
+add-ignore = ["D100", "D104"]

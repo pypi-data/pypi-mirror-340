@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: qnlab
+Version: 0.0.3
+Summary: L-BFGS variants for academic research
+Project-URL: Documentation, https://qnlab.readthedocs.io/
+Project-URL: Repository, https://github.com/HirokiHamaguchi/qnlab
+Project-URL: Issues, https://github.com/HirokiHamaguchi/qnlab/issues
+Author-email: Hiroki Hamaguchi <hari64boli64@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# qnlab
+
+https://pypi.org/project/qnlab/
+
+qnlab is a Python package that provides an implementation of the L-BFGS optimization algorithm.
+
+## Documentation
+
+https://docs.readthedocs.com/platform/stable/tutorial/
+
+```bash
+docformatter --in-place --style=google --recursive qnlab/
+```
+
+## References
+
+This project is partially inspired by the following L-BFGS-related repositories.
+Thanks to the developers of these projects.
+
+* [DirL-BFGS](https://github.com/ashkansl/DirL-BFGS): Direct L-BFGS method using a low-rank plus diagonal inverse Hessian approximation.
+* [LBFGSpp](https://github.com/yixuan/LBFGSpp): Header-only C++ library for L-BFGS and L-BFGS-B algorithms.
+* [liblbfgs](https://github.com/chokkan/liblbfgs): C library implementing the L-BFGS optimization method.
+* [mL-BFGS](https://github.com/yuehniu/mL-BFGS?tab=readme-ov-file): Momentum-based L-BFGS for distributed large-scale neural network training.
+* [paper-regularized-qn-benchmark](https://github.com/dmsteck/paper-regularized-qn-benchmark): Regularized L-BFGS approach for large-scale nonconvex minimization.
+* [py-owlqn](https://github.com/samson-wang/py-owlqn.git): Python implementation of the OWL-QN optimization algorithm with a logistic regression example.
+* [pylbfgs-dedupeio](https://github.com/dedupeio/pylbfgs): Python/Cython wrapper for the liblbfgs library.
+* [pylbfgs-larsmans](https://github.com/larsmans/pylbfgs): Alternative Python/Cython wrapper for the liblbfgs library.
+* [python_lbfgsb](https://github.com/avieira/python_lbfgsb): Pure Python implementation of L-BFGS-B, though using a deprecated scipy module.
+
+## License
+
+This project is licensed under the MIT License. (`liblbfgs` is under the MIT License as well).
+
+See the [LICENSE](LICENSE) file for details.
