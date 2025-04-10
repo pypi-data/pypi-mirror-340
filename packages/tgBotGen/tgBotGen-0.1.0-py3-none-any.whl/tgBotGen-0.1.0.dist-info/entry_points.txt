@@ -1,0 +1,2 @@
+[console_scripts]
+tg-bot-init = tgBotGen.scaffold:run_scaffold
