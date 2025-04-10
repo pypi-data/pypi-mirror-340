@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+colab_pdf_viewer.egg-info/PKG-INFO
+colab_pdf_viewer.egg-info/SOURCES.txt
+colab_pdf_viewer.egg-info/dependency_links.txt
+colab_pdf_viewer.egg-info/requires.txt
+colab_pdf_viewer.egg-info/top_level.txt
+pdf_viewer/__init__.py
