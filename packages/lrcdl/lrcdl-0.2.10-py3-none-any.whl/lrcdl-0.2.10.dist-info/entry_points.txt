@@ -1,0 +1,3 @@
+[console_scripts]
+lrcdl=lrcdl.cli:lrcdl
+
