@@ -1,0 +1,10 @@
+ncflag/__init__.py,sha256=HkcEtmldEeYcxA8oc6S1_iIZnjZQ6nGd_NdEqKjOX_8,47
+ncflag/__main__.py,sha256=Huz0dExiaH0XTMLhfe3skkFD9-VH7ZUiWMbDR_J8TIY,28
+ncflag/cli.py,sha256=X7uToHO17xXiKbZGhcMb1C8yqPYqAR128DYfmkDgUMg,2899
+ncflag/flag_wrapper.py,sha256=xBpmKhbW74kXlfd8BR5gJz5sNZAOFmHppDpNxe2v2sA,16224
+ncflag-0.3.3.dist-info/LICENSE,sha256=FR4g-DHkTR6Oj8-ahKLmNZ-587K6c28teb2YpAvJ2pk,1072
+ncflag-0.3.3.dist-info/METADATA,sha256=frIilzTxYX6uANKmN2b9Jarl07DsZV3CWOjbyVlF9VU,4092
+ncflag-0.3.3.dist-info/WHEEL,sha256=pxeNX5JdtCe58PUSYP9upmc7jdRPgvT0Gm9kb1SHlVw,109
+ncflag-0.3.3.dist-info/entry_points.txt,sha256=x0a8kS3nL4G1Z7dVCEWoTkBx9PIZLbizbbQgMh5NEa4,42
+ncflag-0.3.3.dist-info/top_level.txt,sha256=vJ5k7FmRA3WhJM4ocERFAybPnWwwYm-Lad8-JTuASRk,7
+ncflag-0.3.3.dist-info/RECORD,,
