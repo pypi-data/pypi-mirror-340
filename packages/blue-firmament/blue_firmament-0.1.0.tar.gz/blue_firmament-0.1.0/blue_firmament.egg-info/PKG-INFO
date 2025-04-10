@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: blue_firmament
+Version: 0.1.0
+Summary: A python backend framework
+Author-email: Lan_zhijiang <lanzhijiang@foxmail.com>
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: structlog<26.0.0,>=25.2.0
+Requires-Dist: pyjwt<3.0.0,>=2.10.1
+Requires-Dist: uvicorn<0.35.0,>=0.34.0
+Requires-Dist: postgrest-py<0.11.0,>=0.10.6
+Requires-Dist: setuptools<79.0.0,>=78.1.0
+Provides-Extra: docs
+Requires-Dist: sphinx>=4.0.0; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "docs"
+Requires-Dist: esbonio>=0.12.0; extra == "docs"
+
+# Blue Firmament
+
+A backend framework for Python applications.
+
+## Installation
+
+```bash
+pip install blue-firmament
+```
+
+## Usage
+
+```python
+import blue_firmament
+
+# Add usage examples here
+```
+
+## Documentation
+
+To build the documentation:
+
+```bash
+# Install documentation dependencies
+pip install -e ".[docs]"
+
+# Build the documentation
+cd docs
+make html
+```
+
+After building, the documentation will be available in `docs/_build/html`.
+
+## License
+
+MIT

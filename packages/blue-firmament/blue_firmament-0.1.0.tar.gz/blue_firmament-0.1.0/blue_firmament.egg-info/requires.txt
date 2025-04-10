@@ -1,0 +1,10 @@
+structlog<26.0.0,>=25.2.0
+pyjwt<3.0.0,>=2.10.1
+uvicorn<0.35.0,>=0.34.0
+postgrest-py<0.11.0,>=0.10.6
+setuptools<79.0.0,>=78.1.0
+
+[docs]
+sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
+esbonio>=0.12.0
