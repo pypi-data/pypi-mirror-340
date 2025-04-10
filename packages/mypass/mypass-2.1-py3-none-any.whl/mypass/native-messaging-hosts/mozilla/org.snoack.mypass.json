@@ -1,0 +1,9 @@
+{
+  "name": "org.snoack.mypass",
+  "description": "A secure password manager with command line interface",
+  "path": "/usr/bin/mypass",
+  "type": "stdio",
+  "allowed_extensions": [
+    "mypass@snoack.addons.mozilla.org"
+  ]
+}
