@@ -1,0 +1,14 @@
+table:
+  path: "/Users/shixiaorong/Desktop/xiyan_table_mcp_server/hongqi.csv" 
+  encoding: "utf-8"     
+  preview_rows: 20       
+
+model:
+  name: "pre-adaption"
+  api_key: "Bearer sk-e70e4d725cbf4ce1a20a375db69dd1ef"
+  url: "https://poc-dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation"
+  temperature: 0.1
+
+server:
+  name: "xiyan-table"    
+  version: "0.1.0"   
