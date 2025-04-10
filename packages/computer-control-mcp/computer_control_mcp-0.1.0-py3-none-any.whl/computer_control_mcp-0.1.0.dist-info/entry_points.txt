@@ -1,0 +1,2 @@
+[console_scripts]
+computer-control-mcp = computer_control_mcp.__main__:main
