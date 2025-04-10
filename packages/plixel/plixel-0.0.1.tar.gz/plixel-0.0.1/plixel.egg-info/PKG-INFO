@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: plixel
+Version: 0.0.1
+Summary: A python package for data analysis and visualization
+Author: Bonu Krishna Chaitanya
+Author-email: Bonu Krishna Chaitanya <bkc14042005@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/XChaitanyaX/plixel
+Project-URL: Issues, https://github.com/XChaitanyaX/plixel/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE.md
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: setuptools
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+
+# A simple Automation tool for data analysis
+![Python Tests](https://github.com/XChaitanyaX/plixel/actions/workflows/python-package.yml/badge.svg)
+
+- Still in development stage
+- Should help in analysing certain data-sheets, generating reports, graphs, etc.
+- Main focus is on plotting graphs.
+- More features will be added in future.
+- This is a simple package, not a full fledged software.
+
+# How to contribute
+- Fork the repository
+- Clone the repository
+- Create a new branch
+- Make changes
+- Push changes to your fork
+- Create a pull request, make sure to give a proper description of changes made by you.
+- check [contributing.md](contributing.md) for more details

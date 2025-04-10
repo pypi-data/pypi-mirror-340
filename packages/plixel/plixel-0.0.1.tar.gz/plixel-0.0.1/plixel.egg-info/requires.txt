@@ -1,0 +1,5 @@
+pandas
+openpyxl
+setuptools
+matplotlib
+seaborn

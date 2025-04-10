@@ -1,0 +1,15 @@
+LICENCE.md
+README.md
+pyproject.toml
+setup.py
+plixel/CsvAnalyser.py
+plixel/SheetAnalyser.py
+plixel/__init__.py
+plixel.egg-info/PKG-INFO
+plixel.egg-info/SOURCES.txt
+plixel.egg-info/dependency_links.txt
+plixel.egg-info/requires.txt
+plixel.egg-info/top_level.txt
+tests/__init__.py
+tests/test_SheetAnalyser.py
+tests/verify.py
