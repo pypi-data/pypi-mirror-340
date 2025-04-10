@@ -1,0 +1,10 @@
+netdots/__init__.py,sha256=euHdiO7HgPJc3BVBoGJmMD8HjO5wT6gTkHwdVKGcwO0,402
+netdots/api_client.py,sha256=NF-9XGAIDnbi7G5NGL6c7vMUIPJJYZ9r5sLogaEdgkA,2363
+netdots/integrations/__init__.py,sha256=VzOCOrXObBZKuc6eq1B4let6oFB-O_6u9dD38VjW2yU,219
+netdots/integrations/integrations.py,sha256=CLPK0buSuWKRlu3DzGFYWhS-ePUqCGf5VzVc3X6OF1M,294
+netdots/integrations/jira.py,sha256=B8UQkBs8rjlypre7F2RggFRsLEXZJes1gS0l8XNN5-k,441
+netdots/integrations/skype.py,sha256=qJwkXhpMSoRbzX4OOm7VuwdAOdcRjrAKml-6zyUzGhs,531
+netdots-0.1.11.dist-info/METADATA,sha256=ci-pSw4tc7ZpBL-MobQ5soo7HENo4WV4un3dzFDocoo,418
+netdots-0.1.11.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+netdots-0.1.11.dist-info/top_level.txt,sha256=EbKT4OGn6Z38q0h0h4fROrbpZ8jthztlgS3TZ3Ec2kc,8
+netdots-0.1.11.dist-info/RECORD,,
