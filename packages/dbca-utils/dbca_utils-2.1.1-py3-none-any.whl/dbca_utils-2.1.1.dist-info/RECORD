@@ -1,0 +1,9 @@
+dbca_utils-2.1.1.dist-info/METADATA,sha256=JmPC1pfun2VvaexHhD95dtr_pK95WVVBifPNpMYu4IU,3944
+dbca_utils-2.1.1.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+dbca_utils-2.1.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+dbca_utils-2.1.1.dist-info/licenses/LICENSE,sha256=hQNdSQ5JD3TmzgScnDLFrwFybIj5bZgwHXXoz4sDX-w,10801
+dbca_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbca_utils/middleware.py,sha256=7hVhwuSms5-YtQrwM1X4mrJhLTp4m0KL6nuzW2_Dq_M,6569
+dbca_utils/models.py,sha256=tb-_dxYXbh7pT_q1qo1pC4AKCX7wq8nq2k7anrY6MNI,3036
+dbca_utils/utils.py,sha256=MTGzhljgIgUDR054WGkwgvWMrjg446393Gz43WvwsFA,2670
+dbca_utils-2.1.1.dist-info/RECORD,,
