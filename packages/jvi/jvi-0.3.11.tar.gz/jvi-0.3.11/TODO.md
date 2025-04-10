@@ -1,0 +1,4 @@
+# TODO
+
+- gstreamer支持
+
