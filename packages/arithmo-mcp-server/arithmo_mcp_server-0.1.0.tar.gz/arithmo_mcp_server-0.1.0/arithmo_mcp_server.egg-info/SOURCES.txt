@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+arithmo_mcp_server/__init__.py
+arithmo_mcp_server/calculator.py
+arithmo_mcp_server/server.py
+arithmo_mcp_server.egg-info/PKG-INFO
+arithmo_mcp_server.egg-info/SOURCES.txt
+arithmo_mcp_server.egg-info/dependency_links.txt
+arithmo_mcp_server.egg-info/entry_points.txt
+arithmo_mcp_server.egg-info/requires.txt
+arithmo_mcp_server.egg-info/top_level.txt
