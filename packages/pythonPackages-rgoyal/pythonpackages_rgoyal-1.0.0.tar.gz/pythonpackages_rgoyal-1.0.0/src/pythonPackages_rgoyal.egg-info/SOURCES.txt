@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/calculator/__init__.py
+src/calculator/main.py
+src/calculator/operations.py
+src/pythonPackages_rgoyal.egg-info/PKG-INFO
+src/pythonPackages_rgoyal.egg-info/SOURCES.txt
+src/pythonPackages_rgoyal.egg-info/dependency_links.txt
+src/pythonPackages_rgoyal.egg-info/entry_points.txt
+src/pythonPackages_rgoyal.egg-info/requires.txt
+src/pythonPackages_rgoyal.egg-info/top_level.txt
