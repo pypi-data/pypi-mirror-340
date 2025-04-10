@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: create-daca
+Version: 0.1.0
+Summary: A UV-based template for DACA-style pub/sub messaging projects
+Author-email: Muhammad Junaid Shaukat <mr.junaidshaukat@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.10
