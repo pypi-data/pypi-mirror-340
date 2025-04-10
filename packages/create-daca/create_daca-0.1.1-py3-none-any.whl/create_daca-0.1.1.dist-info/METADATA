@@ -1,0 +1,179 @@
+Metadata-Version: 2.4
+Name: create-daca
+Version: 0.1.1
+Summary: A UV-based template for DACA-style pub/sub messaging projects
+Author-email: Muhammad Junaid Shaukat <mr.junaidshaukat@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Create Daca
+
+**Template with Prebuilt Chat Agent, Memory Agent built using OpenAI Agents SDK, Event-Driven Communication, Distributed Runtime, and Simplicity at its core.**
+
+> **Note**: <span style="color: orange;">This is an educational and experimental template designed to explore agentic systems with Dapr, UV, and an agent engine like OpenAI Agents SDK. Use it to learn and experiment!</span>
+
+A UV-based template for **developing and deploying agentic systems**—autonomous, AI-driven agents powered by a **distributed runtime foundation** with Dapr. Featuring a **Chat Agent** and a **Memory Agent**, built with the OpenAI Agents SDK, this package offers a simple, flexible base for agent-driven projects. It works with any agent engine (e.g., LangGraph, CrewAI, Dapr Agents, or pure Python) and scales from local tinkering to cloud deployment. Dive into the code below to see how it works!
+
+---
+
+## Quick Start
+
+1. **Install**:
+   ```bash
+   uvx create-daca my-new-project
+   cd my-new-project
+   ```
+
+2. **Run** (after setting `GEMINI_API_KEY` in `.env` files—see below):
+   ```bash
+   dapr init
+
+   cd agent_memory_service && uv sync && uv add openai-agents && dapr run --app-id agent-memory-service --app-port 8001 --dapr-http-port 3501 --resources-path ../components -- uv run uvicorn main:app --reload &
+   
+   cd ../chat_service && uv sync && dapr run --app-id chat-service --app-port 8010 --dapr-http-port 3500 --resources-path ../components -- uv run uvicorn main:app --reload
+   ```
+
+3. **Chat**:
+   - Initialize:
+     ```bash
+     curl -X POST http://localhost:8001/memories/junaid/initialize -H "Content-Type: application/json" -d '{"name": "Junaid", "preferred_style": "formal", "user_summary": "Junaid is a new user."}'
+     ```
+   - Chat:
+     ```bash
+     curl -X POST http://localhost:8010/chat/ -H "Content-Type: application/json" -d '{"user_id": "junaid", "text": "Hello"}'
+     ```
+
+---
+
+## What It Offers
+- **Chat Agent**: LLM-powered conversations with event publishing.
+- **Memory Agent**: Dynamic memory and insights via LLM.
+- **Event-Driven**: Async collaboration between agents.
+- **Distributed Runtime**: Dapr for resilience and scale.
+- **Simple & Flexible**: UV-managed, works with any agent engine.
+- **Educational**: Learn agentic design with transparent code.
+
+Derived from [Step 7 of Panaversity’s DACA series](https://github.com/panaversity/learn-agentic-ai/tree/main/01_openai_agents/17_daca_local_dev).
+
+---
+
+## How to Use It
+1. **Install**:
+   ```bash
+   uvx create-daca my-new-project
+   cd my-new-project
+   ```
+
+2. **Set Up Environment**:
+   ```bash
+   echo "GEMINI_API_KEY=your-api-key" > chat_service/.env
+   echo "GEMINI_API_KEY=your-api-key" > agent_memory_service/.env
+   ```
+
+3. **Run Locally**:
+   - Ensure Dapr is initialized (`dapr init`) and Redis runs at `localhost:6379`.
+   - Memory Agent:
+     ```bash
+     cd agent_memory_service
+     uv venv
+     source .venv/bin/activate
+     uv sync
+     uv add openai-agents
+     dapr run --app-id agent-memory-service --app-port 8001 --dapr-http-port 3501 --resources-path ../components -- uv run uvicorn main:app --host 0.0.0.0 --port 8001 --reload
+     ```
+   - Chat Agent (new terminal):
+     ```bash
+     cd ../chat_service
+     uv venv
+     source .venv/bin/activate
+     uv sync
+     dapr run --app-id chat-service --app-port 8010 --dapr-http-port 3500 --resources-path ../components -- uv run uvicorn main:app --host 0.0.0.0 --port 8010 --reload
+     ```
+
+4. **Test**:
+   - Initialize:
+     ```bash
+     curl -X POST http://localhost:8001/memories/junaid/initialize -H "Content-Type: application/json" -d '{"name": "Junaid", "preferred_style": "formal", "user_summary": "Junaid is a new user."}'
+     ```
+   - Chat:
+     ```bash
+     curl -X POST http://localhost:8010/chat/ -H "Content-Type: application/json" -d '{"user_id": "junaid", "text": "Hello"}'
+     ```
+
+5. **Deploy**: Swap Redis for a cloud broker in `components/` and deploy.
+
+---
+
+## Core Breakdown & Code Highlights
+Here’s how the agents work:
+
+### Chat Agent (`chat_service/`)
+- **Role**: Handles user input, publishes events.
+- **Key Code** (`main.py`):
+  ```python
+  async def publish_conversation_event(user_id: str, session_id: str, user_text: str, reply_text: str, dapr_port: int = 3500):
+      dapr_url = f"http://localhost:{dapr_port}/v1.0/publish/pubsub/conversations"
+      event_data = {"user_id": user_id, "session_id": session_id, "event_type": "ConversationUpdated", "user_message": user_text, "assistant_reply": reply_text}
+      async with httpx.AsyncClient() as client:
+          response = await client.post(dapr_url, json=event_data)
+          response.raise_for_status()
+
+  @app.post("/chat/")
+  async def chat(message: Message):
+      chat_agent = Agent(name="ChatAgent", instructions="...", tools=[get_current_time], model=model)
+      result = await Runner.run(chat_agent, input=message.text, run_config=config)
+      await publish_conversation_event(message.user_id, session_id, message.text, result.final_output)
+      return Response(user_id=message.user_id, reply=result.final_output, metadata=Metadata(session_id=session_id))
+  ```
+  - **How**: Processes input with OpenAI Agents SDK, sends events via Dapr Pub/Sub.
+
+### Memory Agent (`agent_memory_service/`)
+- **Role**: Updates history, generates insights.
+- **Key Code** (`main.py`):
+  ```python
+  async def generate_user_summary(user_id: str, history: list[dict]) -> str:
+      summary_agent = Agent(name="SummaryAgent", instructions="Generate a concise summary...", model=model)
+      history_text = "\n".join([f"{entry['role']}: {entry['content']}" for entry in history[-5:]])
+      result = await Runner.run(summary_agent, input=history_text, run_config=config)
+      return result.final_output
+
+  @app.post("/conversations")
+  async def handle_conversation_updated(event: dict):
+      event_data = event.get("data", {})
+      if event_data.get("event_type") == "ConversationUpdated":
+          history = await get_conversation_history(event_data["session_id"])
+          history.extend([{"role": "user", "content": event_data["user_message"]}, {"role": "assistant", "content": event_data["assistant_reply"]}])
+          await set_conversation_history(event_data["session_id"], history)
+          metadata = await get_user_metadata(event_data["user_id"])
+          metadata["user_summary"] = await generate_user_summary(event_data["user_id"], history)
+          await set_user_metadata(event_data["user_id"], metadata)
+      return {"status": "SUCCESS"}
+  ```
+  - **How**: Subscribes to events, updates Dapr state, enriches metadata with LLM.
+
+### Dapr Components (`components/`)
+- **Role**: Enables distributed runtime.
+- **Files**: `pubsub.yaml`, `statestore.yaml`, `subscriptions.yaml` (Redis-based).
+
+---
+
+## Why Use This?
+- **Prebuilt Agents**: Chat and Memory Agents ready to go.
+- **Event-Driven**: Async collaboration via Dapr Pub/Sub.
+- **Distributed**: Dapr runtime for resilience.
+- **Simple**: UV and minimal setup.
+- **Flexible**: Any agent engine, any deployment.
+- **Learn**: Code-first exploration of agentic systems.
+
+Start with `uvx create-daca`! For more, see [DACA Step 7](https://github.com/panaversity/learn-agentic-ai/tree/main/01_openai_agents/17_daca_local_dev).
+
+---
+
+## Requirements
+- Dapr CLI v1.15+ (`dapr init`)
+- Docker (Redis)
+- Python 3.12+
+- UV
+- Gemini API Key
