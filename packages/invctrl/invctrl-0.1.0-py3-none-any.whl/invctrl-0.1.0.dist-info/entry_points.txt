@@ -1,0 +1,2 @@
+[console_scripts]
+invctrl = invctrl.main:run
