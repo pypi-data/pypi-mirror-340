@@ -1,0 +1,10 @@
+jupyter_smart_on_fhir/__init__.py,sha256=39CwmemFeFzkWEGztIkXUogqRzmHi0Td6PruBEKKeB8,225
+jupyter_smart_on_fhir/auth.py,sha256=u-g658Nhpf7dvS7eF2dPOMPsghBWmvFpE9Tt2qqLKaQ,3240
+jupyter_smart_on_fhir/hub_service.py,sha256=FcB8Sujd_4eMdbghTzw2Y2GWYVJ5aaAtxqv2oKActJI,6092
+jupyter_smart_on_fhir/server_extension.py,sha256=tvxuYy-jZl0Wy_Emh1Y9MMZTJOH5WteL-ZWkyS_glKM,10346
+jupyter_smart_on_fhir-0.1.0a1.data/data/etc/jupyter/jupyter_server_config.d/jupyter-smart-on-fhir.json,sha256=i_ZIxs2j9HlkbWtca6s-Af4Tk2lrGmw-QW7GMVmMkA8,96
+jupyter_smart_on_fhir-0.1.0a1.dist-info/licenses/LICENSE,sha256=jP0DNV-3NHfHbpKKyf4ILcBeLOx7JQjpNEwwHryAbMM,1515
+jupyter_smart_on_fhir-0.1.0a1.dist-info/METADATA,sha256=hNVfjpxIzRyDuOVE4cqCZdzyvYX6dX3mCRfi70UNpYo,3282
+jupyter_smart_on_fhir-0.1.0a1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+jupyter_smart_on_fhir-0.1.0a1.dist-info/top_level.txt,sha256=eGqz0fw5f75Q7dks5C4sxUCy9j2tbWkfMRp7RmrccRw,22
+jupyter_smart_on_fhir-0.1.0a1.dist-info/RECORD,,
