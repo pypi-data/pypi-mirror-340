@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+CG23016UNO.egg-info/PKG-INFO
+CG23016UNO.egg-info/SOURCES.txt
+CG23016UNO.egg-info/dependency_links.txt
+CG23016UNO.egg-info/requires.txt
+CG23016UNO.egg-info/top_level.txt

@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: CG23016UNO
+Version: 0.1.0
+Summary: Librería para resolver ecuaciones lineales y no lineales
+Author-email: Angel Josue Cardoza Gomez <cg23016@ues.edu.sv>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: license-file
+
+# CG23016UNO
+
+Una libreria de Python para resolver sistemas de ecuaciones lineales y no lineales
+
+## 📦 Instalación
+
+```bash
+pip install CG23016UNO
