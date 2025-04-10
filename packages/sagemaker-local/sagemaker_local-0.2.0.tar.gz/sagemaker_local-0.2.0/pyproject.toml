@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=45"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sagemaker-local"
+version = "0.2.0"
+description = "Some dependencies for running sagemaker local."
+dependencies = [
+  "click",
+  "pyawscron",
+  "pydantic",
+  "pydantic-settings",
+  "sagemaker[local]==2.243",
+  "setuptools",
+  "toml",
+  "typing_extensions"
+]
+
+[project.optional-dependencies]
+local = ["pre-commit"]
+
+[project.scripts]
+sm = "sm:main"
+
+[tool.setuptools.packages.find]

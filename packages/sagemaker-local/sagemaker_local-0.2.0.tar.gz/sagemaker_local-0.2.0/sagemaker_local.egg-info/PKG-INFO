@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: sagemaker-local
+Version: 0.2.0
+Summary: Some dependencies for running sagemaker local.
+Requires-Dist: click
+Requires-Dist: pyawscron
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: sagemaker[local]==2.243
+Requires-Dist: setuptools
+Requires-Dist: toml
+Requires-Dist: typing_extensions
+Provides-Extra: local
+Requires-Dist: pre-commit; extra == "local"
