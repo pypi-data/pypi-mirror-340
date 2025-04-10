@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: niktokenizer
+Version: 0.1.0
+Summary: A simple tokenizer using ascii values
+Author-email: nikhilh <nikhilhadawale95@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/NikhilHadawale/niktokenizer.git
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+**A Simple Package to generate tokens using ascii values**
