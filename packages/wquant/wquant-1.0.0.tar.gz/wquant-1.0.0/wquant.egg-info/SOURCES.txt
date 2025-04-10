@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+wquant.egg-info/PKG-INFO
+wquant.egg-info/SOURCES.txt
+wquant.egg-info/dependency_links.txt
+wquant.egg-info/requires.txt
+wquant.egg-info/top_level.txt
