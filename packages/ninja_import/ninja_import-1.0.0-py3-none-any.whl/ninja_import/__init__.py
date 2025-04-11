@@ -1,0 +1,1 @@
+from ninja_import.ninja_import import ninja_import
