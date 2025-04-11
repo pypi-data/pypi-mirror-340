@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: linear-nonlinear-solver
+Version: 0.1.0
+Summary: Una librería para resolver sistemas de ecuaciones lineales y no lineales.
+Home-page: https://github.com/tu_usuario/linear-nonlinear-solver
+Author: Tu Nombre
+Author-email: tu.email@example.com
+License: UNKNOWN
+Description: # Proyecto de ResoluciÃ³n de Sistemas de Ecuaciones Lineales y No Lineales
+        
+        Este proyecto proporciona una librerÃ­a en Python para resolver sistemas de ecuaciones lineales y no lineales utilizando varios mÃ©todos numÃ©ricos. La librerÃ­a incluye implementaciones de los mÃ©todos de eliminaciÃ³n de Gauss, Gauss-Jordan, Cramer, descomposiciÃ³n LU, Jacobi, Gauss-Seidel y bisecciÃ³n.
+        
+        ## MÃ©todos Implementados
+        
+        - **EliminaciÃ³n de Gauss**: Resuelve sistemas de ecuaciones lineales mediante la eliminaciÃ³n de variables.
+        - **Gauss-Jordan**: ExtensiÃ³n del mÃ©todo de Gauss que transforma la matriz en su forma reducida.
+        - **Cramer**: Utiliza determinantes para resolver sistemas de ecuaciones lineales.
+        - **DescomposiciÃ³n LU**: Descompone una matriz en el producto de una matriz triangular inferior y una matriz triangular superior.
+        - **MÃ©todo de Jacobi**: Un mÃ©todo iterativo para encontrar soluciones de sistemas de ecuaciones lineales.
+        - **MÃ©todo de Gauss-Seidel**: Otro mÃ©todo iterativo que mejora la convergencia respecto al mÃ©todo de Jacobi.
+        - **BisecciÃ³n**: Encuentra raÃ­ces de funciones no lineales en un intervalo dado.
+        
+        ## InstalaciÃ³n
+        
+        Para instalar la librerÃ­a, usar `pip`:
+        
+        ```
+        pip install linear-nonlinear-solver
+        ```
+        
+        ## Uso
+        
+        A continuaciÃ³n se presentan ejemplos de cÃ³mo utilizar algunos de los mÃ©todos disponibles en la librerÃ­a:
+        
+        ### Ejemplo de EliminaciÃ³n de Gauss
+        
+        ```python
+        from linear_nonlinear_solver.gauss import eliminar_gauss
+        
+        # Definir la matriz de coeficientes y el vector de tÃ©rminos independientes
+        A = [[3, 2, -4], [2, 3, 3], [5, -3, 1]]
+        b = [3, 15, 14]
+        
+        # Resolver el sistema
+        solucion = eliminar_gauss(A, b)
+        print(solucion)
+        ```
+        
+        ### Ejemplo de BisecciÃ³n
+        
+        ```python
+        from linear_nonlinear_solver.bisection import biseccion
+        
+        # Definir la funciÃ³n y el intervalo
+        def f(x):
+            return x**3 - x - 2
+        
+        # Encontrar la raÃ­z
+        raiz = biseccion(f, 1, 2)
+        print(raiz)
+        ```
+        
+        ## Pruebas
+        
+        El proyecto incluye pruebas unitarias para cada uno de los mÃ©todos implementados. Puedes ejecutar las pruebas utilizando `pytest`:
+        
+        ```
+        pytest tests/
+        ```
+        
+        ## Licencia
+        
+        Este proyecto estÃ¡ licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para mÃ¡s detalles.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
