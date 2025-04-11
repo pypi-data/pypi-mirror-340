@@ -1,0 +1,21 @@
+[project]
+name = "linear2008"
+version = "0.0.4"
+description = "Linear is your Python-powered Swiss Army knife for coding contests! Designed with ❤️ for competitive programmers, it streamlines your workflow by providing quick access to AtCoder/Codeforces resources, generating code templates, and visualizing rating progress - all from your terminal!"
+authors = [
+    {name = "LinusShyu",email = "awmtft@163.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.32.3",
+    "qrcode>=7.4.2",
+]
+
+[tool.poetry]
+packages = [{include = "linear2008", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
