@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: nexusweb
+Version: 0.1.0
+Summary: A flexible micro web framework with built-in blueprints, API docs, JSON support, and rate limiting.
+Author: Faded
+Author-email: nexusweb@gmail.com
+License: MIT
+Keywords: web framework wsgi nexus
+Dynamic: author
+Dynamic: author-email
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary

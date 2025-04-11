@@ -1,0 +1,5 @@
+setup.py
+nexusweb.egg-info/PKG-INFO
+nexusweb.egg-info/SOURCES.txt
+nexusweb.egg-info/dependency_links.txt
+nexusweb.egg-info/top_level.txt
