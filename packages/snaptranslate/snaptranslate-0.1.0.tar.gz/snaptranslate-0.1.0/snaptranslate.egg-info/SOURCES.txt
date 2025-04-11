@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+snaptranslate.egg-info/PKG-INFO
+snaptranslate.egg-info/SOURCES.txt
+snaptranslate.egg-info/dependency_links.txt
+snaptranslate.egg-info/entry_points.txt
+snaptranslate.egg-info/requires.txt
+snaptranslate.egg-info/top_level.txt
+src/gui/app_icon.jpg
+tests/test_ocr.py
+tests/test_processing.py
+tests/test_translator.py
