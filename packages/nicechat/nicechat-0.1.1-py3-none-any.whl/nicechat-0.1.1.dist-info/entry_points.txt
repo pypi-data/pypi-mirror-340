@@ -1,0 +1,4 @@
+[console_scripts]
+nicechat = nicechat.app:main
+nicechat-test-llm = nicechat.test_llm:main
+

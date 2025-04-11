@@ -1,0 +1,9 @@
+nicechat/test_llm.py,sha256=b302f695cc9592756582fe1eaa014237b4ab238b32b807a818b98d9c00a4e9d3,2844
+nicechat/__init__.py,sha256=2815d331192eea92d86f8e82db6443946d56f7fd8e4fe155db43812e65d9d7b7,84
+nicechat/llm.py,sha256=5b8c0fdf970a575999a9bc563ade71d1299f7a71bf00f5ae701e96cdaf519b36,5732
+nicechat/app.py,sha256=eb447ad588a60808bdb58aec167af8af7046e3de32d62f7b6fa685aaa30f2441,6735
+nicechat/markdown_ext.py,sha256=9b63d2ec19768cd7028940cb2aa3545bdf7b7c6d319ae4fcb923736710553314,2027
+nicechat-0.1.1.dist-info/WHEEL,sha256=a77f4251c0f6db962579c616a6b1d7cf825367be8db8f5d245046ce8ff723666,79
+nicechat-0.1.1.dist-info/entry_points.txt,sha256=4018aa2cb21677685a4486070113775f6eed54a439936b21cec3ced928cfd82b,91
+nicechat-0.1.1.dist-info/METADATA,sha256=9a8da06aaa315e669ee68dfce44d7ee7ea315180c898ca82b461912f5c051319,1186
+nicechat-0.1.1.dist-info/RECORD,,

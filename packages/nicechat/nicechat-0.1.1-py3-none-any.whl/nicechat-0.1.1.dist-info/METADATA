@@ -1,0 +1,62 @@
+Metadata-Version: 2.3
+Name: nicechat
+Version: 0.1.1
+Summary: An llm chat gui
+Author: HuangYi
+Author-email: HuangYi <yi.codeplayer@gmail.com>
+Requires-Dist: nicegui>=1.4.21
+Requires-Dist: openai>=1.12.0
+Requires-Dist: anthropic>=0.25.0
+Requires-Dist: latex2mathml>=3.74.0
+Requires-Dist: markdown2>=2.4.10
+Requires-Dist: pywebview>=5.4
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# NiceChat
+
+A rich featured LLM chat UI using [NiceGUI](https://nicegui.io/) and pure python.
+
+https://github.com/user-attachments/assets/066db76c-c17d-41c5-970d-6aea1fe6f354
+
+## Installation
+
+```bash
+uv pip install nicechat
+```
+
+## Features
+
+- Minimal NiceGUI based web interface
+- Markdown rendering with rich format support:
+  - LaTeX math
+  - tables
+  - wavedrom
+  - mermaid
+
+- Small code base, easy to customize
+- MCP support (TODO)
+- Persistent chat history in plain text file
+- Streaming responses
+
+## Usage
+
+### Web Interface
+```bash
+# Web interface (default)
+nicechat
+
+# Native desktop window
+nicechat --native
+
+# Specify a different file to start a new thread
+nicechat --history-file history.json
+```
+
+## Development
+
+```bash
+# Setup environment
+uv venv
+uv pip install -e .
+```
