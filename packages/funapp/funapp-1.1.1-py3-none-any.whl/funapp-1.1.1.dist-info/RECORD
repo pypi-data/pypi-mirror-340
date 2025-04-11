@@ -1,0 +1,10 @@
+funapp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funapp/server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funapp/server/core.py,sha256=wewLY6sHNQHfG1wp3YHlLPXIIbJgAgX4GEsltTmxx8M,1858
+funapp/ui/login.py,sha256=QOKarNuQ9a-QpVPmR3kAdS0EbmFdSKPD-4-UMQTa-hU,2484
+funapp/work/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+funapp/work/quick.py,sha256=5RXrLxuzuOMfIjV7JThl76r23EO_EhAVMS1gosdgt28,300
+funapp-1.1.1.dist-info/METADATA,sha256=hFNcOr7R73zM-sJaaLpwWPKy02ZPO0KX3Bh6n1EFtyU,472
+funapp-1.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+funapp-1.1.1.dist-info/top_level.txt,sha256=WIhSV85A4w5TtBbnobYy5xo42uAPG7r79fLLqwu9GCQ,7
+funapp-1.1.1.dist-info/RECORD,,
