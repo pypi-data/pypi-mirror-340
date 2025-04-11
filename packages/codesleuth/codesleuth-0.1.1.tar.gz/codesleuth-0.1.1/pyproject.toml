@@ -1,0 +1,76 @@
+[project]
+name = "codesleuth"
+version = "0.1.1"
+description = "CodeSleuth is a local-first code search and retrieval tool optimized for LLM integration"
+authors = [
+    {name = "Jack Nam",email = "naminalstack+codesleuth@gmail.com"}
+]
+readme = "README.md"
+packages = [
+    {include = "codesleuth"},
+]
+include = [
+    "LICENSE",
+    "README.md",
+    "pyproject.toml",
+]
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "transformers (>=4.50.2,<5.0.0)",
+    "torch (>=2.6.0,<3.0.0)",
+    "numpy (>=2.2.4,<3.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "tree-sitter (>=0.24.0,<0.25.0)",
+    "pydantic (>=2.11.0,<3.0.0)",
+    "tree-sitter-language-pack (>=0.6.1,<0.7.0)",
+    "faiss-cpu (>=1.10.0,<2.0.0)",
+]
+repository = "https://github.com/thienlnam/SynapseGraph"
+keywords = [
+    "code search",
+    "semantic search",
+    "code retrieval",
+    "local-first",
+    "llm integration",
+    "mlx",
+    "faiss",
+    "embeddings",
+    "tree-sitter",
+    "developer tools",
+    "code understanding",
+    "code intelligence",
+    "code assistant",
+    "apple silicon",
+    "arm optimization",
+    "vector search",
+    "semantic indexing"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.0.0"
+mypy = "^1.15.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+
+[tool.poetry.group.arm]
+optional = true
+
+[tool.poetry.group.arm.dependencies]
+mlx-embedding-models = ">=0.0.11,<0.0.12"
