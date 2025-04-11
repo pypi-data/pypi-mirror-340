@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: antares-python
+Version: 0.1.0
+Summary: Python interface for the Antares simulation software
+Author-email: Juan Sebastian Urrea-Lopez <js.urrea@uniandes.edu.co>
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
