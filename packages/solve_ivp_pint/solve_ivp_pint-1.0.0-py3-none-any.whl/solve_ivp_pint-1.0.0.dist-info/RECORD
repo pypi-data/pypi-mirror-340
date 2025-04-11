@@ -1,0 +1,6 @@
+solve_ivp_pint/__init__.py,sha256=7oQz6WOM3167ZaKFZScBFyFH4nMXPX-vObAtCA-7HVE,142
+solve_ivp_pint/solve_ivp_pint.py,sha256=JAdOiB2eVwdSxoC05HbWkkY4JfJZygufZK6niLQsQwY,4741
+solve_ivp_pint-1.0.0.dist-info/METADATA,sha256=d2duhjpGiuubrmAnpHFf2tJHAom2MkAsR8Oh-N97lH8,14848
+solve_ivp_pint-1.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+solve_ivp_pint-1.0.0.dist-info/licenses/LICENSE,sha256=VwA6wZeWWAONC8FOLN4sEacyYurblTrYFCIIAIzuW9c,11381
+solve_ivp_pint-1.0.0.dist-info/RECORD,,
