@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: FC16004UNO
+Version: 0.1.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Author: RiAlF
+Author-email: tu_correo@ejemplo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
