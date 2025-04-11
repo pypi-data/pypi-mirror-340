@@ -1,0 +1,3 @@
+[console_scripts]
+aigc-solt = aigc_intent_solt.app:main
+

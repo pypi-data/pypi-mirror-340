@@ -1,0 +1,118 @@
+意图识别+路径规划
+![img.png](img.png)
+
+
+### API 调用手册
+接口路径 /multi_question 
+请求方式 POST 
+Content-Type application/json
+
+#### 请求参数
+```json
+{
+  "question": "用户提问内容",
+  "session_id": "会话标识（可选）"
+}
+ ```
+
+- question （必填）：用户输入的问题文本
+- session_id （可选）：用于保持多轮对话的会话ID（建议使用UUID） 成功响应
+```json
+{
+  "answer": "AI生成的回答内容"
+}
+ ```
+ #### 调用示例
+Python 示例
+
+```python
+import requests
+
+url = "http://localhost:5003/multi_question"
+payload = {
+    "question": "如何查询社保？",
+    "session_id": "a6d8fe34-7890-4bcd-823e-1a2b3c4d5e6f"
+}
+
+response = requests.post(url, json=payload)
+print(response.json())
+ ```
+
+JavaScript 示例
+
+```javascript
+fetch('http://localhost:5003/multi_question', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    question: '如何查询社保？',
+    session_id: 'a6d8fe34-7890-4bcd-823e-1a2b3c4d5e6f'
+  })
+})
+.then(response => response.json())
+.then(data => console.log(data));
+ ```
+
+Java 示例
+
+```java
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+
+HttpClient client = HttpClient.newHttpClient();
+String json = "{ \"question\":\"如何查询社保？\", \"session_id\":\"a6d8fe34-7890-4bcd-823e-1a2b3c4d5e6f\" }";
+
+HttpRequest request = HttpRequest.newBuilder()
+    .uri(URI.create("http://localhost:5003/multi_question"))
+    .header("Content-Type", "application/json")
+    .POST(HttpRequest.BodyPublishers.ofString(json))
+    .build();
+
+client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
+    .thenApply(HttpResponse::body)
+    .thenAccept(System.out::println);
+ ```
+```
+ 错误处理
+400 错误
+
+```json
+{
+  "error": "No question provided"
+}
+ ```
+
+解决方案：确保请求体包含 question 参数
+
+500 错误
+
+```json
+{
+  "error": "Internal server error"
+}
+ ```
+
+解决方案：检查服务端日志排查异常
+
+####  Session ID 管理
+1. 首次请求 ：可不传 session_id，服务端会自动创建
+2. 后续请求 ：使用服务端返回的 session_id 保持对话连续性
+3. 建议实现 ：
+```python
+# 生成新 session_id
+import uuid
+new_session_id = str(uuid.uuid4())
+
+# 客户端应持久化存储 session_id（如 localStorage、数据库等）
+ ```
+
+####  注意事项
+1. 建议设置 10 秒超时机制
+2. 中文文本请使用 UTF-8 编码
+3. 生产环境需替换 localhost 为正式域名
+4. session_id 建议在客户端保留至少 24 小时
+5. 测试时可添加 debug 参数查看详细日志： app.run(..., debug=True)
