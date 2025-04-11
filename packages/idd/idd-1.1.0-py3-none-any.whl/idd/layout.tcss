@@ -1,0 +1,44 @@
+Screen {
+    layout: vertical;
+    height: 100%;
+}
+
+TextScrollView {
+    border: solid green;
+}
+
+.row1 {
+    height: 20%;
+}
+
+.row2 {
+    height: 30%;
+}
+
+.diff-asm-reg {
+    height: 10%;
+}
+
+.row3, .row5 {
+    height: 5%;
+}
+
+.row4 {
+    height: 40%;
+}
+
+.base_only_row1 {
+    height: 20%
+}
+
+.base_only_row2 {
+    height: 30%
+}
+
+.base_only_row3 {
+    height: 44%
+}
+
+.base_only_row4 {
+    height: 6%
+}
