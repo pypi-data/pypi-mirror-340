@@ -1,0 +1,58 @@
+Metadata-Version: 2.2
+Name: LoanEligibilityPredictionSystem
+Version: 0.0.5
+Summary: Basic loan eligibilty predictor
+Home-page: 
+Author: Ahriel, Gyanu, Jamie, Sulav, Will
+Author-email: ayoung08@rams.shepherd.edu, gbasne01@rams.shepherd.edu, jkemma01@rams.shepherd.edu, sbista01@rams.shepherd.edu, wneigh01@rams.shelherd.edu
+License: MIT
+Keywords: loan,predictor,eligibilty
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# P-LEPS
+Python Loan Eligibility Prediction System coded in python. With a trained model to help determine whether or not the user qualifies for the loan.
+Written for CIS-487: Software Engineering
+
+
+
+
+
+Change Log 
+==========
+
+0.0.1(2.24.25)
+-------------
+-First Release
+
+0.0.2(2.28.25)
+-------
+-Second Release 
+
+0.0.3(3.17.25)
+-------
+-Third Release
+
+0.0.4(3.31.25)
+-------
+-Fourth Release 
+
+0.0.5(4.9.25)
+-------
+-Final Release
+
