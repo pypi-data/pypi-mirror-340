@@ -1,0 +1,4 @@
+# MANIFEST.in
+include paper_titles.txt
+include failed_downloads.txt
+
