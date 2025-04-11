@@ -1,0 +1,16 @@
+touchmap/__init__.py,sha256=pUkSWtLK3jXDDqS43prhWHozozRv0CohKFnP-HruAps,60
+touchmap/encoder.py,sha256=Vn6NBNnSZMLfM7HoTPusuOsZ4Cz3nlIjJe_gr8baH5w,2274
+touchmap/utils.py,sha256=PdKJ3ehVjk0Gc40uUCyqzT30-01_UN4kGMMbSpENQQk,561
+touchmap/grade1map/__init__.py,sha256=S6k-v2CLYma1NNcPDLfqKiOE1z2vkQOZ39-3HOW0YAo,72
+touchmap/grade1map/binarydict.py,sha256=mXHQgonctiwZkhI709K3J72eVcAkJwdBwVEn9KIpNzg,1780
+touchmap/grade1map/brailledict.py,sha256=udgrO7vykzcHwBlsV9VQNT1Vgz8fgcXVv5y_UpWDo-M,1417
+touchmap/grade1map/core.py,sha256=H22AdLH51CHcmeXNpAm_rmgQc0hI_p2QQ9fM5VrAn0w,1272
+touchmap/grade2map/__init__.py,sha256=EVujDr5zc5rYxNWAafCnv00_2kjQ1od0l2jOpflUges,34
+touchmap/grade2map/binary2dict.py,sha256=Mb1x-MdYsjTXwuu2ueAGEeFxjSSzqUr3zomvPOaedMM,1211
+touchmap/grade2map/braille2dict.py,sha256=8ZsO2LNvaPsQjipwqOZeb0_t80FSZ3ZAjKfuRumgu2I,957
+touchmap/grade2map/core.py,sha256=cEVqUo1yQWW39vHG1xA28sKu3ohzRgwOiHr0enfAm58,1050
+touchmap/grade2map/word_contract_dict.py,sha256=H174uP7pBd9RG0POrAHweZeNfZyC2WRxMQzzy_W7OWc,3362
+touchmap-0.3.5.dist-info/METADATA,sha256=dxbsrOkPs16bIAnJApk0bWjicH7y_Vx9XmEilirsrNo,4277
+touchmap-0.3.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+touchmap-0.3.5.dist-info/licenses/LICENSE,sha256=KdedWUhgVrEWkUZYVpImsDZgjNrA9G4vHq_JafuSyZA,9703
+touchmap-0.3.5.dist-info/RECORD,,
