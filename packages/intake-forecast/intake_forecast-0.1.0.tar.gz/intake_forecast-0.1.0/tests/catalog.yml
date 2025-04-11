@@ -1,0 +1,27 @@
+metadata:
+  version: 1 
+sources:
+
+  test_cyclic_forecast:
+    description: Test cyclic forecast
+    metadata:
+      name: Test cyclic forecast
+      tags:
+        - test
+        - cyclic
+        - forecast
+    driver: zarr_forecast
+    args:
+      urlpath: "file://{{CATALOG_DIR}}/test_%Y%m%dT%H.zarr"
+      cycle: "{{cycle}}"
+      maxstepback: "{{maxstepback}}"
+      cycle_period: 6
+    parameters:
+      cycle:
+        description: model cycle
+        type: datetime
+        default: today
+      maxstepback:
+        description: maximum cycle stepback allowed
+        type: int
+        default: 4

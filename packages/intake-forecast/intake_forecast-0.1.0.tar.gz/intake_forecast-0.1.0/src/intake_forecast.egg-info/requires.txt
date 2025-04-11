@@ -1,0 +1,15 @@
+dask
+gcsfs
+intake
+typer
+xarray
+zarr
+
+[dev]
+coverage
+mypy
+pytest
+ruff
+sphinx
+tox
+twine
