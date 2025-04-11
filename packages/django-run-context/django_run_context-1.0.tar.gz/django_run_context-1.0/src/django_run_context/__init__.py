@@ -1,0 +1,98 @@
+'''
+Created on 10 Apr.,2025
+
+@author: Bernd Wechner
+@status: Production/Stable
+ 
+Provides a simple function that returns the run context that Django finds itself in. 
+The following values are currently supported:
+
+    "runserver_reloader"
+    "runserver_noreloader"
+    "runserver_reloaded"
+    "not runserver"
+    
+To use this just add to your settings.py:
+
+    from django_run_context import get_run_context
+    
+    RUN_CONTEXT = get_run_context()
+
+and then anywhere else in you Django project you can access it:
+
+    import django.conf.settings
+    
+    print(settings.RUN_CONTEXT)
+
+and use it to alter the behaviour of your app based on that context.
+
+The immediate need it addressed was a desire to dump project diagnostics in
+debug mode, in the settings.py. For example a common paradigm I employ:
+
+    if DEBUG:
+        log.debug(f"Django version: {django.__version__}")
+        log.debug(f"Python version: {sys.version}")
+        log.debug(f"Django loaded from: {django.__file__}")
+        log.debug(f"Using Path: {sys.path}")
+        log.debug(f"Process Info: {pinfo()}")
+        log.debug(f"Static root: {STATIC_ROOT}")
+        log.debug(f"Static file dirs: {locals().get('STATICFILES_DIRS', globals().get('STATICFILES_DIRS', []))}")
+        log.debug(f"Installed apps: {INSTALLED_APPS}")
+        log.debug(f"Database: {DATABASES['default']}")
+
+But this is spewed out twice, because by default runserver loads `settings.py` then starts a 
+new instance of runserver that provides a web interface (at http://127.0.0.1:8000 by default) 
+which again loads `settings.py`.
+
+The supervising instance of runserver does not act as a webserver at all, but watches the 
+filesystem for changes and reruns the actual webserver instance. 
+
+So, we can suppress the output under the first instance (the reloader)
+
+```python
+if DEBUG and RUN_CONTEXT != "runserver_reloader":
+    log.debug(f"Django version: {django.__version__}")
+    log.debug(f"Python version: {sys.version}")
+    log.debug(f"Django loaded from: {django.__file__}")
+    log.debug(f"Using Path: {sys.path}")
+    log.debug(f"Process Info: {pinfo()}")
+    log.debug(f"Static root: {STATIC_ROOT}")
+    log.debug(f"Static file dirs: {locals().get('STATICFILES_DIRS', globals().get('STATICFILES_DIRS', []))}")
+    log.debug(f"Installed apps: {INSTALLED_APPS}")
+    log.debug(f"Database: {DATABASES['default']}")
+    log.debug(f"Command line: {sys.argv}")
+```
+    if DEBUG and RUN_CONTEXT != "runserver_reloader":
+        log.debug(f"Django version: {django.__version__}")
+        log.debug(f"Python version: {sys.version}")
+        log.debug(f"Django loaded from: {django.__file__}")
+        log.debug(f"Using Path: {sys.path}")
+        log.debug(f"Process Info: {pinfo()}")
+        log.debug(f"Static root: {STATIC_ROOT}")
+        log.debug(f"Static file dirs: {locals().get('STATICFILES_DIRS', globals().get('STATICFILES_DIRS', []))}")
+        log.debug(f"Installed apps: {INSTALLED_APPS}")
+        log.debug(f"Database: {DATABASES['default']}")
+
+and it is spewed put just once when the debug project starts up whether using 
+a reloader (the default) or not.
+
+This can of course easily be extended for tests that are more specific than "not runserver",
+possibly telling us if uwsgi, gunicorn or daphne or some other context
+
+'''
+import sys, os
+from django.conf import settings
+from django.utils.autoreload import DJANGO_AUTORELOAD_ENV
+
+def get_run_context():
+    if "runserver" in sys.argv:
+        if os.getenv(DJANGO_AUTORELOAD_ENV) == "true":
+            context = "runserver_reloaded"
+        elif "--noreload" in sys.argv:
+            context = "runserver_noreloader"
+        else:
+            context = "runserver_reloader"
+    else:
+        context = "not runserver"
+    
+    return context

@@ -1,0 +1,11 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/django_run_context/__init__.py
+src/django_run_context.egg-info/PKG-INFO
+src/django_run_context.egg-info/SOURCES.txt
+src/django_run_context.egg-info/dependency_links.txt
+src/django_run_context.egg-info/not-zip-safe
+src/django_run_context.egg-info/top_level.txt
