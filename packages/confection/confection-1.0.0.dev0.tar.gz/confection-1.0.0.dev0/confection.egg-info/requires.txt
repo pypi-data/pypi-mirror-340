@@ -1,0 +1,5 @@
+pydantic<3.0,>=2.0
+srsly<3.0.0,>=2.4.0
+
+[:python_version < "3.8"]
+typing_extensions<5.0.0,>=3.7.4.1
