@@ -1,0 +1,11 @@
+geegle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geegle/chat_service.py,sha256=Kah5L6MC0nGLLs33_JCWDJTZeZ-KUztc0ejM-8TU2gc,18012
+geegle/cli.py,sha256=t1yzjzhujZRzcGX-_yVqbB1S7ypAqFr722vQLVu-_2c,7456
+geegle/config.py,sha256=2A6Pytj4ZZ8d50u79NLG3gPYYb-XwX5pplJLazWlJBg,797
+geegle/main.py,sha256=d1JKeiYQqkbbefYfcE1W5p_APG2HxMiOdj_BEcmKVOw,311
+geegle/session_manager.py,sha256=nP2JCWv85seIIDXBBN10GTPnFrZffKY2DcAWOKk7XvM,3623
+geegle-0.0.1.dist-info/METADATA,sha256=DxWALZ-Gqf1RsUBwKD8EUHmaIPa8_Bmv6rHjacCogRU,3194
+geegle-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+geegle-0.0.1.dist-info/entry_points.txt,sha256=wp3coxiRsEhctwHyJWQeygUSio1WmQT36ubf8iupTy4,43
+geegle-0.0.1.dist-info/top_level.txt,sha256=1cRoqfWfONwW6tM7hQXfztuHCcfaGqBTenWwTOevOsg,7
+geegle-0.0.1.dist-info/RECORD,,
