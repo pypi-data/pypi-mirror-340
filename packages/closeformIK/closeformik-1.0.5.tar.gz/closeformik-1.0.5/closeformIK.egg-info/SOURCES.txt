@@ -1,0 +1,8 @@
+README.md
+setup.py
+closeformIK/__init__.py
+closeformIK.egg-info/PKG-INFO
+closeformIK.egg-info/SOURCES.txt
+closeformIK.egg-info/dependency_links.txt
+closeformIK.egg-info/requires.txt
+closeformIK.egg-info/top_level.txt
