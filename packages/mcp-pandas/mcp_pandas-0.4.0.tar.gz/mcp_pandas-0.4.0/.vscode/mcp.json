@@ -1,0 +1,14 @@
+{
+    "servers": {
+        "mcp-pandas": {
+            "command": "uvx",
+            "type": "stdio",
+            "args": [
+                "mcp-pandas",
+                "--data-path",
+                "~/Downloads/Statements.xlsx"
+            ],
+            "env": {}
+        }
+    }
+}
