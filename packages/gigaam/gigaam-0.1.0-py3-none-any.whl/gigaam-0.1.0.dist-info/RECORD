@@ -1,0 +1,14 @@
+gigaam/__init__.py,sha256=tK5BDBcOhv8SLheel8l_MoC6SCPpbsCXxEcFVYqEXPU,4663
+gigaam/decoder.py,sha256=kYvyvKfhF9raR74KWe9xG7c6sUZbXNnHuI1qiYkIWMc,4316
+gigaam/decoding.py,sha256=XxwUK64qdv2yptBzADTT65a0LSiu9Y-1z0YPvL-B6OQ,4267
+gigaam/encoder.py,sha256=HRw_FIcNIJjBLqRFVL6nEophMeaWDRZCQ4vmo6Abc7E,17746
+gigaam/model.py,sha256=IRcEYAPoSCysJhgFnt1pZPUNjmRxgu5__EnqgpX1jwI,7877
+gigaam/onnx_utils.py,sha256=WiRHn1OPRgq5bQvl0snTZqTAqvoacTz6wCSzl_p1yYQ,4523
+gigaam/preprocess.py,sha256=oioCZ1fIf9VNatRHxuUYVLDOYbAFhoHJ3kvyn6OEXyU,2491
+gigaam/utils.py,sha256=mkFTT2WP2aiqU3Rppe9WEJCD0RIAAMlySGKpw0d8bHM,3779
+gigaam/vad_utils.py,sha256=2KN91oBevgvBHRkI7VXI_7R3fDNKE2Exi5LkdclFEUI,3330
+gigaam-0.1.0.dist-info/LICENSE,sha256=8A3mcVcUx6Y9CGOc2_qkAiTu_EBzAmFL0Z8ai5jIdao,1070
+gigaam-0.1.0.dist-info/METADATA,sha256=2nePs8iBsOZprSpw9xSe8OUTAThOYPLlqiBJBzfo76M,10964
+gigaam-0.1.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+gigaam-0.1.0.dist-info/top_level.txt,sha256=_LsGgQhUBtq-IBYgP0uSaqS3Mdu1fpqto6f11lzikgc,7
+gigaam-0.1.0.dist-info/RECORD,,
