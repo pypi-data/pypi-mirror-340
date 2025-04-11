@@ -1,0 +1,14 @@
+deeplogix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deeplogix/__main__.py,sha256=XPoDhR6lEkFgLLDvkTvPwJVU8BCJbpARYnLN3zkYi9Y,12066
+deeplogix/examples/test-Diffusers-black-forest-labs-FLUX.1-dev.py,sha256=BRftXNrf8eGGQU_sauNqbsMchaAtZ31I5AgEJf6SCmU,551
+deeplogix/examples/test-Diffusers-stable-diffusion-3.5-large.py,sha256=uA5OVhJNSYp6o6D_vASavVyn5GdtjNh6w_NqRThf1cQ,613
+deeplogix/examples/test-Transformers-DETR-facebook-detr-resnet-50.py,sha256=ZqjqPqanCt5V7zwPzXOXq2BmFN6p9trsdipGf_s9Ezo,3705
+deeplogix/examples/test-Transformers-LLM-AutoClasses.py,sha256=Yo44e5RpyWQiCIKb-tsJyHjtU9SLbmMnnQips4w2vx8,860
+deeplogix/examples/test-Transformers-LLM-pipeline-apply_chat_template.py,sha256=fvPeaa1uDYadPnunXdB7pfMFOAG00Tq4NIG0VkmySLo,968
+deeplogix/examples/test-Transformers-LLM-pipeline.py,sha256=8AnTqAe1gl-69Oolj92b4g3CrObeaGvuW3tq_D3X0UY,795
+deeplogix/examples/test-lungmask.py,sha256=sZuJDkoUh6C4VgPKEf9PLcwjdzCaH0IghhR7o_lSttk,2984
+deeplogix-0.1.10.dist-info/licenses/LICENCE,sha256=zxzgqA-rI-pm-sLgALutdkg3ZUKfO2NdI7L8KEmhCyY,1066
+deeplogix-0.1.10.dist-info/METADATA,sha256=KhPS2ODa-14FwEu5oHgzwMDrOduojz_xZ7nAacK3TlU,1386
+deeplogix-0.1.10.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+deeplogix-0.1.10.dist-info/top_level.txt,sha256=RcERbvGbPCJlhDHIRs_srvkSBMTXloPu8W4nf0uFH5I,10
+deeplogix-0.1.10.dist-info/RECORD,,
