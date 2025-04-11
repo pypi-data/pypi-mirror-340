@@ -1,0 +1,10 @@
+chardet
+rich
+
+[dev]
+pip
+setuptools>=78
+build
+twine
+black
+mypy
