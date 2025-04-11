@@ -1,0 +1,167 @@
+Metadata-Version: 2.4
+Name: ten_utils
+Version: 0.0.9
+Summary: A toolkit for reuse
+Author-email: Караваев Александр <234iskateli234@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Ten-o69
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/Ten-o69/ten-utils
+Project-URL: Bug_Tracker, https://github.com/Ten-o69/ten-utils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rich==13.9.4
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Dynamic: license-file
+
+# 🧰 ten-utils
+
+> A reusable Python toolkit for structured logging, configuration, and utilities — built for extensibility and clarity.
+
+[![PyPI version](https://badge.fury.io/py/ten-utils.svg)](https://pypi.org/project/ten-utils/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+
+---
+
+## ✨ Features
+
+- ✅ Structured and styled logging with `rich`
+- 🔁 Singleton-based configuration manager
+- 🧪 Clean testable architecture with `pytest`
+- 📦 Easy to integrate into any project
+
+---
+
+## 📦 Installation
+
+You can install `ten-utils` using pip:
+
+```bash
+pip install ten-utils
+```
+
+Or with development tools:
+
+```bash
+pip install ten-utils[dev]
+```
+
+---
+
+## 🚀 Quick Start
+
+```python
+from ten_utils.log.logger import Logger
+from ten_utils.log.config import LoggerConfig
+
+# Set global configuration
+LoggerConfig().set_default_level_log(1)       # INFO
+LoggerConfig().set_save_log_to_file(False)    # Don't write to file
+
+# Create logger instance
+logger = Logger(name="MyApp")
+
+# Logging
+logger.debug("This is a debug message")     # Will be ignored (default = INFO)
+logger.info("App started successfully")
+logger.warning("This is a warning")
+logger.error("An error occurred")
+```
+
+---
+
+## ⚙️ Configuration
+
+Use `LoggerConfig` to globally control logging behavior:
+
+```python
+from ten_utils.log.config import LoggerConfig
+
+LoggerConfig().set_default_level_log(2)       # Set minimum level to WARNING
+LoggerConfig().set_save_log_to_file(True)     # Enable file output
+```
+
+---
+
+## 🧪 Running Tests
+
+```bash
+pytest tests/ --disable-warnings -v
+```
+
+To install test/dev dependencies:
+
+```bash
+pip install ten-utils[dev]
+```
+
+---
+
+## 🧱 Project Structure
+
+```text
+ten_utils/
+│
+├── log/
+│   ├── logger.py            # Main Logger class (Rich-powered)
+│   ├── config.py            # Global logging configuration (Singleton)
+│
+├── common/
+│   ├── decorators.py        # Decorators (e.g., log-level filter)
+│   ├── constants.py         # Global constants for log levels and formats
+│   ├── singleton.py         # Base singleton pattern implementation
+│   ├── validators.py        # Input validation helpers
+│
+├── tests/                   # Unit tests
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 👤 Author
+
+**Александр Караваев**  
+[Email](mailto:234iskateli234@gmail.com)  
+[GitHub Profile](https://github.com/Ten-o69)
+
+---
+
+## 💡 Contributing
+
+Contributions, issues and feature requests are welcome!  
+Feel free to open a [discussion](https://github.com/Ten-o69/ten-utils/discussions) or a [pull request](https://github.com/Ten-o69/ten-utils/pulls).
+
+---

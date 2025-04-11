@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ten_utils"
+version = "0.0.9"
+description = "A toolkit for reuse"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Караваев Александр", email = "234iskateli234@gmail.com" }]
+dependencies = [
+    "rich==13.9.4"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/Ten-o69/ten-utils"
+Bug_Tracker = "https://github.com/Ten-o69/ten-utils/issues"
+
+[tool.setuptools]
+packages = [
+    "ten_utils",
+    "ten_utils.log",
+    "ten_utils.common",
+]
+
+[tool.pytest.ini_options]
+addopts = "-ra --disable-warnings"
+testpaths = ["tests"]
