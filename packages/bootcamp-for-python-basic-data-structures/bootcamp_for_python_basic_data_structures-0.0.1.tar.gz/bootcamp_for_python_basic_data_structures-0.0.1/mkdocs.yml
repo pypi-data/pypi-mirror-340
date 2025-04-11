@@ -1,0 +1,15 @@
+site_name: My Data Structures Documentation
+theme: material
+
+nav:
+  - Home: index.md
+  - Data Structures:
+      - Array: array.md
+      - Singly and Doubly Linked List: linked_list.md
+      - Stack: stack.md
+      - Queue: queue.md
+      - Binary Tree: binary_tree.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
