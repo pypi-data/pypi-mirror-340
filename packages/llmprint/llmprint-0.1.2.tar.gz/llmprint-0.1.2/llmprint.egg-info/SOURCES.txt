@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+llmprint/__init__.py
+llmprint/main.py
+llmprint.egg-info/PKG-INFO
+llmprint.egg-info/SOURCES.txt
+llmprint.egg-info/dependency_links.txt
+llmprint.egg-info/entry_points.txt
+llmprint.egg-info/requires.txt
+llmprint.egg-info/top_level.txt
