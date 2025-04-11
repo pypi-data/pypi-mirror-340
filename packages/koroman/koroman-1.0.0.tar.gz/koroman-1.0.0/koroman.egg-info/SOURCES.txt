@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+koroman/__init__.py
+koroman/core.py
+koroman.egg-info/PKG-INFO
+koroman.egg-info/SOURCES.txt
+koroman.egg-info/dependency_links.txt
+koroman.egg-info/top_level.txt
+tests/test_koroman.py
