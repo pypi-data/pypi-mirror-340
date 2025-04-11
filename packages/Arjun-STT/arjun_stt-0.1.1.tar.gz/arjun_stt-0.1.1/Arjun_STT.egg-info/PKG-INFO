@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: Arjun_STT
+Version: 0.1.1
+Summary: This is a speech-to-text package created by Arjun Manish
+Author: Arjun Manish
+Author-email: arjunmanish1234@gmail.com
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: selenium
+Requires-Dist: webdriver_manager
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
