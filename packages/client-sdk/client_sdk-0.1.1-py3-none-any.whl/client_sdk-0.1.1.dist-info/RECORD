@@ -1,0 +1,16 @@
+prudentia_user_service/__init__.py,sha256=8kugaQ5d0gbeF4NUIoMmko-fvLaqbSuupodPCKkrXKY,159
+prudentia_user_service/api/__init__.py,sha256=zTSiG_ujSjAqWPyc435YXaX9XTlpMjiJWBbV-f-YtdA,45
+prudentia_user_service/api/default/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prudentia_user_service/api/default/create_user.py,sha256=qrWdTCbVSmPhxByPd0FSQLurOv9ZPR8Jp6v_eRkOpQ8,4195
+prudentia_user_service/api/default/get_user.py,sha256=r267gzc7Zv9ZcYo7XmkAL_hwMpdRt9BQQpkNHK0VGP4,4075
+prudentia_user_service/client.py,sha256=EXjkJYJD7wT0JFIpvAVfatQ-O8Y75RGSLIzHQ7I24O0,12417
+prudentia_user_service/errors.py,sha256=gO8GBmKqmSNgAg-E5oT-oOyxztvp7V_6XG7OUTT15q0,546
+prudentia_user_service/models/__init__.py,sha256=lujXcea9AV_1k-6P8f1ER_vrN6Mv7i6sIHhcq1vZPyk,260
+prudentia_user_service/models/http_validation_error.py,sha256=4iCNyQ3NCF74QMSOP26xpGwMisetg5IblUk5Jsy_QoQ,2193
+prudentia_user_service/models/user.py,sha256=s5CRJf67IEnXbiMisvrzFWimSnyXEJhnYm6X2oFYIFk,2074
+prudentia_user_service/models/validation_error.py,sha256=fTHVL-cEsrmyz7hV6UdHhl9EvkA5zzFP4EVeTozFAUE,2153
+prudentia_user_service/py.typed,sha256=8ZJUsxZiuOy1oJeVhsTWQhTG_6pTVHVXk5hJL79ebTk,25
+prudentia_user_service/types.py,sha256=eFENJI7qSxuRdz_gS4nJ0IbmlXbqvnK0RwsCTpKFYSU,985
+client_sdk-0.1.1.dist-info/METADATA,sha256=6_SgU86G7MWIWJNI_wW1Hj8ptXNBVmFeoB3coUk-KTA,5629
+client_sdk-0.1.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+client_sdk-0.1.1.dist-info/RECORD,,
