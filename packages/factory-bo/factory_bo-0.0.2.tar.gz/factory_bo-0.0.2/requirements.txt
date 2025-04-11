@@ -1,0 +1,4 @@
+parse>=1.18.0
+Django>=3.2.6
+factory-boy==2.11.1
+isort==5.1.4
