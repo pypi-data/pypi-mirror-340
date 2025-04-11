@@ -1,0 +1,11 @@
+setup.py
+rf_humab/__init__.py
+rf_humab/humanize_sequence.py
+rf_humab/mapping.py
+rf_humab.egg-info/PKG-INFO
+rf_humab.egg-info/SOURCES.txt
+rf_humab.egg-info/dependency_links.txt
+rf_humab.egg-info/requires.txt
+rf_humab.egg-info/top_level.txt
+rf_humab/saved_models/__init__.py
+rf_humab/sequence_data/__init__.py
