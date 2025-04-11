@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: Kani-STT
+Version: 0.1
+Summary: this is speech to text package created by kanishk yadav
+Author: Kanishk Yadav
+Author-email: pavikani69@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
