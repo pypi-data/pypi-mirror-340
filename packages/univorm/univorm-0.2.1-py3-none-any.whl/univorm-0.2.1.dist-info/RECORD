@@ -1,0 +1,14 @@
+univorm-0.2.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+xin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xin/db.py,sha256=N_ZWmJmh-aDKfFp0teBlMz7O7nyO44dBd6-XNxv2lYE,2533
+xin/parser.py,sha256=N-qfJml1BQaUReOw5ZQZWoDTIbTcJ6QIOc5Ys5C0bsg,2823
+xin/reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xin/reader/nosql.py,sha256=S2UF9GRGxwT-2c-n9sL5Ko-05fG9qrG2NuQhjlnEzeo,436
+xin/reader/sql.py,sha256=TED8-APSETEPB2c0IO6TIl1FhBsPli1LZxA5r4y6jWw,603
+xin/writer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xin/writer/nosql.py,sha256=_ImRugWOE5IqWM8Dl6aPjc4SIuW8ZVpZH8pUTdnZYCQ,445
+xin/writer/sql.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+univorm-0.2.1.dist-info/METADATA,sha256=IBvTXTF9mmowjqf_BXo7wTwZqxmNrAzikA2x5WFObiQ,17171
+univorm-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+univorm-0.2.1.dist-info/top_level.txt,sha256=XPgMWISnKrhfhHRhikYYzBJq5iOe2PSYJEUEeG5Pp08,4
+univorm-0.2.1.dist-info/RECORD,,
