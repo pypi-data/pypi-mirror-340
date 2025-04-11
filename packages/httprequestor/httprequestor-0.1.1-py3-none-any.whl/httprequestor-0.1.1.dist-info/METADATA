@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: httprequestor
+Version: 0.1.1
+Description-Content-Type: text/markdown
+Dynamic: description
+Dynamic: description-content-type
+
+# HTTPRequestor Package
+
+## Overview
+This is a package that helps you with a consistent response from urllib3.
+
+## Creating Request
+Coming Soon
