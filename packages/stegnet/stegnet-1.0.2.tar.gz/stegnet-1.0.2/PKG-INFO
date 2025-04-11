@@ -1,0 +1,91 @@
+Metadata-Version: 2.3
+Name: stegnet
+Version: 1.0.2
+Summary: A network steganography toolkit for covert communication over TCP, ICMP, DNS, and HTTP.
+License: MIT
+Keywords: steganography,network,covert,communication,TCP,ICMP,DNS,HTTP
+Author: Abhigyan Trips
+Author-email: contact@abhigyantrips.dev
+Requires-Python: >=3.12,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Requires-Dist: cryptography (>=44.0.2,<45.0.0)
+Requires-Dist: flask (>=3.1.0,<4.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: scapy (>=2.6.1,<3.0.0)
+Requires-Dist: typer (>=0.15.2,<0.16.0)
+Project-URL: GitHub, https://github.com/Srujansgit/StegNet
+Description-Content-Type: text/markdown
+
+# StegNet
+
+StegNet is a network steganography toolkit for covert communication over TCP, ICMP, DNS, and HTTP. It integrates encryption, message hiding, packet manipulation, and traffic analysis into a modular, scalable design using OOP principles.
+
+**Usage**:
+
+```console
+$ stegnet [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--install-completion`: Install completion for the current shell.
+* `--show-completion`: Show completion for the current shell, to copy it or customize the installation.
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `send`: Send a covert message over the specified...
+* `receive`: Listen for and extract hidden messages.
+* `analyze`: Run network traffic analysis to detect...
+
+## `stegnet send`
+
+Send a covert message over the specified protocol.
+
+**Usage**:
+
+```console
+$ stegnet send [OPTIONS]
+```
+
+**Options**:
+
+* `--mode TEXT`: Mode of communication: tcp, icmp, dns, http  [required]
+* `--target TEXT`: Target IP or domain  [required]
+* `--message TEXT`: Message to send covertly  [required]
+* `--key TEXT`: Encryption key for securing the message  [required]
+* `--help`: Show this message and exit.
+
+## `stegnet receive`
+
+Listen for and extract hidden messages.
+
+**Usage**:
+
+```console
+$ stegnet receive [OPTIONS]
+```
+
+**Options**:
+
+* `--mode TEXT`: Mode of communication: tcp, icmp, dns, http  [required]
+* `--key TEXT`: Encryption key for decryption  [required]
+* `--help`: Show this message and exit.
+
+## `stegnet analyze`
+
+Run network traffic analysis to detect covert channels.
+
+**Usage**:
+
+```console
+$ stegnet analyze [OPTIONS]
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
