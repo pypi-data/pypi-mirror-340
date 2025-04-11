@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: rspx
+Version: 0.1.2
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: loguru>=0.7.3
+Summary: Better Rust Extensions for Python
+Author-email: hhglory <hhglory@outlook.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Documentation, https://better-py.github.io/rspx/
+Project-URL: Repository, https://github.com/better-py/rspx/
+Project-URL: Tracker, https://github.com/better-py/rspx/issues
+
+# Rust Extensions for Python
+
+## Installation
+
+- <https://pypi.org/project/rspx/>
+
+```bash
+pip install rspx
+
+# or
+uv add rspx
+```
+
+## Usage
+
+```python
+import rspx
+
+
+def main():
+    print(f"rs module: {rspx.__all__}")
+    print(f"rs doc: {rspx.__doc__}")
+    print(f"rust sum: {rspx.sum(1, 1)}")
+    print(f"rust fib: {rspx.fib(10)}")
+
+
+if __name__ == "__main__":
+    main()
+
+```
+
+## Development
+
+### build
+
+```ruby
+# or 
+task build
+
+# task build:pyo3
+```
+
+### publish
+
+```ruby
+# publish to pypi
+task up
+```
+
