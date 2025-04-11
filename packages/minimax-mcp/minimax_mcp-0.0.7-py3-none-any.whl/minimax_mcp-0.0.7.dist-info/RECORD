@@ -1,0 +1,13 @@
+minimax_mcp/__init__.py,sha256=V0w6PszFlf4ZYkux07UwxpV0MY_Paus14o806Ceo_-s,57
+minimax_mcp/__main__.py,sha256=FwVVSUs86pmvb3Ol5xrCho0qwe_DqLI09Vac9YAiLVc,3140
+minimax_mcp/client.py,sha256=PP7HCWKlMG9A-GzIYkemwapMOux_tZQnDhmePfIdP1U,3143
+minimax_mcp/const.py,sha256=upVMRRT7sfc3LAurtxMxV2Cu_CVt90gp2Z0VIeLdwUE,484
+minimax_mcp/exceptions.py,sha256=vnBIN0LJxhsvPr0o-1wECjSySPFHd9Q6tyDeydZdY4Q,541
+minimax_mcp/server.py,sha256=Dsk4FpU5WJGzO9PD25RvR6uiSEUv8Y_oW2SMUQlXuLo,18762
+minimax_mcp/utils.py,sha256=qmpMCGl4vtK7ENIzr4XdFGxWmgP2K-663NFFFGmqmRo,5114
+minimax_mcp-0.0.7.dist-info/licenses/LICENSE,sha256=1mkhSTn9qLwOGmgsIX0LuE-493bRHEu69WKolbPGQ0M,1069
+minimax_mcp-0.0.7.dist-info/METADATA,sha256=w3o3KgbVre75QfZjr5HVLnfqh-BoCZ0MNbhIxEr9hg0,10575
+minimax_mcp-0.0.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+minimax_mcp-0.0.7.dist-info/entry_points.txt,sha256=qAGkbNiSrhkOUShdP3JOXgqeNazPTqAV8hrH0YK8K0M,56
+minimax_mcp-0.0.7.dist-info/top_level.txt,sha256=PQ7pnbym7cuF8XXvQ-yLu2czj9EDuAhkTbbwtoeEKsA,12
+minimax_mcp-0.0.7.dist-info/RECORD,,
