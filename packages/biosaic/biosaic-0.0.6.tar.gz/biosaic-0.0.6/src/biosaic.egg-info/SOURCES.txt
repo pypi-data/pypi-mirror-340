@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/auto/dataset.py
+src/auto/embedder.py
+src/auto/model.py
+src/auto/run.py
+src/auto/tokenizer.py
+src/biosaic.egg-info/PKG-INFO
+src/biosaic.egg-info/SOURCES.txt
+src/biosaic.egg-info/dependency_links.txt
+src/biosaic.egg-info/requires.txt
+src/biosaic.egg-info/top_level.txt
+tests/test_kmer.py
