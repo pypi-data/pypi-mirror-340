@@ -1,0 +1,3 @@
+[pytest11]
+mitmproxy-plugin=pytest_mitmproxy_plugin.plugin
+
