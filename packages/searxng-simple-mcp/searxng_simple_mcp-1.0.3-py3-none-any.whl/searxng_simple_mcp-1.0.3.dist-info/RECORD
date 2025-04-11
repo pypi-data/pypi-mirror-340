@@ -1,0 +1,9 @@
+searxng_simple_mcp/__init__.py,sha256=P8aoMzSMxtDWUZJqsvs6xTK_mm7N1ORKbafTwaDkiYA,618
+searxng_simple_mcp/config.py,sha256=MLe7DlSgTd03V0JznYbKgPqKFy1rqZSoyFW3TlPLBDk,2583
+searxng_simple_mcp/searxng_client.py,sha256=WJSRODNrF9UFQ77BxRNkyy2dFUTJdjgwR0my6nSpobY,4331
+searxng_simple_mcp/server.py,sha256=tdLiC5ELSAMiKuPyGLaHaxtuhgk8oIHAZylpi2JwGbQ,3898
+searxng_simple_mcp-1.0.3.dist-info/entry_points.txt,sha256=DT580bxRV86v8tmJo4OcFNxK1TR2wbJtQmFvSdNkLuE,72
+searxng_simple_mcp-1.0.3.dist-info/licenses/LICENSE,sha256=Egavx4XYCYtIt-qslJOiDigLKO3iu2vIcw10rxLaKAU,1092
+searxng_simple_mcp-1.0.3.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+searxng_simple_mcp-1.0.3.dist-info/METADATA,sha256=WW9_yUJaiUtSG_D4-_A_FT9xLckHciqad09bvibI-Yw,11603
+searxng_simple_mcp-1.0.3.dist-info/RECORD,,
