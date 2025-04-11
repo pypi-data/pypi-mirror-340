@@ -1,0 +1,2 @@
+[console_scripts]
+envsecure = envsecure.cli:main

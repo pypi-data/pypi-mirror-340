@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/envsecure/__init__.py
+src/envsecure/cli.py
+src/envsecure/core.py
+src/envsecure.egg-info/PKG-INFO
+src/envsecure.egg-info/SOURCES.txt
+src/envsecure.egg-info/dependency_links.txt
+src/envsecure.egg-info/entry_points.txt
+src/envsecure.egg-info/top_level.txt
+tests/test_envsecure.py
