@@ -1,0 +1,71 @@
+Metadata-Version: 2.2
+Name: contafi
+Version: 2.0.0
+Summary: Cliente para realizar la integración con los servicios web de ContaFi desde Python.
+Home-page: https://github.com/contafi/contafi-api-client-python
+Author: ContaFi
+Author-email: dev@contafi.cl
+License: LGPL
+Keywords: sii chile bhe bte contafi facturacion contribuyentes boleta electronica
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+License-File: COPYING
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+
+ContaFi: Cliente de API en Python
+=====================================
+
+.. image:: https://badge.fury.io/py/contafi.svg
+    :target: https://pypi.org/project/contafi
+.. image:: https://img.shields.io/pypi/status/contafi.svg
+    :target: https://pypi.org/project/contafi
+.. image:: https://img.shields.io/pypi/pyversions/contafi.svg
+    :target: https://pypi.org/project/contafi
+.. image:: https://scrutinizer-ci.com/g/contafi/contafi-api-client-python/badges/quality-score.png?b=master
+    :target: https://scrutinizer-ci.com/g/contafi/contafi-api-client-python/
+.. image:: https://scrutinizer-ci.com/g/contafi/contafi-api-client-python/badges/coverage.png?b=master
+    :target: https://scrutinizer-ci.com/g/contafi/contafi-api-client-python/
+.. image:: https://img.shields.io/pypi/l/contafi.svg
+    :target: https://raw.githubusercontent.com/contafi/contafi-api-client-python/master/COPYING
+
+Cliente para realizar la integración con los servicios web de `ContaFi <https://www.contafi.cl>`_ desde Python.
+
+Revisa la `documentación <https://api-client-python.docs.contafi.cl/guide/index.html>`_ de la biblioteca para más información, sus características y detalles de su uso.
+
+Licencia
+--------
+
+Este programa es software libre: usted puede redistribuirlo y/o modificarlo
+bajo los términos de la GNU Lesser General Public License (LGPL) publicada
+por la Fundación para el Software Libre, ya sea la versión 3 de la Licencia,
+o (a su elección) cualquier versión posterior de la misma.
+
+Este programa se distribuye con la esperanza de que sea útil, pero SIN
+GARANTÍA ALGUNA; ni siquiera la garantía implícita MERCANTIL o de APTITUD
+PARA UN PROPÓSITO DETERMINADO. Consulte los detalles de la GNU Lesser General
+Public License (LGPL) para obtener una información más detallada.
+
+Debería haber recibido una copia de la GNU Lesser General Public License
+(LGPL) junto a este programa. En caso contrario, consulte
+`GNU Lesser General Public License <http://www.gnu.org/licenses/lgpl.html>`_.
+
+Enlaces
+-------
+
+- `Sitio web ContaFi <https://www.contafi.cl>`_.
+- `Código fuente en GitHub <https://github.com/contafi/contafi-api-client-python>`_.
+- `Paquete en PyPI <https://pypi.org/project/contafi>`_.
+- `Documentación en Read the Docs <https://contafi.readthedocs.io/es/latest>`_.
