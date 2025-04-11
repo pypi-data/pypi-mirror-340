@@ -1,0 +1,2 @@
+[console_scripts]
+phren = phren.main:main
