@@ -1,0 +1,9 @@
+README.md
+llm_fragments_go.py
+pyproject.toml
+llm_fragments_go.egg-info/PKG-INFO
+llm_fragments_go.egg-info/SOURCES.txt
+llm_fragments_go.egg-info/dependency_links.txt
+llm_fragments_go.egg-info/entry_points.txt
+llm_fragments_go.egg-info/requires.txt
+llm_fragments_go.egg-info/top_level.txt

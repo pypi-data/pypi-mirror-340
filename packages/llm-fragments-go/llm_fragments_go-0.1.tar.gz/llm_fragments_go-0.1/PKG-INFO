@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: llm-fragments-go
+Version: 0.1
+Summary: LLM plugin for pulling Go package docs
+Author: Filippo Valsorda
+License-Expression: ISC
+Project-URL: Homepage, https://github.com/FiloSottile/mostly-harmless/tree/main/llm-fragments-go
+Project-URL: Issues, https://github.com/FiloSottile/mostly-harmless/issues
+Requires-Python: >=3.9
+Requires-Dist: llm>=0.24
