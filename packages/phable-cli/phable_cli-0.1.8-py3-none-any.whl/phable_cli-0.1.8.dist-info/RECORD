@@ -1,0 +1,10 @@
+phable_cli/cache.py,sha256=SiGHoGx_fL57LGy71iYB8Jk_Hzu0s0rpxXjAU0RqDX0,2932
+phable_cli/cli.py,sha256=jqZr1UX1M8iSmhTHFRo9odrKCYNiVvmsLZJIz3glgao,16350
+phable_cli/config.py,sha256=HZrwxbRxllO27-zDUbc5swDkbL-Jw2TvKp02MMDI5Mw,1987
+phable_cli/phabricator.py,sha256=JemiyI3mnRCTS968iKoVeIFr5Yru3JqZiM7o9n6CoDk,11927
+phable_cli/utils.py,sha256=eElS2fyOGYcr58xUMQZphQGpV__rleDG6duiDy2m9L0,1150
+phable_cli-0.1.8.dist-info/LICENSE,sha256=7xJ-MHVfPr7mAs4bv81o2DNzoxr6MxZ3QzHyhbeThlk,1075
+phable_cli-0.1.8.dist-info/METADATA,sha256=TcbnLw_pXWP5a8iIFV_XvJms4huwZtYUY2S0dpe2Nqo,3030
+phable_cli-0.1.8.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+phable_cli-0.1.8.dist-info/entry_points.txt,sha256=-o7wWiIa6aPu7vxCcFmxp1BvMQyNXAO5NXMJRs9KRMk,48
+phable_cli-0.1.8.dist-info/RECORD,,
