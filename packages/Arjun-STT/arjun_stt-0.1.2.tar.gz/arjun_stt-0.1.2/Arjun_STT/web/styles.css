@@ -1,0 +1,12 @@
+body{
+    font-family: Ariel, Helvectica,
+    sans-serif;
+    text-align: center;
+
+}
+#output{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid;
+    min_height: 100px;
+}
