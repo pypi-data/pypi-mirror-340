@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: dlogs
+Version: 1.0.0
+Summary: A tool for analyzing and reporting on log files.
+Author-email: Aiko Sora <altairteam@bk.ru>
+Project-URL: Repository, https://github.com/quirkink/dlogs
+Requires-Python: <3.12,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Dlogs
+
+A simple CLI utility for collecting statistics from your logs
