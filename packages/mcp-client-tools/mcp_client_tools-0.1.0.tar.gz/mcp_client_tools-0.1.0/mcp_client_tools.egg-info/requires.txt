@@ -1,0 +1,5 @@
+async-exit-stack>=1.0.1
+asyncio>=3.4.3
+mcp[cli]>=1.6.0
+pandas>=2.2.3
+typing>=3.10.0.0
