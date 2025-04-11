@@ -1,0 +1,1 @@
+use picture_service::service::<<VAR_SERVICE_NAME_UCASE>>;
