@@ -1,0 +1,12 @@
+# MANIFEST.in
+include paper_titles.txt
+include failed_downloads.txt
+
+include README.md
+include LICENSE
+include requirements.txt
+include setup.py
+
+global-exclude *.pyc __pycache__/
+
+
