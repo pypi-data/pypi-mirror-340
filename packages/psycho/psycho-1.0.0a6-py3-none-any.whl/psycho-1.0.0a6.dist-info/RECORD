@@ -1,0 +1,14 @@
+psycho/__init__.py,sha256=Tkk-6JP43eHNfLOaZDMW0G_pmfFwydZWb6CfILzG9DU,45
+psycho/building.py,sha256=-2KvTFX4rXfPS3QhHKyEWGIwV1nDU7Ae0RvMIGYiZos,1318
+psycho/click_types.py,sha256=Z-p_Wu7yFK_IzxrPryFpLSlMIRb9kML070Q5DKt6xzw,512
+psycho/commands.py,sha256=LvHHtI0psDM07x07j0IEy16ZD56sclAiyfNFsMCQMyM,10202
+psycho/dependencies.py,sha256=D8k5nN-Gwv6bREz37LDw7fi8ditZT4Qn7fRhlFaIlKw,5459
+psycho/initializing.py,sha256=CYvTPkFahc2yHIZckVMKa2hQ59eciNrGkpINHNgGJI8,2605
+psycho/projects.py,sha256=aO2pLI0XHZp726t6CAqa17wKeL1rD8qN2BJuxKbNT9k,908
+psycho/publishing.py,sha256=a6QpF0x9w3r527-a81pZhdR0tOdy1X1-Uvu_mayMc7A,1981
+psycho/data/gitignore.txt,sha256=xYTie91h35xbiOERiy8kU9uo-lF5CZBqdxQOZk1BS3s,1272
+psycho-1.0.0a6.dist-info/METADATA,sha256=7XYCJ88yN-m_1saejXR9ou1thNGil6Lv3ZaMN8tJcQc,3267
+psycho-1.0.0a6.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+psycho-1.0.0a6.dist-info/entry_points.txt,sha256=QLXcjjj_nPibrFxUvbFHskP1ofGfjNVnt9tf6H3edXY,38
+psycho-1.0.0a6.dist-info/top_level.txt,sha256=CnXN3CBNU43mKmhj2ueYAv8azJlVjqBlXLH3bKoIKBU,7
+psycho-1.0.0a6.dist-info/RECORD,,
