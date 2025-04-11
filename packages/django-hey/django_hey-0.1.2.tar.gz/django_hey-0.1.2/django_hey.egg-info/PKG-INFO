@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: django-hey
+Version: 0.1.2
+Summary: A Django command to create a project and app with a single command
+Home-page: https://github.com/sabari7497/django-hey
+Author: Sabari Nathan
+Author-email: sabareee000@gmail.com
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=3.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Django Hey
+
+A Django command-line tool to create a Django project and app with a single command.
+
+## Installation
+
+```bash
+pip install django-hey
