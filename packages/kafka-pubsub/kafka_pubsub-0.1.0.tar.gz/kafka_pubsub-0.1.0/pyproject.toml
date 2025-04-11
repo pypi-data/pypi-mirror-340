@@ -1,0 +1,14 @@
+[project]
+name = "kafka_pubsub"
+version = "0.1.0"
+description = "Apache Kafka customized Producer, Consumer, helper classes and methods"
+authors = [
+    { name="Emmanuel Chukwu", email="emmanuel.chukwu@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

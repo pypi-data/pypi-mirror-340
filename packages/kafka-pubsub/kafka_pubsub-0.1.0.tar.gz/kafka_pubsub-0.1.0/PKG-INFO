@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: kafka_pubsub
+Version: 0.1.0
+Summary: Apache Kafka customized Producer, Consumer, helper classes and methods
+Author-email: Emmanuel Chukwu <emmanuel.chukwu@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown
+
+Apache Kafka customized Producer, Consumer, helper classes and methods
