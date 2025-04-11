@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/ezudesign/__init__.py
+src/ezudesign/configuration.py
+src/ezudesign.egg-info/PKG-INFO
+src/ezudesign.egg-info/SOURCES.txt
+src/ezudesign.egg-info/dependency_links.txt
+src/ezudesign.egg-info/top_level.txt
