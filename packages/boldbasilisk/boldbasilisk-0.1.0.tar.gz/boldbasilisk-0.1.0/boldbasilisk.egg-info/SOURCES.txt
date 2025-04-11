@@ -1,0 +1,14 @@
+setup.py
+boldbasilisk/__init__.py
+boldbasilisk/a1a.py
+boldbasilisk/a2a.py
+boldbasilisk/a3a.py
+boldbasilisk/a4a.py
+boldbasilisk/a5a.py
+boldbasilisk/a6a.py
+boldbasilisk/a7a.py
+boldbasilisk/a8a.py
+boldbasilisk.egg-info/PKG-INFO
+boldbasilisk.egg-info/SOURCES.txt
+boldbasilisk.egg-info/dependency_links.txt
+boldbasilisk.egg-info/top_level.txt
