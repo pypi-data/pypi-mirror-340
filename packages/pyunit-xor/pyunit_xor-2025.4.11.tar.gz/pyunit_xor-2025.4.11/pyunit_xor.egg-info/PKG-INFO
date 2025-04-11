@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pyunit-xor
+Version: 2025.4.11
+Summary: 一个简单的异或生成Token
+Home-page: https://github.com/pyunits/pyunit-xor
+Author: 张伟
+Author-email: jtyoui@qq.com
+License: MIT Licence
+Description: ## XOR
+        
+        一个简单的异或生成Token
+        
+        ## 安装
+        ```
+        pip install pyunit-xor
+        ```
+        
+        ## 使用
+        ```python
+        from pyunit_xor import SimpleXOR
+        
+        # 测试代码
+        if __name__ == "__main__":
+            manager = SimpleXOR()
+            tokens = manager.generate("2024-01-10 00:00:00")
+            print("生成的Token:", tokens)
+        
+            # 验证Token
+            is_valid, result = manager.validate(tokens)
+            if is_valid:
+                print("Token有效，过期日期:", result)
+            else:
+                print("Token无效，原因:", result)
+        
+        ```
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
