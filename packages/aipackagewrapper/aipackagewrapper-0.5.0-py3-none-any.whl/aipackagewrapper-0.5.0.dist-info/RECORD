@@ -1,0 +1,9 @@
+AiPackageWrapper/__init__.py,sha256=nXZ08PkLFrWxvG5HVuxOQLOD2W03QbcQOEvfolIN68g,266
+AiPackageWrapper/data_augmentation_module.py,sha256=o9Ed2cYyGvzl--bdnntuI3lDwAtKg3kkyWErBDkXc4I,1566
+AiPackageWrapper/ocr_module.py,sha256=P1UiWSpRs2NIVWOvzuMBfLtwvYqRSjAz3v8sSV1FM10,200
+AiPackageWrapper/sentiment_analyzer_module.py,sha256=h1Ztcb4_Hw81GKJAlqZudJemcSyGthk8OuNAp-SZ3QE,1643
+AiPackageWrapper/xai_module.py,sha256=NWrrr4QmRT65iA_gJqYJkIIw-LKaly_4ijaR7mvFaB4,509
+aipackagewrapper-0.5.0.dist-info/LICENSE,sha256=AS2vQe48R7XKyy0n4Fyo5CjDs9uuTUfOYm6Hf0kIypw,1072
+aipackagewrapper-0.5.0.dist-info/METADATA,sha256=bSC0yaxPb1HcEhhLyK4G_utc7ig02hOyHu1POpwOP0Y,871
+aipackagewrapper-0.5.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+aipackagewrapper-0.5.0.dist-info/RECORD,,
