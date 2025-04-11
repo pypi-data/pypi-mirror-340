@@ -1,0 +1,11 @@
+philosopherror/__init__.py,sha256=RV-xG1WW5sHGhLWvT6fmt_WwlHpJGKqWpmd3ATCpfXs,527
+philosopherror/core.py,sha256=wYRcpfcJ49Ad3kFGT2SY4uOFyPSIsZZbZvx4co1zHqk,2012
+philosopherror/handlers.py,sha256=no1gHI2I6dAVuqib4FV9rPcNi3hoebOwACd7uCteYlQ,2953
+philosopherror/philosophers.py,sha256=x8MnhkI0HylzSaB212ykSvgU_dSq_mK_PNNVrBSnKtA,19770
+philosopherror-0.1.0.dist-info/licenses/LICENSE,sha256=ObgamcWIH31elziAnSGYtwOjSHto13XoBiul7-iNREs,1097
+tests/__init__.py,sha256=_PoLc1-5UYsQSH83p6Fq_o1UYIoqJL7OTGdtFZMFviU,42
+tests/test_philosopherror.py,sha256=8guVpi_fiSZqVnUA5S3NaSMLfk0aegDM_zVzfilUF2w,4204
+philosopherror-0.1.0.dist-info/METADATA,sha256=6oQLDnsDpjQ-jUJTLrlLSKRuw4YgkIeY6BEcMz1ezCY,4283
+philosopherror-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+philosopherror-0.1.0.dist-info/top_level.txt,sha256=F3y6VnUidvQIMNytmL4gCaIgG5oUuYfBq0FxXt5q_Fg,21
+philosopherror-0.1.0.dist-info/RECORD,,
