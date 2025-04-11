@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: tibetan-wer
+Version: 0.0.0
+Summary: Compute Word Error Rate for Tibetan language text.
+Project-URL: Homepage, https://github.com/billingsmoore/bocluster
+Project-URL: Issues, https://github.com/billingsmoore/bocluster/issues
+Author-email: billingsmoore <billingsmoore@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: botok
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+# Tibetan-WER
+
+This module provides a means to calculate Word Error Rate for Tibetan language text.
+
+## Install
+
+Install the library to get started:
+
+```bash
+pip install --upgrade tibetan-wer
+```
+
+## Usage
+
+```python
+from tibetan_wer.wer import wer
+
+prediction = 'འཇམ་དཔལ་གཞོན་ནུར་གྱུར་པ་ལ་ཕྱག་འཚལ་ལོ༔'
+reference = 'གཞོན་ནུར་གྱུར་པ་ལ་ཕྱག་འཚལ་ལོ༔'
+
+wer_score = wer(prediction, reference)
+
+print(f'WER Score: {wer_score}')
+```
