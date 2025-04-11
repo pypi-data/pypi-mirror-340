@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traia-tools"
+version = "0.1.0"
+description = "Custom tools for Traia/CrewAI for Web3 and crypto trading strategies"
+authors = [
+    { name = "Traia", email = "support@traia.io" }
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["crewai", "web3", "cryptocurrency", "tools"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+# Specify dependencies required by the tools
+dependencies = [
+    "requests==2.31.0",
+    "crewai>=0.100.0",
+    "pydantic>=2.10.6", 
+    "crewai-tools>=0.33.0"
+]
+
+[project.urls]
+"Documentation" = "https://docs.crewai.com/"
+"Source" = "https://github.com/traia/traia-tools" 
