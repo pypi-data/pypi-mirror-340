@@ -1,0 +1,17 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+isoforest_eval/__init__.py
+isoforest_eval/evaluation.py
+isoforest_eval/isolation_runner.py
+isoforest_eval/preprocessing.py
+isoforest_eval.egg-info/PKG-INFO
+isoforest_eval.egg-info/SOURCES.txt
+isoforest_eval.egg-info/dependency_links.txt
+isoforest_eval.egg-info/requires.txt
+isoforest_eval.egg-info/top_level.txt
+tests/test_linear.py
+tests/test_linear2.py
+tests/test_logistic.py
+tests/test_logistic2.py
