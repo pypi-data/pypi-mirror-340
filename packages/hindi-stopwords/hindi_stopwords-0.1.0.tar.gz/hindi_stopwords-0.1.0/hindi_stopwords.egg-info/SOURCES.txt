@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+hindi_stopwords/__init__.py
+hindi_stopwords/stopwords.py
+hindi_stopwords.egg-info/PKG-INFO
+hindi_stopwords.egg-info/SOURCES.txt
+hindi_stopwords.egg-info/dependency_links.txt
+hindi_stopwords.egg-info/top_level.txt
+tests/test_stopwords.py

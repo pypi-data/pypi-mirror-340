@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: hindi_stopwords
+Version: 0.1.0
+Summary: A Hindi stopword removal library for Python
+Author: IND-WSDpro
+Author-email: deepankargupta874@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Hindi
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-python
+Dynamic: summary
