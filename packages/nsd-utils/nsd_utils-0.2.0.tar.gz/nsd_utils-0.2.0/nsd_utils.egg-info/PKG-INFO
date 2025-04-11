@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: nsd_utils
+Version: 0.2.0
+Summary: Common utilities for aiogram bots
+Requires-Python: >=3.9
+Requires-Dist: aiogram==3.19
+Requires-Dist: asyncpg>=0.27
+Requires-Dist: jinja2>=3.0
+Requires-Dist: babel>=2.9
+Requires-Dist: pydantic>=1.10
+Dynamic: requires-python
