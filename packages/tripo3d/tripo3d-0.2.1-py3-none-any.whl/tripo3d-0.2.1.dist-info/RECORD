@@ -1,0 +1,13 @@
+tripo3d/__init__.py,sha256=z7JiIs5PhvuNyBMHCLA12GW7lQN0-NToCa4yJJipwY0,487
+tripo3d/client.py,sha256=cK07SPc4ajFsAklvrulUVQJVXl9FnuPHMq4CtODTB2c,29320
+tripo3d/exceptions.py,sha256=ErmGIc8Hfmd_0LmgEseA8hTSQjyHFNa5D4iceQPRXVA,638
+tripo3d/models.py,sha256=L6p8yQc0NE_UTHX7gyWPB-lIArrUEfBNSwzWsgasm58,3335
+tripo3d/client_impl/__init__.py,sha256=87ya18PypszTkf5dvZUTQ4-93GFO2E-OreiJKu3gGD4,205
+tripo3d/client_impl/aiohttp_client_impl.py,sha256=KLd7SXb-HZVyq_HMqtALsrMkHFOhGaHBH1MAamSHABY,6057
+tripo3d/client_impl/base_client.py,sha256=Fr9LKxTgzP0fZJUTs6KikJN8tXu7MVE7vhXmgIrKygM,1312
+tripo3d/client_impl/legacy_client_impl.py,sha256=85zi4wthHu0vDsizrDOcWYog3j-cpgXUkjsy6d4pBHk,8908
+tripo3d-0.2.1.dist-info/licenses/LICENSE,sha256=bDzA9rpp99XevIqVdhQbYGuYtLwElss2Yw824TV5l-g,1079
+tripo3d-0.2.1.dist-info/METADATA,sha256=4xKoSG0WpEIm3hyMN0DgLddI0zPA0AmKjfO5M14-YmU,5972
+tripo3d-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tripo3d-0.2.1.dist-info/top_level.txt,sha256=RtgwV_lMKDEJTTc_t9RPEDIJRsSJRmwNn4LDmSFeaow,8
+tripo3d-0.2.1.dist-info/RECORD,,
