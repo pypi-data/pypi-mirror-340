@@ -1,0 +1,45 @@
+[project]
+name = "searxng-simple-mcp"
+version = "1.0.3"
+description = "SearxNG MCP Server"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp",
+    "httpx",
+    "mcp[cli]>=1.6.0",
+    "pydantic",
+    "pydantic-settings",
+]
+[[project.authors]]
+name = "Dmitriy Safonov"
+
+[dependency-groups]
+dev = ["ruff", "build", "twine", "toml"]
+
+[build-system]
+requires = ["flit_core>=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project.scripts]
+searxng-simple-mcp = "searxng_simple_mcp.server:mcp.run"
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.ruff.lint.mccabe]
+max-complexity = 10
+
+[tool.ruff.lint.isort]
+known-first-party = ["searxng-simple-mcp"]
+known-third-party = ["fastmcp", "httpx", "pydantic"]
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"
