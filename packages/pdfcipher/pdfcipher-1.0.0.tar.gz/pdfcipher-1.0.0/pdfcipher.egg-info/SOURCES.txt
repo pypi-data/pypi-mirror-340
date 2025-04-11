@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+pdfcipher/__init__.py
+pdfcipher.egg-info/PKG-INFO
+pdfcipher.egg-info/SOURCES.txt
+pdfcipher.egg-info/dependency_links.txt
+pdfcipher.egg-info/entry_points.txt
+pdfcipher.egg-info/top_level.txt
