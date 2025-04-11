@@ -1,0 +1,8 @@
+postgres/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgres/runtime.py,sha256=6sUf05XlS1eIRhzjyFUFsMtQovrYeY6RU75i69Gl4dg,6750
+postgres/tool.py,sha256=f3rWKZwbP7qHQmRM9zWg5soxnf0kJh0lDzniMqWaVjs,2301
+opsmate_tool_postgres-0.1.0a0.dist-info/METADATA,sha256=pEooWbw6L258oRIBDdcoAgFL3f9ghyy12kWlVCHG8EA,3808
+opsmate_tool_postgres-0.1.0a0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+opsmate_tool_postgres-0.1.0a0.dist-info/entry_points.txt,sha256=3yQ8e3ebjuZZ_Og-EpNzMNAo1NH4qEOLFF9BTyh_B5Q,121
+opsmate_tool_postgres-0.1.0a0.dist-info/licenses/LICENSE,sha256=rV3niCgB5D2gIFX3uUAXGa8cezbvmzcnvR8X1BIGeHw,1067
+opsmate_tool_postgres-0.1.0a0.dist-info/RECORD,,

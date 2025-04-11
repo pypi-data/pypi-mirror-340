@@ -1,0 +1,5 @@
+[opsmate.runtime.runtimes]
+runtime = postgres.runtime:PostgresRuntime
+
+[opsmate.tools]
+tool = postgres.tool:PostgresTool
