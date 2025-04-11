@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tico
+Version: 0.1.0.dev250411
+Summary: Convert exported Torch module to circle
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.10.0
+License-File: LICENSE
+Requires-Dist: cffi
+Requires-Dist: circle-schema
+Requires-Dist: packaging
+Requires-Dist: pyyaml
+Requires-Dist: torch
+
+UNKNOWN
+
