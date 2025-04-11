@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-sale-blanket
+Version: 16.0.20250410.2
+Summary: Meta package for oca-sale-blanket Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-sale-order-blanket-order<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-sale-order-blanket-order-sale-margin<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-sale-order-blanket-order-stock-prebook<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-sale-order-blanket-order-stock-prebook-release<16.1dev,>=16.0dev
+
+UNKNOWN
