@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: yoco_online
+Version: 0.1.0
+Description-Content-Type: text/markdown
+Dynamic: description
+Dynamic: description-content-type
+
+# YOCO Online Package
+
+## Overview
+This is a package that helps you integrate YOCO Payment into your project. Making handling payments easier.
+
+## Creating Checkout
+Coming Soon
