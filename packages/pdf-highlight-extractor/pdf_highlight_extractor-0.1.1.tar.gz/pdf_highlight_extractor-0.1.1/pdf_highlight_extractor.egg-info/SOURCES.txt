@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pdf_highlight_extractor/__init__.py
+pdf_highlight_extractor/reader.py
+pdf_highlight_extractor.egg-info/PKG-INFO
+pdf_highlight_extractor.egg-info/SOURCES.txt
+pdf_highlight_extractor.egg-info/dependency_links.txt
+pdf_highlight_extractor.egg-info/requires.txt
+pdf_highlight_extractor.egg-info/top_level.txt
+tests/test_reader.py
