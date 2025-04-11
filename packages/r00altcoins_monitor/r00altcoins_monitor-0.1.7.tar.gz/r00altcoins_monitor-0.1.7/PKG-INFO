@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: r00altcoins_monitor
+Version: 0.1.7
+Summary: Add your description here
+Requires-Python: >=3.12
+Requires-Dist: prettytable
+Requires-Dist: python-coinmarketcap>=0.6
+Requires-Dist: r00logger
+Requires-Dist: r00notify
+Requires-Dist: r00secret
