@@ -1,0 +1,11 @@
+src/__init__.py,sha256=Vh-uiScDJ5ECVUllxXFQ_r06rm0xVOXAoAb8HeohL9k,348
+src/cli.py,sha256=ey5B6qEgJ4VV2GtyJLDxA6-eX1HdeMi9MmScBHzZhzM,8449
+src/processor.py,sha256=xlloTixTZQa0JahHs7JugLHl1sqZmzqUgnWMLXlJ6XM,8895
+src/results/Downloads_metrics.json,sha256=U_cILKULS2gzgvjHi9TRqsVpl6JZbGukDc5kZkDwApQ,215
+src/results/Lista de Exercicio 01 - LE01 - SegComp.json,sha256=-H1huJCgP20Wl7Au9kswhLOnGyKBC49BLQIN9aUSQWs,2893
+src/utils.py,sha256=EHuOOz9IWCi7oh8odp1YKBkpDVsOcqxYaEs0nsJhDx4,3606
+pdfplucker-0.2.2.dist-info/LICENSE.txt,sha256=9TLansCsb-8QO7-2DMG350B5W5uAmGLLhhqfanfSNE8,1075
+pdfplucker-0.2.2.dist-info/METADATA,sha256=Byv_DVtYnikbY4H10QwayTkzqf_g3ChCUKlTHH7yWMg,6456
+pdfplucker-0.2.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+pdfplucker-0.2.2.dist-info/entry_points.txt,sha256=cqzt0Yp9T6cJVrgy6_anipLuiQ7jcpLosxmCTk_PSoA,43
+pdfplucker-0.2.2.dist-info/RECORD,,
