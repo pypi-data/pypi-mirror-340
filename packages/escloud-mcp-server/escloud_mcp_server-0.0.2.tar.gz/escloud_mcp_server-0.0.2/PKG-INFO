@@ -1,0 +1,109 @@
+Metadata-Version: 2.4
+Name: escloud-mcp-server
+Version: 0.0.2
+Summary: ESCloud MCP Server
+License-Expression: MIT
+Requires-Python: >=3.10
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: volcengine-python-sdk>=1.1.3
+Description-Content-Type: text/markdown
+
+# ESCloud MCP Server
+This mcp server is used to provide interaction with escloud service on volcengine platform. It is a Model 
+Control Protocol([MCP](https://modelcontextprotocol.io/introduction)) server implementation. This server enables 
+querying the available zones in specific region, getting the config, nodes, plugins of instance, and more.
+
+## Prerequisites
+Before using this mcp server, you need to install the following components:
+- ak/sk for volcano engine
+- python 3.10+ or higher
+- [uv](https://github.com/astral-sh/uv) installed
+
+## Usage
+Obtain ak/sk from the [volcengine](https://www.volcengine.com/): login -> right top user icon -> api access secret key.
+
+### Usage with Trae
+TODO
+
+
+### Usage with Cline
+#### Using uvx with published package
+First, adding the following code to the config file `cline_mcp_settings.json`, it will automatically download the
+latest published package from the registry and run it. Then you need to change `your_volcengine_ak` 
+and `your_volcengine_sk` to your ak and sk.
+```json
+{
+  "mcpServers": {
+    "escloud-mcp-server": {
+      "disabled": false,
+      "timeout": 60,
+      "command": "uvx",
+      "args": [
+        "escloud-mcp-server"
+      ],
+      "env": {
+        "VOLC_ACCESS_KEY": "your_volcengine_ak",
+        "VOLC_SECRET_KEY": "your_volcengine_sk"
+      },
+      "transportType": "stdio"
+    }
+  }
+}
+```
+
+#### Using uv with local development
+First, cloning the repository locally and specifying the path to source code. Then add the following code to
+the config file `cline_mcp_settings.json`. Last you need to change `path/to/src/escloud_mcp_server` to the path
+where you cloned the repository, and change `your_volcengine_ak` and `your_volcengine_sk` to your ak and sk.
+```json
+{
+  "mcpServers": {
+    "escloud-mcp-server": {
+      "disabled": false,
+      "timeout": 60,
+      "command": "uv",
+      "args": [
+        "--directory",
+        "path/to/src/escloud_mcp_server",
+        "run",
+        "server.py"
+      ],
+      "env": {
+        "VOLC_ACCESS_KEY": "your_volcengine_ak",
+        "VOLC_SECRET_KEY": "your_volcengine_sk"
+      },
+      "transportType": "stdio"
+    }
+  }
+}
+```
+
+## Tools
+The server provides the following tools:
+- `escloud_describe_zones`: query available zones in a specific region
+  - parameters:
+    - `region_id`: the id of region
+- `escloud_describe_instance`: query the information of a instance
+  - parameters:
+    - `region_id`: the id of region
+    - `instance_id`: the id of instance
+- `escloud_describe_instances`: query the information of instances
+  - parameters:
+    - `region_id`: the id of region
+    - `zone_id`: the id of zone, support fuzzy query
+    - `instance_id`: the id of instance, support fuzzy query
+    - `instance_name`: the name of instance, support fuzzy query
+    - `status`: the status of instance
+    - `version`: the version of instance
+    - `charge_type`: the charge type of instance
+    - `project_name`: the project name that instance belongs to
+    - `page_number`: the page number of the result list
+    - `page_size`: the page size of the result list
+- `escloud_describe_instance_nodes`: query the nodes of a instance
+  - parameters:
+    - `region_id`: the id of region
+    - `instance_id`: the id of instance
+- `escloud_describe_instance_plugins`: query the plugins of a instance
+  - parameters:
+    - `region_id`: the id of region
+    - `instance_id`: the id of instance
