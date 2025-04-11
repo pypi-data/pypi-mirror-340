@@ -1,0 +1,12 @@
+livekit/plugins/volcengine/__init__.py,sha256=d1fCdq-zOrMlVSFs-4QovCFk4xL1JNzSUGsv_fdh1xI,545
+livekit/plugins/volcengine/llm.py,sha256=mCVzc4NRMS3hfzqkxX53MsKiwvy96NKnxUt6aUNxE0E,10270
+livekit/plugins/volcengine/log.py,sha256=0Zn4o7OuZdKZiShQNa1xOFwHx8XJHoE59cnJNqvjdsg,81
+livekit/plugins/volcengine/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+livekit/plugins/volcengine/stt.py,sha256=sDcTUAEUQ9lRj02K7ECTOQKaESaMLHQWAeD0XBrUwnk,22772
+livekit/plugins/volcengine/tts.py,sha256=lD2UhaP_c1aDLGRWhbe7McC8ZAtMFoCkIyDCabb4DWc,16268
+livekit/plugins/volcengine/utils.py,sha256=qRJX7jSBmd2WRD2cdjokPStnv381dDLRRPVGXRu9j80,4804
+livekit/plugins/volcengine/version.py,sha256=wygrEW3brUgbks4JvwNjcujOADEl2PWkdIF9d8vyM3c,23
+livekit_plugins_volcengine-1.0.11.dist-info/METADATA,sha256=SZB2AkPTWNQ9s7B20N2pOxr90bMu2kdfS3Wf8oJt-Tk,2866
+livekit_plugins_volcengine-1.0.11.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+livekit_plugins_volcengine-1.0.11.dist-info/licenses/LICENSE,sha256=-CIYNcpAsbPTuOK4oEJOYQkO5UfmGioTbaLgUdLskH8,1066
+livekit_plugins_volcengine-1.0.11.dist-info/RECORD,,
