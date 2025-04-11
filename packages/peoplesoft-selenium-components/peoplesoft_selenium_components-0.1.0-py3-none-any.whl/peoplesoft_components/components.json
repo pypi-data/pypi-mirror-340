@@ -1,0 +1,80 @@
+{
+  "Table": {
+    "components": [
+      "//table"
+    ],
+    "labels": [
+      [".", "@title"]
+    ]
+  },
+  "Tile": {
+    "components": [
+      "//div[contains(concat(' ', normalize-space(@class), ' '), ' nuitile ')][.//span[contains(concat(' ', normalize-space(@class), ' '), ' ps-label ')]]"
+    ],
+    "labels": [
+      [".//span[contains(concat(' ', normalize-space(@class), ' '), ' ps-label ')]", "text"]
+    ]
+  },
+  "PasswordInput": {
+    "components": [
+      "//input[@type='password']"
+    ],
+    "labels": [
+      ["//label[@for='#id']", "text"],
+      [".", "@aria-label"],
+      [".", "@placeholder"]
+    ]
+  },
+  "TextInput": {
+    "components": [
+      "//input[@type='text']"
+    ],
+    "labels": [
+      ["//label[@for='#id']", "text"],
+      [".", "@aria-label"],
+      [".", "@placeholder"]
+    ]
+  },
+  "Checkbox": {
+    "components": [
+      "//input[@type='checkbox']"
+    ],
+    "labels": [
+      ["//label[@for='#id']", "text"],
+      [".", "@aria-label"],
+      [".", "@placeholder"]
+    ]
+  },
+  "Link": {
+    "components": [
+      "//a"
+    ],
+    "labels": [
+      [".", "text"]
+    ]
+  },
+  "Button": {
+    "components": [
+      "//button",
+      "//input[@type='button']",
+      "//input[@type='submit']",
+      "//div[@role='button']",
+      "//a[@role='button']"
+    ],
+    "labels": [
+      [".", "text"],
+      [".", "@aria-label"],
+      [".", "@value"],
+      [".//span", "text"],
+      [".", "string"]
+    ]
+  },
+  "Image": {
+    "components": [
+      "//img"
+    ],
+    "labels": [
+      [".", "@alt"]
+    ]
+  }
+}
