@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: office-assistant-mcp
+Version: 0.0.1
+Summary: 办公使用MCP工具
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: httpx==0.28.1
+Requires-Dist: loguru==0.5.3
+Requires-Dist: mcp[cli]==1.6.0
+Requires-Dist: playwright==1.51.0
+
+# 使用playwright操作浏览器
+
+## 包管理
+使用uv
+
+## 安装依赖
+clone项目后，使用uv安装依赖：
+```bash
+uv sync
+```
+
+执行代码前激活虚拟环境：
+```bash
+source .venv/bin/activate
+```
+
+安装三方包:
+```bash
+uv add playwright==1.51.0
+```
+
+
+## Tools调试
+
+启动mcp调试工具：
+```bash
+uv run mcp dev mcp_server.py
+```
+打开调试：http://127.0.0.1:6274 
+
+
+
+
+
