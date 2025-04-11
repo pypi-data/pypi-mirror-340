@@ -1,0 +1,2 @@
+[console_scripts]
+trkn-menu = trkn_dalletxt.menu:main

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+trkn_dalletxt.egg-info/PKG-INFO
+trkn_dalletxt.egg-info/SOURCES.txt
+trkn_dalletxt.egg-info/dependency_links.txt
+trkn_dalletxt.egg-info/entry_points.txt
+trkn_dalletxt.egg-info/requires.txt
+trkn_dalletxt.egg-info/top_level.txt
