@@ -1,0 +1,2 @@
+[console_scripts]
+we = historical_data_migration.migration:main
