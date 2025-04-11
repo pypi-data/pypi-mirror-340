@@ -1,0 +1,2 @@
+[console_scripts]
+extension_changer = extension_changer.__main__:main

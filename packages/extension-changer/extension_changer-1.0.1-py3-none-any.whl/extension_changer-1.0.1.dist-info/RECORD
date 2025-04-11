@@ -1,0 +1,13 @@
+extension_changer/__init__.py,sha256=W6lqDPs4HEh12sXbCj_a9-8Ze9-wxxB5MLcXdYSKVB8,234
+extension_changer/__main__.py,sha256=m9J6mHhJ6gcbzqSqCd8KUfHv6vDnJN3hxvvrBvv2iLM,3123
+extension_changer/extension_changer.py,sha256=6sr-sDQbOydKnjHDbxHcPmFRkekoXbhPXyrwhmjcp3s,20226
+extension_changer/resources/__init__.py,sha256=FPzCxicI4pennwSfD4DbQr3HlgaO060f56r4Lj-orWw,52
+extension_changer/resources/icon.icns,sha256=Am_s-vcLaazvb8VZo-I2dceP3EWBI-3mzdnKdfS7ZQQ,227328
+extension_changer/resources/icon.ico,sha256=xsbNkDND5Oy7vsO3YOyBSGUUFHoB13UR_x3bnbHBOKk,234494
+extension_changer/resources/icon.png,sha256=GexgSUChyeIIBpM73QEbebPKpxdOryDnwkEqqfojwMo,5436
+extension_changer-1.0.1.dist-info/licenses/LICENSE,sha256=4MJsKrd5C7U_7dU0b_2eNlrPQkKG1_FGqO7o87LlEGI,1092
+extension_changer-1.0.1.dist-info/METADATA,sha256=j_bcFjiBUdmNMxOCcNJUTQxrgjO0QkaU3WEa2OE2P_8,3059
+extension_changer-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+extension_changer-1.0.1.dist-info/entry_points.txt,sha256=vfkO01YkasmEidSbNJQjy__7vzyk2ma4-oKmC17NP2Y,70
+extension_changer-1.0.1.dist-info/top_level.txt,sha256=hmPmRmq89R1NWJq3PdHDL_5tg8mSc-PIEg2Ji1iRP3M,18
+extension_changer-1.0.1.dist-info/RECORD,,
