@@ -1,0 +1,10 @@
+common.py,sha256=jiUk77sxTUdSMx1nyvNCeEPFfuby2VbLxCJObOfig4s,4010
+customFronter.py,sha256=Lg9EaPSLPWEsL3U-Dq7eGILh8Vz4T_Qj1TqWlKZ98CM,2033
+nonCustomFronter.py,sha256=HRrHKW4mkKMy1ntn7XjnwE3KrRrrzUi8XIJkgxU3x2A,2145
+sessionSetup.py,sha256=rAbZ3wykycbuPhycgsrCpPKtHHDnAIp3TRfWYPdWTXQ,802
+user.py,sha256=r5lSGMFQDeOz5KzHKH1OoztUkQNMzTOJUO-c2I6ZxYQ,1165
+simplypluralutils-0.1.0.dist-info/licenses/LICENSE,sha256=SdDm6uqbqeNkXXE2-sZFuV5h-o4VGuaQWzoLQFU331g,1087
+simplypluralutils-0.1.0.dist-info/METADATA,sha256=bsesYPzou6SFmaaGbXwTuFVPFxnAU8fEU9SvSj0g7Tc,1730
+simplypluralutils-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+simplypluralutils-0.1.0.dist-info/top_level.txt,sha256=7uAEHzG7MGNkJaQ4Wu0ig_lB4RN-6V71J4CjVI6M7ds,56
+simplypluralutils-0.1.0.dist-info/RECORD,,
