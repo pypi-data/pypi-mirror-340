@@ -1,0 +1,42 @@
+Metadata-Version: 2.3
+Name: pgsql-mcp-server
+Version: 1.1.0
+Summary: PostgreSQL MCP Server
+Project-URL: Homepage, https://github.com/twn39/pgsql-mcp-server
+Project-URL: Documentation, https://github.com/twn39/pgsql-mcp-server
+Project-URL: Repository, https://github.com/twn39/pgsql-mcp-server
+Project-URL: Source Code, https://github.com/twn39/pgsql-mcp-server
+Author-email: curry tang <twn39@163.com>
+Maintainer-email: curry tang <twn39@163.com>
+Keywords: ai,mcp,mcp-server,pgsql,pgsql-mcp-server,postgresql
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Requires-Dist: asyncpg>=0.30.0
+Requires-Dist: click>=8.1.8
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: python-dotenv>=1.1.0
+Requires-Dist: sqlalchemy[asyncio]>=2.0.40
+Requires-Dist: sqlmodel>=0.0.24
+Description-Content-Type: text/markdown
+
+
+## Run MCP Server
+
+![PyPI - Version](https://img.shields.io/pypi/v/pgsql-mcp-server)
+
+
+```shell
+uvx pgsql-mcp-server --dsn postgresql://postgres:postgres@localhost:5432/db
+```
+
+
+## Preview or debug 
+
+``` 
+npx @modelcontextprotocol/inspector pgsql-mcp-server --dsn postgresql://postgres:postgres@localhost:5432/db
+```
