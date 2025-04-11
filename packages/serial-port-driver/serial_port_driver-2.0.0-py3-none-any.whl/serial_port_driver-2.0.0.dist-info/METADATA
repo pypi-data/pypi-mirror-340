@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: serial_port_driver
+Version: 2.0.0
+Summary: serial port driver
+Home-page: http://jimo.com/
+Author: jimo
+Author-email: jimo@qq.com
+License: Apache2.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+serial port driver
