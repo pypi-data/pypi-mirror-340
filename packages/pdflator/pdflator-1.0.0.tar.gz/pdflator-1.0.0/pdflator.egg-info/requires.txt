@@ -1,0 +1,6 @@
+flask>=3.0.0
+pymupdf>=1.22.0
+pymupdf-fonts>=1.0.5
+googletrans>=4.0.0
+libretranslatepy>=2.1.4
+python-dotenv>=1.0.0
