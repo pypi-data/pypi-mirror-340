@@ -1,0 +1,8 @@
+dupr/__init__.py,sha256=aD0UtzS7b7Bumrm44Ggbia_D1MG4OTepoOQDfQ8bj70,2466
+dupr/auth.py,sha256=EMbrBycCb7dqygkbZcHPDUnKQyITJLDp4XuNpTU_roo,530
+dupr/exceptions.py,sha256=y-OmWydAVoQ28Wm-OjXzrORIftLnzhRnG_3_KQOiOY0,837
+dupr/http_client.py,sha256=4m4YDsQhXiXdgv5M0Sr-VXrxncFfFo_zU7gzW84NqMg,5450
+dupr-0.2.1.dist-info/LICENSE,sha256=vsz5o7O2lx9I13wy3NkbqNtlmWJLb5hPh2a2illrjuo,1151
+dupr-0.2.1.dist-info/METADATA,sha256=Y__QPqssZP5gR5QT9kWC8bRFpYGcNyrrHJ2Q22_HIDc,658
+dupr-0.2.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+dupr-0.2.1.dist-info/RECORD,,
