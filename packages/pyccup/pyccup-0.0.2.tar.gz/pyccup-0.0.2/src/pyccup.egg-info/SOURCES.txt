@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/pyccup/core.py
+src/pyccup/element.py
+src/pyccup/elems.py
+src/pyccup/page.py
+src/pyccup.egg-info/PKG-INFO
+src/pyccup.egg-info/SOURCES.txt
+src/pyccup.egg-info/dependency_links.txt
+src/pyccup.egg-info/top_level.txt
+tests/test_basic.py
+tests/test_element.py
+tests/test_ordering.py
