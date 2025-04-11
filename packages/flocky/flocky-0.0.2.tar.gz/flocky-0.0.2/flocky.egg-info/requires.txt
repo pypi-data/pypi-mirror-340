@@ -1,0 +1,9 @@
+fastcore
+fastprogress
+python-fasthtml
+python-dotenv
+pandas
+huggingface-hub
+torch<2.7,>=1.10
+
+[dev]
