@@ -1,0 +1,2 @@
+[console_scripts]
+vnittest-app = vnittest.web_app:run_app

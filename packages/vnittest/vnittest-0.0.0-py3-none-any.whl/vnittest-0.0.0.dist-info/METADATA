@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vnittest
+Version: 0.0.0
+Summary: UI interface for gradient flow visualization
+Author: Thien An L. Nguyen
+License: Apache 2.0
+License-File: LICENSE
+Requires-Dist: numpy==1.19.5
+Requires-Dist: plotly==5.12.0
+Requires-Dist: ipywidgets==7.6.5
+Requires-Dist: matplotlib==3.3.4
+Requires-Dist: voila==0.3.0
+
