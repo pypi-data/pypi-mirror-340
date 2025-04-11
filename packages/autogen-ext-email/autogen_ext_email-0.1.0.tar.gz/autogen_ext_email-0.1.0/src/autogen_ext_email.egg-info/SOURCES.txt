@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/_email_agent.py
+src/_email_tools.py
+src/autogen_ext_email.egg-info/PKG-INFO
+src/autogen_ext_email.egg-info/SOURCES.txt
+src/autogen_ext_email.egg-info/dependency_links.txt
+src/autogen_ext_email.egg-info/requires.txt
+src/autogen_ext_email.egg-info/top_level.txt
