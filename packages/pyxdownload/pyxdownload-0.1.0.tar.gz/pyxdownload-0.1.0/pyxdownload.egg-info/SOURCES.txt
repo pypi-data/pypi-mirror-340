@@ -1,0 +1,9 @@
+README.md
+setup.py
+downd/__init__.py
+downd/pyxdownload.py
+pyxdownload.egg-info/PKG-INFO
+pyxdownload.egg-info/SOURCES.txt
+pyxdownload.egg-info/dependency_links.txt
+pyxdownload.egg-info/entry_points.txt
+pyxdownload.egg-info/top_level.txt
