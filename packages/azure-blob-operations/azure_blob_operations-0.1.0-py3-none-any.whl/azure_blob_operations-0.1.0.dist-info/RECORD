@@ -1,0 +1,9 @@
+azure_blob_operations/__init__.py,sha256=UjMWoTIObHpWXs0IjKSf6dNxRm3pYnjrh9ihmDWp3CM,68
+azure_blob_operations/blob_operations.py,sha256=CrTuBYJVul05YF9vAGMq7ux8qpIka-IFYqvg3OlZRmI,11244
+azure_blob_operations/config.py,sha256=cvrsiZ82XdnWRoTIohCpsE8aVXSq87iJB07ccrHawpQ,280
+azure_blob_operations/exceptions.py,sha256=N4RVnUekudgjH5rgQaSZLfCyiTy9JJiAk-EPDVkFwz8,264
+azure_blob_operations/utils.py,sha256=NeU5_BdF6sbVDZdB7q88ZquaacN7b-cwmcjFGdSzP5c,435
+azure_blob_operations-0.1.0.dist-info/METADATA,sha256=1Dksgw89s0-8cQW7Hq8YMJA2krv408B1LcslauME6n4,488
+azure_blob_operations-0.1.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+azure_blob_operations-0.1.0.dist-info/top_level.txt,sha256=fpzR3vjuY1EOsUZSXhJiKIg4C94Fn8U57qGt2ctPDrk,22
+azure_blob_operations-0.1.0.dist-info/RECORD,,
