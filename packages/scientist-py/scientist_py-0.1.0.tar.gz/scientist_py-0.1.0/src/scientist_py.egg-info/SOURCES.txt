@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/scientist/__init__.py
+src/scientist_py.egg-info/PKG-INFO
+src/scientist_py.egg-info/SOURCES.txt
+src/scientist_py.egg-info/dependency_links.txt
+src/scientist_py.egg-info/top_level.txt
+tests/test_experiment.py
