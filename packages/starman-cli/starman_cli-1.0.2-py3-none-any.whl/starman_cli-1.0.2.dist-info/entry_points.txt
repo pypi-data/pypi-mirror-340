@@ -1,0 +1,2 @@
+[console_scripts]
+starman = starman.cli:main

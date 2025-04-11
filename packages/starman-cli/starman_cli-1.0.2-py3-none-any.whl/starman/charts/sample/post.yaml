@@ -1,0 +1,21 @@
+method: POST
+endpoint: /api/users
+description: "Basic example doing a POST request"
+headers:
+    Content-Type: application/json
+optional:
+  - key: leader
+payload: >
+  {
+    "name": "{{ leader | default("morpheus", true) }}",
+    "job": "leader"
+  }
+cleanup:
+  - user_id
+capture:
+  from_request:
+    - path: name
+      dest: name
+  from_response:
+    - path: id
+      dest: user_id

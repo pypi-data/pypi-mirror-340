@@ -1,0 +1,10 @@
+method: DELETE
+endpoint: /api/users/{{user_id}}
+description: "Basic example doing a DELETE request"
+headers: null
+payload: ""
+required:
+  - key: user_id
+    message: Please provide a user_id value
+cleanup:
+  - user_id

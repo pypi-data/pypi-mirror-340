@@ -1,0 +1,5 @@
+description: "Sample chart using ReqRes API"
+environments:
+  default:
+    host: https://reqres.in
+config:
