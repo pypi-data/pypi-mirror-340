@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+jedidebug/__init__.py
+jedidebug/core.py
+jedidebug/handlers.py
+jedidebug/quotes.py
+jedidebug.egg-info/PKG-INFO
+jedidebug.egg-info/SOURCES.txt
+jedidebug.egg-info/dependency_links.txt
+jedidebug.egg-info/top_level.txt
+tests/__init__.py
+tests/test_jedidebug.py
