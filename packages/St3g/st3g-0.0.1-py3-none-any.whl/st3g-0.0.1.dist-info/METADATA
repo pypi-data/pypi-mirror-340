@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: St3g
+Version: 0.0.1
+Summary: a python package that offers easy-to-use methods to Encode / Decode data into different file types
+Author: jacozzola
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# St3g
+
+St3g is a python package that offers easy-to-use methods to Encode / Decode data into different file types
+
+## Install guide
+
+St3g is installable using Pip (Package Installer for Python) by typing the following command:
+`python3 -m pip install St3g`
