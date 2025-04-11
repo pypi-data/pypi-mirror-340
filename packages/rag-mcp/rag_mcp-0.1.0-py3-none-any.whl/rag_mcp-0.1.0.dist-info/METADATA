@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: rag-mcp
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: accelerate>=1.6.0
+Requires-Dist: langchain-chroma>=0.2.2
+Requires-Dist: langchain-community>=0.3.21
+Requires-Dist: langchain-docling>=0.2.0
+Requires-Dist: langchain-ollama>=0.3.0
+Requires-Dist: langchain-text-splitters>=0.3.8
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: sentence-transformers>=4.0.2
