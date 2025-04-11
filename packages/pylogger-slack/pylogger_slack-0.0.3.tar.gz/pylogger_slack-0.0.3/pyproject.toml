@@ -1,0 +1,27 @@
+[project]
+name = "pylogger-slack"
+version = "0.0.3"
+description = "Python logging with an option to format it for YAML/JSON format with a support for Slack Notification. (Helpful for monitoring codebase in production/testing)"
+authors = [{name="Binay Kumar Pradhan", email ="bpradhan.asli@gmail.com"}]
+readme = "README.md"
+license = "GPL-3.0"
+
+keywords = ["logger", "python slack notification", "logger yaml", "logger json", "python logging"]
+requires-python = ">=3.11"
+dependencies = [
+    "ecs-logging>=2.2.0",
+    "pyyaml>=6.0.2",
+    "slack-sdk>=3.35.0",
+]
+
+[project.urls]
+Repository = "https://github.com/VinayIN/pylogger-slack.git"
+Documentation = "https://pylogger-slack.pypa.io/en/latest/"
+
+[dependency-groups]
+dev = [
+    "mike>=2.1.3",
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.6.11",
+    "pytest>=8.3.5",
+]
