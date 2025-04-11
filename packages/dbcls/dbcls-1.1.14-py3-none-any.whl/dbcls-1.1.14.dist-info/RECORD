@@ -1,0 +1,16 @@
+dbcls/__init__.py,sha256=JzinEInLDkuy8LCXBWVlfyBRFE4B2yM5_X6X49iZOrk,24
+dbcls/dbcls.py,sha256=fJXIX21K2sf9D8VLOSpT3b2Fqpr4tx2me_m_sxliR4A,17851
+dbcls/sql_tokenizer.py,sha256=x8LhQdWtFJoJCxj9WcoEPlTNMyexCotnfnYlDNKA8D0,2068
+dbcls/vd_db_browser.py,sha256=W0-YOXNymWr3rE3fuhsRelKqGdT4WzFnGoSgRGpolfU,4206
+dbcls/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbcls/clients/base.py,sha256=hOF4mLiKSmhKXzxmd2el-PMs5CziMg-PhyA_MahnFy4,3435
+dbcls/clients/clickhouse.py,sha256=qg6y22jEM-fT3KSXJH_mdcYnrbWKCDV9DvFT7KTe1zU,3948
+dbcls/clients/mysql.py,sha256=ZXqRleeb6QfBZtbnv1CCDDLBMoV0GVOqkp3fajTSI4M,4036
+dbcls/clients/postgres.py,sha256=wfJf1NRiUB9QnMA41fLTRA_SF8UuVadnZc1eEdcbVf0,8661
+dbcls/clients/sqlite3.py,sha256=18kk3wodNWlvwAz_yX3XKyoQf2Z9nP-UBh-XwnC00O4,2349
+dbcls-1.1.14.dist-info/licenses/LICENSE,sha256=Q6kgHFlPF-zcLdx0i-_2RDFRxV5sN_yqya_Uor4dtvM,1492
+dbcls-1.1.14.dist-info/METADATA,sha256=4ItyIzbPb-s00yP9LRgEG2Wl3HWsM40sqOe1vgr6-hU,2669
+dbcls-1.1.14.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dbcls-1.1.14.dist-info/entry_points.txt,sha256=sYhRvF1443ZrQlXYMa8MlIN6Oj_339J7Oe73mNlvrpc,37
+dbcls-1.1.14.dist-info/top_level.txt,sha256=Qsgy8WXQ1qWsx4BtrgU7QV6NY-Ha5ZgH98eq-5zVz-c,6
+dbcls-1.1.14.dist-info/RECORD,,
