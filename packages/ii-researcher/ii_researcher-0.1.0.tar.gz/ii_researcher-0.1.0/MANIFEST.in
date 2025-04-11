@@ -1,0 +1,3 @@
+exclude .env
+exclude run.sh
+exclude litellm_config.*
