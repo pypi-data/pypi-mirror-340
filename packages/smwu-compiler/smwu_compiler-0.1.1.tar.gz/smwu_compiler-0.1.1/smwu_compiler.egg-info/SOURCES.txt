@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+smwu_compiler/__init__.py
+smwu_compiler/__main__.py
+smwu_compiler.egg-info/PKG-INFO
+smwu_compiler.egg-info/SOURCES.txt
+smwu_compiler.egg-info/dependency_links.txt
+smwu_compiler.egg-info/entry_points.txt
+smwu_compiler.egg-info/top_level.txt
