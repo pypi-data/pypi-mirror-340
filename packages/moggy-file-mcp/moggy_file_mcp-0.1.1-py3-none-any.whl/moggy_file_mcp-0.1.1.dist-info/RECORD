@@ -1,0 +1,6 @@
+file_system/__init__ .py,sha256=-1qJ_e0O2qcMQOhdvlql75nGswFcJ8ydUx6ftovZebQ,231
+file_system/file_mcp_server.py,sha256=22s72qDc5fBGWjPKDQlO-44sYO5W186P6mvTkptbFgU,5244
+moggy_file_mcp-0.1.1.dist-info/METADATA,sha256=WTrZxZNuyvPGTlfovaDiFF1AGN1ZaBws5WVdfQWwJRw,148
+moggy_file_mcp-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+moggy_file_mcp-0.1.1.dist-info/entry_points.txt,sha256=KB-A6zeYsWb1UR24LaYdAlFyc-9VFRL5lhou7euQ89c,72
+moggy_file_mcp-0.1.1.dist-info/RECORD,,

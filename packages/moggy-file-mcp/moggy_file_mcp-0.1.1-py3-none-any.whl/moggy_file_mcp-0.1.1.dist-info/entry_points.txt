@@ -1,0 +1,2 @@
+[console_scripts]
+moggy-file-mcp = src.file_system.file_mcp_server:main
