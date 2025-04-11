@@ -1,0 +1,14 @@
+wata/__init__.py,sha256=YUfMxPGNlmQvNuQwzq9XkgcUmjABq1sj9axwZvGkyT8,434
+wata/client.py,sha256=zq2JMGt1e8aRqFxTx_s3NCzP1N3mEKjjf00XrVSxI1Q,2928
+wata/core.py,sha256=pIFR5BLX7EtST2QKOpjTaok-1SMud0MaEIN8rxmTeIA,18828
+wata/exceptions.py,sha256=G6MsV79_jGwTbIKWCyNzN1jK99AK39EpJ2FLsNEEohc,9147
+wata/http.py,sha256=984PB3Hjh58oHsN1QQ79d3skeTaOFkft1yFxq-V4FkY,33275
+wata/modules/__init__.py,sha256=_1swKJuXW9vdJ6XwJmeOFw8n_u2y9eZuPe59F5BeBT0,66
+wata/modules/base.py,sha256=9uKv5u45-J-RSKsxpiWWhxSzOUN7GQKAN5l0nHIIXMs,368
+wata/modules/payments.py,sha256=YDmSBqqqnFsZThMnfPWKgoTwlr_-vaJ57-JR-kFv2No,8756
+wata/modules/steam.py,sha256=9tETHE0QBqvEC-WM9z9FXhlBKgy5EWr9pMpPYoLF3IE,309
+wata/modules/webhooks.py,sha256=8mx_1uCxySdTYYhhERGuwpWlZPHRujJRTUlsdlgm4XU,9846
+wata_api-0.1.9.dist-info/METADATA,sha256=smmNEEeO5D1KT8JS3rF1I_qd8AKqGvgLzec12wa8qcA,9934
+wata_api-0.1.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+wata_api-0.1.9.dist-info/top_level.txt,sha256=S6ALuNeOlEI_nUtXSsSm94u6ajJ8uaeoFKbLlT5jGmA,5
+wata_api-0.1.9.dist-info/RECORD,,
