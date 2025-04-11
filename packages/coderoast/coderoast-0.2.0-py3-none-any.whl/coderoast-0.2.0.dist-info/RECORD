@@ -1,0 +1,11 @@
+coderoast/__init__.py,sha256=MqeiVynDjL-D8PBcEyEX3PmQtu8nYYjJqIDQxYr8d2U,330
+coderoast/core.py,sha256=R91KT-fCJ_0w803VVZvLT7RvP8jaObQXMaRyPN2whak,7067
+coderoast/handlers.py,sha256=k6o-1-aMrm_6arX4iwVRYFWB1bpwakw7Yw7H4WcKdV8,3267
+coderoast/insults.py,sha256=70WfcW3R78No7dmij8CMvZUZ1h51wQEmkyJEE7pxDqI,12340
+coderoast-0.2.0.dist-info/licenses/LICENSE,sha256=ObgamcWIH31elziAnSGYtwOjSHto13XoBiul7-iNREs,1097
+tests/__init__.py,sha256=OE4oyS6A8vI1elbu5x6ZktKPzV3H6ZQUTl3xodHZ6R0,37
+tests/test_coderoast.py,sha256=TaXECSBnXbZJN7CFWmazOfP40yxAhwLRJHL6bsJdePQ,9624
+coderoast-0.2.0.dist-info/METADATA,sha256=PUaPw6L24DHPRrx0qkBGIk9vbIe-Gqi5jdOAAEI07-Q,5416
+coderoast-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+coderoast-0.2.0.dist-info/top_level.txt,sha256=vn05E0QnvZmsywIR4Ze9p3EFIqZj84viEteCgFlC4nQ,16
+coderoast-0.2.0.dist-info/RECORD,,
