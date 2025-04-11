@@ -1,0 +1,6 @@
+pydantic
+requests
+typing-extensions
+
+[testing]
+pytest
