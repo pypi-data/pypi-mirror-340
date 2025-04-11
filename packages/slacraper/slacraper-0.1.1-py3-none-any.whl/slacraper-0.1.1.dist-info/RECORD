@@ -1,0 +1,10 @@
+slacraper/__init__.py,sha256=dyf-2J-V2tdx0_iewN5p8KINb87PTvTlDH7jUZwvdBw,210
+slacraper/_version.py,sha256=Mmxse1R0ki5tjz9qzU8AQyqUsLt8nTyCAbYQp8R87PU,511
+slacraper/cli.py,sha256=bUghaDjs2ua7_kjblRXtIr9ttd4DyjIKJL9r-kkbGE0,2072
+slacraper/core.py,sha256=ub-1MuyuEc9UiwoDNzqmA9p0MVdX8rV1ICnfKXjcWoc,9338
+slacraper-0.1.1.dist-info/licenses/LICENSE,sha256=Vv8aB3EIw5vPPq9QBG_4S2HCYANP5M3XYtZtvAzwGNA,1062
+slacraper-0.1.1.dist-info/METADATA,sha256=t22ShuuLpSNIv0e8xDWjIC9iq5DFZR5q9i4lA25o1D8,5874
+slacraper-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+slacraper-0.1.1.dist-info/entry_points.txt,sha256=blXSJ9ZzRya2kNFVq8GCKBm3uIx7M0R2zzmSX7UngOo,49
+slacraper-0.1.1.dist-info/top_level.txt,sha256=eJZQpjoxwXMjXApk4_io0QAdihBScuiyAxo8RkTixLY,10
+slacraper-0.1.1.dist-info/RECORD,,
