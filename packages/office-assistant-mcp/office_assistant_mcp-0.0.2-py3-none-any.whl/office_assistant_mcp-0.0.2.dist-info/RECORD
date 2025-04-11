@@ -1,0 +1,8 @@
+log_util.py,sha256=ZACrsRL41Fr91nxNfxcdxo-wKj40BD3PHzydPxjnUFM,4554
+mcp_server.py,sha256=onrcl-5Y4rLaru96RAgxg4malfl-qs1rNI9fBWe4nDc,6497
+playwright_util.py,sha256=eYqLxDQDsG7i6CMtvcqPa_q9UTQeUuxTyT4AjSIkcyA,18267
+office_assistant_mcp-0.0.2.dist-info/METADATA,sha256=9MlOt6KevyWJ_wPEDkoSssOkVTsbCHTqImA_FHRF_Ps,762
+office_assistant_mcp-0.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+office_assistant_mcp-0.0.2.dist-info/entry_points.txt,sha256=xPA22wiIRcNH7b34r-IbX3QfjWiNoD5e1MBABKgEkdw,57
+office_assistant_mcp-0.0.2.dist-info/top_level.txt,sha256=es_Gh0iSTX08NwLs4PQuDxA1o23C20KMJ2p0VU3SLfM,36
+office_assistant_mcp-0.0.2.dist-info/RECORD,,

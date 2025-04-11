@@ -1,0 +1,2 @@
+[console_scripts]
+office-assistant-mcp = mcp_server:main
