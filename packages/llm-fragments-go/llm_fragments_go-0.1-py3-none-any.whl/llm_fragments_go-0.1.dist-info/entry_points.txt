@@ -1,0 +1,2 @@
+[llm]
+fragments_go = llm_fragments_go
