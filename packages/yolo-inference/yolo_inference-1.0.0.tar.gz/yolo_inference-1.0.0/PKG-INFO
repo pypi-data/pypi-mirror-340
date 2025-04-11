@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: yolo-inference
+Version: 1.0.0
+Summary: YOLO inference library for object detection
+Home-page: https://bitbucket.org/godigit/cv_motor_4wclaim_gpuservices
+Author: Shubham Nayak
+Author-email: shubham.nayak@godigit.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: torch
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
