@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "locale-lib"
+version = "1.0.0"
+description = ""
+authors = ["cabup <pass@localhost>"]
+license = "GNU GPLv3"
+readme = "README.md"
+packages = [
+    {include="locale-lib"}
+]
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
