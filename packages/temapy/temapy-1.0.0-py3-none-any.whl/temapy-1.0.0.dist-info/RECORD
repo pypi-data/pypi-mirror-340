@@ -1,0 +1,9 @@
+temapy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+temapy/gateway.py,sha256=NmwYyd6j2sBKUMlBfpaqqzewGTbNegcnDmT2GEpB-ak,10648
+temapy/sequences.py,sha256=baSkENB9TuieU5OXGmklI3ewhPNjOHi9bJSKtfkt1y4,4292
+temapy/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+temapy/examples/average_as_new_sequence.py,sha256=CjmFEkeWnwLbQl8PMt1-0Lkewi-3iFG2XTliygghuLw,1034
+temapy-1.0.0.dist-info/METADATA,sha256=9SX0wzkaNWlO8RqkWSVXWeir5O7krIX-K0yfafgNu2s,9279
+temapy-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+temapy-1.0.0.dist-info/top_level.txt,sha256=vGCOwZT-j1DnKtCnzs1ytwrK6I-fks-nss1_9NB6Juk,7
+temapy-1.0.0.dist-info/RECORD,,
