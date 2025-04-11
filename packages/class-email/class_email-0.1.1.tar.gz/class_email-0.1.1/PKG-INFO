@@ -1,0 +1,85 @@
+Metadata-Version: 2.4
+Name: class-email
+Version: 0.1.1
+Summary: A tool to output .eml files for opening in your email client and (optionally) sending them with SMTP.
+Project-URL: Repository, https://github.com/HamishWHC/class-email.git
+Project-URL: Issues, https://github.com/HamishWHC/class-email/issues
+Author-email: Hamish Cox <hamish@hamishwhc.com>
+Maintainer-email: Hamish Cox <hamish@hamishwhc.com>
+License: Copyright © 2024 Hamish Cox
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Requires-Dist: click>=8.1.7
+Requires-Dist: jinja2>=3.1.4
+Requires-Dist: tqdm>=4.67.1
+Description-Content-Type: text/markdown
+
+# A tool for spitting out .eml files from a template and a CSV file
+
+Built for UNSW tutors, because we don't get to use SMTP with Outlook, since we can't add OAuth applications.
+
+It can also do SMTP for when you have the luxury.
+
+```
+Usage: class-email [OPTIONS] DATAFILE TEMPLATE SUBJECT
+
+  Creates .eml files for each row in DATAFILE. The email body is generated
+  from TEMPLATE, which is a Jinja2 template. Each email's subject will be
+  SUBJECT. Can optionally be opened in your preferred email program or sent
+  via SMTP.
+
+Options:
+  --filter <INTEGER FILENAME>...  A column number followed by the name of a
+                                  file containing values that that column
+                                  needs to match. Values should be separated
+                                  by newlines.
+  --sender TEXT                   If specified, the From header is added to
+                                  .eml files - useful if you have multiple
+                                  sending addresses configured in your email
+                                  client. If specified in SMTP mode, will
+                                  override the sender address (which defaults
+                                  to the SMTP username).
+  --cc TEXT                       If specified, the CC header is added, to CC
+                                  additional email addresses to all emails.
+  --reply-to TEXT                 If specified, the Reply-To header is added,
+                                  to indicate to receiving email clients where
+                                  replies should be directed.
+  --email-column INTEGER          The column to use as the email address.
+                                  First column is column 0. Defaults to 0.
+  --skip-rows INTEGER             Number of rows to skip (e.g. headers).
+                                  Defaults to 0.
+  --outdir DIRECTORY              A directory where .eml files should be
+                                  output to. Defaults to ./out.
+  --smtp                          Sends emails via SMTP using the environment
+                                  variables `SMTP_HOST`, `SMTP_USER`,
+                                  `SMTP_PASS`, `SMTP_PORT`.
+  --yes                           Automatically answers 'yes' when prompted to
+                                  open files or send emails.
+  --no                            Automatically answers 'no' when prompted to
+                                  open files or send emails.
+  --help                          Show this message and exit.
+```

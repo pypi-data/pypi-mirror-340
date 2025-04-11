@@ -1,0 +1,12 @@
+*.txt
+out
+dist
+.venv
+*.eml
+*.html
+*.csv
+.DS_Store
+__pycache__
+!.env.example
+.env
+.env.*
