@@ -1,0 +1,93 @@
+Metadata-Version: 2.4
+Name: shared-beta_devoerjg
+Version: 0.0.1
+Summary: Internal utilities for MongoDB, Redis, and other services
+Author-email: zhengpingzhu <ZHENGPING.ZHU@deltaww.com>
+License: MIT
+Project-URL: Homepage, https://corecode.deltaww.com/iot-team/utility/shared/edge-shared
+Project-URL: Bug Tracker, https://corecode.deltaww.com/iot-team/utility/shared/edge-shared
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: blinker==1.6.2
+Requires-Dist: certifi==2023.5.7
+Requires-Dist: charset-normalizer==3.1.0
+Requires-Dist: click==8.1.4
+Requires-Dist: colorama==0.4.6
+Requires-Dist: dnspython==2.3.0
+Requires-Dist: exceptiongroup==1.1.2
+Requires-Dist: Flask==2.3.2
+Requires-Dist: idna==3.4
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: itsdangerous==2.1.2
+Requires-Dist: Jinja2==3.1.4
+Requires-Dist: MarkupSafe==2.1.3
+Requires-Dist: packaging==23.1
+Requires-Dist: pluggy==1.2.0
+Requires-Dist: pymongo==4.4.0
+Requires-Dist: pytest==7.4.0
+Requires-Dist: PyYAML==6.0
+Requires-Dist: requests==2.31.0
+Requires-Dist: tomli==2.0.1
+Requires-Dist: urllib3==2.0.3
+Requires-Dist: Werkzeug==2.3.6
+Requires-Dist: psycopg2-binary==2.9.9
+Dynamic: license-file
+
+## Project Name
+Edge-Shared
+
+## Description
+Edge-Shared is a fundamental module project stored in an individual repo, it defines some basic classes and common functions for other edge service projects to import.
+
+### Import Process
+1. add `shared/` at `.gitignore` file in your project
+2. clone edge-shared repo into your project and rename it as `shared`
+3. now you can import all the class and methods without affecting your project repo
+
+### Development Process
+
+1. develop your common classes or methods in a proper path
+2. import your new modules, classes, or methods into `__init__.py`
+3. update the Project Structure at  `README.md`
+
+## Project Structure
+
+```
+shared/
+├── base/
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── api_log.py
+│   │   └── api.py
+│   │
+│   ├── __init__.py
+│   ├── common.py
+│   ├── config.py
+│   ├── device.py
+│   ├── message.py
+│   └── mqtt.py
+│ 
+├── protocol_sdk/
+│   ├── common/
+│   │   ├── __init__.py
+│   │   ├── struct_dcfx.py
+│   │   └── verify.py
+│   ├── __init__.py
+│   ├── dcfx_sdk.py
+│   └── mqtt_sdk
+│
+├── .gitignore
+├── config.yaml
+├── README.md
+└── requirements.txt
+```
+
+## Points to know
+
+1. `protocol_sdk` is maintained by Middleware team. The message topic and payload structure in `dcfx_sdk.py` should be checked to keep it meets the latest version of Delta Connected Factory Exchange Standard.
+
+2. `base/api.py` includes `BaseAPI` to implement an api request with log, param validation, and formatted result data.
