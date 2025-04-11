@@ -1,0 +1,13 @@
+media_widget-0.1.0.dist-info/licenses/LICENSE,sha256=6OJtRzwbrsoSigb7vGV9NmLM6RskdCaIoB6-MOsE-Nc,1101
+mediawidget/__init__.py,sha256=BzB60mhE5AipqishDFo5F58J4L8ZOTi8FcHfQeKWeX0,48
+mediawidget/app.py,sha256=WRsUKzj26sDW6PoXqXaeGlPGp5ECY7r2svzGjH8zzbE,9134
+mediawidget/icons/__init__.py,sha256=cKaUsDKoWDmtSLicPjOMqT7I6LXUcOA9WsdMZamtdTA,15
+mediawidget/icons/next.png,sha256=wggpCiUhmG4YId1q2avA9pAx0g2OL1kUbzXC97CdTkE,3543
+mediawidget/icons/pause.png,sha256=ClylSyv27wA8mrAVrCWteNlGxNiajBLJ7gmoZv-sB4M,4113
+mediawidget/icons/play.png,sha256=0VjwIQbbnx8NVG5Hpx0OvjuJ07s5glyAGLQ9NhLxNhY,7964
+mediawidget/icons/prev.png,sha256=or9cGdd5rhkTESdI3tOCJLwoH44IpYRVtXMo6OpvqDw,2906
+media_widget-0.1.0.dist-info/METADATA,sha256=I2JvKI3E8oPOhu3gNzLJ3suHL98_XG4YXjGvqqM4vhY,2343
+media_widget-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+media_widget-0.1.0.dist-info/entry_points.txt,sha256=klW59j1EHoKKuWqp3JoqQ8rLiQe31IbmZ1kQl95T3ho,54
+media_widget-0.1.0.dist-info/top_level.txt,sha256=3ZzTn1szkxfDSLGwyxtDEiCxkavpSH8rg2O346pJ3e4,12
+media_widget-0.1.0.dist-info/RECORD,,
