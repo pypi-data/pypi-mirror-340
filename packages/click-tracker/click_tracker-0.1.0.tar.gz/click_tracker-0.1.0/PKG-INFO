@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: click-tracker
+Version: 0.1.0
+Summary: Une bibliothèque pour tracker les clics et collecter des informations sur les visiteurs
+Home-page: https://github.com/votre-repo/click-tracker
+Author: Mohamed Meksi
+Author-email: mohamedmeksi37@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask>=2.0.0
+Requires-Dist: user-agents>=2.2.0
+Requires-Dist: requests>=2.26.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
