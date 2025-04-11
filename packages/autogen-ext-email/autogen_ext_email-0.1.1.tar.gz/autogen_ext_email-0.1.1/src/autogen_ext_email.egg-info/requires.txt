@@ -1,0 +1,2 @@
+autogen-agentchat==0.4.9.3
+autogen_ext[openai]
