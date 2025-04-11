@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_lanes_graph_validate.egg-info/PKG-INFO
+yandex_lanes_graph_validate.egg-info/SOURCES.txt
+yandex_lanes_graph_validate.egg-info/dependency_links.txt
+yandex_lanes_graph_validate.egg-info/top_level.txt
