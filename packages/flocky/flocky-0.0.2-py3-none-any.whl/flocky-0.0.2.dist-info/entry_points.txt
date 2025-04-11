@@ -1,0 +1,2 @@
+[nbdev]
+flocky = flocky._modidx:d
