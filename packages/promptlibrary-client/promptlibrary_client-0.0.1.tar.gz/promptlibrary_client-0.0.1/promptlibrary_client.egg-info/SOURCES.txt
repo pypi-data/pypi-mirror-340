@@ -1,0 +1,7 @@
+README.md
+setup.py
+promptlibrary/__init__.py
+promptlibrary_client.egg-info/PKG-INFO
+promptlibrary_client.egg-info/SOURCES.txt
+promptlibrary_client.egg-info/dependency_links.txt
+promptlibrary_client.egg-info/top_level.txt
