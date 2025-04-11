@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+clumo.py
+pyproject.toml
+clumo.egg-info/PKG-INFO
+clumo.egg-info/SOURCES.txt
+clumo.egg-info/dependency_links.txt
+clumo.egg-info/requires.txt
+clumo.egg-info/top_level.txt

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clumo"
+version = "0.1.0"
+description = "CluMo: Clustering-based Motif Discovery from Deep Learning Models"
+readme = "README.md"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Intended Audience :: Science/Research"
+]
+requires-python = "==3.9.7"
+dependencies = [
+    "numpy==1.26.4",
+    "pandas==2.2.3",
+    "matplotlib==3.9.4",
+    "torch==2.0.1+cu118",
+    "scikit-learn==1.2.2",
+    "captum==0.6.0",
+    "seaborn==0.12.2",
+    "scipy==1.10.1",
+    "logomaker==0.8"
+]
