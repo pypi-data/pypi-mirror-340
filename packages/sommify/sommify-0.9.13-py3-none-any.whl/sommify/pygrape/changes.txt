@@ -1,0 +1,34 @@
+"Gamay" added as a synonym for "Gamay Noir"
+-
+"Trebbiano" added as a synonym for "Trebbiano Toscano"
+-
+"Fortana" synonym "Uva Canina" removed
+"Uva Canina" added as a synonym for "Canaiolo Nero"
+"Canaiolo" added as a synonym for "Canaiolo Nero"
+-
+"Catarratto" added as a synonym for "Catarratto Bianco"
+-
+"Verdicchio" added as a synonym for "Verdicchio Bianco"
+-
+"Grecanico" added as a synonym for "Garganega"
+-
+"Falanghina" added as a synonym for "Falanghina Flegrea"
+-
+"Mauzac" added as a synonym for "Mauzac Blanc"
+-
+"Terret Noir" added as a synonym for "Terret"
+"Terret Blanc" added as a synonym for "Terret"
+!! These need to be split into two separate entries
+-
+"Muscat d'Alsace", "Muscat Blanc", "Moscato Bianco", "Muscat Canelli", "Muscat de Frontignan", 
+"Muscat de Lunel", "Moscatel de Grano Menudo", "Moscatel Rosé", "Sárgamuskotály" 
+added as synonyms for "Muscat Blanc à Petits Grains"
+-
+"Michet" added as a synonym for "Nebbiolo"
+-
+"Ruby Red" added as a synonym for "Rubired"
+-
+"Gamay del Trasimeno" added as a synonym for "Garnacha Tinta"
+
+Unsure what to do with the following:
+"Sauvignon Gris", "Hondarrabi Zuri", "Viosinho", "Sagrantino"
