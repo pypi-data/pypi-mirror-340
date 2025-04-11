@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cilly/__init__.py
+cilly/analyzer.py
+cilly/compiler.py
+cilly/repl.py
+cilly.egg-info/PKG-INFO
+cilly.egg-info/SOURCES.txt
+cilly.egg-info/dependency_links.txt
+cilly.egg-info/top_level.txt
