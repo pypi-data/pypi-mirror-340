@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: s3-file-uploader
+Version: 0.1.0
+Summary: A flexible and dynamic file uploader for S3
+Author: Md Anisur Rahman
+Author-email: anisurrahman14046@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: python-dotenv
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# File Uploader
+
+A flexible file uploader for AWS S3, supporting dynamic path construction, file validation, and custom folder organization.
+
+## Installation
+
+```bash
+pip install file-uploader
+```

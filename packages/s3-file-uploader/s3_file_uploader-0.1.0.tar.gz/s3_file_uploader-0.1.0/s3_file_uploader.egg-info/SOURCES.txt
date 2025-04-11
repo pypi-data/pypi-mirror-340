@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+file_uploader/__init__.py
+file_uploader/uploader.py
+s3_file_uploader.egg-info/PKG-INFO
+s3_file_uploader.egg-info/SOURCES.txt
+s3_file_uploader.egg-info/dependency_links.txt
+s3_file_uploader.egg-info/requires.txt
+s3_file_uploader.egg-info/top_level.txt
