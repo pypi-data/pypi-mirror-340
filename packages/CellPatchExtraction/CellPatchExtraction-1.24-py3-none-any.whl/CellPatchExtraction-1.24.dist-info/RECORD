@@ -1,0 +1,12 @@
+CellPatchExtraction/__init__.py,sha256=qrfZijnuVlvAmKowbU5P2aMddqHWZGgkMqTkaF0BrgQ,114
+CellPatchExtraction/.cellpose_model/CP_BM,sha256=JDpFHyY8w82f3Dr1SLZ1bx-oHQsgY0L7lkOD8_yJRic,26560285
+CellPatchExtraction/.cellpose_model/CP_TU,sha256=IScs-_uKqlme6L0wFkl7mRSqLmv467Vfo2Po1wBN5Sk,26562303
+CellPatchExtraction/.cellpose_model/CP_TU_MORE,sha256=KXn1PQ-cb3K1GxNoqEhXYwTlY-PJYrCvBrg25rjO60E,26558080
+CellPatchExtraction/.cellpose_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CellPatchExtraction/src/__init__.py,sha256=tMW1YLqh4_u088VqLKjfQ4UraqaWt9xakeIPtAsVZsk,210
+CellPatchExtraction/src/extraction.py,sha256=iXr0aeQoDMpKVSDg6bT8SUMfaUqJJdaQuAy1ieJ-Esc,12893
+CellPatchExtraction/src/utils.py,sha256=-EanCUb1XsukzQa_ZdrHSCsPen5_JWd3ll813pQ0vPo,2842
+CellPatchExtraction-1.24.dist-info/METADATA,sha256=NlHnGn3sLF3OdaqBwizHpF1hCUjajt92yRJTieWQ4_U,2692
+CellPatchExtraction-1.24.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+CellPatchExtraction-1.24.dist-info/top_level.txt,sha256=MAP8t7wSWBdOlZIYO1ggeW4-_9rF_IDLmUEkU99X4hQ,20
+CellPatchExtraction-1.24.dist-info/RECORD,,
