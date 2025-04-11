@@ -1,0 +1,8 @@
+qas/__init__.py,sha256=404uBnyLSAIQk57C7XkxtWHyx_KzZgXcQLZfSxFuHXo,76
+qas/llm.py,sha256=eZFfpcjwsff-lh4lHFetTn28KTC6ti6vkr3mQAn1ptY,3032
+qas/nlp.py,sha256=yo3wISXakFBAE20qiPPC9MkvC6kqdpbupGh9leG1Lc0,774
+qasi-0.1.1.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qasi-0.1.1.dist-info/METADATA,sha256=JHy7lr5kK4jYUe50IbcGQZKvcnibkgVJf-piUOUOK68,877
+qasi-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+qasi-0.1.1.dist-info/top_level.txt,sha256=rTGKtYGKZSaFW8XxTi9wgLMOmySp1zc5IV1AF8Sw9vc,4
+qasi-0.1.1.dist-info/RECORD,,
