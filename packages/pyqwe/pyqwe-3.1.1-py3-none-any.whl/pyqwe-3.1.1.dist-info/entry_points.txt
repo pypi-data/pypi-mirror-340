@@ -1,0 +1,4 @@
+[console_scripts]
+pyqwe=pyqwe:main
+qwe=pyqwe:main
+
