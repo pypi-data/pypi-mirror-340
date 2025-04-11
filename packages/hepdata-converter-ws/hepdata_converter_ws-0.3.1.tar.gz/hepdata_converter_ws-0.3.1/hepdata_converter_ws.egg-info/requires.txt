@@ -1,0 +1,6 @@
+hepdata-converter>=0.3.1
+flask
+sentry-sdk[flask]
+
+[tests]
+coverage
