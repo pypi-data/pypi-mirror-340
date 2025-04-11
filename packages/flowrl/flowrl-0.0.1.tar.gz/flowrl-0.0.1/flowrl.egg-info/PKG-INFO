@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: flowrl
+Version: 0.0.1
+Summary: A library desgined for flow-based RL algorithms
+Home-page: https://github.com/typoverflow/flow-rl
+Author: typoverflow
+Author-email: typoverflow@gmail.com
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# Flow RL
+
+A library desgined for flow-based RL algorithms.
+
+
