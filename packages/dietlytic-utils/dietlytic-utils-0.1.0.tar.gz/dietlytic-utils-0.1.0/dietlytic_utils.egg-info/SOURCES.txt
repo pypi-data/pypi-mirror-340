@@ -1,0 +1,6 @@
+README.md
+setup.py
+dietlytic_utils.egg-info/PKG-INFO
+dietlytic_utils.egg-info/SOURCES.txt
+dietlytic_utils.egg-info/dependency_links.txt
+dietlytic_utils.egg-info/top_level.txt
