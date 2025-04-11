@@ -1,0 +1,9 @@
+README.md
+setup.py
+cursofiapHiran/__init__.py
+cursofiapHiran/core.py
+cursofiapHiran_package.egg-info/PKG-INFO
+cursofiapHiran_package.egg-info/SOURCES.txt
+cursofiapHiran_package.egg-info/dependency_links.txt
+cursofiapHiran_package.egg-info/top_level.txt
+tests/test_core.py

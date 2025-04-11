@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: cursofiapHiran-package
+Version: 1.0.0
+Summary: Descricao da sua lib cursofiapHiran
+Home-page: https://github.com/tadrianonet/cursofiapHiran
+Author: seu nome
+Author-email: seu.email@example.com
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# CursofiapHiran
+
+A simple example library.
+
+## Installation
+
+```sh
+pip install cursofiapHiran
+```
+
+## Usage
+
+```python
+from cursofiapHiran import hello_world
+
+print(hello_world())
+```
