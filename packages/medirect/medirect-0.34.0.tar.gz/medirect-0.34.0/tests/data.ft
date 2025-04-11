@@ -1,0 +1,58 @@
+>Feature 0
+>Feature 1
+<304	1728	CDS
+			gene	trkG
+			inference	ab initio prediction:Prodigal:2.6
+			inference	similar to AA sequence:UniProtKB:P23849
+			locus_tag	OJPFPCPC_00001
+			product	Trk system potassium uptake protein TrkG
+1866	>2657	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	OJPFPCPC_00002
+			product	hypothetical protein
+2650	3582	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	OJPFPCPC_00003
+			product	hypothetical protein
+3560	3769	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	OJPFPCPC_00004
+			product	hypothetical protein
+3773	4867	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	OJPFPCPC_00005
+			product	hypothetical protein
+4848	6149	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	OJPFPCPC_00006
+			product	hypothetical protein
+6152	6412	CDS
+			inference	ab initio prediction:Prodigal:2.6
+			locus_tag	OJPFPCPC_00007
+			product	hypothetical protein
+225078	223523	rRNA
+			product	16S ribosomal RNA
+>Feature 3
+>Feature 4
+>Feature 5
+>Feature 629
+150	1687	rRNA
+			locus_tag	OJPFPCPC_01057
+			product	16S ribosomal RNA
+			score	0
+>Feature gb|PKKU01000069.1|
+83733	82536	gene
+			locus_tag	APX95_19225
+83733	83450	CDS
+83451	82536
+			product	DDE domain-containing protein
+			transl_table	11
+			protein_id	gb|PLB61711.1||gnl|WGS:PKKU|APX95_19225
+			note	programmed frameshift
+			exception	ribosomal slippage
+			inference	COORDINATES: similar to AA sequence:RefSeq:WP_076611482.1
+83959	>84030	CDS
+			product	IS1 family transposase
+			transl_table	11
+			protein_id	gb|PLB61717.1||gnl|WGS:PKKU|APX95_19230
+			inference	COORDINATES: similar to AA sequence:RefSeq:WP_086558268.1
