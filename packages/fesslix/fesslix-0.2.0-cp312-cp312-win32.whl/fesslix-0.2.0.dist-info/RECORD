@@ -1,0 +1,10 @@
+fesslix/__init__.py,sha256=HcTIT0dNZ7TKdrLYo5_UpY0XJ4RA8a4uDyoA--VKHso,2542
+fesslix/core.cp312-win32.pyd,sha256=aeTGfXrdnEB_jgyfRm4v929ly-NYIe1_jquzh2otEUA,302592
+fesslix/flxlib.dll,sha256=4xpXPTUVfEWnvYjIG6XtQjsXVPtFKAphrGipnm_ya9E,2427392
+fesslix/flxlib.lib,sha256=hLp9dWv7zxj6YQqpePYDCtcDixs6_3HIgPd9r3sVYgY,1201734
+fesslix/gausspoints.dat,sha256=gtWP-cwc0VOyoFPcABi9xrYel4FG7Sw2RkWEmbIy6fw,42364
+fesslix/plot.py,sha256=ed-gfDhodFTQuHSttPuQLVfp3_4ACIO7kw6FAuY1kFE,10864
+fesslix-0.2.0.dist-info/METADATA,sha256=STDFzFH9OheyKdywr1tCwg2WER3HM3TgHU2zGywAtCw,42437
+fesslix-0.2.0.dist-info/WHEEL,sha256=muFhoJKTCUVEGh42FLDQB5PrHoeJ6N8z3YUY9mZt0m0,102
+fesslix-0.2.0.dist-info/licenses/LICENSE,sha256=X2MfrkZ8grjNKP0exCXIFolaNfnZTja-4OAWRXDo4PY,35823
+fesslix-0.2.0.dist-info/RECORD,,
