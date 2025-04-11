@@ -1,0 +1,10 @@
+README.md
+setup.py
+screenreaderx/__init__.py
+screenreaderx/__main__.py
+screenreaderx.egg-info/PKG-INFO
+screenreaderx.egg-info/SOURCES.txt
+screenreaderx.egg-info/dependency_links.txt
+screenreaderx.egg-info/entry_points.txt
+screenreaderx.egg-info/requires.txt
+screenreaderx.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+easyocr
+pytesseract
+pyautogui
+opencv-python
+numpy
+Pillow

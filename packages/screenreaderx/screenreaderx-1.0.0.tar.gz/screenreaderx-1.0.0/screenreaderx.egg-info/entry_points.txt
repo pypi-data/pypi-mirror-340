@@ -1,0 +1,2 @@
+[console_scripts]
+screenreaderx = screenreaderx.__main__:main
