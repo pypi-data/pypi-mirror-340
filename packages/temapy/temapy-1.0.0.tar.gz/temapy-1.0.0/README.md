@@ -1,0 +1,205 @@
+# TemaPy
+
+This package is designed to be used with Image Systems TEMA Platform Python
+module to enable Python scripting functionality to TEMA.
+
+For detail instructions on how to enable your scripts in TEMA see the
+corresponding help pages in TEMA Connect.
+
+## install using pip:
+
+To develop and run scripts in TEMA you need this package installed in the
+Python environment that you will use in TEMA.
+
+    pip install temapy
+
+## Getting started: Create a TEMA compatible script
+
+To create a TEMA compatible script, first import the `TemaGateway` class from
+the `gateway` module and create a `TemaGateway`.
+
+```python
+from temapy.gateway import TemaGateway
+
+gateway = TemaGateway()
+```
+
+If the script is started using TEMA the `TemaGateway` will handle the connection
+and data transfer between TemaPy and TEMA automatically. The only thing left to
+do is to write your calculation function, referred to as an "update action", and
+register it using the Gateway.
+
+Here is an example update action that takes two input sequences, and for each
+sample calculates the average value and store it in a third output sequence.
+
+```python
+def average_per_sample(seq_1, seq_2, seq_out):
+    both_sequences = zip(seq_1.samples.items(), seq_2.samples.values())
+    for (time_1, sample_1), sample_2 in both_sequences:
+        if seq_1.samples[time_1].status.is_valid():
+            seq_out.samples[time_1].data[0] = (sample_1.data[0] + sample_2.data[0]) / 2
+            seq_out.samples[time_1].data[1] = (sample_1.data[1] + sample_2.data[1]) / 2
+            seq_out.samples[time_1].status = Status.CALCULATED
+```
+
+**Note:** The output sequence is supplied as an input to the function. This is
+because TemaPy is not allowed to create new sequences, only change data in the
+sequences supplied by TEMA.
+
+There are two ways of registering your function so that TEMA will run it when
+input sequences change, either by calling the `add_update_action` method in the
+`TemaGateway` or by using the `update_action` decorator, also from the
+`TemaGateway` class.
+
+```python
+# Using the add_update_action() function
+def average_per_sample(seq_1, seq_2, seq_out):
+    ...
+
+gateway.add_update_action(average_per_sample,
+                          input_sequences=("p1_pos", "p2_pos"),
+                          output_sequences=("avg_pos",))
+
+# Using the update_action decorator
+@gateway.update_action(input_sequences=("p1_pos", "p2_pos"), output_sequences=("avg_pos",))
+def average_per_sample(seq_1, seq_2, seq_out):
+    ...
+```
+
+In both cases the `input_sequences` and `output_sequences` parameter specify
+what TEMA sequences the update action will operate on. The strings in those
+parameters should correspond with the variable names given to the sequences in
+the Python Script Setup pane in TEMA. The sequences from TEMA will then
+automatically map to the input parameters in your update action in order, first
+input sequences and then output sequences. In this example this means that the
+sequence named "p1_pos" in TEMA is mapped to the `seq_1` parameter in the
+function, "p2_pos" is mapped to `seq_2` and "avg_pos" is mapped to `out_seq`.
+
+Now your script is ready to be used in TEMA, for more information about how to
+enable your script in TEMA, see the corresponding help pages in TEMA Connect.
+
+For more details on how to work with TemaPy, continue reading below.
+Additionally, more example scripts can be found in the `temapy.examples`
+package.
+
+## The gateway
+
+The `TemaGateway` handles the connection to TEMA and allows you to access and
+manipulate data sequences specified using the TEMA Python Scripting Setup. The
+connection is handled mostly automatically as soon as an instance of
+`TemaGateway` is created.
+
+### Update actions
+
+The update actions are your calculation functions that are run each time the
+input sequences specified in TEMA are updated. This means for example that each
+update action will run again for each tracked frame as long as the script is
+active.
+
+While it is not possible to run multiple Python scripts simultaneously in TEMA,
+it is possible to add multiple update actions to the same script. Whenever TEMA
+calls for the script to update, all update actions will be executed in the order
+they were added. Any changes made to sequences in an update action will be
+carried over to any following update actions which means that it is possible to
+chain actions together.
+
+The input and output sequences used by your update actions are copies of the
+data in TEMA.
+
+The input sequences are sequences that already exists in TEMA and are added from
+a list of available sequences in TEMA. While it is possible to change an input
+sequence in your update actions, this is not recommended, as data in input
+sequences will **not** be returned to TEMA and changing input sequences might
+cause the scripts sequences to diverge from the sequences supplied by TEMA.
+
+The output sequences are created by the TEMA Scripting Module for your TemaPy
+script to edit. The output sequences will be initialized with invalid
+placeholder values for each sample and it is up to your update actions to fill
+them with new values, see the sections about sequences and samples for
+instructions on how to work with sequences.
+
+It is important to note that the separation between output and input sequences
+does not necessarily reflect their use in your update functions. Instead it is
+the distinction between the sequences that already exists in TEMA (input) and
+those that are created by the scripting module (output).
+
+## TEMA data
+
+The data available from TEMA is in the form of sequences. In TemaPy these are
+represented by the classes found in the `temapy.sequences` module.
+
+The following sections describe how the data is structured and how to work with
+it.
+
+### Sequences
+
+The `Sequence` is the data structure that your update actions will operate on.
+A sequence represents a set of measurements for each frame in the original image
+sequence in TEMA. For each frame there is a `Sample` that contains numerical
+data from that frame of the image sequence.
+
+#### updated range
+
+Each sequence also has a `updated_range` which is a tuple of two integers. These
+integers represent the first (inclusive) and last (exclusive) frame of the
+sequence that has changed since the update actions were last run. This range can
+be used to avoid unnecessary recalculations and slowdown during tracking in TEMA
+with an active script. It is also good to adjust the `updated_range` of the
+output sequences to no wider than the range of values that have been changed.
+Otherwise, it will be assumed that all frames have been updated and the sequence
+will be copied to tema in its entirety which might cause significant slow-down
+during tracking.
+
+#### Samples
+
+The `samples` attribute is a dictionary that maps a frame number, to a `Sample`.
+The `Sample` contains the data of that specific frame of the image sequence used
+in TEMA. As this is a standard Python dictionary, it supports all standard dict
+operations in Python.
+
+### Sample
+
+The `Sample` class contains data for a specific frame of the image sequence,
+
+#### Data
+
+The data of each
+`Sample` is a tuple of numerical value, each value representing a
+certain component of the data. What components are available depends on the type
+of sequence. In a 2D position sequence, for example, each `Sample` contains two
+data components, the x position and the y position (x, y).
+
+#### Status
+
+The `Status` of the `Sample` describe the nature of the `Sample` and if it
+should be used for calculations. Usually it is enough to use the
+`Status.is_valid()` method do determine if the `Sample` should be used or not.
+For more fine grade control, each `Status` is described below.
+
+**NONE:** No or unknown `Status`.
+
+**FAILED:**
+The data of the `Sample` failed in creation and that the data might not even be
+readable, will cause undefined behaviour if used and might cause the script to
+fail. Is invalid and cannot be used for calculations.
+
+**SLEEPING:**
+The data of the `Sample` is currently set to be ignored for calculation. The
+data may be meaningful but should be considered invalid and not be used for
+calculations.
+
+**PREDICTED:**
+Used by trackers for failed Samples that are predicted until they are either
+found again or declared lost. The data of the `Sample` may be meaningful but
+should be considered invalid and not be used for calculations.
+
+**MANUAL:**
+The data of the `Sample` has been set manually and is therefore considered to be
+valid for calculations.
+
+**CALCULATED:**
+The data of the `Sample` has been successfully calculated and
+may be used for further calculations.
+
+**INTERPOLATED:**
+Similar to `CALCULATED` but the data is interpolated from other Samples.

@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/temapy/__init__.py
+src/temapy/gateway.py
+src/temapy/sequences.py
+src/temapy.egg-info/PKG-INFO
+src/temapy.egg-info/SOURCES.txt
+src/temapy.egg-info/dependency_links.txt
+src/temapy.egg-info/requires.txt
+src/temapy.egg-info/top_level.txt
+src/temapy/examples/__init__.py
+src/temapy/examples/average_as_new_sequence.py

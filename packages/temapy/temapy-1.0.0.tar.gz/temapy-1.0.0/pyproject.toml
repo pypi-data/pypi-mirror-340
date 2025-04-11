@@ -1,0 +1,79 @@
+[build-system]
+# Build-time requirements
+requires = [
+    "setuptools >= 77.0.3"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "temapy"
+version = "1.0.0"
+authors = [
+    { name = "Image Systems", email = "support@imagesystems.se" }
+]
+description = "Python interface for scripting with TEMA"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: Microsoft :: Windows",
+]
+# Runtime dependencies
+dependencies = [
+    "py4j",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+# Automatic package discovery
+[tool.setuptools.packages.find]
+where = ["src"]  # ["."] by default
+
+# Pytest setup
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
+pythonpath = "src"
+testpaths = "tests"
+
+# Tox auto testing setup
+[tool.tox]
+requires = ["tox>=4"]
+env_list = [
+    "lint",
+    # FIXME: Disabled to not prevent merging. We should probably do type-checking in the future
+    # "type",
+    "3.13",
+    "3.12",
+    "3.11",
+    "3.10",
+    "3.9",
+]
+
+[tool.tox.env_run_base]
+description = "run unit tests in all supported versions"
+deps = [
+    "pytest>=8"
+]
+package = "wheel"
+commands = [
+    ["pytest", { replace = "posargs", default = ["tests"], extend = true }],
+]
+
+[tool.tox.env.lint]
+description = "run linters"
+deps = ["pylint"]
+commands = [
+    ["pylint", { replace = "posargs", default = ["src", "scripts"], extend = true }, "--disable=fixme,too-few-public-methods, too-many-instance-attributes", ],
+]
+
+
+[tool.tox.env.type]
+description = "run type checks"
+deps = ["mypy"]
+commands = [
+    ["mypy", { replace = "posargs", default = ["src", "scripts"], extend = true }],
+]
