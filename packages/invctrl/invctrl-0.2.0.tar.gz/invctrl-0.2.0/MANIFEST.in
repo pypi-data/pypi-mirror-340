@@ -1,0 +1,22 @@
+# Include important root files
+include README.md
+include LICENSE
+include requirements.txt
+
+# Include templates (HTML files)
+recursive-include invctrl/templates *.html
+
+# Include JSON data files
+recursive-include invctrl/data *.json
+recursive-include invctrl/db *.json
+
+# Include Python source code from submodules
+recursive-include invctrl/models *.py
+recursive-include invctrl/routes *.py
+recursive-include invctrl/utils *.py
+
+# Include __init__.py untuk deteksi package
+recursive-include invctrl *.py
+
+# Exclude cache & compiled files
+global-exclude *.pyc __pycache__ *.pyo *.pyd *.so
