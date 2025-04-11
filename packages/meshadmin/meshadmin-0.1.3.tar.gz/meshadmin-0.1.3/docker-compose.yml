@@ -1,0 +1,35 @@
+services:
+  meshadmin:
+    build: .
+    entrypoint: [ "sh", "-c" ]
+    environment:
+      MESHSERVER_SQLITE_PATH: /data/db.sqlite
+      MESHSERVER_ALLOWED_HOSTS: 127.0.0.1,localhost,meshadmin.hydo.ch
+      MESHSERVER_SECRET_KEY: somedjangosecret
+      MESHSERVER_DEBUG: false
+    ports:
+      - "8000:8000"
+    stop_signal: SIGINT
+    volumes:
+      - db:/data
+      - /opt/nebula:/opt/nebula
+    command:
+      - |
+        uv run manage.py migrate
+        uv run manage.py runserver 0.0.0.0:8000
+
+  caddy:
+    image: caddy:2.8
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - $PWD/Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  db:
+  caddy_data:
+  caddy_config:
