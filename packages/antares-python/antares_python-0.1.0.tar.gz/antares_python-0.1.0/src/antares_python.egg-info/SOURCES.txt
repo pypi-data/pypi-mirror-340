@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/antares/__init__.py
+src/antares/core.py
+src/antares_python.egg-info/PKG-INFO
+src/antares_python.egg-info/SOURCES.txt
+src/antares_python.egg-info/dependency_links.txt
+src/antares_python.egg-info/top_level.txt
+tests/test_core.py
