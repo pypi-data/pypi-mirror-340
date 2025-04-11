@@ -1,0 +1,14 @@
+setup.py
+boldb/__init__.py
+boldb/a1a.py
+boldb/a2a.py
+boldb/a3a.py
+boldb/a4a.py
+boldb/a5a.py
+boldb/a6a.py
+boldb/a7a.py
+boldb/a8a.py
+boldb.egg-info/PKG-INFO
+boldb.egg-info/SOURCES.txt
+boldb.egg-info/dependency_links.txt
+boldb.egg-info/top_level.txt
