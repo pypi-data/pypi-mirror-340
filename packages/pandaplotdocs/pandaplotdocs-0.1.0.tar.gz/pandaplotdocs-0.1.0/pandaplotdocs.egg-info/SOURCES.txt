@@ -1,0 +1,15 @@
+README.md
+setup.py
+./pandaplotdocs/__init__.py
+./pandaplotdocs/_data.py
+./pandaplotdocs/_pdf.py
+./pandaplotdocs/generator.py
+pandaplotdocs/__init__.py
+pandaplotdocs/_data.py
+pandaplotdocs/_pdf.py
+pandaplotdocs/generator.py
+pandaplotdocs.egg-info/PKG-INFO
+pandaplotdocs.egg-info/SOURCES.txt
+pandaplotdocs.egg-info/dependency_links.txt
+pandaplotdocs.egg-info/requires.txt
+pandaplotdocs.egg-info/top_level.txt
