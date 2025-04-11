@@ -1,0 +1,2 @@
+[console_scripts]
+mp4mdl = mp4mdl.main:main
