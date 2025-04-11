@@ -1,0 +1,78 @@
+Metadata-Version: 2.4
+Name: pyxdownload
+Version: 0.2.0
+Author: luffpyx
+Author-email: luffpyx@gmail.com
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+
+# pyxdownload
+
+**`pyxdownload`** est un module Python puissant et léger qui facilite le **téléchargement de fichiers (légers ou volumineux)** via une communication **client-serveur en sockets**.
+
+Il est idéal pour les développeurs qui souhaitent intégrer rapidement une fonctionnalité de **transfert de fichiers** fiable dans leurs projets réseau.
+
+---
+
+## ✨ Fonctionnalités
+
+- ✅ Transfert de fichiers en toute simplicité via sockets
+- 📦 Prise en charge des petits comme des très gros fichiers
+- 📊 Affichage d'une barre de progression élégante avec `tqdm`
+- 🔐 Utilisation de `struct` pour une transmission sécurisée de la taille des fichiers
+- 🏁 Détection de fin de transfert avec un identifiant personnalisé (`<EOF>`)
+
+---
+
+## 🔧 Fonctions principales
+
+### `ReadFile()`
+
+- Vérifie si le fichier demandé existe localement.
+- Envoie un signal de disponibilité (`yes` ou `no`) au serveur.
+- Transmet la taille du fichier via `struct.pack`.
+- Envoie les données du fichier par blocs de 1024 octets.
+- Termine la transmission avec un marqueur spécial `<EOF>`.
+
+### `WriteFile()`
+
+- Attend la confirmation de disponibilité du fichier côté client.
+- Reçoit la taille du fichier avec `struct.unpack`.
+- Lit les blocs de données et les écrit dans un fichier local.
+- Affiche une barre de progression `tqdm` pendant le téléchargement.
+- S’arrête dès que le marqueur `<EOF>` est détecté.
+
+---
+
+## 💻 Exemple d'utilisation
+
+### 📦 Installation
+
+```bash
+pip install pyxdownload
+
+
+
+🖥️ Serveur (server.py)
+
+from pyxdownload import WriteFile
+
+def recevoir_fichier(nom_fichier, socket_client):
+    WriteFile(nom_fichier, socket_client)
+
+🖥️ Client (client.py)
+
+from pyxdownload import ReadFile
+
+def envoyer_fichier(nom_fichier, socket_serveur):
+    ReadFile(nom_fichier, socket_serveur)
+
+
+👤 Auteur
+
+    Nom : luffpyx
+
+    GitHub : https://github.com/luffpyx/download_file.git
