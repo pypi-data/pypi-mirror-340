@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: fewsxml
+Version: 0.1.0
+Summary: A library for reading and writing XML files to interact with Delft-FEWS.
+Home-page: https://gitlab.com/rtc-tools-project/fews_xml/
+Author: Farid Alavi
+Author-email: farid.alavi@deltares.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# fewsxml
+A library to read and write XML files to interact with Delft-FEWS.
