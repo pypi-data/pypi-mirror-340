@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+mcp_staten/__init__.py
+mcp_staten/main.py
+mcp_staten.egg-info/PKG-INFO
+mcp_staten.egg-info/SOURCES.txt
+mcp_staten.egg-info/dependency_links.txt
+mcp_staten.egg-info/entry_points.txt
+mcp_staten.egg-info/requires.txt
+mcp_staten.egg-info/top_level.txt
