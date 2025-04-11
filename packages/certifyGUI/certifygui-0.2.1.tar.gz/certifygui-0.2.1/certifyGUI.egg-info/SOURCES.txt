@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+certifyGUI/__init__.py
+certifyGUI.egg-info/PKG-INFO
+certifyGUI.egg-info/SOURCES.txt
+certifyGUI.egg-info/dependency_links.txt
+certifyGUI.egg-info/top_level.txt
+tests/test_sender.py
