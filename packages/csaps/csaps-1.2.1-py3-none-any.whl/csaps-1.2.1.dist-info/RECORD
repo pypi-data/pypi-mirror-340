@@ -1,0 +1,16 @@
+CHANGELOG.md,sha256=Rv0B7oFf2nawMGaWl40eqAMBXLLJXKGYJBU-YGeNJ8o,3761
+CONTRIBUTORS.txt,sha256=AiHBMMqp2dOi0HszCAilp6uMPG65gHMnLWNLe_wr-Rs,31
+LICENSE,sha256=h_eSx0Zaw4HBIU-RQdYmhkreTEsPcJZBA5ZzIBhv-cs,1072
+csaps/__init__.py,sha256=OkblLF8D9ypobrM_clxOsSIf_lr0Fp01445UFtM68sw,763
+csaps/_base.py,sha256=oIdHWPunf2EwVP0bO8agUUgiU2iK-RDlmtsSQifN4I0,2326
+csaps/_reshape.py,sha256=T0_MCxad09pb6SMj6bPr7LLeHB-WbGQjqUp5k37ULoo,5340
+csaps/_shortcut.py,sha256=D_N7LpqjHSmffTx86F8K2ZQcftXqW49_EQtiJdSqWYI,7828
+csaps/_sspndg.py,sha256=1A9HpKB5G3BTN8_XJmkcgpXWzvSlRl4TOID_upakFko,11097
+csaps/_sspumv.py,sha256=HMswd0YeUhrHDPrdWBUkhrd8hZaGoAhged1fuxsH6lY,10118
+csaps/_types.py,sha256=8WJCSFuXhI064OGrasd2hItzN49ablWacGoBBpvkp34,748
+csaps/_version.py,sha256=T-ItbZwaxnrDmeEXw9P4THXZwh3ivjDaxu_XpvxznQM,182
+csaps/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csaps-1.2.1.dist-info/LICENSE,sha256=h_eSx0Zaw4HBIU-RQdYmhkreTEsPcJZBA5ZzIBhv-cs,1072
+csaps-1.2.1.dist-info/METADATA,sha256=nS583hUZZgXRVT5d-9bWz8ASSXBMvQDMHkhoyeuiVn0,5624
+csaps-1.2.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+csaps-1.2.1.dist-info/RECORD,,
