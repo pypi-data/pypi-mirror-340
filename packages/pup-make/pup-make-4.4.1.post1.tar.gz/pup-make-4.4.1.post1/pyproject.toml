@@ -1,0 +1,18 @@
+[build-system]
+requires = ["pup517"]
+build-backend = "pup517.backend"
+
+[project]
+name = "pup-make"
+version = "4.4.1.post1"
+
+[[pup517.srcuris]]
+type = "http_archive"
+url = "https://mirrors.ocf.berkeley.edu/gnu/make/make-4.4.1.tar.gz"
+sha256 = "dd16fb1d67bfab79a72f5e8390735c49e3e8e70b4945a15ab1f81ddb78658fb3"
+strip_components = 1
+
+[pup517.hooks]
+configure = [ "default", "./configure --without-guile --with-guile=no" ]
+compile = [ "default", "./build.sh" ]
+install = [ "default", 'cp make "${PUP_BINDIR}/"' ]
