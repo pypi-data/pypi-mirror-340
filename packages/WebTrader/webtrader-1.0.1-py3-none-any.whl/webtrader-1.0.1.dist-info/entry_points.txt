@@ -1,0 +1,2 @@
+[console_scripts]
+webtrader = WebTrader.py:webtrader
