@@ -1,0 +1,19 @@
+[project]
+name = "moggy-file-mcp"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+moggy-file-mcp = "src.file_system.file_mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/file_system"]
