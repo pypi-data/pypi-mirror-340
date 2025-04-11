@@ -1,0 +1,5 @@
+build>=1.2.2.post1
+mcp[cli]>=1.6.0
+tencentcloud-sdk-python-hai>=3.0.1357
+twine>=6.1.0
+uvicorn>=0.34.0

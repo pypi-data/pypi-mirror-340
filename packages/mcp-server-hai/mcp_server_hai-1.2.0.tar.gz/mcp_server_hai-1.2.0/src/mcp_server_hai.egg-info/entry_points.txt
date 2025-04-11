@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-hai = mcp_server_hai.server:mcp.run
