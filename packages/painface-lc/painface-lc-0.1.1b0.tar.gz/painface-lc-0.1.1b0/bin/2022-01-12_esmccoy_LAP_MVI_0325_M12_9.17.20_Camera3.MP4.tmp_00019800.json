@@ -1,0 +1,135 @@
+{
+    "dataset_id": "prediction-2025-04-10T17:34:40.967553-fefb226e-1588-4c6a-a6cb-fd134c6a90b8",
+    "image_source": "local_video",
+    "image_path": "2022-01-12_esmccoy_LAP_MVI_0325_M12_9.17.20_Camera3.MP4.tmp.mp4/00019800",
+    "score": {
+        "pain-mgs": {
+            "orbital": 1,
+            "nose": 2,
+            "ears": -1,
+            "whiskers": 2
+        },
+        "prediction-info": {
+            "pain-mgs": {
+                "confidence": {
+                    "orbital": 0.7188549041748047,
+                    "nose": 0.9999581575393677,
+                    "ears": 0.0,
+                    "whiskers": 0.7885367274284363
+                }
+            }
+        }
+    },
+    "annotations": {
+        "type": "custom",
+        "regions": [
+            {
+                "class": "body",
+                "coordinates": [
+                    33,
+                    0,
+                    201,
+                    197
+                ],
+                "type": "box",
+                "score": null,
+                "model_score": 0.9246550798416138
+            },
+            {
+                "class": "face",
+                "coordinates": [
+                    33,
+                    39,
+                    201,
+                    197
+                ],
+                "type": "box",
+                "score": null,
+                "model_score": 0.5931870937347412
+            },
+            {
+                "class": "orbital",
+                "coordinates": [
+                    116,
+                    123,
+                    134,
+                    143
+                ],
+                "type": "box",
+                "score": null,
+                "model_score": 0.9037545323371887
+            },
+            {
+                "class": "orbital",
+                "coordinates": [
+                    61,
+                    126,
+                    77,
+                    145
+                ],
+                "type": "box",
+                "score": null,
+                "model_score": 0.7258133292198181
+            },
+            {
+                "class": "nose",
+                "coordinates": [
+                    81,
+                    138,
+                    120,
+                    197
+                ],
+                "type": "box",
+                "score": null,
+                "model_score": 0.7521209716796875
+            },
+            {
+                "class": "whiskers",
+                "coordinates": [
+                    119,
+                    137,
+                    201,
+                    193
+                ],
+                "type": "box",
+                "score": null,
+                "model_score": 0.657422661781311
+            },
+            {
+                "class": "whiskers",
+                "coordinates": [
+                    33,
+                    148,
+                    87,
+                    194
+                ],
+                "type": "box",
+                "score": null,
+                "model_score": 0.4351311922073364
+            }
+        ]
+    },
+    "reference": {
+        "date": "NA",
+        "camera": "NA",
+        "video_filename": "2022-01-12_esmccoy_LAP_MVI_0325_M12_9.17.20_Camera3.MP4.tmp.mp4",
+        "video_storage": "system",
+        "frame_index": 19800,
+        "fps": 30.0,
+        "number_of_frames": 54519,
+        "time_in_seconds": -1,
+        "scorer": "model",
+        "data_source": "",
+        "subject_type": "c57bl/6",
+        "model_id": {
+            "fau": "c57bl6/fau/default",
+            "mgs": "c57bl6/pain-mgs/default"
+        }
+    },
+    "status": "pending",
+    "granted_institutions": [],
+    "updated_by": "system",
+    "updated_at": "2025-04-10T17:34:38.814916",
+    "inserted_by": "system",
+    "_id": "prediction-2025-04-10T17:34:40.967553-fefb226e-1588-4c6a-a6cb-fd134c6a90b8-2022-01-12_esmccoy_LAP_MVI_0325_M12_9.17.20_Camera3.MP4.tmp.mp4/00019800"
+}
