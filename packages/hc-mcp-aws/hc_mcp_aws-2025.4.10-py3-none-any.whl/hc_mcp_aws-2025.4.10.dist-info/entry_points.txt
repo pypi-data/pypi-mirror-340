@@ -1,0 +1,2 @@
+[console_scripts]
+hc-mcp-aws = hc_mcp_aws:main
