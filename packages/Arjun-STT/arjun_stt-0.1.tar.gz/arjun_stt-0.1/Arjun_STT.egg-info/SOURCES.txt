@@ -1,0 +1,8 @@
+setup.py
+Arjun_STT/__init__.py
+Arjun_STT/main.py
+Arjun_STT.egg-info/PKG-INFO
+Arjun_STT.egg-info/SOURCES.txt
+Arjun_STT.egg-info/dependency_links.txt
+Arjun_STT.egg-info/requires.txt
+Arjun_STT.egg-info/top_level.txt
