@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+webreaderz/core.py
+webreaderz/main.py
+webreaderz.egg-info/PKG-INFO
+webreaderz.egg-info/SOURCES.txt
+webreaderz.egg-info/dependency_links.txt
+webreaderz.egg-info/top_level.txt
