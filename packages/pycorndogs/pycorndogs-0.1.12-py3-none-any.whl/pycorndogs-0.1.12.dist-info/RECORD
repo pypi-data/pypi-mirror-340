@@ -1,0 +1,5 @@
+corndogs/v1alpha1/corndogs_grpc.py,sha256=CZ8mFwVhCEygr-d6ssiRp0-NMp7HjWprMFIFMfPitsA,9861
+corndogs/v1alpha1/corndogs_pb2.py,sha256=cgqSZl5KBRXigU9oSkVbIbYPi_la97x1KqHhsanJfN0,69288
+pycorndogs-0.1.12.dist-info/METADATA,sha256=xf6EZKaCxlFyW_olm0IMEsP2IoNMKyQo_OwspD3HX2A,332
+pycorndogs-0.1.12.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pycorndogs-0.1.12.dist-info/RECORD,,
