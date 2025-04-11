@@ -1,0 +1,16 @@
+ARCA/ARCA.py,sha256=Ki3YK5CjunGJu-Fbn2EGVX12542wL82BJLF6EMxVWiI,4541
+ARCA/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ARCA/CartasDePorteElectronicas/AplicativoCartasDePorteElectronicas.py,sha256=dxfCJR9QxkhztDE30KOSwSGQP4-2BUdX4HG4JqkD9s8,9084
+ARCA/CartasDePorteElectronicas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Chrome/Chrome.py,sha256=Uk960X2YaverdwE-hVymVAT3IdfVypobzCOBYcbQeMc,16328
+Chrome/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Excel/Excel.py,sha256=ncKRxsgeHkXjcEX0PEyIkALLgzSlhtX5ddU9PnXu6v4,766
+Excel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Terminal/Terminal.py,sha256=Z3HZ-LJET4UouzX9fWAq6sESFZEhzCI5yxHRYsnE9T0,1222
+Terminal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Windows/Windows.py,sha256=v0wm6eoK9kBNl37xOLK1ysFnJ2ZFinr_c-dc1_nxFBs,4311
+Windows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glgrpa-0.0.7.dist-info/METADATA,sha256=vQQH7qchmo9zuFp9AsxU7EhPRlv7j6EBQvgPErmeeJ4,3890
+glgrpa-0.0.7.dist-info/WHEEL,sha256=beeZ86-EfXScwlR_HKu4SllMC9wUEj_8Z_4FJ3egI2w,91
+glgrpa-0.0.7.dist-info/top_level.txt,sha256=n1Y2Hm704TLi4VTSU5b5W6Mc4AVG1W4rXn7cBtWnRp8,35
+glgrpa-0.0.7.dist-info/RECORD,,
