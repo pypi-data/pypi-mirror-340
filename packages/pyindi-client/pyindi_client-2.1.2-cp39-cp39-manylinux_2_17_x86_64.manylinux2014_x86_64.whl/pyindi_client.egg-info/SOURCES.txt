@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyindi_client.egg-info/PKG-INFO
+pyindi_client.egg-info/SOURCES.txt
+pyindi_client.egg-info/dependency_links.txt
+pyindi_client.egg-info/not-zip-safe
+pyindi_client.egg-info/requires.txt
+pyindi_client.egg-info/top_level.txt
+tests/test_example.py
