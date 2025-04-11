@@ -1,0 +1,6 @@
+README.md
+setup.py
+safeguard_logger.egg-info/PKG-INFO
+safeguard_logger.egg-info/SOURCES.txt
+safeguard_logger.egg-info/dependency_links.txt
+safeguard_logger.egg-info/top_level.txt
