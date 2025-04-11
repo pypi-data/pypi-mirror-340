@@ -1,0 +1,66 @@
+import asyncio
+import uuid
+from datetime import datetime
+from typing import Awaitable, Callable, Generic, Optional
+
+from .action import (
+    BaseActionResultMeta,
+    BaseActionTriggerMeta,
+    ProcessResult,
+    TAction,
+    TActionResult,
+)
+from .monitors.monitor import ActionMonitor
+
+
+class ActionProcessor(Generic[TAction, TActionResult]):
+    _monitors: list[ActionMonitor]
+    _func: Callable[[TAction], Awaitable[TActionResult]]
+
+    def __init__(
+        self,
+        func: Callable[[TAction], Awaitable[TActionResult]],
+        monitors: Optional[list[ActionMonitor]] = None,
+    ) -> None:
+        self._func = func
+        self._monitors = monitors or []
+
+    async def _run(self, action: TAction) -> TActionResult:
+        started_at = datetime.now()
+        status: str = "unknown"
+        description: str = "unknown"
+        result: Optional[TActionResult] = None
+
+        action_id = uuid.uuid4()
+        action_trigger_meta = BaseActionTriggerMeta(action_id=action_id, started_at=started_at)
+        for monitor in self._monitors:
+            await monitor.prepare(action, action_trigger_meta)
+        try:
+            result = await self._func(action)
+            status = "success"
+            description = "Success"
+        except BaseException as e:
+            status = "error"
+            description = str(e)
+            raise
+        finally:
+            end_at = datetime.now()
+            duration = (end_at - started_at).total_seconds()
+            meta = BaseActionResultMeta(
+                action_id=action_id,
+                status=status,
+                description=description,
+                started_at=started_at,
+                end_at=end_at,
+                duration=duration,
+            )
+            process_result = ProcessResult(meta=meta, result=result)
+            for monitor in reversed(self._monitors):
+                await monitor.done(action, process_result)
+        return result
+
+    async def wait_for_complete(self, action: TAction) -> TActionResult:
+        return await self._run(action)
+
+    async def fire_and_forget(self, action: TAction) -> None:
+        asyncio.create_task(self.wait_for_complete(action))
