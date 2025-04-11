@@ -1,0 +1,576 @@
+import logging
+
+# import webbrowser # No longer needed for QR code
+from pathlib import Path
+from typing import Optional, Dict, List, Any, Union
+
+# import qrcode # No longer needed for QR code
+from telethon import TelegramClient
+from telethon.errors import SessionPasswordNeededError
+from telethon.tl.types import Message, User, Chat, Channel
+
+# Import from our refactored config module
+from . import config
+
+# Setup logger for this module
+logger = logging.getLogger(__name__)
+
+
+class TelegramClientWrapper:
+    """Wraps the Telethon client for easier use within the MCP server."""
+
+    def __init__(self):
+        # Configuration is now loaded in config.py
+        self.api_id: int = config.TG_API_ID
+        self.api_hash: str = config.TG_API_HASH
+        self.phone_number: Optional[str] = (
+            config.TG_PHONE_NUMBER
+        )  # Used for phone login
+
+        self.session_path: Path = config.HOME_DATA_DIR / config.SESSION_FILENAME
+        # self.qr_code_path: Path = config.HOME_DATA_DIR / config.QR_CODE_FILENAME # No longer needed
+
+        self.client: Optional[TelegramClient] = None
+        # Directory creation is handled in config.py
+        logger.info(
+            f"TelegramClientWrapper initialized. Session path: {self.session_path}"
+        )
+
+    async def connect(self, perform_login_if_needed: bool = False) -> bool:
+        """
+        Initializes and connects the Telethon client.
+        If perform_login_if_needed is True, attempts phone login if not authorized.
+        Returns True if connected and authorized, False otherwise (or raises error on login failure).
+        """
+        if self.client and self.client.is_connected():
+            logger.info("Client already connected.")
+            try:
+                if await self.client.is_user_authorized():
+                    logger.info("User already authorized.")
+                    return True
+                else:
+                    logger.warning("Client connected but user not authorized.")
+                    if perform_login_if_needed:
+                        # Use phone login
+                        return await self._perform_phone_login()
+                    else:
+                        return (
+                            False  # Connected but not authorized, login not requested
+                        )
+            except Exception as e:
+                logger.error(f"Error checking authorization status: {e}")
+                await self.disconnect()  # Disconnect if check fails
+                return False
+
+        logger.info(f"Initializing TelegramClient with session: {self.session_path}")
+        self.client = TelegramClient(
+            str(self.session_path),
+            self.api_id,
+            self.api_hash,
+            system_version="4.16.30-vxCUSTOM",  # Recommended by Telethon docs
+        )
+
+        try:
+            logger.info("Connecting to Telegram...")
+            await self.client.connect()
+            logger.info("Initial connection successful.")
+
+            if await self.client.is_user_authorized():
+                user = await self.client.get_me()
+                # Handle potential None user even if authorized (though unlikely)
+                if user:
+                    logger.info(f"User {user.username or user.id} is authorized.")
+                    return True
+                else:
+                    logger.warning(
+                        "Client authorized but get_me() returned None. Session might be corrupted."
+                    )
+                    # Attempt login again if requested, as something is wrong
+                    if perform_login_if_needed:
+                        logger.warning(
+                            "Attempting login again due to inconsistent state."
+                        )
+                        return await self._perform_phone_login()
+                    else:
+                        await self.disconnect()
+                        return False
+            else:
+                logger.warning("User is not authorized.")
+                if perform_login_if_needed:
+                    # Use phone login
+                    return await self._perform_phone_login()
+                else:
+                    # Not authorized, and login not requested by caller
+                    await self.disconnect()  # Disconnect if not proceeding to login
+                    return False
+
+        except Exception as e:
+            logger.error(f"Failed to connect: {e}")
+            await self.disconnect()  # Ensure cleanup on failure
+            # If login was requested, re-raise; otherwise, just return False
+            if perform_login_if_needed:
+                raise
+            else:
+                return False
+
+    async def _perform_phone_login(self) -> bool:
+        """Handles the interactive phone number and code login flow."""
+        if not self.client or not self.client.is_connected():
+            logger.error("Cannot perform phone login, client not connected.")
+            return False
+
+        # Use phone number from config/env if available, otherwise prompt
+        phone_to_use = self.phone_number
+        if not phone_to_use:
+            # Use input() for direct interaction when run with --login
+            # Note: input() will block the asyncio event loop.
+            # This is acceptable for the --login flow but not during normal server operation.
+            try:
+                phone_to_use = input(
+                    "Please enter your phone number (e.g., +1234567890): "
+                )
+            except EOFError:  # Handle cases where input is not possible (e.g., non-interactive environment)
+                logger.error(
+                    "Cannot prompt for phone number in non-interactive mode. Set TG_PHONE_NUMBER environment variable."
+                )
+                return False
+
+        logger.info(f"Attempting login for phone number: {phone_to_use}")
+        print(
+            f"Attempting login for phone number: {phone_to_use}"
+        )  # Also print for visibility
+
+        try:
+            # Request the login code
+            print("Requesting login code from Telegram...")
+            code_info = await self.client.send_code_request(phone_to_use)
+            logger.info("Login code sent via Telegram.")
+            print("Login code sent via Telegram.")
+
+            # Prompt user for the code
+            code = ""
+            while not code:
+                try:
+                    code = input("Please enter the code you received: ")
+                except EOFError:
+                    logger.error(
+                        "Cannot prompt for login code in non-interactive mode."
+                    )
+                    return False
+
+            # Sign in using the code
+            logger.info("Attempting sign-in with received code...")
+            signed_in_user = await self.client.sign_in(
+                phone_to_use, code=code, phone_code_hash=code_info.phone_code_hash
+            )
+            logger.info(
+                f"Successfully signed in as: {signed_in_user.username or signed_in_user.id}"
+            )
+            print(
+                f"Successfully signed in as: {signed_in_user.username or signed_in_user.id}"
+            )
+            return True
+
+        except SessionPasswordNeededError:
+            logger.warning("Two-factor authentication enabled.")
+            print("Two-factor authentication enabled.")
+            try:
+                password = ""
+                while not password:
+                    try:
+                        # Consider using getpass here if available and desired
+                        password = input("Enter your Telegram password (2FA): ")
+                    except EOFError:
+                        logger.error(
+                            "Cannot prompt for 2FA password in non-interactive mode."
+                        )
+                        return False
+
+                logger.info("Attempting sign-in with 2FA password...")
+                signed_in_user = await self.client.sign_in(password=password)
+                logger.info(
+                    f"Successfully signed in with 2FA as: {signed_in_user.username or signed_in_user.id}"
+                )
+                print(
+                    f"Successfully signed in with 2FA as: {signed_in_user.username or signed_in_user.id}"
+                )
+                return True
+            except Exception as pwd_err:
+                logger.error(f"Password sign in failed: {pwd_err}")
+                print(f"[ERROR] Password sign in failed: {pwd_err}")
+                # Don't disconnect here, let the caller handle it if needed
+                # await self.disconnect()
+                return False
+        except Exception as e:
+            logger.error(f"Phone login process failed: {e}", exc_info=True)
+            print(f"[ERROR] Phone login process failed: {e}")
+            # Don't disconnect here, let the caller handle it if needed
+            # await self.disconnect()
+            return False
+
+    async def disconnect(self):
+        """Disconnects the Telethon client if connected."""
+        if self.client and self.client.is_connected():
+            logger.info("Disconnecting Telegram client...")
+            await self.client.disconnect()
+            logger.info("Client disconnected.")
+        self.client = None
+
+    async def _ensure_connected(self):
+        """Checks if the client is connected and authorized, raises error if not."""
+        if not self.client or not self.client.is_connected():
+            raise ConnectionError(
+                "Telegram client is not connected. Please restart the server or check logs."
+            )
+        # Check authorization specifically here as well
+        if not await self.client.is_user_authorized():
+            raise ConnectionError(
+                "Telegram client is connected but not authorized. Session might be invalid. Please restart the server or run --login."
+            )
+
+    async def get_login_status(self) -> Dict[str, Any]:
+        """Checks the connection and authorization status."""
+        if not self.client:
+            # Check if session file exists even if client isn't initialized yet
+            session_exists = self.session_path.exists()
+            return {
+                "connected": False,
+                "authorized": False,
+                "message": f"Client not initialized. Session file {'exists' if session_exists else 'does not exist'}.",
+            }
+
+        connected = False
+        authorized = False
+        user_info = None
+        message = "Status check failed."
+
+        try:
+            connected = self.client.is_connected()
+            if connected:
+                authorized = await self.client.is_user_authorized()
+                if authorized:
+                    me = await self.client.get_me()
+                    if me:
+                        user_info = {
+                            "id": me.id,
+                            "username": me.username,
+                            "first_name": me.first_name,
+                            "last_name": me.last_name,
+                        }
+                        message = "Client connected and authorized."
+                    else:
+                        # Should not happen if authorized, but indicates an issue
+                        authorized = False  # Correct the state
+                        message = "Client reported authorized, but failed to get user info. Session may be invalid."
+                else:
+                    message = "Client connected but not authorized. Login required (run with --login)."
+            else:
+                session_exists = self.session_path.exists()
+                message = f"Client not connected. Session file {'exists' if session_exists else 'does not exist'}."
+        except Exception as e:
+            logger.warning(
+                f"Error checking authorization status during status check: {e}"
+            )
+            message = f"Error checking status: {str(e)}"
+            # Try to determine connection status even after error
+            try:
+                connected = self.client.is_connected() if self.client else False
+            except:
+                connected = False  # Assume not connected if check fails
+            authorized = False
+            user_info = None
+
+        status = {"connected": connected, "authorized": authorized, "message": message}
+        if user_info:
+            status["user"] = user_info
+        return status
+
+    # --- Wrapper Methods for Tools ---
+    # (These remain largely the same, relying on _ensure_connected)
+
+    async def list_chats(self, limit: int = 100) -> List[Dict]:
+        await self._ensure_connected()
+        logger.info(f"Listing up to {limit} dialogs...")
+        dialogs_data = []
+        try:
+            async for dialog in self.client.iter_dialogs(limit=limit):
+                entity = dialog.entity
+                entity_type = "Unknown"
+                if isinstance(entity, User):
+                    entity_type = "User"
+                elif isinstance(entity, Chat):
+                    entity_type = "Group"
+                elif isinstance(entity, Channel):
+                    entity_type = "Channel" if entity.broadcast else "Supergroup"
+
+                dialogs_data.append(
+                    {
+                        "id": dialog.id,
+                        "name": dialog.name,
+                        "type": entity_type,
+                        "unread_count": dialog.unread_count,
+                    }
+                )
+            logger.info(f"Retrieved {len(dialogs_data)} dialogs.")
+            return dialogs_data
+        except Exception as e:
+            logger.error(f"Failed to list chats: {e}", exc_info=True)
+            raise ConnectionError(
+                f"Failed to list chats: {str(e)}"
+            )  # Re-raise as ConnectionError for tool handling
+
+    async def search_chats(self, query: str) -> List[Dict]:
+        await self._ensure_connected()
+        logger.info(f"Searching for chats/users matching query: '{query}'")
+        results = []
+        query_lower = query.lower()
+        try:
+            async for dialog in self.client.iter_dialogs():
+                # Check if name exists before lowercasing
+                if dialog.name and query_lower in dialog.name.lower():
+                    entity = dialog.entity
+                    entity_type = "Unknown"
+                    if isinstance(entity, User):
+                        entity_type = "User"
+                    elif isinstance(entity, Chat):
+                        entity_type = "Group"
+                    elif isinstance(entity, Channel):
+                        entity_type = "Channel" if entity.broadcast else "Supergroup"
+                    results.append(
+                        {"id": dialog.id, "name": dialog.name, "type": entity_type}
+                    )
+            logger.info(f"Found {len(results)} chats/users matching query.")
+            return results
+        except Exception as e:
+            logger.error(f"Failed during chat search: {e}", exc_info=True)
+            raise ConnectionError(f"Failed during chat search: {str(e)}")
+
+    async def post_message(self, chat_id: Union[int, str], text: str) -> Dict:
+        await self._ensure_connected()
+        logger.info(f"Sending message to chat_id {chat_id}")
+        try:
+            message: Message = await self.client.send_message(chat_id, text)
+            logger.info(f"Message sent successfully. ID: {message.id}")
+            return {
+                "message_id": message.id,
+                "status": "success",
+                "timestamp": message.date.isoformat(),
+            }
+        except Exception as e:
+            logger.error(f"Failed to send message to {chat_id}: {e}", exc_info=True)
+            # Return error dict compatible with PostMessageOutput schema
+            return {"error": str(e), "status": "failed"}
+
+    async def reply_to_message(
+        self, chat_id: Union[int, str], message_id: int, text: str
+    ) -> Dict:
+        await self._ensure_connected()
+        logger.info(f"Replying to message ID {message_id} in chat_id {chat_id}")
+        try:
+            message: Message = await self.client.send_message(
+                chat_id, text, reply_to=message_id
+            )
+            logger.info(f"Reply sent successfully. ID: {message.id}")
+            return {
+                "message_id": message.id,
+                "status": "success",
+                "timestamp": message.date.isoformat(),
+            }
+        except Exception as e:
+            logger.error(
+                f"Failed to reply to message {message_id} in {chat_id}: {e}",
+                exc_info=True,
+            )
+            return {"error": str(e), "status": "failed"}
+
+    async def add_reaction(
+        self, chat_id: Union[int, str], message_id: int, reaction: str
+    ) -> Dict:
+        await self._ensure_connected()
+        logger.info(
+            f"Adding reaction '{reaction}' to message ID {message_id} in chat_id {chat_id}"
+        )
+        try:
+            # Ensure reaction is a single emoji (basic check)
+            if not reaction or len(reaction) > 2:  # Allow for variation selectors
+                logger.error(
+                    f"Invalid reaction provided: '{reaction}'. Must be a single emoji."
+                )
+                return {
+                    "error": "Invalid reaction: Must be a single emoji.",
+                    "status": "failed",
+                }
+
+            await self.client.send_reaction(chat_id, message_id, reaction=reaction)
+            logger.info(f"Reaction '{reaction}' added successfully.")
+            return {"status": "success"}
+        except Exception as e:
+            logger.error(
+                f"Failed to add reaction to message {message_id} in {chat_id}: {e}",
+                exc_info=True,
+            )
+            return {"error": str(e), "status": "failed"}
+
+    async def get_chat_history(
+        self, chat_id: Union[int, str], limit: int, max_id: Optional[int]
+    ) -> List[Dict]:
+        await self._ensure_connected()
+        logger.info(
+            f"Getting {limit} messages from chat_id {chat_id}, ending before ID {max_id or 'latest'}"
+        )
+        messages_data = []
+        try:
+            async for message in self.client.iter_messages(
+                entity=chat_id,
+                limit=limit,
+                max_id=max_id or 0,  # max_id=0 means from the latest
+            ):
+                if isinstance(message, Message):
+                    sender_info = {"id": message.sender_id}  # Basic info
+                    # Attempt to get sender entity safely
+                    sender_name = f"User {message.sender_id}"  # Default
+                    try:
+                        sender = await message.get_sender()
+                        if sender:
+                            sender_name = (
+                                getattr(sender, "username", None)
+                                or getattr(sender, "title", None)
+                                or getattr(sender, "first_name", f"User {sender.id}")
+                            )
+                    except Exception:
+                        logger.warning(
+                            f"Could not resolve sender entity for ID {message.sender_id}",
+                            exc_info=False,
+                        )
+
+                    messages_data.append(
+                        {
+                            "id": message.id,
+                            "text": message.text
+                            or f"[Non-text content: {type(message.media).__name__ if message.media else 'None'}]",
+                            "sender_id": message.sender_id,
+                            "sender_name": sender_name,  # Add resolved name
+                            "timestamp": message.date.isoformat(),
+                            "is_reply": message.is_reply,
+                            "reply_to_msg_id": message.reply_to_msg_id
+                            if message.is_reply
+                            else None,
+                            "is_outgoing": message.out,
+                        }
+                    )
+            logger.info(f"Retrieved {len(messages_data)} messages.")
+            return messages_data
+        except Exception as e:
+            logger.error(f"Failed to get messages from {chat_id}: {e}", exc_info=True)
+            raise ConnectionError(f"Failed to get messages: {str(e)}")
+
+    async def get_user_profile(self, user_id: Union[int, str]) -> Dict:
+        await self._ensure_connected()
+        logger.info(f"Getting profile for user_id: {user_id}")
+        try:
+            entity = await self.client.get_entity(user_id)
+            if isinstance(entity, User):
+                profile_data = {
+                    "id": entity.id,
+                    "username": entity.username,
+                    "first_name": entity.first_name,
+                    "last_name": entity.last_name,
+                    "phone": entity.phone,  # Note: Phone might be hidden by privacy settings
+                    "is_bot": entity.bot,
+                    "is_contact": entity.contact,
+                    "is_mutual_contact": entity.mutual_contact,
+                    "status": str(entity.status) if entity.status else None,
+                }
+                logger.info(
+                    f"Retrieved profile for user {entity.username or entity.id}"
+                )
+                return profile_data
+            else:
+                logger.warning(
+                    f"Entity found for {user_id} is not a User (type: {type(entity).__name__})"
+                )
+                return {"error": f"ID {user_id} does not correspond to a user."}
+        except ValueError:
+            logger.error(f"Could not find entity for user_id: {user_id}")
+            return {
+                "error": f"User with ID/username '{user_id}' not found or inaccessible."
+            }
+        except Exception as e:
+            logger.error(
+                f"Failed to get user profile for {user_id}: {e}", exc_info=True
+            )
+            return {"error": f"An error occurred while fetching profile: {str(e)}"}
+
+    async def search_messages(
+        self, query: str, chat_id: Optional[Union[int, str]] = None, limit: int = 20
+    ) -> List[Dict]:
+        """Searches for messages containing the query text, globally or in a specific chat."""
+        await self._ensure_connected()
+        search_scope = f"chat_id {chat_id}" if chat_id else "globally"
+        logger.info(
+            f"Searching up to {limit} messages {search_scope} for query: '{query}'"
+        )
+        messages_data = []
+        try:
+            # Determine the entity to search within
+            entity = None
+            if chat_id:
+                try:
+                    entity = await self.client.get_entity(chat_id)
+                except ValueError:
+                    logger.error(f"Could not find entity for chat_id: {chat_id}")
+                    raise ValueError(
+                        f"Chat/User with ID/username '{chat_id}' not found or inaccessible."
+                    )
+                except Exception as e:
+                    logger.error(
+                        f"Error resolving entity for chat_id {chat_id}: {e}",
+                        exc_info=True,
+                    )
+                    raise ConnectionError(f"Error resolving entity {chat_id}: {str(e)}")
+
+            async for message in self.client.iter_messages(
+                entity=entity,  # None searches globally (within indexed messages)
+                limit=limit,
+                search=query,
+            ):
+                if isinstance(message, Message):
+                    sender_info = {"id": message.sender_id}
+                    sender_name = f"User {message.sender_id}"  # Default
+                    try:
+                        sender = await message.get_sender()
+                        if sender:
+                            sender_name = (
+                                getattr(sender, "username", None)
+                                or getattr(sender, "title", None)
+                                or getattr(sender, "first_name", f"User {sender.id}")
+                            )
+                    except Exception:
+                        logger.warning(
+                            f"Could not resolve sender entity for ID {message.sender_id}",
+                            exc_info=False,
+                        )
+
+                    messages_data.append(
+                        {
+                            "id": message.id,
+                            "chat_id": message.chat_id,
+                            "text": message.text
+                            or f"[Non-text content: {type(message.media).__name__ if message.media else 'None'}]",
+                            "sender_id": message.sender_id,
+                            "sender_name": sender_name,
+                            "timestamp": message.date.isoformat(),
+                            "is_reply": message.is_reply,
+                            "reply_to_msg_id": message.reply_to_msg_id
+                            if message.is_reply
+                            else None,
+                            "is_outgoing": message.out,
+                        }
+                    )
+            logger.info(f"Retrieved {len(messages_data)} messages matching query.")
+            return messages_data
+        except Exception as e:
+            logger.error(
+                f"Failed to search messages ({search_scope}): {e}", exc_info=True
+            )
+            raise ConnectionError(f"Failed to search messages: {str(e)}")
