@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: pyforged
+Version: 0.1.0.dev0
+Summary: brief description
+Author-email: DirtyWork Solutions <forged@open.dirtywork.solutions>
+License: MIT License
+        
+        Copyright (c) 2025 PyForged
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pip~=25.0.1
+Requires-Dist: wheel~=0.46.1
+Requires-Dist: setuptools~=78.0.0
+Requires-Dist: loguru~=0.7.3
+Provides-Extra: dev
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: pytest~=8.3.5; extra == "dev"
+Requires-Dist: pytest-asyncio~=0.25.3; extra == "dev"
+Requires-Dist: pytest-loguru~=0.4.0; extra == "dev"
+Dynamic: license-file
+
+# PyForged-Core
+###### Slogan here
+    NOTE: This is a work in progress. The API may change frequently. 
+
+![PyPI - Status](https://img.shields.io/pypi/status/PyForged?style=for-the-badge&color=E15707)
+[![PyPI - Version](https://img.shields.io/pypi/v/pyforged?style=for-the-badge&color=E15707)
+](https://github.com/PyForged/core/blob/main/README.md) 
+![PyPI - License](https://img.shields.io/pypi/l/PyForged?style=for-the-badge)
+[![Static Badge](https://img.shields.io/badge/Project-Documentation-012E30?style=for-the-badge)
+](https://github.com/PyForged/core/blob/main/README.md)
+---

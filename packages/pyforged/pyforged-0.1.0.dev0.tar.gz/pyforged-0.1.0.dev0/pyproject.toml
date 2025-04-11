@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyforged"
+version = "v0.1.0.dev0"
+description = "brief description"
+authors = [
+    { name = "DirtyWork Solutions", email = "forged@open.dirtywork.solutions" }
+]
+readme = {file="README.md", content-type="text/markdown"}
+license = {file= "LICENSE.md", content-type="text/markdown"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers"
+]
+dependencies = [
+    "pip~=25.0.1",
+    "wheel~=0.46.1",
+    "setuptools~=78.0.0",
+    "loguru ~=0.7.3"
+]
+
+[project.optional-dependencies]
+dev = [
+    "tox",
+    "pytest ~=8.3.5",
+    "pytest-asyncio ~=0.25.3",
+    "pytest-loguru ~=0.4.0"
+]
+
+[tool.setuptools]
+packages = ["forged"]
+package-dir = {"" = "src"}
