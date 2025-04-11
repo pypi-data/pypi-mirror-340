@@ -1,0 +1,7 @@
+PyPiUpdater/__init__.py,sha256=oejcl5FP0iVrWE7ySvINg94jBliRUB9GUm40Kig-zvc,138
+PyPiUpdater/multi_updater.py,sha256=ovIu_DoJ_dLjioYA_ri_6dw9AxrDdXsEmZ-Tld5VYEo,96
+PyPiUpdater/single_updater.py,sha256=Tumcg-4EqGqe6Lg853w0d_tBLACysCbbdvRlrNIRcug,6691
+pypiupdater-0.9.0.dist-info/METADATA,sha256=kCH7XSGd1XKMBhEhJRpSbddN-etpssk5O1OsGWQMaAM,1320
+pypiupdater-0.9.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pypiupdater-0.9.0.dist-info/licenses/LICENSE.md,sha256=MFhIrSiAZkeilLX0yySBK55GCTqmEon6P8jc_zEsdNs,870
+pypiupdater-0.9.0.dist-info/RECORD,,
