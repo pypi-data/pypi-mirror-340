@@ -1,0 +1,11 @@
+pyproject.toml
+adamapi/__init__.py
+adamapi/authorization.py
+adamapi/datasets.py
+adamapi/get_data.py
+adamapi/search.py
+eo4eu_adamapi.egg-info/PKG-INFO
+eo4eu_adamapi.egg-info/SOURCES.txt
+eo4eu_adamapi.egg-info/dependency_links.txt
+eo4eu_adamapi.egg-info/requires.txt
+eo4eu_adamapi.egg-info/top_level.txt
