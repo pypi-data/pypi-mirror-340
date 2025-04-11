@@ -1,0 +1,4 @@
+colorama
+logging
+music_tag
+requests
