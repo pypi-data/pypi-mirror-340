@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mcp-client-llm"
+version = "0.1.0"
+description = "MCP server for the LLMs"
+authors = ["Kacper Łukawski <lukawski.kacper@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "mcp_llm"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.scripts]
+mcp-llm = "mcp_llm.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
