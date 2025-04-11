@@ -1,0 +1,12 @@
+dataframes_haystack/__about__.py,sha256=gn3zP0TDYtgBB0yOUyAF82oAW7MU1aul9oHUkwNJQ3k,152
+dataframes_haystack/__init__.py,sha256=dWyRm53m1kKh-YT8T2jfLWhbjm9j1tmlhRJVb9dlXoc,130
+dataframes_haystack/components/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataframes_haystack/components/converters/__init__.py,sha256=C9xtiYZcCzoWDoq74Z-AMU0phUEpQe3AXo6n-bS5Vis,132
+dataframes_haystack/components/converters/_common.py,sha256=AqyckmE9x5HvECZQ7GLrMGULhkNEW9KZLVwxoOHdhS0,4315
+dataframes_haystack/components/converters/_utils.py,sha256=aTh2AMxxcbMzst0uaIvQoX6jlKja6OTz4G8ftaLFXOg,2661
+dataframes_haystack/components/converters/pandas.py,sha256=oqeZ_KJFGDHPOqGYBmWfVErLKRvevAtHitebJlJtqk0,6537
+dataframes_haystack/components/converters/polars.py,sha256=tyJMQ4JPDFiLfnjIdvQoxXhu0u98Rz8L4NAiEeivfOA,5854
+dataframes_haystack-0.0.5.dist-info/METADATA,sha256=EW4CKzV-GTDg0GtU1a4TKcer9cpTOEiNE81yHK20SNE,9244
+dataframes_haystack-0.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dataframes_haystack-0.0.5.dist-info/licenses/LICENSE,sha256=5snaKVQKwH8sYRaOK4lDShBOVJnthFZRzxYW8wXvyuY,1078
+dataframes_haystack-0.0.5.dist-info/RECORD,,
