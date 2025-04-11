@@ -1,0 +1,11 @@
+minimal_pba_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+minimal_pba_cli/cli.py,sha256=fFxkAQ2O5Lukus9pYomTxagJgQ2U2UsohKv4J0wuThI,3335
+minimal_pba_cli/customization.py,sha256=V7MjC7mkjfh2hUXVdlEjTZ801fmWTGqc0lAc6tDm7cQ,1747
+minimal_pba_cli/plugin.py,sha256=QVaRZdwV9WxSiYtWX9kA2Iwg__1XWsXaLe17b9YGxMQ,6382
+minimal_pba_cli/upgrade.py,sha256=urMLG6W-7OoQh27Bh6Xt9vt_rRSeqflfX2vrXv8zM-c,754
+minimal_pba_cli/util.py,sha256=Qllxk9eaVm2xdDnukoaVBOQIk8jLasGvJC4_-Vc5G1M,472
+minimal_pba_cli-0.0.5.dist-info/METADATA,sha256=jfRyx7g8EVSXfLluGY6-vG79HF-1_TPAYxfx9-Qn3Z8,3656
+minimal_pba_cli-0.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+minimal_pba_cli-0.0.5.dist-info/entry_points.txt,sha256=x68CcYLn1YO-L5pxZWZ2_c_pnItDYOKOrsr0qajqKd4,53
+minimal_pba_cli-0.0.5.dist-info/top_level.txt,sha256=3BnK5rJB60RMKeHN8DV2nRgu-QpbQV4HVWZgiVc_mJA,16
+minimal_pba_cli-0.0.5.dist-info/RECORD,,
