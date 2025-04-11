@@ -1,0 +1,14 @@
+setup.py
+boldbasil/__init__.py
+boldbasil/a1a.py
+boldbasil/a2a.py
+boldbasil/a3a.py
+boldbasil/a4a.py
+boldbasil/a5a.py
+boldbasil/a6a.py
+boldbasil/a7a.py
+boldbasil/a8a.py
+boldbasil.egg-info/PKG-INFO
+boldbasil.egg-info/SOURCES.txt
+boldbasil.egg-info/dependency_links.txt
+boldbasil.egg-info/top_level.txt
