@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: lumericpy
+Version: 0.0.5
+Summary: LumericPy: A Python package for Lumerical FDTD and MODE Solutions
+Author: Ameya Velankar
+Author-email: <velankar@uw.edu>
+Keywords: python,lumerical
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+LumericPy is a Python package designed to facilitate the use of Lumerical FDTD and MODE Solutions software. It provides a set of tools and functions to streamline the process of simulating and analyzing photonic devices using these powerful simulation tools.
