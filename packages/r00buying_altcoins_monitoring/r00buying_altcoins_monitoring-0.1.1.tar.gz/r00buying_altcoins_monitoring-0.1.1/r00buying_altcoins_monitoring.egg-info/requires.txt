@@ -1,0 +1,5 @@
+python-coinmarketcap>=0.6
+prettytable
+r00logger
+r00secret
+r00notify
