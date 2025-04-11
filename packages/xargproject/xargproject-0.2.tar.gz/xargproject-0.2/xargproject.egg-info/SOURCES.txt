@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+xargproject/__init__.py
+xargproject/attribute.py
+xargproject/command.py
+xargproject/project.py
+xargproject.egg-info/PKG-INFO
+xargproject.egg-info/SOURCES.txt
+xargproject.egg-info/dependency_links.txt
+xargproject.egg-info/entry_points.txt
+xargproject.egg-info/requires.txt
+xargproject.egg-info/top_level.txt
+xargproject.egg-info/zip-safe
