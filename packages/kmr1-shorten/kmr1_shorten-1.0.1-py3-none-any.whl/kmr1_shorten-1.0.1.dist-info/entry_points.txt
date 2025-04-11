@@ -1,0 +1,3 @@
+[console_scripts]
+k1s = kmr1_shorten.shorten:main
+kmr1-shorten = kmr1_shorten.shorten:main

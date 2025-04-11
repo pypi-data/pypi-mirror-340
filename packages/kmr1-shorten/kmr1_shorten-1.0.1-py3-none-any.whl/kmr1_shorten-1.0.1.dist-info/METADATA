@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: kmr1-shorten
+Version: 1.0.1
+Summary: Kmr¹ APIを使用してURLを短縮するコマンドライン
+Home-page: https://api.kmr1.org/v1/use
+Author: Lapius7bot Technology Co.
+Author-email: contact-us@lapius7.com
+License: MIT
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: summary
