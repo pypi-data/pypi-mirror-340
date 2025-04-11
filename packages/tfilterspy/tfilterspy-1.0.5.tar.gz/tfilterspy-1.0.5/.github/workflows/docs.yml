@@ -1,0 +1,40 @@
+name: Build and Deploy Docs
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          # Optionally, pin specific versions for reproducibility
+          pip install sphinx==6.2.1 sphinx-rtd-theme==1.2.0 sphinx-autodoc-typehints==1.15.0
+          pip install nbsphinx
+          pip install -e .
+          
+      - name: Build Docs
+        run: |
+          cd docs
+          sphinx-build -b html source build --keep-going
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./docs/build
+          keep_files: false
+          publish_branch: gh-pages
+          github_token: ${{ secrets.PY_GH_PAGES_TOKEN }}

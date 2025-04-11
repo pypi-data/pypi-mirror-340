@@ -1,0 +1,7 @@
+numpy>=1.21
+dask>=2024.8.0
+scipy>=1.7
+
+[dev]
+pytest>=7.0
+flake8>=4.0.1

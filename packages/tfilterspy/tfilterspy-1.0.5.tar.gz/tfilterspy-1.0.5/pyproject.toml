@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tfilterspy"
+dynamic = ["version"]
+description = "A Python package for state estimation using Kalman and Particle Filters"
+authors = [
+    { name = "Thabang Mashinini-Sekhoto", email = "thabangline@gmail.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+dependencies = [
+    "numpy>=1.21",
+    "dask>=2024.8.0",
+    "scipy>=1.7"
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "flake8>=4.0.1"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tfilterspy*"]
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+local_scheme = "node-and-date"
+
+
+[project.urls]
+Homepage = "https://github.com/ubunye-ai-ecosystems/tfilterspy"
+Documentation = "https://ubunye-ai-ecosystems.github.io/tfilterspy/"
+Repository = "https://github.com/ubunye-ai-ecosystems/tfilterspy.git"
+Tracker = "https://github.com/ubunye-ai-ecosystems/tfilterspy/issues"
+
