@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pandera-utils"
+version = "0.2.1"
+description = ""
+authors = ["Greg <11791585+elphick@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "elphick/pandera_utils"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pandera = {extras = ["io"], version = "^0.23.1"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.1"
+sphinx = "^7.3.7"
+sphinx-gallery = "^0.16.0"
+sphinx-rtd-theme = "^2.0.0"
+myst-parser = "^3.0.1"
+sphinx-autodoc-typehints = "^2.1.1"
+matplotlib = "^3.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
