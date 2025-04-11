@@ -1,0 +1,107 @@
+# Python Error Handling and Syntax Correction Tools
+
+This repository contains advanced tools for Python error handling and syntax correction, designed to make Python development more efficient and user-friendly.
+
+## Components
+
+### 1. Decoher - Interactive Error Handling
+
+Decoher provides interactive error handling capabilities for Python, allowing you to fix runtime errors on the fly without restarting your application.
+
+#### Key Features
+
+- ✅ Interactive error correction at runtime
+- 🔄 Multiple correction options (fix single line, multiple lines, rewrite functions)
+- 📝 Error fix history tracking
+- 🛠️ Support for various error types (TypeError, NameError, IndexError, etc.)
+- 🔌 Simple enable/disable functionality
+
+#### Basic Usage
+
+```python
+import decoher
+
+# Enable interactive error handling
+decoher.enable()
+
+# Your code with potential errors
+# When an error occurs, you'll get an interactive prompt to fix it
+
+# Disable when done
+decoher.disable()
+
+# View history of fixes
+decoher.show_fix_history()
+```
+
+### 2. WaveGet - Automatic Syntax Error Correction
+
+WaveGet extends Python with automatic syntax error correction capabilities, making code more resilient to common syntax mistakes.
+
+#### Key Features
+
+- 🔧 Automatic correction of common syntax errors
+- 🐞 Enhanced debugging capabilities
+- 🎓 Educational tool for learning proper syntax
+- 🔄 Flexible usage in various contexts
+- ⚙️ Customizable correction options
+
+#### Basic Usage
+
+```python
+from wave_get import wave
+
+# Enable WaveGet with debug mode
+wave('enable', debug=True)
+
+# Your code with potential syntax errors will now be automatically fixed
+
+# Disable when done
+wave('disable')
+```
+
+#### Syntax Errors Automatically Fixed
+
+- Missing colons in control structures
+- Missing commas in tuples and lists
+- Missing parentheses in function calls
+- List comprehension with missing brackets
+- Indentation errors in function definitions
+
+## Use Cases
+
+### For Beginners
+- 🔰 Learning Python with reduced frustration
+- 🏫 Educational environments
+- 💻 Interactive tutorials
+
+### For Intermediate Users
+- ⚡ Rapid prototyping
+- 🔍 Debugging complex code
+- 🧩 Code exploration
+
+### For Advanced Users
+- 🎬 Live coding demonstrations
+- 👨‍🏫 Teaching and mentoring
+- 🏛️ Legacy code maintenance
+
+## Installation
+
+```bash
+pip install qnt_funcs
+```
+
+## Limitations
+
+1. Not all errors can be fixed automatically
+2. Automatic fixes might not always match programmer intent
+3. Performance overhead during development
+4. Best used in development and educational contexts, not production
+
+## Best Practices
+
+1. Use debug mode during development
+2. Disable before deploying to production
+3. Use as learning tools, not substitutes for proper coding practices
+4. Combine with proper linting tools for comprehensive code quality
+
