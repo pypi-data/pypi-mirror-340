@@ -1,0 +1,2 @@
+[console_scripts]
+pyxdownload = pyxdownload.__main__:main
