@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-supos-ds = mcp_server_supos_ds:main
