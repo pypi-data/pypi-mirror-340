@@ -1,0 +1,12 @@
+CDC/__init__.py,sha256=Jp5egTuQ1NFPwmo_1X5QoNS-9CyLU8ALpu-riAAWdlA,378
+CDC/__main__.py,sha256=9EJy1nNneyL9fGYTyAtCNSyQxalUeEXbk44D-dswNMU,9057
+CDC/color_models.py,sha256=mgyq5e61pDYw-q-DXZYHPUx9VgNRYWI4cMov-09yfno,15077
+CDC/orthomosaic_tiler.py,sha256=dpNZxSrwV6VkevwVtIF2CkurYSRHER3Ucg-jjp--was,10924
+CDC/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+CDC/tiled_color_based_distance.py,sha256=hRRyVvEnkrdGxlU4XEc-2KjSV0xae2j0sSBcODPIgOs,6546
+CDC/transforms.py,sha256=qjc92HibjmdHdgX1GlLStkzq_6XEQphEDdni4PqLSH8,2709
+cdc-1.1.1.dist-info/METADATA,sha256=OwB1ahGfMO2QXlCtHNoA13qXzRec0_UGtPDnvjy2JAk,4370
+cdc-1.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cdc-1.1.1.dist-info/entry_points.txt,sha256=hUVximNCy_jK9aVxggUbsrUwa03n7qkEuS5Ba4CFXpk,43
+cdc-1.1.1.dist-info/licenses/LICENSE,sha256=cHeoAkyYCiuD_J0Z_OJhvisedQ5vtKIBMgHSDoseVrE,1554
+cdc-1.1.1.dist-info/RECORD,,
