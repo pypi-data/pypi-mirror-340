@@ -1,0 +1,16 @@
+bundle_type,bundle_name,description,gpu_performance,gpu_mem 
+XL,GPU基础型,高性价比,适用于推理场景,8+TFlops SP,16GB+
+3XL,GPU进阶型,高性能,适用于推理、训练场景,15+TFlops SP,32GB+
+2XL_ZIXIAO,NPU 紫霄基础型,国产自研芯片,高性能,30 TFLOPS（FP16）,16GB
+XL_2X,两卡GPU基础型,高性价比,适用于推理场景,16+TFlops SP,2*16GB+
+3XL_2X,两卡GPU进阶型,高性价比,适用于推理、训练场景,30+TFlops SP,2*32GB+
+5XL,GPU高阶型,更高性能,适用于复杂模型部署、自建集群等高阶场景,59+TFlops SP,48GB+
+4XL,GPU高级型,强劲算力,性价比优选,88+TFlops SP,24GB+
+24GB_A,GPU性能型,强劲算力,性价比优选,30+TFlops SP,24GB+
+32C64GB_A,CPU算力 32核64GB,最大支持14B参数模型,可进行文本摘要等任务,,
+768GB_A,八卡GPU旗舰型,旗舰型算力,支持进行大参数量模型部署,352+TFlops SP,768GB
+8C16GB_A,CPU算力 8核16GB,最大支持1.5B参数模型,适合进行轻量任务测试体验,,
+16C32GB_A,CPU算力 16核32GB,最大支持8B参数模型,可进行中等难度任务,如文本生成等,,
+64C256GB_A,CPU算力 64核256GB,最大支持32B参数模型,可进行复杂任务,如知识库问答等,,
+6XL,GPU旗舰型,旗舰型算力,支持模型部署,自建集群等高阶场景,44+TFlops SP,96GB
+256C1152GB_A,CPU算力 256核1152GB,支持 DeepSeek-R1 671B 参数模型,可进行复杂推理任务,,
