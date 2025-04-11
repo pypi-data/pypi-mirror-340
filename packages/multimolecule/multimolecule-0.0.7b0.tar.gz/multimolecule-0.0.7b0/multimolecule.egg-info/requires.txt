@@ -1,0 +1,10 @@
+accelerate
+art
+chanfig>=0.0.109
+danling[torch]>=0.4.0b6
+datasets
+torch
+transformers
+
+[:python_version < "3.11"]
+strenum
