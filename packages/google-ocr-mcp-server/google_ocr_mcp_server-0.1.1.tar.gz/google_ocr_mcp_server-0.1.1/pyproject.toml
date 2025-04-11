@@ -1,0 +1,17 @@
+[project]
+name = "google-ocr-mcp-server"
+version = "v0.1.1"
+description = "Google OCR MCP server"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["google-cloud-vision>=3.10.1", "loguru>=0.7.3", "mcp>=1.6.0"]
+[[project.authors]]
+name = "Zerohertz"
+email = "ohg3417@gmail.com"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+google-ocr-mcp-server = "google_ocr_mcp_server:main"
