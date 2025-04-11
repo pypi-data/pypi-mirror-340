@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: tgbotgen
+Version: 0.1.4
+Summary: Генератор структуры проекта для Telegram-бота
+Author: Александр Аваков
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: aiogram==3.3.0
+Requires-Dist: SQLAlchemy==2.0.40
+Requires-Dist: python-dotenv==0.9.0
+Requires-Dist: APScheduler==3.11.0
+Requires-Dist: aiosqlite==0.21.0
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
