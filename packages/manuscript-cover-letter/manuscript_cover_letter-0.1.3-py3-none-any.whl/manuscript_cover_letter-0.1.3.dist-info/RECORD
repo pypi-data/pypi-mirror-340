@@ -1,0 +1,15 @@
+manuscript_cover_letter/__init__.py,sha256=ruULPQI7A5xxFhCYlc2-Yak7eGnabqCYTahYYvxbPtc,19
+manuscript_cover_letter/about.py,sha256=Ij9kehTmyMGfuc9c64jqtp9F5JmVDhSrZT_8WXaMnSo,487
+manuscript_cover_letter/desktop.py,sha256=AWUOD0RoB5PZJ2VSs60mgiDZAn98j0RBUwUd6da2fY4,1604
+manuscript_cover_letter/program.py,sha256=mhDD-j7FbHa5bQhqUgWl0Lv7igFADYw-SalyIGiRP0U,7903
+manuscript_cover_letter/wabout.py,sha256=zOLKDNHi6i-GCLVxfGClikps2BAK67hXWsgg6PQbdU0,3972
+manuscript_cover_letter/icons/logo.png,sha256=R79RAelTywti_qVK7i6KfdObs4XHsoq_GfrCplLv61g,15207
+manuscript_cover_letter/modules/__init__.py,sha256=ruULPQI7A5xxFhCYlc2-Yak7eGnabqCYTahYYvxbPtc,19
+manuscript_cover_letter/modules/lib_cover_basic.py,sha256=cJlJq6E_aLDJZ6yOv4_MFCoz1EnJ07paMvqy9A-kdgY,5669
+manuscript_cover_letter/modules/lib_cover_style1.py,sha256=3vFWNKqZOnGdk-PsVSx34tKb_uvLKQB0kVIIycuSy4M,5706
+manuscript_cover_letter-0.1.3.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+manuscript_cover_letter-0.1.3.dist-info/METADATA,sha256=yl2hgJuffCQKKgHfUVhPYtxQDcXn0DgzKSlCe5D84js,1899
+manuscript_cover_letter-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+manuscript_cover_letter-0.1.3.dist-info/entry_points.txt,sha256=3w1UqJMXjCeHg3msmvkajpN7QxOETX-AZiJXy1b1YxU,81
+manuscript_cover_letter-0.1.3.dist-info/top_level.txt,sha256=Xqj5B2mRSWTeJiipfnAVUVWJ013itk3el9qAMn2FLzU,24
+manuscript_cover_letter-0.1.3.dist-info/RECORD,,
