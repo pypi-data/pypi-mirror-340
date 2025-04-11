@@ -1,0 +1,17 @@
+serato_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serato_tools/database_v2.py,sha256=x_M6KGipbBUL7Ke-NWGpLWRQOsXb01mk9Ld61-_NVH8,6173
+serato_tools/serato_autotags.py,sha256=fNUMST1hce0p4J_q79-bA6VT1YzG0XZvB8s-n8YNVwc,2921
+serato_tools/serato_beatgrid.py,sha256=u4Q8Y1Dhe9icty2MAGpDFp3Pb8k1YyP-8G0Mn45fKww,1756
+serato_tools/serato_gain.py,sha256=BwDvrIloHwMmkIjjfgrcL4B7m5Rjg-ttsk-KeWHJcSU,560
+serato_tools/serato_markers2.py,sha256=mKONf_SlrOdHn6AF1bwMaC4E5cIUK2X8A6F_Ab7BV20,16592
+serato_tools/serato_markers_.py,sha256=vb8xnHr20QFhxGNR4MoLvAGGkQfPRxIUJnmtv2DWCzg,13457
+serato_tools/serato_overview.py,sha256=tOO35MgvmoJ-nByuau8oodSiNp9e0ZaejIm8oq0DGKw,1766
+serato_tools/tagdump.py,sha256=1mndOdUz-AbyxePsGRaUrJSEtRb0GxjlrSpMJjAWFyE,2902
+serato_tools/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serato_tools/utils/tags.py,sha256=sgm8LRYApi0y8lfyFD_DgZA4B_IXywEyufbuT4sg370,791
+serato_tools/utils/ui.py,sha256=QlF5hHIm-FZA2KlkJ6RXSu37CwTKIA4nNxy6Nz2c4kM,1082
+serato_tools-1.5.2.dist-info/licenses/LICENSE,sha256=d46520ZVaHetlPrsQpsJja9URC758UEi4MPhUIZJ7zg,1071
+serato_tools-1.5.2.dist-info/METADATA,sha256=MOibndII7bWTGuaVtsLC1JOhE3vS1SQdGnT7Z5b_FO8,3471
+serato_tools-1.5.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+serato_tools-1.5.2.dist-info/top_level.txt,sha256=2yF12DgTk2HoxPj3yPsWAmkA2-YE4dOdTDQDoYsyazE,13
+serato_tools-1.5.2.dist-info/RECORD,,
