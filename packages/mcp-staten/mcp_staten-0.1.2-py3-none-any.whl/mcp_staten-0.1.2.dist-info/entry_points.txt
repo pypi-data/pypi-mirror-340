@@ -1,0 +1,3 @@
+[console_scripts]
+mcp-staten = mcp_staten.main:main
+staten-mcp = mcp_staten.main:main
