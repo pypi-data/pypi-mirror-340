@@ -1,0 +1,3 @@
+include docs/index.rst
+include LICENSE
+include docs/changelog.rst
