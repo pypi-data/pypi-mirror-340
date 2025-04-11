@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = 'fortesfit'
+version = '2.0.0'
+authors = [
+   {name='David Rosario', email='david.rosario@ncl.ac.uk'},
+   {name='Devang Liya', email=' d.h.liya2@newcastle.ac.uk'},
+]
+description='Flexible SED fitting for astrophysics'
+readme = "README.md"
+keywords = ["astrophysics","SED","bayesian","fitting","multiwavelength"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Intended Audience :: Science/Research",
+]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+dependencies = [
+     "numpy>=1.2",
+     "scipy<=1.13",
+     "matplotlib",
+     "astropy",
+     "emcee",
+     "h5py",
+     "corner",
+     "tqdm",
+]
+
+[project.urls]
+Homepage = "http://github.com/vikalibrate/FortesFit"
