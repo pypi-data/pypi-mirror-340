@@ -1,0 +1,13 @@
+tfilterspy/__init__.py,sha256=GnPxRwiLJKzVw2b1HPPNTZIhDYlQTjGKwbSvJomO67Q,362
+tfilterspy/base_estimator.py,sha256=lHNMtMVRTFcXXHAAEXofjlRhRg1tq09DmXp3zbrl1tc,3080
+tfilterspy/state_estimation/__init__.py,sha256=ovEQ2K8fLZootBuq8TKKDqsTaN_V6N00oiwpfhu_Sqk,357
+tfilterspy/state_estimation/linear_filters.py,sha256=9PFJpB5XFpI7Wbiy8tIg6l9EV4usLQdBsLO8D2ogUZ0,10038
+tfilterspy/state_estimation/nonlinear_filters.py,sha256=M61E2toxl-jszr6DML4qlaELRt5ZfXUf_2lF_ScZIGA,131
+tfilterspy/state_estimation/particle_filters.py,sha256=yMqctr5NvUysnI6PoiRR_317Ihna4xpjii_B3Jw9UeI,8384
+tfilterspy/utils/__init__.py,sha256=8DudGCULmi5dOkeLflWlVcNxBnwDJglbXlZc0WxnOkc,154
+tfilterspy/utils/optimisation_utils.py,sha256=lEQ5oadMRQBc9aLmnGP9VPysYvdMkp5CiTTqce013XI,5100
+tfilterspy-1.0.5.dist-info/licenses/LICENSE,sha256=rmOsEPq-a2ZvQNEdx71qY9KTqzSEut_CpRF7AOK8alM,1066
+tfilterspy-1.0.5.dist-info/METADATA,sha256=jiU87oy7ZXkG0yzGAhNnEdDuHXDnF-w4sZbUHfQTa2U,8372
+tfilterspy-1.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tfilterspy-1.0.5.dist-info/top_level.txt,sha256=zpXCw7Nrcr8tvH2SM-PekwE1SBMwOBpuWh__UqxEMdw,11
+tfilterspy-1.0.5.dist-info/RECORD,,
