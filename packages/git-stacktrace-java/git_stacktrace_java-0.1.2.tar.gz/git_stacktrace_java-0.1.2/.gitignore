@@ -1,0 +1,11 @@
+*.egg
+*.egg-info
+.eggs/
+.tox
+.testrepository
+*.py[cod]
+AUTHORS
+ChangeLog
+TEST
+build/
+dist/

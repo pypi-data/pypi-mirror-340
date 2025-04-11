@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: git-stacktrace-java
+Version: 0.1.2
+Summary: Add your description here
+License-File: AUTHORS
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: pyperclip>=1.9.0
+Requires-Dist: whatthepatch>=1.0.7
+Description-Content-Type: text/markdown
+
+git-stacktrace-java --since 30.days < check_issue.stack
+
+uv run git-stacktrace-java 
+
+uv build
+pipx install dist/git_stacktrace_java-0.1.0-py3-none-any.whl --force
+
+
+uv publish
+username __token__
+password token from here: https://pypi.org/manage/account/
