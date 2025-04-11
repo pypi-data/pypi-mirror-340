@@ -1,0 +1,2 @@
+jovyan  ALL=(ALL:ALL) NOPASSWD: /usr/bin/apt
+jovyan  ALL=(ALL:ALL) NOPASSWD: /usr/bin/rm
