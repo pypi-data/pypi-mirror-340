@@ -1,0 +1,10 @@
+README.md
+setup.py
+UI4AI/__init__.py
+UI4AI/chat_ui.py
+UI4AI.egg-info/PKG-INFO
+UI4AI.egg-info/SOURCES.txt
+UI4AI.egg-info/dependency_links.txt
+UI4AI.egg-info/requires.txt
+UI4AI.egg-info/top_level.txt
+tests/test_apr_10_441.py
