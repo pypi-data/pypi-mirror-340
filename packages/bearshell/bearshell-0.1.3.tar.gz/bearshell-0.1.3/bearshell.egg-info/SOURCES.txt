@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bearshell/__init__.py
+bearshell.egg-info/PKG-INFO
+bearshell.egg-info/SOURCES.txt
+bearshell.egg-info/dependency_links.txt
+bearshell.egg-info/top_level.txt
