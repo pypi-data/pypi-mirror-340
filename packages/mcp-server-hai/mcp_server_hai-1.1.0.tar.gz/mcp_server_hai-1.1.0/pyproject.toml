@@ -1,0 +1,19 @@
+[project]
+name = "mcp-server-hai"
+version = "1.1.0"
+description = "A MCP server implementation for HAI (Hyper Application Inventor) services"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "build>=1.2.2.post1",
+    "mcp[cli]>=1.6.0",
+    "tencentcloud-sdk-python-hai>=3.0.1357",
+    "twine>=6.1.0",
+    "uvicorn>=0.34.0",
+]
+
+[tool.setuptools]
+py-modules = ["server", "utils", "api_driver"]
+
+[project.scripts]
+mcp-server-hai = "server:mcp.run"
