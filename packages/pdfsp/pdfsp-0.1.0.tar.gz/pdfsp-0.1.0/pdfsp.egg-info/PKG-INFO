@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: pdfsp
+Version: 0.1.0
+Summary: Extracts data from PDF files and saves it to Excel files.
+Author-email: Sermet Pekin <Sermet.Pekin@gmail.com>
+Project-URL: repository, https://github.com/SermetPekin/pdfsp
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pdfplumber>=0.11.6
+Requires-Dist: streamlit>=1.44.1

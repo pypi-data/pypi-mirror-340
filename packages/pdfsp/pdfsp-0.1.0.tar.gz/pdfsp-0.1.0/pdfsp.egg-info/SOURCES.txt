@@ -1,0 +1,8 @@
+pyproject.toml
+pdfsp/__init__.py
+pdfsp/core.py
+pdfsp.egg-info/PKG-INFO
+pdfsp.egg-info/SOURCES.txt
+pdfsp.egg-info/dependency_links.txt
+pdfsp.egg-info/requires.txt
+pdfsp.egg-info/top_level.txt
