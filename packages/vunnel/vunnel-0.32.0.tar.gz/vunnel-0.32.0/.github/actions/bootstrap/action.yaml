@@ -1,0 +1,78 @@
+name: "Bootstrap"
+description: "Bootstrap all tools and dependencies"
+inputs:
+  go-version:
+    description: "Go version to install"
+    required: true
+    default: "1.22.x"
+  python-version:
+    description: "Python version to install"
+    required: true
+    # note: the caller really drives this in a matrix strategy run for unit tests.
+    # this default value is used for the rest of the workflow.
+    default: "3.11"
+  uv-version:
+    description: "UV version to install"
+    required: true
+    default: "0.5.16"
+  go:
+    description: "Install go"
+    required: true
+    default: "false"
+  tools:
+    description: "Bootstrap tooling"
+    required: true
+    default: "true"
+  cache-key-prefix:
+    description: "Prefix all cache keys with this value"
+    required: true
+    default: "9c833ef7"
+  bootstrap-apt-packages:
+    description: "Space delimited list of tools to install via apt"
+    default: ""
+
+runs:
+  using: "composite"
+  steps:
+
+    - uses: actions/setup-go@0aaccfd150d50ccaeb58ebd88d36e91967a5f35b #v5.4.0
+      with:
+        go-version: ${{ inputs.go-version }}
+
+    - uses: astral-sh/setup-uv@22695119d769bdb6f7032ad67b9bca0ef8c4a174 # v5.4.0
+      with:
+        enable-cache: true
+
+    - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
+      with:
+        python-version: ${{ inputs.python-version }}
+
+    - name: Restore tool cache
+      id: tool-cache
+      if: inputs.tools == 'true'
+      uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
+      with:
+        path: ${{ github.workspace }}/.tmp
+        key: ${{ inputs.cache-key-prefix }}-${{ runner.os }}-tool-${{ hashFiles('Makefile') }}
+
+    - name: (cache-miss) Bootstrap tools
+      if: steps.tool-cache.outputs.cache-hit != 'true' && inputs.tools == 'true'
+      shell: bash
+      run: make bootstrap
+
+    - name: Install apt packages
+      if: inputs.bootstrap-apt-packages != ''
+      shell: bash
+      run: |
+        DEBIAN_FRONTEND=noninteractive sudo apt update && sudo -E apt install -y ${{ inputs.bootstrap-apt-packages }}
+
+    - name: Install project + dependencies
+      shell: bash
+      run: uv sync --all-extras --dev
+
+    - name: Restore tox cache
+      id: cache-tox
+      uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
+      with:
+        path: .tox
+        key: ${{ inputs.cache-key-prefix }}-${{ runner.os }}-${{ inputs.python-version }}-${{ hashFiles('pyproject.toml') }}-${{ hashFiles('tox.ini') }}
