@@ -1,0 +1,3 @@
+[console_scripts]
+mcp-llm=mcp_llm.main:main
+
