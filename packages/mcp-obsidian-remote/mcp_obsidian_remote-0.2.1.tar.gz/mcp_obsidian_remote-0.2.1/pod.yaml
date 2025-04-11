@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mcp-obsidian-pod
+spec:
+  containers:
+    - name: mcp-obsidian
+      image: ghcr.io/astral-sh/uv:debian
+      ports:
+        - containerPort: 3001  # Port your app listens on
+      command: ["uvx"]  # Explicit command (if alias doesn't work)
+      args: ["mcp-obsidian-remote", "--transport=sse"]
+      env:
+        - name: OBSIDIAN_PROTOCOL
+          value: "https"
+        - name: OBSIDIAN_HOST
+          value: "6c6d-69-42-76-184.ngrok-free.app"
+        - name: OBSIDIAN_PORT
+          value: "443"
+        - name: OBSIDIAN_API_KEY
+          value: "2a56619973c3b5122e4dec923c7ea5d6e286f7e664501cb045c2bca0257f1842"

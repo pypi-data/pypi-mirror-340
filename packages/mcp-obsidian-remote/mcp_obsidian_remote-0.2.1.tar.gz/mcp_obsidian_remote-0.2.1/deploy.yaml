@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mcp-obsidian-deployment
+spec:
+  replicas: 1  # Number of replicas (Pods) to run
+  selector:
+    matchLabels:
+      app: mcp-obsidian
+  template:
+    metadata:
+      labels:
+        app: mcp-obsidian
+    spec:
+      containers:
+        - name: mcp-obsidian
+          image: ghcr.io/astral-sh/uv:debian
+          ports:
+            - containerPort: 3031  # Port your app listens on
+          command: ["uvx"]  # Explicit command (if alias doesn't work)
+          args: ["mcp-obsidian-remote", "--transport=sse"]
+          env:
+            - name: OBSIDIAN_PROTOCOL
+              value: "https"
+            - name: OBSIDIAN_HOST
+              value: "61fa-69-42-76-184.ngrok-free.app"
+            - name: OBSIDIAN_PORT
+              value: "443"
+            - name: OBSIDIAN_API_KEY
+              value: "2a56619973c3b5122e4dec923c7ea5d6e286f7e664501cb045c2bca0257f1842"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mcp-obsidian-service
+spec:
+  type: NodePort # ClusterIP  # Change to NodePort or LoadBalancer if needed for external access
+  selector:
+    app: mcp-obsidian
+  ports:
+  - nodePort: 32302
+    port: 3031
+    protocol: TCP
+    targetPort: 3031
+  selector:
+    app: mcp-obsidian
+  type: NodePort
