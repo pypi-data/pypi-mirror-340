@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tariff/__init__.py
+tariff/__main__.py
+tariff.egg-info/PKG-INFO
+tariff.egg-info/SOURCES.txt
+tariff.egg-info/dependency_links.txt
+tariff.egg-info/top_level.txt
