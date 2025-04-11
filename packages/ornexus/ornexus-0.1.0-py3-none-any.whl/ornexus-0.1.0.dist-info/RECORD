@@ -1,0 +1,16 @@
+ornexus/__init__.py,sha256=bRs6hS8j-o4eGnE639bVo-kn53Q-q5A3nlXMNYEIG58,200
+ornexus/cli.py,sha256=hq9_0Ueirf9W0BDR66mZFlX4J7KFHfsSU_mYZeae5-c,12003
+ornexus/main.py,sha256=rPLTBEL2VtYwjzyH_puhzI6umWSs6OXcvgve5-_elv4,7370
+ornexus/config/agents.yaml,sha256=GcVd6lVUdJO3BWPEfpgEF8Z01Bp345BLYLq83hFLrgI,1793
+ornexus/config/tasks.yaml,sha256=GWsm5QaMnVUgkqAxfB2GuokicFrwSEexgYsRgOLELOc,2083
+ornexus/knowledge/__init__.py,sha256=yQEP437Ft9O6YqZAbnryFjMwovaTzx4cUbZ6yGQGyRM,155
+ornexus/utils/__init__.py,sha256=maab7gk_rKvKcxAolhHalshCXggyJ5Zyzv8zKMMcAAc,304
+ornexus/utils/agent_manager.py,sha256=ziWEVgfnj4UppnsfbeBVMrTPraM6aIpQc3N7Kg6oLXM,1632
+ornexus/utils/agent_registry.py,sha256=4M0UTCRaer8q_-MYhjXKTEV0SJzheAswBsnnBoZlVv4,11224
+ornexus/utils/config_utils.py,sha256=Qd7fyKawYqHsCU3T44JC_zPwukkUaM5KTl4USBQx7Kg,38341
+ornexus-0.1.0.dist-info/licenses/LICENSE,sha256=ORfGVBtIgbQtzfnnL8wMLap1bUen8YQOUbc3zwkRajs,1064
+ornexus-0.1.0.dist-info/METADATA,sha256=z5e0GP_LU8qT_H0HvyeUAz4blpwgFyCAKV6Mq0UtQQI,2084
+ornexus-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ornexus-0.1.0.dist-info/entry_points.txt,sha256=X1X72HiK8CpB1oV5O_YXbHcqRYTLTwlRe7pG6mYgjHA,45
+ornexus-0.1.0.dist-info/top_level.txt,sha256=rDvcYPSTcEhHm60CvO8sUpuGm4zwzfOk3I2LyICdckE,8
+ornexus-0.1.0.dist-info/RECORD,,
