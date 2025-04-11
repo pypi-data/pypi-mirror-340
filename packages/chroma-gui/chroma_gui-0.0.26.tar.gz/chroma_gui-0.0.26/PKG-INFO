@@ -1,0 +1,89 @@
+Metadata-Version: 2.4
+Name: chroma-gui
+Version: 0.0.26
+Summary: QT Graphical User Interface wrapper of the ``omc3`` package
+Project-URL: homepage, https://github.com/pylhc/chroma_gui
+Project-URL: repository, https://github.com/pylhc/chroma_gui
+Project-URL: documentation, https://pylhc.github.io/chroma_gui/
+Project-URL: changelog, https://github.com/pylhc/chroma_gui/blob/master/CHANGELOG.md
+Author-email: OMC Team <pylhc@github.com>
+License-Expression: MIT
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: matplotlib
+Requires-Dist: nafflib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyperclip
+Requires-Dist: pyqt5>=5.14
+Requires-Dist: qtawesome
+Requires-Dist: scipy
+Requires-Dist: tables
+Requires-Dist: tabulate
+Requires-Dist: tfs-pandas
+Provides-Extra: all
+Requires-Dist: pytest>=7.0; extra == 'all'
+Requires-Dist: pytimber; extra == 'all'
+Requires-Dist: sphinx-rtd-theme>=2.0; extra == 'all'
+Requires-Dist: sphinx>=7.0; extra == 'all'
+Provides-Extra: cern
+Requires-Dist: pytimber; extra == 'cern'
+Provides-Extra: doc
+Requires-Dist: sphinx-rtd-theme>=2.0; extra == 'doc'
+Requires-Dist: sphinx>=7.0; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest>=7.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# Non-Linear Chromaticity GUI
+
+The Chromaticity GUI is a tool to compute non-linear chromaticity via measurements done in the CCC.
+
+
+## Running via acc-py environment
+
+* [Create a virtual environment via `acc-py`](https://pylhc.github.io/packages/development/howto_venv.html) if you do not have one already.
+* Install the package via `pip install chroma-gui[cern]` or `pip install chroma-gui[all]`
+* Run the GUI via `python -m chroma_gui`
+
+## Running via acc-py apps
+
+Be sure to have the `/acc` directory mounted, which can be done via:
+
+```bash
+sshfs cs-ccr-dev2:/acc/ /acc'
+```
+
+Running the GUI is then very simple thanks to acc-py.
+
+```bash
+source /acc/local/share/python/acc-py/base/pro/setup.sh
+acc-py app run chroma-gui
+```
+
+### Deployment via acc-py
+
+* Change the version in [__init__.py](./chroma_gui/__init__.py)
+* Update the [CHANGELOG](./CHANGELOG.md)
+* Commit changes to gitlab repository (wait for CI to finish)
+
+```bash
+alias acc-py="/acc/local/share/python/acc-py/apps/acc-py-cli/pro/bin/acc-py"
+acc-py app lock .
+acc-py app deploy .
+acc-py app promote chroma-gui <version>
+```
