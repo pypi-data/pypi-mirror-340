@@ -1,0 +1,14 @@
+ptnad/__init__.py,sha256=IdfDo7CdQet3-FQqjue3JXrlsLeZTWJrvxTn3FWO5T0,195
+ptnad/auth.py,sha256=mpgSDbPJ_Jw31aMabiZhZ3wBKdUWiShPe3jW3n6G-00,3962
+ptnad/client.py,sha256=LAl_mIGfqtcBy-WmAlmSmszcOeFNmMiaAZ9sSI9ZM_g,3881
+ptnad/exceptions.py,sha256=dzimT95p7m7iIhYKraQpDN4W63STA3ndU89yoPP_EEg,893
+ptnad/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ptnad/api/__init__.py,sha256=JPVQyd_NiwrbO-i28ROKd_-XddjnjWITmxVLHaT38Ak,205
+ptnad/api/bql.py,sha256=hF-oztGf01-nDKi04UHlwSfN8D-P-ZlpewKBJ-HjhJo,3360
+ptnad/api/monitoring.py,sha256=TJ6Qip6di2_JeqyqVJuKGpnzPzCEAKm_5Kr-VATPIwg,4181
+ptnad/api/replists.py,sha256=BHbf4ye3p_uSeHTc1u8aGdfeSnMKtR4sWIeHLHgtQ98,13913
+ptnad/api/signatures.py,sha256=z0wJ0By56DAxYIT2R4zkA_o17wH3y0EdTQ0vOEOCxGM,11943
+ptnad_client_test-0.1.132.dist-info/METADATA,sha256=ega2mg5dRqxEhnjk3Jc2vBViiJmUmxR1wzFcATu0sRc,3251
+ptnad_client_test-0.1.132.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ptnad_client_test-0.1.132.dist-info/licenses/LICENSE,sha256=ugWNDYq5trWIIzRbW1KIspTSOb5CdmIitkt2keSP4bY,1083
+ptnad_client_test-0.1.132.dist-info/RECORD,,
