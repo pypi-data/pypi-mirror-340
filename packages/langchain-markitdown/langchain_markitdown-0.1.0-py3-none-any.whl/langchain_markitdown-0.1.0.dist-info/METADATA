@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: langchain-markitdown
+Version: 0.1.0
+Summary: LangChain data loaders based on Markdown by @untrueaxioms.
+Home-page: https://github.com/nsasto/langchain-markitdown
+Author: Nathan Sasto
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: markitdown[all]
+Requires-Dist: langchain_core
+Requires-Dist: langchain-text-splitters
+Requires-Dist: langchain_openai
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: python-docx; extra == "dev"
+Requires-Dist: python-pptx; extra == "dev"
+Requires-Dist: openpyxl; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
