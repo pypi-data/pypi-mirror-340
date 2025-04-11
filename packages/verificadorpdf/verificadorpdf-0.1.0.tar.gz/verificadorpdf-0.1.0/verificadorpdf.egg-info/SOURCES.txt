@@ -1,0 +1,11 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_leitor.py
+verificadorpdf/__init__.py
+verificadorpdf/leitor.py
+verificadorpdf.egg-info/PKG-INFO
+verificadorpdf.egg-info/SOURCES.txt
+verificadorpdf.egg-info/dependency_links.txt
+verificadorpdf.egg-info/requires.txt
+verificadorpdf.egg-info/top_level.txt

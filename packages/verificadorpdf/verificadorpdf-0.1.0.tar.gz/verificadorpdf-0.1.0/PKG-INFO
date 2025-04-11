@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: verificadorpdf
+Version: 0.1.0
+Summary: Um pacote para verificar palavras dentro de arquivos PDF
+Home-page: https://github.com/Helio-Carmo/verificador-de-palavra-pdf.git
+Author: Helio Carmo
+Author-email: helio.h.carmo@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: PyPDF2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# verificadorpdf
+
+Pacote para verificar se uma palavra específica está presente no conteúdo de um arquivo PDF.
+
+---
+
+## 📦 Installation
+
+Use o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar o verificadorpdf:
+
+```bash
+pip install verificadorpdf
+```
+
+# 🚀 Usage
+
+```bash
+from verificadorpdf.leitor import verificar_palavra_em_pdf
+
+existe = verificar_palavra_em_pdf("exemplo.pdf", "palavra")
+print("Palavra encontrada:", existe)
+```
+
+# 👤 Author
+
+Helio Carmo
+
+[Github](https://github.com/Helio-Carmo/)
