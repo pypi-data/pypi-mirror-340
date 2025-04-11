@@ -1,0 +1,7 @@
+github_oidc/client.py,sha256=4vHCgHufpyqFZ9gTdH--164zCXgS_LClgap7LxZGQSs,1366
+github_oidc/debug.py,sha256=OZP3XXAH-kjWBNBItqRPQZlA-QhS8hdhKTTFqQB-cV8,1116
+github_oidc/server.py,sha256=2Q6ot-49n0QjN9tbsTA_E94MwlG3ZvStqFdaRn9lnDQ,3809
+fastapi_github_oidc-0.3.0.dist-info/METADATA,sha256=TVqr9nmNl3hCl8l-_Ds5v0UZH2RQj8rlEA6syX9iCOY,1424
+fastapi_github_oidc-0.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastapi_github_oidc-0.3.0.dist-info/licenses/LICENSE,sha256=BApH4FSEgxhhFNHqhfUPCydit8KVQe5V7PppLAUPWxI,1064
+fastapi_github_oidc-0.3.0.dist-info/RECORD,,
