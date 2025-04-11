@@ -1,0 +1,10 @@
+bot_hosting_wrapper/__init__.py,sha256=uN0T_VyziwF9kg5oJvDTKxn29icxCDYbkLSdto_Kfow,1021
+bot_hosting_wrapper/about.py,sha256=IlHeQU1EVnN1Ufo84ts80L7N4jlF-KpJlT4OyXnUdBA,12007
+bot_hosting_wrapper/interactive.py,sha256=SRmxT1lrM513NBKJKyz0GlOPK7JhqokVONM5_BzZnx0,3640
+bot_hosting_wrapper/panel.py,sha256=G46iDRmAhejwr9BUJgTDkTjlK53wvTdvex1dQF77CS8,10730
+bot_hosting_wrapper/vasync/about.py,sha256=f3IaMukKvT_qYhwIEFxXV5Bzr6omiGgvYf88SEFE17c,11637
+bot_hosting_wrapper-1.4.dist-info/licenses/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+bot_hosting_wrapper-1.4.dist-info/METADATA,sha256=Z_DSSHIIpDc-DkjT0v_nc08xT8SZbqsMQyWzzs1bCtM,4535
+bot_hosting_wrapper-1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bot_hosting_wrapper-1.4.dist-info/top_level.txt,sha256=uvw18VlWyDCYX-kduscehigBL67UxsviRR4vdy7VyhA,20
+bot_hosting_wrapper-1.4.dist-info/RECORD,,
