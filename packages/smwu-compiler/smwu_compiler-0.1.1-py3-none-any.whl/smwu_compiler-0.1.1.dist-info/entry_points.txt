@@ -1,0 +1,2 @@
+[console_scripts]
+pacheck = smwu_compiler.__main__:main
