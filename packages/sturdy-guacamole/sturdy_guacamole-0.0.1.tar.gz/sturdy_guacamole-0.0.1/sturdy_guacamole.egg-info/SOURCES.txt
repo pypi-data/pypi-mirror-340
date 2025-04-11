@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sturdy-guacamole/HelloMe.py
+sturdy-guacamole/__init__.py
+sturdy_guacamole.egg-info/PKG-INFO
+sturdy_guacamole.egg-info/SOURCES.txt
+sturdy_guacamole.egg-info/dependency_links.txt
+sturdy_guacamole.egg-info/top_level.txt
