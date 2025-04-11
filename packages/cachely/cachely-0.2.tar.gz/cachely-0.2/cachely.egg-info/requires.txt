@@ -1,0 +1,11 @@
+requests
+platformdirs
+
+[dev]
+build
+ipython
+ipdb
+twine
+ruff
+pytest
+responses
