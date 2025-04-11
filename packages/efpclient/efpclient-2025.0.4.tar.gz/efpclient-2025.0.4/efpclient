@@ -1,0 +1,27 @@
+#!/usr/bin/env python
+"""
+    THIS FILE EXISTS TO EASE DEVELOPMENT AND IT IS NOT SHIPPED!
+
+    'pip install' automatically creates the efpclient script
+    following the [project.scripts] definition in pyproject.toml.
+
+    You can use this wrapper to execute the cli during development, typing
+    ./efpclient
+    in the project root directory.
+"""
+
+import os
+import sys
+
+# Put src directory in the import lib path
+sys.path.insert(1, os.path.abspath(os.path.join(os.path.dirname(__file__), "src")))
+
+
+def main():
+    from efpclient import efpclient
+
+    return efpclient.run()
+
+
+if __name__ == '__main__':
+    sys.exit(main())

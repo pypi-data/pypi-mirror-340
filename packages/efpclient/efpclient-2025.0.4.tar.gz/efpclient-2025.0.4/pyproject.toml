@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "efpclient"
+keywords = ["efportal", "EF Portal", "EnginFrame", "HPC", "DCV"]
+version = "2025.0.4"
+authors = [
+    { name="NI SP Software", email="info@ni-sp-software.com" },
+]
+description = "Command Line Interface to interact with EF Portal."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "requests>=2.32.3",
+    "six>=1.17.0",
+    "click>=8.1.8",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+]
+license = { text = "Apache-2.0" }
+license-files = ["LICEN[CS]E*"]
+
+[project.scripts]
+efpclient = 'efpclient.efpclient:run'
+
+[project.urls]
+Homepage = "https://www.ni-sp.com/ef-portal/"
