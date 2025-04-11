@@ -1,0 +1,10 @@
+extension_changer/__init__.py,sha256=tYXozgLqVru9B9fhbTMb2d058G7xC0Ny1hyQ_SIlAvg,234
+extension_changer/__main__.py,sha256=m9J6mHhJ6gcbzqSqCd8KUfHv6vDnJN3hxvvrBvv2iLM,3123
+extension_changer/extension_changer.py,sha256=6sr-sDQbOydKnjHDbxHcPmFRkekoXbhPXyrwhmjcp3s,20226
+extension_changer/resources/__init__.py,sha256=FPzCxicI4pennwSfD4DbQr3HlgaO060f56r4Lj-orWw,52
+extension_changer-1.0.0.dist-info/licenses/LICENSE,sha256=4MJsKrd5C7U_7dU0b_2eNlrPQkKG1_FGqO7o87LlEGI,1092
+extension_changer-1.0.0.dist-info/METADATA,sha256=gse6D_xSb1CMZFWKYhAMenNb9p9nZfj89rKXLejyvLY,3061
+extension_changer-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+extension_changer-1.0.0.dist-info/entry_points.txt,sha256=vfkO01YkasmEidSbNJQjy__7vzyk2ma4-oKmC17NP2Y,70
+extension_changer-1.0.0.dist-info/top_level.txt,sha256=hmPmRmq89R1NWJq3PdHDL_5tg8mSc-PIEg2Ji1iRP3M,18
+extension_changer-1.0.0.dist-info/RECORD,,
