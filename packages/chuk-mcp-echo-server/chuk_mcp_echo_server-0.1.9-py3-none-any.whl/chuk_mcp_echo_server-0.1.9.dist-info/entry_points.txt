@@ -1,0 +1,3 @@
+[console_scripts]
+chuk-mcp-echo-server = chuk_mcp_echo_server.main:main
+mcp-echo-server = chuk_mcp_echo_server.main:main
