@@ -1,0 +1,5 @@
+examples
+manual_model
+nn_model
+tests
+training_data
