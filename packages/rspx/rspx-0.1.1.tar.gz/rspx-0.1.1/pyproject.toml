@@ -1,0 +1,27 @@
+[project]
+name = "rspx"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+readme = "readme.md"
+authors = [{ name = "hhglory", email = "hhglory@outlook.com" }]
+
+dynamic = ["version"]
+
+
+[project.urls]
+Documentation = "https://better-py.github.io/py-pkg/"
+Repository = "https://github.com/better-py/py-pkg/"
+Tracker = "https://github.com/better-py/py-pkg/issues"
+
+
+# rust lib
+[build-system]
+requires = ["maturin>=1.8,<2.0"]
+build-backend = "maturin"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
