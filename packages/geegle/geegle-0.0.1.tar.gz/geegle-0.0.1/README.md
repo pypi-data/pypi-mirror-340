@@ -1,0 +1,78 @@
+# Geegle Python
+
+Geegle is a CLI chat app that combines web search, academic research, and session management using SQLite for local data storage. It uses APIs from OpenAI, Tavily, and Exa to provide answers with web sources, for users seeking information directly from their terminal.
+
+## Features
+
+* Real-Time Web Search: Integrates Tavily for up-to-date web information.
+* Academic Research: Uses Exa to fetch research papers and scholarly content.
+* Session Management: Store and switch between multiple conversation sessions using SQLite.
+* Data Export: Export session data to JSON files for backup or sharing.
+
+## Installation
+
+Follow these steps to set up Geegle on your system.
+
+### Prerequisites
+* Python: Version 3.7 or higher
+* pip: Latest version recommended
+
+### Installation from Source
+```bash
+# Clone the repository
+git clone https://github.com/duriantaco/geegle-py.git
+cd geegle-py
+
+# Install the package
+pip install -e .
+```
+
+### Installation from PyPI
+```bash
+pip install geegle
+```
+
+## Configuration
+
+Create a `.env` file in your working directory with your API keys:
+
+```
+OPENAI_API_KEY=your_openai_api_key
+TAVILY_API_KEY=your_tavily_api_key
+EXA_API_KEY=your_exa_api_key
+```
+
+You can get these API keys from:
+1. https://platform.openai.com/docs/overview
+2. https://tavily.com/
+3. https://exa.ai/
+
+## Usage
+
+1. Start the application:
+
+```bash
+geegle
+```
+
+2. Interact with Geegle:
+   * Type a question (e.g., "What's the capital of France?") and press Enter.
+   * Use commands (starting with `/`) to manage sessions or data.
+   * Type `exit` to quit.
+
+## Commands
+
+### Clearing
+* `/clear`: Clears the current session's conversation history.
+* `/clear all`: Deletes all session data (requires confirmation).
+* `/export sessions [filename]`: Exports all sessions to a JSON file (default: sessions_export.json).
+
+### Session
+* `/session new <name>`: Creates a new session with the given name.
+* `/session list`: Displays all available sessions (current session marked with *).
+* `/session switch <name>`: Switches to the specified session.
+* `/session delete <name>`: Deletes the specified session (cannot delete default).
+
+### Misc
+* `/help`: Shows a list of commands and usage instructions.
+* `exit`: Exits the application.
