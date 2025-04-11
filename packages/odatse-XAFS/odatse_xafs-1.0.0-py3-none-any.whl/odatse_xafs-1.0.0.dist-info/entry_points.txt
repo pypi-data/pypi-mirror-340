@@ -1,0 +1,3 @@
+[console_scripts]
+odatse-XAFS=odatse.extra.XAFS._main:main
+

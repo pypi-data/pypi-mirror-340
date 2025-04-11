@@ -1,0 +1,11 @@
+odatse/extra/XAFS/__init__.py,sha256=PRAuS6lf9wIUFWZEIt7HnUquApwYg-N0N2M_FkAPnDI,802
+odatse/extra/XAFS/_main.py,sha256=v1qTqyocDrbP-ClofeUzVo0bbzerPnoLRg6nBTlahXw,1384
+odatse/extra/XAFS/feff.py,sha256=s9r8K7UfpeU17DyTRnE7HS-6QHcoHLtBlXm-wQ5zFhU,4869
+odatse/extra/XAFS/input.py,sha256=oWGHwSrBF6Hd-lL958YOAQa-31ZorEhqtVsMwTWeLfY,7088
+odatse/extra/XAFS/output.py,sha256=IRvQK8qe2J5FnPhkM-PqaXBTRYWMWAJFakliCAhNxc8,5900
+odatse/extra/XAFS/parameter.py,sha256=Hxh0DGZD9O6Xun8niti7vknbnQq-biuFB9_u5Ok3diQ,6291
+odatse_xafs-1.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+odatse_xafs-1.0.0.dist-info/METADATA,sha256=wFHYbjmJQm9ihDZ_21gVqf-1DeVeWgCUG5bA6CzG7uw,5180
+odatse_xafs-1.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+odatse_xafs-1.0.0.dist-info/entry_points.txt,sha256=DVZ-uj6rqP37o6bJlGuG2OKfMJVDAk8HJXAFGE-bO1M,60
+odatse_xafs-1.0.0.dist-info/RECORD,,
