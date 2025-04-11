@@ -1,0 +1,2258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1704</width>
+    <height>1034</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Non-Linear Chromaticity GUI</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>0</y>
+      <width>1501</width>
+      <height>981</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="timberTab">
+     <property name="font">
+      <font>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <attribute name="title">
+      <string>Timber</string>
+     </attribute>
+     <widget class="QPushButton" name="extractTimberButton">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>241</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Extract Data</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="statusTimberExtractionLabel">
+      <property name="geometry">
+       <rect>
+        <x>660</x>
+        <y>10</y>
+        <width>241</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>301</width>
+        <height>89</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="2" column="1">
+        <widget class="QDateTimeEdit" name="endTimeTimberEdit">
+         <property name="date">
+          <date>
+           <year>2022</year>
+           <month>1</month>
+           <day>1</day>
+          </date>
+         </property>
+         <property name="displayFormat">
+          <string>yyyy-MM-dd HH:mm:ss</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label">
+         <property name="toolTip">
+          <string>Start time of measurement, in local time</string>
+         </property>
+         <property name="text">
+          <string>Start of Measurement </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDateTimeEdit" name="startTimeTimberEdit">
+         <property name="dateTime">
+          <datetime>
+           <hour>0</hour>
+           <minute>0</minute>
+           <second>0</second>
+           <year>2022</year>
+           <month>1</month>
+           <day>1</day>
+          </datetime>
+         </property>
+         <property name="displayFormat">
+          <string>yyyy-MM-dd HH:mm:ss</string>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="toolTip">
+          <string>End time of measurement, in local time</string>
+         </property>
+         <property name="text">
+          <string>End of Measurement</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Extract raw BBQ</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QCheckBox" name="rawBBQCheckBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="tristate">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_11">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>1481</width>
+        <height>781</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="timberDataLayout"/>
+     </widget>
+     <widget class="QListWidget" name="timberVariablesListWidget">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>10</y>
+        <width>321</width>
+        <height>131</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="cleaningTab">
+     <attribute name="title">
+      <string>Cleaning</string>
+     </attribute>
+     <widget class="QPushButton" name="createPlateausButton">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>140</y>
+        <width>121</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create Plateaus</string>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="cleaningPlotsTab">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>1481</width>
+        <height>791</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="beam1PlotsTab">
+       <attribute name="title">
+        <string>Beam 1</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabCleaningB1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1471</width>
+          <height>751</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>DPP</string>
+         </attribute>
+         <widget class="QWidget" name="horizontalLayoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1461</width>
+            <height>711</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="cleaningPlotB1Layout"/>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Raw Data</string>
+         </attribute>
+         <widget class="QWidget" name="horizontalLayoutWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1461</width>
+            <height>711</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="rawPlotB1Layout"/>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Cleaned Data</string>
+         </attribute>
+         <widget class="QWidget" name="horizontalLayoutWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1461</width>
+            <height>711</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="cleanPlotB1Layout"/>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="beam2PlotsTab">
+       <attribute name="title">
+        <string>Beam 2</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabCleaningB2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1471</width>
+          <height>751</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>DPP</string>
+         </attribute>
+         <widget class="QWidget" name="horizontalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1461</width>
+            <height>711</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="cleaningPlotB2Layout"/>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_6">
+         <attribute name="title">
+          <string>Raw Data</string>
+         </attribute>
+         <widget class="QWidget" name="horizontalLayoutWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1461</width>
+            <height>711</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="rawPlotB2Layout"/>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Cleaned Data</string>
+         </attribute>
+         <widget class="QWidget" name="horizontalLayoutWidget_8">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1461</width>
+            <height>711</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="cleanPlotB2Layout"/>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="cleaningWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>10</y>
+        <width>741</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>311</width>
+         <height>163</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Qx Tune Window</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QDoubleSpinBox" name="q3Quartile">
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="singleStep">
+           <double>0.050000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.800000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Minimum length a plateau has to have to be considered.&lt;/p&gt;&lt;p&gt;This is to filter RF &amp;quot;jitter&amp;quot; where intermediate values before trims are registered for a brief moment.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="text">
+           <string>Min. Plateau Length</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QDoubleSpinBox" name="qxWindowHigh">
+          <property name="decimals">
+           <number>5</number>
+          </property>
+          <property name="singleStep">
+           <double>0.010000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.310000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDoubleSpinBox" name="qyWindowLow">
+          <property name="decimals">
+           <number>5</number>
+          </property>
+          <property name="singleStep">
+           <double>0.010000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.290000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QDoubleSpinBox" name="qyWindowHigh">
+          <property name="decimals">
+           <number>5</number>
+          </property>
+          <property name="singleStep">
+           <double>0.010000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.340000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_16">
+          <property name="text">
+           <string>Bad Tune Lines</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>Qy Tune Window</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QDoubleSpinBox" name="qxWindowLow">
+          <property name="decimals">
+           <number>5</number>
+          </property>
+          <property name="singleStep">
+           <double>0.010000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.240000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="q1Quartile">
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="singleStep">
+           <double>0.050000000000000</double>
+          </property>
+          <property name="value">
+           <double>0.200000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="2">
+         <widget class="QLineEdit" name="badTunesLineEdit">
+          <property name="text">
+           <string>[(0.266527, 0.266850),]</string>
+          </property>
+          <property name="placeholderText">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>Q1 and Q3 quartiles</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="2">
+         <widget class="QSpinBox" name="plateauLength">
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="value">
+           <number>15</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QPushButton" name="cleanDataButton">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>130</y>
+         <width>331</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Clean Data</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>0</y>
+         <width>331</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="0">
+         <widget class="QCheckBox" name="useRawBBQCheckBox">
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>Use raw BBQ</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2" colspan="2">
+         <widget class="QCheckBox" name="useNAFFCheckBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Use NAFF</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>Seconds Step</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>Kernel Size</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1" colspan="3">
+         <widget class="QDoubleSpinBox" name="secondsStep">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="decimals">
+           <number>0</number>
+          </property>
+          <property name="singleStep">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>3.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1" colspan="3">
+         <widget class="QDoubleSpinBox" name="kernelSize">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="decimals">
+           <number>0</number>
+          </property>
+          <property name="singleStep">
+           <double>1.000000000000000</double>
+          </property>
+          <property name="value">
+           <double>15.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QProgressBar" name="cleaningProgressBar">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>101</y>
+         <width>201</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <number>200</number>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cleaningStatusLabel">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>100</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>0</y>
+        <width>20</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_2">
+      <property name="geometry">
+       <rect>
+        <x>1110</x>
+        <y>0</y>
+        <width>20</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>1140</x>
+        <y>10</y>
+        <width>51</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plots</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line_3">
+      <property name="geometry">
+       <rect>
+        <x>1260</x>
+        <y>0</y>
+        <width>20</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>281</width>
+        <height>122</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="text">
+          <string>Refine End</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="rfBeamComboBox">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="insertPolicy">
+          <enum>QComboBox::InsertAtBottom</enum>
+         </property>
+         <property name="modelColumn">
+          <number>0</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>1</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>2</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="toolTip">
+          <string>The RF Frequency isn't always registered for both beams. Usually only BEAM 1 contains the data.</string>
+         </property>
+         <property name="text">
+          <string>Beam used for RF </string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QDateTimeEdit" name="endPlateauDateTimeEdit">
+         <property name="displayFormat">
+          <string>yyyy-MM-dd HH:mm:ss</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Refine Start</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QDateTimeEdit" name="startPlateauDateTimeEdit">
+         <property name="displayFormat">
+          <string>yyyy-MM-dd HH:mm:ss</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="nominalRfLineEdit">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="nominalRfLabel">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Nominal Frequency of the RF (Usually around 400_788_869).&lt;/p&gt;&lt;p&gt;If set to 0 or &lt;span style=&quot; font-style:italic;&quot;&gt;None&lt;/span&gt;, it will default to the first value of the measurement.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Nominal RF</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>1150</x>
+        <y>30</y>
+        <width>88</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="showQyCheckBox">
+         <property name="text">
+          <string>Show Qy</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="showRfCheckBox">
+         <property name="text">
+          <string>Show RF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="showQxCheckBox">
+         <property name="text">
+          <string>Show Qx</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QCheckBox" name="showDppCheckBox">
+         <property name="text">
+          <string>Show dp/p</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QPushButton" name="RePlotCleaningButton">
+         <property name="text">
+          <string>RePlot</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QCheckBox" name="showDeltaRfCheckBox">
+         <property name="text">
+          <string>Show ΔRF</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="Line" name="line_4">
+      <property name="geometry">
+       <rect>
+        <x>1480</x>
+        <y>560</y>
+        <width>20</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="Line" name="line_5">
+      <property name="geometry">
+       <rect>
+        <x>1480</x>
+        <y>560</y>
+        <width>20</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <zorder>cleaningPlotsTab</zorder>
+     <zorder>createPlateausButton</zorder>
+     <zorder>cleaningWidget</zorder>
+     <zorder>line</zorder>
+     <zorder>line_2</zorder>
+     <zorder>label_17</zorder>
+     <zorder>line_3</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>line_4</zorder>
+     <zorder>line_5</zorder>
+    </widget>
+    <widget class="QWidget" name="chromaticityTab">
+     <attribute name="title">
+      <string>Chromaticity</string>
+     </attribute>
+     <widget class="QTabWidget" name="beamChromaticityTabWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>1481</width>
+        <height>811</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_10">
+       <attribute name="title">
+        <string>Beam 1</string>
+       </attribute>
+       <widget class="QWidget" name="horizontalLayoutWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>50</y>
+          <width>1471</width>
+          <height>681</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="beam1ChromaLayout"/>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_11">
+       <attribute name="title">
+        <string>Beam 2</string>
+       </attribute>
+       <widget class="QWidget" name="horizontalLayoutWidget_10">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>50</y>
+          <width>1471</width>
+          <height>681</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="beam2ChromaLayout"/>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QTableView" name="beamChromaticityTableView">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>60</y>
+        <width>831</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="gridStyle">
+       <enum>Qt::NoPen</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>441</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_12">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="chromaOrderLayout">
+         <item row="0" column="1">
+          <widget class="QComboBox" name="chromaOrderComboBox">
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_18">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Only plot the desired chromaticity orders.&lt;/p&gt;&lt;p&gt;The fit is done with &lt;span style=&quot; font-weight:600;&quot;&gt;all orders&lt;/span&gt; up to the highest one.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>Chromaticity Orders to Plot</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QGridLayout" name="gridLayout_11">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="toolTip">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Restrict the fit to a set DPP range.&lt;/p&gt;&lt;p&gt;This can be used to assess the quality of the fit with a lower range.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="text">
+            <string>DPP Range</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="computeChromaButton">
+           <property name="text">
+            <string>Compute Chromaticity</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="copyTableButton">
+           <property name="text">
+            <string>Copy Table</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QDoubleSpinBox" name="dppRangeLowSpinBox">
+           <property name="decimals">
+            <number>4</number>
+           </property>
+           <property name="minimum">
+            <double>-99.989999999999995</double>
+           </property>
+           <property name="singleStep">
+            <double>0.000100000000000</double>
+           </property>
+           <property name="value">
+            <double>-0.007000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QPushButton" name="savePlotsButton">
+           <property name="text">
+            <string>Save Plots</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QComboBox" name="copyTableComboBox">
+           <item>
+            <property name="text">
+             <string>Markdown</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>LaTeX</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QDoubleSpinBox" name="dppRangeHighSpinBox">
+           <property name="decimals">
+            <number>4</number>
+           </property>
+           <property name="minimum">
+            <double>-99.989999999999995</double>
+           </property>
+           <property name="singleStep">
+            <double>0.000100000000000</double>
+           </property>
+           <property name="value">
+            <double>0.007000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="chromaticityFormulaLabel">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>9</y>
+        <width>911</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="r2_y">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>130</y>
+        <width>41</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>χ²_ν Y:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="r2_x">
+      <property name="geometry">
+       <rect>
+        <x>1310</x>
+        <y>110</y>
+        <width>41</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>χ²_ν X:</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::MarkdownText</enum>
+      </property>
+      <property name="indent">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="r2_x_value">
+      <property name="geometry">
+       <rect>
+        <x>1350</x>
+        <y>110</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="r2_y_value">
+      <property name="geometry">
+       <rect>
+        <x>1350</x>
+        <y>130</y>
+        <width>81</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="correctionsTab">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Corrections</string>
+     </attribute>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>531</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Corrections can be computed for both MCO and MCD.&lt;/p&gt;&lt;p&gt;Observables influenced by MCO can be corrected: Q'''&lt;br/&gt;as well as MCD: Q''' and f_1004.&lt;/p&gt;&lt;p&gt;Two correction scheme exist: &lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;-&lt;/span&gt; Global correction based on PTC_NORMAL, using each chromaticity order as an affine function depending on the magnet strength. This method is available for Q'' and Q''' only.&lt;br/&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;-&lt;/span&gt; Local corrections via a response matrix. This is available only for MCD at the moment, it can correct Q''' and f_1004, but not Q''. This method gives better results than the global one.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::RichText</enum>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>50</y>
+        <width>391</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QLabel" name="label_27">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Beam 2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="correctionB2TextEdit">
+         <property name="font">
+          <font>
+           <family>Monospace</family>
+           <kerning>false</kerning>
+          </font>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="Line" name="line_6">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>10</y>
+        <width>21</width>
+        <height>931</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>50</y>
+        <width>391</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QLabel" name="label_26">
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>Beam 1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="correctionB1TextEdit">
+         <property name="font">
+          <font>
+           <family>Monospace</family>
+           <kerning>false</kerning>
+          </font>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Monospace'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="textInteractionFlags">
+          <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_35">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>20</y>
+        <width>121</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Relative Trims</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>190</y>
+        <width>521</width>
+        <height>513</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="correctionsGridLayout">
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_36">
+         <property name="text">
+          <string>Keep RDT constant</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <layout class="QHBoxLayout" name="layoutObservables">
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>Observables to correct</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="observablesCorrectionComboBox">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="measurementCorrectionB2LineEdit">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_30">
+         <property name="text">
+          <string>Optics</string>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="1">
+        <widget class="QDoubleSpinBox" name="rcondCorrectionSpinBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="singleStep">
+          <double>0.000010000000000</double>
+         </property>
+         <property name="value">
+          <double>0.010000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0" colspan="3">
+        <widget class="Line" name="line_13">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="2">
+        <widget class="QSpinBox" name="cleanIRSpinBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="suffix">
+          <string> BPMs</string>
+         </property>
+         <property name="value">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_31">
+         <property name="text">
+          <string>Cleaning</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_29">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Analysis path only needs to be supplied if correcting RDTs as well.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>&lt;b&gt;RDT&lt;/b&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="measurementCorrectionB1LineEdit">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QComboBox" name="correctionMethodComboBox"/>
+       </item>
+       <item row="0" column="0" colspan="3">
+        <widget class="Line" name="line_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="3">
+        <widget class="Line" name="line_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="21" column="0">
+        <widget class="QPushButton" name="correctionButton">
+         <property name="text">
+          <string>Correct</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_20">
+         <property name="text">
+          <string>Method</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="toolTip">
+          <string>Optics directory of the measurement to correct</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="text">
+          <string>Measurement Beam 1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="2">
+        <widget class="QToolButton" name="mesurementB2CorrectionToolButton">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="label_28">
+         <property name="toolTip">
+          <string>Optics directory of the measurement to correct</string>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="text">
+          <string>Measurement Beam 2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="0" colspan="3">
+        <widget class="Line" name="line_15">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLabel" name="label_23">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Remove NaN values from measurement.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Clean NaN</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="2">
+        <widget class="QCheckBox" name="cleanOutliersCheckBox">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="2">
+        <widget class="QCheckBox" name="cleanNaNCheckBox">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QToolButton" name="mesurementB1CorrectionToolButton">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1" colspan="2">
+        <widget class="QComboBox" name="opticsComboBox"/>
+       </item>
+       <item row="19" column="0">
+        <widget class="QLabel" name="label_34">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Cutoff for small singular values in the SVD decomposition.&lt;/p&gt;&lt;p&gt;A  value of 0 means no cleaning and could lead to large corrections.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>rcond</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="0" colspan="3">
+        <widget class="Line" name="line_14">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="1">
+        <widget class="QSpinBox" name="factorChromaSpinBox">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximum">
+          <number>10000</number>
+         </property>
+         <property name="value">
+          <number>520</number>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLabel" name="label_24">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Removed outliers from measurement.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Clean Outliers</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="label_32">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Chromaticity&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="0">
+        <widget class="QLabel" name="label_22">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;When correcting the RDT f1004, the chromaticity changes.&lt;/p&gt;&lt;p&gt;Ticking this box adds a &amp;quot;fake&amp;quot; 0 chromaticity measurement to the response matrix to leave it unchanged.&lt;br/&gt;Be sure to set the chromaticity factor.&lt;/p&gt;&lt;p&gt;Adding DQ3 as an observable will not be taken into account if this box is checked.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Keep DQ3 constant</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLabel" name="label_25">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of BPMs to remove on each side of the IPs&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Clean IR</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="1">
+        <widget class="QCheckBox" name="keepDQ3ConstantcheckBox">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="0">
+        <widget class="QLabel" name="label_33">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Number of chromaticity observables to add to offset the RDT.&lt;/p&gt;&lt;p&gt;There are about 500 BPMs for each plane of the RDT.&lt;/p&gt;&lt;p&gt;500 is usually a good number to balance the RDT and Q''' correction.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="text">
+          <string>Chromaticity Factor</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QCheckBox" name="keepRDTConstantCheckBox">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>480</y>
+        <width>160</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="label_37">
+         <property name="text">
+          <string>Sum B1:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="sumB1Label">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>1030</x>
+        <y>480</y>
+        <width>160</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_38">
+         <property name="text">
+          <string>Sum B2:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="sumB2Label">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="modelLabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>24</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Model information.</string>
+    </property>
+    <property name="text">
+     <string>Model</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>179</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="alfaB2LineEdit">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="alfaB2Label">
+       <property name="text">
+        <string>ALFA B2</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="alfaB1LineEdit">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="alfaB1Label">
+       <property name="text">
+        <string>ALFA B1</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>181</width>
+      <height>381</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="measurementLabel">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Measurement Settings</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_11">
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Description</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPlainTextEdit" name="descriptionPlainTextEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveSettingsButton">
+       <property name="text">
+        <string>Save Settings</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>modelLabel</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>tabWidget</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1704</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuMatplotlib">
+    <property name="title">
+     <string>Matplotlib</string>
+    </property>
+    <addaction name="actionEdit_rcParams"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuMatplotlib"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionEdit_rcParams">
+   <property name="text">
+    <string>Edit rcParams</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionNew</sender>
+   <signal>triggered()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>newMeasurementClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>849</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionOpen</sender>
+   <signal>triggered()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>openMeasurementClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>849</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>849</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveSettingsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>saveSettingsClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>95</x>
+     <y>462</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>savePlotsButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>savePlotsClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>426</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>RePlotCleaningButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>rePlotCleaningClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1353</x>
+     <y>174</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>correctionButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>correctionButtonClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>917</x>
+     <y>163</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cleanDataButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>cleanDataClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>903</x>
+     <y>194</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>extractTimberButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>extractTimberClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>342</x>
+     <y>173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>timberVariablesListWidget</sender>
+   <signal>itemChanged(QListWidgetItem*)</signal>
+   <receiver>mainWindow</receiver>
+   <slot>timberVariableSelectionChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>682</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>useNAFFCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>mainWindow</receiver>
+   <slot>useNAFFCheckBoxClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1123</x>
+     <y>80</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>createPlateausButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>createPlateausClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>215</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>useRawBBQCheckBox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>mainWindow</receiver>
+   <slot>useRawBBQCheckBoxClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1008</x>
+     <y>84</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>copyTableButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>copyTableClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>154</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>computeChromaButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>computeChromaClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>340</x>
+     <y>166</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>beamChromaticityTabWidget</sender>
+   <signal>currentChanged(int)</signal>
+   <receiver>mainWindow</receiver>
+   <slot>updateChromaTablesForBeam()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>952</x>
+     <y>586</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionEdit_rcParams</sender>
+   <signal>triggered()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>rcParamsClicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>correctionMethodComboBox</sender>
+   <signal>currentIndexChanged(QString)</signal>
+   <receiver>mainWindow</receiver>
+   <slot>correctionMethodComboBoxChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>575</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>516</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mesurementB1CorrectionToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>openMeasurementCorrectionB1Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>690</x>
+     <y>108</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>512</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mesurementB2CorrectionToolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mainWindow</receiver>
+   <slot>openMeasurementCorrectionB2Clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>627</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>851</x>
+     <y>516</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>newMeasurementClicked()</slot>
+  <slot>openMeasurementClicked()</slot>
+  <slot>closeGui()</slot>
+  <slot>extractTimberClicked()</slot>
+  <slot>createPlateausClicked()</slot>
+  <slot>saveSettingsClicked()</slot>
+  <slot>cleanDataClicked()</slot>
+  <slot>rePlotCleaningClicked()</slot>
+  <slot>computeChromaClicked()</slot>
+  <slot>updateChromaTablesForBeam()</slot>
+  <slot>slot1()</slot>
+  <slot>correctionButtonClicked()</slot>
+  <slot>timberVariableSelectionChanged()</slot>
+  <slot>savePlotsClicked()</slot>
+  <slot>copyTableClicked()</slot>
+  <slot>cleanRawBBQDataClicked()</slot>
+  <slot>useRawBBQCheckBoxClicked()</slot>
+  <slot>useNAFFCheckBoxClicked()</slot>
+  <slot>rcParamsClicked()</slot>
+  <slot>useHarpyCheckBoxClicked()</slot>
+  <slot>correctionMethodComboBoxChanged()</slot>
+  <slot>openMeasurementCorrectionB1Clicked()</slot>
+  <slot>openMeasurementCorrectionB2Clicked()</slot>
+ </slots>
+</ui>
