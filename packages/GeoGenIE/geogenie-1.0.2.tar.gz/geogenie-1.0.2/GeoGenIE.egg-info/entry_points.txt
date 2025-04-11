@@ -1,0 +1,2 @@
+[console_scripts]
+geogenie = geogenie.cli:main
