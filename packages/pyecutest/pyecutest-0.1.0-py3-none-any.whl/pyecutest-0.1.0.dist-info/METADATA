@@ -1,0 +1,422 @@
+Metadata-Version: 2.4
+Name: pyecutest
+Version: 0.1.0
+Summary: A testing framework for ECU testing based on pytest
+Home-page: https://github.com/yourusername/pyecutest
+Author: PyECUTest Team
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: allure-pytest>=2.13.0
+Requires-Dist: cantools>=40.0.0
+Requires-Dist: python-can>=4.5.0
+Requires-Dist: niveristand>=3.2.0
+Requires-Dist: adbutils>=2.8.0
+Requires-Dist: pya2l>=0.1.4
+Requires-Dist: py_canoe>=3.0.2
+Requires-Dist: pymysql>=1.1.1
+Requires-Dist: uiautomator2>=3.2.2
+Requires-Dist: requests>=2.28.0
+Requires-Dist: pythonnet>=3.0.4
+Requires-Dist: watchdog>=5.0.3
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: openpyxl>=3.0.0
+Requires-Dist: pytest-assume>=2.4.3
+Requires-Dist: pytest-csv>=3.0.0
+Requires-Dist: psutil>=6.1.0
+Requires-Dist: pytest-repeat>=0.9.3
+Requires-Dist: intelhex>=2.3.0
+Requires-Dist: pyecharts>=2.0.7
+Requires-Dist: pytest-sugar>=1.0.0
+Requires-Dist: pywin32>=308
+Requires-Dist: a2lparser<1.0.0,>=0.1.0
+Provides-Extra: a2l
+Requires-Dist: a2lparser<1.0.0,>=0.1.0; extra == "a2l"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Gemina自动化测试框架
+
+Gemina是一个基于Pytest的专门用于汽车电子控制单元(ECU)测试的自动化测试框架。该框架利用Python编程语言，结合多种测试库和工具，如INCA、CANoe和VeriStand，实现对ECU的全面功能验证。
+
+# 项目结构
+```
+├─cases
+│  └─Demo
+│     └─test_xxx.py      #测试用例
+├─common
+│  ├─GenA2lLib.py        #用于生成a2l_enum.json和对应的lib\a2llib.py
+│  ├─GenBusLib.py        #用于生成can_bus.json，lin_bus.json以及对应的lib\buslib.py
+│  └─GenChannelLib.py    #用于生成lib\channellib.py
+├─config
+|  └─config.yaml         #配置工具参数
+├─core
+│  ├─executor.py         #测试核心执行内核
+│  └─signal_mapper.py    #CANoe自适应信号读取
+├─databases
+│  ├─a2l
+│  │  └─xxx.a2l          #存放a2l文件路径
+│  ├─dbc
+│  │  ├─MS11_U           #存放MS11_U的dbc文件路径
+│  │  ├─MX11             #存放MX11的dbc文件路径
+│  │  └─N3               #存放N3的dbc文件路径
+│  ├─hex
+│  │  └─xxx.hex          #存放hex文件路径
+│  └─other
+│     ├─can_bus.json     #存放can_bus.json文件路径
+│     ├─lin_bus.json     #存放lin_bus.json文件路径
+│     └─a2l_enum.json    #存放a2l_enum.json文件路径
+├─interfaces             #各工具调用逻辑
+│  ├─a2l
+│  ├─adb
+│  ├─canoe
+│  ├─hex
+│  ├─inca
+│  ├─mi_ant
+│  ├─tsp
+│  └─veristand
+├─lib                     #存放CANoe、Veristand以及INCA对应的信号（变量）lib文件
+├─log
+├─resource                #资源文件
+│  ├─image
+│  └─report
+│      └─ico
+├─scripts
+├─main.py                 #运行主函数
+├─pytest.ini              #Pytest配置文件
+├─README.md
+└─requirements.txt        #安装环境配置文件
+```
+
+# 使用方法
+## 1、安装环境
+### 1.1 Python环境配置
+安装64位Python，Python版本>=3.10。
+### 1.2 安装虚拟环境
+切换至PyECUTest项目根目录下，使用以下命令创建虚拟环境`venv`。
+```
+virtualenv venv
+```
+创建后，会在根目录生成虚拟环境文件夹`venv`。
+通过以下命令激活虚拟环境`venv`。
+```
+venv\Scripts\activate
+```
+### 1.3 安装依赖库
+使用以下命令读取`requirements.txt`安装所需依赖库。
+```
+pip install -i https://test.pypi.org/simple/ a2lparser --extra-index-url https://pypi.org/simple/
+pip install -r requirements.txt
+```
+### 1.4 通常情况下运行测试用例
+之后的每次运行都需要选择虚拟环境`venv`才可运行测试用例。
+若在命令行运行测试用例，则按照以下步骤：
+```
+cd xxx\PyECUTest       #进入PyECUTest根目录
+venv\Scripts\activate  #切换至poetry所创建的虚拟环境
+python main.py         #运行测试用例
+```
+### 1.5 Allure环境配置
+可参考以下文章进行配置。
+    ![下载地址](https://github.com/allure-framework/allure2/releases)
+    ![参考文章](https://blog.csdn.net/lixiaomei0623/article/details/120185069)
+
+## 2、配置config\conf.yaml和pytest.ini文件
+若仅编写测试用例而非运行测试用例时，仅需配置config\conf.yaml即可。
+### 2.1 配置config\conf.yaml
+config\conf.yaml用于配置测试的ECU，工具链以及对应的工程文件路径。若只使用部分工具，则将其他不相关的内容保持为`""`即可。
+具体结构以及填写内容可以概括为：
+```
+├─sqlite3           #数据库路径（未启用）
+├─dbc               #DBC文件夹路径
+│  └─dbc_dir        #DBC文件夹路径，用于编写buslib.py的，应存放在databases\dbc文件夹内（若启用，必修改）
+├─s19               #s19文件路径（未启用）
+├─a2l               #a2l文件路径，用于编写a2llib.py，应存放在databases\a2l文件夹内（若启用，必修改）
+├─canoe             
+│  ├─project_file   #CANoe工程文件路径（若启用，必修改）
+│  └─通道配置        #CANoe通道映射配置（若启用，必修改）
+├─inca              #INCA工程文件路径（若启用，必修改）
+├─veristand
+│  ├─host           #Veristand IP（勿修改）
+│  ├─nivsprj_path   #Veristand工程文件路径（若启用，必修改）
+│  ├─nivssdf_path   #Veristand工程文件路径（若启用，必修改）
+│  └─channel_path   #VeriStand信号文件路径，用于编写channellib.py，应存放在databases\channel（若启用，必修改）
+├─adb               #adb设备ID（若启用，必修改）
+└─project
+   ├─tools          #工具调用列表，包含canoe/tsmaster，adb，inca，veristand，tsp，mi_ant等（必修改）
+   └─ecu            #测试ECU列表，包含FZCU，VCCD等（必修改）
+```
+### 2.2 配置pytest.ini
+pytest.ini用于配置Pytest测试框架的测试用例配置，日志配置以及可视化报告配置。具体结构以及填写内容可以概括为：
+```
+├─testpaths            #测试用例文件夹路径（必修改）
+├─python_files         #测试用例py文件匹配模式，可以用于筛选需要运行的测试用例文件（按需修改）
+├─python_classes       #测试类匹配模式，可以用于筛选需要运行的测试类（按需修改）
+├─python_functions     #测试函数匹配模式，可以用于筛选需要运行的测试函数（按需修改）
+├─markers              #标记选项（勿修改）
+├─log_cli              #日志配置（勿修改）
+├─log_cli_level        #日志配置（勿修改）
+├─log_cli_format       #日志配置（勿修改）
+├─log_cli_date_format  #日志配置（勿修改）
+└─allure
+   ├─title             #allure可视化报告标题（勿修改）
+   ├─description       #allure可视化报告描述（勿修改）
+   └─environment       #allure可视化报告环境信息（勿修改）
+```
+
+## 3、制作信号库文件
+在台架以及非台架编写测试用例以及运行测试用例时，需要根据所调用的工具生成对应的信号文件。
+首先需要按照2.1配置config\conf.yaml。需要设置project\tools以及将对应的工程文件放置在`databases`的对应目录中（仅支持CANoe，VeriStand和INCA的信号库生成）。运行以下脚本即可生成对应工具的信号库文件。
+```
+python generate_libs.py
+```
+生成完成后，可以在`lib`文件夹中查看是否成功生成对应的信号库文件。
+
+## 4、编写测试用例
+### 4.1 常用函数
+读取CANoe总线信号（需额外导入lib\buslib.py）：
+```
+from lib import buslib
+from core.executor import TestExecutor
+def test_demo(self, executor:TestExecutor):
+    signal_value = executor.read_bus(signal_name=buslib.PwrModSts_FZCU_can, expected_value=buslib.PwrModSts_FZCU_can.ACC)
+#signal_name为待读取的总线信号
+#expected_value为期望接收到的总线信号值，默认值为None（代表不需要进行评估）。
+```
+写入CANoe总线信号（需额外导入lib\buslib.py）：
+```
+from lib import buslib
+from core.executor import TestExecutor
+def test_demo(self, executor:TestExecutor):
+    executor.write_bus(signal_name=buslib.PwrModSts_FZCU_can, value=buslib.PwrModSts_FZCU_can.Awake)
+#signal_name为待写入的总线信号
+#value为待写入的总线信号值
+```
+读取CANoe系统变量：
+```
+from core.executor import TestExecutor
+def test_demo(self, executor:TestExecutor):
+    sys_variable = executor.read_sys_var(var_name='IL::Klemme15', expected_value=1)
+#var_name为待读取的系统变量
+#expected_value为期望接收到的系统变量，默认值为None（代表不需要进行评估）。
+```
+写入CANoe系统变量：
+```
+from core.executor import TestExecutor
+def test_demo(self, executor:TestExecutor):
+    executor.write_sys_var(var_name='IL::Klemme30', var_value=1)
+#var_name为待写入的系统变量
+#var_value为待写入的系统变量
+```
+读取Veristand信号（需额外带入lib\channellib.py）：
+```
+from lib import channellib
+from core.executor import TestExecutor
+def test_demo(self, executor:TestExecutor):
+    signal_value = executor.read_veristand(signal_name=channellib.AI10, expected_value=6.9)
+#signal_name为待读取的Veristand信号
+#expected_value为期望接收到的Veristand信号，默认值为None（代表不需要进行评估）。
+```
+写入Veristand信号（需额外带入lib\channellib.py）：
+```
+from core.executor import TestExecutor
+def test_demo(self, executor:TestExecutor):
+    executor.write_veristand(signal_name=channellib.PWMIN1_FIU_TypeSet, value=0)
+#signal_name为待写入的信号
+#value为待写入的信号值
+```
+读取INCA测量量（需额外带入lib\a2llib.py）：
+```
+from lib import a2llib
+from core.executor import TestExecutor
+from lib import a2llib
+def test_demo(self, executor:TestExecutor):
+    signal_value = executor.read_measurement(signal_name=a2llib.PwrSplyReq_ExtrLampRlyDown_in, expected_value=1)
+#signal_name为待读取的INCA测量信号
+#expected_value为期望接收到的INCA测量信号值，默认值为None（代表不需要进行评估）。
+```
+读取INCA标定量（需额外带入lib\a2llib.py）：
+```
+from lib import a2llib
+from core.executor import TestExecutor
+def test_demo(self, executor:TestExecutor):
+    signal_value = executor.read_calibration(signal_name=a2llib.PwrModMgrSafe_CalPwrModStsByPassVal_C, value=a2llib.PwrModMgrSafe_CalPwrModStsByPassVal_C.Enum_PwrModSts_OFF)
+#signal_name为待读取的INCA标定信号
+#expected_value为期望接收到的INCA标定信号值，默认值为None（代表不需要进行评估）。
+```
+写入INCA标定量（需额外带入lib\a2llib.py）：
+```
+from lib import a2llib
+from core.executor import TestExecutor
+def test_demo(self, executor:TestExecutor):
+    executor.write_calibration(signal_name=a2llib.PwrModMgrSafe_CalPwrModStsByPassVal_C, value=a2llib.PwrModMgrSafe_CalPwrModStsByPassVal_C.Enum_PwrModSts_OFF)
+#signal_name为待写入的信号
+#value为待写入的信号标定量
+```
+### 4.2 编写规则
+## 5、运行测试用例
+
+# Bug提交
+
+# 需求提报
+
+小米办公@guwenjun1
+
+# PyECUTest
+
+一个基于 pytest 的 ECU 测试框架。
+
+## 安装说明
+
+### 1. 环境要求
+- Python 3.10 或更高版本
+- Windows 10/11 操作系统
+
+### 2. 安装步骤
+
+#### 2.1 创建虚拟环境（推荐）
+```bash
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+# source .venv/bin/activate  # Linux/Mac
+```
+
+#### 2.2 安装 a2lparser 依赖
+由于 a2lparser 包托管在 TestPyPI 上，需要单独安装：
+```bash
+pip install -i https://test.pypi.org/simple/ a2lparser --extra-index-url https://pypi.org/simple/
+```
+
+#### 2.3 安装 PyECUTest
+```bash
+# 从本地安装（开发模式）
+pip install -e .
+
+# 或从 PyPI 安装（如果已发布）
+# pip install pyecutest
+```
+
+#### 2.4 安装 Allure（用于生成测试报告）
+1. 下载 Allure：https://github.com/allure-framework/allure2/releases
+2. 解压到指定目录（例如：C:\Program Files\allure）
+3. 将 bin 目录添加到系统 PATH 环境变量
+
+### 3. 验证安装
+
+```bash
+# 验证 Python 版本
+python --version
+
+# 验证 Allure 安装
+allure --version
+
+# 验证 PyECUTest 安装
+pyecutest --help
+```
+
+## 使用说明
+
+### 基本用法
+```bash
+# 运行测试
+pyecutest [test_path]
+
+# 运行带标记的测试
+pyecutest -m [marker_name]
+
+# 重复运行测试
+pyecutest -r [repeat_count]
+
+# 不生成报告
+pyecutest --no-report
+
+# 生成并打开报告
+pyecutest --open-report
+```
+
+### 示例
+```bash
+# 运行特定测试文件
+pyecutest tests/test_ecu_communication.py
+
+# 运行带smoke标记的测试并重复3次
+pyecutest tests/ -m smoke -r 3
+
+# 运行测试并自动打开报告
+pyecutest tests/ --open-report
+```
+
+## 项目结构
+```
+PyECUTest/
+├── pyecutest/
+│   ├── __init__.py
+│   └── cli.py
+├── interfaces/
+│   └── demo_interfaces/
+│       ├── __init__.py
+│       ├── can_interface.py
+│       └── serial_interface.py
+├── tests/
+│   └── test_basic_ecu.py
+├── setup.py
+├── pyproject.toml
+├── requirements.txt
+└── README.md
+```
+
+## 常见问题
+
+### 1. 找不到 pyecutest 命令
+- 确认 Python 和 pip 在系统 PATH 中
+- 确认虚拟环境已激活（如果使用）
+- 尝试重新安装：`pip install --force-reinstall pyecutest`
+
+### 2. a2lparser 安装问题
+如果安装 a2lparser 时遇到问题：
+1. 确保使用正确的安装命令：
+   ```bash
+   pip install -i https://test.pypi.org/simple/ a2lparser --extra-index-url https://pypi.org/simple/
+   ```
+2. 如果仍然失败，可以尝试：
+   ```bash
+   pip install --upgrade pip
+   pip install -i https://test.pypi.org/simple/ a2lparser --extra-index-url https://pypi.org/simple/ --no-cache-dir
+   ```
+
+### 3. 无法生成 Allure 报告
+- 确认 Allure 已正确安装并添加到 PATH
+- 检查是否有写入权限
+- 使用 `--no-report` 选项跳过报告生成
+
+## 更新和维护
+
+### 更新 PyECUTest
+```bash
+pip install --upgrade pyecutest
+```
+
+### 卸载 PyECUTest
+```bash
+pip uninstall pyecutest
+```
+
+## 技术支持
+如果遇到问题：
+1. 检查错误信息
+2. 查看本文档
+3. 提交 Issue 到项目仓库
+4. 联系技术支持团队
