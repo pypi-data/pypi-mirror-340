@@ -1,0 +1,82 @@
+channels: # refactor channels in code to channel_identifiers
+  laser_D:
+    target: nanotimes
+    value: [ 0, 1000 ]
+  laser_A:
+    target: nanotimes
+    value: [ 1000, 2000 ] # intervals are inclusive, exclusive
+  det_D:
+    target: detectors
+    value: 1
+  det_A:
+    target: detectors
+    value: 0
+
+streams:
+  DD: [laser_D, det_D]
+  DA: [laser_D, det_A]
+  AA: [laser_A, det_A]
+  AD: [laser_A, det_D]
+
+# TODO this should move to web config
+burst_search:
+  DCBS:  # name of the burst search
+    - streams: [DD, DA]  # photons streams to use
+      L: 50
+      M: 35
+      T: 500.e-6
+    - streams: [AA]
+      L: 50
+      M: 35
+      T: 500.e-6
+  APBS:
+    - streams: [DD, DA, AA]
+      L: 50
+      M: 100
+      T: 500.e-6
+  test234:
+    - streams: [DD, DA, AA]
+      L: 500
+      M: 100
+      T: 500.e-6
+
+aggregations:
+  parse_expr:
+    exprs:
+      n_photons: len()
+  # same as parse expr above
+  # length:
+  #   name: n_photons
+  stream_length: {}
+  stream_mean: 
+    column: nanotimes
+  column_stats: # get timestamps min/max/mean
+    column: timestamps
+  stream_asymmetry:
+    lhs_streams: [DD, DA]
+    rhs_streams: [AA]
+    column: timestamps
+
+# dict of transforms to apply in order
+transforms:
+  "alex_2cde:75":
+    tau: 75.e-6
+  "alex_2cde:150":
+    tau: 150.e-6
+  fret_2cde:
+    tau: 45.e-6
+  with_columns:
+    exprs:
+      E_app: "n_DD / (n_DD + n_DA)"
+      S_app: "(n_DD + n_DA) / (n_DD + n_DA + n_AA)"
+      timestamps_length: "timestamps_max - timestamps_min"
+
+
+# settings related to dont-fret's web interface
+web:
+  password: null
+  default_dir: tests\test_data\input\ds2 # default directory show in the file browser
+  protect_filebrowser: false # true to prevent navigation above default_dir
+  burst_filters: # default filters to apply to burst search filters
+    - name: n_photons
+      min: 150

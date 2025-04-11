@@ -1,0 +1,40 @@
+name: Test CLI App Packaging
+
+on: [push]
+
+jobs:
+  test-packaging:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install hatch
+      run: pip install hatch
+
+    - name: Build project
+      run: hatch build
+
+    - name: Install uv
+      run: pip install uv
+
+    - name: Create and activate venv, install package
+      run: | 
+        uv venv
+        source .venv/bin/activate
+        uv pip install dist/*.tar.gz
+        which dont-fret
+
+    - name: Download test file
+      run: |
+        wget "https://filedn.eu/loRXwzWCNnU4XoFPGbllt1y/datafile_1.ptu" -O tests/test_data/input/ds1/datafile_1.ptu
+
+
+    - name: Run dont fret process
+      run: |
+        source .venv/bin/activate
+        dont-fret process tests/test_data/input/ds1/datafile_1.ptu
