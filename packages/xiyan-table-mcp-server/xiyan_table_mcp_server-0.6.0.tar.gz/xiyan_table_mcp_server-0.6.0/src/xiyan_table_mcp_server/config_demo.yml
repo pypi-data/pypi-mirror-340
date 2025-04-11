@@ -1,0 +1,14 @@
+table:
+  path: "/Users/shixiaorong/Desktop/xiyan_table_mcp_server/hongqi.csv" 
+  encoding: "utf-8"     
+  preview_rows: 20       
+
+model:
+  model_name: "qwen-max-0125"
+  api_key: "sk-KW836Gowrh"
+  api_base: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  temperature: 0.1
+
+server:
+  name: "xiyan-table"    
+  version: "0.1.0"   
