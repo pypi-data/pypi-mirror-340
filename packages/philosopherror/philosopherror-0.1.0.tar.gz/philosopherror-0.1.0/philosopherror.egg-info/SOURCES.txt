@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+philosopherror/__init__.py
+philosopherror/core.py
+philosopherror/handlers.py
+philosopherror/philosophers.py
+philosopherror.egg-info/PKG-INFO
+philosopherror.egg-info/SOURCES.txt
+philosopherror.egg-info/dependency_links.txt
+philosopherror.egg-info/top_level.txt
+tests/__init__.py
+tests/test_philosopherror.py
