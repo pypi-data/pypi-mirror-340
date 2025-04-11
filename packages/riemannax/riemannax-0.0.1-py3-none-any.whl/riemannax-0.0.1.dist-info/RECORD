@@ -1,0 +1,17 @@
+riemannax/__init__.py,sha256=uDya6tv_HlikP4ARNJJZPYpbpkak2Pdl4YDDgzgOeIY,589
+riemannax/manifolds/__init__.py,sha256=DQbrwscxYU8D4gXaa6Vlwt35voTaBs0IGQIL_1UDTNY,353
+riemannax/manifolds/base.py,sha256=q3ZS2oVyIzDF06ZeJXUIEsYoEGt2njWC6l0oQVIJBT8,4891
+riemannax/manifolds/so.py,sha256=5XMWY0DRKJD_VFfVnl7affRwzJlf1EZlTbyyWzZRKxc,13353
+riemannax/manifolds/sphere.py,sha256=p8Y1SaA9EC3_pWLgVY4fb3c0qw6uXm5CQgpIWRkZw-Q,7259
+riemannax/optimizers/__init__.py,sha256=M9zwcliDEve5yI15Kgk0QFlod8J1EmlCOdhQUgQwzeA,292
+riemannax/optimizers/sgd.py,sha256=idBHcO1uocxX7zwAFqzqsLOBf6_L6oNhUOQ7W-PPIws,1601
+riemannax/optimizers/state.py,sha256=nkoKRDEcfKkD9eZhs1sI5LAPjBrUcrriDKxkFs7lfw4,1540
+riemannax/problems/__init__.py,sha256=jQkQ2lA_GInOFOArSo3ImMG3f6PnDBvfjcNEo35HJnM,219
+riemannax/problems/base.py,sha256=wIslsERjzZjcEG9a61lhpAlzlWhy2-Oz6cYDx6me4j0,2337
+riemannax/solvers/__init__.py,sha256=MYKcWelfVm2a8MpK6vNYx7b31quQlZ350lwhhBGr3ps,303
+riemannax/solvers/minimize.py,sha256=O415zPYv2Ks7msv4XavWCSDu0BNejF2UaBNzA_-TWeA,2898
+riemannax-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+riemannax-0.0.1.dist-info/METADATA,sha256=sAWVo3oLeT0PK002jYkZNWwcKrMHhWx8W6VDlGVa3ME,3778
+riemannax-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+riemannax-0.0.1.dist-info/top_level.txt,sha256=vA-EFt0F_tnPawm79T-jX4y0BxOcI2Lw3UH86vrIgzI,10
+riemannax-0.0.1.dist-info/RECORD,,
