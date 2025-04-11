@@ -1,0 +1,9 @@
+maestro_mcp/__init__.py,sha256=wSJXunP0nsIbh2GdvVGblKNfpjR8WZB59ZAXKLitTjk,131
+maestro_mcp/__main__.py,sha256=IB7nbQQ8oXWvhHdM21YhGufcZuRDkWnYyKK2Q5vdo3g,147
+maestro_mcp/cli.py,sha256=HhIzbgYqOtKtMh9bjeClosh0AaJjCHMTtQF04TA2SLY,6516
+maestro_mcp/maestro_cli.py,sha256=uoOjgeM-aw76qdrK7bcvYyx49XLcxm87Rwcuu6Pidew,6270
+maestro_mcp-0.1.1.dist-info/METADATA,sha256=UrlnqIdRNFALY5d53Dtm-knYevJgNEnSy6vHzz1o4fU,2547
+maestro_mcp-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+maestro_mcp-0.1.1.dist-info/entry_points.txt,sha256=4Cq1K6mfi9mpq7xcH2S7cegdONcrcpFfOpIxHhYlBz0,56
+maestro_mcp-0.1.1.dist-info/licenses/LICENSE,sha256=gGVaavsK846ACZhvrdBSHZQVxaY9f91fea-jX6amMac,1071
+maestro_mcp-0.1.1.dist-info/RECORD,,
