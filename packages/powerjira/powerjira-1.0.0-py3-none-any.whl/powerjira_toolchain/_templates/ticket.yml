@@ -1,0 +1,17 @@
+# pj --help
+
+#───TICKET───────────────────
+reporter: iyep
+assignee: iyep
+
+init_status: to do # new, to do, in progress, done, backlog
+
+project: QUANT # QUANT, HYP, CS
+priority: Medium # Low, Medium, High (ignored for Epic)
+issue_type: Task # Task, Epic
+parent_epic: '' # Leave empty for standalone task or epic
+
+
+#───GIT──────────────────────
+branch_suffix: 'implement_thing'
+parent_branch: main
