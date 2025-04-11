@@ -1,0 +1,12 @@
+query MyQuery{
+  phase(id: "$phase_id$") {
+    fields {
+      id
+      label
+      type
+      options
+      required
+      description
+    }
+  }
+}
