@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: imgfit
+Version: 0.3.1
+Summary: Change your images.
+Home-page: https://github.com/xystudio889/imgfit
+Author: xystudio
+Author-email: 173288240@qq.com
+License: MIT
+Requires-Python: >=3
+License-File: LICENSE
+Requires-Dist: pillow>=8
+Requires-Dist: matplotlib>=3.4
+Requires-Dist: PyLaTeXenc>=2
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# imgfit
+
+Add fitters to your images.
