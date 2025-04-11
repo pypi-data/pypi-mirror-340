@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: pdf_highlight_extractor
+Version: 0.1.0
+Summary: Extract and summarize highlights from PDF files.
+Author: Anish Bala Sachin
+Author-email: sachinabs.js@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: PyMuPDF>=1.22.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
