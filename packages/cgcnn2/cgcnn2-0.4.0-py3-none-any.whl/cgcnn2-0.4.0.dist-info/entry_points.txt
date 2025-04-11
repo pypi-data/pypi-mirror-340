@@ -1,0 +1,5 @@
+[console_scripts]
+cgcnn-ft=cgcnn2.cli.cgcnn_ft:main
+cgcnn-pr=cgcnn2.cli.cgcnn_pr:main
+cgcnn-tr=cgcnn2.cli.cgcnn_tr:main
+
