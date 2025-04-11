@@ -1,0 +1,19 @@
+[project]
+name = "r00buying-altcoins-monitoring"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "python-coinmarketcap>=0.6",
+    "prettytable",
+    "r00logger",
+    "r00secret",
+    "r00notify",
+
+]
+
+[tool.uv.sources]
+r00logger = { path = "../../../libs/logger", editable = true }
+r00secret = { path = "../../../libs/secret", editable = true }
+r00notify = { path = "../../../libs/notify", editable = true }
