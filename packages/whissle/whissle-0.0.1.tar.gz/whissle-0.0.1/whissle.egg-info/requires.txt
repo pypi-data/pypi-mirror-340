@@ -1,0 +1,14 @@
+python-dotenv
+pydantic
+httpx
+
+[all]
+pre-commit
+ruff
+python-dotenv
+pydantic
+httpx
+
+[dev]
+pre-commit
+ruff
