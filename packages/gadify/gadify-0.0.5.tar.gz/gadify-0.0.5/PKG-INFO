@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: gadify
+Version: 0.0.5
+Summary: A lightweight utility library for building clean and reusable data manipulation functions.
+Home-page: https://github.com/AlexDemure/gadify
+Author: Alexander Grishchenko
+Author-email: alexanderdemure@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<p align="center">
+  <a href="https://github.com/AlexDemure/gadify">
+    <a href="https://ibb.co/0yMZWZQz"><img src="https://i.ibb.co/whWCbCY2/logo.png" alt="logo" border="0"></a>
+  </a>
+</p>
+
+<p align="center">
+  A lightweight utility library for building clean and reusable data manipulation functions.
+</p>
+
+---
+Gadify is a utility-first library that centralizes all data manipulation logic into one clean and structured place. Instead of scattering helper functions and utility logic across your codebase, Gadify organizes them by data type — such as strings, decimal, dates, and more — making your application easier to maintain, test, and extend.
+
+It also solves the common problem of repeatedly importing different standard libraries or third-party tools throughout your project. With Gadify, you can access all your data utilities from a single, consistent import path — reducing noise and avoiding naming debates like from datetime import datetime vs import datetime as dt.
+## Installation
+
+```
+pip install gadify
+```
+
+
+## Usage
+
+```python
+from gadify import strings, dates, decimals, fields, json, lists, paths, urls
+
+print(strings.kebab("Hello World"))  # hello-world
+
+date = dates.now()
+print(dates.formatiso(date))   # "2025-04-10T12:34:56.789012+0000"
+
+print(paths.current())         # "/home/user/project"
+print(paths.define())          # "/home/user/project"
+print(paths.define("/tmp"))    # "/tmp"
+
+print(decimals.add(10.25, 5.75))        # Decimal('16.00')
+print(decimals.split(100.05, 3))        # [Decimal('33.35'), Decimal('33.35'), Decimal('33.35')]
+
+print(lists.unique([1, 2, 2, 3, 1]))         # [1, 2, 3]
+print(lists.flatten([[1, 2], [3, [4]]]))     # [1, 2, 3, 4]
+```
