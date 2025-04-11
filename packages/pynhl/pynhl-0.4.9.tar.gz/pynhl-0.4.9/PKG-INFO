@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: pynhl
+Version: 0.4.9
+Summary: Python wrapper for NHL API used in Home Assistant
+Home-page: https://github.com/JayBlackedOut/pynhl
+Author: Jay Lowenthal
+Author-email: jasonlowenthal@live.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# pynhl
+Python wrapper for the NHL API used in Home Assistant
