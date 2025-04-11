@@ -1,0 +1,5 @@
+ARCA
+Chrome
+Excel
+Terminal
+Windows
