@@ -1,0 +1,9 @@
+rf_humab/__init__.py,sha256=JfEE6-aOY7jO_xeJ-VS3PQOK7g0ebEk66wmacK_hZIg,109
+rf_humab/humanize_sequence.py,sha256=2ksQsWdvh4vm6vm9MON4dJ9y-nT2DSBDSZ2czZhdM6M,9412
+rf_humab/mapping.py,sha256=-B-I-nUbwPWnll8SuhEKO3lYPypYIpvtDXqDoOt_Ueg,2252
+rf_humab/saved_models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rf_humab/sequence_data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rf_humab-0.0.6.dist-info/METADATA,sha256=1XkdSaciHxI_HzXtrCUXfKMIzcvwN3_YSxG-qOwHL_o,793
+rf_humab-0.0.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+rf_humab-0.0.6.dist-info/top_level.txt,sha256=5_Tyr0H0S8wgJikjnF3ZzavXV7a80uf6BRtcVB292eo,9
+rf_humab-0.0.6.dist-info/RECORD,,
