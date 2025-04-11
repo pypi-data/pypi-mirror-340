@@ -1,0 +1,12 @@
+HalChat.py,sha256=GQ6JT8p2Yc1pNA71Dnn93FTLt0JyH42ZgYQdSR0lbHI,15937
+HalChatAPI.py,sha256=PSHJncP17sZDNdsGX3lOR8ktnnzZluZIko7CE84HRwc,2690
+HalChatEncryption.py,sha256=zZD1aNPozKVpxb_1PcMEOMCkRW7RiurFfhfVcwhlCSE,1976
+HalChatWS.py,sha256=M3giPXYiftUkZEaTqSrDuBq0C5AoyjwKt55-Tatf4lc,4443
+HalEncryption.py,sha256=7AhMpS8y24woiJMvmWi8CNxP0waynw2ak6nUKURAv6w,1702
+HalHash.py,sha256=Pd_UF-itjzgIrVpLb6P_uRlZyEFj_6jZbj9k8zhc_Ck,2724
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+halchat-0.0.4.3.dist-info/licenses/LICENSE,sha256=2QoYBe7PFfTmuXQ3qsrLPej-oAyMDI1_mGxGPPbCPgA,1090
+halchat-0.0.4.3.dist-info/METADATA,sha256=6f20JxlImJYi1y3V-sbdmPTOzrp4e-N9TWBDInm_x5o,732
+halchat-0.0.4.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+halchat-0.0.4.3.dist-info/top_level.txt,sha256=4kJeYGnNCnzBlZpjTM8Y3MkF3wH5vo8oCv8XvfKIqvs,78
+halchat-0.0.4.3.dist-info/RECORD,,
