@@ -1,0 +1,38 @@
+[project]
+name = "cloudflare-images-mcp"
+version = "0.1.0"
+description = "Simple MCP server to add images to Cloudflare Images"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+authors = [
+    {name = "Philipp Eisen", email = "hello@philippeisen.de"},
+]
+dependencies = [
+    "mcp>=1.6.0",
+    "httpx>=0.25.0",
+]
+
+[dependency-groups]
+dev = [
+    "mcp[cli]>=1.6.0",
+]
+
+[tool.ruff]
+line-length = 150
+target-version = "py310"
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+]
+ignore = []
+
+
+[project.scripts]
+cloudflare-images-mcp = "cloudflare_images_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
