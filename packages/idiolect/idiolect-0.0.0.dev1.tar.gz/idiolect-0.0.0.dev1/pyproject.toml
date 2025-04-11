@@ -1,0 +1,22 @@
+[project]
+name = "idiolect"
+version = "0.0.0dev1"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kosmolebryce", email = "k.lebryce@pm.me" }
+]
+requires-python = ">=3.12.8"
+dependencies = [
+    "python-dotenv>=1.1.0",
+]
+packages = [
+    { from = "src", include = "idiolect" }
+]
+
+[project.scripts]
+idiolect = "idiolect:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
