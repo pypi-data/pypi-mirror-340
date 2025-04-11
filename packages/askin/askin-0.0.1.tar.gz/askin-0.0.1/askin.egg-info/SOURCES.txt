@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+askin/__init__.py
+askin/controller.py
+askin/py.typed
+askin/requirements-dev.txt
+askin/requirements.txt
+askin.egg-info/PKG-INFO
+askin.egg-info/SOURCES.txt
+askin.egg-info/dependency_links.txt
+askin.egg-info/requires.txt
+askin.egg-info/top_level.txt
+tests/test_dummy.py
