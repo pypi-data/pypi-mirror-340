@@ -1,0 +1,12 @@
+linear_nonlinear_solver/__init__.py,sha256=ZmOXw7cfT4KROxsdQdgKi0O0JUlZrnFPQPWTxOD2ar0,504
+linear_nonlinear_solver/bisection.py,sha256=KunPXQJLk0K1EVPwxhxmIMMI4vEZoo7I3aOwzJaAZO8,625
+linear_nonlinear_solver/cramer.py,sha256=X-m6eqi_m2gAGoDZyrBdYzSnU1T3fgAve3fV9bpUXFo,1100
+linear_nonlinear_solver/gauss.py,sha256=QNOc_c3kNKBWjWUw3s46N84pY_71Mp_SHovFa_C9Kug,986
+linear_nonlinear_solver/gauss_jordan.py,sha256=GMN_0pR_JMX6wCzI5bELDOcZxcV3d678uJI9-jS42Dw,630
+linear_nonlinear_solver/gauss_seidel.py,sha256=P2G5uSlDL_3Qti7ihMcVgy6MYyj9PXAf5F9XCBqYrQs,1158
+linear_nonlinear_solver/jacobi.py,sha256=28PZ9guwctIcmyKljmlxDVvPDtd377xtSPGxu1qYD8A,1141
+linear_nonlinear_solver/lu_decomposition.py,sha256=wAaartZfSMzpBLt1jPlgrOjVvZ46s-Q63_i3wSON2_M,982
+linear_nonlinear_solver-0.1.0.dist-info/LICENSE,sha256=ez3dSGGn5Xt-j9QVRwJQCWSa4CEDZuBBGFQCwMYUQpA,1073
+linear_nonlinear_solver-0.1.0.dist-info/METADATA,sha256=MgySuJoRlnNEJea5Mk-ErQMl1II40ZjFge2F5cOSvu8,3153
+linear_nonlinear_solver-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+linear_nonlinear_solver-0.1.0.dist-info/RECORD,,
