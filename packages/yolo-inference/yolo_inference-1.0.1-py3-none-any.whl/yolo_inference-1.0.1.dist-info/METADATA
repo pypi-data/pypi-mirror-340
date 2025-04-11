@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: yolo_inference
+Version: 1.0.1
+Summary: YOLO inference library for object detection
+Author: Shubham Nayak
+Author-email: sn85076@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: torch
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
