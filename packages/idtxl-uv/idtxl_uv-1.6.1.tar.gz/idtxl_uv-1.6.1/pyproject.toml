@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "idtxl-uv"
+version = "1.6.1"
+description = "Information Dynamics Toolkit xl - UV package manager fork"
+authors = [
+    {name = "Patricia Wollstadt", email = "p.wollstadt@gmail.com"},
+    {name = "Joseph T. Lizier"},
+    {name = "Raul Vicente"},
+    {name = "Conor Finn"},
+    {name = "Mario Martinez-Zarzuela"},
+    {name = "Pedro Mediano"},
+    {name = "Leonardo Novelli"},
+    {name = "Michael Wibral"}
+]
+maintainers = [
+    {name = "Jan Sturm", email = "jansturm1@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "GPL-3.0-only"}
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: Science/Research",
+    "Environment :: Console",
+    "Environment :: Other Environment",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Scientific/Engineering :: Medical Science Apps."
+]
+dependencies = [
+    "ecos>=2.0.14",
+    "h5py>=3.8.0",
+    "jpype1>=1.5.0",
+    "matplotlib>=3.5.3",
+    "mpi4py>=4.0.3",
+    "networkx>=2.6.3",
+    "prettytable>=3.7.0",
+    "pyopencl>=2022.2.4",
+    "siphash24>=1.7",
+    "statsmodels>=0.13.5",
+]
+
+[project.urls]
+Homepage = "https://github.com/pwollstadt/IDTxl"
+Fork = "https://github.com/jansturm1/IDTxl"
+
+[tool.hatch.build.targets.wheel]
+packages = ["idtxl", "idtxl.knn"] 
