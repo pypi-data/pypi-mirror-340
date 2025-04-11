@@ -1,0 +1,39 @@
+services:
+  oteapi:
+    image: ghcr.io/emmc-asbl/oteapi:${DOCKER_OTEAPI_VERSION:-latest-dev}
+    ports:
+      - "${OTEAPI_PORT:-8080}:8080"
+    environment:
+      OTEAPI_REDIS_TYPE: redis
+      OTEAPI_REDIS_HOST: redis
+      OTEAPI_REDIS_PORT: 6379
+      OTEAPI_PREFIX: "${OTEAPI_PREFIX:-/api/v1}"
+      OTEAPI_PLUGIN_PACKAGES: "-v -e /oteapi-optimade"
+    depends_on:
+      - redis
+    networks:
+      - otenet
+    volumes:
+      - "${PWD}:/oteapi-optimade"
+    stop_grace_period: 1s
+
+  redis:
+    image: redis:latest
+    volumes:
+      - redis-persist:/data
+    networks:
+      - otenet
+
+  optimade:
+    image: ghcr.io/materials-consortia/optimade:develop
+    ports:
+      - "${OPTIMADE_PORT:-5000}:5000"
+    networks:
+      - otenet
+    stop_grace_period: 1s
+
+volumes:
+  redis-persist:
+
+networks:
+  otenet:
