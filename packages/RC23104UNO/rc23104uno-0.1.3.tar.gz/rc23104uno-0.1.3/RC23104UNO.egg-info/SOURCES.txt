@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+RC23104UNO/__init__.py
+RC23104UNO/metodos_lineales.py
+RC23104UNO/metodos_no_lineales.py
+RC23104UNO/utils.py
+RC23104UNO.egg-info/PKG-INFO
+RC23104UNO.egg-info/SOURCES.txt
+RC23104UNO.egg-info/dependency_links.txt
+RC23104UNO.egg-info/requires.txt
+RC23104UNO.egg-info/top_level.txt
+tests/test_lineales.py
+tests/test_no_lineales.py
