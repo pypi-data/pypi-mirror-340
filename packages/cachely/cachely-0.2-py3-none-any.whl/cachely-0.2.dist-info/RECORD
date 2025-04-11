@@ -1,0 +1,14 @@
+cachely/__init__.py,sha256=y182BcMTIwvHHyS3gn5ZrgQuTGSNwKhD9imeQ6KJK10,56
+cachely/__main__.py,sha256=0bOjEA5EaHD4wS9XuCpCk9oDV6BV9pexZTIaZQ1bIRI,2621
+cachely/__version__.py,sha256=BKdO96b328Jp65mXUja3FRvOTp5QiQL06WNg5YJ9by4,76
+cachely/client.py,sha256=wYM-JSPoC-_nVOCPZh__3axWTZfD6ooKBv4dDSYsenA,2038
+cachely/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cachely/backends/base.py,sha256=sMZ2-8IsvTZgHi-gsjw7Np7p6GHL7rvcxIsLZ6thSd8,2862
+cachely/backends/fs.py,sha256=C4Zf-xsvaJiXL4eSJyNZdQ0MHoBbGhFMXRd_XMVCoVo,2197
+cachely/backends/sqlite.py,sha256=rarCBkPyji8nrBQZyx2rjHq_IBjH0gVhaxgTlRYPeHo,2556
+cachely-0.2.dist-info/licenses/LICENSE,sha256=GLfnzwLlYqSj6SxeL1zlv5npZdFndd9GqxCZzAHaB_c,1071
+cachely-0.2.dist-info/METADATA,sha256=HUg48RUQ2xCCnHu4icHlDUpH74DP9upd2jnWW5IaHvw,3678
+cachely-0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cachely-0.2.dist-info/entry_points.txt,sha256=AHVSO5ZeldE-_SU0KTIyHuGVC_BQPU1KvB71j_o8svo,50
+cachely-0.2.dist-info/top_level.txt,sha256=76G6UmTlA04ZcK8-qB5ZKTLmuMqfx-rgVtDHfk-WqEo,8
+cachely-0.2.dist-info/RECORD,,
