@@ -1,0 +1,2 @@
+[console_scripts]
+spagrn = src.cli.spagrn_parser:main
