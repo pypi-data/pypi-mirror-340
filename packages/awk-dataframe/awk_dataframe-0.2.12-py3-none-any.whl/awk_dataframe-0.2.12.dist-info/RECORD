@@ -1,0 +1,11 @@
+awk_dataframe/__init__.py,sha256=7xe2vrDRFpQ9iMHHDlCS0fn9zuo7VjSNwgharuBpzJA,159
+awk_dataframe/awk_dataframe.py,sha256=IQI67S5YAUE_DjfNodu---Wfx9iJttndOqxwOmRJzD8,106416
+awk_dataframe/read_file_direct_output.cpp,sha256=PMsJSScoRKHe4FEVTW8KgwiE5T15vPJwgKksgPS1Jk4,21068
+awk_dataframe/write_to_file.cpp,sha256=i8zUJZ7oJ321Fw86FfmcFQNvPFhj6zKZJPNQUD8t5R8,3638
+awk_dataframe/bin/linux/parse_complex_csv,sha256=hUG-uIstEaQwI8VgCsjlIqY35NeqR_o-bWnqm_gp_3M,64440
+awk_dataframe/bin/linux/save_csv,sha256=R-1GWpOxAU5rYwjwZFAnh3ysQa38HchjxlYhd2ZpMxc,42568
+awk_dataframe-0.2.12.dist-info/LICENSE,sha256=J_ejRwrkbfKowlFy8BYcZXZRZVYwUYlMq14DhDo9V6M,1094
+awk_dataframe-0.2.12.dist-info/METADATA,sha256=0t2tJ3R5v2YezkXBBuiwkVMZ4NKJxVLBHVmC-vjCaxY,39624
+awk_dataframe-0.2.12.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+awk_dataframe-0.2.12.dist-info/top_level.txt,sha256=0ACeayAEaU7CLy6r0xJd_i53hqwUP8hODSZDVZWI7rs,14
+awk_dataframe-0.2.12.dist-info/RECORD,,
