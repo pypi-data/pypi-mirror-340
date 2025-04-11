@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "valuevec"
+version = "0.1.0"
+description = "Value-based word embeddings that incorporate external continuous values."
+authors = [
+    { name="Ronald Doku", email="ronjeffdoku@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "torch>=1.7.0",
+    "pandas>=1.0.0",
+    "numpy>=1.19.0",
+    "matplotlib>=3.3.0",
+    "scikit-learn>=0.23.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/rdoku/valuevec"
+Documentation = "https://www.rondoku.com/project/10"
+Source = "https://github.com/rdoku/valuevec"
+Issues = "https://github.com/rdoku/valuevec/issues"
