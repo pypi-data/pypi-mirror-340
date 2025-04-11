@@ -1,0 +1,8 @@
+setup.py
+lumericpy/__init__.py
+lumericpy/methods.py
+lumericpy.egg-info/PKG-INFO
+lumericpy.egg-info/SOURCES.txt
+lumericpy.egg-info/dependency_links.txt
+lumericpy.egg-info/requires.txt
+lumericpy.egg-info/top_level.txt
