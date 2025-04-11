@@ -1,0 +1,16 @@
+[project]
+name = "mdrender"
+version = "0.1.0"
+description = "A streaming Markdown renderer for your terminal, great to render the output of LLM tools"
+authors = [{ name = "adiffpirate", email = "adiffpirate@gmail.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.7"
+dependencies = ["rich>=13.0.0"]
+
+[project.scripts]
+mdrender = "mdrender.cli:run"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

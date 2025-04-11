@@ -1,0 +1,2 @@
+[console_scripts]
+mdrender = mdrender.cli:run
