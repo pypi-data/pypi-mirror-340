@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wquant
+Version: 1.0.3
+License-File: LICENSE
+Requires-Dist: greenlet==3.1.1
+Requires-Dist: numpy==2.2.4
+Requires-Dist: pandas==2.2.3
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2025.2
+Requires-Dist: six==1.17.0
+Requires-Dist: SQLAlchemy==2.0.40
+Requires-Dist: typing-extensions==4.13.1
+Requires-Dist: tzdata==2025.2
+
