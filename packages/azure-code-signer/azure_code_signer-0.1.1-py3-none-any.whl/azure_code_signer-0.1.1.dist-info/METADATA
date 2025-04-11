@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: azure-code-signer
+Version: 0.1.1
+Summary: A command line tool to code sign files using a code signing certificate stored in Azure Key Vault.
+Author-email: Attie Retief <attie@attieretief.com>
+License: MIT
+Requires-Python: >=3.7
+Requires-Dist: azure-identity>=1.10.0
+Requires-Dist: azure-keyvault-certificates>=4.5.0
+Requires-Dist: azure-keyvault-secrets>=4.5.0
+Requires-Dist: cryptography>=38.0.0

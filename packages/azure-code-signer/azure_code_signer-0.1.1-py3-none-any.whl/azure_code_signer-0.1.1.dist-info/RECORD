@@ -1,0 +1,16 @@
+src/__init__.py,sha256=wwzI0HWMz0FUp4V66XGRfzeaK3gaQUnIjDstG8ZUpFI,40
+src/main.py,sha256=TDkFirlwwB-L55CI9d5EpHqR58Q4M-JFuPb6XFbLcaM,8104
+src/auth/__init__.py,sha256=wwzI0HWMz0FUp4V66XGRfzeaK3gaQUnIjDstG8ZUpFI,40
+src/auth/azure_auth.py,sha256=7JTyb1q2JVaGfX0Bsl3STX-p31AdKf8LpmjI51uQeSs,3223
+src/signing/__init__.py,sha256=wwzI0HWMz0FUp4V66XGRfzeaK3gaQUnIjDstG8ZUpFI,40
+src/signing/file_signer.py,sha256=e5Talf_467b4njHodEVRTB-Ry8TR4b0InxxClWdTAPE,6079
+src/utils/__init__.py,sha256=wwzI0HWMz0FUp4V66XGRfzeaK3gaQUnIjDstG8ZUpFI,40
+src/utils/platform_utils.py,sha256=BPqrIGaaD6HaNaraTGdOmxY358iCe17jwGkjXT_hclU,234
+tests/__init__.py,sha256=wwzI0HWMz0FUp4V66XGRfzeaK3gaQUnIjDstG8ZUpFI,40
+tests/test_auth.py,sha256=IZGq6LVWPix6T6Rop9wgMxQvt8K0sMXGw0nMaLlRFnc,5901
+tests/test_signing.py,sha256=TBtHDJZGM17MI9DHeWCiMiVQlU-lZIWwPMfC-25hmMA,5274
+azure_code_signer-0.1.1.dist-info/METADATA,sha256=GZ4D79xRTOhNHXOibmjch01tC48TTOMvyuXLa5znEpI,425
+azure_code_signer-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+azure_code_signer-0.1.1.dist-info/entry_points.txt,sha256=LEgZ3CXTzQQC0i5qS3NmTr7WoJwCgqqeVbTfTJEIyho,52
+azure_code_signer-0.1.1.dist-info/top_level.txt,sha256=KW3xgkz9NLMTcmmzgKvW8RFpCFkRIQ085qzq2diFf68,10
+azure_code_signer-0.1.1.dist-info/RECORD,,
