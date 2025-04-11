@@ -1,0 +1,1 @@
+[{"payload": "<graph-data-removed>", "type": "graph"}, {"payload": "<graph-data-removed>", "type": "graph"}, {"payload": {"correct": true, "message": "Good job! You can clearly see how the different simulations of the random walk went. Transposing the 2D NumPy array was crucial; otherwise Python misunderstood."}, "type": "sct"}]

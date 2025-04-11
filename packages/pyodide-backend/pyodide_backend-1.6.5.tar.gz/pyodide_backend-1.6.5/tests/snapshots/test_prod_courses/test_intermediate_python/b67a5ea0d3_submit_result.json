@@ -1,0 +1,1 @@
+[{"payload": {"output": "{'spain': 'madrid', 'france': 'paris', 'germany': 'berlin', 'norway': 'oslo'}", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Great! Now that you've built your first dictionaries, let's get serious!"}, "type": "sct"}]

@@ -1,0 +1,1 @@
+[{"payload": {"output": "False\nTrue\nFalse\nTrue", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "The last comparison worked fine because actually, a boolean is a special kind of integer: <code>True</code> corresponds to 1, <code>False</code> corresponds to 0."}, "type": "sct"}]

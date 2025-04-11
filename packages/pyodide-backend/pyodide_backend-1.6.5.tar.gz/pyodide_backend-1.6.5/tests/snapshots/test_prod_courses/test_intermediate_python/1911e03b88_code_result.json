@@ -1,0 +1,1 @@
+[{"type": "output", "payload": "     cars_per_cap        country  drives_right\nUS            809  United States          True\nAUS           731      Australia         False\nJPN           588          Japan         False"}]

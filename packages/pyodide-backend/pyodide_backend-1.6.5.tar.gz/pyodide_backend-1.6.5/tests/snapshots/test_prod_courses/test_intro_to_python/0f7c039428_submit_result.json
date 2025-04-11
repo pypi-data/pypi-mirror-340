@@ -1,0 +1,1 @@
+[{"payload": {"output": "9\n5.0\n0\n15", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "That's correct! Python can help you do the math, a characteristic that will be helpful for analysis as we grow our data skills."}, "type": "sct"}]

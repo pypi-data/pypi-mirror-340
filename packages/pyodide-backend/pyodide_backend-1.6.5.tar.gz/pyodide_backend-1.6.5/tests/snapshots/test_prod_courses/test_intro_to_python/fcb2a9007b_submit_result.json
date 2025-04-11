@@ -1,0 +1,1 @@
+[{"payload": {"output": "200\n[73 74 72 73 69 72 73 75 75 73 72]", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Nice! Time to learn something new: 2D NumPy arrays!"}, "type": "sct"}]

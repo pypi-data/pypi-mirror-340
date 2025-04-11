@@ -1,0 +1,1 @@
+[{"payload": {"output": "<class 'numpy.ndarray'>\n(4, 2)", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Great! You're ready to convert the actual MLB data to a 2D <code>numpy</code> array now!"}, "type": "sct"}]

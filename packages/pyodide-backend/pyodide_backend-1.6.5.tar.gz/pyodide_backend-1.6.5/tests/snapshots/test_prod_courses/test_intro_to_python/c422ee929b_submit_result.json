@@ -1,0 +1,1 @@
+[{"payload": {"output": "<class 'list'>\n4", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Great job! The <code>len()</code> function is extremely useful; it also works on strings to count the number of characters!"}, "type": "sct"}]

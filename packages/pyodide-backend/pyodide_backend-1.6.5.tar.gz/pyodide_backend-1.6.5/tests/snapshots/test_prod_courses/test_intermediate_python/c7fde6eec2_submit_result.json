@@ -1,0 +1,1 @@
+[{"payload": {"output": "berlin", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "As Hugo already told you: this works, but it's not very convenient. Head over to the next exercise to create a dictionary of this data."}, "type": "sct"}]

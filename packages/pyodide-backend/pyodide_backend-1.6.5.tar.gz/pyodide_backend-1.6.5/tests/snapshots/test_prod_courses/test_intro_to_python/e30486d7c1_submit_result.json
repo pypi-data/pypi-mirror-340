@@ -1,0 +1,1 @@
+[{"payload": {"output": "[20.0, 18.0, 11.25, 10.75, 9.5]", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Cool! Head over to the video on Python methods."}, "type": "sct"}]

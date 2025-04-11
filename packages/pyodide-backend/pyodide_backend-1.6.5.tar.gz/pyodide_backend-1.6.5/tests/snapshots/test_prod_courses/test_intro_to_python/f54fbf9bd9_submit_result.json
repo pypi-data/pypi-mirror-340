@@ -1,0 +1,1 @@
+[{"payload": {"output": "Hello! How are you?Hello! How are you?", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Nice. Notice how <code>intro + intro</code> causes <code>\"Hello! How are you?\"</code> and <code>\"Hello! How are you?\"</code> to be pasted together."}, "type": "sct"}]

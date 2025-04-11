@@ -1,0 +1,1 @@
+[{"payload": {"output": "poolhouse\nPOOLHOUSE\n3", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Nice! Notice from the printouts that the <code>upper()</code> method does not change the object it is called on. This will be different for lists in the next exercise!"}, "type": "sct"}]

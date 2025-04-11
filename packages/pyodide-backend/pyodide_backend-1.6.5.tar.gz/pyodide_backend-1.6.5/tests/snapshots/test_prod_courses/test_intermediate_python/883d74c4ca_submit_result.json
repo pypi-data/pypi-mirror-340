@@ -1,0 +1,1 @@
+[{"payload": {"output": "[ True  True False False]\n[False  True  True False]", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Good job. It appears that the living room and bedroom in <code>my_house</code> are smaller than the corresponding areas in <code>your_house</code>."}, "type": "sct"}]

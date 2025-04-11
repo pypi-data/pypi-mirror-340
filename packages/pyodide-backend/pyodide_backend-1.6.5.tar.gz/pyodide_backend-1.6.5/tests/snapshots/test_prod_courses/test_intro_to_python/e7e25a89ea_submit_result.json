@@ -1,0 +1,1 @@
+[{"payload": {"output": "[74 74 72 ... 75 75 73]\n[1.8796 1.8796 1.8288 ... 1.905  1.905  1.8542]", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Nice! In the blink of an eye, <code>numpy</code> performs multiplications on more than 1000 height measurements."}, "type": "sct"}]
