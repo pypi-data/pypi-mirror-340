@@ -1,0 +1,10 @@
+einops
+fire
+huggingface_hub
+matplotlib
+numpy
+opt-einsum
+safetensors
+torch
+torchvision
+tqdm
