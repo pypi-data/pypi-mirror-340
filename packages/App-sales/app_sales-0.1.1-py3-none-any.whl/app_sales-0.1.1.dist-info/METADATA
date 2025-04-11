@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: App_sales
+Version: 0.1.1
+Summary: App para gestionar ventas, precios, impuestos y descuentos
+Home-page: https://github.com/FRANKISKAY/Sales_app
+Author: Frank Muatino Mundaca
+Author-email: fmmundaca@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: summary
+
+# App of Sales
+
+Este Paquete proporciona funcionalidades para gestionar ventas, incluyendo calculos de precios, impuestos y descuentos.
+
+## Instalacion
+
+Puedes instalar el paquete usando:
+
+```bash
+pip install .
+"

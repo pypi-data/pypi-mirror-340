@@ -1,0 +1,13 @@
+app_sales/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app_sales/descuentos.py,sha256=ccFrdnvq2NWOaYgnjMQ5TzuBbOB8GyMdcYdTBUfNKrg,362
+app_sales/exceptions.py,sha256=ZjuUpkpUXukljevGBz6L8kuCe54o1PRHIJKWal7dm4I,106
+app_sales/gestor_ventas.py,sha256=V0_lMCda58rrz9NbHMGSG1C6qqHQ09Suzgsb4aGroSg,696
+app_sales/impuestos.py,sha256=I0ZotvnEtb3BM0VHd9ORxjItuemt2crVTOTORf451a0,348
+app_sales/precios.py,sha256=ZbEQ2V04srhvINsIvVKAoNZnH3oCzHtmgXd4nFi3ZbQ,193
+app_sales-0.1.1.dist-info/licenses/LICENCE,sha256=MtoB8GdZpukrqSYU0WoQrqyzV5aJgj9GaAL1xfIGBww,1157
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_app_sales.py,sha256=z5cH4njyCbm2MuTRreDQ5K7i0Nwh4hLSLe_GOxPrBN4,795
+app_sales-0.1.1.dist-info/METADATA,sha256=CYXpfdGvxmc04hC8M5czdvkVpc5o0CKhLiiG3WhIzMA,863
+app_sales-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+app_sales-0.1.1.dist-info/top_level.txt,sha256=r5y8mzNqXIa1KSvFEpqlwl-X-jiQJYfAP3Qlmpo0zvU,16
+app_sales-0.1.1.dist-info/RECORD,,
