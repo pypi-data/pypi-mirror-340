@@ -1,0 +1,12 @@
+cite_master/Papers.txt,sha256=bzBocX5JEUeOgQRbPujOGH8MjGBLbFXzVwmdLCU9WfI,372
+cite_master/__init__.py,sha256=squFEVYtuoHF2bhaBg90ga4oZAUmFbBE2GvKfey66jI,293
+cite_master/__main__.py,sha256=RPFZXqY4U-ca8NjDcG0pzQvZUR11GvzWMSUH4IY81Io,6202
+cite_master/extract_doi.py,sha256=-T38PJ15rDVBKmvwtgQwdM9t3C3UN8xoZ64VqcpJPWg,1764
+cite_master/fetch_bibtex.py,sha256=jlpjPV836me89Kf5m7QNYbuGNSlgoUt2CLnCYY3-m3M,563
+cite_master/formatter.py,sha256=8REDowFMgIyM6hwwONxdicpf7U2UPl8U_RpgSZzqUKU,2665
+cite_master-0.1.0.dist-info/LICENSE,sha256=L0QS8txjrp2z3TYzO1hvE6wxH92SqfTyLRqdZz5p584,1095
+cite_master-0.1.0.dist-info/METADATA,sha256=t2FMVe6sYazHQyj17nYd_cryS0mGYt3Ql7R54EotzJU,5179
+cite_master-0.1.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+cite_master-0.1.0.dist-info/entry_points.txt,sha256=uGnrf0U_v_0pcF5JaSxe42fbzlsJRMMpeWhKC05OkTo,54
+cite_master-0.1.0.dist-info/top_level.txt,sha256=EDDDfd9U1ETrmZ5LA8wGvbPsqWcCWa1bj6fV3h4uw7E,12
+cite_master-0.1.0.dist-info/RECORD,,
