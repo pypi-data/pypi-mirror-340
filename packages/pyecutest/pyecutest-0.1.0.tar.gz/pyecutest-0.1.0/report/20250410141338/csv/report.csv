@@ -1,0 +1,7 @@
+id,module,name,file,doc,markers,status,message,duration
+tests/test_basic_ecu.py::test_can_message_send,tests.test_basic_ecu,test_can_message_send,tests\test_basic_ecu.py,Test basic CAN message sending functionality.,,passed,,0.00010579964146018028
+tests/test_basic_ecu.py::test_serial_communication,tests.test_basic_ecu,test_serial_communication,tests\test_basic_ecu.py,Test basic serial communication.,,passed,,0.00022580008953809738
+tests/test_basic_ecu.py::test_parameter_read[4096-85],tests.test_basic_ecu,test_parameter_read[4096-85],tests\test_basic_ecu.py,Test parameter reading with different values.,parametrize,failed,"AssertionError: Invalid response format
+assert b'VALUE=' in b'ERROR\n'",0.00032139988616108894
+tests/test_basic_ecu.py::test_parameter_read[8192-170],tests.test_basic_ecu,test_parameter_read[8192-170],tests\test_basic_ecu.py,Test parameter reading with different values.,parametrize,failed,"AssertionError: Invalid response format
+assert b'VALUE=' in b'ERROR\n'",0.0002380996011197567

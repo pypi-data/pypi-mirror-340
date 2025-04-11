@@ -1,0 +1,3 @@
+Connecting to serial port COM1 at 9600 bps
+Writing to serial port: 5245414420504152414d203078313030300d0a
+Parameter read response: b'VALUE=0x55\n'

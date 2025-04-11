@@ -1,0 +1,6 @@
+Sending CAN message: ID=0x7DF, Data=['0x2', '0x10', '0x1']
+Diagnostic response: b'\x03P\x01'
+Writing to serial port: 5245414420504152414d203078313030300d0a
+Parameter read response: b'VALUE=0x55\n'
+Writing to serial port: 575249544520504152414d2030783130303020307835350d0a
+Parameter write response: b'VALUE=0x55\n'

@@ -1,0 +1,8 @@
+id,module,name,file,doc,markers,status,message,duration
+tests/test_ecu_communication.py::test_ecu_diagnostic_request,tests.test_ecu_communication,test_ecu_diagnostic_request,tests\test_ecu_communication.py,Test sending diagnostic request to ECU.,,passed,,0.00010480033233761787
+tests/test_ecu_communication.py::test_ecu_parameter_read,tests.test_ecu_communication,test_ecu_parameter_read,tests\test_ecu_communication.py,Test reading parameter from ECU via serial interface.,,passed,,8.879974484443665e-05
+tests/test_ecu_communication.py::test_ecu_communication_sequence,tests.test_ecu_communication,test_ecu_communication_sequence,tests\test_ecu_communication.py,Test a complete ECU communication sequence.,,failed,"AssertionError: Parameter update failed
+assert b'UPDATE_OK' in b'VALUE=0x55\n'",0.00025749998167157173
+tests/test_ecu_communication.py::test_ecu_parameter_values[4096-85],tests.test_ecu_communication,test_ecu_parameter_values[4096-85],tests\test_ecu_communication.py,Test reading multiple parameter values.,parametrize,passed,,0.00013319961726665497
+tests/test_ecu_communication.py::test_ecu_parameter_values[4097-170],tests.test_ecu_communication,test_ecu_parameter_values[4097-170],tests\test_ecu_communication.py,Test reading multiple parameter values.,parametrize,passed,,9.180000051856041e-05
+tests/test_ecu_communication.py::test_ecu_parameter_values[4098-255],tests.test_ecu_communication,test_ecu_parameter_values[4098-255],tests\test_ecu_communication.py,Test reading multiple parameter values.,parametrize,passed,,8.299993351101875e-05

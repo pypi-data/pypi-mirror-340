@@ -1,0 +1,2 @@
+Connecting to CAN channel 0 at 500000 bps
+Sending CAN message: ID=0x7DF, Data=['0x2', '0x10', '0x1']

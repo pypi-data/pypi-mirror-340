@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>core.evaluation &mdash; PyECUTest  文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=7d86a446"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=beaddf03"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            PyECUTest
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">内容:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">core</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PyECUTest</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">模块代码</a></li>
+      <li class="breadcrumb-item active">core.evaluation</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>core.evaluation 源代码</h1><div class="highlight"><pre>
+<div class="viewcode-block" id="Comparison">
+<a class="viewcode-back" href="../../core.html#core.evaluation.Comparison">[文档]</a>
+<span></span><span class="k">class</span><span class="w"> </span><span class="nc">Comparison</span><span class="p">:</span>
+<div class="viewcode-block" id="Comparison.__init__">
+<a class="viewcode-back" href="../../core.html#core.evaluation.Comparison.__init__">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">custom_function</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">type_of_timeoption</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">duration_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">measurement</span> <span class="o">=</span> <span class="n">measurement</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">type_of_tolerance</span> <span class="o">=</span> <span class="n">type_of_tolerance</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tolerance_value</span> <span class="o">=</span> <span class="n">tolerance_value</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">type_of_timeoption</span> <span class="o">=</span> <span class="n">type_of_timeoption</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="n">timeout</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timeout_unit</span> <span class="o">=</span> <span class="n">timeout_unit</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">=</span> <span class="n">duration</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">duration_unit</span> <span class="o">=</span> <span class="n">duration_unit</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">timeout_calculation</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">time_calculation</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">custom_function</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">custom_function</span> <span class="o">=</span> <span class="n">custom_function</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">custom_function</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="n">valid_measurement</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="s2">&quot;&gt;=&quot;</span><span class="p">,</span><span class="s2">&quot;&gt;&quot;</span><span class="p">,</span><span class="s2">&quot;&lt;=&quot;</span><span class="p">,</span><span class="s2">&quot;&lt;&quot;</span><span class="p">,</span><span class="s2">&quot;!=&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">measurement</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">valid_measurement</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid measurement: </span><span class="si">{</span><span class="n">measurement</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">type_of_tolerance</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;absolute&quot;</span><span class="p">,</span><span class="s2">&quot;percentage&quot;</span><span class="p">]:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid type of tolerance: </span><span class="si">{</span><span class="n">type_of_tolerance</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">type_of_timeoption</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">type_of_timeoption</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;finallyTrueOption&quot;</span><span class="p">,</span><span class="s2">&quot;generallyTrueOption&quot;</span><span class="p">,</span><span class="s2">&quot;trueForWithinOption&quot;</span><span class="p">]:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid type of time option: </span><span class="si">{</span><span class="n">type_of_timeoption</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">type_of_tolerance</span> <span class="o">==</span> <span class="s2">&quot;absolute&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">tolerance_value</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Tolerance value must be non-negative for absolute tolerance&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="n">type_of_tolerance</span> <span class="o">==</span> <span class="s2">&quot;percentage&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">tolerance_value</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">tolerance_value</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Percentage tolerance must be between 0 and 100&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">custom_function</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">custom_function</span><span class="p">,</span><span class="nb">callable</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Custom function must be a callable&quot;</span><span class="p">)</span></div>
+
+
+
+            
+<div class="viewcode-block" id="Comparison.evaluate">
+<a class="viewcode-back" href="../../core.html#core.evaluation.Comparison.evaluate">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">evaluate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">actual_value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">actual_value</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">expected_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Actual value or expected value is None&quot;</span><span class="p">)</span>
+            <span class="c1"># return False</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">custom_function</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">custom_function</span><span class="p">(</span><span class="n">actual_value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement</span> <span class="o">==</span> <span class="s2">&quot;==&quot;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">actual_value</span><span class="p">,</span><span class="nb">str</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">expected_value</span><span class="p">,</span><span class="nb">str</span><span class="p">):</span>
+                <span class="k">return</span> <span class="n">actual_value</span> <span class="o">==</span> <span class="n">expected_value</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">tolerance_calculation</span><span class="p">(</span><span class="n">actual_value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement</span> <span class="o">==</span> <span class="s2">&quot;&gt;=&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">actual_value</span> <span class="o">&gt;=</span> <span class="n">expected_value</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement</span> <span class="o">==</span> <span class="s2">&quot;&gt;&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">actual_value</span> <span class="o">&gt;</span> <span class="n">expected_value</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement</span> <span class="o">==</span> <span class="s2">&quot;&lt;=&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">actual_value</span> <span class="o">&lt;=</span> <span class="n">expected_value</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement</span> <span class="o">==</span> <span class="s2">&quot;&lt;&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">actual_value</span> <span class="o">&lt;</span> <span class="n">expected_value</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">measurement</span> <span class="o">==</span> <span class="s2">&quot;!=&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">actual_value</span> <span class="o">!=</span> <span class="n">expected_value</span></div>
+
+            
+
+<div class="viewcode-block" id="Comparison.tolerance_calculation">
+<a class="viewcode-back" href="../../core.html#core.evaluation.Comparison.tolerance_calculation">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">tolerance_calculation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">actual_value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_of_tolerance</span> <span class="o">==</span> <span class="s2">&quot;absolute&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="n">actual_value</span> <span class="o">-</span> <span class="n">expected_value</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tolerance_value</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">type_of_tolerance</span> <span class="o">==</span> <span class="s2">&quot;percentage&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">abs</span><span class="p">(</span><span class="n">actual_value</span> <span class="o">-</span> <span class="n">expected_value</span><span class="p">)</span> <span class="o">/</span> <span class="n">expected_value</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">tolerance_value</span><span class="o">*</span><span class="mf">0.01</span></div>
+
+
+    
+<div class="viewcode-block" id="Comparison.time_calculation">
+<a class="viewcode-back" href="../../core.html#core.evaluation.Comparison.time_calculation">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">time_calculation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout_unit</span> <span class="o">==</span> <span class="s2">&quot;s&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout_unit</span> <span class="o">==</span> <span class="s2">&quot;ms&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">/</span> <span class="mi">1000</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout_unit</span> <span class="o">==</span> <span class="s2">&quot;min&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">*</span> <span class="mi">60</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout_unit</span> <span class="o">==</span> <span class="s2">&quot;h&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">*</span> <span class="mi">3600</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout_unit</span> <span class="o">==</span> <span class="s2">&quot;d&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span> <span class="o">*</span> <span class="mi">86400</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid timeout unit: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">timeout_unit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration_unit</span> <span class="o">==</span> <span class="s2">&quot;s&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration_unit</span> <span class="o">==</span> <span class="s2">&quot;ms&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">/</span> <span class="mi">1000</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration_unit</span> <span class="o">==</span> <span class="s2">&quot;min&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">*</span> <span class="mi">60</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration_unit</span> <span class="o">==</span> <span class="s2">&quot;h&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">*</span> <span class="mi">3600</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration_unit</span> <span class="o">==</span> <span class="s2">&quot;d&quot;</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">duration</span> <span class="o">*</span> <span class="mi">86400</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid duration unit: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">duration_unit</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+</div>
+
+            
+        
+        
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, Your Name。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

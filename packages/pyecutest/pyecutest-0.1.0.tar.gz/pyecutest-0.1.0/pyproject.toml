@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "pyecutest"
+version = "0.1.0"
+description = ""
+authors = ["guwenjun1 <guwenjun1@xiaomi.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^8.3.2"
+pymysql = "^1.1.1"
+allure-pytest = "^2.13.5"
+uiautomator2 = "^3.2.2"
+py-canoe = "^3.0.1"
+requests = "^2.32.3"
+cantools = "^39.4.8"
+pythonnet = "^3.0.4"
+watchdog = "^5.0.3"
+pyyaml = "^6.0.2"
+pandas = "^2.2.3"
+openpyxl = "^3.1.5"
+pytest-assume = "^2.4.3"
+pytest-csv = "^3.0.0"
+psutil = "^6.1.0"
+pytest-repeat = "^0.9.3"
+intelhex = "^2.3.0"
+pya2l = "^0.1.4"
+pyecharts = "^2.0.7"
+niveristand = "^3.2.2"
+pytest-sugar = "^1.0.0"
+pywin32 = "308"
+pytest-count = "^0.1.0"
+
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"

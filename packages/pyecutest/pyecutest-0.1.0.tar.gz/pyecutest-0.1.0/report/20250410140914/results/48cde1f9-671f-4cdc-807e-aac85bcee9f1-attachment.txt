@@ -1,0 +1,2 @@
+Writing to serial port: 5245414420504152414d203078313030300d0a
+Parameter read response for 0x1000: b'VALUE=0x55\n'

@@ -1,0 +1,966 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>core package &mdash; PyECUTest  文档</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=7d86a446"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="genindex.html" />
+    <link rel="search" title="搜索" href="search.html" />
+    <link rel="prev" title="core" href="modules.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PyECUTest
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">内容:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">core</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">core package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-core.evaluation">core.evaluation module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#core.evaluation.Comparison"><code class="docutils literal notranslate"><span class="pre">Comparison</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-core.executor">core.executor module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#core.executor.TestExecutor"><code class="docutils literal notranslate"><span class="pre">TestExecutor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-core.signal_mapper">core.signal_mapper module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#core.signal_mapper.SignalMapper"><code class="docutils literal notranslate"><span class="pre">SignalMapper</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-core">Module contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#core.Comparison"><code class="docutils literal notranslate"><span class="pre">Comparison</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#core.TestExecutor"><code class="docutils literal notranslate"><span class="pre">TestExecutor</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#core.SignalMapper"><code class="docutils literal notranslate"><span class="pre">SignalMapper</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyECUTest</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">core</a></li>
+      <li class="breadcrumb-item active">core package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/core.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="core-package">
+<h1>core package<a class="headerlink" href="#core-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-core.evaluation">
+<span id="core-evaluation-module"></span><h2>core.evaluation module<a class="headerlink" href="#module-core.evaluation" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="core.evaluation.Comparison">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">core.evaluation.</span></span><span class="sig-name descname"><span class="pre">Comparison</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.evaluation.Comparison" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="core.evaluation.Comparison.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison.__init__"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.evaluation.Comparison.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.evaluation.Comparison.evaluate">
+<span class="sig-name descname"><span class="pre">evaluate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actual_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison.evaluate"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.evaluation.Comparison.evaluate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.evaluation.Comparison.tolerance_calculation">
+<span class="sig-name descname"><span class="pre">tolerance_calculation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actual_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison.tolerance_calculation"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.evaluation.Comparison.tolerance_calculation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.evaluation.Comparison.time_calculation">
+<span class="sig-name descname"><span class="pre">time_calculation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison.time_calculation"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.evaluation.Comparison.time_calculation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-core.executor">
+<span id="core-executor-module"></span><h2>core.executor module<a class="headerlink" href="#module-core.executor" title="Link to this heading"></a></h2>
+<p>执行器模块
+这个模块是执行器模块，用于执行测试脚本和链接测试工具</p>
+<dl class="simple">
+<dt>Classes:</dt><dd><p>TestExecutor: 测试执行器类</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="core.executor.TestExecutor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">core.executor.</span></span><span class="sig-name descname"><span class="pre">TestExecutor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tools</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tools_status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Dev_Mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>测试执行器</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tools</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tools_status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Dev_Mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.__init__"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.read_bus">
+<span class="sig-name descname"><span class="pre">read_bus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_bus"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.read_bus" title="Link to this definition"></a></dt>
+<dd><p>读取指定总线信号的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- 读写总线工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.write_bus">
+<span class="sig-name descname"><span class="pre">write_bus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_bus"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.write_bus" title="Link to this definition"></a></dt>
+<dd><p>写入指定总线信号</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望写入的信号名</p></li>
+<li><p><strong>value</strong> (<em>float</em>) -- 期望写入的信号值</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) -- 超时时间。默认值为5。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>optional</em>) -- 误差值。默认值为0.1。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>optional</em>) -- 误差计算方式。默认值为&quot;absolute&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- 读写总线工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 写入失败时,抛出异常。</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.read_calibration">
+<span class="sig-name descname"><span class="pre">read_calibration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_calibration"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.read_calibration" title="Link to this definition"></a></dt>
+<dd><p>读取指定标定信号的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- INCA工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.write_calibration">
+<span class="sig-name descname"><span class="pre">write_calibration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_calibration"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.write_calibration" title="Link to this definition"></a></dt>
+<dd><p>写入指定标定量</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望写入的信号名</p></li>
+<li><p><strong>value</strong> (<em>float</em>) -- 期望写入的信号值</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) -- 超时时间。默认值为5。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>optional</em>) -- 误差值。默认值为0.1。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>optional</em>) -- 误差计算方式。默认值为&quot;absolute&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- INCA工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 写入失败时,抛出异常。</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.read_measurement">
+<span class="sig-name descname"><span class="pre">read_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_measurement"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.read_measurement" title="Link to this definition"></a></dt>
+<dd><p>读取指定测量信号的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- INCA工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.write_veristand">
+<span class="sig-name descname"><span class="pre">write_veristand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_veristand"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.write_veristand" title="Link to this definition"></a></dt>
+<dd><p>写入指定VeriStand信号</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望写入的信号名</p></li>
+<li><p><strong>value</strong> (<em>float</em>) -- 期望写入的信号值</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) -- 超时时间。默认值为5。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>optional</em>) -- 误差值。默认值为0.1。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>optional</em>) -- 误差计算方式。默认值为&quot;absolute&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- VeriStand工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 写入失败时,抛出异常。</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.read_veristand">
+<span class="sig-name descname"><span class="pre">read_veristand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_veristand"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.read_veristand" title="Link to this definition"></a></dt>
+<dd><p>读取指定VeriStand信号的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- VeriStand工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.read_sys_var">
+<span class="sig-name descname"><span class="pre">read_sys_var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_sys_var"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.read_sys_var" title="Link to this definition"></a></dt>
+<dd><p>读取指定系统变量的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- 读写总线工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.write_sys_var">
+<span class="sig-name descname"><span class="pre">write_sys_var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_sys_var"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.write_sys_var" title="Link to this definition"></a></dt>
+<dd><p>写入指定系统变量</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望写入的信号名</p></li>
+<li><p><strong>value</strong> (<em>float</em>) -- 期望写入的信号值</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) -- 超时时间。默认值为5。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>optional</em>) -- 误差值。默认值为0.1。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>optional</em>) -- 误差计算方式。默认值为&quot;absolute&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- 读写总线工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 写入失败时,抛出异常。</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.read_sys_var_array">
+<span class="sig-name descname"><span class="pre">read_sys_var_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_sys_var_array"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.read_sys_var_array" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.write_sys_var_array">
+<span class="sig-name descname"><span class="pre">write_sys_var_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_sys_var_array"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.write_sys_var_array" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.write_mi_ant">
+<span class="sig-name descname"><span class="pre">write_mi_ant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signal_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_mi_ant"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.write_mi_ant" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.read_mi_ant">
+<span class="sig-name descname"><span class="pre">read_mi_ant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_mi_ant"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.read_mi_ant" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.close_mi_ant">
+<span class="sig-name descname"><span class="pre">close_mi_ant</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.close_mi_ant"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.close_mi_ant" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.adb_tap">
+<span class="sig-name descname"><span class="pre">adb_tap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_tap"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.adb_tap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.adb_tap_by_text">
+<span class="sig-name descname"><span class="pre">adb_tap_by_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_tap_by_text"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.adb_tap_by_text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.adb_tap_by_text_contains">
+<span class="sig-name descname"><span class="pre">adb_tap_by_text_contains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_tap_by_text_contains"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.adb_tap_by_text_contains" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.adb_swipe">
+<span class="sig-name descname"><span class="pre">adb_swipe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_swipe"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.adb_swipe" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.executor.TestExecutor.adb_input">
+<span class="sig-name descname"><span class="pre">adb_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_input"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.executor.TestExecutor.adb_input" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-core.signal_mapper">
+<span id="core-signal-mapper-module"></span><h2>core.signal_mapper module<a class="headerlink" href="#module-core.signal_mapper" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="core.signal_mapper.SignalMapper">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">core.signal_mapper.</span></span><span class="sig-name descname"><span class="pre">SignalMapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">can_json_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lin_json_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.signal_mapper.SignalMapper" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="core.signal_mapper.SignalMapper.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">can_json_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lin_json_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper.__init__"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.signal_mapper.SignalMapper.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.signal_mapper.SignalMapper.get_config">
+<span class="sig-name descname"><span class="pre">get_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper.get_config"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.signal_mapper.SignalMapper.get_config" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.signal_mapper.SignalMapper.get_bus_json">
+<span class="sig-name descname"><span class="pre">get_bus_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper.get_bus_json"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.signal_mapper.SignalMapper.get_bus_json" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.signal_mapper.SignalMapper.get_signal_info">
+<span class="sig-name descname"><span class="pre">get_signal_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper.get_signal_info"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.signal_mapper.SignalMapper.get_signal_info" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-core" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="core.Comparison">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">core.</span></span><span class="sig-name descname"><span class="pre">Comparison</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.Comparison" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="core.Comparison.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison.__init__"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.Comparison.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.Comparison.evaluate">
+<span class="sig-name descname"><span class="pre">evaluate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actual_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison.evaluate"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.Comparison.evaluate" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.Comparison.tolerance_calculation">
+<span class="sig-name descname"><span class="pre">tolerance_calculation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">actual_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison.tolerance_calculation"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.Comparison.tolerance_calculation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.Comparison.time_calculation">
+<span class="sig-name descname"><span class="pre">time_calculation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/evaluation.html#Comparison.time_calculation"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.Comparison.time_calculation" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="core.TestExecutor">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">core.</span></span><span class="sig-name descname"><span class="pre">TestExecutor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tools</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tools_status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Dev_Mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>测试执行器</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tools</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tools_status</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Dev_Mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.__init__"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.read_bus">
+<span class="sig-name descname"><span class="pre">read_bus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_bus"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.read_bus" title="Link to this definition"></a></dt>
+<dd><p>读取指定总线信号的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- 读写总线工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.write_bus">
+<span class="sig-name descname"><span class="pre">write_bus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_bus"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.write_bus" title="Link to this definition"></a></dt>
+<dd><p>写入指定总线信号</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望写入的信号名</p></li>
+<li><p><strong>value</strong> (<em>float</em>) -- 期望写入的信号值</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) -- 超时时间。默认值为5。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>optional</em>) -- 误差值。默认值为0.1。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>optional</em>) -- 误差计算方式。默认值为&quot;absolute&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- 读写总线工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 写入失败时,抛出异常。</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.read_calibration">
+<span class="sig-name descname"><span class="pre">read_calibration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_calibration"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.read_calibration" title="Link to this definition"></a></dt>
+<dd><p>读取指定标定信号的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- INCA工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.write_calibration">
+<span class="sig-name descname"><span class="pre">write_calibration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_calibration"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.write_calibration" title="Link to this definition"></a></dt>
+<dd><p>写入指定标定量</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望写入的信号名</p></li>
+<li><p><strong>value</strong> (<em>float</em>) -- 期望写入的信号值</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) -- 超时时间。默认值为5。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>optional</em>) -- 误差值。默认值为0.1。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>optional</em>) -- 误差计算方式。默认值为&quot;absolute&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- INCA工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 写入失败时,抛出异常。</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.read_measurement">
+<span class="sig-name descname"><span class="pre">read_measurement</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_measurement"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.read_measurement" title="Link to this definition"></a></dt>
+<dd><p>读取指定测量信号的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- INCA工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.write_veristand">
+<span class="sig-name descname"><span class="pre">write_veristand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_veristand"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.write_veristand" title="Link to this definition"></a></dt>
+<dd><p>写入指定VeriStand信号</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望写入的信号名</p></li>
+<li><p><strong>value</strong> (<em>float</em>) -- 期望写入的信号值</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) -- 超时时间。默认值为5。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>optional</em>) -- 误差值。默认值为0.1。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>optional</em>) -- 误差计算方式。默认值为&quot;absolute&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- VeriStand工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 写入失败时,抛出异常。</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.read_veristand">
+<span class="sig-name descname"><span class="pre">read_veristand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_veristand"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.read_veristand" title="Link to this definition"></a></dt>
+<dd><p>读取指定VeriStand信号的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- VeriStand工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.read_sys_var">
+<span class="sig-name descname"><span class="pre">read_sys_var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">measurement</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'=='</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_timeoption</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration_unit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'s'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_sys_var"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.read_sys_var" title="Link to this definition"></a></dt>
+<dd><p>读取指定系统变量的值,并进行评估。</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望读取的信号名</p></li>
+<li><p><strong>expected_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 期望读取的信号值。若为None,则不进行评估。 默认值为None。</p></li>
+<li><p><strong>measurement</strong> (<em>str</em><em>, </em><em>可选</em>) -- 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>可选</em>) -- 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。
+absolute: 绝对误差。
+percentage: 百分比误差。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>可选</em>) -- 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</p></li>
+<li><p><strong>custom_function</strong> (<em>callable</em><em>, </em><em>可选</em>) -- 自定义评估函数。 默认值为None。</p></li>
+<li><p><strong>type_of_timeoption</strong> (<em>str</em><em>, </em><em>可选</em>) -- 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。
+finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。
+generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。
+trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>可选</em>) -- 超时时间。默认值为0。</p></li>
+<li><p><strong>timeout_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+<li><p><strong>duration</strong> (<em>int</em><em>, </em><em>可选</em>) -- 持续时间。 默认值为0。</p></li>
+<li><p><strong>duration_unit</strong> (<em>str</em><em>, </em><em>可选</em>) -- 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- 读写总线工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 评估失败时,抛出异常。</p></li>
+</ul>
+</dd>
+<dt class="field-odd">返回<span class="colon">:</span></dt>
+<dd class="field-odd"><p>读取的信号值。</p>
+</dd>
+<dt class="field-even">返回类型<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.write_sys_var">
+<span class="sig-name descname"><span class="pre">write_sys_var</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type_of_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'absolute'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_sys_var"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.write_sys_var" title="Link to this definition"></a></dt>
+<dd><p>写入指定系统变量</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signal_name</strong> (<em>classmethod</em>) -- 期望写入的信号名</p></li>
+<li><p><strong>value</strong> (<em>float</em>) -- 期望写入的信号值</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) -- 超时时间。默认值为5。</p></li>
+<li><p><strong>tolerance_value</strong> (<em>float</em><em>, </em><em>optional</em>) -- 误差值。默认值为0.1。</p></li>
+<li><p><strong>type_of_tolerance</strong> (<em>str</em><em>, </em><em>optional</em>) -- 误差计算方式。默认值为&quot;absolute&quot;。</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>Exception</strong> -- 读写总线工具未配置时,抛出异常。</p></li>
+<li><p><strong>Exception</strong> -- 写入失败时,抛出异常。</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.read_sys_var_array">
+<span class="sig-name descname"><span class="pre">read_sys_var_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_sys_var_array"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.read_sys_var_array" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.write_sys_var_array">
+<span class="sig-name descname"><span class="pre">write_sys_var_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_sys_var_array"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.write_sys_var_array" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.write_mi_ant">
+<span class="sig-name descname"><span class="pre">write_mi_ant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">signal_value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.write_mi_ant"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.write_mi_ant" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.read_mi_ant">
+<span class="sig-name descname"><span class="pre">read_mi_ant</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expected_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.read_mi_ant"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.read_mi_ant" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.close_mi_ant">
+<span class="sig-name descname"><span class="pre">close_mi_ant</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.close_mi_ant"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.close_mi_ant" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.adb_tap">
+<span class="sig-name descname"><span class="pre">adb_tap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_tap"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.adb_tap" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.adb_tap_by_text">
+<span class="sig-name descname"><span class="pre">adb_tap_by_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_tap_by_text"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.adb_tap_by_text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.adb_tap_by_text_contains">
+<span class="sig-name descname"><span class="pre">adb_tap_by_text_contains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label1</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_tap_by_text_contains"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.adb_tap_by_text_contains" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.adb_swipe">
+<span class="sig-name descname"><span class="pre">adb_swipe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_x</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_y</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duration</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_swipe"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.adb_swipe" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.TestExecutor.adb_input">
+<span class="sig-name descname"><span class="pre">adb_input</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/executor.html#TestExecutor.adb_input"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.TestExecutor.adb_input" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="core.SignalMapper">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">core.</span></span><span class="sig-name descname"><span class="pre">SignalMapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">can_json_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lin_json_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.SignalMapper" title="Link to this definition"></a></dt>
+<dd><p>基类：<code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="core.SignalMapper.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">can_json_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lin_json_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper.__init__"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.SignalMapper.__init__" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.SignalMapper.get_config">
+<span class="sig-name descname"><span class="pre">get_config</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper.get_config"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.SignalMapper.get_config" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.SignalMapper.get_bus_json">
+<span class="sig-name descname"><span class="pre">get_bus_json</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper.get_bus_json"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.SignalMapper.get_bus_json" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="core.SignalMapper.get_signal_info">
+<span class="sig-name descname"><span class="pre">get_signal_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">signal_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">classmethod</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/core/signal_mapper.html#SignalMapper.get_signal_info"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#core.SignalMapper.get_signal_info" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="modules.html" class="btn btn-neutral float-left" title="core" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, Your Name。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

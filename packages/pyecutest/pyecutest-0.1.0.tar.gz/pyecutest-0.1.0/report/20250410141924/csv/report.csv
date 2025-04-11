@@ -1,0 +1,5 @@
+id,module,name,file,doc,markers,status,message,duration
+tests/test_basic_ecu.py::test_can_message_send,tests.test_basic_ecu,test_can_message_send,tests\test_basic_ecu.py,Test basic CAN message sending functionality.,,passed,,0.00010699965059757233
+tests/test_basic_ecu.py::test_serial_communication,tests.test_basic_ecu,test_serial_communication,tests\test_basic_ecu.py,Test basic serial communication.,,passed,,9.019998833537102e-05
+tests/test_basic_ecu.py::test_parameter_read[4096-85],tests.test_basic_ecu,test_parameter_read[4096-85],tests\test_basic_ecu.py,Test parameter reading with different values.,parametrize,passed,,0.00010829977691173553
+tests/test_basic_ecu.py::test_parameter_read[8192-170],tests.test_basic_ecu,test_parameter_read[8192-170],tests\test_basic_ecu.py,Test parameter reading with different values.,parametrize,passed,,9.359978139400482e-05

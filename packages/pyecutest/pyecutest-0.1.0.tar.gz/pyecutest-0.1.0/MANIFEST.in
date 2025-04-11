@@ -1,0 +1,26 @@
+include LICENSE
+include README.md
+include requirements.txt
+include pytest.ini
+
+recursive-include core *
+recursive-include common *
+recursive-include config *
+recursive-include databases *
+recursive-include doc *
+recursive-include interfaces *
+recursive-include lib *
+recursive-include log *
+recursive-include report *
+recursive-include resource *
+recursive-include scripts *
+recursive-include tests *
+
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude *.so
+global-exclude .DS_Store
+global-exclude .git
+global-exclude .gitignore
+global-exclude .pytest_cache
+global-exclude .venv 

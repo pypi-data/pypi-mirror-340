@@ -1,0 +1,910 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" data-content_root="../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>core.executor &mdash; PyECUTest  文档</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../_static/documentation_options.js?v=7d86a446"></script>
+      <script src="../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/translations.js?v=beaddf03"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            PyECUTest
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">内容:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">core</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PyECUTest</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../index.html">模块代码</a></li>
+      <li class="breadcrumb-item active">core.executor</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>core.executor 源代码</h1><div class="highlight"><pre>
+<span></span>
+<span class="sd">&quot;&quot;&quot;执行器模块</span>
+<span class="sd">这个模块是执行器模块，用于执行测试脚本和链接测试工具</span>
+
+<span class="sd">Classes:</span>
+<span class="sd">    TestExecutor: 测试执行器类</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pytest</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">yaml</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">logging</span><span class="w"> </span><span class="kn">import</span> <span class="n">Logger</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">inspect</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">re</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">core.evaluation</span><span class="w"> </span><span class="kn">import</span> <span class="n">Comparison</span>
+
+
+<div class="viewcode-block" id="TestExecutor">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor">[文档]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">TestExecutor</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    测试执行器</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<div class="viewcode-block" id="TestExecutor.__init__">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.__init__">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tools</span><span class="p">,</span> <span class="n">tools_status</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">logger</span><span class="p">,</span> <span class="n">Dev_Mode</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tools</span> <span class="o">=</span> <span class="n">tools</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tools_status</span> <span class="o">=</span> <span class="n">tools_status</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">config</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="p">:</span> <span class="n">Logger</span> <span class="o">=</span> <span class="n">logger</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">Dev_Mode</span> <span class="o">=</span> <span class="n">Dev_Mode</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span> <span class="o">=</span> <span class="n">tools_status</span><span class="p">[</span><span class="s2">&quot;canoe&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">canoe</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="s2">&quot;canoe&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">signal_mapper</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="s2">&quot;canoe&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">channel_mapping</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__canoe_network_channel_mapping</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;canoe&#39;</span><span class="p">][</span><span class="s1">&#39;project_file&#39;</span><span class="p">])</span>
+            <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">channel_mapping</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;canoe&#39;</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster_status</span> <span class="o">=</span> <span class="n">tools_status</span><span class="p">[</span><span class="s2">&quot;tsmaster&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="s2">&quot;tsmaster&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">signal_mapper</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="s2">&quot;tsmaster&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">channel_mapping</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__tsmaster_network_channel_mapping</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;tsmaster&#39;</span><span class="p">][</span><span class="s1">&#39;project_file&#39;</span><span class="p">])</span>
+            <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">channel_mapping</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;tsmaster&#39;</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">inca_status</span> <span class="o">=</span> <span class="n">tools_status</span><span class="p">[</span><span class="s2">&quot;inca&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inca_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">inca</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="s2">&quot;inca&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">inca_wrapper</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="s2">&quot;inca&quot;</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">veristand_status</span> <span class="o">=</span> <span class="n">tools_status</span><span class="p">[</span><span class="s2">&quot;veristand&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">veristand_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">veristand</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="s2">&quot;veristand&quot;</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">adb_status</span> <span class="o">=</span> <span class="n">tools_status</span><span class="p">[</span><span class="s2">&quot;adb&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">adb_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">adb</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="s2">&quot;adb&quot;</span><span class="p">]</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">mi_ant_status</span> <span class="o">=</span> <span class="n">tools_status</span><span class="p">[</span><span class="s2">&quot;mi_ant&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mi_ant_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mi_ant</span> <span class="o">=</span> <span class="n">tools</span><span class="p">[</span><span class="s2">&quot;mi_ant&quot;</span><span class="p">]</span></div>
+
+
+        
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__read_bus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="s2">&quot;canoe&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span>
+            <span class="n">depth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># __read_bus只能被read_bus所调用,因此栈中的函数从栈顶开始数应该是test_case, read_bus, __read_bus, __report_filename_and_linenumber_info</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster_status</span><span class="p">:</span>
+            <span class="n">source_can_list</span><span class="p">,</span> <span class="n">source_message_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">signal_mapper</span><span class="o">.</span><span class="n">get_signal_info</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="n">signal_value_list</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">source_can_list</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">tool</span> <span class="o">==</span> <span class="s2">&quot;canoe&quot;</span><span class="p">:</span>
+                    <span class="n">channel</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;canoe&#39;</span><span class="p">][</span><span class="n">source_can_list</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+                    <span class="n">signal_value_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">canoe</span><span class="o">.</span><span class="n">get_signal_value</span><span class="p">(</span><span class="s1">&#39;CAN&#39;</span><span class="p">,</span> <span class="n">channel</span><span class="p">,</span> <span class="n">source_message_list</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">signal_name</span><span class="o">.</span><span class="n">name</span><span class="p">))</span>
+                <span class="k">elif</span> <span class="n">tool</span> <span class="o">==</span> <span class="s2">&quot;tsmaster&quot;</span><span class="p">:</span>
+                    <span class="n">channel</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;tsmaster&#39;</span><span class="p">][</span><span class="n">source_can_list</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+                    <span class="n">signal_value_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster</span><span class="o">.</span><span class="n">get_signal_value</span><span class="p">(</span><span class="n">channel</span><span class="p">,</span> <span class="n">source_can_list</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">signal_name</span><span class="o">.</span><span class="n">node</span><span class="p">,</span>
+                                                       <span class="n">source_message_list</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">signal_name</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">signal_value_list</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;信号值不一致：</span><span class="si">{</span><span class="n">signal_value_list</span><span class="si">}</span><span class="s2">, signal name:</span><span class="si">{</span><span class="n">signal_name</span><span class="si">}</span><span class="s2">, file:</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, line:</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">signal_value_list</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;读写总线工具未配置, file:</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, line:</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="TestExecutor.read_bus">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.read_bus">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">read_bus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">expected_value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">custom_function</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">type_of_timeoption</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">duration_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; 读取指定总线信号的值,并进行评估。</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signal_name (classmethod): 期望读取的信号名</span>
+<span class="sd">            expected_value (float, 可选): 期望读取的信号值。若为None,则不进行评估。 默认值为None。</span>
+<span class="sd">            measurement (str, 可选): 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</span>
+<span class="sd">            type_of_tolerance (str, 可选): 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。</span>
+<span class="sd">                                            absolute: 绝对误差。</span>
+<span class="sd">                                            percentage: 百分比误差。</span>
+<span class="sd">            tolerance_value (float, 可选): 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</span>
+<span class="sd">            custom_function (callable, 可选): 自定义评估函数。 默认值为None。</span>
+<span class="sd">            type_of_timeoption (str, 可选): 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。</span>
+<span class="sd">                                            finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</span>
+<span class="sd">            timeout (int, 可选): 超时时间。默认值为0。</span>
+<span class="sd">            timeout_unit (str, 可选): 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+<span class="sd">            duration (int, 可选): 持续时间。 默认值为0。</span>
+<span class="sd">            duration_unit (str, 可选): 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: 读写总线工具未配置时,抛出异常。</span>
+<span class="sd">            Exception: 评估失败时,抛出异常。</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            float: 读取的信号值。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="n">tool</span> <span class="o">=</span> <span class="s2">&quot;canoe&quot;</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster_status</span><span class="p">:</span>
+            <span class="n">tool</span> <span class="o">=</span> <span class="s2">&quot;tsmaster&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;读写总线工具未配置,文件：</span><span class="si">{file_name}</span><span class="s2">,行号：</span><span class="si">{line_number}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">comparison</span> <span class="o">=</span> <span class="n">Comparison</span><span class="p">(</span><span class="n">measurement</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="p">,</span><span class="n">tolerance_value</span><span class="p">,</span><span class="n">custom_function</span><span class="p">,</span><span class="n">type_of_timeoption</span><span class="p">,</span><span class="n">timeout</span><span class="p">,</span><span class="n">timeout_unit</span><span class="p">,</span><span class="n">duration</span><span class="p">,</span><span class="n">duration_unit</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster_status</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">expected_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="c1">#不需要进行评估</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">),</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">type_of_timeoption</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="c1">#不需要进行时间处理,直接进行判断</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;CANoe读取信号不一致&quot;</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">evaluation</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">evaluation</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+                        <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;读取超时&quot;</span>
+                    <span class="n">pytest</span><span class="o">.</span><span class="n">assume</span><span class="p">(</span><span class="n">evaluation</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;实际结果：</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,预期结果：</span><span class="si">{</span><span class="n">expected_value</span><span class="si">}</span><span class="s2">, 文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, 行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">, 错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span>
+                <span class="k">elif</span> <span class="n">type_of_timeoption</span> <span class="o">==</span> <span class="s2">&quot;finallyTrueOption&quot;</span><span class="p">:</span> <span class="c1">#需要进行超时判断</span>
+                    <span class="n">timeout_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                    <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span><span class="c1"># 保证value一定被赋值,CANoe偶发读取时间过长bug</span>
+                    <span class="k">while</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">timeout_start_time</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">timeout</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># 此时CANoe读取信号持续不一致,则不进行判断</span>
+                            <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                            <span class="k">continue</span>
+                        <span class="k">if</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">):</span>
+                            <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">True</span>
+                            <span class="k">break</span>
+                        <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">evaluation</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span><span class="c1">#若读取逻辑没有走上述循环或者CANoe读取信号持续不一致,需要重新执行评估</span>
+                        <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                        <span class="n">evaluation</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">evaluation</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span><span class="c1">#分析故障原因</span>
+                        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                            <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;读取超时&quot;</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;CANoe读取信号不一致&quot;</span>
+                    <span class="k">if</span> <span class="n">evaluation</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+                        <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;读取超时&quot;</span>
+                    <span class="n">pytest</span><span class="o">.</span><span class="n">assume</span><span class="p">(</span><span class="n">evaluation</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;实际结果：</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,预期结果：</span><span class="si">{</span><span class="n">expected_value</span><span class="si">}</span><span class="s2">, 文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, 行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">, 错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span>
+                <span class="k">elif</span> <span class="n">type_of_timeoption</span> <span class="o">==</span> <span class="s2">&quot;generallyTrueOption&quot;</span><span class="p">:</span> <span class="c1">#需要进行持续时间判断</span>
+                    <span class="n">duration_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                    <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span><span class="c1"># 保证value一定被赋值,CANoe偶发读取时间过长bug</span>
+                    <span class="k">while</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">duration_start_time</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">duration</span><span class="p">:</span>
+                        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># 此时CANoe读取信号持续不一致,则不进行判断</span>
+                            <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                            <span class="k">continue</span>
+                        <span class="k">if</span> <span class="ow">not</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">):</span>
+                            <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                            <span class="k">break</span>
+                        <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">evaluation</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>  <span class="c1"># 若读取逻辑没有走上述循环或者CANoe读取信号持续不一致,需要重新执行评估</span>
+                        <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                        <span class="n">evaluation</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">evaluation</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span><span class="c1">#分析故障原因</span>
+                        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                            <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;持续时间内信号值不满足期望&quot;</span>
+                        <span class="k">else</span><span class="p">:</span>
+                            <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;CANoe读取信号不一致&quot;</span>
+                    <span class="n">pytest</span><span class="o">.</span><span class="n">assume</span><span class="p">(</span><span class="n">evaluation</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;实际结果：</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,预期结果：</span><span class="si">{</span><span class="n">expected_value</span><span class="si">}</span><span class="s2">, 文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, 行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">, 错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span>
+                <span class="k">elif</span> <span class="n">type_of_timeoption</span> <span class="o">==</span> <span class="s2">&quot;trueForWithinOption&quot;</span><span class="p">:</span> <span class="c1">#需要进行持续时间判断</span>
+                    <span class="n">timeout_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                    <span class="n">duration_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                    <span class="n">timeout_evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                    <span class="n">duration_evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                    <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span><span class="c1"># 保证value一定被赋值,CANoe偶发读取时间过长bug</span>
+                    <span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                    <span class="k">while</span> <span class="p">(</span><span class="n">t</span> <span class="o">-</span> <span class="n">timeout_start_time</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">timeout</span> <span class="ow">and</span> <span class="p">(</span><span class="n">t</span> <span class="o">-</span> <span class="n">duration_start_time</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">duration</span><span class="p">:</span>
+                        <span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                        <span class="k">if</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span> <span class="c1"># 此时CANoe读取信号持续不一致,则不进行判断</span>
+                            <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                            <span class="k">continue</span>
+                        <span class="k">if</span> <span class="n">timeout_evaluation</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span><span class="c1">#若在超时时间内,超时评估条件还未满足,则重置持续时间</span>
+                            <span class="n">duration_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                        <span class="k">if</span> <span class="n">timeout_evaluation</span> <span class="o">==</span> <span class="kc">False</span> <span class="ow">and</span> <span class="p">((</span><span class="n">comparison</span><span class="o">.</span><span class="n">timeout</span> <span class="o">+</span> <span class="n">timeout_start_time</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">duration</span><span class="p">):</span> <span class="c1">#剩余时间&lt;最小持续时间,且超时评估条件还未满足,则直接失败</span>
+                            <span class="c1"># self.logger.info(f&quot;剩余时间&lt;最小持续时间,且超时评估条件还未满足,则直接失败&quot;)</span>
+                            <span class="k">break</span>
+                        <span class="k">elif</span> <span class="n">timeout_evaluation</span> <span class="o">==</span> <span class="kc">True</span> <span class="ow">and</span> <span class="p">((</span><span class="n">t</span> <span class="o">-</span> <span class="n">duration_start_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">duration</span><span class="p">):</span> <span class="c1">#超时评估条件满足,且持续时间满足,则直接成功</span>
+                            <span class="c1"># self.logger.info(f&quot;超时评估条件满足,且持续时间满足,则直接成功&quot;)</span>
+                            <span class="n">duration_evaluation</span> <span class="o">=</span> <span class="kc">True</span>
+                            <span class="k">break</span>
+                        <span class="n">timeout_evaluation</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+                        <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                        <span class="c1"># self.logger.info(f&quot;real value:{value}&quot;)</span>
+
+                    <span class="c1"># self.logger.info(f&quot;timeout_evaluation:{timeout_evaluation}, duration_evaluation:{duration_evaluation}&quot;)</span>
+                    <span class="k">if</span> <span class="n">timeout_evaluation</span> <span class="ow">and</span> <span class="n">duration_evaluation</span><span class="p">:</span><span class="c1">#只有两者都为True,才认为评估成功</span>
+                        <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="k">elif</span> <span class="n">timeout_evaluation</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">duration_evaluation</span><span class="p">:</span> <span class="c1">#超时评估条件满足,但持续时间不满足,则重新评估</span>
+                        <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                        <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;持续时间内信号值不满足期望&quot;</span>
+                    <span class="k">elif</span> <span class="ow">not</span> <span class="n">timeout_evaluation</span><span class="p">:</span>
+                        <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                        <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;读取超时&quot;</span>
+                    <span class="k">elif</span> <span class="n">value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                        <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                        <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;CANoe读取信号不一致&quot;</span>
+                    <span class="k">else</span><span class="p">:</span>
+                        <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                        <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;未知故障&quot;</span>
+                    <span class="n">pytest</span><span class="o">.</span><span class="n">assume</span><span class="p">(</span><span class="n">evaluation</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;实际结果：</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,预期结果：</span><span class="si">{</span><span class="n">expected_value</span><span class="si">}</span><span class="s2">, 文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, 行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">, 错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;读写总线工具未配置,文件：</span><span class="si">{file_name}</span><span class="s2">,行号：</span><span class="si">{line_number}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+    
+    <span class="k">def</span><span class="w"> </span><span class="nf">__write_bus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="s2">&quot;canoe&quot;</span><span class="p">):</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="n">tool</span> <span class="o">=</span> <span class="s2">&quot;canoe&quot;</span>
+            <span class="n">channel_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;canoe&#39;</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster_status</span><span class="p">:</span>
+            <span class="n">tool</span> <span class="o">=</span> <span class="s2">&quot;tsmaster&quot;</span>
+            <span class="n">channel_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;tsmaster&#39;</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster_status</span><span class="p">:</span>
+            <span class="c1"># self.logger.info(f&quot;write_bus: {signal_name.name}, {value}&quot;)</span>
+            <span class="n">source_can_list</span><span class="p">,</span> <span class="n">source_message_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">signal_mapper</span><span class="o">.</span><span class="n">get_signal_info</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="c1">#写入总线信号</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">source_can_list</span><span class="p">)):</span>
+                <span class="n">channel</span> <span class="o">=</span> <span class="n">channel_list</span><span class="p">[</span><span class="n">source_can_list</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span>
+                <span class="k">if</span> <span class="n">tool</span> <span class="o">==</span> <span class="s2">&quot;canoe&quot;</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">canoe</span><span class="o">.</span><span class="n">set_signal_value</span><span class="p">(</span><span class="s1">&#39;CAN&#39;</span><span class="p">,</span> <span class="n">channel</span><span class="p">,</span> <span class="n">source_message_list</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">signal_name</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+                <span class="k">elif</span> <span class="n">tool</span> <span class="o">==</span> <span class="s2">&quot;tsmaster&quot;</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster</span><span class="o">.</span><span class="n">set_signal_value</span><span class="p">(</span><span class="n">channel</span><span class="p">,</span> <span class="n">source_can_list</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">signal_name</span><span class="o">.</span><span class="n">node</span><span class="p">,</span>
+                                                   <span class="n">source_message_list</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">signal_name</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">source_can_list</span><span class="p">,</span> <span class="n">source_message_list</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;读写总线工具未配置,文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">,行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="TestExecutor.write_bus">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.write_bus">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write_bus</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;写入指定总线信号</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signal_name (classmethod): 期望写入的信号名</span>
+<span class="sd">            value (float): 期望写入的信号值</span>
+<span class="sd">            timeout (int, optional): 超时时间。默认值为5。</span>
+<span class="sd">            tolerance_value (float, optional): 误差值。默认值为0.1。</span>
+<span class="sd">            type_of_tolerance (str, optional): 误差计算方式。默认值为&quot;absolute&quot;。</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: 读写总线工具未配置时,抛出异常。</span>
+<span class="sd">            Exception: 写入失败时,抛出异常。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="n">tool</span> <span class="o">=</span> <span class="s2">&quot;canoe&quot;</span>
+        <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">tsmaster_status</span><span class="p">:</span>
+            <span class="n">tool</span> <span class="o">=</span> <span class="s2">&quot;tsmaster&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;读写总线工具未配置,文件：</span><span class="si">{file_name}</span><span class="s2">,行号：</span><span class="si">{line_number}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">comparison</span> <span class="o">=</span> <span class="n">Comparison</span><span class="p">(</span><span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="o">=</span><span class="n">type_of_tolerance</span><span class="p">,</span><span class="n">tolerance_value</span><span class="o">=</span><span class="n">tolerance_value</span><span class="p">,</span><span class="n">timeout</span><span class="o">=</span><span class="n">timeout</span><span class="p">,</span><span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">type_of_timeoption</span><span class="o">=</span><span class="s2">&quot;finallyTrueOption&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__write_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span><span class="n">value</span><span class="p">,</span><span class="n">tool</span><span class="p">)</span>
+        <span class="c1">#重新读取总线信号,检查是否成功写入</span>
+        <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">real_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span><span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span><span class="c1">#读取时间过长补偿首次读取</span>
+        <span class="k">while</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">timeout</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">real_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>  <span class="c1"># 此时CANoe读取信号持续不一致,则不进行判断</span>
+                <span class="n">real_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">real_value</span><span class="p">,</span><span class="n">value</span><span class="p">):</span>
+                <span class="k">break</span>
+            <span class="n">real_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span><span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">real_value</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">real_value</span><span class="p">,</span><span class="n">value</span><span class="p">)</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+            <span class="n">real_value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_bus</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span><span class="n">tool</span><span class="o">=</span><span class="n">tool</span><span class="p">)</span><span class="c1">#读取时间过长补偿最后一次读取</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">real_value</span><span class="p">,</span><span class="n">value</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;无法正确写入总线信号</span><span class="si">{</span><span class="n">signal_name</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">,real value:</span><span class="si">{</span><span class="n">real_value</span><span class="si">}</span><span class="s2">,value:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">,行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;无法正确写入总线信号</span><span class="si">{</span><span class="n">signal_name</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">,real value:</span><span class="si">{</span><span class="n">real_value</span><span class="si">}</span><span class="s2">,value:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">,行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__read_calibration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inca_status</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">inca_wrapper</span><span class="o">.</span><span class="n">read_calibration</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;INCA工具未配置&quot;</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="TestExecutor.read_calibration">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.read_calibration">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">read_calibration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">expected_value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">custom_function</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">type_of_timeoption</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">duration_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; 读取指定标定信号的值,并进行评估。</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signal_name (classmethod): 期望读取的信号名</span>
+<span class="sd">            expected_value (float, 可选): 期望读取的信号值。若为None,则不进行评估。 默认值为None。</span>
+<span class="sd">            measurement (str, 可选): 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</span>
+<span class="sd">            type_of_tolerance (str, 可选): 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。</span>
+<span class="sd">                                            absolute: 绝对误差。</span>
+<span class="sd">                                            percentage: 百分比误差。</span>
+<span class="sd">            tolerance_value (float, 可选): 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</span>
+<span class="sd">            custom_function (callable, 可选): 自定义评估函数。 默认值为None。</span>
+<span class="sd">            type_of_timeoption (str, 可选): 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。</span>
+<span class="sd">                                            finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</span>
+<span class="sd">            timeout (int, 可选): 超时时间。默认值为0。</span>
+<span class="sd">            timeout_unit (str, 可选): 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+<span class="sd">            duration (int, 可选): 持续时间。 默认值为0。</span>
+<span class="sd">            duration_unit (str, 可选): 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: INCA工具未配置时,抛出异常。</span>
+<span class="sd">            Exception: 评估失败时,抛出异常。</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            float: 读取的信号值。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">comparison</span> <span class="o">=</span> <span class="n">Comparison</span><span class="p">(</span><span class="n">measurement</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="p">,</span><span class="n">tolerance_value</span><span class="p">,</span><span class="n">custom_function</span><span class="p">,</span><span class="n">type_of_timeoption</span><span class="p">,</span><span class="n">timeout</span><span class="p">,</span><span class="n">timeout_unit</span><span class="p">,</span><span class="n">duration</span><span class="p">,</span><span class="n">duration_unit</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inca_status</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">expected_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_calibration</span><span class="p">(</span><span class="n">signal_name</span><span class="p">),</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span><span class="p">,</span> <span class="n">error_reason</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_with_evaluation</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_calibration</span><span class="p">,</span> <span class="n">expected_value</span><span class="p">,</span> <span class="n">comparison</span><span class="p">)</span>
+                <span class="n">pytest</span><span class="o">.</span><span class="n">assume</span><span class="p">(</span><span class="n">evaluation</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;实际结果：</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,预期结果：</span><span class="si">{</span><span class="n">expected_value</span><span class="si">}</span><span class="s2">, 文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, 行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">, 错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;INCA工具未配置,文件：</span><span class="si">{file_name}</span><span class="s2">,行号：</span><span class="si">{line_number}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__write_calibration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inca_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">inca_wrapper</span><span class="o">.</span><span class="n">write_calibration</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;INCA工具未配置&quot;</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="TestExecutor.write_calibration">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.write_calibration">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write_calibration</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;写入指定标定量</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signal_name (classmethod): 期望写入的信号名</span>
+<span class="sd">            value (float): 期望写入的信号值</span>
+<span class="sd">            timeout (int, optional): 超时时间。默认值为5。</span>
+<span class="sd">            tolerance_value (float, optional): 误差值。默认值为0.1。</span>
+<span class="sd">            type_of_tolerance (str, optional): 误差计算方式。默认值为&quot;absolute&quot;。</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: INCA工具未配置时,抛出异常。</span>
+<span class="sd">            Exception: 写入失败时,抛出异常。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inca_status</span><span class="p">:</span>
+            <span class="n">comparison</span> <span class="o">=</span> <span class="n">Comparison</span><span class="p">(</span><span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span> <span class="n">type_of_tolerance</span><span class="o">=</span><span class="n">type_of_tolerance</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="n">tolerance_value</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">timeout</span><span class="p">,</span> <span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">type_of_timeoption</span><span class="o">=</span><span class="s2">&quot;finallyTrueOption&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__write_calibration</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+            <span class="n">real_value</span><span class="p">,</span> <span class="n">evaluation</span><span class="p">,</span> <span class="n">error_reason</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_with_evaluation</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_calibration</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">comparison</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">evaluation</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;无法正确写入标定量</span><span class="si">{</span><span class="n">signal_name</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">,real value:</span><span class="si">{</span><span class="n">real_value</span><span class="si">}</span><span class="s2">,value:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">,行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">,错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;无法正确写入标定量</span><span class="si">{</span><span class="n">signal_name</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">,real value:</span><span class="si">{</span><span class="n">real_value</span><span class="si">}</span><span class="s2">,value:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">,行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">,错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;INCA工具未配置,文件：</span><span class="si">{file_name}</span><span class="s2">,行号：</span><span class="si">{line_number}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__read_measurement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inca_status</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">inca_wrapper</span><span class="o">.</span><span class="n">read_measurement</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;INCA工具未配置&quot;</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="TestExecutor.read_measurement">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.read_measurement">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">read_measurement</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">expected_value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">custom_function</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">type_of_timeoption</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">duration_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; 读取指定测量信号的值,并进行评估。</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signal_name (classmethod): 期望读取的信号名</span>
+<span class="sd">            expected_value (float, 可选): 期望读取的信号值。若为None,则不进行评估。 默认值为None。</span>
+<span class="sd">            measurement (str, 可选): 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</span>
+<span class="sd">            type_of_tolerance (str, 可选): 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。</span>
+<span class="sd">                                            absolute: 绝对误差。</span>
+<span class="sd">                                            percentage: 百分比误差。</span>
+<span class="sd">            tolerance_value (float, 可选): 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</span>
+<span class="sd">            custom_function (callable, 可选): 自定义评估函数。 默认值为None。</span>
+<span class="sd">            type_of_timeoption (str, 可选): 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。</span>
+<span class="sd">                                            finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</span>
+<span class="sd">            timeout (int, 可选): 超时时间。默认值为0。</span>
+<span class="sd">            timeout_unit (str, 可选): 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+<span class="sd">            duration (int, 可选): 持续时间。 默认值为0。</span>
+<span class="sd">            duration_unit (str, 可选): 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: INCA工具未配置时,抛出异常。</span>
+<span class="sd">            Exception: 评估失败时,抛出异常。</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            float: 读取的信号值。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">comparison</span> <span class="o">=</span> <span class="n">Comparison</span><span class="p">(</span><span class="n">measurement</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="p">,</span><span class="n">tolerance_value</span><span class="p">,</span><span class="n">custom_function</span><span class="p">,</span><span class="n">type_of_timeoption</span><span class="p">,</span><span class="n">timeout</span><span class="p">,</span><span class="n">timeout_unit</span><span class="p">,</span><span class="n">duration</span><span class="p">,</span><span class="n">duration_unit</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">inca_status</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">expected_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_measurement</span><span class="p">(</span><span class="n">signal_name</span><span class="p">),</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span><span class="p">,</span> <span class="n">error_reason</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_with_evaluation</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_measurement</span><span class="p">,</span> <span class="n">expected_value</span><span class="p">,</span> <span class="n">comparison</span><span class="p">)</span>
+                <span class="n">pytest</span><span class="o">.</span><span class="n">assume</span><span class="p">(</span><span class="n">evaluation</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;实际结果：</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,预期结果：</span><span class="si">{</span><span class="n">expected_value</span><span class="si">}</span><span class="s2">, 文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, 行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">, 错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;INCA工具未配置,文件：</span><span class="si">{file_name}</span><span class="s2">,行号：</span><span class="si">{line_number}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.write_veristand">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.write_veristand">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write_veristand</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">value</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; </span>
+<span class="sd">        写入指定VeriStand信号</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signal_name (classmethod): 期望写入的信号名</span>
+<span class="sd">            value (float): 期望写入的信号值</span>
+<span class="sd">            timeout (int, optional): 超时时间。默认值为5。</span>
+<span class="sd">            tolerance_value (float, optional): 误差值。默认值为0.1。</span>
+<span class="sd">            type_of_tolerance (str, optional): 误差计算方式。默认值为&quot;absolute&quot;。</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: VeriStand工具未配置时,抛出异常。</span>
+<span class="sd">            Exception: 写入失败时,抛出异常。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">veristand_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;write_veristand: </span><span class="si">{</span><span class="n">signal_name</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">veristand</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+            <span class="n">comparison</span> <span class="o">=</span> <span class="n">Comparison</span><span class="p">(</span><span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span> <span class="n">type_of_tolerance</span><span class="o">=</span><span class="n">type_of_tolerance</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="n">tolerance_value</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">timeout</span><span class="p">,</span> <span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">type_of_timeoption</span><span class="o">=</span><span class="s2">&quot;finallyTrueOption&quot;</span><span class="p">)</span>
+            <span class="n">real_value</span><span class="p">,</span> <span class="n">evaluation</span><span class="p">,</span> <span class="n">error_reason</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_with_evaluation</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_veristand</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">comparison</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">evaluation</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;无法正确写入VeriStand信号,real value:</span><span class="si">{</span><span class="n">real_value</span><span class="si">}</span><span class="s2">,value:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">,行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">,错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span>
+                    <span class="sa">f</span><span class="s2">&quot;无法正确写入VeriStand信号,real value:</span><span class="si">{</span><span class="n">real_value</span><span class="si">}</span><span class="s2">,value:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">,行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">,错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;VeriStand工具未配置,文件：</span><span class="si">{file_name}</span><span class="s2">,行号：</span><span class="si">{line_number}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__read_veristand</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">veristand_status</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">veristand</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">value</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;VeriStand工具未配置, file:</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, line:</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<div class="viewcode-block" id="TestExecutor.read_veristand">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.read_veristand">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">read_veristand</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">expected_value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">custom_function</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">type_of_timeoption</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">duration_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; 读取指定VeriStand信号的值,并进行评估。</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signal_name (classmethod): 期望读取的信号名</span>
+<span class="sd">            expected_value (float, 可选): 期望读取的信号值。若为None,则不进行评估。 默认值为None。</span>
+<span class="sd">            measurement (str, 可选): 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</span>
+<span class="sd">            type_of_tolerance (str, 可选): 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。</span>
+<span class="sd">                                            absolute: 绝对误差。</span>
+<span class="sd">                                            percentage: 百分比误差。</span>
+<span class="sd">            tolerance_value (float, 可选): 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</span>
+<span class="sd">            custom_function (callable, 可选): 自定义评估函数。 默认值为None。</span>
+<span class="sd">            type_of_timeoption (str, 可选): 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。</span>
+<span class="sd">                                            finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</span>
+<span class="sd">            timeout (int, 可选): 超时时间。默认值为0。</span>
+<span class="sd">            timeout_unit (str, 可选): 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+<span class="sd">            duration (int, 可选): 持续时间。 默认值为0。</span>
+<span class="sd">            duration_unit (str, 可选): 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: VeriStand工具未配置时,抛出异常。</span>
+<span class="sd">            Exception: 评估失败时,抛出异常。</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            float: 读取的信号值。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">comparison</span> <span class="o">=</span> <span class="n">Comparison</span><span class="p">(</span><span class="n">measurement</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="p">,</span><span class="n">tolerance_value</span><span class="p">,</span><span class="n">custom_function</span><span class="p">,</span><span class="n">type_of_timeoption</span><span class="p">,</span><span class="n">timeout</span><span class="p">,</span><span class="n">timeout_unit</span><span class="p">,</span><span class="n">duration</span><span class="p">,</span><span class="n">duration_unit</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">veristand_status</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">expected_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_veristand</span><span class="p">(</span><span class="n">signal_name</span><span class="p">),</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span><span class="p">,</span> <span class="n">error_reason</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_with_evaluation</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_veristand</span><span class="p">,</span> <span class="n">expected_value</span><span class="p">,</span> <span class="n">comparison</span><span class="p">)</span>
+                <span class="n">pytest</span><span class="o">.</span><span class="n">assume</span><span class="p">(</span><span class="n">evaluation</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;实际结果：</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,预期结果：</span><span class="si">{</span><span class="n">expected_value</span><span class="si">}</span><span class="s2">, 文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, 行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">, 错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;VeriStand工具未配置, file:</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, line:</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__read_sys_var</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">var_name</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="n">sys_variable</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe</span><span class="o">.</span><span class="n">get_sys_variable</span><span class="p">(</span><span class="n">var_name</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">sys_variable</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;读写总线工具未配置&quot;</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="TestExecutor.read_sys_var">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.read_sys_var">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">read_sys_var</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">var_name</span><span class="p">,</span> <span class="n">expected_value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">custom_function</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">type_of_timeoption</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">duration_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot; 读取指定系统变量的值,并进行评估。</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signal_name (classmethod): 期望读取的信号名</span>
+<span class="sd">            expected_value (float, 可选): 期望读取的信号值。若为None,则不进行评估。 默认值为None。</span>
+<span class="sd">            measurement (str, 可选): 评估标准。支持以下参数：&quot;==&quot;,&quot;&gt;=&quot;,&quot;&gt;&quot;,&quot;&lt;=&quot;,&quot;&lt;&quot;,&quot;!=&quot;。 默认值为&quot;==&quot;。</span>
+<span class="sd">            type_of_tolerance (str, 可选): 误差计算方式。支持以下参数：&quot;absolute&quot;,&quot;percentage&quot;。 默认值为&quot;absolute&quot;。</span>
+<span class="sd">                                            absolute: 绝对误差。</span>
+<span class="sd">                                            percentage: 百分比误差。</span>
+<span class="sd">            tolerance_value (float, 可选): 误差值。若type_of_tolerance为&quot;absolute&quot;,则误差值范围为[0,+∞]。若type_of_tolerance为&quot;percentage&quot;,则误差值范围为[0,100]。 默认值为0.0。</span>
+<span class="sd">            custom_function (callable, 可选): 自定义评估函数。 默认值为None。</span>
+<span class="sd">            type_of_timeoption (str, 可选): 时间评估方式。支持以下参数：&quot;finallyTrueOption&quot;,&quot;generallyTrueOption&quot;,&quot;trueForWithinOption&quot;。 默认值为None。</span>
+<span class="sd">                                            finallyTrueOption: 在超时时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            generallyTrueOption: 在持续时间内,若读取信号值满足期望,则认为评估成功。</span>
+<span class="sd">                                            trueForWithinOption: 在超时时间内,若读取信号值满足期望,且持续时间满足期望,则认为评估成功。</span>
+<span class="sd">            timeout (int, 可选): 超时时间。默认值为0。</span>
+<span class="sd">            timeout_unit (str, 可选): 超时时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+<span class="sd">            duration (int, 可选): 持续时间。 默认值为0。</span>
+<span class="sd">            duration_unit (str, 可选): 持续时间单位。支持以下参数：&quot;ms&quot;,&quot;s&quot;,&quot;min&quot;,&quot;h&quot;,&quot;d&quot;。 默认值为&quot;s&quot;。</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: 读写总线工具未配置时,抛出异常。</span>
+<span class="sd">            Exception: 评估失败时,抛出异常。</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            float: 读取的信号值。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">comparison</span> <span class="o">=</span> <span class="n">Comparison</span><span class="p">(</span><span class="n">measurement</span><span class="p">,</span><span class="n">type_of_tolerance</span><span class="p">,</span><span class="n">tolerance_value</span><span class="p">,</span><span class="n">custom_function</span><span class="p">,</span><span class="n">type_of_timeoption</span><span class="p">,</span><span class="n">timeout</span><span class="p">,</span><span class="n">timeout_unit</span><span class="p">,</span><span class="n">duration</span><span class="p">,</span><span class="n">duration_unit</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">expected_value</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_sys_var</span><span class="p">(</span><span class="n">var_name</span><span class="p">),</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span><span class="p">,</span> <span class="n">error_reason</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_with_evaluation</span><span class="p">(</span><span class="n">var_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_sys_var</span><span class="p">,</span> <span class="n">expected_value</span><span class="p">,</span> <span class="n">comparison</span><span class="p">)</span>
+                <span class="n">pytest</span><span class="o">.</span><span class="n">assume</span><span class="p">(</span><span class="n">evaluation</span><span class="p">,</span><span class="sa">f</span><span class="s2">&quot;实际结果：</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,预期结果：</span><span class="si">{</span><span class="n">expected_value</span><span class="si">}</span><span class="s2">, 文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">, 行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">, 错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;读写总线工具未配置&quot;</span><span class="p">)</span></div>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__write_sys_var</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">var_name</span><span class="p">,</span> <span class="n">var_value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">canoe</span><span class="o">.</span><span class="n">set_sys_variable</span><span class="p">(</span><span class="n">var_name</span><span class="p">,</span> <span class="n">var_value</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;读写总线工具未配置&quot;</span><span class="p">)</span>
+    
+<div class="viewcode-block" id="TestExecutor.write_sys_var">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.write_sys_var">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write_sys_var</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">var_name</span><span class="p">,</span> <span class="n">var_value</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">type_of_tolerance</span><span class="o">=</span><span class="s2">&quot;absolute&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;写入指定系统变量</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            signal_name (classmethod): 期望写入的信号名</span>
+<span class="sd">            value (float): 期望写入的信号值</span>
+<span class="sd">            timeout (int, optional): 超时时间。默认值为5。</span>
+<span class="sd">            tolerance_value (float, optional): 误差值。默认值为0.1。</span>
+<span class="sd">            type_of_tolerance (str, optional): 误差计算方式。默认值为&quot;absolute&quot;。</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            Exception: 读写总线工具未配置时,抛出异常。</span>
+<span class="sd">            Exception: 写入失败时,抛出异常。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="n">depth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="n">comparison</span> <span class="o">=</span> <span class="n">Comparison</span><span class="p">(</span><span class="n">measurement</span><span class="o">=</span><span class="s2">&quot;==&quot;</span><span class="p">,</span> <span class="n">type_of_tolerance</span><span class="o">=</span><span class="n">type_of_tolerance</span><span class="p">,</span> <span class="n">tolerance_value</span><span class="o">=</span><span class="n">tolerance_value</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">timeout</span><span class="p">,</span> <span class="n">timeout_unit</span><span class="o">=</span><span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="n">type_of_timeoption</span><span class="o">=</span><span class="s2">&quot;finallyTrueOption&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__write_sys_var</span><span class="p">(</span><span class="n">var_name</span><span class="p">,</span> <span class="n">var_value</span><span class="p">)</span>
+            <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span><span class="p">,</span> <span class="n">error_reason</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_with_evaluation</span><span class="p">(</span><span class="n">var_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">__read_sys_var</span><span class="p">,</span> <span class="n">var_value</span><span class="p">,</span> <span class="n">comparison</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">evaluation</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;无法正确写入系统变量</span><span class="si">{</span><span class="n">var_name</span><span class="si">}</span><span class="s2">,real value:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,value:</span><span class="si">{</span><span class="n">var_value</span><span class="si">}</span><span class="s2">,文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">,行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">,错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;无法正确写入系统变量</span><span class="si">{</span><span class="n">var_name</span><span class="si">}</span><span class="s2">,real value:</span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">,value:</span><span class="si">{</span><span class="n">var_value</span><span class="si">}</span><span class="s2">,文件：</span><span class="si">{</span><span class="n">file_name</span><span class="si">}</span><span class="s2">,行号：</span><span class="si">{</span><span class="n">line_number</span><span class="si">}</span><span class="s2">,错误原因：</span><span class="si">{</span><span class="n">error_reason</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;读写总线工具未配置,文件：</span><span class="si">{file_name}</span><span class="s2">,行号：</span><span class="si">{line_number}</span><span class="s2">&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.read_sys_var_array">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.read_sys_var_array">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">read_sys_var_array</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">var_name</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="n">sys_variable_array</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe</span><span class="o">.</span><span class="n">get_sys_variable_array</span><span class="p">(</span><span class="n">var_name</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">sys_variable_array</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;读写总线工具未配置&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.write_sys_var_array">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.write_sys_var_array">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write_sys_var_array</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">var_name</span><span class="p">,</span> <span class="n">var_value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe_status</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">canoe</span><span class="o">.</span><span class="n">set_sys_variable_array</span><span class="p">(</span><span class="n">var_name</span><span class="p">,</span> <span class="n">var_value</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;读写总线工具未配置&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.write_mi_ant">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.write_mi_ant">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write_mi_ant</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">signal_value</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mi_ant_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mi_ant</span><span class="o">.</span><span class="n">write_signal</span><span class="p">(</span><span class="n">signal_name</span><span class="p">,</span> <span class="n">signal_value</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;mi_ant未配置&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.read_mi_ant">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.read_mi_ant">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">read_mi_ant</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">:</span> <span class="nb">classmethod</span><span class="p">,</span> <span class="n">expected_value</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mi_ant_status</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">mi_ant</span><span class="o">.</span><span class="n">read_signal</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">expected_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">pytest</span><span class="o">.</span><span class="n">assume</span><span class="p">(</span><span class="n">value</span> <span class="o">==</span> <span class="n">expected_value</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">value</span><span class="o">==</span><span class="n">expected_value</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;mi_ant未配置&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.close_mi_ant">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.close_mi_ant">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">close_mi_ant</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">mi_ant_status</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">mi_ant</span><span class="o">.</span><span class="n">close_client</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;mi_ant未配置&quot;</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.adb_tap">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.adb_tap">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">adb_tap</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adb</span><span class="o">.</span><span class="n">adb_tap</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.adb_tap_by_text">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.adb_tap_by_text">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">adb_tap_by_text</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adb</span><span class="o">.</span><span class="n">adb_tap_by_text</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.adb_tap_by_text_contains">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.adb_tap_by_text_contains">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">adb_tap_by_text_contains</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">label1</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">label2</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adb</span><span class="o">.</span><span class="n">adb_tap_by_text_contains</span><span class="p">(</span><span class="n">label1</span><span class="p">,</span> <span class="n">label2</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.adb_swipe">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.adb_swipe">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">adb_swipe</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start_x</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">start_y</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">end_x</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">end_y</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">duration</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adb</span><span class="o">.</span><span class="n">swipe</span><span class="p">(</span><span class="n">start_x</span><span class="p">,</span> <span class="n">start_y</span><span class="p">,</span> <span class="n">end_x</span><span class="p">,</span> <span class="n">end_y</span><span class="p">,</span> <span class="n">duration</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="TestExecutor.adb_input">
+<a class="viewcode-back" href="../../core.html#core.executor.TestExecutor.adb_input">[文档]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">adb_input</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adb</span><span class="o">.</span><span class="n">input</span><span class="p">(</span><span class="n">text</span><span class="p">)</span></div>
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__report_filename_and_linenumber_info</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">depth</span><span class="p">):</span>
+        <span class="n">stack_frame</span> <span class="o">=</span> <span class="n">inspect</span><span class="o">.</span><span class="n">stack</span><span class="p">()[</span><span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="n">file_name</span> <span class="o">=</span> <span class="n">stack_frame</span><span class="o">.</span><span class="n">filename</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">line_number</span> <span class="o">=</span> <span class="n">stack_frame</span><span class="o">.</span><span class="n">lineno</span>
+        <span class="k">return</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">line_number</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__canoe_network_channel_mapping</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;ISO-8859-1&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">contents</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="c1"># 定义正则表达式模式</span>
+        <span class="n">pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;ILConfiguration::VNetwork\s+\d+\s+Begin_Of_Object\n(.*?)\nEnd_Of_Object ILConfiguration::VNetwork\s+\d+&#39;</span>
+
+        <span class="c1"># 使用re.DOTALL标志使.能匹配换行符</span>
+        <span class="n">matches</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">contents</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">DOTALL</span><span class="p">)</span>
+
+        <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">match</span> <span class="ow">in</span> <span class="n">matches</span><span class="p">:</span>
+            <span class="c1"># 获取匹配内容并按行分割</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+            <span class="c1"># 将每行转换为参数（去除空行和空白）</span>
+            <span class="n">params</span> <span class="o">=</span> <span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">content</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">()]</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+        <span class="n">channel_info</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">for</span> <span class="n">info</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
+            <span class="n">channel_info</span><span class="p">[</span><span class="n">info</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">info</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">channel_info</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">__tsmaster_network_channel_mapping</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_path</span><span class="p">):</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">content</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="c1"># 提取[RBSCAN]部分的内容</span>
+        <span class="n">rbscan_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;\[RBSCAN\](.*?)(?=\[|$)&#39;</span>
+        <span class="n">rbscan_match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">rbscan_pattern</span><span class="p">,</span> <span class="n">content</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">DOTALL</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">rbscan_match</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;tsmaster配置文件中没有找到通道映射部分&quot;</span><span class="p">)</span>
+        
+        <span class="c1"># 提取通道映射</span>
+        <span class="n">channel_pattern</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;N\d+=CH(\d+)_(\w+)&#39;</span>
+        <span class="n">channel_map</span> <span class="o">=</span> <span class="p">{}</span>
+        
+        <span class="c1"># 在[RBSCAN]部分中查找所有通道映射</span>
+        <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">rbscan_match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">):</span>
+            <span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">channel_pattern</span><span class="p">,</span> <span class="n">line</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+                <span class="n">channel_num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+                <span class="n">network_name</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+                <span class="n">channel_map</span><span class="p">[</span><span class="n">network_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">channel_num</span>
+                
+        <span class="k">return</span> <span class="n">channel_map</span>
+    
+    <span class="k">def</span><span class="w"> </span><span class="nf">__read_with_evaluation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal_name</span><span class="p">,</span> <span class="n">read_function</span><span class="p">,</span> <span class="n">expected_value</span><span class="p">,</span> <span class="n">comparison</span><span class="p">:</span> <span class="n">Comparison</span><span class="p">):</span>
+        <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">comparison</span><span class="o">.</span><span class="n">type_of_timeoption</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">read_function</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="n">evaluation</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">evaluation</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+                <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;读取超时&quot;</span>
+        <span class="k">elif</span> <span class="n">comparison</span><span class="o">.</span><span class="n">type_of_timeoption</span> <span class="o">==</span> <span class="s2">&quot;finallyTrueOption&quot;</span><span class="p">:</span>
+            <span class="n">timeout_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+            <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">read_function</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="k">while</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">timeout_start_time</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">timeout</span><span class="p">:</span>
+                <span class="n">evaluation</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">evaluation</span><span class="o">==</span><span class="kc">True</span><span class="p">:</span>
+                    <span class="k">break</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">read_function</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">evaluation</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+                <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;读取超时&quot;</span>
+        <span class="k">elif</span> <span class="n">comparison</span><span class="o">.</span><span class="n">type_of_timeoption</span> <span class="o">==</span> <span class="s2">&quot;generallyTrueOption&quot;</span><span class="p">:</span>
+            <span class="n">duration_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+            <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">read_function</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="k">while</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">duration_start_time</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">duration</span><span class="p">:</span>
+                <span class="n">evaluation</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">evaluation</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+                    <span class="k">break</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">read_function</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">evaluation</span><span class="o">==</span><span class="kc">False</span><span class="p">:</span>
+                <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;持续时间不满足&quot;</span>
+        <span class="k">elif</span> <span class="n">comparison</span><span class="o">.</span><span class="n">type_of_timeoption</span> <span class="o">==</span> <span class="s2">&quot;trueForWithinOption&quot;</span><span class="p">:</span>
+            <span class="n">timeout_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+            <span class="n">duration_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+            <span class="n">timeout_evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">duration_evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+            <span class="n">value</span> <span class="o">=</span> <span class="n">read_function</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+            <span class="k">while</span> <span class="p">(</span><span class="n">t</span> <span class="o">-</span> <span class="n">timeout_start_time</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">timeout</span> <span class="ow">and</span> <span class="p">(</span><span class="n">t</span> <span class="o">-</span> <span class="n">duration_start_time</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">duration</span><span class="p">:</span>
+                <span class="n">t</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">timeout_evaluation</span> <span class="o">==</span> <span class="kc">False</span><span class="p">:</span>
+                    <span class="n">duration_start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+                <span class="k">if</span> <span class="n">timeout_evaluation</span> <span class="o">==</span> <span class="kc">False</span> <span class="ow">and</span> <span class="p">((</span><span class="n">comparison</span><span class="o">.</span><span class="n">timeout</span> <span class="o">+</span> <span class="n">timeout_start_time</span> <span class="o">-</span> <span class="n">t</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">duration</span><span class="p">):</span>
+                    <span class="k">break</span>
+                <span class="k">elif</span> <span class="n">timeout_evaluation</span> <span class="o">==</span> <span class="kc">True</span> <span class="ow">and</span> <span class="p">((</span><span class="n">t</span> <span class="o">-</span> <span class="n">duration_start_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">comparison</span><span class="o">.</span><span class="n">duration</span><span class="p">):</span>
+                    <span class="n">duration_evaluation</span> <span class="o">=</span> <span class="kc">True</span>
+                    <span class="k">break</span>
+                <span class="n">timeout_evaluation</span> <span class="o">=</span> <span class="n">comparison</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">value</span><span class="p">,</span><span class="n">expected_value</span><span class="p">)</span>
+                <span class="n">value</span> <span class="o">=</span> <span class="n">read_function</span><span class="p">(</span><span class="n">signal_name</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">timeout_evaluation</span> <span class="ow">and</span> <span class="n">duration_evaluation</span><span class="p">:</span>
+                <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="k">elif</span> <span class="n">timeout_evaluation</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">duration_evaluation</span><span class="p">:</span>
+                <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;持续时间内信号值不满足期望&quot;</span>
+            <span class="k">elif</span> <span class="ow">not</span> <span class="n">timeout_evaluation</span><span class="p">:</span>
+                <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;读取超时&quot;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">evaluation</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="n">error_reason</span> <span class="o">=</span> <span class="s2">&quot;未知故障&quot;</span>
+        <span class="k">return</span> <span class="n">value</span><span class="p">,</span> <span class="n">evaluation</span><span class="p">,</span> <span class="n">error_reason</span></div>
+
+    
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, Your Name。</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

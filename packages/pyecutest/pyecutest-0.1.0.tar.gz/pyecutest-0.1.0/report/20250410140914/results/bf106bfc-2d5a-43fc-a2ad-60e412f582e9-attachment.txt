@@ -1,0 +1,4 @@
+Writing to serial port: 5245414420504152414d203078313030320d0a
+Parameter read response for 0x1002: b'VALUE=0xFF\n'
+Disconnecting from serial port COM1
+Disconnecting from CAN channel 0

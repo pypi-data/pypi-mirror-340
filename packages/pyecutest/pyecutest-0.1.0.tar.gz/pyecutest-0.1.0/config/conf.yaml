@@ -1,0 +1,54 @@
+sqlite3:
+  db: "project1.db"
+
+dbc:
+  dbc_dir: "databases/dbc/MX11_E4U3.2"
+
+s19:
+  path: ""
+
+a2l:
+  path: "databases/a2l/FZCU-EEA1.5-5-4.3C3.700/FZCU_U_M_all_S000002865006.a2l"
+
+#canoe已实现自动配置通道映射，无需再手动配置
+canoe:
+  project_file: "D:/02_Project/CANoe/N3_E4/N3_E4_XCD.cfg"
+  ChassisCANFD: 1
+  ChassisFusionCANFD: 2
+  PTCANFD: 3
+  LampCANFD: 4
+  ZCUCANFD: 5
+  BodyCAN: 6
+
+tsmaster:
+  project_file: "D:/TsMaster/can_config.RBSCAN"
+  PTCANFD: 5
+  LampCANFD: 0
+  ZCUCANFD: 1
+  ChassisCANFD: 3
+  ChassisFusionCANFD: 4
+  BodyCAN: 2
+
+  # 需要执行的CAPL函数列表
+  # capl_functions:
+  #   - ""
+
+
+inca:
+  project_file: ""
+
+veristand:
+  host: "localhost"
+  nivsprj_path: r"F:\CICD_Labcar\labcarproject\03_NI_Veristand\MS11_E4U3_HIL10.nivsproj"
+  nivssdf_path: r"F:\CICD_Labcar\labcarproject\03_NI_Veristand\MS11_E4U3_HIL10.nivssdf"
+  channel_path: "databases/channel/HIL台架Veristand信号.xlsx"
+
+adb:
+  devices_id: ""
+
+project:
+  tools: ["canoe"] # 工具列表: canoe, adb, inca, veristand, tsp, mi_ant, tsmaster
+  ecu: ['FZCU','VCCD'] # ECU列表
+
+mi_ant:
+  port: 12345
