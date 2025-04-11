@@ -1,0 +1,61 @@
+{
+    "0": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(R.id.overviewFragment), withContentDescription(\"Overview\"))).perform(click());",
+        "xpath": "//android.widget.FrameLayout[@index='0' and @resource-id='com.futsch1.medtimer:id/overviewFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Overview' and @bounds='[0,2067][360,2214]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 0,
+                "statement": "onView(allOf(withId(R.id.statisticsFragment), withContentDescription(\"Analysis\"))).perform(click());",
+                "xpath": "//android.widget.FrameLayout[@index='2' and @resource-id='com.futsch1.medtimer:id/statisticsFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Analysis' and @bounds='[720,2067][1080,2214]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "clearEventsTest",
+        "mutant_candidates_before": 68,
+        "mutant_candidates_after": 2
+    },
+    "1": {
+        "is_mutable": false,
+        "statement": "onView(withContentDescription(\"More options\")).perform(click());",
+        "xpath": "//android.widget.ImageView[@index='0' and @class='android.widget.ImageView' and @package='com.futsch1.medtimer' and @checked='false' and @content-desc='More options' and @bounds='[975,83][1080,209]']",
+        "mutant_events": [],
+        "test_method_name": "clearEventsTest",
+        "mutant_candidates_before": 61,
+        "mutant_candidates_after": 2
+    },
+    "2": {
+        "is_mutable": false,
+        "statement": "onView(withText(\"Event data\")).perform(click());",
+        "xpath": "//android.widget.TextView[@index='0' and @text='Event data' and @resource-id='com.futsch1.medtimer:id/title' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[616,290][944,347]']",
+        "mutant_events": [],
+        "test_method_name": "clearEventsTest",
+        "mutant_candidates_before": 42,
+        "mutant_candidates_after": 4
+    },
+    "3": {
+        "is_mutable": false,
+        "statement": "onView(withText(\"Clear events\")).perform(click());",
+        "xpath": "//android.widget.TextView[@index='0' and @text='Clear events' and @resource-id='com.futsch1.medtimer:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[649,542][1038,599]']",
+        "mutant_events": [],
+        "test_method_name": "clearEventsTest",
+        "mutant_candidates_before": 20,
+        "mutant_candidates_after": 3
+    },
+    "4": {
+        "is_mutable": false,
+        "statement": "onView(withText(\"YES\")).perform(click());",
+        "xpath": "//android.widget.Button[@index='1' and @text='YES' and @resource-id='android:id/button1' and @class='android.widget.Button' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[810,1239][978,1365]']",
+        "mutant_events": [],
+        "test_method_name": "clearEventsTest",
+        "mutant_candidates_before": 16,
+        "mutant_candidates_after": 1
+    },
+    "times": {
+        "parse_time": 0.226485013961792,
+        "app_wait_time": 3.0178468227386475,
+        "ai_time": 195.4547746181488,
+        "mutator_time": 1001.8713004589081,
+        "total_time": 1200.5704069137573
+    }
+}

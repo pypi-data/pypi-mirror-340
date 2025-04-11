@@ -1,0 +1,36 @@
+{
+    "0": {
+        "is_mutable": false,
+        "statement": "onView(allOf(withId(R.id.medicinesFragment), withContentDescription(\"Medicine\"))).perform(click());",
+        "xpath": "//android.widget.FrameLayout[@index='1' and @resource-id='com.futsch1.medtimer:id/medicinesFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Medicine' and @bounds='[360,2067][720,2214]']",
+        "mutant_events": [],
+        "test_method_name": "deleteMedicineTest",
+        "mutant_candidates_before": 55,
+        "mutant_candidates_after": 2
+    },
+    "1": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(R.id.medicineName), withText(\"B12\"))).perform(swipeLeft());",
+        "xpath": "//android.widget.TextView[@index='0' and @text='B12' and @resource-id='com.futsch1.medtimer:id/medicineName' and @class='android.widget.TextView' and @package='com.futsch1.medtimer' and @bounds='[123,312][999,363]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 1,
+                "statement": "onView(allOf(withId(R.id.medicineName), withText(\"Omega3\"))).perform(swipeLeft());",
+                "xpath": "//android.widget.TextView[@index='0' and @package='com.futsch1.medtimer' and @class='android.widget.TextView' and @text='Omega3' and @resource-id='com.futsch1.medtimer:id/medicineName' and @checked='false' and @bounds='[123,492][999,543]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(R.id.medicineName), withText(\"Omega3\"))).check(doesNotExist());"
+                }
+            }
+        ],
+        "test_method_name": "deleteMedicineTest",
+        "mutant_candidates_before": 0,
+        "mutant_candidates_after": 0
+    },
+    "times": {
+        "parse_time": 0.1234123706817627,
+        "app_wait_time": 3.0099151134490967,
+        "ai_time": 93.55609703063965,
+        "mutator_time": 140.01106595993042,
+        "total_time": 236.70049047470093
+    }
+}

@@ -1,0 +1,216 @@
+[
+  {
+    "Assertions": [
+      {
+        "Action": [
+          {
+            "Name": "matches",
+            "Args": [
+              [
+                {
+                  "Name": "isDisplayed",
+                  "Args": []
+                }
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "summary"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Last modified date\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "After": [],
+    "Before": [],
+    "Matchers": [
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"Open drawer\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "drawer_item_settings"
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "scrollTo",
+            "Args": [
+              [
+                {
+                  "Matchers": [
+                    {
+                      "Action": null,
+                      "Components": [
+                        {
+                          "Name": "hasDescendant",
+                          "Args": [
+                            [
+                              {
+                                "Matchers": [
+                                  {
+                                    "Action": null,
+                                    "Components": [
+                                      {
+                                        "Name": "withText",
+                                        "Args": [
+                                          [
+                                            "\"Date shown for notes\""
+                                          ]
+                                        ]
+                                      }
+                                    ],
+                                    "MatchType": "allOf"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ],
+                      "MatchType": "allOf"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "recycler_view"
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          },
+          {
+            "Name": "sleep",
+            "Args": [
+              [
+                "1500"
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "title"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Date shown for notes\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "containsString",
+                "(",
+                "\"modified date\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Name": "updateNoteDataShownTest"
+  }
+]

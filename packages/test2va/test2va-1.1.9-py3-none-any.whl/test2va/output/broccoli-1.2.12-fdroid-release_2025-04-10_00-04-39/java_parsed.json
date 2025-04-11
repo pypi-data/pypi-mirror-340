@@ -1,0 +1,451 @@
+[
+  {
+    "Assertions": [
+      {
+        "Action": [
+          {
+            "Name": "doesNotExist",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Fry Rice\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "After": [],
+    "Before": [
+      {
+        "Action": [
+          {
+            "Name": "sleep",
+            "Args": [
+              [
+                "2000"
+              ]
+            ]
+          },
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "fab_recipes"
+              ]
+            ]
+          },
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"New Recipe\""
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "replaceText",
+            "Args": [
+              [
+                "\"Fry Rice\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "new_title"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "replaceText",
+            "Args": [
+              [
+                "\"Rice\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "new_ingredients"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "button_save_recipe"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          },
+          {
+            "Name": "sleep",
+            "Args": [
+              [
+                "1000"
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"Navigate up\""
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "fab_recipes"
+              ]
+            ]
+          },
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"New Recipe\""
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "replaceText",
+            "Args": [
+              [
+                "\"Salad\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "new_title"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "replaceText",
+            "Args": [
+              [
+                "\"lettuce\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "new_ingredients"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "button_save_recipe"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"Navigate up\""
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Matchers": [
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "card_text_view_title"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Fry Rice\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          },
+          {
+            "Name": "sleep",
+            "Args": [
+              [
+                "1000"
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"More options\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Delete\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"DELETE\""
+              ]
+            ]
+          },
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "button1"
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Name": "deleteRecipeTest"
+  }
+]

@@ -1,0 +1,54 @@
+{
+    "0": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(R.id.card_text_view_title), withText(\"Fry Rice\"))).perform(click());",
+        "xpath": "//android.widget.TextView[@index='1' and @text='Fry Rice' and @resource-id='com.flauschcode.broccoli:id/card_text_view_title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli']",
+        "mutant_events": [
+            {
+                "origin_event_index": 0,
+                "statement": "onView(allOf(withId(R.id.card_text_view_title), withText(\"Salad\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@class='android.widget.TextView' and @index='1' and @text='Salad' and @resource-id='com.flauschcode.broccoli:id/card_text_view_title' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[336,787][1059,855]']",
+                "assertion_statement": {
+                    "0": "onView(withText(\"Salad\")).check(doesNotExist());"
+                }
+            }
+        ],
+        "test_method_name": "deleteRecipeTest",
+        "mutant_candidates_before": 36,
+        "mutant_candidates_after": 1
+    },
+    "1": {
+        "is_mutable": false,
+        "statement": "onView(withContentDescription(\"More options\")).perform(click());",
+        "xpath": "//android.widget.ImageView[@index='1' and @class='android.widget.ImageView' and @checked='false' and @package='com.flauschcode.broccoli' and @content-desc='More options' and @bounds='[975,73][1080,199]']",
+        "mutant_events": [],
+        "test_method_name": "deleteRecipeTest",
+        "mutant_candidates_before": 28,
+        "mutant_candidates_after": 1
+    },
+    "2": {
+        "is_mutable": false,
+        "statement": "onView(withText(\"Delete\")).perform(click());",
+        "xpath": "//android.widget.LinearLayout[@index='3' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[555,473][1070,599]']",
+        "mutant_events": [],
+        "test_method_name": "deleteRecipeTest",
+        "mutant_candidates_before": 23,
+        "mutant_candidates_after": 3
+    },
+    "3": {
+        "is_mutable": false,
+        "statement": "onView(allOf(withText(\"DELETE\"), withId(android.R.id.button1))).perform(click());",
+        "xpath": "//android.widget.Button[@index='1' and @text='DELETE' and @resource-id='android:id/button1' and @class='android.widget.Button' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[743,1150][978,1315]']",
+        "mutant_events": [],
+        "test_method_name": "deleteRecipeTest",
+        "mutant_candidates_before": 20,
+        "mutant_candidates_after": 1
+    },
+    "times": {
+        "parse_time": 0.10290241241455078,
+        "app_wait_time": 3.0038540363311768,
+        "ai_time": 127.95251870155334,
+        "mutator_time": 302.3258743286133,
+        "total_time": 433.38514947891235
+    }
+}

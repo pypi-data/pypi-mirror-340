@@ -1,0 +1,320 @@
+{
+    "0": {
+        "is_mutable": true,
+        "statement": "onView(withContentDescription(\"Open navigation drawer\")).perform(click());",
+        "xpath": "//android.widget.ImageButton[@index='0' and @package='com.flauschcode.broccoli' and @class='android.widget.ImageButton' and @checked='false' and @content-desc='Open navigation drawer' and @bounds='[0,63][147,210]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 0,
+                "statement": "onView(withContentDescription(\"New Recipe\")).perform(click());",
+                "xpath": "//android.widget.ImageButton[@index='3' and @resource-id='com.flauschcode.broccoli:id/fab_recipes' and @package='com.flauschcode.broccoli' and @content-desc='New Recipe' and @checked='false' and @bounds='[891,2088][1038,2235]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "configureSeasonalCalendarTest",
+        "mutant_candidates_before": 40,
+        "mutant_candidates_after": 1
+    },
+    "1": {
+        "is_mutable": true,
+        "statement": "onView(withId(R.id.nav_settings)).perform(click());",
+        "xpath": "//androidx.appcompat.widget.LinearLayoutCompat[@index='8' and @resource-id='com.flauschcode.broccoli:id/nav_settings' and @class='androidx.appcompat.widget.LinearLayoutCompat' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[0,1203][735,1329]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.nav_recipes)).perform(click());",
+                "xpath": "//androidx.appcompat.widget.LinearLayoutCompat[@index='1' and @resource-id='com.flauschcode.broccoli:id/nav_recipes' and @class='androidx.appcompat.widget.LinearLayoutCompat' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[0,483][735,609]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.nav_categories)).perform(click());",
+                "xpath": "//androidx.appcompat.widget.LinearLayoutCompat[@index='2' and @resource-id='com.flauschcode.broccoli:id/nav_categories' and @class='androidx.appcompat.widget.LinearLayoutCompat' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[0,609][735,735]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.nav_seasons)).perform(click());",
+                "xpath": "//androidx.appcompat.widget.LinearLayoutCompat[@index='3' and @resource-id='com.flauschcode.broccoli:id/nav_seasons' and @class='androidx.appcompat.widget.LinearLayoutCompat' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[0,735][735,861]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.nav_support)).perform(click());",
+                "xpath": "//androidx.appcompat.widget.LinearLayoutCompat[@index='5' and @resource-id='com.flauschcode.broccoli:id/nav_support' and @class='androidx.appcompat.widget.LinearLayoutCompat' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[0,906][735,1032]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.nav_backup_and_restore)).perform(click());",
+                "xpath": "//androidx.appcompat.widget.LinearLayoutCompat[@index='7' and @resource-id='com.flauschcode.broccoli:id/nav_backup_and_restore' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[0,1077][735,1203]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.nav_about)).perform(click());",
+                "xpath": "//androidx.appcompat.widget.LinearLayoutCompat[@index='9' and @resource-id='com.flauschcode.broccoli:id/nav_about' and @class='androidx.appcompat.widget.LinearLayoutCompat' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[0,1329][735,1455]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "configureSeasonalCalendarTest",
+        "mutant_candidates_before": 61,
+        "mutant_candidates_after": 6
+    },
+    "2": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(android.R.id.title), withText(\"Region\"))).perform(click());",
+        "xpath": "//android.widget.TextView[@index='0' and @text='Region' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,906][318,963]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 2,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"General settings\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='General settings' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[42,273][1038,324]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Preferred category\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Preferred category' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,387][536,444]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Theme\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Theme' and @resource-id='android:id/title' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,579][318,636]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Seasonal calendar\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Seasonal calendar' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[42,792][1038,843]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Languages of recipes\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Languages of recipes' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @enabled='true' and @bounds='[189,1098][591,1155]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Send feedback\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Send feedback' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,1333][466,1390]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "configureSeasonalCalendarTest",
+        "mutant_candidates_before": 57,
+        "mutant_candidates_after": 6
+    },
+    "3": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(android.R.id.text1), withText(\"North America (warmer)\"))).perform(click());",
+        "xpath": "//android.widget.CheckedTextView[@index='2' and @text='North America (warmer)' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,1209][1010,1335]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 3,
+                "statement": "onView(allOf(withId(android.R.id.text1), withText(\"Central Europe\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='0' and @text='Central Europe' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,957][1010,1083]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(allOf(withId(android.R.id.text1), withText(\"North America (colder)\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='1' and @text='North America (colder)' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,1083][1010,1209]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "configureSeasonalCalendarTest",
+        "mutant_candidates_before": 21,
+        "mutant_candidates_after": 2
+    },
+    "4": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(android.R.id.title), withText(\"Languages of recipes\"))).perform(click());",
+        "xpath": "//android.widget.TextView[@index='0' and @text='Languages of recipes' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,1098][591,1155]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 4,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"General settings\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='General settings' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[42,273][1038,324]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 4,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Seasonal calendar\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Seasonal calendar' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[42,792][1038,843]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "configureSeasonalCalendarTest",
+        "mutant_candidates_before": 66,
+        "mutant_candidates_after": 2
+    },
+    "5": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withParentIndex(0), withText(\"English\"))).perform(click());",
+        "xpath": "//android.widget.CheckedTextView[@index='0' and @text='English' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,327][1010,453]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(1), withText(\"Spanish\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='1' and @text='Spanish' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,453][1010,579]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(2), withText(\"French\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='2' and @text='French' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,579][1010,705]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(3), withText(\"German\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='3' and @text='German' and @resource-id='android:id/text1' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,705][1010,831]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(4), withText(\"Polish\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='4' and @text='Polish' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,831][1010,957]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(5), withText(\"Italian\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='5' and @text='Italian' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,957][1010,1083]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(6), withText(\"Chinese\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='6' and @text='Chinese' and @resource-id='android:id/text1' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,1083][1010,1209]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(7), withText(\"Turkish\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='7' and @text='Turkish' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,1209][1010,1335]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(8), withText(\"Serbian (Latin)\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='8' and @package='com.flauschcode.broccoli' and @class='android.widget.CheckedTextView' and @text='Serbian (Latin)' and @resource-id='android:id/text1' and @checked='false' and @bounds='[70,1335][1010,1461]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(9), withText(\"Hebrew\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='9' and @text='Hebrew' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,1461][1010,1587]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(10), withText(\"Brazilian Portuguese\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='10' and @text='Brazilian Portuguese' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,1587][1010,1713]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(11), withText(\"Norwegian (Bokm\u00c3\u00a5l)\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='11' and @text='Norwegian (Bokm\u00c3\u00a5l)' and @resource-id='android:id/text1' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,1713][1010,1839]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 5,
+                "statement": "onView(allOf(withParentIndex(12), withText(\"Russian\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='12' and @text='Russian' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,1839][1010,1965]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "configureSeasonalCalendarTest",
+        "mutant_candidates_before": 27,
+        "mutant_candidates_after": 12
+    },
+    "6": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withText(\"OK\"), withId(android.R.id.button1))).perform(click());",
+        "xpath": "//android.widget.Button[@index='1' and @text='OK' and @resource-id='android:id/button1' and @class='android.widget.Button' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[810,1976][978,2141]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 6,
+                "statement": "onView(allOf(withText(\"CANCEL\"), withId(android.R.id.button2))).perform(click());",
+                "xpath": "//android.widget.Button[@index='0' and @text='CANCEL' and @resource-id='android:id/button2' and @class='android.widget.Button' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[566,1976][810,2141]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "configureSeasonalCalendarTest",
+        "mutant_candidates_before": 33,
+        "mutant_candidates_after": 1
+    },
+    "7": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(android.R.id.title), withText(\"Preferred category\"))).perform(click());",
+        "xpath": "//android.widget.TextView[@index='0' and @text='Preferred category' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,387][536,444]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 7,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"General settings\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='General settings' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[42,273][1038,324]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 7,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Theme\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Theme' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,579][318,636]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 7,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Seasonal calendar\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Seasonal calendar' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[42,792][1038,843]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 7,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Region\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Region' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,906][318,963]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 7,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Languages of recipes\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Languages of recipes' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,1098][591,1155]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 7,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Send feedback\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Send feedback' and @resource-id='android:id/title' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[189,1290][466,1347]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "configureSeasonalCalendarTest",
+        "mutant_candidates_before": 85,
+        "mutant_candidates_after": 6
+    },
+    "8": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(android.R.id.text1), withText(\"Seasonal recipes\"))).perform(click());",
+        "xpath": "//android.widget.CheckedTextView[@index='1' and @text='Seasonal recipes' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,1083][1010,1209]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 8,
+                "statement": "onView(allOf(withId(android.R.id.text1), withText(\"All recipes\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='0' and @text='All recipes' and @resource-id='android:id/text1' and @class='android.widget.CheckedTextView' and @checked='false' and @package='com.flauschcode.broccoli' and @bounds='[70,957][1010,1083]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 8,
+                "statement": "onView(allOf(withId(android.R.id.text1), withText(\"Favorites\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='2' and @package='com.flauschcode.broccoli' and @class='android.widget.CheckedTextView' and @text='Favorites' and @resource-id='android:id/text1' and @checked='false' and @bounds='[70,1209][1010,1335]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "configureSeasonalCalendarTest",
+        "mutant_candidates_before": 20,
+        "mutant_candidates_after": 2
+    }
+}

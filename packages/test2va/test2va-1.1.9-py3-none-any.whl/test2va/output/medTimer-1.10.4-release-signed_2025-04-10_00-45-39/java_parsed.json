@@ -1,0 +1,343 @@
+[
+  {
+    "Assertions": [
+      {
+        "Action": [
+          {
+            "Name": "doesNotExist",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "medicineName"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"B12\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "After": [],
+    "Before": [
+      {
+        "Action": [
+          {
+            "Name": "sleep",
+            "Args": [
+              [
+                "3000"
+              ]
+            ]
+          },
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "containsStringIgnoringCase",
+                "(",
+                "\"skip\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "medicinesFragment"
+              ]
+            ]
+          },
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"Medicine\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "addMedicine"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Add medicine\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "typeText",
+            "Args": [
+              [
+                "\"B12\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withClassName",
+            "Args": [
+              [
+                "containsStringIgnoringCase",
+                "(",
+                "\"EditText\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "button1"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"OK\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "addMedicine"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Add medicine\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "typeText",
+            "Args": [
+              [
+                "\"Omega3\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withClassName",
+            "Args": [
+              [
+                "containsStringIgnoringCase",
+                "(",
+                "\"EditText\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "button1"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"OK\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Matchers": [
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "medicinesFragment"
+              ]
+            ]
+          },
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"Medicine\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "swipeLeft",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "medicineName"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"B12\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Name": "deleteMedicineTest"
+  }
+]
