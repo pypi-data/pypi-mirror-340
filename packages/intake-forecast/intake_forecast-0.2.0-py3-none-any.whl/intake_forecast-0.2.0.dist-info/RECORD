@@ -1,0 +1,10 @@
+intake_forecast/__init__.py,sha256=JcNLxlc4HC5LqLflJJkjgwmR3dfhCjfGiZqmD1G1naU,147
+intake_forecast/functions.py,sha256=7j43cUqLTDfRx_8-52POm9RQ4hAFSRcBDTA6VpzTqr4,436
+intake_forecast/source.py,sha256=w-NTfuKBc4fOhELD54a89gIWGLHQ9b6qQQSdGMTXwtA,3555
+intake_forecast/utils.py,sha256=IugTgGCeVEHpc4xHLm5OaYAzn_E8k6RIuy3DZ-Q3ChA,3683
+intake_forecast-0.2.0.dist-info/licenses/AUTHORS.rst,sha256=WfsPW69nzXM4JrcLwp7n9NR_vzwJPS5e1ofVIO1sFJg,170
+intake_forecast-0.2.0.dist-info/METADATA,sha256=sTbwCP3LMmn_ErN67tJfUX5z21lzYSAaGkxT8vXMZ7o,2148
+intake_forecast-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+intake_forecast-0.2.0.dist-info/entry_points.txt,sha256=wUgvo4GnqE7lM-PRWjguep-_UhzIwoeoHvjuWqwZGVw,184
+intake_forecast-0.2.0.dist-info/top_level.txt,sha256=8CACJmFdNKETMpW6kfcP986WIobnGXSoSCwuOfRgJKQ,16
+intake_forecast-0.2.0.dist-info/RECORD,,
