@@ -1,0 +1,22 @@
+[project]
+name = "azure-code-signer"
+version = "0.1.1"
+description = "A command line tool to code sign files using a code signing certificate stored in Azure Key Vault."
+authors = [
+    {name = "Attie Retief", email = "attie@attieretief.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.7"
+dependencies = [
+    "azure-identity>=1.10.0",
+    "azure-keyvault-certificates>=4.5.0",
+    "azure-keyvault-secrets>=4.5.0",
+    "cryptography>=38.0.0",
+]
+
+[project.scripts]
+azure-code-signer = "src.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
