@@ -1,0 +1,26 @@
+[build-system]
+requires = ["pup517"]
+build-backend = "pup517.backend"
+
+[project]
+name = "pup-unifdef"
+version = "2.12.post1"
+
+[[pup517.srcuris]]
+type = "git"
+repo = "https://github.com/fanf2/unifdef"
+commit = "99d17074b9ba66cc9da2ce60fb29c6b1beb0370a"
+
+[pup517.hooks]
+prepare = [
+    "default",
+    "./scripts/reversion.sh",
+]
+
+[pup517.build-system]
+backend = "pup517.build_system.simple_cc"
+
+[[pup517.simple-cc.targets]]
+lang = "c"
+bin = "unifdef"
+srcs = [ "unifdef.c" ]
