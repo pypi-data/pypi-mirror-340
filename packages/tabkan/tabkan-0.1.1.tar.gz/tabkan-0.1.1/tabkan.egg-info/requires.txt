@@ -1,0 +1,8 @@
+torch>=2.0
+numpy>=1.22
+pandas
+tqdm
+scikit-learn
+optuna>=3.0
+fkan>=0.0.2
+rkan>=0.0.3
