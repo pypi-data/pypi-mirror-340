@@ -1,0 +1,2 @@
+[console_scripts]
+monitor-altcoins = r00buying_altcoins_monitoring.main:main
