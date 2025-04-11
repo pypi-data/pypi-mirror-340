@@ -1,0 +1,14 @@
+setup.py
+boldbasili/__init__.py
+boldbasili/a1a.py
+boldbasili/a2a.py
+boldbasili/a3a.py
+boldbasili/a4a.py
+boldbasili/a5a.py
+boldbasili/a6a.py
+boldbasili/a7a.py
+boldbasili/a8a.py
+boldbasili.egg-info/PKG-INFO
+boldbasili.egg-info/SOURCES.txt
+boldbasili.egg-info/dependency_links.txt
+boldbasili.egg-info/top_level.txt
