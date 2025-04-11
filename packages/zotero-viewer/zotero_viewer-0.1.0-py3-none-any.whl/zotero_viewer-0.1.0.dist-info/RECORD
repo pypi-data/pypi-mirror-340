@@ -1,0 +1,17 @@
+zotero_viewer/__init__.py,sha256=MXr-0XT5Nbmq8uSHXUsQjuRLblmIb7rgELQlVIz0Exk,109
+zotero_viewer/app.py,sha256=0vhZ52hHtSEjqAyHRnKwFCm73cvi7rK_1H4773ZsrHA,28267
+zotero_viewer/static/.DS_Store,sha256=vcfefQbt_LEoNni8BS5GR-IjUW7yO6RiMLT1o4kKPuk,6148
+zotero_viewer/static/css/styles.css,sha256=HTvgMTjBDTZhUw8cpyvHCUOjxnM1LosfYR6oQNjwzes,9036
+zotero_viewer/static/js/attachment-handler.js,sha256=Rplle4fZRoKb4XB1JtEQU06vjYwhoT9VZAyDIonKagQ,2710
+zotero_viewer/static/js/item-details.js,sha256=bNSHyrbQldiEFS3jW8G-dVV2C8xLKt2RdQGn8azhz4M,2574
+zotero_viewer/static/js/item-search.js,sha256=gCxvG9i3QrnQVd_N5THhZasX7IzqSBXetYlDnDEIdSI,4563
+zotero_viewer/static/js/item-sorter.js,sha256=YkDzc3cc48EKO0GtDRbiOt2m-r1nrEWtdkM2iqNKHVs,7143
+zotero_viewer/static/js/main.js,sha256=ary348wT8tJFtHptMWCzFo_8iloi086ygY9zOw_ZDaA,15786
+zotero_viewer/static/js/tag-operations.js,sha256=pintx-eAd91wA50ELaYW9PT_eaLoqDq1S2RyPvksf8s,17696
+zotero_viewer/templates/index.html,sha256=5uNHZt0IAnV69UH6_KL7waYlShQQjoTQLtBCxts7I5c,10194
+zotero_viewer-0.1.0.dist-info/licenses/LICENSE,sha256=Gt1uqWyOCO-8-d1_OQ9AsMD8BVGj37OOXY5ZxT7Z3m4,1080
+zotero_viewer-0.1.0.dist-info/METADATA,sha256=15DcbHJtxeFHC3vGLCl_gEH-fPd7Z_cuJRej0KUzPnU,8398
+zotero_viewer-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+zotero_viewer-0.1.0.dist-info/entry_points.txt,sha256=-wfbTaIPDg5hHC2WEFdLeYHe0RL4qdm4IiL7toJnTzU,53
+zotero_viewer-0.1.0.dist-info/top_level.txt,sha256=r2mcicfb3hjgc_ZopMAkKi0wnaPVNl4FarIqvyaPGhI,14
+zotero_viewer-0.1.0.dist-info/RECORD,,
