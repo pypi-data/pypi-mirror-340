@@ -1,0 +1,32 @@
+[project]
+name = "sleepydatapeek"
+version = "1.6.3"
+description = "Peek at local datafiles fast!"
+keywords = ["pandas", "data", "analysis", "cli"]
+
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+readme = "README.md"
+authors = [
+  { name = "Isaac Yep", email = "anthonybenchyep@gmail.com" }
+]
+
+dependencies = [
+  "pandas ~=1.5.1",
+  "pyarrow ~=11.0",
+  "typer ~=0.15",
+  "tabulate ~=0.9",
+]
+
+[tool.poetry]
+packages = [
+  { include = "sleepydatapeek_toolchain" },
+  { include = "sleepydatapeek.py" },
+]
+
+[project.urls]
+repository = "https://github.com/anthonybench/datapeek"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
