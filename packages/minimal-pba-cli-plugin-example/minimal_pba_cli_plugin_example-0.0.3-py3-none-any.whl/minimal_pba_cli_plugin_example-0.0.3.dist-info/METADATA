@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: minimal-pba-cli-plugin-example
+Version: 0.0.3
+Summary: A minimal command-line interface plugin for minimal-pba-cli
+Author-email: Dane Hillard <github@danehillard.com>
+License-Expression: MIT
+Project-URL: Repository, https://github.com/easy-as-python/minimal-pba-cli-plugin-example
+Project-URL: Issues, https://github.com/easy-as-python/minimal-pba-cli-plugin-example/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: rich>=14.0.0
+Requires-Dist: typer>=0.12.5
+
+# Minimal command-line interface plugin for [minimal-pba-cli](https://github.com/easy-as-python/minimal-pba-cli)
+
+This is a minimal example of a plugin that can be discovered, installed, and used in a command-line interface using a plugin-based architecture.
+
+## Key moving parts
+
+The main components of a working plugin are:
+
+- The distribution name: Plugins must have a distribution name with a known prefix (in the case of this project, `minimal-pba-cli-plugin-`).
+- `[project.entry-points.minimal_pba_cli]`: This section must exist in `pyproject.toml` and must contain one key-value pair,
+  where the key is the "proper" name of the plugin (without the distribution name prefix)
+  and the value is the dotted module path of the plugin's main entry point
+- The plugin entry point: This module must contain either or both of `groups` and `commands`.
+  Each of these is a dictionary whose keys are the name of the command or command group that the plugin will provide to the core CLI,
+  and whose values are the [Typer](https://typer.tiangolo.com/) command group objects or command objects, respectively, to execute.
