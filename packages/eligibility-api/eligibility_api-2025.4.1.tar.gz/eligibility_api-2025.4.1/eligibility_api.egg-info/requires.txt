@@ -1,0 +1,14 @@
+jwcrypto>=1.5
+requests>=2.31.0
+
+[dev]
+black
+build
+flake8
+pre-commit
+
+[test]
+coverage
+pytest
+pytest-mock
+responses
