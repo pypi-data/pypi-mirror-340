@@ -1,0 +1,11 @@
+turbopuffer/__init__.py,sha256=hC8CrTiFdVjqy9Lj9p9BaEwL_cppYdGw0hE5xF7VcWw,2102
+turbopuffer/backend.py,sha256=8jkRtjQtATZxvd94wU20koNaCdvJPMH39t2khOSx5WA,7724
+turbopuffer/error.py,sha256=Vkikkwca2ltZjIQ_vNeZEzNlU-HXa1TAmtH6L4Up15E,619
+turbopuffer/namespace.py,sha256=ikKJF8TJ7U26gXVwSy2xgX2dJgsle-9dvRcKpVGQe8k,20069
+turbopuffer/query.py,sha256=Pio8KaLWhvRUQNPfr8erpFJiNmyWJuFWHf9J1cfjomE,4148
+turbopuffer/vectors.py,sha256=XvG4F38RzOy6sMG8PCR6hQhxqS80fM95B7sWqZsW9Fs,12126
+turbopuffer/version.py,sha256=Vdi6OffDRorPQeWjvXo2MPbidl7CNworxvziT78bjl0,18
+turbopuffer-0.2.1.dist-info/LICENSE,sha256=LFjQ71Z7OmN9aPE-JsBn7mHTAv4R25LJRziBHQu1nKs,1073
+turbopuffer-0.2.1.dist-info/METADATA,sha256=inWpvNrhRciIEhFRXWwACfhO9gyI0YCGd_gset4xxo8,4645
+turbopuffer-0.2.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+turbopuffer-0.2.1.dist-info/RECORD,,
