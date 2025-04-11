@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: configtpl
+Version: 0.0.1
+Summary: Configuration builder which combines features of Jinja and YAML
+Project-URL: Homepage, https://github.com/ignytis/py_configtpl
+Author-email: Ignytis <155588001+ignytis@users.noreply.github.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: jinja2<4.0.0,>=3.0.0
+Requires-Dist: pyyaml<7.0.0,>=5.1.1
+Provides-Extra: dev
+Requires-Dist: flake8; extra == 'dev'
+Requires-Dist: flake8-quotes; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# configtpl
+
+This configuration library combines Jinja2 and YAML to compile the configuration from templates.
+
+# Status
+
+WIP
