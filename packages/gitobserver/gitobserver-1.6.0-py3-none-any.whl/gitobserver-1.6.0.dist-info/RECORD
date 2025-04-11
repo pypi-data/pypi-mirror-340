@@ -1,0 +1,11 @@
+git_observer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_observer/git_handler.py,sha256=9cpQ6Ae93tAwJjuLlw9aSWXWZjYcZI4RIcwipJiLU3Y,1690
+git_observer/main.py,sha256=C8YLWOSOUX7zjkfRtCbk32_S3BDk5qwTG2lEsWh-cQk,84
+git_observer/utils.py,sha256=bz7PpYb2TpA71-XXYPoqxgOgArjqfC4upZOlEKj28_o,378
+git_observer/watcher.py,sha256=KCvywVjyUBHuvWH8cS0OX-J1T9I3E2w7SMj8UGYXr2M,7697
+gitobserver-1.6.0.dist-info/licenses/LICENCE.md,sha256=6Qh0CKCVKA7D3iqoRjXWScmgoAvh4piq-lBnUlnNyVE,1126
+gitobserver-1.6.0.dist-info/METADATA,sha256=DzcqCbT2r6xhSC5Ph7xeOvuvaxR9nTszIdvPYw0MVmw,4781
+gitobserver-1.6.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gitobserver-1.6.0.dist-info/entry_points.txt,sha256=hak9UGbSGkSsRaM2oTUpt9E15DcKUxyzikhM7myrMRg,65
+gitobserver-1.6.0.dist-info/top_level.txt,sha256=tsnaZCJZV3Tj5HDVRoumdu7pCjpQprVA8G6Z6PO-9kw,13
+gitobserver-1.6.0.dist-info/RECORD,,
