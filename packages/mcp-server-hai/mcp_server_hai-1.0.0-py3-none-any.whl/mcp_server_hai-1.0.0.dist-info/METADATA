@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: mcp-server-hai
+Version: 1.0.0
+Summary: A MCP server implementation for HAI (Hyper Application Inventor) services
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: tencentcloud-sdk-python-hai>=3.0.1357
+Requires-Dist: twine>=6.1.0
+Requires-Dist: uvicorn>=0.34.0
+
+# mcp-server-hai
+
+A MCP server implementation for HAI (Hyper Application Inventor) services
+
+## Installation
+
+```bash
+uv pip install mcp-server-hai
+```
+
+## Usage
+
+Run the server:
+```bash
+uv run mcp-server-hai
+```
+
+Environment variables required:
+- TENCENTCLOUD_SECRET_ID: Your Tencent Cloud secret ID
+- TENCENTCLOUD_SECRET_KEY: Your Tencent Cloud secret key
+
+## Features
+
+- Create, start, stop and remove HAI instances
+- Query instance information and network status
+- Get available regions and instance types
+
+## Development
+
+Install development dependencies:
+```bash
+uv pip install -e .[dev]
+```
+
+## Publishing
+
+Build and publish to PYPI:
+```bash
+uv pip install build twine
+uv run python -m build
+uv run twine upload dist/*
