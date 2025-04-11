@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+CG22079UNO/__init__.py
+CG22079UNO/bisection.py
+CG22079UNO/crammer.py
+CG22079UNO/ejemplos.py
+CG22079UNO/eliminacion_gauss.py
+CG22079UNO/gauss_jordan.py
+CG22079UNO/gauss_seidel.py
+CG22079UNO/jacobi.py
+CG22079UNO/lu_decomposition.py
+CG22079UNO.egg-info/PKG-INFO
+CG22079UNO.egg-info/SOURCES.txt
+CG22079UNO.egg-info/dependency_links.txt
+CG22079UNO.egg-info/requires.txt
+CG22079UNO.egg-info/top_level.txt

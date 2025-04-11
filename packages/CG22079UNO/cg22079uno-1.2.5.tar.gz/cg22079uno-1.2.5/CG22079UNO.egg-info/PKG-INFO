@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: CG22079UNO
+Version: 1.2.5
+Summary: Librería para resolver sistemas de ecuaciones con métodos numéricos
+Home-page: https://github.com/tuusuario/CG22079UNO
+Author: Gloria Elena Castellanos Garcia
+Author-email: CG22070@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# CG22079UNO
+
+**Librería en Python para resolver sistemas de ecuaciones lineales y no lineales.**
+
+## Métodos implementados
+
+- **Gauss**: Método de eliminación de Gauss para sistemas lineales.
+- **Gauss-Jordan**: Método de Gauss-Jordan para sistemas lineales.
+- **Cramer**: Método de Cramer para resolver sistemas lineales mediante determinantes.
+- **Descomposición LU**: Resolución de sistemas de ecuaciones utilizando la descomposición LU.
+- **Jacobi**: Método iterativo de Jacobi para sistemas lineales.
+- **Gauss-Seidel**: Método iterativo de Gauss-Seidel para sistemas lineales.
+- **Bisección**: Método de bisección para encontrar raíces de funciones no lineales.
+
+## Instalación
+
+Para instalar la librería, ejecuta el siguiente comando en tu terminal o línea de comandos:
+
+```bash
+pip install CG22079UNO
+
+## MODO DE USO
+
+Una vez que hayas instalado la librería,ejecuta en la terminal: 
+python main.py para interactuar con el programa.El archivo `main.py` proporciona un menú donde podrás seleccionar el método que deseas utilizar.
+
+Para ejecutar el programa, abre una terminal y escribe lo siguiente:
+python main.py
+
