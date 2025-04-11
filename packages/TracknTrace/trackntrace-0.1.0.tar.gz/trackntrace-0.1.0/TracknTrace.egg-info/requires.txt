@@ -1,0 +1,12 @@
+pandas
+numpy
+markdown
+matplotlib
+pillow
+pytexit
+seaborn
+scikit-learn
+mufit
+openpyxl
+tabulate
+latex
