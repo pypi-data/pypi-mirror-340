@@ -1,0 +1,2 @@
+[console_scripts]
+git-stacktrace-java = git_stacktrace_java:cmd.main
