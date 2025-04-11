@@ -1,0 +1,11 @@
+mcp_bc_server/__init__.py,sha256=MKfdiWZLRWZLiQQtKTQx_5qmIjCEo2ZR6pjp3Pb0TOY,160
+mcp_bc_server/common.py,sha256=pzNtUhyXwyH8G-pcuAtDQDXxiSkpaajui1k3SDQs7Ro,2876
+mcp_bc_server/resources.py,sha256=2dwVcxFs4tkQDEzBUTpU852RCFj8rZ0pmLn6gwhRlcY,2080
+mcp_bc_server/server.py,sha256=_1ErTKKBZYGtKX25FPGCEShW3VybrGKN7XilAEUmb7A,443
+mcp_bc_server/tools.py,sha256=TPdq7LgM0tDMaPyFYFpelauK-KjTMOn4Np5ouQnCIuo,3360
+mcp_business_central_server-0.1.2.dist-info/licenses/LICENSE,sha256=QVS7Rt6eNt1OnIlbVkGIxnLD6OE6u5l3FH1JEbFrflU,1087
+mcp_business_central_server-0.1.2.dist-info/METADATA,sha256=0ystgwcBWMHiNwaVEkLiXqT0lZqSFsG5jULyuJP_mBk,5113
+mcp_business_central_server-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mcp_business_central_server-0.1.2.dist-info/entry_points.txt,sha256=C3o_9LZoajn5GoPEXJyOtjmjbJaqo4cQUBArQZDvS_k,67
+mcp_business_central_server-0.1.2.dist-info/top_level.txt,sha256=0Q8H_PuucSJ2Z9WJWKohDfxP9rNdfo9Ddtxgl-ZXEic,14
+mcp_business_central_server-0.1.2.dist-info/RECORD,,
