@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: cedardb
+Version: 0.0.1
+Summary: Python driver for CedarDB 
+Requires-Python: >=3.11
+License-File: LICENSE.md
+Requires-Dist: psycopg>=3.2.6
+Dynamic: license-file
