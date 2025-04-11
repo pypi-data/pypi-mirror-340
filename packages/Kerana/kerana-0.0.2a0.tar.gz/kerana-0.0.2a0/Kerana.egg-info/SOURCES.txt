@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Kerana.egg-info/PKG-INFO
+Kerana.egg-info/SOURCES.txt
+Kerana.egg-info/dependency_links.txt
+Kerana.egg-info/requires.txt
+Kerana.egg-info/top_level.txt
+bin/kerana
+bin/kerana_completer
+kerana/Kerana.py
+kerana/__init__.py
+kerana/_version.py
+kerana/completer.py
