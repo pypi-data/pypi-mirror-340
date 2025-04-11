@@ -1,0 +1,12 @@
+odoo/addons/mandate_partner_bank_creation/__init__.py,sha256=x2JtIMToA6lqSdOKbw83l_GJng3whZrxyGWTD5iVyuw,24
+odoo/addons/mandate_partner_bank_creation/__manifest__.py,sha256=nfw5K-2owNiseG15kbSuqSC2eddxvSOjYjIFfmGm-HU,816
+odoo/addons/mandate_partner_bank_creation/demo/partner.xml,sha256=mXnQwlAIrdaoTyEG1xgrnmRi4V1LFgYVljqpG6Smc8U,614
+odoo/addons/mandate_partner_bank_creation/listeners/__init__.py,sha256=6zGwhMzIUZsV9DkdH7--2aBd_nGoVbUXqTZMdhiLu4c,36
+odoo/addons/mandate_partner_bank_creation/listeners/partner_bank_listener.py,sha256=oCo-Ro_XPhTOj1XkK3Q-pQAyj5EUA7KpJUYgE6sSndI,652
+odoo/addons/mandate_partner_bank_creation/tests/__init__.py,sha256=rxUOlrgIpaG6JrHhrjbGqZB7SZ4qbSzMrhzvRz43oSM,41
+odoo/addons/mandate_partner_bank_creation/tests/test_cases.py,sha256=7h-fPg4zOFCsbQNQnJDd8EEKk-QQvOvodV6WRedw6MA,468
+odoo/addons/mandate_partner_bank_creation/tests/test_partner_bank_listener.py,sha256=NqDLWAz0iSkq9_iqYaX6hg5KNhjd2P1Z9ErDP3AOv1c,1024
+odoo_addon_mandate_partner_bank_creation-16.0.1.0.2.dist-info/METADATA,sha256=gObTBIS_Ubs53Lis2_IOCNBUiMzZAz8h-Vjn34lsX0Y,814
+odoo_addon_mandate_partner_bank_creation-16.0.1.0.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+odoo_addon_mandate_partner_bank_creation-16.0.1.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_mandate_partner_bank_creation-16.0.1.0.2.dist-info/RECORD,,
