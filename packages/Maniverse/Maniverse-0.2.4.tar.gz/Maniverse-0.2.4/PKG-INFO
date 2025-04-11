@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: Maniverse
+Version: 0.2.4
+Summary: Function optimization on manifolds
+Home-page: https://github.com/FreemanTheMaverick/Maniverse.git
+Author: FreemanTheMaverick
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
