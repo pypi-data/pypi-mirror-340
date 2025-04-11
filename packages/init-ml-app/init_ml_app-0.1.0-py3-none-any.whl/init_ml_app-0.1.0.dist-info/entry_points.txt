@@ -1,0 +1,2 @@
+[console_scripts]
+init-ml-app = ml_project_initializer.cli:main
