@@ -1,0 +1,10 @@
+colloquy_chatbot/__init__.py,sha256=Nk1ZeuEmXQBYQeJLHAfIm_PwXqOFLbXV048Baxz_B70,313
+colloquy_chatbot/chat_bot.py,sha256=d_jH5r0LcbEKn3bIZensvGn0Wmz1nBCFtM1JNKzeQig,1433
+colloquy_chatbot/claude_bot.py,sha256=CkvkakF5doAr2rFKFC3Hu3Y1VYt_G9w0vk42-c1B2YM,4551
+colloquy_chatbot/echo_bot.py,sha256=HfTBERIknLX6-B9Q1PCYxGGRR3OryonLilcLLgBAms4,429
+colloquy_chatbot/openai_bot.py,sha256=3rFPO6n2rdJ1UeF-Exz0y8jlASBnxIoHQhS4Ralp03Y,3868
+colloquy_chatbot/prompt_function.py,sha256=AhIPuH07-vgj4LNu99HscVMP6BwTcHuJHcGOgDnU2G0,4466
+colloquy_chatbot-0.1.0.dist-info/METADATA,sha256=CDh33hXdjYbweRUDY6xu2KJCvJYvezlQa5l18GdVH9o,5544
+colloquy_chatbot-0.1.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+colloquy_chatbot-0.1.0.dist-info/top_level.txt,sha256=nQINeQAJtr4RIs3UfIIbj0y84yJc6wYgjfNnmlu83d0,17
+colloquy_chatbot-0.1.0.dist-info/RECORD,,
