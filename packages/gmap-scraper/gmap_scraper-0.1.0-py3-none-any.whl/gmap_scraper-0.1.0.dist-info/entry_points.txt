@@ -1,0 +1,2 @@
+[console_scripts]
+gmap-scraper = streamlit_app:main

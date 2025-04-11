@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: gmap_scraper
+Version: 0.1.0
+Summary: Scrape business data from Google Maps using Selenium and Streamlit
+Home-page: https://github.com/mukhtar-ul-islam88/Leads_generation_gmap_business
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: selenium-wire
+Requires-Dist: streamlit
+Requires-Dist: webdriver-manager
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
