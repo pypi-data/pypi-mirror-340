@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: moltrack
+Version: 0.0.1
+Summary: Automated changelog for Python PEPs.
+Project-URL: Homepage, https://github.com/valentincalomme/moltrack
+Project-URL: Repository, https://github.com/valentincalomme/moltrack
+Author-email: Valentin Calomme <dev@valentincalomme.com>
+License-File: LICENSE
+Requires-Python: >=3.10
+Provides-Extra: cli
+Requires-Dist: typer>=0.15.2; extra == 'cli'
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <a href="https://raw.githubusercontent.com/valentincalomme/moltrack/refs/heads/main/docs/assets/moltrack_logo.png"><img src="https://raw.githubusercontent.com/valentincalomme/moltrack/refs/heads/main/docs/assets/moltrack_logo.png" alt="Moltrack" height="200"></a>
+</p>
+
+# Moltrack
+
+Automated changelog for Python PEPs.
