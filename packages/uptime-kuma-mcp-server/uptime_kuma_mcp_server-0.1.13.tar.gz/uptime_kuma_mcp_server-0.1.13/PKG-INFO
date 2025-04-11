@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: uptime-kuma-mcp-server
+Version: 0.1.13
+Summary: Uptime Kuma MCP Server for managing monitors
+Project-URL: Homepage, https://github.com/camusama/uptime-kuma-mcp-server
+Author-email: Marquez Yang <marquez.yang@foxmail.com>
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: python-dotenv>=0.9.9
+Requires-Dist: uptime-kuma-api>=1.2.1
+Description-Content-Type: text/markdown
+
+# Uptime Kuma MCP Server
+
+A server for managing Uptime Kuma monitors via MCP protocol.
+
+## Installation
+
+```bash
+uvx uptime-kuma-mcp-server
+```
+
+```json
+"mcpServers": {
+  "uptime-kuma-mcp-server": {
+    "command": "uvx",
+    "args": ["uptime-kuma-mcp-server"],
+    "env": {
+      "KUMA_URL": "https://yourdomain.xyz",
+      "KUMA_USERNAME": "username",
+      "KUMA_PASSWORD": "passwd"
+    }
+  },
+}
+```
+
+## Available Tools
+
+- `add_monitors` - Batch add multiple monitors to Uptime Kuma, returns Uptime Kuma page URLs after completion
+  - `urls` (list[str], required): List of monitor URLs (must be deduplicated and include full protocol, e.g. https://bing.com)
+- `get_monitors` - Get all monitors list, returns trimmed fields to prevent context overflow
+- `delete_monitors` - Batch delete multiple monitors
+  - `ids` (list[int], required): List of monitor IDs to delete
+
+## Run SSE
+
+```python
+# run_sse.py
+
+from uptime_kuma_mcp_server import run_sse
+
+run_sse()
+
+#  Uvicorn running on http://0.0.0.0:8000
+```
