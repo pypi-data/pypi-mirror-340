@@ -1,0 +1,53 @@
+# Openlayer MCP
+
+[MCP](https://github.com/modelcontextprotocol) (Model Context Protocol) server for
+the Openlayer platform. This allows MCP clients (such as Cursor, VSCode,
+Claude Desktop, etc.) to interact with the Openlayer platform.
+
+## Installation
+
+```bash
+uv add openlayer-mcp
+```
+or
+
+```bash
+pip install openlayer-mcp
+```
+
+## Usage
+
+To use the Openlayer MCP server in your IDE or desktop app, you need to add it
+to the MCP configuration file.
+
+```json
+{
+    "mcpServers": {
+        "openlayer": {
+            "command": "uvx",
+            "args": [
+                "openlayer_mcp"
+            ],
+            "env": {
+                "OPENLAYER_API_KEY": "YOUR_OPENLAYER_API_KEY_HERE"
+            }
+        }
+    }
+}
+```
+
+You can alternatively run it as a standalone server with:
+
+```bash
+uv run -m openlayer_mcp
+```
+
+
+
+
+
+
+
+
+
+

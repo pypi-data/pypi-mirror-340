@@ -1,0 +1,17 @@
+[project]
+name = "openlayer-mcp"
+version = "0.1.0"
+description = "MCP server for the Openlayer platform"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "openlayer>=0.2.0a51",
+]
+
+[project.scripts]
+openlayer-mcp = "openlayer_mcp:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
