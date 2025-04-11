@@ -1,0 +1,11 @@
+varen/__init__.py,sha256=U7EWhSL0ZIBbTq4JQQvcms6QO26T0u9hUQBgtA3wAkw,745
+varen/body_models.py,sha256=DXDIEoZ0CMqY6WzC46a6YiwR_33d_Q118o7C4P8Lv9A,36271
+varen/lbs.py,sha256=U0TvWLWmE5Rei5oBEBaWGnIhXlj6TyW0IFBak7cexLE,15025
+varen/utils.py,sha256=H0ZkBn5QcJOxQQaPflvhq_MFQka_yE6VUnU_CFivTls,4466
+varen/vertex_ids.py,sha256=h316jtG2B1wwaZRAkEO9WD0CLWQ_qIHAvPyeKgOXzB0,3100
+varen/vertex_joint_selector.py,sha256=HX6dpvL1_95ldMYpkrWX3Ccc4FFBOvIZI15VqCHMwTU,1844
+varen-1.1.0.dist-info/licenses/LICENSE,sha256=52uZnzNDkNq9YsHnP6xNRbIyaN8H-ifec2L07kgwBsA,6386
+varen-1.1.0.dist-info/METADATA,sha256=iYRtqlY1tDeqVtZcwgsq3gSy8jQfWWU-QzUgXmdwz-s,7072
+varen-1.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+varen-1.1.0.dist-info/top_level.txt,sha256=Yn1gNqAF4ri0PLUP5S-RcZacIMjuY96BNr6lh2D4oy4,6
+varen-1.1.0.dist-info/RECORD,,
