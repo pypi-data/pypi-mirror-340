@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clickup-async"
+version = "1.0.0"
+description = "Modern async Python client for ClickUp API with type hints, rate limiting and fluent interface"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "catorch", email = "catorch@example.com"},
+]
+keywords = ["clickup", "api", "async", "python", "httpx", "asyncio", "task-management", "productivity", "project-management", "pydantic"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Framework :: AsyncIO",
+    "Typing :: Typed",
+]
+
+dependencies = [
+    "httpx>=0.24.0",
+    "pydantic>=2.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/catorch/clickup-async"
+Repository = "https://github.com/catorch/clickup-async.git"
+Issues = "https://github.com/catorch/clickup-async/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "mypy>=1.0.0",
+    "ruff>=0.1.0",
+    "python-dotenv>=1.0.0",
+]
+
+# Add this section to specify the src layout
+[tool.setuptools]
+package-dir = {"" = "src"}
