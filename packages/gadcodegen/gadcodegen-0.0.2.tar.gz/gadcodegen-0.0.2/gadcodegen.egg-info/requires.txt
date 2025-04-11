@@ -1,0 +1,4 @@
+gadify
+jinja2
+tomli
+typer
