@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: aor
+Version: 0.1.0
+Summary: AI-on-Rails: A Python library for prototyping and publishing AI applications with guardrails.
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# AI-on-Rails
+
+The Python library to create the AI applications to be published on https://aionrails.com
