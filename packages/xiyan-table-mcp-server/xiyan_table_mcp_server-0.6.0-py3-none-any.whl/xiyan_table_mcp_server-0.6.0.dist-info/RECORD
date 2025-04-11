@@ -1,0 +1,12 @@
+xiyan_table_mcp_server/__init__.py,sha256=R6yAL2L5TmhZmpeTVMOQ1dJIA9u-0gc56uQ5tjET1F8,211
+xiyan_table_mcp_server/__main__.py,sha256=-rZqVdZ99EcZkv1890jeGmqvBuGmmxbq2rSKdtSUOr4,57
+xiyan_table_mcp_server/config_demo.yml,sha256=vVTp_dDN_L25asQQzDG5TBx3On1Rp3F0FXFfSRIrF2E,334
+xiyan_table_mcp_server/server.py,sha256=QEXhhNMDCU05U69dg_YzuV3Dv55XbiPxk6mEbmp0OZ4,3476
+xiyan_table_mcp_server/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xiyan_table_mcp_server/utils/common_utils.py,sha256=lrfGKNNlZ6ubOrr5bpd1zuT3YUFDvsx7f3R1ZDwgPAw,475
+xiyan_table_mcp_server/utils/llm_utils.py,sha256=7NDgIJKWZd0CGPQKj8aia9q0UH7EAmynzjrogcTzZmI,841
+xiyan_table_mcp_server/utils/prompt.py,sha256=Ozq8qPZi-lNITjEpQFJRnyVYqEYZwPcQ_-fiBW5PmbU,465
+xiyan_table_mcp_server-0.6.0.dist-info/METADATA,sha256=067OHs2DpwMnj_waB37Q1cB09s3TBQKgaiJl8C6ReyA,3244
+xiyan_table_mcp_server-0.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+xiyan_table_mcp_server-0.6.0.dist-info/entry_points.txt,sha256=pZxXrVRwAJcYHmzXD8UQg5GJyYe1Qdz2etZXNgusupk,39
+xiyan_table_mcp_server-0.6.0.dist-info/RECORD,,
