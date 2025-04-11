@@ -1,0 +1,13 @@
+pdfbaker/__init__.py,sha256=6QXRvImYxwjg8eL3rxobySfmCnOlrafcBvW9ckc6iFI,149
+pdfbaker/__main__.py,sha256=BFizUSoyR6zELPWs7PHoug8acERE12k_9k8w9M738Ls,1486
+pdfbaker/baker.py,sha256=Sw5DShSG0YgPktZ3rwWsR9Ri97A5gOq8_7zYE2TKvzY,4368
+pdfbaker/common.py,sha256=32F0qIsFr0a10IuYMSIhJ8Jb9WsZNH9Q6wHkzflmDSA,6520
+pdfbaker/document.py,sha256=a8n4dM00XynWSQm8NqXsYXaQ8p2eWe6EIVWBD859S8U,8015
+pdfbaker/errors.py,sha256=YTvi3N9smEtOJ5foRWFuQhnunwXKLhLRsQPHEkyem2g,649
+pdfbaker/render.py,sha256=JaXqvaHvLZlR-9awW2Wc9MGpjIWWJupHnODtokzA3bk,3544
+pdfbaker/types.py,sha256=JSYSbysuZDCJyIKzb6S7THEbyO4WYLdFekHTobtctY4,310
+pdfbaker-0.3.4.dist-info/METADATA,sha256=k071eZETh6Xc-PD9k9ZqdToDw1ls3zwGOZHZxAxAFoY,1802
+pdfbaker-0.3.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pdfbaker-0.3.4.dist-info/entry_points.txt,sha256=bRcx2wRHVj_hSIRpm9o3x1s3rQ6Vs2FyqISFvzOMEn0,51
+pdfbaker-0.3.4.dist-info/licenses/LICENSE,sha256=mvOfE40l537k4lcs6NTxqYObULjROLS9nThj3xHCJu8,1068
+pdfbaker-0.3.4.dist-info/RECORD,,
