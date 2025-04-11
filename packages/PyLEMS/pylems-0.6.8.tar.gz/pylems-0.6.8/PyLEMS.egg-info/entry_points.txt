@@ -1,0 +1,2 @@
+[console_scripts]
+pylems = lems.run:main

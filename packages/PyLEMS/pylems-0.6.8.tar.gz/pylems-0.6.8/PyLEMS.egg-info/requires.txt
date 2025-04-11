@@ -1,0 +1,13 @@
+lxml
+matplotlib
+
+[:python_version < "3.5"]
+typing
+
+[dev]
+pre-commit
+ruff
+pytest
+
+[doc]
+sphinxcontrib-bibtex
