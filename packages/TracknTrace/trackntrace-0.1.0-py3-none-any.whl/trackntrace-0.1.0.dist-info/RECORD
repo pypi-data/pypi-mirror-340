@@ -1,0 +1,17 @@
+TracknTrace/Prototype_Amini.metadata,sha256=80yQjXMDi0qwYOoNFOE2gHLT_HwGKcmiol9r55XSQ1Q,4590
+TracknTrace/Prototype_Amini.xlsx,sha256=6dh9M02Q0qibGAygQWhUQhIW7R7ZjBDIScbjxTxPddg,789270
+TracknTrace/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TracknTrace/analysis.py,sha256=3z2kQlLH6MoZUpoEfy1B8G2THHBttpTqldUAXzr2jNQ,997
+TracknTrace/uurgeg_290_2011-2020.txt,sha256=9OSTfrHYZoG3zgwtwwG2ufXBewoHNepNRAMX5BCpfFs,13420416
+TracknTrace/uurgeg_290_2021-2030.txt,sha256=i5zplpjQg8aPJBwg9ZWByUdo9AvCFeZVnfN1osaMVgs,4335842
+TracknTrace/wrapper.py,sha256=FhUKe7474zmUOirBKodIJoH5m1pjSLFyzjeJElcQinI,877
+TracknTrace/categorizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TracknTrace/categorizer/categorizer.py,sha256=GfufnwT9q5qS4QfP19kCX7bNWlfETEK5DqWq3rXHFVk,3891
+TracknTrace/preprocessor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TracknTrace/preprocessor/preProcessor.py,sha256=sfPlKkbXyCrB8s0KdNvN6yO4BgDq79pkcS7k4wvnRO8,71664
+trackntrace-0.1.0.dist-info/licenses/LICENSE,sha256=LdbP_sSEDOjlISFfT02ZuI8Lnx_apxAvxnsYBYesVV4,1075
+trackntrace-0.1.0.dist-info/METADATA,sha256=fKdW61w5la7Vh0qDvouMYNuntQJCzr-6g4mAQD3z_Kk,14925
+trackntrace-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+trackntrace-0.1.0.dist-info/entry_points.txt,sha256=nZgBu-VyyRXF-cCsFX_VlX6IWvJbD4zfETtDPoPGMIA,57
+trackntrace-0.1.0.dist-info/top_level.txt,sha256=czBrB8FoL-gVHnLw5tZqdnM9JlPGv6-_FQ2uPhOGc1g,12
+trackntrace-0.1.0.dist-info/RECORD,,
