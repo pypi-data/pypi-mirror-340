@@ -1,0 +1,4 @@
+mutagen
+
+[waveform_drawing]
+pillow
