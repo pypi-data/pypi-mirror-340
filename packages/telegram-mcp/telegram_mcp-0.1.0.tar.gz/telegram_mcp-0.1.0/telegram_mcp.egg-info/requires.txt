@@ -1,0 +1,5 @@
+mcp[cli]
+telethon
+python-dotenv
+pydantic
+qrcode[pil]

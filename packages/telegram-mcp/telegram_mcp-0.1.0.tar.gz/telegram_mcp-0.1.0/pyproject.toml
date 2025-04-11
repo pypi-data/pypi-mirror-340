@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram-mcp"
+version = "0.1.0"
+authors = [
+  { name="Yaser Martinez Palenzuela", email="yaser.martinez@gmail.com" },
+]
+description = "An MCP server for interacting with Telegram, runnable as a single script or uv tool."
+readme = "README.md" # Assumes README.md exists or will be created
+requires-python = ">=3.10"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Chat",
+    "Framework :: AsyncIO",
+]
+dependencies = [
+    "mcp[cli]",
+    "telethon",
+    "python-dotenv", # Still useful for optional overrides by dev
+    "pydantic",
+    "qrcode[pil]",
+]
+
+[project.scripts]
+telegram-mcp = "telegram_mcp_runner:main" # Points to the main function in the runner script
+
+# Optional: Add project URLs if you have a repository
+# [project.urls]
+# "Homepage" = "https://github.com/elyase/telegram-mcp"
+# "Bug Tracker" = "https://github.com/elyase/telegram-mcp/issues"
+
+# --- Added Development Dependencies and Tool Configs ---
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "anyio>=4.5", # Needed for async testing
+    "ruff>=0.8.5",
+    "pyright>=1.1.391",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.pyright]
+include = ["telegram_mcp_runner.py", "tests"]
+# venvPath = "." # Optional: uncomment if needed
+# venv = ".venv" # Optional: uncomment if needed
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
