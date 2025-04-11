@@ -1,0 +1,9 @@
+sqlmodel_crud_utilities-0.0.1b0.dist-info/licenses/LICENSE,sha256=lcQxCckTlFETd0TUTsXBYwhtPNHqvWjDG-zul8JwkhY,1071
+sqlmodel_crud_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlmodel_crud_utils/a_sync.py,sha256=i1iZkQV4bUjyQrTQcuPLtbnBFlj-5LzfDPm0Yi_8bDc,16919
+sqlmodel_crud_utils/sync.py,sha256=tbv7UOH_WM_66AUwTl121eWRMApyQWNYMF_PEmy-hZk,17047
+sqlmodel_crud_utils/utils.py,sha256=D9PxYSdUHrdbaEph-b3GqCL-tw712JPZAjsqP5f0Nnk,1030
+sqlmodel_crud_utilities-0.0.1b0.dist-info/METADATA,sha256=keK7w22tStWFk15hYC3vWElsEYLwB9CU3dOo3W_sfa8,12775
+sqlmodel_crud_utilities-0.0.1b0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sqlmodel_crud_utilities-0.0.1b0.dist-info/top_level.txt,sha256=bSW1rk5y3UkFpSmnCsqh27KDN_DWuNgadhwTnuNAa64,20
+sqlmodel_crud_utilities-0.0.1b0.dist-info/RECORD,,
