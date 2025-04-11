@@ -1,0 +1,7 @@
+agno
+pyyaml
+python-dotenv
+
+[agno]
+agno
+pymongo
