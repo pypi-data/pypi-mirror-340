@@ -1,0 +1,24 @@
+[project]
+name = "media-widget"
+version = "0.1.0"
+description = "Lightweight Miniplayer compatible with media running in Windows/Browser and Taskbar control of media."
+authors = [{ name = "Jaskaran Bhogal", email = "jaskaran197@gmail.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = "==3.9.*"
+dependencies = [
+    "pystray",
+    "Pillow",
+    "winrt"
+]
+
+[project.scripts]
+media-widget = "mediawidget.app:main"
+
+[tool.setuptools]
+packages = ["mediawidget"]
+include-package-data = true
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"

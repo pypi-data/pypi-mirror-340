@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+recursive-include mediawidget/icons *.png
+include LICENSE
+include README.md
+recursive-include mediawidget/icons *.png
+recursive-include mediawidget/icons *.py
