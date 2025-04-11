@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: rf_humab
+Version: 0.0.4
+Summary: Humanization tool for IgG heavy chain sequences
+Author: Lydia Stone
+Author-email: <lstone@g.hmc.edu>
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: summary
+
+Humanization tool for IgG heavy chain sequences based on the paper at https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8760955/.
