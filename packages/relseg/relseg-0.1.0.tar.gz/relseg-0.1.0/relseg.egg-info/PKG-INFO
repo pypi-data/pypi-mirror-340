@@ -1,0 +1,84 @@
+Metadata-Version: 2.2
+Name: relseg
+Version: 0.1.0
+Author: LKoehler
+Requires-Python: ==3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: edlib
+Requires-Dist: fast-ctc-decode
+Requires-Dist: mappy
+Requires-Dist: networkx
+Requires-Dist: numpy<2
+Requires-Dist: pandas<3
+Requires-Dist: parasail
+Requires-Dist: pod5
+Requires-Dist: pysam
+Requires-Dist: python-dateutil
+Requires-Dist: requests
+Requires-Dist: toml
+Requires-Dist: tqdm
+Requires-Dist: wheel
+Requires-Dist: torch==2.1.2
+Requires-Dist: ont-bonito
+Requires-Dist: ont-fast5-api
+Requires-Dist: ont-koi
+Requires-Dist: ont-remora
+Requires-Dist: zennit==0.5.1
+Requires-Dist: lxt==0.6.1
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+
+# RelSeg
+**Rel**evance Based **Seg**mentation of Nanopore Reads  
+  
+RelSeg is used to align the basecalled sequence to the signal of nanopore reads. It relies on the [bonito](https://github.com/nanoporetech/bonito) basecaller of ONT. The [lxt](https://github.com/rachtibat/LRP-eXplains-Transformers) and [zennit](https://github.com/chr5tphr/zennit) packages are used for the Layer-wise Relevance Propagation.  
+A transformer model which no longer requires `flash_attn` is implemented. 
+
+
+## Installation
+```bash
+$ pip install relseg
+```
+## Usage
+
+```bash
+$ relseg rna004_130bps_sup@v5.0.0 /path/data/reads --rna > basecall.txt
+
+$ relseg rna004_130bps_sup@v5.0.0 /path/data/reads --rna --save_relevance > basecall.txt
+```
+
+
+## Output
+
+
+| Column   | Description                                                                 |
+|----------|-----------------------------------------------------------------------------|
+| read_id  | Unique identifier for the read                                             |
+| base     | The base (nucleotide) called at the specific position                      |
+| start    | The start position of the base in the signal alignment (-1 for not aligned)            |
+| end      | The end position of the base in the signal alignment (-1 for not aligned)                  |
+
+### Example Output
+```tsv
+read_id	base	start	end
+5a729d16-b785-4e8c-ad91-314d862d980b	T	140	157
+5a729d16-b785-4e8c-ad91-314d862d980b	C	157	157
+5a729d16-b785-4e8c-ad91-314d862d980b	T	157	181
+5a729d16-b785-4e8c-ad91-314d862d980b	C	-1	-1
+```
+
+The normal basecalls including the moves table are also output.
+
+## Relevance for Consecutive Bases
+![Description of the image](figures/relevance.png)
+
+
+## Sequence Aligned to Signal
+![Description of the image](figures/segmentation.png)
+
+
+
