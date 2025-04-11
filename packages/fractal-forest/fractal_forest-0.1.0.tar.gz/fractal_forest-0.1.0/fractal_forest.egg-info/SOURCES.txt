@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+fractal_forest/__init__.py
+fractal_forest/node.py
+fractal_forest/tree.py
+fractal_forest.egg-info/PKG-INFO
+fractal_forest.egg-info/SOURCES.txt
+fractal_forest.egg-info/dependency_links.txt
+fractal_forest.egg-info/requires.txt
+fractal_forest.egg-info/top_level.txt
+tests/test_fractal_forest.py
