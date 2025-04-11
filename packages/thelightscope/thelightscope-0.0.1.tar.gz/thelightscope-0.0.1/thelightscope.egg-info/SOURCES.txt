@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+thelightscope.py
+thelightscope.egg-info/PKG-INFO
+thelightscope.egg-info/SOURCES.txt
+thelightscope.egg-info/dependency_links.txt
+thelightscope.egg-info/requires.txt
+thelightscope.egg-info/top_level.txt
