@@ -1,0 +1,8 @@
+README.md
+setup.py
+DigitalSpider.egg-info/PKG-INFO
+DigitalSpider.egg-info/SOURCES.txt
+DigitalSpider.egg-info/dependency_links.txt
+DigitalSpider.egg-info/top_level.txt
+spider/__init__.py
+spider/main.py
