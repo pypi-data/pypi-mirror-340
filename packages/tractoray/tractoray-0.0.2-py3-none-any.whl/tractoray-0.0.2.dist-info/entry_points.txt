@@ -1,0 +1,5 @@
+[console_scripts]
+_bootstrap_head=tractoray.cli.bootstrapper:run_head
+_bootstrap_node=tractoray.cli.bootstrapper:run_node
+tractoray_cli=tractoray.cli.cli:main
+
