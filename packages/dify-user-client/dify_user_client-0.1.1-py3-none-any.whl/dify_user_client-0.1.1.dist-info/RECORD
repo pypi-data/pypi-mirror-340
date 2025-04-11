@@ -1,0 +1,12 @@
+dify_utils/__init__.py,sha256=gPHRKkqKqKdMBiXtaVx6bzmeba50_0CvumzBDoD5GH8,107
+dify_utils/apps.py,sha256=RMa87xK35XLzZ6e1tXGmI35ofsYgOVFaKNDPLPmkru0,7355
+dify_utils/base.py,sha256=0lBKb0FmtEOsvs-jpxlxnFjXKL3dw4zEGQ5nBz-ahv0,1928
+dify_utils/clients.py,sha256=5Gt8bbCW2T9FZdRV1UHPxP-9ZQrs6GUDdbwZeVg4yL8,5910
+dify_utils/knowledge.py,sha256=pl19TUi0Uhews_KZrJAVpcjBDRaV9F_8HLE9apWwN5Y,12083
+dify_utils/llms.py,sha256=sr8rRtl5JIe-hBcW2ft1pDdKOj1Av6AinIUsGaVpZL8,2161
+dify_utils/main.py,sha256=8aOjRUbp_yPsPJw1YBcDS-_ypGSp3MtG9-jxXN7y7ls,88
+dify_utils/tools.py,sha256=BCMJA-riqG86V9bWIGEhrRZGyjsv3ka8HMGcGsRZ-_E,5194
+dify_user_client-0.1.1.dist-info/METADATA,sha256=fIvV-TEkFlmWjAcqhtR-mavwH6giqke4nq8yVqBlthk,2145
+dify_user_client-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dify_user_client-0.1.1.dist-info/licenses/LICENSE,sha256=y8DqnocssOLQqyRwIQftumOjf4A-4Snk12KZgyF_Mec,1089
+dify_user_client-0.1.1.dist-info/RECORD,,
