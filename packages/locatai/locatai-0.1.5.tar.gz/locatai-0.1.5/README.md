@@ -1,0 +1,118 @@
+# LocatAI
+
+AI-powered element locator for Selenium WebDriver.
+
+## Overview
+
+LocatAI is an innovative Python package that uses AI to find web elements based on natural language descriptions, making your Selenium tests more reliable and easier to maintain. Instead of brittle CSS selectors or XPath expressions, you can use natural language to describe the elements you want to interact with.
+
+## Features
+
+- **Natural Language Element Finding**: Locate elements using plain English descriptions
+- **Smart Caching**: Reduces API calls and improves performance
+- **Automatic Timeout Management**: Dynamically adjusts timeouts based on historical performance
+- **Detailed Error Diagnostics**: Helps debug element location failures
+- **Usage Analytics**: Tracks API usage, cache efficiency, and success rates
+
+## Installation
+
+Install the package using pip:
+
+```bash
+pip install locatai
+```
+
+## Environment Setup
+
+LocatAI uses OpenAI's API for element location. You need to set up your API key:
+
+1. Create a `.env` file in your project's root directory
+2. Add your OpenAI API key to the file:
+
+```
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+3. **Important**: Add the `.env` file to your `.gitignore` to prevent accidentally committing your API key
+
+The package uses the `python-dotenv` library to automatically load this key when needed.
+
+## Basic Usage
+
+```python
+from selenium import webdriver
+from locatai import ElementFinder
+
+# Initialize WebDriver
+driver = webdriver.Chrome()
+driver.get("https://example.com")
+
+# Find an element using natural language
+login_button = ElementFinder.FindElementByAI(driver, "Login button")
+login_button.click()
+
+# Find multiple elements
+item_cards = ElementFinder.FindElementsByAI(driver, "product cards")
+print(f"Found {len(item_cards)} products")
+```
+
+## Advanced Usage
+
+### Smart Timeouts
+
+LocatAI automatically adjusts wait times based on historical performance:
+
+```python
+# Default timeout will be used (smart timeout based on element history)
+submit_button = ElementFinder.FindElementByAI(driver, "Submit button") 
+
+# Override with a custom timeout in seconds
+menu_item = ElementFinder.FindElementByAI(driver, "Settings menu item", timeout=15)
+```
+
+### Tracking API Usage
+
+Monitor your OpenAI API usage and performance metrics:
+
+```python
+from locatai import AIUsageTracker
+
+# Get usage statistics
+report = AIUsageTracker.get_instance().get_report()
+print(f"API Calls: {report['api_calls']}")
+print(f"Cache Hit Rate: {report['cache_hit_rate']:.1%}")
+print(f"Estimated Cost: ${report['estimated_cost']:.4f}")
+```
+
+See the examples directory for more advanced usage patterns.
+
+## How It Works
+
+LocatAI analyzes the current DOM of your web page and uses AI to determine the most reliable selector strategy for your element description. It prioritizes the most stable selectors (ID, name) when available, and falls back to CSS selectors or XPath when needed.
+
+The package includes:
+- Smart caching to reduce API calls for previously seen elements
+- Automatic retries with different locator strategies
+- Detailed error diagnostics when elements can't be found
+- Performance tracking to optimize timeouts
+
+## Troubleshooting
+
+### API Key Issues
+- Ensure your `.env` file is in the correct location (project root directory)
+- Verify your API key is valid and has access to the required OpenAI models
+- Check that the environment variable name is exactly `OPENAI_API_KEY`
+
+### Element Not Found Issues
+- Try using more specific element descriptions
+- Ensure the element is visible in the DOM when the finder method is called
+- Check if the element is inside an iframe (switch to it first)
+- Increase the timeout for elements that take longer to load
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request to https://github.com/Divyarajsinh-Dodia/locatai.
+
+## License
+
+MIT
