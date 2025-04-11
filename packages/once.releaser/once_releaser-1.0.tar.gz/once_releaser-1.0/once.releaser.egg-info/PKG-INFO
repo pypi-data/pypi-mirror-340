@@ -1,0 +1,229 @@
+Metadata-Version: 2.4
+Name: once.releaser
+Version: 1.0
+Summary: Custom releaser hooks for ONCE project based on zest.releaser
+Author-email: Rafael Bermúdez Horcajada <rber474@gmail.com>
+License: GPL
+Project-URL: documentation, https://github.com/rber474/once.releaser/
+Project-URL: repository, https://github.com/rber474/once.releaser/
+Project-URL: changelog, https://github.com/rber474/once.releaser/blob/master/CHANGES.rst
+Keywords: releasing,packaging,pypi
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+License-File: LICENSE.GPL
+License-File: LICENSE.rst
+Requires-Dist: zest.releaser[recommended]>=9.6.1
+Requires-Dist: zestreleaser>=1.3.0
+Provides-Extra: test
+Requires-Dist: zope.testing; extra == "test"
+Requires-Dist: zope.testrunner; extra == "test"
+Dynamic: license-file
+
+
+.. image:: https://coveralls.io/repos/github/once.releaser/badge.svg?branch=main
+    :target: https://coveralls.io/github/once.releaser?branch=main
+    :alt: Coveralls
+
+.. image:: https://codecov.io/gh/once.releaser/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/once.releaser
+
+.. image:: https://img.shields.io/pypi/v/once.releaser.svg
+    :target: https://pypi.python.org/pypi/once.releaser/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/status/once.releaser.svg
+    :target: https://pypi.python.org/pypi/once.releaser
+    :alt: Egg Status
+
+.. image:: https://img.shields.io/pypi/pyversions/once.releaser.svg?style=plastic   :alt: Supported - Python Versions
+
+.. image:: https://img.shields.io/pypi/l/once.releaser.svg
+    :target: https://pypi.python.org/pypi/once.releaser/
+    :alt: License
+
+
+================
+once.releaser
+================
+
+Custom releaser hooks for JIRA project based on zest.releaser and cs.zestreleaser.changelog.
+This hook extract the commit messages from the last release tag to the current tag and create the towncrier news fragments, based on the JIRA issue and the towncrier type.
+
+Currently it only supports GIT VCS logs.
+
+The commit messages must be in the following format::
+
+    <optional prefix> <issue_name>-<issue_number> <towncrier type> <message> [<author>]
+
+
+Author will be extracted from the git history.
+
+Examples
+--------
+
+The following commit messages are valid:
+
+- Revert WEBAGL-1234 feature Add new feature
+- Add WEBAGL-1234 feature new feature
+- WEBAGL-1235 bugfix Fix AttributeError RequestContainer object has no attribute getClientForURL
+
+Fragments files will be created in the following format:
+
+**news/WEBAGL-1234.feature** ::
+
+    Add new feature [Rafael Bermúdez Horcajada <myemail@email.com>]
+    Revert new feature [Rafael Bermúdez Horcajada <myemail@email.com>]
+
+
+**news/WEBAGL-1235.bugfix** ::
+
+    Fix AttributeError RequestContainer object has no attribute getClientForURL [Rafael Bermúdez Horcajada <myemail@email.com>]
+    
+
+
+Installation
+------------
+
+Using pip::
+
+    $ pip install once.releaser
+
+
+Authors
+-------
+
+- Rafael Bermúdez Horcajada
+
+
+Contributors
+------------
+
+Put your name here, you deserve it!
+
+- ?
+
+
+Contribute
+----------
+
+- Issue Tracker: https://github.com/once.releaser/issues
+- Source Code: https://github.com/once.releaser
+
+
+License
+-------
+
+The project is licensed under the GPLv2.
+
+Changelog
+=========
+
+.. You should *NOT* be adding new change log entries to this file.
+   You should create a file in the news directory instead.
+
+.. towncrier release notes start
+
+1.0 (2025-04-11)
+----------------
+
+No significant changes.
+
+
+1.0a10 (2024-09-30)
+-------------------
+
+Bug fixes:
+
+
+- Extract commits ignoring merged [Bermúdez Horcajada, Rafael] (#1)
+
+
+1.0a9 (2024-09-24)
+------------------
+
+Bug fixes:
+
+
+- Fix duplicate entries
+
+
+1.0a8 (2024-09-20)
+------------------
+
+New features:
+
+
+- Git add after all files are updated.
+
+
+1.0a7 (2024-09-20)
+------------------
+
+Bug fixes:
+
+
+- Ensure the newsfile is added to the git index to avoid pre-commit hooks to fail
+
+
+1.0a6 (2024-09-20)
+------------------
+
+Bug fixes:
+
+
+- Don't assign encoding to file
+
+
+1.0a5 (2024-09-20)
+------------------
+
+New features:
+
+
+- Execute at hook zest.releaser.prereleaser.before
+
+
+1.0a4 (2024-09-20)
+------------------
+
+Bug fixes:
+
+
+- Fix regex pattern to extract prefix properly [Rafael Bermúdez Horcajada <rber474@gmail.com>]
+
+
+1.0a3 (2024-09-19)
+------------------
+
+Bug fixes:
+
+
+- Fix release workfloww [Rafael Bermúdez Horcajada <rber474@gmail.com>]
+
+
+1.0a2 (2024-09-19)
+------------------
+
+New features:
+
+
+- Switch to OpenID Connect [Rafael Bermúdez Horcajada <rber474@gmail.com>]
+
+
+1.0a1 (unreleased)
+------------------
+
+- Initial release.
+  [rber474]

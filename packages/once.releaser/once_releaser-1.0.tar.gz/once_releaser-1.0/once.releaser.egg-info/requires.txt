@@ -1,0 +1,6 @@
+zest.releaser[recommended]>=9.6.1
+zestreleaser>=1.3.0
+
+[test]
+zope.testing
+zope.testrunner
