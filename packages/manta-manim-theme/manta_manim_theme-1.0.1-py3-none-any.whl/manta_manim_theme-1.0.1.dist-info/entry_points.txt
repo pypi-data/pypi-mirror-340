@@ -1,0 +1,5 @@
+[console_scripts]
+manedit=manta.manim_editor.__main__:main
+manim_editor=manta.manim_editor.__main__:main
+manta=manta.cli.typer_cli:app
+
