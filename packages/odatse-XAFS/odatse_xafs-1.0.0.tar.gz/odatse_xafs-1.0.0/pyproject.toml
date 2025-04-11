@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "odatse-XAFS"
+version = "1.0.0"
+description = "PTRF-XAFS solver module for ODAT-SE: data-analysis software of quantum beam diffraction experiments for 2D material structure"
+authors = ["2DMAT developers <2dmat-dev@issp.u-tokyo.ac.jp>"]
+license = "GPL-3.0-or-later"
+
+readme = "README.md"
+repository = "https://github.com/2DMAT/odatse-XAFS"
+
+packages = [
+  { include = "XAFS", from = "src", to = "odatse/extra" }
+  ]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+numpy = "^1.14"
+pydantic = "^2"
+ODAT-SE = "^3"
+
+[tool.poetry.scripts]
+odatse-XAFS = "odatse.extra.XAFS._main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
