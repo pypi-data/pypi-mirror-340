@@ -1,0 +1,2 @@
+[console_scripts]
+escloud-mcp-server = escloud_mcp_server:main
