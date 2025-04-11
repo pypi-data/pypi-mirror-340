@@ -1,0 +1,7 @@
+buildah_wrapper/__init__.py,sha256=5YdTwwQoP6maFB-_aV12Jf5cZJMLoUeunz-pb1XWKV0,14
+buildah_wrapper/buildah_wrapper.py,sha256=Hj1fM85cvQPZaelMrUwBnqLbiiguQsYWwTeN-Q2ZbeA,11684
+buildah_wrapper-0.0.0.8.dist-info/METADATA,sha256=We6-CK66aIao9azNrO6AZTWx8W05BRPTW-YD6C2cF0E,4783
+buildah_wrapper-0.0.0.8.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+buildah_wrapper-0.0.0.8.dist-info/entry_points.txt,sha256=irJeqZ55jRU2dLT5tPWDUlT0FnYmoKor_1-mALlsnw4,73
+buildah_wrapper-0.0.0.8.dist-info/licenses/LICENSE,sha256=bm_WGoejFcUka8uFcrpUs7wK4dTFs026uy87iZTpGbc,1060
+buildah_wrapper-0.0.0.8.dist-info/RECORD,,
