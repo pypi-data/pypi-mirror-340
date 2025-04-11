@@ -1,0 +1,13 @@
+geopandas_ai-0.0.3.dist-info/licenses/LICENSE.MD,sha256=DAmUuH60hUmz2EsVeroyvc7ERckTYSFXZqB5xEG_YMw,2087
+geopandasai/__init__.py,sha256=jtvUQSqCPnCbUTllBCVrmCCjwuRbdzOGZOTw2zXxwp8,199
+geopandasai/cache.py,sha256=X7GzEMaxHLqBg8C8N_OqPPi_3QXoBOxOraQr2fnW-0A,3330
+geopandasai/config.py,sha256=0TOlS2OUe2DlLfLJiPUCRK61CexmqcG1AXw7b-DbCv0,727
+geopandasai/geodataframe_ai.py,sha256=HY9DARsR_XExabU5eJYkAroE3M2iZH6PW22I7kTsvEw,1475
+geopandasai/prompt.py,sha256=KThTbJsg6sKotatnmrDBuBA9ASSoomE5oohgzoiz9ik,6210
+geopandasai/template.py,sha256=ORBpC414HmRfqx-bUMVooe9uLfFmfLKV3GW-p0-GMB4,1251
+geopandasai/types.py,sha256=W5rhancQVaEua5ulSgdeA825z3iuJzQSqkhXWkRCg_A,906
+geopandasai/wrapper.py,sha256=Zwu-Dxi86Dj4PoBOIumc9un1pABZrx7kuHirV4uAOFE,2468
+geopandas_ai-0.0.3.dist-info/METADATA,sha256=KD2qX6ieSzJJEu8HG5CJp96eRVT_RgQt5hIC5W20yfc,5445
+geopandas_ai-0.0.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+geopandas_ai-0.0.3.dist-info/top_level.txt,sha256=koZxfImtMUUGWbTr8Z5qFR_tokgd11EZ5OrOWw4x9jM,12
+geopandas_ai-0.0.3.dist-info/RECORD,,
