@@ -1,0 +1,4 @@
+[console_scripts]
+mmevaluate = multimolecule.apis.run:evaluate
+mminfer = multimolecule.apis.run:infer
+mmtrain = multimolecule.apis.run:train
