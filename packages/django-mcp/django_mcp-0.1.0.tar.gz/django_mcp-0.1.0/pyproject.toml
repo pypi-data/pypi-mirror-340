@@ -1,0 +1,19 @@
+[project]
+name = "django-mcp"
+version = "0.1.0"
+description = "django-mcp adds MCP tool hosting to Django."
+authors = [
+    {name = "Patrick Paul", email = "patrick@kitespark.com"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/kitespark/django-mcp"
+Issues = "https://github.com/kitespark/django-mcp/issues"

@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: django-mcp
+Version: 0.1.0
+Summary: django-mcp adds MCP tool hosting to Django.
+Author-email: Patrick Paul <patrick@kitespark.com>
+License: MIT
+Project-URL: Homepage, https://github.com/kitespark/django-mcp
+Project-URL: Issues, https://github.com/kitespark/django-mcp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# django-mcp
+
+django-mcp adds MCP tool hosting to Django.
