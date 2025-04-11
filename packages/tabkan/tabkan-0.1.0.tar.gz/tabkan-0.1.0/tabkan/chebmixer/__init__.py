@@ -1,0 +1,1 @@
+from .chebmixer import ChebyshevKANMixer
