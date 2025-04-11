@@ -1,0 +1,5 @@
+odoo-addon-account_banking_mandate<16.1dev,>=16.0dev
+odoo-addon-account_banking_sepa_direct_debit<16.1dev,>=16.0dev
+odoo-addon-component_event<16.1dev,>=16.0dev
+odoo-addon-partner_manual_rank<16.1dev,>=16.0dev
+odoo<16.1dev,>=16.0a
