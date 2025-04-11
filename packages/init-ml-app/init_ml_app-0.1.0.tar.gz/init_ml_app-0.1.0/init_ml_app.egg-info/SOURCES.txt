@@ -1,0 +1,9 @@
+setup.py
+init_ml_app.egg-info/PKG-INFO
+init_ml_app.egg-info/SOURCES.txt
+init_ml_app.egg-info/dependency_links.txt
+init_ml_app.egg-info/entry_points.txt
+init_ml_app.egg-info/requires.txt
+init_ml_app.egg-info/top_level.txt
+ml_project_initializer/__init__.py
+ml_project_initializer/cli.py
