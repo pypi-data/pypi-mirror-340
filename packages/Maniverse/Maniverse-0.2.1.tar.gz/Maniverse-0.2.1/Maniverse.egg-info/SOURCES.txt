@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Maniverse.egg-info/PKG-INFO
+Maniverse.egg-info/SOURCES.txt
+Maniverse.egg-info/dependency_links.txt
+Maniverse.egg-info/top_level.txt
