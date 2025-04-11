@@ -1,0 +1,10 @@
+bookmark_organizer/__init__.py,sha256=jwWckxT8zlPtrCzsJDX89XxuMEQFD3KPO65R1zT2xXo,1317
+bookmark_organizer/cli.py,sha256=X4UvfTQd9zYDUzBXmoR5cMeFBhvCyfXr4it4NpRQc-s,5010
+bookmark_organizer/core.py,sha256=VL0d02RMP3JQfl29XlkQZW4VHbbxqA3dv-8KuRI-mmE,67070
+bookmark_organizer/group_ideas.tsv,sha256=Q67anfke9c-GtbDJ6y1vlewfV1mPtNXwYwMjx7NzuAg,381
+bookmark_organizer/report.py,sha256=YnFTOfLPXmXHXSXm1OGg5BRGoFxmdVQHMa_fGGNWCOg,3639
+bookmark_organizer-0.1.0.dist-info/METADATA,sha256=ldvHH8pLFWZlVRhT4XuOtWULqzfa0j1SgjJ8ZL_xgO4,4062
+bookmark_organizer-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bookmark_organizer-0.1.0.dist-info/entry_points.txt,sha256=kOeNQgnmCU-UczJpdQDArZtQhwxGeZ2YcU910f3X3YM,85
+bookmark_organizer-0.1.0.dist-info/licenses/LICENSE,sha256=8VYQjf31glM7YLgFXX9yPM1YCLi2i_lzz7JOW5Hxzhs,1088
+bookmark_organizer-0.1.0.dist-info/RECORD,,

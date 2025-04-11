@@ -1,0 +1,2 @@
+[console_scripts]
+bookmark-organizer = bookmark_organizer.cli:organize_bookmarks_cli
