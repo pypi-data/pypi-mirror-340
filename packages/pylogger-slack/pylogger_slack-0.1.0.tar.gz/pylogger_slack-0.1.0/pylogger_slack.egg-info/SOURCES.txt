@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+pylogger_slack/__init__.py
+pylogger_slack/_config.py
+pylogger_slack/logger.py
+pylogger_slack/slack.py
+pylogger_slack.egg-info/PKG-INFO
+pylogger_slack.egg-info/SOURCES.txt
+pylogger_slack.egg-info/dependency_links.txt
+pylogger_slack.egg-info/requires.txt
+pylogger_slack.egg-info/top_level.txt
+tests/test_config.py
+tests/test_logger.py
+tests/test_slack.py
