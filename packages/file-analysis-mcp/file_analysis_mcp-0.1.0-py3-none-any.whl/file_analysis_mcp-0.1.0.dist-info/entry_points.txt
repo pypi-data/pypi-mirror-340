@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-file-analysis = file_analysis_mcp:run
