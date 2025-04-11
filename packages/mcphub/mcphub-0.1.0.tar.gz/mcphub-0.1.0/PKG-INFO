@@ -1,0 +1,83 @@
+Metadata-Version: 2.4
+Name: mcphub
+Version: 0.1.0
+Summary: A hub for Model Context Protocol (MCP) servers
+Project-URL: Documentation, https://github.com/yourusername/mcphub#readme
+Project-URL: Issues, https://github.com/yourusername/mcphub/issues
+Project-URL: Source, https://github.com/yourusername/mcphub
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Requires-Dist: build<2.0.0,>=1.2.2.post1
+Requires-Dist: motor<4.0.0,>=3.7.0
+Requires-Dist: python-dotenv<2.0.0,>=1.0.0
+Requires-Dist: pyyaml<7.0.0,>=6.0.2
+Requires-Dist: twine<7.0.0,>=6.1.0
+Description-Content-Type: text/markdown
+
+# MCPHub
+
+A hub for Model Context Protocol (MCP) servers that enables you to manage and run MCP servers locally.
+
+## Installation
+
+```bash
+pip install mcphub
+```
+
+## Usage
+
+### Command Line Interface
+
+MCPHub comes with a command-line interface for common operations:
+
+```bash
+# Set up all configured MCP servers
+mcphub setup
+
+# List available MCP servers
+mcphub list-servers
+
+# List tools from all MCP servers
+mcphub list-tools
+
+# List tools from a specific server
+mcphub list-tools --server azure-devops
+
+# Use the MCPHubAdapter
+mcphub adapter --config mcp_config.yaml --server azure-devops-mcp
+```
+
+### Using in code
+
+```python
+import asyncio
+from mcphub import MCPHubAdapter, setup_all_servers, store_mcp, list_tools
+from dataclasses import asdict
+
+# Initialize and set up servers
+async def init():
+    await setup_all_servers()
+    await store_mcp()
+    
+    # List all available tools
+    tools = await list_tools()
+    print(f"Available tools: {tools}")
+    
+    # Use the adapter to get a specific server
+    adapter = MCPHubAdapter().from_config("mcp_config.yaml", cache_path="cache")
+    server = adapter.get_server("azure-devops-mcp")
+    
+    if server:
+        print(f"Server config: {server}")
+
+# Run the async function
+asyncio.run(init())
+```
