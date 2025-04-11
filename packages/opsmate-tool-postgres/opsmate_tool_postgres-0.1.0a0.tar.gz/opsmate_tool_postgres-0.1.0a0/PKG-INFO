@@ -1,0 +1,100 @@
+Metadata-Version: 2.4
+Name: opsmate-tool-postgres
+Version: 0.1.0a0
+Summary: PostgreSQL tool for opsmate
+Author-email: Jingkai He <jingkai@hey.com>
+License: MIT License
+        
+        Copyright (c) 2025 Jingkai He
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Requires-Python: <4.0,>=3.10
+Requires-Dist: opsmate
+Requires-Dist: psycopg2-binary
+Description-Content-Type: text/markdown
+
+# opsmate-tool-postgres
+
+`opsmate-tool-postgres` is a tool for Opsmate that allows you to interact with PostgreSQL databases with the assistance of a LLM.
+
+## Installation
+
+Change directory to this folder and run:
+```bash
+opsmate install opsmate-tool-postgres
+```
+
+To verify the installation, you can run:
+
+```bash
+$ opsmate list-tools | grep -i postgres
+│ PostgresTool        │ PostgreSQL tool
+```
+
+
+## Usage
+
+First, start the PostgreSQL server using docker-compose:
+```bash
+docker compose -f fixtures/docker-compose.yml up
+```
+
+Then you can test the tool by running:
+
+```bash
+opsmate chat \
+  --runtime-postgres-password postgres \
+  --runtime-postgres-host localhost \
+  --runtime-postgres-database ecommerce \
+  --runtime-postgres-schema ecommerce \
+  --tools PostgresTool
+```
+
+## Configurable oOptions
+
+```bash
+$ opsmate chat --help | grep -i postgres
+  --postgres-tool-runtime TEXT    The runtime to use for the tool call (env:
+                                  POSTGRES_TOOL_RUNTIME)  [default: postgres]
+  --runtime-postgres-timeout INTEGER
+                                  The timeout of the PostgreSQL server in
+                                  seconds (env: RUNTIME_POSTGRES_TIMEOUT)
+  --runtime-postgres-schema TEXT  The schema of the PostgreSQL server (env:
+                                  RUNTIME_POSTGRES_SCHEMA)  [default: public]
+  --runtime-postgres-database TEXT
+                                  The database of the PostgreSQL server (env:
+                                  RUNTIME_POSTGRES_DATABASE)
+  --runtime-postgres-password TEXT
+                                  The password of the PostgreSQL server (env:
+                                  RUNTIME_POSTGRES_PASSWORD)  [default: ""]
+  --runtime-postgres-user TEXT    The user of the PostgreSQL server (env:
+                                  RUNTIME_POSTGRES_USER)  [default: postgres]
+  --runtime-postgres-port INTEGER
+                                  The port of the PostgreSQL server (env:
+                                  RUNTIME_POSTGRES_PORT)  [default: 5432]
+  --runtime-postgres-host TEXT    The host of the PostgreSQL server (env:
+                                  RUNTIME_POSTGRES_HOST)  [default: localhost]
+```
+
+## Uninstall
+
+```bash
+opsmate uninstall -y opsmate-tool-postgres
+```
