@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+telegram_mcp_runner.py
+telegram_mcp.egg-info/PKG-INFO
+telegram_mcp.egg-info/SOURCES.txt
+telegram_mcp.egg-info/dependency_links.txt
+telegram_mcp.egg-info/entry_points.txt
+telegram_mcp.egg-info/requires.txt
+telegram_mcp.egg-info/top_level.txt
+tests/test_tools.py

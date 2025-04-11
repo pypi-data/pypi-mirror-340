@@ -1,0 +1,2 @@
+[console_scripts]
+telegram-mcp = telegram_mcp_runner:main

@@ -1,0 +1,49 @@
+# Telegram MCP Server ✨📲
+
+Yo! The cleanest MCP server package for interacting with Telegram via `uvx`.
+
+## Features 🚀
+
+*   **PyPI Package:** Install and run easily using `uvx`. No manual cloning needed!
+*   **QR Code Login:** No messing with API keys! Just scan the QR code with your Telegram app on your phone during the first run (`--install cursor`).
+*   **Automatic Cursor Config:** The `--install cursor` command automatically sets up the server in Cursor's `mcp.json`.
+
+## Installation & Setup (It's Super Easy!) ✨
+
+Got `uv` installed? ([Get it here](https://docs.astral.sh/uv/getting-started/installation/#standalone-installer) if not).
+
+Cool. Now, just run this **one command** in your terminal:
+
+```bash
+# This does EVERYTHING: installs, logs in (if needed), and configures Cursor!
+uvx telegram-mcp --install cursor
+```
+
+Seriously, that's it! This single command handles:
+1.  **Installation:** Downloads the latest `telegram-mcp` package via `uvx`.
+2.  **Login:** If it's your first time or your session is invalid, it'll show a QR code. Scan it with your Telegram app (Settings > Devices > Link Desktop Device). Your session is saved locally.
+3.  **Cursor Configuration:** Automatically adds or updates the server configuration in your `~/.cursor/mcp.json` file. No manual editing needed!
+
+You only need to run this command once for the initial setup. `uvx` will handle updates if you run it again later.
+
+## Running the Server 🏃💨
+
+After you've successfully run the `--install cursor` command at least once, you can start the MCP server anytime by simply running:
+
+```bash
+uvx telegram-mcp
+```
+
+This command starts the server, making it available for MCP clients (like Cursor) to connect to. Keep this terminal window open while you want the server to be active.
+
+## Available Tools 🛠️
+
+Once running and configured, you can use these tools in MCP clients:
+
+*   `find_chat(name_query: str)`: Find chats or users by their name. 💬
+*   `send_message(chat_id: int | str, text: str)`: Send a message to a specific chat. ➡️
+*   `reply_to_last_message(chat_id: int | str, text: str)`: Reply to the *last incoming* message in a chat. ↩️
+*   `get_messages(chat_id: int | str, limit: int = 20, ...)`: Fetch recent messages from a chat. 📄 *(More parameters available, check the source!)*
+*   `search_telegram_messages(query: str, chat_id: int | str | None = None, ...)`: Search messages using Telegram's built-in search. 🔍 *(More parameters available)*
+
+Feel free to request more tools!
