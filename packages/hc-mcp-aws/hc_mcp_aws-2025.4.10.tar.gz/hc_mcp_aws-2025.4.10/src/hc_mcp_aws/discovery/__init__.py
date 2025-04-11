@@ -1,0 +1,19 @@
+"""
+AWS resource discovery package.
+"""
+from .ec2_discovery import discover_ec2_resources
+from .s3_discovery import discover_s3_resources
+from .lambda_discovery import discover_lambda_resources
+from .rds_discovery import discover_rds_resources
+from .cloudwatch_discovery import discover_cloudwatch_resources
+from .waf_discovery import discover_waf_resources
+from .securityhub_discovery import discover_securityhub_resources
+from .inspector_discovery import discover_inspector_resources
+from .iam_discovery import discover_iam_resources
+from .vpc_discovery import discover_vpc_resources
+from .dynamodb_discovery import discover_dynamodb_resources
+from .sns_discovery import discover_sns_resources
+from .sqs_discovery import discover_sqs_resources
+from .cloudfront_discovery import discover_cloudfront_resources
+from .route53_discovery import discover_route53_resources
+from .apigateway_discovery import discover_apigateway_resources

@@ -1,0 +1,77 @@
+# HC MCP AWS Server
+
+A Model Context Protocol (MCP) server for AWS monitoring and management.
+
+## Overview
+
+HC MCP AWS Server provides a set of tools and resources for monitoring and managing AWS resources through the Model Context Protocol (MCP). It allows AI assistants to interact with AWS services, fetch CloudWatch logs, analyze security findings, and discover resources across your AWS accounts.
+
+## Features
+
+- **Organization Management**: View AWS organization structure and resolve account identifiers
+- **CloudWatch Monitoring**: Access dashboards, logs, and alarms
+- **Security Analysis**: Retrieve and analyze Security Hub findings and Inspector vulnerabilities
+- **WAF Management**: Monitor and analyze WAF configurations and metrics
+- **Resource Discovery**: Discover resources across various AWS services
+
+## Installation
+
+```bash
+pip install hc-mcp-aws
+```
+
+## Usage
+
+### Running the Server
+
+```bash
+hc-mcp-aws
+```
+
+### Command-line Options
+
+- `--version`: Show version information and exit
+- `--debug`: Enable debug logging
+
+## AWS Authentication
+
+The server uses boto3 for AWS authentication and supports the following methods:
+
+1. **Default Credentials**: For accessing resources in the default AWS account
+2. **Profile-based Authentication**: For cross-account access using named profiles in the format `AdministratorAccess@Account_Name`
+
+## Development
+
+### Prerequisites
+
+- Python 3.10 or higher
+- AWS credentials configured
+
+### Setup Development Environment
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/hc-mcp-aws.git
+cd hc-mcp-aws
+
+# Create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install -e .
+```
+
+### Running Tests
+
+```bash
+pytest
+```
+
+## License
+
+MIT License
+
+## Acknowledgements
+
+This project is built on the Model Context Protocol (MCP) framework and uses boto3 for AWS interactions.

@@ -1,0 +1,72 @@
+name: Python Package
+
+on:
+  push:
+    branches: [ main ]
+    tags:
+      - 'v*'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip uv
+        uv pip install build pytest ruff
+        if [ -f requirements.txt ]; then uv pip install -r requirements.txt; fi
+        uv pip install -e .
+    - name: Lint with ruff
+      run: |
+        uv run ruff check .
+    - name: Format check with ruff
+      run: |
+        uv run ruff format --check .
+    - name: Test with pytest
+      run: |
+        uv run pytest
+
+  build-and-publish:
+    needs: test
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.12"
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build twine
+    - name: Extract version from tag
+      id: get_version
+      run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
+    - name: Verify version matches
+      run: |
+        PACKAGE_VERSION=$(grep -m 1 'version = ' pyproject.toml | cut -d '"' -f 2)
+        if [ "$VERSION" != "$PACKAGE_VERSION" ]; then
+          echo "Error: Tag version ($VERSION) does not match package version ($PACKAGE_VERSION)"
+          exit 1
+        fi
+    - name: Build package
+      run: python -m build
+    - name: Publish to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_API_TOKEN }}
