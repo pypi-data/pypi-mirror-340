@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "honeybadger": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/Users/bobbybattista/Code/honeybadger-mcp",
+        "-m",
+        "honeybadger_mcp_server"
+      ],
+      "env": {
+        "HONEYBADGER_API_KEY": "y6KdJvjyAWyu_jo9Z8s4",
+        "HONEYBADGER_PROJECT_ID": "129804"
+      }
+    }
+  }
+}
