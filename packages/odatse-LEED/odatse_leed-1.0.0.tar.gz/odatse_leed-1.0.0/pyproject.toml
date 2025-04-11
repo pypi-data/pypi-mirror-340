@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "odatse-LEED"
+version = "1.0.0"
+description = "LEED solver module for ODAT-SE: data-analysis software of quantum beam diffraction experiments for 2D material structure"
+authors = ["2DMAT developers <2dmat-dev@issp.u-tokyo.ac.jp>"]
+license = "GPL-3.0-or-later"
+
+readme = "README.md"
+repository = "https://github.com/2DMAT/odatse-LEED"
+
+packages = [
+  { include = "LEED", from = "src", to = "odatse/extra" }
+  ]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+numpy = "^1.14"
+pydantic = "^2"
+fortranformat = "^2"
+ODAT-SE = "^3"
+
+[tool.poetry.scripts]
+odatse-LEED = "odatse.extra.LEED._main:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
