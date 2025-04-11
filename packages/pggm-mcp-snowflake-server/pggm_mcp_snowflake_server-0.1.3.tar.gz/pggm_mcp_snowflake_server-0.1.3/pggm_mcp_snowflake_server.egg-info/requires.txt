@@ -1,0 +1,4 @@
+mcp
+pydantic
+snowflake-snowpark-python
+pyyaml
