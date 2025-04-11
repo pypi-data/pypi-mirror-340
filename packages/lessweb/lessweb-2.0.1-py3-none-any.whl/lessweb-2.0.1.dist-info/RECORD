@@ -1,0 +1,13 @@
+lessweb/__init__.py,sha256=FzgPxdNMEC-5wbwIVPR5RikqqgSOmDr8CwdtVIWm-kw,2495
+lessweb/annotation.py,sha256=Vs98awpX0ZhDuxuPQSEvyp8Q0oHRzr2YTMB1Fij5G04,1646
+lessweb/bridge.py,sha256=SoSR1sD6qUcJOMZAxf6PVRVka6qjfH9nqWlUAgiUT60,9719
+lessweb/event.py,sha256=zZy_kKCLiSAjhcO1S9vxhpWTF6_LDaaJWF09nbuIUMg,3228
+lessweb/ioc.py,sha256=KQQPVG1Up2a9t8FqSMgDFbCo_1oySBIV3a7kdTZn38Q,16441
+lessweb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lessweb/typecast.py,sha256=KY9nFvLftZWOgwsFlE8okVuSdh5swwEN70-0FdLt3Ek,10990
+lessweb/utils.py,sha256=C4ig8BpFxW7aGLWbt0VAzEqbqKxkEy2UN0gev3SVpNQ,2660
+lessweb-2.0.1.dist-info/licenses/LICENSE.txt,sha256=M5NGggGCTXeYJsgrCLOcGuaEO_aQ3J5biX570g9cUs8,556
+lessweb-2.0.1.dist-info/METADATA,sha256=xBnYxFJlGFOV500DEllVTKG4gTRefXlJ5o0ixSv6u8E,3242
+lessweb-2.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+lessweb-2.0.1.dist-info/top_level.txt,sha256=TlMqAhz0pxsRFPb6Gc-ySLXvvarAKkD-ma7zGP44se8,8
+lessweb-2.0.1.dist-info/RECORD,,
