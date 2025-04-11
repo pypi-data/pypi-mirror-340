@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+pyiotb/__init__.py
+pyiotb/client.py
+pyiotb.egg-info/PKG-INFO
+pyiotb.egg-info/SOURCES.txt
+pyiotb.egg-info/dependency_links.txt
+pyiotb.egg-info/entry_points.txt
+pyiotb.egg-info/requires.txt
+pyiotb.egg-info/top_level.txt
+pyiotb/scripts/download_logs.py
+pyiotb/scripts/trigger_comparison.py
