@@ -1,0 +1,13 @@
+[console_scripts]
+denofo-comparator-cli = denofo.comparator.comparator_cli:main
+denofo-converter-cli = denofo.converter.converter_cli:main
+denofo-questionnaire-cli = denofo.questionnaire.questionnaire_cli:main
+update-ncbi-taxdb = denofo.utils.ncbiTaxDBcheck:update_NCBI_taxDB
+
+[gui_scripts]
+denofo-comparator = denofo.comparator.comparator_gui:main
+denofo-comparator-gui = denofo.comparator.comparator_gui:main
+denofo-converter = denofo.converter.converter_gui:main
+denofo-converter-gui = denofo.converter.converter_gui:main
+denofo-questionnaire = denofo.questionnaire.questionnaire_gui:main
+denofo-questionnaire-gui = denofo.questionnaire.questionnaire_gui:main
