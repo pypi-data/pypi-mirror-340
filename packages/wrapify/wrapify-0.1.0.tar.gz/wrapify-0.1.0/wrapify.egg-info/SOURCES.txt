@@ -1,0 +1,8 @@
+README.md
+main.py
+pyproject.toml
+wrapify.egg-info/PKG-INFO
+wrapify.egg-info/SOURCES.txt
+wrapify.egg-info/dependency_links.txt
+wrapify.egg-info/entry_points.txt
+wrapify.egg-info/top_level.txt
