@@ -1,0 +1,3 @@
+[console_scripts]
+pinn-me-inversion = pme.inversion:main
+pinn-me-to-npz = pme.convert.pme_to_npz:main
