@@ -1,0 +1,9 @@
+elphick/pandera_utils/__init__.py,sha256=BDSoiHJD0bZeF_LoVzi6ZhkHvxJ-lvrI5Mg5-W_zie0,240
+elphick/pandera_utils/pandera_utils.py,sha256=Pt22koEmOg1t3S3M6dVMDASC3jwUsT06ANZCjdxOfYc,16388
+elphick/pandera_utils/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elphick/pandera_utils/utils/pandera_io_pandas_io.py,sha256=ot3h0HboATLWzLw879J7VQNZGGKTWrp5HhlZbVWCIJ4,29561
+elphick/pandera_utils/utils/pandera_schema_statistics_pandas.py,sha256=QaV6gi5iOvJHfnz6hILxFjpkkGJopVlrbw8fj1v9yAU,1897
+pandera_utils-0.2.1.dist-info/LICENSE,sha256=L6GNOxIoh0DoEqf26AO52WU55e_2n0sCOd2vwWA5iI0,1069
+pandera_utils-0.2.1.dist-info/METADATA,sha256=emnzc9xmIsXMKcKljV5n68LmnCsinkvpfG5i_vRP6Rc,671
+pandera_utils-0.2.1.dist-info/WHEEL,sha256=WGfLGfLX43Ei_YORXSnT54hxFygu34kMpcQdmgmEwCQ,88
+pandera_utils-0.2.1.dist-info/RECORD,,
