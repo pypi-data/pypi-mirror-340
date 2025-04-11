@@ -1,0 +1,50 @@
+import sys
+from typing import Callable
+from vigilant_sdk.types import LogLevel, Log, Alert
+from datetime import datetime
+
+
+class EventPassthrough:
+    """
+    EventPassthrough is a class that passthroughs events to stdout or stderr.
+    """
+    stdout_write: Callable[[str], None]
+    stderr_write: Callable[[str], None]
+
+    def __init__(self):
+        self.stdout_write = sys.stdout.write
+        self.stderr_write = sys.stderr.write
+
+    def log_passthrough(self, log: Log):
+        match log['level']:
+            case LogLevel.ERROR:
+                self.stderr_write(self._format_log(log) + "\n")
+            case _:
+                self.stdout_write(self._format_log(log) + "\n")
+
+    def alert_passthrough(self, alert: Alert):
+        self.stderr_write(self._format_alert(alert) + "\n")
+
+    def _format_log(self, log: Log) -> str:
+        timestamp_str = self._format_timestamp(log.get('timestamp', ''))
+        attributes_str = ""
+        for key, value in log.get("attributes", {}).items():
+            attributes_str += f"{key}={value} "
+        level_str = log.get('level', '')
+        body_str = log.get('body', '')
+        return f"[{timestamp_str}] [{level_str}] {body_str} {attributes_str}".strip()
+
+    def _format_alert(self, alert: Alert) -> str:
+        timestamp_str = self._format_timestamp(alert.get('timestamp', ''))
+        attributes_str = ""
+        for key, value in alert.get("attributes", {}).items():
+            attributes_str += f"{key}={value} "
+        return f"[{timestamp_str}] {alert.get('title', '')} {attributes_str}".strip()
+
+    def _format_timestamp(self, timestamp_str: str) -> str:
+        try:
+            dt_obj = datetime.fromisoformat(
+                timestamp_str.replace('Z', '+00:00'))
+            return dt_obj.strftime("%Y-%m-%d %H:%M:%S")
+        except ValueError:
+            return timestamp_str
