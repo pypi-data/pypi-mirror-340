@@ -1,0 +1,8 @@
+talk2dom/__init__.py,sha256=73NjiRoAX7tt2zMslG-64wGoRdu9tLcmqT1lCx1Wuiw,56
+talk2dom/core.py,sha256=rs6nQQUYhgTdp9PKiO0HbcU35lpb-01TyWEhgj_gLS0,1837
+talk2dom/prompts/locator_prompt.txt,sha256=isl9peERMSVEvMlNRzZAbqFKy_-zImUwXo1e8L5CVuU,337
+talk2dom-0.1.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+talk2dom-0.1.1.dist-info/METADATA,sha256=2pMDUOC22FtgIpAz6taibAN6hRMbOSXi25ydaBXc9XQ,3588
+talk2dom-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+talk2dom-0.1.1.dist-info/top_level.txt,sha256=Fxbl0qTQ5BpvGefuWss2WzQGC-OsOtwbiLp2uOYMrTA,9
+talk2dom-0.1.1.dist-info/RECORD,,
