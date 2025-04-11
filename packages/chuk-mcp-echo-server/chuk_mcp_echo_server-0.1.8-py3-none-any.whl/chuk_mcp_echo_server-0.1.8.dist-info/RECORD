@@ -1,0 +1,10 @@
+chuk_mcp_echo_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chuk_mcp_echo_server/main.py,sha256=It6WAxr9z4Rp3X-4IHY9lI42hGGo9nsVQGr_I3YEN_w,117
+chuk_mcp_echo_server/models.py,sha256=gZttIcSvkEJjbkhIzLEsaCpysfTL5jj_sKF8mbnENtY,264
+chuk_mcp_echo_server/tools.py,sha256=iPQ9VQuOXCq8Ak6HnXP7yqib0NC-xeDif2gLJHaYasY,901
+chuk_mcp_echo_server-0.1.8.dist-info/licenses/LICENSE.md,sha256=HqgRrOv3qCAICv8XxRZLyNAHz1TJg1v9vb34MnE9mcY,1065
+chuk_mcp_echo_server-0.1.8.dist-info/METADATA,sha256=V5kNpNjHQguXcPUDJ55hUExwxtTl46jgST2tiBJS8cw,3044
+chuk_mcp_echo_server-0.1.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+chuk_mcp_echo_server-0.1.8.dist-info/entry_points.txt,sha256=4O8XvdK2dkt7rWq8eXJFxzZ-Jxb_t4ppIZ8QM8etb1w,121
+chuk_mcp_echo_server-0.1.8.dist-info/top_level.txt,sha256=S8PnhfCYCvZ5R4Mb0ZBw-vH069lAK-zkdvBM9_4KqVU,21
+chuk_mcp_echo_server-0.1.8.dist-info/RECORD,,
