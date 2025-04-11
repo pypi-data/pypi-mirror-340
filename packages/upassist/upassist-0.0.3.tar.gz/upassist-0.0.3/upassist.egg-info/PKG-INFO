@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: upassist
+Version: 0.0.3
+Summary: Official Upasist Cloud API python SDK
+Author-email: michael7nightingale <suslanchikmopl@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/upassist-cloud/upassist-python
+Project-URL: Issues, https://github.com/upassist-cloud/upassist-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Official Upassist Cloud Python SDK
+
+## Installation
+
+```
+pip install upassist
+```
+
+## Heartbeat event
+
+You can configure all of your monitors using a single YAML file. This can be version controlled and synced to Cronitor as part of
+a deployment or build process. For details on all of the attributes that can be set, see the [Monitor API](https://cronitor.io/docs/monitor-api) documentation.
+
+
+```python
+import upassist
+
+upassist.api_key = 'you-api-key'
+
+heartbeat = upassist.Heartbeat(heartbeat_slug="cron-job-foo")
+heartbeat.event()
+```
