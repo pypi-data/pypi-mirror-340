@@ -1,0 +1,7 @@
+file_uploader/__init__.py,sha256=Vx5ywdA4vvxPdjdZQSOLPI3kO-NgezJGmGCcq36NDy4,70
+file_uploader/uploader.py,sha256=IPK_-ufkf6SD8gty4Fd7MKPjT9QbvP71u97vRoprM0A,4540
+s3_file_uploader-0.1.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3_file_uploader-0.1.0.dist-info/METADATA,sha256=oSmRua1V4TicnjFX7KgiA5C2pwfgoRFgl9M3gBxaMko,859
+s3_file_uploader-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+s3_file_uploader-0.1.0.dist-info/top_level.txt,sha256=AxYjDgksXBZM7JdcL-f6gr8DuxYRUEhRWniTnEyyXdY,14
+s3_file_uploader-0.1.0.dist-info/RECORD,,
