@@ -1,0 +1,11 @@
+include README.md
+include LICENSE
+
+recursive-include invctrl/templates *
+recursive-include invctrl/db *
+recursive-include invctrl/data *
+recursive-include invctrl/models *
+recursive-include invctrl/routes *
+recursive-include invctrl/utils *
+
+global-exclude __pycache__ *.py[cod]
