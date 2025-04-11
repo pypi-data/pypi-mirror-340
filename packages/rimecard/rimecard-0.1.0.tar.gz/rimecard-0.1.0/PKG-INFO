@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: rimecard
+Version: 0.1.0
+Summary: extract vcf vcard names to rime dictionary
+Project-URL: homepage, https://github.com/darkclip/rimecard
+Project-URL: repository, https://github.com/darkclip/rimecard
+Project-URL: documentation, https://github.com/darkclip/rimecard
+Author-email: darkclip <darkclip@users.noreply.github.com>
+License: MIT
+Keywords: dict,dictionary,pinyin,rime,vcard,vcf
+Requires-Python: >=3.8
+Requires-Dist: chardet>=5.2.0
+Requires-Dist: pypinyin>=0.54.0

@@ -1,0 +1,28 @@
+[project]
+name = "rimecard"
+version = "0.1.0"
+description = "extract vcf vcard names to rime dictionary"
+license = { text = "MIT" }
+keywords = ["rime", "vcf", "vcard", "pinyin", "dict", "dictionary"]
+readme = "README.md"
+authors = [{ name = "darkclip", email = "darkclip@users.noreply.github.com" }]
+requires-python = ">=3.8"
+dependencies = ["chardet>=5.2.0", "pypinyin>=0.54.0"]
+
+[project.urls]
+homepage = "https://github.com/darkclip/rimecard"
+repository = "https://github.com/darkclip/rimecard"
+documentation = "https://github.com/darkclip/rimecard"
+
+[project.scripts]
+rimecard = "rimecard:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.setuptools]
+packages = ["rimecard"]
+
+[tool.ruff.format]
+quote-style = "single"
