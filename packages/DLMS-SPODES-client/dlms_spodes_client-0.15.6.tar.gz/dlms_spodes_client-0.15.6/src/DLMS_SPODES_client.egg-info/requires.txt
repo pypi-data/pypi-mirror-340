@@ -1,0 +1,6 @@
+pycryptodomex>=3.15
+StructResult<0.6,>=0.5.7
+DLMS-SPODES-communications<1.5,>=1.4.9
+DLMS_SPODES<0.86,>=0.85.1
+DLMSadapter<0.8,>=0.7.2
+DLMSCommunicationProfile<0.2,>=0.1.4
