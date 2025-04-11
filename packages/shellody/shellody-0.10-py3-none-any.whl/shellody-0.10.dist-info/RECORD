@@ -1,0 +1,7 @@
+shellody/__init__.py,sha256=FkGIg0seB3k9onyF2CUASJysTwdvdzvyp1hki2WAYN0,21
+shellody/arguments.py,sha256=t359jZRlVpnY9mYlaUdCvI8bWQvMkRgfY_0CAT_cXJQ,3771
+shellody/completion.py,sha256=hp8HyzONGh0AkLVfGRWroad8n0-ISk7wdPdv30bn1zE,15319
+shellody/shell.py,sha256=75WZQL442d-Ojops6DFC_w-wXTFAH107A-b-R8X605g,7358
+shellody-0.10.dist-info/METADATA,sha256=8WcPngUOV9MwpuytSsACrw2S_JfJtp_4kYTK2QP80sw,774
+shellody-0.10.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+shellody-0.10.dist-info/RECORD,,
