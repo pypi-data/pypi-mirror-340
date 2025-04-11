@@ -1,0 +1,23 @@
+[project]
+name = "boiler-plate-math"
+version = "0.1.0"
+description = "Boiler Plate Python Project"
+authors = [
+    {name = "Sganjala srilakshmi.ganjala@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
