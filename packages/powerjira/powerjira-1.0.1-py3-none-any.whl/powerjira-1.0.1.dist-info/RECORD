@@ -1,0 +1,11 @@
+powerjira.py,sha256=PxU45A_iuzzi2Ed3rNKrRG2fCLMjQ15mSXlt_JzpSoc,166
+powerjira_toolchain/_templates/description.txt,sha256=J4SSanXHyBktvNz0MYz_mL1PPalsfX6wN86XOmXxUWQ,61
+powerjira_toolchain/_templates/summary.txt,sha256=joF8aAGSQ0rad9Vp7eOLirSwfwlcfcOuQWTq_jkHQp0,58
+powerjira_toolchain/_templates/ticket.yml,sha256=JiZQ-7spi-2fwGQgDvkNviqYoBP7NGfTcf3sDiJ9p90,489
+powerjira_toolchain/commands.py,sha256=-LZXclRJR61_wg-9i5MECyDotNnV7zO3IXYBtB6Hk58,4382
+powerjira_toolchain/params.py,sha256=RxWlp3d8UyI82f33icOdfeDHDgiPKJwzR_a4oBTCKyA,1363
+powerjira_toolchain/utils.py,sha256=K2PP10Q7DKTpSsli5muHvyJZ9SJshE0UAY7Z6rnHbRA,5513
+powerjira-1.0.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+powerjira-1.0.1.dist-info/METADATA,sha256=8f7JrymEn409YPzkiOpa9xVpZI8-Biq3SphYOhhCQjE,44607
+powerjira-1.0.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+powerjira-1.0.1.dist-info/RECORD,,
