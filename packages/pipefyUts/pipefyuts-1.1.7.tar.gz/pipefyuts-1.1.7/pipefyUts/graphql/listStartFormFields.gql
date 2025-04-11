@@ -1,0 +1,13 @@
+
+query MyQuery {
+  pipe(id: "$pipe_id$") {
+    start_form_fields {
+      id
+      label
+      type
+      options
+      required
+      description
+    }
+  }
+}

@@ -1,0 +1,40 @@
+query{
+  phase(id: $phase_id$) {
+    cards(after: $after$) {
+      edges {
+        node {
+          id
+          created_at
+          createdBy {
+            id
+            name
+            __typename
+          }
+          labels { id name }
+          due_date
+          comments {
+            id
+            author {
+              id
+            }
+            author_name
+            created_at
+            text
+          }
+          fields {
+            field {
+              id
+              label
+              options
+            }
+            value
+          }
+        }
+      }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+    }
+  }
+}
