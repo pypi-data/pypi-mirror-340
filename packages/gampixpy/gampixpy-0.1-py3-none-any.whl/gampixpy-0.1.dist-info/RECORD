@@ -1,0 +1,15 @@
+gampixpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gampixpy/config.py,sha256=UNXaPfzIlrIu1bS2QBYp8PbqhZK9BDm2qyab9OflG40,4816
+gampixpy/detector.py,sha256=rD-MijZhwPgiBFgEQ0eWb0nWV9XPsEoVLBZtQ3rQMEk,27975
+gampixpy/generator.py,sha256=11XLX3BTGHPq15bnFbrpo-13CiolGr_ILCSxBwzWlhg,4506
+gampixpy/input_parsing.py,sha256=u9v6JhybidnHTvKt9H3a20yACbqTNk_0YUfhKvVdfRA,20625
+gampixpy/output.py,sha256=fwVV_fIrdr5FcijvGQFnWa0cyTMSasrqyO36s75rn80,2459
+gampixpy/plotting.py,sha256=eMFJHYgxaD6ly9o3uol6iJi53Xh4l4UIQFWEfn742qQ,18660
+gampixpy/readout_objects.py,sha256=zfPSnpi-4lztukngJ8Q6erioJnpfmLQMG0r2ZRr7UKo,1520
+gampixpy/tracks.py,sha256=h1e53C3P8feMI8sBaKuNuc6Jb1Y0IkmPjarjEdcdl1M,1644
+gampixpy/units.py,sha256=vyYijuuZDd6530C0fNcQLnwhsVgMezpXjOvz93Vg_ZM,744
+gampixpy-0.1.dist-info/licenses/LICENSE,sha256=LUWfRJnmOM5wKroFida4evYa24mBWSh3FWLLblQ-1Uc,1071
+gampixpy-0.1.dist-info/METADATA,sha256=puB05sgfi8ZBRYBzuppQWmsapOPC4CcKxRnrZJ_dSjA,885
+gampixpy-0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+gampixpy-0.1.dist-info/top_level.txt,sha256=s2f_5MOf-tKpGBzutZ-2x0hfwMTa2jB1SvINoHmV8l0,9
+gampixpy-0.1.dist-info/RECORD,,
