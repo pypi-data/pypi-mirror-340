@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+tipredict/__init__.py
+tipredict/configs.py
+tipredict/main.py
+tipredict/preprocess.py
+tipredict.egg-info/PKG-INFO
+tipredict.egg-info/SOURCES.txt
+tipredict.egg-info/dependency_links.txt
+tipredict.egg-info/requires.txt
+tipredict.egg-info/top_level.txt
