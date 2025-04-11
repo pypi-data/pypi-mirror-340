@@ -1,0 +1,3 @@
+[console_scripts]
+wayland-mcp = server_mcp:main
+wayland-mcp-server = server_mcp:main
