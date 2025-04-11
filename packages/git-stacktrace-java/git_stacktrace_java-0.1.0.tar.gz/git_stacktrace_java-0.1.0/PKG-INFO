@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: git-stacktrace-java
+Version: 0.1.0
+Summary: Add your description here
+License-File: AUTHORS
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: whatthepatch>=1.0.7
