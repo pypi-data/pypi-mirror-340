@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/dickerbotclient/__init__.py
+src/dickerbotclient/client.py
+src/dickerbotclient.egg-info/PKG-INFO
+src/dickerbotclient.egg-info/SOURCES.txt
+src/dickerbotclient.egg-info/dependency_links.txt
+src/dickerbotclient.egg-info/requires.txt
+src/dickerbotclient.egg-info/top_level.txt
