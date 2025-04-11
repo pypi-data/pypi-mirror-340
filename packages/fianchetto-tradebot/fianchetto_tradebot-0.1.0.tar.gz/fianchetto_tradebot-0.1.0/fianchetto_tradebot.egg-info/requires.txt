@@ -1,0 +1,10 @@
+rauth
+python-dateutil
+pydantic
+pygments
+pytz
+pandas
+sortedcontainers
+
+[dev]
+pytest
