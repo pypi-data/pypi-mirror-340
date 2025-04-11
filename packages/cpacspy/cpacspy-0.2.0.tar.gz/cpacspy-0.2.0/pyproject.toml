@@ -1,0 +1,26 @@
+[tool.black]
+line-length = 99
+target-version = ['py11']
+extend-exclude = '''
+/(
+  # The following are specific to Black, you probably don't want those.
+  | build/
+  | dist/
+)/
+'''
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--cov"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+branch = true
+source = ["src"]
+omit = ["*/__init__.py", "*/__specs__.py", "*/__version__.py"]
+
+[tool.coverage.report]
+exclude_lines = ['def __repr__', 'def __str__', 'if __name__ == "__main__":']
+
+[tool.coverage.html]
+directory = "htmlcov"
