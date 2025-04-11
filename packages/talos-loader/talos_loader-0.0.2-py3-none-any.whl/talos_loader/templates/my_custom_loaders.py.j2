@@ -1,0 +1,11 @@
+from talos_loader import TalosLoader, Block, ContentType
+
+
+class MyCustomLoader(TalosLoader):
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def load(self, contents: bytes) -> list[Block]:
+        """Execute the custom operation"""
+        return []

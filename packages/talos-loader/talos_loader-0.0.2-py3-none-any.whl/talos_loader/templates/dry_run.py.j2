@@ -1,0 +1,8 @@
+from {{ project_name }}.loaders.my_custom_loaders import MyCustomLoader
+from talos_loader.src.schema import TalosParseConfig
+
+if __name__ == '__main__':
+    parse_config = TalosParseConfig()
+    bytes_text = b'this is text'
+    loader = MyCustomLoader(parse_config)
+    print(loader.load(bytes_text))

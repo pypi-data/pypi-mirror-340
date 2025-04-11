@@ -1,0 +1,79 @@
+# {{ project_name }}
+
+这是由 talos-loader 创建的 Talos 加载器项目。
+
+## 项目结构
+
+```
+{{ project_name }}/
+├── README.md                # 项目说明文档
+├── pyproject.toml           # 项目配置文件（Poetry配置）
+├── poetry.toml              # Poetry虚拟环境配置
+├── dry_run.py               # 用于测试加载器的脚本
+├── {{ project_name }}/      # 主项目目录
+│   ├── __init__.py          # 包初始化文件
+│   └── loaders/             # 加载器模块目录
+│       ├── __init__.py      # 加载器包初始化文件
+│       └── my_custom_loaders.py  # 自定义加载器实现
+```
+
+## 安装依赖
+
+本项目使用 Poetry 进行依赖管理。在项目根目录下执行以下命令安装依赖：
+
+```bash
+# 安装项目依赖
+poetry install --no-root
+
+# 激活虚拟环境（如果需要）
+poetry shell
+```
+
+## 开发自定义加载器
+
+在 `{{ project_name }}/loaders/my_custom_loaders.py` 文件中，您可以看到一个基本的加载器模板。您需要实现 `load` 方法，根据您的需求处理输入并返回适当的 `Block` 列表。
+
+```python
+from talos_loader import TalosLoader, Block, ContentType
+
+class MyCustomLoader(TalosLoader):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def load(self, context) -> list[Block]:
+        """执行自定义操作"""
+        # 在这里实现您的加载逻辑
+        return []
+```
+
+## 测试加载器
+
+项目中包含了一个 `dry_run.py` 文件，您可以用它来测试您的加载器。在项目根目录下执行：
+
+```bash
+# 使用 Poetry 环境运行
+poetry run python dry_run.py
+
+# 或者在激活的虚拟环境中运行
+python dry_run.py
+```
+
+### 调试输出
+
+执行 `dry_run.py` 后，您将看到类似以下的输出：
+
+```
+正在加载自定义加载器...
+加载器初始化完成
+处理输入...
+加载结果：
+[]
+```
+
+您可以根据需要修改 `dry_run.py` 文件，添加更多的测试逻辑和输出信息。
+
+## 下一步
+
+1. 实现您的自定义加载器逻辑
+2. 测试加载器功能
+3. 将加载器集成到您的 Talos 应用中
