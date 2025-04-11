@@ -1,0 +1,11 @@
+medical_article_sdk/__init__.py,sha256=LAXPvqVhG_qNsV0sFoTCeNTgZdaE6pZr_R56nahEe5M,56
+medical_article_sdk/config.json,sha256=Exeq0yVqo72V2qychBhGYRb2qogqYcNlDlnnvJnevzU,726
+medical_article_sdk/medical_article_sdk.py,sha256=Q9HMNm-2Xw50-jRldvLUozc-Ku2GEU-m24x0pY3kxIU,72370
+medical_article_sdk/medical_prompt.txt,sha256=JMu9YnFn2N1vGYfhDQT_VZmW4zbLvMdkGvaPvSpR6Q8,21371
+medical_article_sdk/title_note_prompt.txt,sha256=DHkwyMwBtnbR6aXkjd_CcGV75wTOhUhTL76ciqldwFY,8258
+medical_article_sdk/__pycache__/__init__.cpython-312.pyc,sha256=Rszr6nmGUpTRyy_DHHeyHd4qUNxBkP17O1vlmywglCo,198
+medical_article_sdk/__pycache__/medical_article_sdk.cpython-312.pyc,sha256=LH4fbQkWBr9DAOekyDL7SEMTrfNBPd_p1oz0M3nzOUg,75451
+medical_article_sdk-0.1.5.dist-info/METADATA,sha256=fmdC8RRAkLXB_HsAXuSS3FbDW0v8jCRxJToNdZJa3NA,497
+medical_article_sdk-0.1.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+medical_article_sdk-0.1.5.dist-info/top_level.txt,sha256=BlPfDAlawOc8ZvGpjuJ0jnEm7bngFh0TpSgLwkHZZKg,20
+medical_article_sdk-0.1.5.dist-info/RECORD,,
