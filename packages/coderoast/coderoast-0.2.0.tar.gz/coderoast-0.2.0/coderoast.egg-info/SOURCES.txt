@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+coderoast/__init__.py
+coderoast/core.py
+coderoast/handlers.py
+coderoast/insults.py
+coderoast.egg-info/PKG-INFO
+coderoast.egg-info/SOURCES.txt
+coderoast.egg-info/dependency_links.txt
+coderoast.egg-info/top_level.txt
+tests/__init__.py
+tests/test_coderoast.py
