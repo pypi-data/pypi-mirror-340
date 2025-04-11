@@ -1,0 +1,3 @@
+[console_scripts]
+stegnet=stegnet.cli:app
+
