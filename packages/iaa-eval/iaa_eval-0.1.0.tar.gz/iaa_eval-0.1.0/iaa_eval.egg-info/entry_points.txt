@@ -1,0 +1,2 @@
+[console_scripts]
+iaa-eval = src.iaa_eval:main
