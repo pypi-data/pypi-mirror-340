@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: yms_class
+Version: 0.0.6
+Summary: works
+Author: yms
+Author-email: 226000@qq.com
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: summary
+
+2.0.10
