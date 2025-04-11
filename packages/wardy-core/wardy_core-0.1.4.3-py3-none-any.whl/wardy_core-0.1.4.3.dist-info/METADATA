@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wardy-core
+Version: 0.1.4.3
+Summary: Core and common utilities, eg, email and CSV functions
+License: MIT
+Author: Michael Wardman
+Author-email: wardy3@gmail.com
+Requires-Python: >=3.9,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: XlsxWriter (>=1.2.9)
+Requires-Dist: dacite (>=1.4.0)

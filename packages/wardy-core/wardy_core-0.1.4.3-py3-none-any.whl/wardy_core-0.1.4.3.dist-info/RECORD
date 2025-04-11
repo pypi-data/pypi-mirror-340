@@ -1,0 +1,10 @@
+core/__init__.py,sha256=LcQj4riXlj3E6_CbVM4SRtJ0_rq9OY125ruA3S3VNcY,185
+core/common.py,sha256=feThjmcMbLD6pnaoTlc3mH4_rgphkKcoFKRReXIJlcY,988
+core/emailing.py,sha256=4TZi86BPFbvl_CAXPHP3fgcXuW0HoOw30oseu-4mSw8,4616
+core/excel.py,sha256=NmyLfGUPedrCu9J76ekeMmpUFuG9Pa9Ppx8559VdC5Q,3232
+core/mixins.py,sha256=K41_cvn7viLljDPCXxlcaYPsOP00MvwZFa0J_n0FEKY,691
+core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wardy_core-0.1.4.3.dist-info/LICENSE,sha256=alNqwnsLkYYAz8-XVGmxnswaP363JQ00wLpdMG-LyXw,1085
+wardy_core-0.1.4.3.dist-info/METADATA,sha256=zCFxPqxblU-pJA02iZ7ynf_6pICnZ-joFE0GR6QPYGw,587
+wardy_core-0.1.4.3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+wardy_core-0.1.4.3.dist-info/RECORD,,
