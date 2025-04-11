@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: plainmp
+Version: 0.2.2
+Summary: experimental
+Author: Hirokazu Ishida
+License: MPL2.0 for cpp core and BSD3 for python bindings
+License-File: cpp/LICENSE-MPL2
+License-File: LICENSE-BSD3
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-robot>=0.0.44
+Requires-Dist: pyyaml
+Requires-Dist: robot_descriptions
+Requires-Dist: osqp<1.0.0
