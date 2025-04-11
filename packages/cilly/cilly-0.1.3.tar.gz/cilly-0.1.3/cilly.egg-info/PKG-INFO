@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: cilly
+Version: 0.1.3
+Summary: A simple programming language interpreter
+Author: Your Name
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/cilly
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-python
