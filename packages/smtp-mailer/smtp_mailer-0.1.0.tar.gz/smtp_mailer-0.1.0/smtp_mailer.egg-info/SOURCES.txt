@@ -1,0 +1,6 @@
+README.md
+setup.py
+smtp_mailer.egg-info/PKG-INFO
+smtp_mailer.egg-info/SOURCES.txt
+smtp_mailer.egg-info/dependency_links.txt
+smtp_mailer.egg-info/top_level.txt
