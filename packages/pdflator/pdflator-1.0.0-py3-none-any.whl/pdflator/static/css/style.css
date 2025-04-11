@@ -1,0 +1,132 @@
+/* Dark theme with green accent */
+body {
+    background-color: #343a40; /* Dark background */
+    color: #fff; /* Light text */
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #212529 !important; /* Darker navbar */
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+}
+
+.container {
+    background-color: #212529; /* Dark container */
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    color: #fff;
+}
+
+.form-control {
+    background-color: #495057; /* Dark form input */
+    color: #fff;
+    border: 1px solid #495057;
+}
+
+.form-control:focus {
+    background-color: #495057;
+    color: #fff;
+    border-color: #198754; /* Green accent */
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25); /* Green accent */
+}
+
+.btn-primary {
+    background-color: #198754; /* Green accent */
+    border-color: #198754;
+}
+
+.btn-primary:hover {
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+    color: #fff;
+}
+
+.alert-danger {
+    background-color: #721c24;
+    color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.back-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Language selection */
+.language-selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.language-selection .form-group {
+    width: 45%;
+}
+
+.swap-button {
+    display: flex;
+    align-items: center;
+}
+
+.swap-button button {
+    font-size: 24px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.swap-button button:hover {
+    color: #198754; /* Green accent */
+}
+
+/* Navbar adjustments */
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
