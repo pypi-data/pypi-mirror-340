@@ -1,0 +1,2 @@
+[intake.drivers]
+zarr_forecast = intake_forecast.source:ZarrForecastSource
