@@ -1,0 +1,6 @@
+pyproject.toml
+yalis/__init__.py
+yalis.egg-info/PKG-INFO
+yalis.egg-info/SOURCES.txt
+yalis.egg-info/dependency_links.txt
+yalis.egg-info/top_level.txt
