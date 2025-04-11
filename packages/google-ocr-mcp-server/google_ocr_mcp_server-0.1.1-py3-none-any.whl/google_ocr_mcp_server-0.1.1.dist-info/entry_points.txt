@@ -1,0 +1,2 @@
+[console_scripts]
+google-ocr-mcp-server = google_ocr_mcp_server:main
