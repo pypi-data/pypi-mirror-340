@@ -1,0 +1,12 @@
+csp_adapter_symphony/__init__.py,sha256=Nt8hM5Q1Kb7-X7xKfVei0AQCAV6UWBdU41lTXp0qylw,122
+csp_adapter_symphony/adapter.py,sha256=Za6DIaHiQVXn45pyD9qQblyu-YHCMy0hu8ylSW9KJsM,16835
+csp_adapter_symphony/adapter_config.py,sha256=z4E6zN0WKu2Lzw8LR59c5mhZ0Ov1vyzknbNLbGzHDfc,14539
+csp_adapter_symphony/mention.py,sha256=SGeGkHlr6aDl63xZycPDuHfY1UTyoQQJlQGmT5iIgy8,285
+csp_adapter_symphony/message.py,sha256=i8DDhicW7SREZWxJlB4nZHtJFwW6NzhRZ1CtSWCvjuM,946
+csp_adapter_symphony/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csp_adapter_symphony/examples/hello.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csp_adapter_symphony/tests/test_adapter.py,sha256=Up5d9F0wlfKnLAg1fZ5HbmC9VORaONjeVONPrU7pZNE,24759
+csp_adapter_symphony-0.3.0.dist-info/METADATA,sha256=_ulsK1gdlnBeOBJ3W4qK3II8UonJM5t1F3M9Aty6Y7I,16154
+csp_adapter_symphony-0.3.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+csp_adapter_symphony-0.3.0.dist-info/licenses/LICENSE,sha256=Dz904Ba4BFTsnLKU2nrCbcc8nqE1hZvaVDl_oOPueDE,11344
+csp_adapter_symphony-0.3.0.dist-info/RECORD,,
