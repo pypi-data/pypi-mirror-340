@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+CDA_Metodos/CDA_Metodos.egg-info/PKG-INFO
+CDA_Metodos/CDA_Metodos.egg-info/SOURCES.txt
+CDA_Metodos/CDA_Metodos.egg-info/dependency_links.txt
+CDA_Metodos/CDA_Metodos.egg-info/requires.txt
+CDA_Metodos/CDA_Metodos.egg-info/top_level.txt

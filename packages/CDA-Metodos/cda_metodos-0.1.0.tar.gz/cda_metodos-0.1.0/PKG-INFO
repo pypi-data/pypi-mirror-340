@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: CDA-Metodos
+Version: 0.1.0
+Summary: Librería con métodos para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/Rialf96/Corto_1_CDA
+Author: Tu Nombre
+Author-email: tu@email.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: license-file
+
+# CDA_Metodos
+
+Librería Python con implementación de métodos numéricos para resolver sistemas de ecuaciones.
+
+## Métodos implementados
+
+### Lineales:
+- Eliminación Gaussiana
+- Gauss-Jordan
+- Descomposición LU
+- Jacobi
+- Gauss-Seidel
+
+### No lineales:
+- Bisección
+
+## Instalación
+
+```bash
+pip install CDA-Metodos
