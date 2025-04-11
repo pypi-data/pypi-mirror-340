@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: image_processing_O_Coruja
+Version: 0.0.1
+Home-page: 
+Author: Rodrigo_Cazelli
+Author-email: rcazelli@yahoo.com.br
+Requires-Python: >=3.8
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-python

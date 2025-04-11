@@ -1,0 +1,13 @@
+README.md
+setup.py
+image_processing_O_Coruja/__init__.py
+image_processing_O_Coruja.egg-info/PKG-INFO
+image_processing_O_Coruja.egg-info/SOURCES.txt
+image_processing_O_Coruja.egg-info/dependency_links.txt
+image_processing_O_Coruja.egg-info/top_level.txt
+image_processing_O_Coruja/processing/__init__.py
+image_processing_O_Coruja/processing/combination.py
+image_processing_O_Coruja/processing/transformation.py
+image_processing_O_Coruja/utils/__init__.py
+image_processing_O_Coruja/utils/io.py
+image_processing_O_Coruja/utils/plot.py
