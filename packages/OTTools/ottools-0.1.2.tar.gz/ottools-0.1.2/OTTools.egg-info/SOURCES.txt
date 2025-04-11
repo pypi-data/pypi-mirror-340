@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+OTTools/LinearProgramming.py
+OTTools/__init__.py
+OTTools/transportationProblem.py
+OTTools.egg-info/PKG-INFO
+OTTools.egg-info/SOURCES.txt
+OTTools.egg-info/dependency_links.txt
+OTTools.egg-info/requires.txt
+OTTools.egg-info/top_level.txt
