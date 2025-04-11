@@ -1,0 +1,1 @@
+SECRET_FILE = '/etc/opt/secret.yaml'
