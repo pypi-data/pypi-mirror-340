@@ -1,0 +1,8 @@
+insightproto/proto/common/v1/common_pb2.py,sha256=HQjm2TIHesMqocVg79kYzlXyUTu7oUDMvXLoi__8pCY,1370
+insightproto/proto/datasource/v1/logsource_pb2.py,sha256=SVD5_eNIQIvU8a8mFJ3RbAKThBSW52HefxE9sopeD4s,3918
+insightproto/proto/datasource/v1/logsource_pb2_grpc.py,sha256=uXFgWd5QeBCI_zg1GfRjt8Yo0Pt-hcjfLjuSpCwD3wE,4676
+insightproto/proto/jobs/v1/jobs_pb2.py,sha256=tgO0YK1S0IYkiRX3ClenpiGsU8tGFJFFtkdsL0QxUAY,3019
+insightproto/proto/results/v1/results_pb2.py,sha256=VNalv0LtOK-jSiGaw_uB-GDN7DzVD7rG0yKmp8HT4k8,3742
+insight_proto-0.0.4.dist-info/METADATA,sha256=tXlPQzSJoRnHAOiyXSQsbU3TIBoar9a7kDXU-Dpcu58,1250
+insight_proto-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+insight_proto-0.0.4.dist-info/RECORD,,
