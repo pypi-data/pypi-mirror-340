@@ -1,0 +1,9 @@
+sanitipy/__init__.py,sha256=8hHUGypqGj1IP-B033nt-WjIbnc2nrbyKie-8LHXBdU,27
+sanitipy/data_cleaner.py,sha256=UCm-jueEFGXqfqcLJOCnHakKEYTLxWqWKQ16BkNti4w,585
+sanitipy/main.py,sha256=-8ypIQ-zA6oHAu5qXlCi1JtQZ-kNfgmyEjb0rzuvFKg,265
+sanitipy/preprocessor.py,sha256=tU849GN3l84_34uIfET6UqsZj_iwjxx7Aj628cIwsLM,1033
+sanitipy/validator.py,sha256=1kEf-Nc6A16ksHzqFhv89f1ik_gGu5tRiZ3LUH68Hhs,300
+sanitipy-0.1.dist-info/METADATA,sha256=mrpjG2qiKWdoEdVFc4w6Rir1nNDTcSkA3IRlMumILUo,50
+sanitipy-0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sanitipy-0.1.dist-info/top_level.txt,sha256=WWZGMp1J0sXthsgm5UNo9vcDVtCfZLjVL076mqY2i88,9
+sanitipy-0.1.dist-info/RECORD,,
