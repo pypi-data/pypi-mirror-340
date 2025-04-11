@@ -1,0 +1,10 @@
+stela_mcp/__init__.py,sha256=It9BMDG4UQVTFXJNvuZfrhR_q23V_sRgPYnWo8vxtxY,270
+stela_mcp/filesystem.py,sha256=K-vskwwAwRfQ6BnhaV7u6wA8WD82D2YYP3-ZH3uzHGk,7966
+stela_mcp/security.py,sha256=SLWHtVySL3axVqY-ydvHLyDKsDGQXUFUoZx-jXokhcA,5320
+stela_mcp/server.py,sha256=jid4HZZlpNeQ6SrYTipgC5I4LHgl0SMVy594N1GQ1Y4,19969
+stela_mcp/shell.py,sha256=VtUSFpfgtyIAMuMcLlnEfGCBylMJ3j8ns1ZHsfUtZJw,2366
+stela_mcp-0.4.0.dist-info/METADATA,sha256=73kyC7mFLfn9r9jTt7sp5r9aoS2thRIrP8tFDHFs_js,9640
+stela_mcp-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+stela_mcp-0.4.0.dist-info/entry_points.txt,sha256=AErdbzET6uQHDGrrXzguFkVvnPanc7UDkg-zQ_R15ZY,52
+stela_mcp-0.4.0.dist-info/licenses/LICENSE,sha256=7H0vzEfsEeD7yKOM6xJA2Ms46J-LZVxJEXwxIlfKbWU,9337
+stela_mcp-0.4.0.dist-info/RECORD,,
