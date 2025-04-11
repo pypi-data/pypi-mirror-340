@@ -1,0 +1,70 @@
+[tool.poetry]
+name = "doorbeen"
+version = "0.0.1"
+description = "Framework to connect LLMs to Internal Databases(SQL and NoSQL)"
+authors = ["Telescope <info@jointelescope.com>"]
+readme = "README.md"
+homepage = "https://jointelescope.com"
+repository = "https://github.com/TelescopeAI/doorbeen"
+documentation = "https://github.com/TelescopeAI/doorbeen"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+packages = [
+    {include = "doorbeen", from = "."}
+]
+
+exclude = [
+    "credentials/*",
+    ".env*",
+    "*.env",
+    "deploy/secrets/*",
+    "**/*.pem",
+    "**/*.key"
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+langchain = "0.3.22"
+fastapi = {extras = ["all"], version = "0.115.12"}
+pydantic = "2.11.1"
+uvicorn = {extras = ["standard"], version = "^0.34.0"}
+sqlalchemy = "2.0.40"
+psycopg-binary = "^3.1.18"
+pymongo = "^4.6.3"
+secweb = "^1.9.1"
+openai = "1.69.0"
+httpx = "^0.28.1"
+langchain-community = "0.3.20"
+langchain-openai = "0.3.11"
+langchain-experimental = "0.3.4"
+sqlalchemy-bigquery = {extras = ["bqstorage"], version = "^1.13.0"}
+google-cloud-bigquery-storage = "^2.30.0"
+kaggle = "^1.6.14"
+pymysql = "^1.1.1"
+fastapi-cache2 = "^0.2.1"
+langgraph = "^0.3.18"
+langchain-anthropic = "^0.3.10"
+langchain-google-genai = "2.1.2"
+langchain-ollama = "0.3.0"
+psycopg = {extras = ["binary", "pool"], version = "^3.2.3"}
+psycopg-pool = "^3.2.3"
+langgraph-checkpoint-postgres = "^2.0.1"
+clerk-backend-api = "^2.0.0"
+scalar-fastapi = "^1.0.3"
+deprecated = "^1.2.18"
+pytz = "^2024.1"
+
+
+[[tool.poetry.source]]
+name = "localpip"
+url = "http://localhost:8300/simple"
+priority = "supplemental"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "setuptools>=42"]
+build-backend = "poetry.core.masonry.api"
