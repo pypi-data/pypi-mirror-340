@@ -1,0 +1,33 @@
+[project]
+name = "thistle"
+description = "A wrapper for sgp4 that handles TLE switching"
+readme = "README.md"
+authors = [
+    { name = "Jonathan Olsten", email = "jonathan.olsten@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1.8",
+    "numpy>=1.22",
+    "platformdirs>=4.3.7",
+    "sgp4>=2.23",
+    "skyfield>=1.53",
+    "tqdm>=4.67.1",
+]
+dynamic = ["version"]
+
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/thistle/_version.py"
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.124.2",
+    "pytest>=8.3.4",
+]
