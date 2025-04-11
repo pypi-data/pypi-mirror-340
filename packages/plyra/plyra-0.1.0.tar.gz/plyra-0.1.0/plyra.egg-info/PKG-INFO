@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: plyra
+Version: 0.1.0
+Summary: A modern, one-liner visualization library built on top of Plotly
+Home-page: https://github.com/Unknownuserfrommars/ProjectPlyra
+Author: Your Name
+Author-email: kev1511@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: plotly>=6.0.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: scipy>=1.12.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
