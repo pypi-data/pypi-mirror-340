@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+suite/__init__.py
+suite/analyzer.py
+suite.egg-info/PKG-INFO
+suite.egg-info/SOURCES.txt
+suite.egg-info/dependency_links.txt
+suite.egg-info/requires.txt
+suite.egg-info/top_level.txt
+tests/test_analyzer.py
+tests/test_suite.py
