@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: exemakerx
+Version: 1.0.0
+Summary: Convert .py files to .exe with GUI and CLI
+Home-page: https://github.com/ruzgar/exemakerx
+Author: Ruzgar
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyinstaller
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ExeMakerX
+
+Python `.py` dosyalarını kolayca `.exe`'ye dönüştüren gelişmiş bir kütüphane. Hem terminal hem GUI desteği sunar.
+
+## Kurulum
+
+```bash
+pip install .
+```
+
+## Kullanım
+
+### Terminal
+
+```bash
+exemakerx convert myscript.py --noconsole --icon icon.ico
+```
+
+### GUI
+
+```bash
+exemakerx gui
+```

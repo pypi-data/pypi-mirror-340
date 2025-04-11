@@ -1,0 +1,10 @@
+README.md
+setup.py
+exemakerx/__init__.py
+exemakerx/__main__.py
+exemakerx.egg-info/PKG-INFO
+exemakerx.egg-info/SOURCES.txt
+exemakerx.egg-info/dependency_links.txt
+exemakerx.egg-info/entry_points.txt
+exemakerx.egg-info/requires.txt
+exemakerx.egg-info/top_level.txt
