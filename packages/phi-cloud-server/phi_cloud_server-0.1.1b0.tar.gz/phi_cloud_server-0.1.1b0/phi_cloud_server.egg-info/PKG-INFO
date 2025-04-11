@@ -1,0 +1,93 @@
+Metadata-Version: 2.4
+Name: phi_cloud_server
+Version: 0.1.1b0
+Summary: Phigros云存档服务器。
+Author-email: Shua-github <CHA_shua@outlook.com>
+License: Effective Date: March 30, 2025
+        
+        This license governs all use of the Software from the above date forward. Copies obtained prior to this date under the MIT License may continue to be used under the terms of the MIT License.
+        
+        License Terms:
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use and copy the Software, subject to the following conditions:
+        
+        Modification and Distribution:
+        You may modify the Software for personal or internal use without restriction.
+        Distribution of the original or modified versions of the Software, including derivative works, is prohibited without prior written permission from the copyright holder.
+        If the Software is used publicly (e.g., incorporated into a public project), appropriate credit must be provided by including a reference or link to the original project repository in documentation, user interfaces, or other relevant materials.
+        
+        Contributions:
+        Contributors retain all rights to their individual contributions.
+        If a contribution is subsequently optimized or enhanced by another party, copyright for the optimized version is jointly held by the original contributor and the optimizer.
+        The original copyright holder disclaims any responsibility for disputes, negotiations, or claims regarding optimized or derivative contributions. All related matters are to be resolved independently by the involved parties.
+        
+        Attribution:
+        The above copyright notice and this permission notice must be included in all copies or substantial portions of the Software unless a link to the original project repository is provided in documentation, user interfaces, or other relevant materials.
+        
+        Disclaimer of Warranty:
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: LICENSE-cn
+Requires-Dist: fastapi>=0.115.12
+Requires-Dist: uvicorn>=0.34.0
+Requires-Dist: pydantic>=2.11.2
+Requires-Dist: PyYAML>=6.0.2
+Requires-Dist: tortoise-orm>=0.24.2
+Provides-Extra: dns
+Requires-Dist: dnslib>=0.9.26; extra == "dns"
+Requires-Dist: psutil>=7.0.0; extra == "dns"
+Dynamic: license-file
+
+# Phigros-Cloud-Server
+
+基于 `FastAPI` 实现的 `Phigros` 云存档服务端。测试阶段，不代表生产可用。
+
+[![PyPI](https://img.shields.io/pypi/v/phi-cloud-server.svg?label=phi-cloud-server)](https://pypi.org/project/phi-cloud-server/)
+
+## 食用方法(使用)
+
+1. 安装
+```bash
+pip install phi-cloud-server
+```
+
+2. 启动
+```bash
+phi_cloud_server
+```
+
+3. 想办法替换 `Phigros` 客户端里的云存档服务器地址，本项目不提供教程。
+> [!WARNING]
+> 请自行承担修改客户端行为所带来的风险，本项目不提供非法用途相关支持。
+
+## 配置
+
+配置路径均在软件输出，暂不提供更换配置路径。
+
+## TODO
+
+### 已知问题:
+- [x] 修复第一次上传获取的存档为空~~毕竟给我折腾了2天写在这里也合理吧~~
+- [ ] 必须新建存档2次后才能正常上传存档(不影响正常客户端,会丢失第一次云存档,后续不会丢失)(纯内存数据库没这个问题~~主播主播你的数据库确实挺强势,就是容易写好多bug啊~~)
+
+### API实现:
+- [x] 上/下传存档
+- [x] 上/下传存档 Summary
+- [x] 上/下传用户信息
+- [ ] 刷新用户sessionToken
+
+### API扩展:
+- [x] 注册新用户
+- [x] 主动推送响应事件（目前仅支持 WebSocket 方式）
+[查看扩展 API 食用教程](./asset/extended_interfaces.md),或在`配置文件`中,把`docs`字段更改成`true`后,访问`FastAPI`自带的文档。
+
+### 其他
+- [x] 打包并发布到 `PyPI`
+- [x] 使用持久化数据库
+- [ ] 更多功能请开`issue`
+
+## 谢谢他们和它们
+- [**Phi-CloudAction-Python**](https://github.com/wms26/Phi-CloudAction-python) 参考了API、字段和流程,以及用于测试。
+- [**html5syt**](https://github.com/html5syt) 感谢帮忙测试
+- 以及帮助过本项目的所有人
