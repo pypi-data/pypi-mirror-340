@@ -1,0 +1,6 @@
+datamodel_code_generator
+gadify
+jinja2
+pydantic
+tomli
+typer
