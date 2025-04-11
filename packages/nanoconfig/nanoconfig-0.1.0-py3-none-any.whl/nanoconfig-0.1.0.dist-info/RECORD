@@ -1,0 +1,8 @@
+nanoconfig/__init__.py,sha256=zWQdmQ3U69XqLctqccoE88MhwYGUsi7Q-T6488mW2eo,3614
+nanoconfig/options.py,sha256=z4ytaInaEWZveCbcDflswk6HYulBF3wIxEWYmZQdvyc,9983
+nanoconfig/utils.py,sha256=mMcDwBVX7KmblFwjRkSL_hj7Yr6LkQqE7DS45wREFTA,318
+nanoconfig/experiment/__init__.py,sha256=EYYWOfgMYdBOdaWH4At5EBHGBODLAYZJCb8kelus4fs,4630
+nanoconfig/experiment/clearml.py,sha256=QKf1G_HTVyUhJ9ghBNxP_DZwiY4L6ia3TcwVbgaZDrk,1350
+nanoconfig-0.1.0.dist-info/METADATA,sha256=BO2BPY5EI0q4JlSIV2LaBwa-PeMvqUfS6mDaKuy5Ohw,198
+nanoconfig-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+nanoconfig-0.1.0.dist-info/RECORD,,
