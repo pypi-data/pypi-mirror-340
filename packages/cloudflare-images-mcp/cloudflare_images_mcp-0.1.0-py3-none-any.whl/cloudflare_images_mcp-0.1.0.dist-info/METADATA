@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: cloudflare-images-mcp
+Version: 0.1.0
+Summary: Simple MCP server to add images to Cloudflare Images
+Author-email: Philipp Eisen <hello@philippeisen.de>
+License-File: LICENSE
+Requires-Python: <3.13,>=3.10
+Requires-Dist: httpx>=0.25.0
+Requires-Dist: mcp>=1.6.0
+Description-Content-Type: text/markdown
+
+# Cloudflare Images MCP 🛠️
+
+## Simple MCP Tool to add images to Cloudflare Images
+
+### Configuration
+
+> **ℹ️ Note:** Instead of providing `--account-id` and `--api-token` as arguments, you can also use the environment variables `CLOUDFLARE_ACCOUNT_ID` and `CLOUDFLARE_API_TOKEN` respectively.
+
+```json
+{
+  "mcpServers": {
+    "cloudflare-images-mcp": {
+      "command": "uvx",
+      "args": [
+        "cloudflare-images-mcp",
+        "--account-id",
+        "your-account-id",
+        "--api-token",
+        "your-api-token"
+      ]
+    }
+  }
+}
+```
