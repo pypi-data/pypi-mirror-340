@@ -1,0 +1,17 @@
+examples/async/async_main.py,sha256=VK3cVLvUaaq6_2Ao57iS6yTVueZtG65B1t4G3YXtPoQ,4162
+examples/sync/sync_main.py,sha256=KS6L20VsT37kEhSkMGcanUNm5haFYGWJci453EnlGtY,1886
+venv/bin/activate_this.py,sha256=niSw1sc-2q1pZQ2Q13QfTHr0Wn4lvrTj2vpuxk-uih0,1336
+whissle/__init__.py,sha256=NMBz_SOSyYhFFmjafdX__jSWDZIRCp1T9b8bad4HNMw,85
+whissle/client.py,sha256=Hvxd27Cl52oWJMgpVm9LMUigGn1KFYBOtDngEEicA-c,1448
+whissle/models.py,sha256=5CeSVmcCXXWqxGAqGsWBXLlSSArbSeMYkhGpby2UZHA,583
+whissle/options.py,sha256=k6h7WsTfmdGWwmFOgL9nYG_VGsYY8XnrZhr1V34Jfpk,797
+whissle/clients/__init__.py,sha256=aLSzS1UzJGrR-6IP_xSsYLlqiWsOmtCNbcGawtfgMzQ,138
+whissle/clients/async_client.py,sha256=gYrQv5hLKgnatIgJkb_CSG1w2xXHAtF0NUAXwAxlaUc,3790
+whissle/clients/client.py,sha256=guc-69wM9NeX5VtVxJCOKUZfAw-A2CbOff2MJlPcSs0,3706
+whissle/clients/errors.py,sha256=9IZ2z_mJcEY_7Xsl30FUi3nSuciv6Rp5hPPkMAli7c0,213
+whissle/clients/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whissle-0.0.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+whissle-0.0.1.dist-info/METADATA,sha256=jHWtgfmxzQXjqp_oECO8S1ANPQn84t51czQs6r97J7Q,46528
+whissle-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+whissle-0.0.1.dist-info/top_level.txt,sha256=F1BF38S9matxIE3-PwT9RcIcPdbJf79Vulf_eVsMSSA,22
+whissle-0.0.1.dist-info/RECORD,,
