@@ -1,0 +1,7 @@
+numpy
+h5py
+tqdm
+torch==2.6.0+cpu
+ROOT
+particle
+yaml
