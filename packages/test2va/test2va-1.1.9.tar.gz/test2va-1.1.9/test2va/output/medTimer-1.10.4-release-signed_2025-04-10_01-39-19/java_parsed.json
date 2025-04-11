@@ -1,0 +1,220 @@
+[
+  {
+    "Assertions": [
+      {
+        "Action": [
+          {
+            "Name": "matches",
+            "Args": [
+              [
+                {
+                  "Name": "isChecked",
+                  "Args": []
+                }
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "switch_widget"
+              ]
+            ]
+          },
+          {
+            "Name": "withParent",
+            "Args": [
+              [
+                {
+                  "Matchers": [
+                    {
+                      "Action": null,
+                      "Components": [
+                        {
+                          "Name": "withParent",
+                          "Args": [
+                            [
+                              {
+                                "Matchers": [
+                                  {
+                                    "Action": null,
+                                    "Components": [
+                                      {
+                                        "Name": "hasDescendant",
+                                        "Args": [
+                                          [
+                                            {
+                                              "Matchers": [
+                                                {
+                                                  "Action": null,
+                                                  "Components": [
+                                                    {
+                                                      "Name": "withText",
+                                                      "Args": [
+                                                        [
+                                                          "\"Block screen capture\""
+                                                        ]
+                                                      ]
+                                                    }
+                                                  ],
+                                                  "MatchType": "allOf"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        ]
+                                      }
+                                    ],
+                                    "MatchType": "allOf"
+                                  }
+                                ]
+                              }
+                            ]
+                          ]
+                        }
+                      ],
+                      "MatchType": "allOf"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "After": [],
+    "Before": [
+      {
+        "Action": [
+          {
+            "Name": "sleep",
+            "Args": [
+              [
+                "3000"
+              ]
+            ]
+          },
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "containsStringIgnoringCase",
+                "(",
+                "\"skip\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Matchers": [
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "overviewFragment"
+              ]
+            ]
+          },
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"Overview\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"More options\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Settings\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Block screen capture\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Name": "blockScreenCaptureTest"
+  }
+]

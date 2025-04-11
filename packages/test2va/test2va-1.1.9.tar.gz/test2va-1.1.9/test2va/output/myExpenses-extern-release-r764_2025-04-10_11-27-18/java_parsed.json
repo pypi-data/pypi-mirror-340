@@ -1,0 +1,526 @@
+[
+  {
+    "Assertions": [
+      {
+        "Action": [
+          {
+            "Name": "matches",
+            "Args": [
+              [
+                {
+                  "Name": "isDisplayed",
+                  "Args": []
+                }
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "containsString",
+                "(",
+                "\"-$50.00\""
+              ]
+            ]
+          },
+          {
+            "Name": "withParent",
+            "Args": [
+              [
+                {
+                  "Matchers": [
+                    {
+                      "Action": null,
+                      "Components": [
+                        {
+                          "Name": "withParentIndex",
+                          "Args": [
+                            [
+                              "0"
+                            ]
+                          ]
+                        }
+                      ],
+                      "MatchType": "allOf"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "matches",
+            "Args": [
+              [
+                {
+                  "Name": "isDisplayed",
+                  "Args": []
+                }
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "containsString",
+                "(",
+                "\"-$30.00\""
+              ]
+            ]
+          },
+          {
+            "Name": "withParent",
+            "Args": [
+              [
+                {
+                  "Matchers": [
+                    {
+                      "Action": null,
+                      "Components": [
+                        {
+                          "Name": "withParentIndex",
+                          "Args": [
+                            [
+                              "1"
+                            ]
+                          ]
+                        }
+                      ],
+                      "MatchType": "allOf"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "After": [],
+    "Before": [
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Next\""
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Next\""
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Get started\""
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "fab"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "replaceText",
+            "Args": [
+              [
+                "\"50\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "AmountEditText"
+              ]
+            ]
+          },
+          {
+            "Name": "withParent",
+            "Args": [
+              [
+                {
+                  "Matchers": [
+                    {
+                      "Action": null,
+                      "Components": [],
+                      "MatchType": "allOf"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "typeText",
+            "Args": [
+              [
+                "\"Grocery\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "Comment"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "fab"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "fab"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "replaceText",
+            "Args": [
+              [
+                "\"30\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "AmountEditText"
+              ]
+            ]
+          },
+          {
+            "Name": "withParent",
+            "Args": [
+              [
+                {
+                  "Matchers": [
+                    {
+                      "Action": null,
+                      "Components": [],
+                      "MatchType": "allOf"
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "typeText",
+            "Args": [
+              [
+                "\"Movie\""
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "Comment"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "fab"
+              ]
+            ]
+          },
+          {
+            "Name": "isDisplayed",
+            "Args": []
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Matchers": [
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          },
+          {
+            "Name": "sleep",
+            "Args": [
+              [
+                "2000"
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "containsString",
+                "(",
+                "\"More options\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          },
+          {
+            "Name": "sleep",
+            "Args": [
+              [
+                "2000"
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Sort by\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          },
+          {
+            "Name": "sleep",
+            "Args": [
+              [
+                "2000"
+              ]
+            ]
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Amount / Descending\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Name": "sortingByAmountTest"
+  }
+]

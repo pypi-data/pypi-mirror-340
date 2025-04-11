@@ -1,0 +1,309 @@
+[
+  {
+    "Assertions": [
+      {
+        "Action": [
+          {
+            "Name": "doesNotExist",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "seasons_configure"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"CONFIGURE\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "After": [],
+    "Before": [],
+    "Matchers": [
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withContentDescription",
+            "Args": [
+              [
+                "\"Open navigation drawer\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "R",
+                ".",
+                "id",
+                ".",
+                "nav_settings"
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "title"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Region\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "text1"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"North America (warmer)\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "title"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Languages of recipes\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withParentIndex",
+            "Args": [
+              [
+                "0"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"English\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"OK\""
+              ]
+            ]
+          },
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "button1"
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "title"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Preferred category\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      },
+      {
+        "Action": [
+          {
+            "Name": "click",
+            "Args": []
+          }
+        ],
+        "Components": [
+          {
+            "Name": "withId",
+            "Args": [
+              [
+                "android",
+                ".",
+                "R",
+                ".",
+                "id",
+                ".",
+                "text1"
+              ]
+            ]
+          },
+          {
+            "Name": "withText",
+            "Args": [
+              [
+                "\"Seasonal recipes\""
+              ]
+            ]
+          }
+        ],
+        "MatchType": "allOf"
+      }
+    ],
+    "Name": "configureSeasonalCalendarTest"
+  }
+]

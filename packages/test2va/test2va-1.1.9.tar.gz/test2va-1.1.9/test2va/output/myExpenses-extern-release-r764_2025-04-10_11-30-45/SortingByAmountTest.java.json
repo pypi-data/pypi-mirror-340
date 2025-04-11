@@ -1,0 +1,128 @@
+{
+    "0": {
+        "is_mutable": true,
+        "statement": "onView(withContentDescription(containsString(\"More options\"))).perform(click());",
+        "xpath": "//android.widget.ImageView[@index='2' and @package='org.totschnig.myexpenses' and @class='android.widget.ImageView' and @content-desc='More options' and @checked='false' and @enabled='true' and @bounds='[975,83][1080,209]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 0,
+                "statement": "onView(withClassName(is(\"android.view.View\"))).perform(click());",
+                "xpath": "//android.view.View[@index='4' and @class='android.view.View' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[0,333][1080,386]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "sortingByAmountTest",
+        "mutant_candidates_before": 56,
+        "mutant_candidates_after": 1
+    },
+    "1": {
+        "is_mutable": true,
+        "statement": "onView(withText(\"Sort by\")).perform(click());",
+        "xpath": "//android.widget.LinearLayout[@index='5' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,735][1070,861]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Budgeting\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='0' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,105][1070,231]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"History\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='1' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,231][1070,357]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Parties / Debts\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='2' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,357][1070,483]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Scan mode\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='3' and @package='org.totschnig.myexpenses' and @class='android.widget.LinearLayout' and @checked='false' and @bounds='[555,483][1070,609]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Export and reset\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='4' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,609][1070,735]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Grouping\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='6' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,861][1070,987]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Print\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='7' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,987][1070,1113]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Account\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='8' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,1113][1070,1239]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Archive\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='9' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,1239][1070,1365]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Tell a friend\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='10' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,1365][1070,1491]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Settings\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='11' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,1491][1070,1617]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withText(\"Help\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='12' and @class='android.widget.LinearLayout' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[555,1617][1070,1743]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "sortingByAmountTest",
+        "mutant_candidates_before": 69,
+        "mutant_candidates_after": 12
+    },
+    "2": {
+        "is_mutable": true,
+        "statement": "onView(withText(\"Amount / Descending\")).perform(click());",
+        "xpath": "//android.widget.TextView[@index='0' and @text='Amount / Descending' and @resource-id='org.totschnig.myexpenses:id/title' and @class='android.widget.TextView' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[482,517][912,574]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withText(\"Date / Descending\")).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Date / Descending' and @resource-id='org.totschnig.myexpenses:id/title' and @class='android.widget.TextView' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[482,265][912,322]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withText(\"Date / Ascending\")).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Date / Ascending' and @resource-id='org.totschnig.myexpenses:id/title' and @class='android.widget.TextView' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[482,391][912,448]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withText(\"Amount / Ascending\")).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Amount / Ascending' and @resource-id='org.totschnig.myexpenses:id/title' and @class='android.widget.TextView' and @checked='false' and @package='org.totschnig.myexpenses' and @bounds='[482,643][912,700]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "sortingByAmountTest",
+        "mutant_candidates_before": 23,
+        "mutant_candidates_after": 3
+    }
+}

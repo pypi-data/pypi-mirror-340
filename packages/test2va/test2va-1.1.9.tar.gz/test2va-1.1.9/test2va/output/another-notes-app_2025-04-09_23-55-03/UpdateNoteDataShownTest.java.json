@@ -1,0 +1,156 @@
+{
+    "0": {
+        "is_mutable": true,
+        "statement": "onView(withContentDescription(\"Open drawer\")).perform(click());",
+        "xpath": "//android.widget.ImageButton[@index='0' and @class='android.widget.ImageButton' and @checked='false' and @package='com.maltaisn.notes.sync' and @content-desc='Open drawer' and @bounds='[0,73][147,220]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 0,
+                "statement": "onView(withContentDescription(\"Create note\")).perform(click());",
+                "xpath": "//android.widget.ImageButton[@index='2' and @resource-id='com.maltaisn.notes.sync:id/fab' and @class='android.widget.ImageButton' and @checked='false' and @package='com.maltaisn.notes.sync' and @content-desc='Create note' and @bounds='[891,2088][1038,2235]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "updateNoteDataShownTest",
+        "mutant_candidates_before": 23,
+        "mutant_candidates_after": 1
+    },
+    "1": {
+        "is_mutable": true,
+        "statement": "onView(withId(R.id.drawer_item_settings)).perform(click());",
+        "xpath": "//androidx.appcompat.widget.LinearLayoutCompat[@index='9' and @resource-id='com.maltaisn.notes.sync:id/drawer_item_settings' and @class='androidx.appcompat.widget.LinearLayoutCompat' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[0,1060][912,1186]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.drawer_item_notes)).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Notes' and @resource-id='com.maltaisn.notes.sync:id/drawer_item_notes' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[0,168][280,280]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.drawer_item_reminders)).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='4' and @text='Reminders' and @resource-id='com.maltaisn.notes.sync:id/drawer_item_reminders' and @checked='false' and @package='com.maltaisn.notes.sync']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.drawer_item_create_label)).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='9' and @resource-id='com.maltaisn.notes.sync:id/drawer_item_create_label' and @checked='false' and @package='com.maltaisn.notes.sync' and @content-desc='Create label' and @bounds='[0,1126][984,1258]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.drawer_item_archived)).perform(click());",
+                "xpath": "//android.widget.TextView[@index='3' and @text='Archived' and @resource-id='com.maltaisn.notes.sync:id/drawer_item_archived' and @checked='false' and @package='com.maltaisn.notes.sync']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withId(R.id.drawer_item_deleted)).perform(click());",
+                "xpath": "//android.widget.TextView[@index='3' and @text='Deleted' and @resource-id='com.maltaisn.notes.sync:id/drawer_item_deleted' and @checked='false' and @package='com.maltaisn.notes.sync' and @content-desc='Deleted Notes' and @bounds='[0,0][1080,1920]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "updateNoteDataShownTest",
+        "mutant_candidates_before": 63,
+        "mutant_candidates_after": 5
+    },
+    "2": {
+        "is_mutable": true,
+        "statement": "onView(withId(R.id.recycler_view)).perform(scrollTo(hasDescendant(withText(\"Date shown for notes\"))));",
+        "xpath": "//android.widget.LinearLayout[@index='0' and @package='com.maltaisn.notes.sync' and @class='android.widget.LinearLayout' and @checked='false' and @bounds='[0,1064][1080,1256]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withId(R.id.recycler_view)).perform(scrollTo(hasDescendant(withText(\"App theme\"))));",
+                "xpath": "//android.widget.LinearLayout[@index='0' and @class='android.widget.LinearLayout' and @package='com.maltaisn.notes.sync' and @bounds='[0,366][1080,558]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.summary), withText(\"Current app theme\"))).check(matches(isDisplayed()));"
+                }
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withId(R.id.recycler_view)).perform(scrollTo(hasDescendant(withText(\"Swipe left action\"))));",
+                "xpath": "//android.widget.LinearLayout[@index='0' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[0,1636][1080,1828]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.summary), withText(\"Swipe left action\"))).check(matches(isDisplayed()));"
+                }
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withId(R.id.recycler_view)).perform(scrollTo(hasDescendant(withText(\"Trash auto-delete delay\"))));",
+                "xpath": "//android.widget.TextView[@index='1' and @text='24 hours' and @resource-id='android:id/summary' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[189,2119][339,2170]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.summary), withText(\"Auto-delete delay\"))).check(matches(isDisplayed()));"
+                }
+            }
+        ],
+        "test_method_name": "updateNoteDataShownTest",
+        "mutant_candidates_before": 96,
+        "mutant_candidates_after": 3
+    },
+    "3": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(android.R.id.title), withText(\"Date shown for notes\"))).perform(click());",
+        "xpath": "//android.widget.TextView[@index='0' and @text='Date shown for notes' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[189,1106][597,1163]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 3,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Behavior\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Behavior' and @resource-id='android:id/title' and @checked='false' and @package='com.maltaisn.notes.sync' and @enabled='true' and @bounds='[189,1564][1038,1615]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.summary), withText(\"Last modified settings\"))).check(matches(isDisplayed()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Swipe left action\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Swipe left action' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[189,1678][510,1735]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.summary), withText(\"Swipe left action executed\"))) .check(matches(isDisplayed()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Swipe right action\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Swipe right action' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[189,1870][535,1927]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.summary), withText(\"Swipe action successful\"))).check(matches(isDisplayed()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(allOf(withId(android.R.id.title), withText(\"Trash auto-delete delay\"))).perform(click());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='Trash auto-delete delay' and @resource-id='android:id/title' and @class='android.widget.TextView' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[189,2062][643,2119]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.summary), withText(\"Trash auto-delete delay\"))).check(matches(isDisplayed()));"
+                }
+            }
+        ],
+        "test_method_name": "updateNoteDataShownTest",
+        "mutant_candidates_before": 103,
+        "mutant_candidates_after": 4
+    },
+    "4": {
+        "is_mutable": true,
+        "statement": "onView(withText(containsString(\"modified date\"))).perform(click());",
+        "xpath": "//android.widget.CheckedTextView[@index='1' and @text='Last modified date' and @resource-id='android:id/text1' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[189,1190][580,1316]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 4,
+                "statement": "onView(withText(containsString(\"Creation date\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='0' and @text='Creation date' and @resource-id='android:id/text1' and @checked='false' and @package='com.maltaisn.notes.sync' and @bounds='[189,1064][580,1190]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 4,
+                "statement": "onView(withText(containsString(\"No date shown\"))).perform(click());",
+                "xpath": "//android.widget.CheckedTextView[@index='2' and @class='android.widget.CheckedTextView' and @text='No date shown' and @resource-id='android:id/text1' and @checked='true' and @package='com.maltaisn.notes.sync' and @bounds='[189,1316][580,1442]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "updateNoteDataShownTest",
+        "mutant_candidates_before": 8,
+        "mutant_candidates_after": 2
+    }
+}

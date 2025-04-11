@@ -1,0 +1,160 @@
+{
+    "0": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(R.id.overviewFragment), withContentDescription(\"Overview\"))).perform(click());",
+        "xpath": "//android.widget.FrameLayout[@index='0' and @resource-id='com.futsch1.medtimer:id/overviewFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Overview' and @bounds='[0,2067][360,2214]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 0,
+                "statement": "onView(allOf(withId(R.id.medicinesFragment), withContentDescription(\"Medicine\"))).perform(click());",
+                "xpath": "//android.widget.FrameLayout[@index='1' and @resource-id='com.futsch1.medtimer:id/medicinesFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Medicine' and @bounds='[360,2067][720,2214]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 0,
+                "statement": "onView(allOf(withId(R.id.statisticsFragment), withContentDescription(\"Analysis\"))).perform(click());",
+                "xpath": "//android.widget.FrameLayout[@index='2' and @resource-id='com.futsch1.medtimer:id/statisticsFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Analysis' and @bounds='[720,2067][1080,2214]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "blockScreenCaptureTest",
+        "mutant_candidates_before": 60,
+        "mutant_candidates_after": 2
+    },
+    "1": {
+        "is_mutable": true,
+        "statement": "onView(withContentDescription(\"More options\")).perform(click());",
+        "xpath": "//android.widget.ImageView[@index='0' and @package='com.futsch1.medtimer' and @class='android.widget.ImageView' and @checked='false' and @content-desc='More options' and @bounds='[975,83][1080,209]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withContentDescription(\"Overview\")).perform(click());",
+                "xpath": "//android.widget.ImageView[@index='1' and @resource-id='com.futsch1.medtimer:id/navigation_bar_item_icon_view' and @class='android.widget.ImageView' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[148,2109][211,2172]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withContentDescription(\"Medicine\")).perform(click());",
+                "xpath": "//android.widget.ImageView[@index='1' and @resource-id='com.futsch1.medtimer:id/navigation_bar_item_icon_view' and @class='android.widget.ImageView' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[508,2109][571,2172]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(withContentDescription(\"Analysis\")).perform(click());",
+                "xpath": "//android.widget.ImageView[@index='1' and @resource-id='com.futsch1.medtimer:id/navigation_bar_item_icon_view' and @class='android.widget.ImageView' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[868,2109][931,2172]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "blockScreenCaptureTest",
+        "mutant_candidates_before": 62,
+        "mutant_candidates_after": 3
+    },
+    "2": {
+        "is_mutable": true,
+        "statement": "onView(withText(\"Settings\")).perform(click());",
+        "xpath": "//android.widget.LinearLayout[@index='0' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[532,105][1070,231]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withText(\"Event data\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='1' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[532,231][1070,382]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withText(\"Backup\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='2' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[532,382][1070,508]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withText(\"Version 1.10.4\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='3' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[532,508][1070,659]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 2,
+                "statement": "onView(withText(\"MedTimer on GitHub\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='4' and @class='android.widget.LinearLayout' and @package='com.futsch1.medtimer' and @checked='false' and @bounds='[532,659][1070,785]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "blockScreenCaptureTest",
+        "mutant_candidates_before": 37,
+        "mutant_candidates_after": 4
+    },
+    "3": {
+        "is_mutable": true,
+        "statement": "onView(withText(\"Block screen capture\")).perform(click());",
+        "xpath": "//android.widget.LinearLayout[@index='7' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,1579][1080,1720]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 3,
+                "statement": "onView(withText(\"Notification settings default priority\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='0' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,231][1080,372]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.switch_widget), withParent(withParent(hasDescendant(withText(\"Notification settings default priority\")))))).check(matches(isChecked()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(withText(\"Notification settings high priority\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='1' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,372][1080,513]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.switch_widget), withParent(withParent(hasDescendant(withText(\"Notification settings high priority\")))))).check(matches(isChecked()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(withText(\"Action when dismissing notification\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='2' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,513][1080,705]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.switch_widget), withParent(withParent(hasDescendant(withText(\"Action when dismissing notification\")))))).check(matches(isChecked()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(withText(\"Snooze duration\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='3' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,705][1080,897]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.switch_widget), withParent(withParent(hasDescendant(withText(\"Snooze duration\")))))).check(matches(isChecked()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(withText(\"Exact reminders\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='4' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,897][1080,1142]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.switch_widget), withParent(withParent(hasDescendant(withText(\"Exact reminders\")))))).check(matches(isChecked()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(withText(\"Weekend mode\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='5' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,1142][1080,1387]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.switch_widget), withParent(withParent(hasDescendant(withText(\"Weekend mode\")))))).check(matches(isChecked()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(withText(\"Overview display events\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='6' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,1387][1080,1579]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.switch_widget), withParent(withParent(hasDescendant(withText(\"Overview display events\")))))).check(matches(isChecked()));"
+                }
+            },
+            {
+                "origin_event_index": 3,
+                "statement": "onView(withText(\"Theme\")).perform(click());",
+                "xpath": "//android.widget.LinearLayout[@index='8' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,1720][1080,1912]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(android.R.id.switch_widget), withParent(withParent(hasDescendant(withText(\"Theme\")))))).check(matches(isChecked()));"
+                }
+            }
+        ],
+        "test_method_name": "blockScreenCaptureTest",
+        "mutant_candidates_before": 103,
+        "mutant_candidates_after": 8
+    }
+}

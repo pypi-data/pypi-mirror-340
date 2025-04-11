@@ -1,0 +1,50 @@
+{
+    "0": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(R.id.medicinesFragment), withContentDescription(\"Medicine\"))).perform(click());",
+        "xpath": "//android.widget.FrameLayout[@index='1' and @resource-id='com.futsch1.medtimer:id/medicinesFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Medicine' and @bounds='[360,2067][720,2214]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 0,
+                "statement": "onView(allOf(withId(R.id.overviewFragment), withContentDescription(\"Overview\"))).perform(click());",
+                "xpath": "//android.widget.FrameLayout[@index='0' and @resource-id='com.futsch1.medtimer:id/overviewFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Overview' and @bounds='[0,2067][360,2214]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 0,
+                "statement": "onView(allOf(withId(R.id.statisticsFragment), withContentDescription(\"Analysis\"))).perform(click());",
+                "xpath": "//android.widget.FrameLayout[@index='2' and @resource-id='com.futsch1.medtimer:id/statisticsFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Analysis' and @bounds='[720,2067][1080,2214]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "deleteMedicineTest",
+        "mutant_candidates_before": 55,
+        "mutant_candidates_after": 2
+    },
+    "1": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(R.id.medicineName), withText(\"B12\"))).perform(swipeLeft());",
+        "xpath": "//android.widget.TextView[@index='0' and @text='B12' and @resource-id='com.futsch1.medtimer:id/medicineName' and @class='android.widget.TextView' and @package='com.futsch1.medtimer' and @bounds='[123,312][999,363]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 1,
+                "statement": "onView(allOf(withId(R.id.medicineName), withText(\"Omega3\"))).perform(swipeLeft());",
+                "xpath": "//android.widget.TextView[@index='0' and @package='com.futsch1.medtimer' and @class='android.widget.TextView' and @text='Omega3' and @resource-id='com.futsch1.medtimer:id/medicineName' and @checked='false' and @bounds='[123,492][999,543]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(R.id.medicineName), withText(\"Omega3\"))).check(doesNotExist());"
+                }
+            },
+            {
+                "origin_event_index": 1,
+                "statement": "onView(allOf(withId(R.id.medicineName), withText(\"B12\"))).perform(swipeRight());",
+                "xpath": "//android.widget.TextView[@index='0' and @text='B12' and @resource-id='com.futsch1.medtimer:id/medicineName' and @class='android.widget.TextView' and @package='com.futsch1.medtimer' and @bounds='[123,312][999,363]']",
+                "assertion_statement": {
+                    "0": "onView(allOf(withId(R.id.medicineName), withText(\"B12\"))).check(matches(isDisplayed()));"
+                }
+            }
+        ],
+        "test_method_name": "deleteMedicineTest",
+        "mutant_candidates_before": 0,
+        "mutant_candidates_after": 0
+    }
+}

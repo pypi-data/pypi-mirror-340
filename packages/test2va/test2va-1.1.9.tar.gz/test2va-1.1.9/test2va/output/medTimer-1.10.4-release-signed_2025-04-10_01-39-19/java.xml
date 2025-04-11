@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<unit xmlns="http://www.srcML.org/srcML/src" revision="1.0.0" language="Java" filename="C:\Users\sheer\PycharmProjects\test2va_fix_github\Test2VA\test2va\examples\MEDTIMER\BlockScreenCaptureTest.java"><package>package <name><name>com</name><operator>.</operator><name>futsch1</name><operator>.</operator><name>medtimer</name><operator>.</operator><name>test2va</name></name>;</package>
+
+
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>Espresso</name><operator>.</operator><name>onView</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>action</name><operator>.</operator><name>ViewActions</name><operator>.</operator><name>click</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>assertion</name><operator>.</operator><name>ViewAssertions</name><operator>.</operator><name>matches</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>matcher</name><operator>.</operator><name>ViewMatchers</name><operator>.</operator><name>hasDescendant</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>matcher</name><operator>.</operator><name>ViewMatchers</name><operator>.</operator><name>isChecked</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>matcher</name><operator>.</operator><name>ViewMatchers</name><operator>.</operator><name>isDisplayed</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>matcher</name><operator>.</operator><name>ViewMatchers</name><operator>.</operator><name>withClassName</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>matcher</name><operator>.</operator><name>ViewMatchers</name><operator>.</operator><name>withContentDescription</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>matcher</name><operator>.</operator><name>ViewMatchers</name><operator>.</operator><name>withId</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>matcher</name><operator>.</operator><name>ViewMatchers</name><operator>.</operator><name>withParent</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>matcher</name><operator>.</operator><name>ViewMatchers</name><operator>.</operator><name>withParentIndex</name></name>;</import>
+<import>import static <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>espresso</name><operator>.</operator><name>matcher</name><operator>.</operator><name>ViewMatchers</name><operator>.</operator><name>withText</name></name>;</import>
+<import>import static <name><name>org</name><operator>.</operator><name>hamcrest</name><operator>.</operator><name>Matchers</name><operator>.</operator><name>allOf</name></name>;</import>
+<import>import static <name><name>org</name><operator>.</operator><name>hamcrest</name><operator>.</operator><name>Matchers</name><operator>.</operator><name>containsStringIgnoringCase</name></name>;</import>
+
+<import>import <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>ext</name><operator>.</operator><name>junit</name><operator>.</operator><name>rules</name><operator>.</operator><name>ActivityScenarioRule</name></name>;</import>
+<import>import <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>ext</name><operator>.</operator><name>junit</name><operator>.</operator><name>runners</name><operator>.</operator><name>AndroidJUnit4</name></name>;</import>
+<import>import <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>filters</name><operator>.</operator><name>LargeTest</name></name>;</import>
+<import>import <name><name>androidx</name><operator>.</operator><name>test</name><operator>.</operator><name>rule</name><operator>.</operator><name>GrantPermissionRule</name></name>;</import>
+
+<import>import <name><name>com</name><operator>.</operator><name>futsch1</name><operator>.</operator><name>medtimer</name><operator>.</operator><name>MainActivity</name></name>;</import>
+<import>import <name><name>com</name><operator>.</operator><name>futsch1</name><operator>.</operator><name>medtimer</name><operator>.</operator><name>R</name></name>;</import>
+
+<import>import <name><name>org</name><operator>.</operator><name>junit</name><operator>.</operator><name>Rule</name></name>;</import>
+<import>import <name><name>org</name><operator>.</operator><name>junit</name><operator>.</operator><name>Test</name></name>;</import>
+<import>import <name><name>org</name><operator>.</operator><name>junit</name><operator>.</operator><name>runner</name><operator>.</operator><name>RunWith</name></name>;</import>
+
+<class><annotation>@<name>LargeTest</name></annotation>
+<annotation>@<name>RunWith</name><argument_list>(<argument><expr><name><name>AndroidJUnit4</name><operator>.</operator><name>class</name></name></expr></argument>)</argument_list></annotation>
+<specifier>public</specifier> class <name>BlockScreenCaptureTest</name> <block>{
+
+    <decl_stmt><decl><annotation>@<name>Rule</name></annotation>
+    <type><specifier>public</specifier> <name><name>ActivityScenarioRule</name><argument_list type="generic">&lt;<argument><name>MainActivity</name></argument>&gt;</argument_list></name></type> <name>mActivityScenarioRule</name> <init>=
+            <expr><operator>new</operator> <call><name><name>ActivityScenarioRule</name><argument_list type="generic">&lt;&gt;</argument_list></name><argument_list>(<argument><expr><name><name>MainActivity</name><operator>.</operator><name>class</name></name></expr></argument>)</argument_list></call></expr></init></decl>;</decl_stmt>
+
+    <decl_stmt><decl><annotation>@<name>Rule</name></annotation>
+    <type><specifier>public</specifier> <name>GrantPermissionRule</name></type> <name>mGrantPermissionRule</name> <init>=
+            <expr><call><name><name>GrantPermissionRule</name><operator>.</operator><name>grant</name></name><argument_list>(
+                    <argument><expr><literal type="string">"android.permission.POST_NOTIFICATIONS"</literal></expr></argument>)</argument_list></call></expr></init></decl>;</decl_stmt>
+
+    <function><annotation>@<name>Before</name></annotation>
+    <type><specifier>public</specifier> <name>void</name></type> <name>setUp</name><parameter_list>()</parameter_list> <block>{<block_content>
+        <expr_stmt><expr><call><name><name>Thread</name><operator>.</operator><name>sleep</name></name><argument_list>(<argument><expr><literal type="number">3000</literal></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name>onView</name><argument_list>(<argument><expr><call><name>withText</name><argument_list>(<argument><expr><call><name>containsStringIgnoringCase</name><argument_list>(<argument><expr><literal type="string">"skip"</literal></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call><operator>.</operator><call><name>perform</name><argument_list>(<argument><expr><call><name>click</name><argument_list>()</argument_list></call></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+    </block_content>}</block></function>
+
+    <function><annotation>@<name>Test</name></annotation>
+    <type><specifier>public</specifier> <name>void</name></type> <name>blockScreenCaptureTest</name><parameter_list>()</parameter_list> <block>{<block_content>
+        <expr_stmt><expr><call><name>onView</name><argument_list>(<argument><expr><call><name>allOf</name><argument_list>(<argument><expr><call><name>withId</name><argument_list>(<argument><expr><name><name>R</name><operator>.</operator><name>id</name><operator>.</operator><name>overviewFragment</name></name></expr></argument>)</argument_list></call></expr></argument>,
+                <argument><expr><call><name>withContentDescription</name><argument_list>(<argument><expr><literal type="string">"Overview"</literal></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call><operator>.</operator><call><name>perform</name><argument_list>(<argument><expr><call><name>click</name><argument_list>()</argument_list></call></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name>onView</name><argument_list>(<argument><expr><call><name>withContentDescription</name><argument_list>(<argument><expr><literal type="string">"More options"</literal></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call><operator>.</operator><call><name>perform</name><argument_list>(<argument><expr><call><name>click</name><argument_list>()</argument_list></call></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name>onView</name><argument_list>(<argument><expr><call><name>withText</name><argument_list>(<argument><expr><literal type="string">"Settings"</literal></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call><operator>.</operator><call><name>perform</name><argument_list>(<argument><expr><call><name>click</name><argument_list>()</argument_list></call></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+        <expr_stmt><expr><call><name>onView</name><argument_list>(<argument><expr><call><name>withText</name><argument_list>(<argument><expr><literal type="string">"Block screen capture"</literal></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call><operator>.</operator><call><name>perform</name><argument_list>(<argument><expr><call><name>click</name><argument_list>()</argument_list></call></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+
+        <expr_stmt><expr><call><name>onView</name><argument_list>(<argument><expr><call><name>allOf</name><argument_list>(<argument><expr><call><name>withId</name><argument_list>(<argument><expr><name><name>android</name><operator>.</operator><name>R</name><operator>.</operator><name>id</name><operator>.</operator><name>switch_widget</name></name></expr></argument>)</argument_list></call></expr></argument>, <argument><expr><call><name>withParent</name><argument_list>(<argument><expr><call><name>withParent</name><argument_list>(<argument><expr><call><name>hasDescendant</name><argument_list>(<argument><expr><call><name>withText</name><argument_list>(<argument><expr><literal type="string">"Block screen capture"</literal></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call>
+                <operator>.</operator><call><name>check</name><argument_list>(<argument><expr><call><name>matches</name><argument_list>(<argument><expr><call><name>isChecked</name><argument_list>()</argument_list></call></expr></argument>)</argument_list></call></expr></argument>)</argument_list></call></expr>;</expr_stmt>
+
+    </block_content>}</block></function>
+
+}</block></class>
+</unit>

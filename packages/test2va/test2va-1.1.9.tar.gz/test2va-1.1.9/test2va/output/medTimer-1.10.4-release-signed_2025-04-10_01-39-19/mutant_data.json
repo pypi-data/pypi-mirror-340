@@ -1,0 +1,58 @@
+{
+    "0": {
+        "is_mutable": true,
+        "statement": "onView(allOf(withId(R.id.overviewFragment), withContentDescription(\"Overview\"))).perform(click());",
+        "xpath": "//android.widget.FrameLayout[@index='0' and @resource-id='com.futsch1.medtimer:id/overviewFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Overview' and @bounds='[0,2067][360,2214]']",
+        "mutant_events": [
+            {
+                "origin_event_index": 0,
+                "statement": "onView(allOf(withId(R.id.medicinesFragment), withContentDescription(\"Medicine\"))).perform(click());",
+                "xpath": "//android.widget.FrameLayout[@index='1' and @resource-id='com.futsch1.medtimer:id/medicinesFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Medicine' and @bounds='[360,2067][720,2214]']",
+                "assertion_statement": {}
+            },
+            {
+                "origin_event_index": 0,
+                "statement": "onView(allOf(withId(R.id.statisticsFragment), withContentDescription(\"Analysis\"))).perform(click());",
+                "xpath": "//android.widget.FrameLayout[@index='2' and @resource-id='com.futsch1.medtimer:id/statisticsFragment' and @class='android.widget.FrameLayout' and @checked='false' and @package='com.futsch1.medtimer' and @content-desc='Analysis' and @bounds='[720,2067][1080,2214]']",
+                "assertion_statement": {}
+            }
+        ],
+        "test_method_name": "blockScreenCaptureTest",
+        "mutant_candidates_before": 60,
+        "mutant_candidates_after": 2
+    },
+    "1": {
+        "is_mutable": false,
+        "statement": "onView(withContentDescription(\"More options\")).perform(click());",
+        "xpath": "//android.widget.ImageView[@index='0' and @package='com.futsch1.medtimer' and @class='android.widget.ImageView' and @checked='false' and @content-desc='More options' and @bounds='[975,83][1080,209]']",
+        "mutant_events": [],
+        "test_method_name": "blockScreenCaptureTest",
+        "mutant_candidates_before": 62,
+        "mutant_candidates_after": 3
+    },
+    "2": {
+        "is_mutable": false,
+        "statement": "onView(withText(\"Settings\")).perform(click());",
+        "xpath": "//android.widget.LinearLayout[@index='0' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[532,105][1070,231]']",
+        "mutant_events": [],
+        "test_method_name": "blockScreenCaptureTest",
+        "mutant_candidates_before": 37,
+        "mutant_candidates_after": 4
+    },
+    "3": {
+        "is_mutable": false,
+        "statement": "onView(withText(\"Block screen capture\")).perform(click());",
+        "xpath": "//android.widget.LinearLayout[@index='7' and @class='android.widget.LinearLayout' and @checked='false' and @package='com.futsch1.medtimer' and @bounds='[0,1579][1080,1720]']",
+        "mutant_events": [],
+        "test_method_name": "blockScreenCaptureTest",
+        "mutant_candidates_before": 103,
+        "mutant_candidates_after": 8
+    },
+    "times": {
+        "parse_time": 0.10122203826904297,
+        "app_wait_time": 3.0094668865203857,
+        "ai_time": 133.80343961715698,
+        "mutator_time": 429.9727282524109,
+        "total_time": 566.8868567943573
+    }
+}

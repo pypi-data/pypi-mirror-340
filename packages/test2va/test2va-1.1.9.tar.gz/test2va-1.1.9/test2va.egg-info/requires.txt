@@ -1,0 +1,6 @@
+appium-python-client
+pillow
+customtkinter
+openai
+pydantic
+lxml
