@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: sphinx_tabs_selector
+Version: 1.0.0
+Summary: Use to select the specificed tabs of sphinx tabs from rst files
+Author-email: TerraJuly <caijie_hui@163.com>
+Maintainer-email: TerraJuly <caijie_hui@163.com>
+Project-URL: Homepage, https://github.com/TerraJuly/sphinx_tabs_selector
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# sphinx_tabs_selector
+基于sphinx_tabs，用于选择指定的sphinx tab的内容，便于sphinx生成非html格式的内容。

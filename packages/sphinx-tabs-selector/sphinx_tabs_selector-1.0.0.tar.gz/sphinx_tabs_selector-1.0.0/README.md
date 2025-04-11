@@ -1,0 +1,2 @@
+# sphinx_tabs_selector
+基于sphinx_tabs，用于选择指定的sphinx tab的内容，便于sphinx生成非html格式的内容。
