@@ -1,0 +1,4 @@
+include README.md
+include requirements.txt
+recursive-include bookmark_organizer/bookmark_organizer/data *
+include bookmark_organizer/data/*.tsv 

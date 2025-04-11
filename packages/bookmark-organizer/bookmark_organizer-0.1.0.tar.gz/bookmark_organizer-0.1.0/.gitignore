@@ -1,0 +1,94 @@
+# Private data and backups
+outputs
+bookmark_organizer/data/backups/*
+**/bookmark_export.html
+**/chrome_bookmarks.json
+**/chrome_bookmarks.html
+organized_bookmarks/
+test/
+test*
+organized_bookmarks/*
+# Environment and configuration
+.env
+*.env
+.env.*
+.config
+config.json
+*_config.json
+**/.env
+**/config/
+
+# API keys and secrets
+**/secrets/
+**/*_key*
+**/*_secret*
+**/*.pem
+**/*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.python-version
+venv/
+.venv/
+ENV/
+env/
+.env/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Logs and databases
+*.log
+*.sqlite
+*.db
+logs/
+log/
+
+# Generated reports and output
+**/bookmark_report.md
+**/report.md
+reports/
+output/
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+tmp/
+temp/

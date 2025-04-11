@@ -1,0 +1,122 @@
+# Bookmark Organizer
+
+A tool to organize your Chrome bookmarks using LLMs and quick sort rules. It can categorize, tag, clean, and deduplicate your bookmarks automatically.
+
+## Features
+
+- Automatic categorization / support for hierarchical categories from input file of categories.
+- Tag generation for better organization
+- Importance rating for bookmarks
+- Support for hierarchical categories
+- Fast mode for quick processing
+- Faster mode using URL pattern matching -- **recommended**
+- Merge mode for combining multiple bookmark sources
+- Deduplication of bookmarks based on URLs and titles
+- Filtering of utility URLs and local files
+- Chrome-compatible output formats (JSON and HTML)
+
+## Installation
+
+```bash
+pip install bookmark-organizer
+```
+
+## Configuration
+
+Via command-line arguments, environment variables, or a `.env` file.
+
+### Environment Variables
+
+Create a `.env` file in your project directory or in the package directory with the following variables:
+
+```env
+API_KEY=your_api_key_here
+BASE_URL=http://your-llm-service-url
+MODEL=your_model_name
+```
+
+### Command Line Arguments
+
+```bash
+bookmark-organizer [options]
+```
+
+Options:
+- `--output-dir`: Directory to store organized bookmarks (default: organized_bookmarks)
+- `--replace`: Replace the original Chrome bookmarks file
+- `--html-file`: Path to Chrome bookmarks HTML export file(s) (comma-separated for multiple files)
+- `--categories-file`: Path to TSV file containing bookmark categories
+- `--keep-utility`: Keep utility URLs like Google search results
+- `--chunk-size`: Number of bookmarks to process in each batch (default: 5)
+- `--fast`: Enable fast mode (larger chunks and simplified categorization)
+- `--faster`: Enable faster mode (uses URL pattern matching) -- **really recommended**
+- `--merge`: Merge inputs from multiple sources
+- `--api-key`: API key for the LLM service
+- `--base-url`: Base URL for the LLM service
+- `--model`: Model name to use
+
+### Configuration Priority
+
+1. Command-line arguments (highest priority)
+2. Environment variables
+3. `.env` file in current directory
+4. `.env` file in package directory (lowest priority)
+
+## Usage
+
+### Basic Usage
+
+```bash
+bookmark-organizer
+```
+
+This will process your Chrome bookmarks and organize them in the `organized_bookmarks` directory.
+
+### Using HTML Export
+
+```bash
+bookmark-organizer --html-file bookmarks.html
+```
+
+### Merging Multiple Sources
+
+```bash
+bookmark-organizer --html-file bookmarks1.html,bookmarks2.html --merge
+```
+
+### Fast Processing
+
+```bash
+bookmark-organizer --fast
+```
+
+### Faster Processing with URL Patterns
+
+```bash
+bookmark-organizer --faster
+```
+
+### Custom API Configuration
+
+```bash
+bookmark-organizer --api-key your_key --base-url http://your-service --model your_model
+```
+
+## Output
+
+The tool generates:
+- Organized bookmarks in JSON format
+- Chrome-compatible HTML export
+- Category-based organization
+- Tags and importance ratings
+- Hierarchical category structure
+
+## Requirements
+
+- Python 3.9+
+- LLM service access (for AI categorization)
+
+## License
+
+Beer-ware and MIT License
+No warrant, liability, or support is provided or implied. Use at your own risk for any purpose whatsoever.

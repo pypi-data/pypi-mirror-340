@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bookmark-organizer"
+version = "0.1.0"
+description = "A tool to organize and categorize bookmarks using AI"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    { name = "Uri Neri", email = "uri.neri@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "beautifulsoup4>=4.13.3",
+    "openai>=1.72.0",
+    "python-dotenv>=1.1.0",
+    "tqdm>=4.67.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/neri/bookmark-organizer"
+Repository = "https://github.com/neri/bookmark-organizer.git"
+
+[project.scripts]
+bookmark-organizer = "bookmark_organizer.cli:organize_bookmarks_cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bookmark_organizer"] 
