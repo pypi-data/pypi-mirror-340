@@ -1,0 +1,6 @@
+[console_scripts]
+jupyter_coder_server = jupyter_coder_server:main
+
+[jupyter_serverproxy_servers]
+vscode_server = jupyter_coder_server:setup_jupyter_coder_server
+vscode_server_fb = jupyter_coder_server:setup_filebrowser
