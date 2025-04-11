@@ -1,0 +1,161 @@
+Metadata-Version: 2.4
+Name: word-reaper
+Version: 1.0.2
+Summary: Reap & Forge Wordlists for Password Cracking
+Home-page: https://github.com/Nemorous/word-reaper
+Author: d4rkfl4m3z
+License: MIT
+Project-URL: Documentation, https://github.com/Nemorous/word-reaper#readme
+Project-URL: Bug Tracker, https://github.com/Nemorous/word-reaper/issues
+Project-URL: Source, https://github.com/Nemorous/word-reaper
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+
+<h1 align="left">WordReaper v1.0.2 <img src="assets/scythe.png" width="64"/></h1>
+
+
+
+
+⚠️ **NOTICE: This project is in early development and not yet ready for production use. Features may change, break, or be incomplete. Use at your own risk.**
+
+
+> Reap & Forge Wordlists for Password Cracking  
+> By `d4rkfl4m3z`
+
+![wordreaper help menu](https://raw.githubusercontent.com/Nemorous/word-reaper/main/screenshots/banner.jpg)
+
+---
+
+## 💡 What is Word Reaper?
+
+**WordReaper** is a powerful, modular tool for generating, mutating, and combining wordlists — ideal for use in redteaming and CTFs.
+
+It supports:
+
+- 🕸️ HTML scraping (with tag/class/id filtering)
+- 🐙 GitHub/Gist wordlist pulling (`raw.githubusercontent.com` and `gist.githubusercontent.com`)
+- 📁 Local file loading and mentalist-style mutations
+- 🔄 Hashcat-style mask-based permutations
+- ⚔️ Merging and combining wordlists like a pro
+
+---
+
+## 🚀 Install
+
+### 🔧 Clone & Install Locally
+
+```bash
+git clone https://github.com/Nemorous/word-reaper.git
+cd word-reaper
+pip install .
+```
+
+### 📦 Install via PyPI (Optional)
+```bash
+pip install word-reaper
+```
+
+---
+
+## ⚙️ Usage
+
+### 📥 HTML Scraping with Tag/Class/ID Filtering
+```bash
+wordreaper --method html --url https://example.com --tag a --class content
+```
+
+### 🐙 GitHub Scraping
+Supports both GitHub raw and Gist raw URLs:
+```bash
+wordreaper --method github --url https://raw.githubusercontent.com/username/repo/main/file.txt
+wordreaper --method github --url https://gist.githubusercontent.com/username/gistid/raw/commitid/file.txt
+```
+
+### 📁 Local File Loading
+```bash
+wordreaper --method file --input wordlist.txt
+```
+
+---
+
+## 🧠 Wordlist Mutations & Permutations
+
+```bash
+wordreaper --mentalize --input input.txt --output mutated.txt \
+--leet --toggle --underscores --append-mask ?d?d --increment
+```
+
+Supports:
+- ✅ Leetspeak (`--leet`)
+- ✅ Case toggling (`--toggle`)
+- ✅ Separators: `--underscores`, `--spaces`, `--hyphens`)
+- ✅ Permutations: `--append-mask`, `--prepend-mask`, `--synchronize`, `--increment`
+
+---
+
+## 🧰 Other Features
+
+### 🪓 Reaper ASCII Art
+```bash
+wordreaper --ascii-art
+```
+
+### 📦 Merge Multiple Wordlists
+```bash
+wordreaper --merge file1.txt file2.txt file3.txt ... -o merged.txt
+```
+
+### ⚔️ Combinator
+```bash
+wordreaper --combinator adjectives.txt nouns.txt -o combos.txt
+```
+
+---
+
+## 📝 Changelog
+
+See [`CHANGELOG.md`](CHANGELOG.md)
+
+---
+
+## 📁 License
+
+MIT
+
+---
+
+## 🤝 Contributions
+
+PRs and issues welcome! Add new scrapers, modules, or mutation strategies.
+
+Made with ☕ and 🔥 By d4rkfl4m3z
+
