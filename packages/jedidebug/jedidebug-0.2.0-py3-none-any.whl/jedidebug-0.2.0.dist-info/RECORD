@@ -1,0 +1,11 @@
+jedidebug/__init__.py,sha256=5ZdM7Zr0YufoxuTKOAgQ-3dbyWEVVvAmxoxHZ8QlqYg,293
+jedidebug/core.py,sha256=2n0JMmPprZwm_sh2raTLRrnbSSK2LdziBwwVJQq8evQ,4348
+jedidebug/handlers.py,sha256=lB6kDDTdtVJw1pHgjOtZSpnPNr398XrHy0L6ywGVqMo,2875
+jedidebug/quotes.py,sha256=hbiDALu5tFzYly2xZ7wGSh0LLEY5s8AcKsd4R6h0G6s,5219
+jedidebug-0.2.0.dist-info/licenses/LICENSE,sha256=ObgamcWIH31elziAnSGYtwOjSHto13XoBiul7-iNREs,1097
+tests/__init__.py,sha256=aLCEmF6o_3XwplO-Z7MJiJ_6A31WrUozAK1gKD70fn4,37
+tests/test_jedidebug.py,sha256=W2fKG-3zHkEch_Gp1t7QOJRrdhOMt19IefJSfZDjtcQ,6589
+jedidebug-0.2.0.dist-info/METADATA,sha256=eOH6pHV2BY4jZFX-Cz_lhRKRf5a9VxmCHildFEqdgwU,4883
+jedidebug-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+jedidebug-0.2.0.dist-info/top_level.txt,sha256=0a5UxH6z2TMn07wscc_5M84YKWmfal6voDdJqLXMZlg,16
+jedidebug-0.2.0.dist-info/RECORD,,
