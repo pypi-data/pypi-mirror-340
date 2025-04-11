@@ -1,0 +1,8 @@
+pyometiff/__init__.py,sha256=iX42yLa1PnKZopolH_08WQQkvMWDxnq6rABL6KiUVwM,150
+pyometiff/omereader.py,sha256=pKPDFvac_KC1uYDFe_XBBiBnbenlHB8xFGhP5sZBig4,10942
+pyometiff/omewriter.py,sha256=gOouAvX3jR4S7Mn28DJud4SMZsbvo9PK1GsW5gfq6kU,11554
+pyometiff/omexml.py,sha256=BmM2ogUPYG-w0Zoqx7nVkMyV-_8W27vrIuekbpqXEhQ,75960
+pyometiff-1.1.4.dist-info/LICENSE,sha256=FtSsGJnNPPgyLETv-BgIqKRn2LreBOAEl_GpBSdKqZo,37486
+pyometiff-1.1.4.dist-info/METADATA,sha256=NciJvDsHgLiR0E4JL4Z4VQ_NeoP0gUS01G2KcXjB4_g,4960
+pyometiff-1.1.4.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+pyometiff-1.1.4.dist-info/RECORD,,
