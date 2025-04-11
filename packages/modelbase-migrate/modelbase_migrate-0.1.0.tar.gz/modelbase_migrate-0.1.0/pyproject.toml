@@ -1,0 +1,39 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[project]
+authors = [{name = "Marvin van Aalst", email = "marvin.vanaalst@gmail.com"}]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development",
+  "Topic :: Scientific/Engineering",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX",
+  "Operating System :: Unix",
+  "Operating System :: MacOS",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "ipykernel>=6.29.5",
+  "modelbase>=1.57.18",
+  "pytest>=8.3.5",
+]
+description = "Migrate models between different modelbase versions"
+keywords = ["modelling", "ode", "metabolic"]
+license = "GPL-3.0-or-later"
+name = "modelbase-migrate"
+readme = "README.md"
+requires-python = ">=3.12"
+version = "0.1.0"
+
+[tool.hatchling]
+from = "src"
+include = ["modelbase_migrate"]

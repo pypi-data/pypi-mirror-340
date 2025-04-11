@@ -1,0 +1,49 @@
+Metadata-Version: 2.4
+Name: modelbase-migrate
+Version: 0.1.0
+Summary: Migrate models between different modelbase versions
+Author-email: Marvin van Aalst <marvin.vanaalst@gmail.com>
+License-Expression: GPL-3.0-or-later
+Keywords: metabolic,modelling,ode
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.12
+Requires-Dist: ipykernel>=6.29.5
+Requires-Dist: modelbase>=1.57.18
+Requires-Dist: pytest>=8.3.5
+Description-Content-Type: text/markdown
+
+# modelbase-migrate
+
+Migrate models between different modelbase versions (currently v1 -> v2).
+
+## Installation
+
+```bash
+pip install modelbase-migrate
+```
+
+## Usage
+
+```python
+from modelbase_migrate import migrate
+
+migrate(
+    model_v1,
+    initial_conditions={...},
+    out_file=out / "model_name.py",
+)
+```
