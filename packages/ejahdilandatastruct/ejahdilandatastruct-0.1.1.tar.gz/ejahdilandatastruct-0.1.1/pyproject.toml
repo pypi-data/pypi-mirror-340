@@ -1,0 +1,38 @@
+# pyproject.toml
+
+[project]
+name = "ejahdilandatastruct"
+version = "0.1.1"
+description = "A pedagogical Python package implementing core data structures from scratch"
+authors = [{name = "Ejah Dilan", email = "ejahdilan58@gmail.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = []
+
+keywords = ["data structures", "algorithms", "python", "education"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+homepage = "https://github.com/EjahDil/data-structures-python"
+repository = "https://github.com/EjahDil/data-structures-python"
+
+[build-system]
+# Defines the build system requirements
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = { find = {} }
+include-package-data = true
