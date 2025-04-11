@@ -1,0 +1,5 @@
+goat_adapters/smolagents/__init__.py,sha256=gFuOZANt5Fo3nP_V9afyxEEeTkacnwMp6QKn6Z5s_HE,124
+goat_adapters/smolagents/adapter.py,sha256=cE3zDILeLTlEXHJaC0GtDFrEOJHtFOQXT0ZR1HEMEgw,4672
+goat_sdk_adapter_smolagents-0.1.0.dist-info/METADATA,sha256=unyYiBLiodi50wBaIK9AMIcudYvuy8lhLkeFpXLyxEU,4280
+goat_sdk_adapter_smolagents-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+goat_sdk_adapter_smolagents-0.1.0.dist-info/RECORD,,
