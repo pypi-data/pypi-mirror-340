@@ -1,0 +1,11 @@
+mmv_regionseg/__init__.py,sha256=of6qZeueu_Qgrv9O3Q8imZKof0Iu34Q6nu8coKglHvY,93
+mmv_regionseg/_widget.py,sha256=jyCjUErPB0d9rnKl6LBzFlweZrFEam-wsfCz6Di5t3Q,7379
+mmv_regionseg/napari.yaml,sha256=uIdrE9Ic8aS09_Id5PimZoQitRRlZ6o5tx1ivQMGXxw,548
+mmv_regionseg/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mmv_regionseg/_tests/test_widget.py,sha256=459MIhJ6kCZOSKzIqgiWJ-Tk_jSS_91DugBXCFwP6yw,1221
+mmv_regionseg-0.3.0.dist-info/licenses/LICENSE,sha256=0j8BJMu-ctcCkFbdZ22f-6EJwaWsXE2eXrkVGmlS9mU,1487
+mmv_regionseg-0.3.0.dist-info/METADATA,sha256=WTKqAzjAKT5qzVJLzvXaTbCym39r4sDlsTwcZACXkfY,8368
+mmv_regionseg-0.3.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mmv_regionseg-0.3.0.dist-info/entry_points.txt,sha256=vsJ-3JZ6623RItaPcnqabXz0PXjOYdvzTahQAKcSYuE,60
+mmv_regionseg-0.3.0.dist-info/top_level.txt,sha256=BRHwp1v9V1FR1kwwlW7MYV18Vum8tiJ42nP_pVBeHB8,14
+mmv_regionseg-0.3.0.dist-info/RECORD,,
