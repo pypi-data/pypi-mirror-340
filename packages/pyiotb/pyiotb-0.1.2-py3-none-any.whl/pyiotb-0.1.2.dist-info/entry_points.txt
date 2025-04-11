@@ -1,0 +1,3 @@
+[console_scripts]
+download-logs = pyiotb.scripts.download_logs:main
+trigger-comparison = pyiotb.scripts.trigger_comparison:main
