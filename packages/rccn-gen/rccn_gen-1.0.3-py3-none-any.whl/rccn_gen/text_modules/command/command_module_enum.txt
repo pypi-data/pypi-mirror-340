@@ -1,0 +1,2 @@
+#[subservice(<<VAR_COMMAND_SUBTYPE>>)]
+<<VAR_COMMAND_NAME_UCASE>>(<<VAR_COMMAND_NAME>>::Args),
