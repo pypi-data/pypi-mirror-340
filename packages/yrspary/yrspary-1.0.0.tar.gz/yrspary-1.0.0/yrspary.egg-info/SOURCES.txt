@@ -1,0 +1,7 @@
+README.md
+setup.py
+yrspary.egg-info/PKG-INFO
+yrspary.egg-info/SOURCES.txt
+yrspary.egg-info/dependency_links.txt
+yrspary.egg-info/requires.txt
+yrspary.egg-info/top_level.txt
