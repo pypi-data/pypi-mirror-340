@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+omnimind/__init__.py
+omnimind/client.py
+omnimind/config.py
+omnimind/utils.py
+omnimind.egg-info/PKG-INFO
+omnimind.egg-info/SOURCES.txt
+omnimind.egg-info/dependency_links.txt
+omnimind.egg-info/top_level.txt
+tests/test_client.py
+tests/test_config.py
