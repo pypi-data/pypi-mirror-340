@@ -1,0 +1,73 @@
+Metadata-Version: 2.3
+Name: promptons
+Version: 0.1.0
+Summary: A Python package for advanced prompt engineering and management
+License: MIT
+Author: Laurent-Philippe Albou
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: abstractllm
+Description-Content-Type: text/markdown
+
+# Promptons
+
+A Python package for advanced prompt engineering and management.
+
+## Description
+
+Promptons provides tools and utilities for working with LLM prompts, built on top of abstractllm.
+
+## Installation
+
+```bash
+pip install promptons
+```
+
+## Features
+
+- [Coming soon]
+
+## Usage
+
+Basic usage example:
+
+```python
+from promptons import Prompton
+
+# Coming soon
+```
+
+## Development
+
+To set up the development environment:
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/promptons.git
+cd promptons
+
+# Install poetry if you haven't already
+pip install poetry
+
+# Install dependencies
+poetry install
+
+# Run tests
+poetry run pytest
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Laurent-Philippe Albou
+```
