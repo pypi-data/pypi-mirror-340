@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+litellm_proxy/__init__.py
+litellm_proxy/middleware.py
+revenium_middleware_litellm.egg-info/PKG-INFO
+revenium_middleware_litellm.egg-info/SOURCES.txt
+revenium_middleware_litellm.egg-info/dependency_links.txt
+revenium_middleware_litellm.egg-info/requires.txt
+revenium_middleware_litellm.egg-info/top_level.txt

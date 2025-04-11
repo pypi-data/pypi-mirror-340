@@ -1,0 +1,10 @@
+wrapt
+revenium_middleware
+litellm
+
+[litellm_all]
+revenium-middleware[litellm_proxy]
+
+[litellm_proxy]
+litellm[proxy]
+logging
