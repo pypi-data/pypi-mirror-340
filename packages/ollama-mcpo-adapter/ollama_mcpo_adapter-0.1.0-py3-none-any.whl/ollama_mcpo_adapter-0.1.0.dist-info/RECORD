@@ -1,0 +1,12 @@
+ollama_mcpo_adapter/__init__.py,sha256=QEy3T3FUXV7KONQznVO4N_LHHG_naeSn-rZHpiCb2oM,166
+ollama_mcpo_adapter/adapter.py,sha256=tYyjBuL_OMRIFEScm_6QSPe1paFLIvZW53vTt1MI9_Q,5019
+ollama_mcpo_adapter/cli.py,sha256=Y_kCX9lsjeJbabrUfET3k9b8w2dryk-bvBCN8QtMnRU,21
+ollama_mcpo_adapter/config_parser.py,sha256=bQHOparg5IR3o16S2ARWSKQ5vlF_mbqE9QNF-eOYFkU,2335
+ollama_mcpo_adapter/dispatcher.py,sha256=AK-yazE2rcoHBpFp8X5-D4Ot7FROVSM0f4kqy2elNio,671
+ollama_mcpo_adapter/service.py,sha256=-Cd7qixvUl7K57KKEVoqhtIiwVWP91Gn-g-y9UzWyRc,2612
+ollama_mcpo_adapter/service_runner.py,sha256=qWQnoYGurUQRMMZh2bd0CVjvdoCFnyNQ1CvQXgGyMJ0,2475
+ollama_mcpo_adapter-0.1.0.dist-info/METADATA,sha256=FYuzhVUYPu64hs-3a2FV6AvXKyYUhM8bTnxHshKt0iQ,260
+ollama_mcpo_adapter-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ollama_mcpo_adapter-0.1.0.dist-info/entry_points.txt,sha256=OPfxmzxkMPdh9ujFmdLo7pcwuiZRmNkluFEtHVHFR-s,52
+ollama_mcpo_adapter-0.1.0.dist-info/licenses/LICENSE,sha256=1b4ft_dqm_wKa6YBiq3CevYLZUXrSF3z9JZ5P50KaQI,1078
+ollama_mcpo_adapter-0.1.0.dist-info/RECORD,,
