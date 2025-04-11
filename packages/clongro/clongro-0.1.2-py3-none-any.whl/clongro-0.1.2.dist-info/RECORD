@@ -1,0 +1,11 @@
+clongro/__init__.py,sha256=JejXB8WYVVfl2961H7zrPSBhk6BXW3A-Mr5vBq1QHP4,101
+clongro/__main__.py,sha256=0rhKVPlEu8roTvuxrlMZ31yymYRpVV4Lcaq81lJvV1k,3598
+clongro/cli.py,sha256=UmqnRKIsHb8O-4HvYP2R4gA-iExSnMvF0ORZ3Qe0L10,427
+clongro/core.py,sha256=JK23yQ10Fr_YZMjaQUnJRHiLkWRFEyAjJQiKlR6fJYw,6094
+clongro/utils.py,sha256=1qW3Z4I4ddQlwu68W9EjhP6Pks3Nm3rnL1Zra7dlMnM,986
+clongro-0.1.2.dist-info/licenses/LICENSE,sha256=JoeYx-rKBw5obi2Tz32kH9n2FgSmTz8_gIuSoXy2KOc,1080
+clongro-0.1.2.dist-info/METADATA,sha256=7xbwraRz4e6JsBbjMD0-RFMmcZ2Z_eZiIaFzV6QEFFk,12525
+clongro-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+clongro-0.1.2.dist-info/entry_points.txt,sha256=ljZZe80O8PNxVs6hKWDj9LwTN5CevYjQiGJTEzo45z0,50
+clongro-0.1.2.dist-info/top_level.txt,sha256=W1UqPROSxDdjejm1QaBnGQynr5dJy03S88ChW1fhmOQ,8
+clongro-0.1.2.dist-info/RECORD,,
