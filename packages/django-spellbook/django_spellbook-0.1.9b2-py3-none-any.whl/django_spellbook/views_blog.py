@@ -1,0 +1,12 @@
+import datetime
+from django.shortcuts import render
+
+# Table of Contents for blog
+TOC = {'title': 'root', 'url': '', 'children': {'first-post': {'title': 'First Post', 'url': 'first-post'}}}
+
+
+def first_post(request):
+    context = {'title': 'First Post', 'created_at': 'datetime.datetime(2025, 4, 10, 21, 3, 47, 241089)', 'updated_at': 'datetime.datetime(2025, 4, 10, 21, 3, 47, 241089)', 'url_path': 'first-post', 'raw_content': '# Blog Begins\nThis is our first blog post.', 'is_public': True, 'tags': [], 'custom_meta': {}, 'next_page': None, 'prev_page': None}
+    context['toc'] = TOC 
+    context['current_url'] = 'first-post'
+    return render(request, 'blog/spellbook_md/first-post.html', context)
