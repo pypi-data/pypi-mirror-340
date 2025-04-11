@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "yors_pano_zero_field"
+version = "1.0.0"
+description = "a package to set different types of input parameters for comfyui node easily"
+authors = ["yemiancheng <ymc.github@gmail.com>"]
+readme = "README.md"
+license = "LICENSE"
+keywords = ["artist", "panz", "mono", "yors_pano_zero_field"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.10",
+]
+homepage = "https://github.com/ymc-github/panz/blob/main/packages/yors_pano_zero_field/README.md"
+documentation = "https://github.com/ymc-github/panz/blob/main/packages/yors_pano_zero_field/README.md"
+repository = "https://github.com/ymc-github/panz.git"
+
+[tool.poetry.urls]
+changelog = "https://github.com/ymc-github/panz/blob/main/packages/yors_pano_zero_field/CHANGELOG.md"
+
+[[tool.poetry.packages]]
+include = "yors_pano_zero_field"
+
+[tool.poetry.dependencies]
+python = "^3.10"
