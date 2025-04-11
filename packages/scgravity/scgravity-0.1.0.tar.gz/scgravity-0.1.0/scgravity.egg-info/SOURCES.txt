@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+scgravity/__init__.py
+scgravity.egg-info/PKG-INFO
+scgravity.egg-info/SOURCES.txt
+scgravity.egg-info/dependency_links.txt
+scgravity.egg-info/requires.txt
+scgravity.egg-info/top_level.txt
