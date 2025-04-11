@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+django_hey/__init__.py
+django_hey/hey.py
+django_hey.egg-info/PKG-INFO
+django_hey.egg-info/SOURCES.txt
+django_hey.egg-info/dependency_links.txt
+django_hey.egg-info/entry_points.txt
+django_hey.egg-info/requires.txt
+django_hey.egg-info/top_level.txt
