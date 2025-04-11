@@ -1,0 +1,192 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dataframes-haystack"
+dynamic = ["version"]
+description = "Haystack custom components for your favourite dataframe library."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = [
+  "nlp",
+  "machine-learning",
+  "ai",
+  "haystack",
+  "pandas",
+  "dataframe",
+  "polars",
+  "llm",
+]
+authors = [{ name = "Edoardo Abati" }]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+dependencies = [
+  "haystack-ai>=2.0.0",
+  "narwhals>=1.1.0",
+  "typing_extensions",
+]
+
+[project.optional-dependencies]
+pandas = ["pandas>=1.0.0"]
+polars = ["polars>=0.18.0"]
+
+[project.urls]
+Documentation = "https://github.com/EdAbati/dataframes-haystack#readme"
+Issues = "https://github.com/EdAbati/dataframes-haystack/issues"
+Source = "https://github.com/EdAbati/dataframes-haystack"
+
+[tool.hatch.version]
+path = "src/dataframes_haystack/__about__.py"
+
+
+# Default environment
+[tool.hatch.envs.default]
+installer = "uv"
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+]
+features = ["pandas", "polars"]
+
+# Unit tests
+[tool.hatch.envs.hatch-test]
+installer = "uv"
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+]
+features = ["pandas", "polars"]
+post-install-commands = ["uv pip freeze"]
+
+[[tool.hatch.envs.hatch-test.matrix]]
+python = ["3.12", "3.11", "3.10", "3.9", "3.8"]
+
+[tool.hatch.envs.hatch-test.scripts]
+run = "pytest{env:HATCH_TEST_ARGS:} {args}"
+run-cov = "coverage run -m pytest{env:HATCH_TEST_ARGS:} {args}"
+cov-combine = "coverage combine"
+cov-report = "coverage report"
+
+[tool.coverage.run]
+source_pkgs = ["dataframes_haystack", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/dataframes_haystack/__about__.py",
+]
+
+[tool.coverage.paths]
+dataframes_haystack = [
+  "src/dataframes_haystack",
+  "*/dataframes-haystack/src/dataframes_haystack",
+]
+tests = ["tests", "*/dataframes-haystack/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+
+# Documentation
+[tool.hatch.envs.docs]
+dependencies = [
+  "notebook",
+  "ipywidgets",
+  # To download the dataset
+  "arxiv~=2.1.0",
+]
+
+
+# Type checking
+[tool.hatch.envs.types]
+dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/dataframes_haystack tests}"
+
+
+# Linting
+[tool.hatch.envs.hatch-static-analysis]
+dependencies = ["black>=24.10.0", "nbqa>=1.9.1", "ruff>=0.8.0"]
+
+[tool.hatch.envs.hatch-static-analysis.scripts]
+format-check = [
+  "black --check --diff {args:.}",
+  "nbqa black --check --diff notebooks/*",
+]
+format-fix = [
+  "black {args:.}",
+  "nbqa black notebooks/*",
+]
+lint-check = "ruff check {args:.}"
+lint-fix = "ruff check --fix {args:.}"
+
+
+# Format/Linting Tools
+[tool.black]
+target-version = ["py38"]
+line-length = 120
+skip-string-normalization = true
+
+[tool.ruff]
+target-version = "py38"
+line-length = 120
+extend-include = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  # Allow non-abstract empty methods in abstract base classes
+  "B027",
+  # No required doctstring for modules, packages
+  "D100",
+  "D104",
+  # No future annotations
+  "FA100",
+  # Ignore checks for possible passwords
+  "S105",
+  "S106",
+  "S107",
+  # Ignore complexity
+  "C901",
+  # Generic veriable name df is ok
+  "PD901",
+  "PLR0911",
+  "PLR0912",
+  "PLR0913",
+  "PLR0915",
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["dataframes_haystack"]
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint.per-file-ignores]
+# Tests can use magic values, assertions, and relative imports
+"tests/*" = ["PLR2004", "S101", "TID252", "D100", "D103"]
+"notebooks/*" = ["PTH123", "SIM115"]
