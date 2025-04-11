@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: tpthello
+Version: 0.1.2
+Description-Content-Type: text/markdown
+Dynamic: description
+Dynamic: description-content-type
+
+# tpthello
+
+## Overview
+Basic Hello World project to confirm all that is supposed to be working is working.
