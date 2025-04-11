@@ -1,0 +1,37 @@
+# There are 3 different versions of OTEAPI_PLUGIN_PACKAGES given below.
+# The first is there to support installing a local oteapi-core and oteapi-dlite.
+# The second is there to support installing a local oteapi-dlite only.
+# The final and third is the "default" version that installs the oteapi-dlite
+# package from the PyPI repository.
+
+services:
+  oteapi:
+    image: ghcr.io/emmc-asbl/oteapi:${DOCKER_OTEAPI_VERSION:-latest}
+    ports:
+      - "5000:8080"
+    environment:
+      OTEAPI_REDIS_TYPE: redis
+      OTEAPI_REDIS_HOST: redis
+      OTEAPI_REDIS_PORT: 6379
+      OTEAPI_PREFIX: "${OTEAPI_PREFIX:-/api/v1}"
+      # OTEAPI_PLUGIN_PACKAGES: "--force-reinstall -v -e /oteapi-core|-v -e /oteapi-dlite"
+      # OTEAPI_PLUGIN_PACKAGES: "-v -e /oteapi-dlite"
+      OTEAPI_PLUGIN_PACKAGES: "-v oteapi-dlite"
+    depends_on:
+      - redis
+    volumes:
+      - "${OTEAPI_CORE_PATH:-/dev/null}:/oteapi-core"
+      - "${PWD}:/oteapi-dlite"
+    stop_grace_period: 1s
+
+  redis:
+    image: redis:latest
+    volumes:
+      - redis-oteapi:/data
+
+volumes:
+  redis-oteapi:
+
+networks:
+  default:
+    name: otenet
