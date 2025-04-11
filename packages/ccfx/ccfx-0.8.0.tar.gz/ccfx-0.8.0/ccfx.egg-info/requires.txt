@@ -1,0 +1,14 @@
+netCDF4
+gdal
+numpy
+shapely
+geopandas
+pandas
+xlsxwriter
+pyodbc
+sqlalchemy
+python-docx
+py7zr
+mutagen
+requests
+tqdm
