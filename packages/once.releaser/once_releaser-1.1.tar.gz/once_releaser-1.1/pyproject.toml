@@ -1,0 +1,110 @@
+[build-system]
+# See https://snarky.ca/what-the-heck-is-pyproject-toml/
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "once.releaser"
+version = "1.1"
+description = "Custom releaser hooks for ONCE project based on zest.releaser"
+license = {text = "GPL"}
+authors = [
+    {name = "Rafael Bermúdez Horcajada", email = "rber474@gmail.com"},
+]
+dependencies = [
+    "zest.releaser[recommended]>=9.6.1",
+    "zestreleaser.towncrier>=1.3.0",
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["releasing", "packaging", "pypi"]
+# I thought there was a way to combine two files, but I don't see it.
+# So define the readme as dynamic: still defined in setup.py.
+dynamic = ["readme"]
+
+[project.optional-dependencies]
+test = [
+    "zope.testing",
+    "zope.testrunner",
+]
+
+[project.urls]
+documentation = "https://github.com/rber474/once.releaser/"
+repository = "https://github.com/rber474/once.releaser/"
+changelog = "https://github.com/rber474/once.releaser/blob/master/CHANGES.rst"
+
+
+# The datachecks are implemented as entry points to be able to check
+# our entry point implementation.
+[project.entry-points."zest.releaser.prereleaser.before"]
+create_newsfile = "once.releaser.towncrier:create_newsfile"
+
+[tool.isort]
+profile = "plone"
+
+[tool.zest-releaser]
+extra-message = "[ci skip]"
+tag-signing = false
+
+[tool.black]
+target-version = ["py311"]
+
+[tool.towncrier]
+directory = "news/"
+filename = "CHANGES.rst"
+title_format = "{version} ({project_date})"
+underlines = ["-", ""]
+
+[[tool.towncrier.type]]
+directory = "breaking"
+name = "Breaking changes:"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "feature"
+name = "New features:"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "bugfix"
+name = "Bug fixes:"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "internal"
+name = "Internal:"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "documentation"
+name = "Documentation:"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "tests"
+name = "Tests"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "performance"
+name = "Performance"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "accessibility"
+name = "Accessibility"
+showcontent = true

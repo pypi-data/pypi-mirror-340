@@ -1,0 +1,2 @@
+[zest.releaser.prereleaser.before]
+create_newsfile = once.releaser.towncrier:create_newsfile
