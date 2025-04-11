@@ -1,0 +1,7 @@
+main.py
+pyproject.toml
+my_awesome_test_client.egg-info/PKG-INFO
+my_awesome_test_client.egg-info/SOURCES.txt
+my_awesome_test_client.egg-info/dependency_links.txt
+my_awesome_test_client.egg-info/requires.txt
+my_awesome_test_client.egg-info/top_level.txt
