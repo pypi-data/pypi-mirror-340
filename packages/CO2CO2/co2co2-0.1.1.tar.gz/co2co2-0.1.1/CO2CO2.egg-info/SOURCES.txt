@@ -1,0 +1,6 @@
+README.md
+setup.py
+CO2CO2.egg-info/PKG-INFO
+CO2CO2.egg-info/SOURCES.txt
+CO2CO2.egg-info/dependency_links.txt
+CO2CO2.egg-info/top_level.txt
