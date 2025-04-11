@@ -1,0 +1,11 @@
+prefix="/var/folders/qn/7t0vq3ts721cmgt0tgrtgzl80000gn/T/tmpn28o9eth/wheel/platlib"
+    exec_prefix="${prefix}"
+    libdir="${prefix}/lib"
+    includedir="${prefix}/include"
+    Name: LibMultiSense
+    Description: The CRL Multisense Interface Library
+    URL: https://carnegierobotics.com
+    Version: 7.1.0
+    Cflags: -I"${includedir}"
+    Libs: -L"${libdir}" -lMultiSense
+    
