@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: serato_tools
+Version: 1.5.0
+Summary: Serato track metadata tags
+Author-email: bvandercar-vt <bvandercar@outlook.com>
+License: Copyright 2019 Jan Holthuis
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the "Software"), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+        of the Software, and to permit persons to whom the Software is furnished to do
+        so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mutagen
+Provides-Extra: waveform-drawing
+Requires-Dist: pillow; extra == "waveform-drawing"
+Dynamic: license-file
+
+Fork of https://github.com/Holzhaus/serato-tags , which appears to be no longer maintained.
+
+# Installation
+
+Can install using pip:
+
+`pip install git+https://github.com/bvandercar-vt/serato-tags@main`
+
+Or add this line to your `requirements.txt`:
+
+`git+https://github.com/bvandercar-vt/serato-tags@main`
+
+# Serato Tags
+
+This repository aims to document the GEOB ID3 tags that the Serato DJ software uses to store its metadata.
+You can also have a look at [this lengthy blog post](https://homepage.ruhr-uni-bochum.de/jan.holthuis/posts/reversing-seratos-geob-tags) that goes into detail how I reversed the contents of the `Serato Markers2` GEOB tag.
+
+| Tag                                          | Progress      | Contents                   | Example script
+| -------------------------------------------- | ------------- | -------------------------- | --------------
+| [`Serato Analysis`](docs/serato_analysis.md) | Done          | Serato version information |
+| [`Serato Autotags`](docs/serato_autotags.md) | Done          | BPM and Gain values        | [`serato_autotags.py`](scripts/serato_autotags.py)
+| [`Serato BeatGrid`](docs/serato_beatgrid.md) | Mostly done   | Beatgrid Markers           | [`serato_beatgrid.py`](scripts/serato_beatgrid.py)
+| [`Serato Markers2`](docs/serato_markers2.md) | Mostly done   | Hotcues, Saved Loops, etc. | [`serato_markers2.py`](scripts/serato_markers2.py)
+| [`Serato Markers_`](docs/serato_markers_.md) | Mostly done   | Hotcues, Saved Loops, etc. | [`serato_markers_.py`](scripts/serato_markers_.py)
+| [`Serato Offsets_`](docs/serato_offsets_.md) | *Not started* |                            |
+| [`Serato Overview`](docs/serato_overview.md) | Done          | Waveform data              | [`serato_overview.py`](scripts/serato_overview.py)
+
+The different file/tag formats that Serato uses to store the information are documented in [`docs/fileformats.md`](docs/fileformats.md), a script to dump the tag data can be found at [`scripts/tagdump.py`](scripts/tagdump.py).
