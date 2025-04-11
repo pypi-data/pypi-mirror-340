@@ -1,0 +1,103 @@
+Metadata-Version: 2.4
+Name: danielle_data_structures_python
+Version: 0.1.0
+Summary: A Python package to manage basic data structures like arrays, stacks, queues, and lists.
+Home-page: https://github.com/dany237/data-structures-python
+Author: Danielle Kapsa
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+📦 DataStructureManager
+
+A Python package to manage and interact with core data structures like Arrays, Linked Lists Circular List, Double Linked List, Stacks, Queues, Graph and Tree. This project is part of a class assignment to demonstrate understanding of data structure concepts and their implementation in Python.
+
+🚀 Features
+
+✅ Array implementation with common operations
+✅ Singly and doubly linked lists
+✅ Stack (LIFO) with push/pop operations
+✅ Queue (FIFO) with enqueue/dequeue support
+✅ Circular Queue, Priority Queue (optional extension)
+✅ Modular, reusable codebase
+✅ Well-documented and easy to use
+🛠️ Installation
+
+Clone the repository:
+
+git clone https://github.com/dany237/data-structures-python.git
+cd DataStructureManager
+Then, install the package locally (if you turned it into a proper package):
+
+pip install .
+📚 Usage
+
+from data_structures import Stack, Queue, LinkedList
+
+# Stack example
+s = Stack()
+s.push(10)
+s.push(20)
+print(s.pop())  # Output: 20
+
+# Queue example
+q = Queue()
+q.enqueue(1)
+q.enqueue(2)
+print(q.dequeue())  # Output: 1
+
+# Linked List example
+ll = LinkedList()
+ll.insert(5)
+ll.insert(10)
+ll.display()  # Output: 5 -> 10
+📁 Project Structure
+
+data_structures_python/
+│
+├── data_structures/
+│   ├── __init__.py
+│   ├── array.py
+│   ├── circular_linked_list.py
+│   ├── doubly_linked_list.py
+|   |__ graph.py
+|   |__ linked_list.py
+|   |__ queue.py
+│   └── stack.py
+|   |__ tree.py
+│
+├── examples/
+|   |__array_example.ipynb
+|   |__circular_linked_list.ipynb
+|   |__data_structures.code-workspace
+|   |__doubly_linked_list.ipynb
+|   |__graph_example.ipynb
+|   |__linked_list.ipynb
+|   |__queue.ipynb
+|   |__stack_example.ipynb
+|   |__tree_example.ipynb
+│
+├── README.md
+└── setup.py
+🎯 Goals
+
+Implement classic data structures from scratch
+Understand underlying algorithms and time complexities
+Provide a unified and simple interface for each structure
+👩‍💻 Author
+
+Danielle Kapsa
+Course Data Structure / Tutor Jeremy
+Your GitHub
+📄 License
+
+This project is licensed under the MIT License.
+
