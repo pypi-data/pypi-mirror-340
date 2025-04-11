@@ -1,0 +1,9 @@
+# compiler.pyi
+
+class Compile:
+    
+    def __init__(self, resource: str, tempfile: bool | None) -> str: ...
+    
+    def filterize(self) -> Unknown: ...
+    
+    def execute(self) -> dict: ...

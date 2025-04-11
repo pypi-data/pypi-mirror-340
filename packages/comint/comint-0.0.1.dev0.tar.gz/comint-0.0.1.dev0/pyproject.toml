@@ -1,0 +1,41 @@
+[project]
+name = "comint"
+dynamic = ["version"]
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tomsdroid", email = "tomsdroid007@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+cache-keys = [
+  { file = "pyproject.toml" },
+  { git = { commit = true, tags = true } }]
+dev-dependencies = [
+    "pre-commit>=4.2.0",
+    "setuptools-scm>=8.2.0",
+]
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true
+
+[tool.setuptools_scm]
+write_to = "src/comint/_version.py"
+local_scheme = "no-local-version" # Menentukan bagaimana versi lokal ditangani
+version_scheme = "python-simplified-semver" # Menentukan skema versi
+tag_regex = "^P<version>[0-9].[0-9].[0-9]"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-vv --durations=10"
+python_files = ["test_*.py"]
+python_classes = ["Test*"]

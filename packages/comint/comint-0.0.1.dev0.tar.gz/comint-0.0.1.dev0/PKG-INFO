@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: comint
+Version: 0.0.1.dev0
+Summary: Add your description here
+Author-email: tomsdroid <tomsdroid007@gmail.com>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Dynamic: license-file
