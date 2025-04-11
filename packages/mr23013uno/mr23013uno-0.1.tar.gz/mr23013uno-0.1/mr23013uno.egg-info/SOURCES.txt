@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mr23013uno/__init__.py
+mr23013uno/lineales.py
+mr23013uno/no_lineales.py
+mr23013uno.egg-info/PKG-INFO
+mr23013uno.egg-info/SOURCES.txt
+mr23013uno.egg-info/dependency_links.txt
+mr23013uno.egg-info/top_level.txt

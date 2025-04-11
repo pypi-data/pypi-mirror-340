@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: mr23013uno
+Version: 0.1
+Summary: Libreria para resolver sistemas de ecuaciones lineales y no lineales
+Author: Steven Mejia
+License: MIT
+License-File: LICENSE
+Dynamic: author
+Dynamic: license
+Dynamic: license-file
+Dynamic: summary
