@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/common.py
+src/customFronter.py
+src/nonCustomFronter.py
+src/sessionSetup.py
+src/user.py
+src/simplypluralutils.egg-info/PKG-INFO
+src/simplypluralutils.egg-info/SOURCES.txt
+src/simplypluralutils.egg-info/dependency_links.txt
+src/simplypluralutils.egg-info/requires.txt
+src/simplypluralutils.egg-info/top_level.txt
