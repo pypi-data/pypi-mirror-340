@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tahar-data-structure"
+version = "0.1.0"
+authors = [
+    {name = "Djaloud", email = "tdjaloud@aimsammi.org"},
+]
+description = "Data Structures"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+keywords = ["Array", "Stack","Tree"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/djaloud94/data-structures-python.git"
+Documentation = "https://djaloud94.github.io/data-structures-python"
+
+[tool.setuptools]
+packages = ["data_structures"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"nom_du_package" = ["*.py"]
