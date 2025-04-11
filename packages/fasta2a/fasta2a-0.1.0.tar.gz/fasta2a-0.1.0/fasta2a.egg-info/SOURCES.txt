@@ -1,0 +1,7 @@
+README.md
+main.py
+pyproject.toml
+fasta2a.egg-info/PKG-INFO
+fasta2a.egg-info/SOURCES.txt
+fasta2a.egg-info/dependency_links.txt
+fasta2a.egg-info/top_level.txt
