@@ -1,0 +1,9 @@
+[project]
+name = "pccl"
+authors = [
+    {name = "Siddharth Singh", email = "ssingh37@umd.edu"},
+    {name = "Abhinav Bhatele", email = "bhatele@cs.umd.edu"},
+]
+version = "0.0.0"
+description = "Coming soon"
+
