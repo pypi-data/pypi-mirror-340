@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CarbonX"
+version = "0.0.1"
+authors = [
+  { name = "Hossein Rahbar", email = "rahbar.hosein@gmail.com" },
+]
+description = "Process Design Tool for Gas-Phase Synthesis of Nanomaterials"
+readme = "README.md"
+license = { text = "GNU General Public License v3 (GPLv3)" }
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Chemistry",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+]
+
