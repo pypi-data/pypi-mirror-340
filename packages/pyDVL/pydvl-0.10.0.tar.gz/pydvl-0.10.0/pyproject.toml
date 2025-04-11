@@ -1,0 +1,87 @@
+[build-system]
+# Must be kept in sync with `requirements.txt`
+requires = [
+    "setuptools >= 46.0.0",
+    "setuptools_scm >= 2.0.0, <3"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "--failed-first --splitting-algorithm least_duration --cov-report=term-missing --cov-report=xml --durations=30 --verbose"
+testpaths = [
+    "tests"
+]
+timeout = 300
+log_format = "%(asctime)s %(levelname)s %(message)s"
+log_date_format = "%Y-%m-%d %H:%M:%S"
+log_cli = true
+log_level = "INFO"
+markers = [
+    "torch: Mark a test function that uses PyTorch"
+]
+filterwarnings = "ignore::DeprecationWarning:pkg_resources.*:"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+    "src/pydvl(value",
+    "*/.tox/*/lib/python*/site-packages/pydvl/value",
+    "*/.tox/pypy*/site-packages/pydvl/value",
+    "*/.tox\\*\\Lib\\site-packages\tpydvl\tvalue",
+    "*/src/pydvl/value",
+    "*\\src\\pydvl\\value",
+]
+
+
+[tool.coverage.paths]
+source = [
+    "src/pydvl",
+    "*/.tox/*/lib/python*/site-packages/pydvl",
+    "*/.tox/pypy*/site-packages/pydvl",
+    "*/.tox\\*\\Lib\\site-packages\tpydvl",
+    "*/src/pydvl",
+    "*\\src\\pydvl",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+exclude_lines = [
+    "\\#\\s*pragma: no cover",
+    "^\\s*raise AssertionError\b",
+    "^\\s*raise NotImplementedError\b",
+    "^\\s*return NotImplemented\b",
+    "^\\s*raise$",
+    "^if __name__ == ['\"]__main__['\"]:$",
+]
+
+[tool.ruff]
+line-length = 88
+fix = false
+target-version = "py39"
+
+[tool.ruff.lint]
+extend-select = ["I", "F", "E", "W"]  # Common linting rules from Pylint and Flake8
+ignore = [
+    "F403",
+    "F405",
+    "E501",  # line too long (HACK: we should really stick to 88 chars)
+    "E741",  # Checks for 'l', 'O', or 'I' as variable names (hard to read)
+    "E731",  # Do not assign a `lambda` expression, use a `def`
+]
+isort.known-first-party = ["pydvl"]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"__init__.py" = ["E402"]
+"tests/influence/*.py" = ["E402"]
+# Avoid removing imports of fixtures in tests
+# (https://github.com/astral-sh/ruff/issues/10662)
+"tests/**/*.py" = ["F811", "F401"]
+
+[tool.mypy]
+python_version = "3.9"
+mypy_path = './src/'
+ignore_missing_imports = true
+warn_return_any = true
+warn_unused_configs = true
