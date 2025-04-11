@@ -1,0 +1,119 @@
+Metadata-Version: 2.4
+Name: tropir
+Version: 0.3.4
+Summary: A thin client for tracking OpenAI API calls
+Home-page: https://tropir.ai
+Author: Tropir
+Author-email: info@tropir.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.0
+Requires-Dist: openai>=1.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Tropir
+
+Tropir is a lightweight client for tracking and analyzing your OpenAI LLM API calls. It automatically logs requests and responses, helping you monitor usage, debug issues, and optimize your AI applications.
+
+## Features
+
+- 🔍 **Zero-config monitoring** - Track all OpenAI API calls without changing your code
+- 📊 **Usage analytics** - Monitor token usage, costs, and API performance
+- 🐞 **Debugging** - Inspect full request/response payloads for troubleshooting
+- 💰 **Cost optimization** - Identify opportunities to reduce API expenses
+
+## Installation
+
+```bash
+pip install tropir
+```
+
+## Usage
+
+### Command Line Interface (Recommended)
+
+Simply prefix your normal Python commands with `tropir`:
+
+```bash
+# Run a Python script with Tropir tracking
+tropir python your_script.py
+
+# Run a Python module with Tropir tracking
+tropir python -m your_module
+
+# Pass arguments as usual
+tropir python your_script.py --arg1 value1 --arg2 value2
+```
+
+No code changes required! The Tropir agent automatically tracks all OpenAI API calls in your code.
+
+### Advanced: As a Python Library
+
+For more control, you can also use Tropir as a library:
+
+```python
+# Import and initialize the agent at the start of your program
+from tropir import initialize
+initialize()
+
+# Your regular OpenAI code - all calls will be tracked automatically
+import openai
+client = openai.OpenAI()
+
+response = client.chat.completions.create(
+    model="gpt-4",
+    messages=[{"role": "user", "content": "Hello world"}]
+)
+print(response.choices[0].message.content)
+```
+
+## Example Use Cases
+
+### Debugging AI Applications
+
+Instead of adding print statements throughout your code, Tropir provides visibility into every API interaction:
+
+```bash
+tropir python debug_my_chatbot.py
+```
+
+Then view detailed logs including prompts, completions, and error responses in the Tropir dashboard.
+
+### Cost Management
+
+Identify which parts of your application are consuming the most tokens:
+
+```python
+# Run your application with Tropir
+tropir python your_app.py
+
+# Later, analyze the logged data to find optimization opportunities
+```
+
+## Configuration
+
+Configuration is done via environment variables:
+
+- `TROPIR_ENABLED`: Set to "0" to disable tracking (defaults to "1")
+- `TROPIR_API_URL`: Custom API URL (defaults to "http://localhost:8080/api/log")
+- `TROPIR_PROJECT`: Optional project identifier for organizing logs
+
+Example:
+```bash
+TROPIR_PROJECT="chatbot-prod" tropir python my_chatbot.py
+```
+
+## License
+
+MIT 
