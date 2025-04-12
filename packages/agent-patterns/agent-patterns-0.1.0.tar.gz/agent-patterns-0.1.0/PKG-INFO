@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: agent-patterns
+Version: 0.1.0
+Summary: This is a package of agents that can be extended to form agent implementations aligning with a number of ai agent design patterns.
+License: MIT
+Author: osok
+Author-email: michael@caughey.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: langchain (>=0.3.23,<0.4.0)
+Requires-Dist: langchain-openai (>=0.3.12,<0.4.0)
+Requires-Dist: langgraph (>=0.3.25,<0.4.0)
+Requires-Dist: python-dotenv (>=1.1.0,<2.0.0)
