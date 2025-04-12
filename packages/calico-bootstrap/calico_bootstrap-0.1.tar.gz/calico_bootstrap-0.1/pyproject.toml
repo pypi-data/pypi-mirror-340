@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calico-bootstrap"
+version = "0.1"
+description = "Bootstrap theme for Calico SSG"
+readme = "README.md"
+authors = [{name = "Emma Delescolle"}]
+license = {text = "MIT"}
+classifiers = [
+    "Framework :: Django :: 5",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "calico_ssg",
+]
+
+[project.urls]
+Homepage = "https://calico-ssg.com"
+Issues = "https://gitlab.levitnet.be/levit/calico-bootstrap/-/issues"
+
+[project.entry-points.djp]
+calico_bootstrap = "calico_bootstrap"
+
+[tool.setuptools.package-data]
+"*" = ["*.html", "*.js", "*.css"]
+
+[project.optional-dependencies]
+test = []
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.test_project.settings"
+pythonpath = ["."]

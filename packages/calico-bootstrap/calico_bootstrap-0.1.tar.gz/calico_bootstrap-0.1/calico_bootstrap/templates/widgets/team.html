@@ -1,0 +1,20 @@
+{% with cls=class|default:'team card' %}
+<div class="{{section.class|default:cls}}">
+{% endwith %}
+  {% if section.image %}
+    {% sourceset section.image divide_by=3 class=section.image_class|default:'card-img-top' %}
+  {% endif %}
+  <div class="card-body">
+    <h2 class="card-title">
+      {% if section.name %}
+        {{section.name}}
+      {% elif section.title %}
+        {{section.title}}
+      {% endif %}
+    </h2>
+
+    <div class="card-text">
+      {{yield}}
+    </div>
+  </div>
+</div>

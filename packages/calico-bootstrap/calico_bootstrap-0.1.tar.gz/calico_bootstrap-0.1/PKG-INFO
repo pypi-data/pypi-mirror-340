@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: calico-bootstrap
+Version: 0.1
+Summary: Bootstrap theme for Calico SSG
+Author: Emma Delescolle
+License: MIT
+Project-URL: Homepage, https://calico-ssg.com
+Project-URL: Issues, https://gitlab.levitnet.be/levit/calico-bootstrap/-/issues
+Classifier: Framework :: Django :: 5
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: calico_ssg
+Provides-Extra: test
+Dynamic: license-file
+
+# calico-bootstrap
+
+[![PyPI](https://img.shields.io/pypi/v/calico-bootstrap.svg)](https://pypi.org/project/calico-bootstrap/)
+[!![PyPI - License](https://img.shields.io/pypi/l/calico-ssg)](https://gitlab.levitnet.be/levit/calico-bootstrap/-/blob/main/LICENSE.md)
+
+Bootstrap theme for Calico SSG
+
+## Installation
+
+If Calico isn't installed yet, [get started with Calico](https://calico-ssg.com/docs/index.html).
+
+Then install this plugin in the same environment as your Django application.
+```bash
+pip install calico-bootstrap
+```
