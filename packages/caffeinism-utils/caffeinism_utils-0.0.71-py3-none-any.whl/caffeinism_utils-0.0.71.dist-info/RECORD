@@ -1,0 +1,12 @@
+caffeinism_utils/__init__.py,sha256=MER0q-NVosxQWibvx3a3bKwxRWGVXWeso9-qaU6oH_E,43
+caffeinism_utils/aiteration.py,sha256=w5GqzzhtkpOHpZcXD3GV6CXYPsRM8B_Nd77ssbld1vc,623
+caffeinism_utils/asyncio.py,sha256=Qj0QjRPR3EbZXgMquz8YauXS2jcS_mM82Z2WRarW20E,4443
+caffeinism_utils/av.py,sha256=zeNhcPMW4AhfUQ13tCi2KFkL4xjayERRm76zYvHf4IA,16745
+caffeinism_utils/io.py,sha256=W6dp69_ORhJ1umNDmSKNsbX8uvYvP7lcrfv_ippRQrg,2832
+caffeinism_utils/iteration.py,sha256=7LatEGFD69fU2A3z7OWX_OYhpfjO6gr0c5LkfytWMow,265
+caffeinism_utils/prefetch.py,sha256=9at0J-sbG06UFEg8J4x4SreIh4bxnQhEsfgsjdBCwg0,976
+caffeinism_utils/utils.py,sha256=Rf8SucktzZ7FOTrFUlT6WKUsGS-DvTy8bPqmTlPU4FY,191
+caffeinism_utils/zip.py,sha256=APqhYnIyBVTmeaiYsJhZIyFGMevikl2jlyVPo4PW-XM,1256
+caffeinism_utils-0.0.71.dist-info/METADATA,sha256=cXntnOrNlFHRFZPMvGOu_ok4lHavsP4XT27rU7ZoDsw,742
+caffeinism_utils-0.0.71.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+caffeinism_utils-0.0.71.dist-info/RECORD,,
