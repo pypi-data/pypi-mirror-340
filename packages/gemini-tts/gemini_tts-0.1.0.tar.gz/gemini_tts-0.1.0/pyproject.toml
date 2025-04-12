@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemini_tts"
+version = "0.1.0"
+authors = [
+    {name = "David Suragan", email = "dauitsuragan002@gmail.com"},
+]
+description = "A simple TTS library using Google Gemini API"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "websockets>=12.0",
+    "wave>=0.0.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dauitsuragan002/gemini-tts"
+"Bug Tracker" = "https://github.com/dauitsuragan002/gemini-tts/issues" 
