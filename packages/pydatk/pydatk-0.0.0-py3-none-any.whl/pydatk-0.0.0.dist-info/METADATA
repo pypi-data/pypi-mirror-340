@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: pydatk
+Version: 0.0.0
+Summary: Python Data Analyst Toolkit (pydatk)
+Author-email: pydatk <dev@pydatk.com>
+License-Expression: GPL-3.0-or-later
+Project-URL: Homepage, https://pydatk.com
+Project-URL: Documentation, https://pydatk.com
+Project-URL: Repository, https://github.com/pydatk/pydatk
+Project-URL: Issues, https://github.com/pydatk/pydatk/issues
+Project-URL: Changelog, https://github.com/pydatk/pydatk/blob/main/CHANGELOG.md
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Python Data Analyst Toolkit (pydatk)
+
+In development.
+
+email: dev@pydatk.com
+
+website: https://pydatk.com
