@@ -1,0 +1,6 @@
+langchain_galaxia_retriever/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_galaxia_retriever/retriever.py,sha256=3eFzUxAWqdmYNL0w1jjkfNmlV9urx3HKgAXlw5J7dLE,5242
+langchain_galaxia_retriever-0.1.2.dist-info/LICENSE,sha256=Gu-syS3MdFqg4cnzKoOclJb3sDZjtJAdcWWf3XfPIhM,1075
+langchain_galaxia_retriever-0.1.2.dist-info/METADATA,sha256=p3WJmoWeYCitA-37ET3e5_vN4Zi0_cmUzPR9bN2Lh0o,1692
+langchain_galaxia_retriever-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+langchain_galaxia_retriever-0.1.2.dist-info/RECORD,,
