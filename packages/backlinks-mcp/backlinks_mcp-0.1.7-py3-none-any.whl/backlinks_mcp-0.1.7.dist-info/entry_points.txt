@@ -1,0 +1,5 @@
+[console_scripts]
+backlinks-mcp = backlinks_mcp.server:main
+
+[gui_scripts]
+
