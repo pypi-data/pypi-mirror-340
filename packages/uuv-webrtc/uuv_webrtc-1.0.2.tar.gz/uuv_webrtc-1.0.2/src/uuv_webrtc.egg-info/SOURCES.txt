@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/uuv_webrtc/__init__.py
+src/uuv_webrtc/cv_cap_stream_track.py
+src/uuv_webrtc/cv_capture.py
+src/uuv_webrtc/rtc_client.py
+src/uuv_webrtc/rtc_server.py
+src/uuv_webrtc/sdp_server.py
+src/uuv_webrtc/utils.py
+src/uuv_webrtc/video_stream_receiver.py
+src/uuv_webrtc.egg-info/PKG-INFO
+src/uuv_webrtc.egg-info/SOURCES.txt
+src/uuv_webrtc.egg-info/dependency_links.txt
+src/uuv_webrtc.egg-info/requires.txt
+src/uuv_webrtc.egg-info/top_level.txt
