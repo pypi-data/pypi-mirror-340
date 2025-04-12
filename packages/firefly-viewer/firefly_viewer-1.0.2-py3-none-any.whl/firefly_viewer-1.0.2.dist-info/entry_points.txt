@@ -1,0 +1,2 @@
+[console_scripts]
+firefly-viewer = firefly.cli:main
