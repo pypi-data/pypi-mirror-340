@@ -1,0 +1,8 @@
+winrt/_winrt_windows_applicationmodel_store.cp312-win_arm64.pyd,sha256=bl7yAHjyNcy-vDQOQDrDg_EoZHl279ieA1SsaWuF4Ig,307200
+winrt/_winrt_windows_applicationmodel_store.pyi,sha256=vLdZWBCJUY3KZqe5oKuZv2z6Fbl4ZUHApGadkNiLGJw,19033
+winrt/windows/applicationmodel/store/__init__.py,sha256=rS8kdJDlqxAaPoByMDGntMs-YY45os5hXGEhqbEswxw,1209
+winrt/windows/applicationmodel/store/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_applicationmodel_store-3.1.0.dist-info/METADATA,sha256=EUPYWKB2GJGHKvmkC5KdEGKvOz-3RBHNDSZK1VDN5xg,1220
+winrt_windows_applicationmodel_store-3.1.0.dist-info/WHEEL,sha256=pYhIK3qx8EqEUszpzpfBG9Icpl8gWvSYj-z31CXLr10,101
+winrt_windows_applicationmodel_store-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_applicationmodel_store-3.1.0.dist-info/RECORD,,
