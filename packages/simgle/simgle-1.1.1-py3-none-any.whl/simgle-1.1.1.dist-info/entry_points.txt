@@ -1,0 +1,2 @@
+[console_scripts]
+simgle = simgle.cli:main
