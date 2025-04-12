@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: timesheet_common_timesheet_mfdenison_hopkinsep
+Version: 0.0.3
+Summary: Common models and utilities for Timesheet management
+Author: Mathew Denison
+Requires-Dist: sqlmodel>=0.0.6
+Requires-Dist: pydantic
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
