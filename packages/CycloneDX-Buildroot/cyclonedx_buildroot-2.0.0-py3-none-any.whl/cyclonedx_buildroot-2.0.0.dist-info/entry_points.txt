@@ -1,0 +1,4 @@
+[console_scripts]
+cyclonedx-buildroot=cyclonedx_buildroot._internal.cli:run
+generateBuildrootSBOM=cyclonedx_buildroot._internal.cli:run
+
