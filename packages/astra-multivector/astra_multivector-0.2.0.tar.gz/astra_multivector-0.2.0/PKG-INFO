@@ -1,0 +1,902 @@
+Metadata-Version: 2.4
+Name: astra-multivector
+Version: 0.2.0
+Summary: Multivector Tables using the DataAPI from AstraDB
+Author-email: Brian O'Grady <brian.ogrady@datastax.com>
+Maintainer-email: Brian O'Grady <brian.ogrady@datastax.com>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+License-File: LICENSE
+Keywords: astradb,colbert,database,embeddings,late-interaction,similarity-search,vector
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.12
+Requires-Dist: astrapy==2.0.1
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: rerankers[api,transformers]>=0.8.0
+Requires-Dist: sentence-transformers>=3.4.1
+Requires-Dist: tqdm>=4.67.1
+Requires-Dist: transformers>=4.38.2
+Provides-Extra: all
+Requires-Dist: async-lru>=2.0.5; extra == 'all'
+Requires-Dist: colpali-engine<0.4.0,>=0.3.1; extra == 'all'
+Requires-Dist: ipywidgets>=8.0.0; extra == 'all'
+Requires-Dist: jupyter>=1.0.0; extra == 'all'
+Requires-Dist: matplotlib>=3.7.0; extra == 'all'
+Requires-Dist: notebook>=7.0.0; extra == 'all'
+Requires-Dist: numpy>=1.24.0; extra == 'all'
+Requires-Dist: pandas>=2.0.0; extra == 'all'
+Requires-Dist: pdf2image>=1.16.3; extra == 'all'
+Requires-Dist: pillow>=10.0.0; extra == 'all'
+Requires-Dist: scikit-learn>=1.3.0; extra == 'all'
+Requires-Dist: scipy>=1.15.2; extra == 'all'
+Requires-Dist: torch>=2.2.0; extra == 'all'
+Requires-Dist: weasyprint>=60.0; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: build>=1.0.3; extra == 'dev'
+Requires-Dist: mypy>=1.11.0; extra == 'dev'
+Requires-Dist: pre-commit>=3.7.0; extra == 'dev'
+Requires-Dist: pytest-asyncio>=0.23.0; extra == 'dev'
+Requires-Dist: pytest-cov>=5.0.0; extra == 'dev'
+Requires-Dist: pytest-mock>=3.14.0; extra == 'dev'
+Requires-Dist: pytest-xdist>=3.6.0; extra == 'dev'
+Requires-Dist: pytest>=8.2.0; extra == 'dev'
+Requires-Dist: ruff<0.10,>=0.9.7; extra == 'dev'
+Requires-Dist: twine>=4.0.2; extra == 'dev'
+Requires-Dist: types-pillow>=10.2.0.20240213; extra == 'dev'
+Requires-Dist: types-requests>=2.32.0; extra == 'dev'
+Provides-Extra: late-interaction
+Requires-Dist: async-lru>=2.0.5; extra == 'late-interaction'
+Requires-Dist: colpali-engine<0.4.0,>=0.3.1; extra == 'late-interaction'
+Requires-Dist: numpy>=1.24.0; extra == 'late-interaction'
+Requires-Dist: scikit-learn>=1.3.0; extra == 'late-interaction'
+Requires-Dist: scipy>=1.15.2; extra == 'late-interaction'
+Requires-Dist: torch>=2.2.0; extra == 'late-interaction'
+Provides-Extra: notebooks
+Requires-Dist: ipywidgets>=8.0.0; extra == 'notebooks'
+Requires-Dist: jupyter>=1.0.0; extra == 'notebooks'
+Requires-Dist: matplotlib>=3.7.0; extra == 'notebooks'
+Requires-Dist: notebook>=7.0.0; extra == 'notebooks'
+Requires-Dist: pandas>=2.0.0; extra == 'notebooks'
+Requires-Dist: pdf2image>=1.16.3; extra == 'notebooks'
+Requires-Dist: pillow>=10.0.0; extra == 'notebooks'
+Requires-Dist: weasyprint>=60.0; extra == 'notebooks'
+Provides-Extra: test
+Requires-Dist: build>=1.0.3; extra == 'test'
+Requires-Dist: mypy>=1.11.0; extra == 'test'
+Requires-Dist: pre-commit>=3.7.0; extra == 'test'
+Requires-Dist: pytest-asyncio>=0.23.0; extra == 'test'
+Requires-Dist: pytest-cov>=5.0.0; extra == 'test'
+Requires-Dist: pytest-mock>=3.14.0; extra == 'test'
+Requires-Dist: pytest-xdist>=3.6.0; extra == 'test'
+Requires-Dist: pytest>=8.2.0; extra == 'test'
+Requires-Dist: ruff<0.10,>=0.9.7; extra == 'test'
+Requires-Dist: twine>=4.0.2; extra == 'test'
+Requires-Dist: types-pillow>=10.2.0.20240213; extra == 'test'
+Requires-Dist: types-requests>=2.32.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+# AstraMultiVector
+
+A Python library for creating and using multi-vector tables in DataStax Astra DB, supporting both client-side and server-side embedding generation with support for both synchronous and asynchronous operations.
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python Version](https://img.shields.io/badge/python-3.12%2B-blue)](https://www.python.org/downloads/)
+[![codecov](https://codecov.io/gh/brian-ogrady/astradb-multivector/graph/badge.svg?token=9VZIE2OLQK)](https://codecov.io/gh/brian-ogrady/astradb-multivector)
+[![PyPI version](https://badge.fury.io/py/astra-multivector.svg)](https://pypi.org/project/astra-multivector/)
+
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Installation](#installation)
+  - [Requirements](#requirements)
+- [Quick Start](#quick-start)
+- [Async Usage](#async-usage)
+- [Multiple Vector Columns](#multiple-vector-columns)
+- [Schema Design](#schema-design)
+  - [Multi-Vector Architecture](#multi-vector-architecture)
+  - [Late Interaction Architecture](#late-interaction-architecture)
+- [Gutenberg Example](#gutenberg-example)
+- [Late Interaction](#late-interaction)
+  - [ColBERT for Text Search](#colbert-for-text-search)
+  - [ColPali for Multimodal Search](#colpali-for-multimodal-search)
+  - [Performance Optimizations](#performance-optimizations)
+- [API Reference](#api-reference)
+  - [VectorColumnOptions](#vectorcolumnoptions)
+  - [AstraMultiVectorTable](#astramultivectortable)
+  - [AsyncAstraMultiVectorTable](#asyncastramultivectortable)
+  - [LateInteractionPipeline](#lateinteractionpipeline)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Overview
+
+AstraMultiVector provides classes to:
+- Create database tables with multiple vector columns
+- Associate each vector column with either:
+  - Client-side embeddings using sentence-transformers
+  - Server-side embeddings using Astra's Vectorize feature
+- Search across any vector column using similarity search
+- Support both synchronous and asynchronous operations
+- Implement token-level late interaction models for advanced retrieval
+
+This allows for storing and retrieving text data with multiple embedding representations, which is useful for:
+- Multilingual document search
+- Comparing different embedding models
+- Specialized embeddings for different query types
+- Token-level late interaction for higher precision retrieval
+- Multimodal search with text and images
+
+## Installation
+
+```bash
+# Install from PyPI
+pip install astra-multivector
+
+# Or install from source
+git clone https://github.com/datastax/astra-multivector.git
+cd astra-multivector
+pip install -e .
+```
+
+### Requirements
+
+- Python 3.8 or higher
+- Dependencies:
+  - astrapy >= 2.0.0
+  - pydantic>=2.10.6
+  - python-dotenv>=1.0.1
+  - sentence-transformers>=3.4.1
+  - rerankers[api,transformers]>=0.8.0
+  - tqdm>=4.67.1
+
+Optional dependencies for late interaction models:
+  - colbert-ai >= 0.2.0
+  - colpali-engine>=0.3.1,<0.4.0
+  - torch >= 2.0.0
+  - transformers>=4.38.2
+  - scikit-learn>=1.3.0
+  - numpy>=1.24.0
+
+## Quick Start
+
+```python
+from astrapy import DataAPIClient
+from astra_multivector import AstraMultiVectorTable, VectorColumnOptions
+from sentence_transformers import SentenceTransformer
+
+# Create database connection
+db = DataAPIClient(token="your-token").get_database(api_endpoint="your-api-endpoint")
+
+# Create embedding models and vector options
+english_model = SentenceTransformer("BAAI/bge-small-en-v1.5")
+english_options = VectorColumnOptions.from_sentence_transformer(english_model)
+
+# Create the table
+table = AstraMultiVectorTable(
+    db=db,
+    table_name="my_vectors",
+    vector_column_options=[english_options]
+)
+
+# Insert data
+table.insert_chunk("This is a sample text to embed and store.")
+
+# Search
+results = table.multi_vector_similarity_search(
+    query_text="sample text", 
+    candidates_per_column=5
+)
+for result in results:
+    print(result["content"])
+```
+
+## Async Usage
+
+```python
+import asyncio
+from astrapy.database import AsyncDatabase
+from astrapy import DataAPIClient
+from astra_multivector import AsyncAstraMultiVectorTable, VectorColumnOptions
+
+async def main():
+    # Create async database connection
+    async_db = DataAPIClient(
+        token="your-token",
+    ).get_async_database(
+        api_endpoint="your-api-endpoint",
+    )
+    
+    # Create the table with the same vector options
+    async_table = AsyncAstraMultiVectorTable(
+        db=async_db,
+        table_name="my_vectors",
+        vector_column_options=[english_options],
+        default_concurrency_limit=10
+    )
+    
+    # Batch insert with concurrency control
+    await async_table.bulk_insert_chunks(
+        text_chunks=["Text 1", "Text 2", "Text 3"],
+        max_concurrency=5
+    )
+    
+    # Batch search
+    queries = ["first query", "second query", "third query"]
+    all_results = await async_table.batch_search_by_text(queries)
+
+# Run the async code
+asyncio.run(main())
+```
+
+## Multiple Vector Columns
+
+You can create tables with multiple vector columns, each using a different model or vectorization approach:
+
+```python
+from astrapy.constants import VectorMetric
+from astrapy.info import TableVectorIndexOptions, VectorServiceOptions
+
+# Client-side embedding with a Spanish model
+spanish_model = SentenceTransformer("jinaai/jina-embeddings-v2-base-es")
+spanish_options = VectorColumnOptions.from_sentence_transformer(
+    model=spanish_model,
+    table_vector_index_options=TableVectorIndexOptions(
+        metric=VectorMetric.COSINE,
+    )
+)
+
+# Server-side embedding with OpenAI
+openai_options = VectorColumnOptions.from_vectorize(
+    column_name="openai_embeddings",
+    dimension=1536,
+    vector_service_options=VectorServiceOptions(
+        provider='openai',
+        model_name='text-embedding-3-small',
+        authentication={
+            "providerKey": "OPENAI_API_KEY_ASTRA_KMS_NAME",
+        },
+    ),
+    table_vector_index_options=TableVectorIndexOptions(
+        metric=VectorMetric.COSINE,
+    )
+)
+
+# Create multi-vector table
+table = AstraMultiVectorTable(
+    db=db,
+    table_name="multilingual_vectors",
+    vector_column_options=[spanish_options, openai_options]
+)
+```
+
+## Schema Design
+
+### Multi-Vector Architecture
+
+The multi-vector architecture stores multiple vector representations of the same content in separate columns of a single table:
+
+```
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ Table: my_vectors                                                              │
+├────────────┬─────────────────────┬──────────────────┬──────────────────────────┤
+│ chunk_id   │ content             │ english_embeddings│ multi-lingual embeddings│
+├────────────┼─────────────────────┼──────────────────┼──────────────────────────┤
+│ UUID-1     │ "Hello world"       │ [0.1, 0.2, ...]  │ [0.3, 0.4, ...]         │
+│ UUID-2     │ "Vector search"     │ [0.5, 0.6, ...]  │ [0.7, 0.8, ...]         │
+└────────────┴─────────────────────┴──────────────────┴──────────────────────────┘
+     │                │                    │                   │
+     │                │                    │                   │
+     │                │                    ▼                   ▼
+     │                │             ┌─────────────┐    ┌───────────────┐
+     │                │             │ Vector Index│    │ Vector Index  │
+     │                │             │ (english)   │    │(multi-lingual)│
+     │                │             └─────────────┘    └───────────────┘
+     │                │
+     │                ▼
+     │         Used directly for
+     │         Vectorize columns
+     │
+     ▼
+Partition Key
+```
+
+This design allows for:
+- Multiple embedding representations of the same content
+- Choice of embedding model at query time
+- Combination of results from different embeddings
+
+### Late Interaction Architecture
+
+The late interaction architecture splits documents into token-level embeddings across multiple tables:
+
+```
+┌────────────────────────────────────────┐     ┌────────────────────────────────────────┐
+│ Table: my_colbert_docs                 │     │ Table: my_colbert_tokens               │
+├──────────┬───────────────────────────┐ │     ├──────────┬──────────┬─────────────────┐│
+│ doc_id   │ content                   │ │     │ doc_id   │ token_id │ token_embedding ││
+├──────────┼───────────────────────────┤ │     ├──────────┼──────────┼─────────────────┤│
+│ UUID-1   │ "Example document content"│ │     │ UUID-1   │ UUID-1.1 │ [0.1, 0.2, ...] ││
+│ UUID-2   │ "Another document example"│ │     │ UUID-1   │ UUID-1.2 │ [0.3, 0.4, ...] ││
+└──────────┴───────────────────────────┘ │     │ UUID-1   │ UUID-1.3 │ [0.5, 0.6, ...] ││
+                                         │     │ UUID-2   │ UUID-2.1 │ [0.7, 0.8, ...] ││
+                                         │     │ UUID-2   │ UUID-2.2 │ [0.9, 1.0, ...] ││
+                                         │     └──────────┴──────────┴─────────────────┘│
+                                                         │            │
+                                                         │            ▼
+                                                         │     ┌─────────────┐
+                                                         │     │ Vector Index│
+                                                         │     └─────────────┘
+                                                         │
+                                                         ▼
+                                                 Partition Key
+
+```
+
+This architecture allows for:
+- Token-level similarity matching between queries and documents
+- Higher precision retrieval with late interaction models like ColBERT
+- Multimodal matching between text and images with models like ColPali
+
+Key implementation details:
+- Both `doc_id` and `token_id` are UUID types for maximum compatibility
+- `doc_id` is used as the partition key to efficiently retrieve all tokens for a document
+- Token table uses a vector index on `token_embedding` for similarity search
+- Documents are stored with their original content for retrieval and verification
+
+## Gutenberg Example
+
+The repository includes a complete example for ingesting and searching books from Project Gutenberg using multiple vector models. This example demonstrates:
+
+1. Setting up multiple embedding models:
+   - Language-specific models (English, Spanish)
+   - OpenAI embeddings via Vectorize
+
+2. Processing books in parallel with async operations:
+   - Concurrent book downloads
+   - Batch processing with configurable concurrency
+
+3. Performing searches across different vector columns:
+   - Language-specific searches
+   - Parallel batch searching
+
+To run the example:
+
+```python
+# See examples/gutenberg_example.py
+import asyncio
+import os
+from dotenv import load_dotenv
+from astra_multivector import VectorColumnOptions, AsyncAstraMultiVectorTable
+from astra_multivector.ingest import download_and_ingest_multiple_books
+
+# Load environment variables
+load_dotenv()
+
+# Run the example
+asyncio.run(main())
+```
+
+## Late Interaction
+
+The library includes an optional sub-module for late interaction retrieval, which defers matching between query and document tokens until retrieval time, providing higher accuracy than traditional dense retrieval methods.
+
+```python
+import uuid
+from astrapy.database import AsyncDatabase
+from astra_multivector.late_interaction import LateInteractionPipeline, ColBERTModel
+
+# Initialize database and model
+db = DataAPIClient(token="your-token").get_async_database(api_endpoint="your-api-endpoint")
+model = ColBERTModel(model_name="answerdotai/answerai-colbert-small-v1")
+
+# Create pipeline with optimization options
+pipeline = LateInteractionPipeline(
+    db=db,
+    model=model,
+    base_table_name="my_colbert_index",
+    doc_pool_factor=2,  # Compress document tokens by this factor
+    query_pool_distance=0.03,  # Pool similar query tokens
+    default_concurrency_limit=10,  # Control parallel operations
+)
+
+# Initialize tables
+await pipeline.initialize()
+
+# Index documents with dictionary format
+doc_row = {
+    "content": "This is a sample document for testing late interaction retrieval.",
+    "doc_id": uuid.uuid4()  # Optional: auto-generated if not provided
+}
+doc_id = await pipeline.index_document(doc_row)
+
+# Batch indexing with concurrency control
+docs = [
+    {"content": "Document one for batch indexing"},
+    {"content": "Document two for batch indexing"},
+    {"content": "Document three for batch indexing"}
+]
+doc_ids = await pipeline.bulk_index_documents(
+    document_rows=docs,
+    concurrency=5,
+    batch_size=2
+)
+
+# Search with auto-scaled parameters
+results = await pipeline.search(
+    query="sample retrieval", 
+    k=5,  # Number of results to return
+    # Optional parameters, auto-calculated if not provided:
+    n_ann_tokens=200,         # Tokens to retrieve per query token
+    n_maxsim_candidates=20    # Document candidates for scoring
+)
+
+# Process search results
+for doc_id, score, content in results:
+    print(f"Document: {doc_id}, Score: {score:.4f}")
+    print(f"Content: {content}")
+```
+
+### ColBERT for Text Search
+
+ColBERT is a text-to-text late interaction model that provides high-precision search:
+
+```python
+from astra_multivector.late_interaction import LateInteractionPipeline, ColBERTModel
+
+# Initialize model with specific checkpoint
+model = ColBERTModel(
+    model_name="answerdotai/answerai-colbert-small-v1",
+    device="cuda"  # or "cpu" for machines without GPUs
+)
+
+# Create pipeline
+pipeline = LateInteractionPipeline(
+    db=db,
+    model=model,
+    base_table_name="my_colbert_index"
+)
+
+# Search
+results = await pipeline.search(
+    query="detailed search query", 
+    k=10
+)
+```
+
+### ColPali for Multimodal Search
+
+For multimodal search supporting images and text:
+
+```python
+from PIL import Image
+from astra_multivector.late_interaction import LateInteractionPipeline, ColPaliModel
+
+# Initialize model
+model = ColPaliModel(model_name="vidore/colpali-v0.1")
+
+# Create pipeline
+pipeline = LateInteractionPipeline(
+    db=db,
+    model=model,
+    base_table_name="my_colpali_index"
+)
+
+# Index an image
+image = Image.open("example.jpg")
+doc_id = await pipeline.index_document({
+    "content": image,  # Directly pass PIL Image
+    "doc_id": uuid.uuid4()
+})
+
+# Search for images using text query
+results = await pipeline.search(
+    query="a cat sitting on a chair", 
+    k=5
+)
+
+# Search with image query requires preprocessing the image first
+query_image = Image.open("query.jpg")
+query_embeddings = await model.encode_query(query_image)
+results = await pipeline.search_with_embeddings(
+    query_embeddings,
+    k=5
+)
+```
+
+ColPali now supports direct image indexing, allowing you to pass PIL Image objects as document content. The pipeline automatically handles:
+- Image preprocessing and tokenization
+- Token-level embedding generation
+- Proper storage with content type identification
+- Retrieval with either text or image queries
+
+### Performance Optimizations
+
+The late interaction pipeline includes several optimizations to balance retrieval quality with computational efficiency:
+
+1. **Token Pooling**: 
+   - **Query Pooling**: Reduces query token count by merging similar tokens (controlled by `query_pool_distance`)
+   - **Document Pooling**: Hierarchically pools document tokens to reduce index size (controlled by `doc_pool_factor`)
+
+2. **Adaptive Parameter Scaling**:
+   - Automatically scales search parameters based on result count
+   - Default values adapt to different `k` values without manual tuning
+
+3. **Concurrency Controls**:
+   - Document-level parallelism for batch operations
+   - Token-level parallelism for efficient indexing
+   - Semaphore controls to prevent resource exhaustion
+
+4. **Caching**:
+   - LRU cache for frequently accessed document embeddings
+   - Configurable cache size to balance memory usage and performance
+
+## API Reference
+
+### VectorColumnOptions
+
+Configures vector columns with embedding options:
+
+- `from_sentence_transformer()`: For client-side embeddings with sentence-transformers
+- `from_vectorize()`: For server-side embeddings with Astra's Vectorize
+
+```python
+# Configuration options
+VectorColumnOptions.from_sentence_transformer(
+    model,                      # SentenceTransformer model instance
+    column_name=None,           # Optional custom column name
+    table_vector_index_options  # Vector index configuration
+)
+
+VectorColumnOptions.from_vectorize(
+    column_name,                # Name for the vector column
+    dimension,                  # Vector dimension
+    vector_service_options,     # Service provider configuration 
+    table_vector_index_options  # Vector index configuration
+)
+```
+
+### AstraMultiVectorTable
+
+Synchronous table operations:
+
+- `insert_chunk()`: Insert a single text chunk with embeddings
+- `bulk_insert_chunks()`: Insert multiple chunks in batches
+- `multi_vector_similarity_search()`: Search for similar text in one or more vector columns
+- `batch_search_by_text()`: Perform multiple searches in parallel
+- `search_and_rerank()`: Search and rerank results with a reranker model
+
+```python
+# Core operations
+table.insert_chunk(
+    text,                 # Text to embed and store
+    chunk_id=None,        # Optional UUID (auto-generated if None)
+    metadata=None         # Optional metadata dictionary
+)
+
+table.multi_vector_similarity_search(
+    query_text,           # Query string to search for
+    column_name=None,     # Optional specific column to search (None = search all)
+    candidates_per_column=20, # Number of candidates per vector column
+    k=10,                 # Number of final results to return
+    include_similarity=True   # Whether to include similarity scores
+)
+```
+
+### AsyncAstraMultiVectorTable
+
+Asynchronous table operations:
+
+- `insert_chunk()`: Insert a single text chunk asynchronously
+- `bulk_insert_chunks()`: Insert multiple chunks with concurrency control
+- `multi_vector_similarity_search()`: Perform async search across one or more vector columns
+- `batch_search_by_text()`: Execute multiple searches in parallel
+- `search_and_rerank()`: Search and rerank results asynchronously with a reranker model
+- `parallel_process_chunks()`: Process items in parallel with custom function
+
+```python
+# Async operations
+await async_table.bulk_insert_chunks(
+    text_chunks,          # List of text chunks to insert
+    max_concurrency=10,   # Maximum number of concurrent operations
+    batch_size=20,        # Number of chunks per batch
+    chunk_ids=None,       # Optional list of UUIDs (auto-generated if None)
+    metadata=None         # Optional list of metadata dictionaries
+)
+
+await async_table.batch_search_by_text(
+    queries,              # List of query strings
+    max_concurrency=10,   # Maximum number of concurrent searches
+    column_name=None,     # Optional specific column to search
+    k=10                  # Number of results per query
+)
+```
+
+### LateInteractionPipeline
+
+Manages token-level late interaction models:
+
+- `initialize()`: Create and configure document and token tables
+- `index_document()`: Index a single document with token-level embeddings
+- `bulk_index_documents()`: Batch index multiple documents with concurrency control
+- `search()`: Perform two-stage retrieval with auto-scaled parameters
+- `delete_document()`: Remove a document and its tokens from the database
+
+```python
+# Pipeline configuration
+pipeline = LateInteractionPipeline(
+    db,                         # AsyncDatabase instance
+    model,                      # LateInteractionModel instance (ColBERT, ColPali)
+    base_table_name,            # Base name for document and token tables
+    doc_pool_factor=2,          # Factor by which to pool document embeddings
+    query_pool_distance=0.03,   # Maximum distance for pooling query tokens
+    sim_metric="cosine",        # Similarity metric (cosine or dot_product)
+    default_concurrency_limit=10, # Default concurrency for async operations
+    embedding_cache_size=1000   # Size of LRU cache for document embeddings
+)
+
+# Advanced search options
+results = await pipeline.search(
+    query,                      # Query string or image
+    k=10,                       # Number of results to return
+    n_ann_tokens=None,          # Tokens to retrieve per query (auto-calculated if None)
+    n_maxsim_candidates=None    # Document candidates for scoring (auto-calculated if None)
+)
+```
+
+## Contributing
+
+Contributions to AstraMultiVector are welcome! Here's how you can contribute:
+
+### Development Setup
+
+1. Fork the repository and clone your fork
+2. Install development dependencies:
+   ```bash
+   pip install -e ".[dev]"
+   ```
+3. Install pre-commit hooks:
+   ```bash
+   pre-commit install
+   ```
+
+### Testing
+
+All contributions should include tests:
+
+```bash
+# Run all tests
+python tests/run_tests.py
+
+# Check test coverage
+python -m coverage run --source=astra_multivector tests/run_tests.py
+python -m coverage report -m
+```
+
+Aim for at least 90% test coverage for new code.
+
+### Submitting Changes
+
+1. Create a new branch for your feature
+2. Make your changes with clear commit messages
+3. Add tests for new functionality
+4. Run the test suite to ensure everything passes
+5. Submit a pull request with a clear description of the changes
+
+### Code Style
+
+This project follows:
+- PEP 8 for code style
+- Google style docstrings
+- Type annotations for all functions
+
+## License
+
+Apache License 2.0
