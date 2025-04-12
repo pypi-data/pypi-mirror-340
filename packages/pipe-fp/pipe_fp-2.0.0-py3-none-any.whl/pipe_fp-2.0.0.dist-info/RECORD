@@ -1,0 +1,8 @@
+pipe_fp/__init__.py,sha256=4p0aLejByaacWJ32qiSGvx0yL9Xura6SEeZVOtLzzSU,31
+pipe_fp/pipe.py,sha256=Nx46Jr6S0MwnJwbic0LcJI1CuEN3weRDmUrZKXodJkk,2916
+pipe_fp/type/TypeVar.py,sha256=cfuZy-2OeRbOhFJxJTmvPF99nM1xh5dpTbctzDqGwi8,219
+pipe_fp/type/__init__.py,sha256=kVPYQ_iwG6ZXQVeCfmFzLcj-_dv-b0-Na0lSF5q14JM,165
+pipe_fp-2.0.0.dist-info/LICENSE,sha256=frpaOLQo_6fjWTHMAQVFie-blAIuWSVF3eQxv7XsdOo,1061
+pipe_fp-2.0.0.dist-info/METADATA,sha256=wh3cVIpkOLnbC3ILMjFAdZPDKmaU_UwCuhLbHHRR5Ng,2079
+pipe_fp-2.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+pipe_fp-2.0.0.dist-info/RECORD,,
