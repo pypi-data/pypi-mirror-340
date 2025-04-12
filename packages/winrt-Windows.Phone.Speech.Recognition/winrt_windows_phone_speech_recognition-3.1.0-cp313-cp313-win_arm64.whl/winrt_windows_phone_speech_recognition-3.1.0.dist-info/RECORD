@@ -1,0 +1,8 @@
+winrt/_winrt_windows_phone_speech_recognition.cp313-win_arm64.pyd,sha256=Ddq9QWLTO15iURDu4fh4zwkkmlJ0vHvhHf8S4jG3sis,10752
+winrt/_winrt_windows_phone_speech_recognition.pyi,sha256=88hs_ui7fOf2eIpwuEWT9Fulbcj_IROzVOSYIYt0LPg,350
+winrt/windows/phone/speech/recognition/__init__.py,sha256=xp4pB8tV7IWs_aMNcZmBU9-O3jsEI_ATxepu2BTIFoQ,310
+winrt/windows/phone/speech/recognition/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_phone_speech_recognition-3.1.0.dist-info/METADATA,sha256=PYkuRvedGwEE2jJrYLVJZ9qvf6-wQuhAxcRXJ6-zYmY,991
+winrt_windows_phone_speech_recognition-3.1.0.dist-info/WHEEL,sha256=gat7ol25vDt6jgz-T1x078MvUL2F8a_lvvJyUPwzDEo,101
+winrt_windows_phone_speech_recognition-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_phone_speech_recognition-3.1.0.dist-info/RECORD,,
