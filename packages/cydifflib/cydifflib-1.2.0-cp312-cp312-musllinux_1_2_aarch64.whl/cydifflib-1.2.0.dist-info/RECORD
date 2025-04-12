@@ -1,0 +1,8 @@
+cydifflib/__init__.py,sha256=Vr8PRc5nrR2sYeQmqnN-wfMo8W6cVaPtzmXuv3FEXmk,1016
+cydifflib/_initialize.cpython-312-aarch64-linux-musl.so,sha256=YB06PZa-gRAbgahtBVnu274Bqa0ws2yK-u5BdZK2588,725753
+cydifflib.libs/libgcc_s-69c45f16.so.1,sha256=BOFjRP57t9LgRNNAnFVK5VHmrp5UU-p5NcfcZ10dnd4,201673
+cydifflib.libs/libstdc++-1f1a71be.so.6.0.33,sha256=sURAhanafc8tH6FGDqPKz7dsPGNb0Aym8vBo6UbJ3Ok,3650097
+cydifflib-1.2.0.dist-info/METADATA,sha256=zYSw_3cIex8BZYXD9SH-9zemrT_GL09DRJpBwaOaZzk,3964
+cydifflib-1.2.0.dist-info/WHEEL,sha256=22YPFdaNo_Z9V02lha5KeV0dzO2KnVTjW_iFT3OA_jQ,118
+cydifflib-1.2.0.dist-info/RECORD,,
+cydifflib-1.2.0.dist-info/licenses/LICENSE,sha256=kVchYJOjiv64PCE9Y6oG7V0_TXyiW-pFUQtdwC91OkM,1077
