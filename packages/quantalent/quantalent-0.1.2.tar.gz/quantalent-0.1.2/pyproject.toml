@@ -1,0 +1,21 @@
+[project]
+name = "quantalent"
+version = "0.1.2"
+description = ""
+authors = [
+    {name = "Stefan Auw Yang",email = "stefan_ay@yahoo.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "beautifulsoup4 (>=4.13.3,<5.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "brave-search-python-client (>=0.4.11,<0.5.0)",
+    "setuptools (>=78.1.0,<79.0.0)",
+    "openai (>=1.70.0,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
