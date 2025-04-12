@@ -1,0 +1,6 @@
+llm>=0.24
+youtube_transcript_api>=1.0.3
+
+[test]
+pytest
+youtube_transcript_api

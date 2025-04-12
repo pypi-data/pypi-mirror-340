@@ -1,0 +1,73 @@
+Metadata-Version: 2.4
+Name: llm-youtube
+Version: 0.1
+Summary: LLM plugin for pulling content from Youtube videos
+Author: irfansofyana
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/irfansofyana/llm-youtube
+Project-URL: Changelog, https://github.com/irfansofyana/llm-youtube/releases
+Project-URL: Issues, https://github.com/irfansofyana/llm-youtube/issues
+Project-URL: CI, https://github.com/irfansofyana/llm-youtube/actions
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: llm>=0.24
+Requires-Dist: youtube_transcript_api>=1.0.3
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: youtube_transcript_api; extra == "test"
+Dynamic: license-file
+
+# llm-youtube
+
+LLM plugin for extracting content from YouTube videos.
+
+This plugin is inspired by Simon Willison's [llm-hacker-news](https://github.com/simonw/llm-hacker-news) and his excellent [llm](https://github.com/simonw/llm) tool.
+
+## Installation
+
+```bash
+llm install llm-youtube
+```
+
+## Usage
+
+Passing the video ID
+
+example:
+
+```bash
+llm -f yt:zv72WMmVkPw 'Please summarize this video'
+```
+
+Passing the Video URL
+
+example:
+
+```bash
+llm -f yt:https://www.youtube.com/watch\?v\=zv72WMmVkPw 'Please summarize this video'
+```
+
+We can also use a system prompt to improve the result
+
+example:
+
+```bash
+llm -f yt:sCr_gb8rdEI --system "You are an expert at analyzing YouTube videos. Extract the key points only, ignore filler content." "What is this video about?"
+```
+
+## Development
+
+To set up this plugin locally, first checkout the code. Then create a new virtual environment:
+
+```bash
+cd llm-youtube
+python -m venv venv
+source venv/bin/activate
+```
+
+Now install the dependencies:
+
+```bash
+pip install -e .
+```
