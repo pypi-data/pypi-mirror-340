@@ -1,0 +1,13 @@
+amocarray/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+amocarray/_version.py,sha256=ADKG6zAGExVqrCQ6as69MD2ZxIjsV24MFQ-eEwRsglU,28
+amocarray/amoc_registry.txt,sha256=suEqT8aaODCsKklExDfOn-TXxlHty3qLKfpb1Ix47E4,243
+amocarray/plotters.py,sha256=8y2UAXaLiZTN691u-gW4otTJAWbNq3MjWvyXAer10b8,10374
+amocarray/readers.py,sha256=j2Xocn-rVcCcO04hZxk1qQx2_XIzYtx27CZTN_1WTfg,22036
+amocarray/tools.py,sha256=5WbdSeiIJ6asTo-w1NF-hqj3PKotcMHSKSQ75kJSDuI,7386
+amocarray/utilities.py,sha256=v3sRf45bJ98ePdFWtzSoyyt8Dq-dzRt6S2S_Icwg3ck,892
+amocarray/writers.py,sha256=yFlpn3KGyUfEaKdtFyIab08hnHzrycourmlB2YDU_xQ,1820
+amocarray-0.0.1a1.dev0.dist-info/licenses/LICENSE,sha256=uzv7HDRBb4SlHx_HocMZZOBh-DDl98Mtb6N98TVGPzE,1080
+amocarray-0.0.1a1.dev0.dist-info/METADATA,sha256=Rdy3szutny-1cOowcD8R5rUB8hduSChOVEYO8DivGwE,2888
+amocarray-0.0.1a1.dev0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+amocarray-0.0.1a1.dev0.dist-info/top_level.txt,sha256=T6quBWzB_7t3tMHPwxtgEdMNhSdhFT5M4GbBPT-SPn4,10
+amocarray-0.0.1a1.dev0.dist-info/RECORD,,
