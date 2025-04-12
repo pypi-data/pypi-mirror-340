@@ -1,0 +1,99 @@
+Metadata-Version: 2.4
+Name: wibe
+Version: 0.0.1
+Summary: WIBE – Wide Input & Bridge for Everything: Read and Write Anything, Anywhere
+Home-page: https://github.com/yourusername/wibe
+Author: Amarnadh Tirumalasetti
+Author-email: amarnadh553@email.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: PyMuPDF
+Requires-Dist: pdfplumber
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Wibe
+
+**WIBE – Wide Input & Bridge for Everything**  
+**Slogan:** *Read and Write Anything, Anywhere*
+
+---
+
+## 📦 What is Wibe?
+
+**Wibe** is a lightweight and extensible Python package designed to simplify **reading (and soon writing)** of various file formats using a unified interface. Whether it's JSON, TXT, PDF, or XML, Wibe makes it effortless.
+
+---
+
+## 🚀 Features
+
+- ✅ Read **JSON** files
+- ✅ Read **TXT** files
+- ✅ Read **PDF** files using `PyMuPDF` or `pdfplumber`
+- ✅ Parse **XML** files (coming soon)
+- 🚧 Write support for files (coming soon)
+
+---
+
+## 🧠 Philosophy
+
+> **Wibe** stands for **Wide Input & Bridge for Everything**, built with the vision to **Read and Write Anything, Anywhere.**
+
+---
+
+## 📥 Installation
+
+```bash
+pip install wibe
+```
+
+## Usage
+```
+from wibe import wibe
+
+path = "data\sample_js1on.json"
+data = wibe.read_json(path)
+
+path = "data\sample.txt"
+data = wibe.read_txt(path)
+```
+## Coming Soon
+
+✅ Write support for various formats
+
+✅ BeautifulSoup support for HTML/XML
+
+✅ More file readers and writers (CSV, XLSX, Markdown, etc.)
+
+
+## 📄 License
+This project is licensed under the MIT License.
+
+## Author
+Made with Amarnadh Tirumalasetti
+
+---
+
+
+
+
