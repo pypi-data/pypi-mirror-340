@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: digurl
+Version: 0.1.0
+Summary: A command line tool to extract domain from URL and perform dig operations
+License: MIT
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: urllib3 (>=2.0.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# digurl
+
+A command-line tool to extract domain from URL and perform dig operations.
+
+## Installation
+
+```bash
+pip install digurl
+```
+
+## Requirements
+
+- Python 3.7+
+- dig command (dnsutils package)
+
+## Usage
+
+Basic usage:
+```bash
+digurl https://www.example.com
+```
+
+With dig parameters:
+```bash
+digurl https://www.example.com +short
+digurl https://www.example.com A +short
+digurl https://www.example.com MX +noall +answer
+```
+
+## Features
+
+- Extracts domain from URLs
+- Supports all dig parameters
+- Simple and easy to use
+
+## License
+
+MIT
