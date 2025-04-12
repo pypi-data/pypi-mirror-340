@@ -1,0 +1,12 @@
+deepsmirud/__init__.py,sha256=UeVRn_5dtiQr1cx-nvTv6Buwu0h7YWvAJdttSaM6V44,21
+deepsmirud/predict.py,sha256=FT8-9qEOFesqg8giPaq3d4GqlnJrmJlhio9giHQmfPY,6087
+deepsmirud/util/Biochar.py,sha256=9kowkJPO1Zx5fCYscCjInhH3Gff24nGGR4KYc2kw7Fc,3606
+deepsmirud/util/Console.py,sha256=J-mIyWTMoFI-zOC342g-9mbszVuSY-09AOeeKYVfgC8,806
+deepsmirud/util/Feature.py,sha256=024mLA4XYNvK8DnOhP95em9SfVwK28LjDn6lxZ2H55I,4126
+deepsmirud/util/Model.py,sha256=7Dk7oeG00tPJxqm6hXgX2sn9uXMQR0O_WyZVP2YcGVA,4506
+deepsmirud/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepsmirud-0.1.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+deepsmirud-0.1.2.dist-info/METADATA,sha256=jm1c1X-InCkb40IY2h4QzSFGsumigdhfYi7XNkXuIwQ,3796
+deepsmirud-0.1.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+deepsmirud-0.1.2.dist-info/entry_points.txt,sha256=O85F14Y-TKZ9xvLixlnriuylVPOlNmXPFcRaTJZkhLU,101
+deepsmirud-0.1.2.dist-info/RECORD,,

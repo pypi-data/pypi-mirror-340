@@ -1,0 +1,4 @@
+[console_scripts]
+deepsmirud=deepsmirud.predict:run
+deepsmirud_download=deepsmirud.predict:download
+
