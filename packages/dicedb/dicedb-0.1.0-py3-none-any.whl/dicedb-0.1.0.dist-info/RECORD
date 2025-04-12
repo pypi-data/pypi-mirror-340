@@ -1,0 +1,10 @@
+dicedb/__init__.py,sha256=eVNMhfGXVYLtmk8SexXTwllFGNRs5xvvwmp3QnPinKs,231
+dicedb/cmd_pb2.py,sha256=pLfs7fOAFl3EYHxxx2qLqkYGrIkKCZyJGLcXN1ey07c,1988
+dicedb/cmd_pb2.pyi,sha256=-pFsrQAbGLsDZSD6qbPO03NCTo4Wp-WBZdKhq2Oru4s,2029
+dicedb/commands.py,sha256=ZGnIOw8AND0iDKKhdbzGSUuNnc3Qc9sAM22AA0ZWBis,4985
+dicedb/const.py,sha256=E4p3m0EGpe8q836xgO0tu3QP90OTz3lHYLR-wgTzZXs,205
+dicedb/dice.py,sha256=QE9u2hiIQRHd8IsQkSBQKaGUYlyYrQtXb3npoHtjNZI,4154
+dicedb/exceptions.py,sha256=Mkcx_PYBzh_ENx8grQ2pYAoiDKIuE6BqKO1tIlTCuC0,913
+dicedb-0.1.0.dist-info/METADATA,sha256=SXsfMl_RQtYYE92WqMphOJ0XE3dYOItr5OI3MqX2Qws,1533
+dicedb-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+dicedb-0.1.0.dist-info/RECORD,,
