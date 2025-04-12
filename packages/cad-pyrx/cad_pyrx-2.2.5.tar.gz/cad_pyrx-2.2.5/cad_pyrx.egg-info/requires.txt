@@ -1,0 +1,11 @@
+wxpython>=4.2.2
+pywin32
+debugpy>=1.8.0
+
+[dev]
+pytest
+build
+
+[ptrepl]
+ptpython
+prompt_toolkit
