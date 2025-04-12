@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+synoku/__init__.py
+synoku.egg-info/PKG-INFO
+synoku.egg-info/SOURCES.txt
+synoku.egg-info/dependency_links.txt
+synoku.egg-info/top_level.txt

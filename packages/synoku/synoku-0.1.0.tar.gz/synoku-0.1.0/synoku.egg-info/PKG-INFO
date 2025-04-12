@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: synoku
+Version: 0.1.0
+Summary: Synoku CLI and SDK for managing secrets across environments.
+Home-page: https://synoku.com
+Author: Synoku
+Author-email: support@synoku.com
+License: BUSL-1.1
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# Synoku
+
+Minimal placeholder package to reserve the name on PyPI.
+
+## License
+
+Synoku API is licensed under the Business Source License 1.1 (BUSL-1.1).  
+See the [LICENSE](./LICENSE) file or visit [api.synoku.com/bsl11](https://api.synoku.com/bsl11/) for full terms.
