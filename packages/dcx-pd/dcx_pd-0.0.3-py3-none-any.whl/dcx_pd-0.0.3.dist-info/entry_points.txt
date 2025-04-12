@@ -1,0 +1,2 @@
+[console_scripts]
+dcx = dcx_pd.__main__:main
