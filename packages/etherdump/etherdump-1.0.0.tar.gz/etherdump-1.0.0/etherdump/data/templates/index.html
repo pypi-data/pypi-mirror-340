@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+<head>
+	<meta charset="utf-8" />
+	<title>{{title}}</title>
+	<link rel="stylesheet" type="text/css" href="{%block css %}styles.css{%endblock%}">
+	<link rel="alternate" type="application/rss+xml" href="rss.xml">
+	{% block scripts %}
+	{% endblock scripts %}
+</head>
+<body>
+<table class="sortable">
+<thead>
+<tr>
+	<th>name</th>
+	<th>versions</th>
+	<th>last edited</th>
+	<th>revisions</th>
+	<th>authors</th>
+</tr>
+</thead>
+<tbody>
+{% for pad in pads %}
+<tr>
+	<td class="name">
+		<a href="{{pad.link}}">{{ pad.padid }}</a>
+	</td>
+	<td class="versions"> 
+		{% for v in pad.versions %}<a href="{{v.url}}">{{v.type}}</a> {% endfor %}
+	</td>
+	<td class="lastedited">{{ pad.lastedited_iso|datetimeformat }}</td>
+	<td class="revisions">{{ pad.revisions }}</td>
+	<td class="authors">{{ pad.author_ids|length }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+
+{% block info %}<p class="info">Last update {{timestamp}}.</p>{% endblock %}
+<div id="footer"></div>
+<link href="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/gh/tofsjonas/sortable@latest/dist/sortable.min.js"></script>
+</body>
+</html>
