@@ -1,0 +1,3 @@
+[console_scripts]
+feno = tko.feno.__main__:main
+tko = tko.__main__:main
