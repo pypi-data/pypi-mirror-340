@@ -1,0 +1,2 @@
+[console_scripts]
+garrett_status = garrett_status.app:run
