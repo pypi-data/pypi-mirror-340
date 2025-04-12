@@ -1,0 +1,13 @@
+maap_libs_jupyter_extension/__init__.py,sha256=0BsbgutS4L-dJXpnf0zhuosH1oOAeOH6X65qsvee_bI,321
+maap_libs_jupyter_extension/_version.py,sha256=6Fjay4YZqRqdLCHDjqoorkwgJL4hOyXVKztX1MQ8hns,171
+maap_libs_jupyter_extension-1.2.5.data/data/share/jupyter/labextensions/maap_libs_jupyter_extension/package.json,sha256=JOC5Y3qFTyB20lv6JbS7xVj32C9XOMQgJhvpT6LryHA,2924
+maap_libs_jupyter_extension-1.2.5.data/data/share/jupyter/labextensions/maap_libs_jupyter_extension/static/631.0400b435341dc3a4ce27.js,sha256=BAC0NTQdw6TOJ55A4pmIsmOhFw6kbOsLbTfGpcMO4Xs,123
+maap_libs_jupyter_extension-1.2.5.data/data/share/jupyter/labextensions/maap_libs_jupyter_extension/static/821.b1e9b670158573fce10f.js,sha256=sem2cBWFc_zhD_Ey7Os-0eylAH8QBg5eF7HAhb9E56U,5825
+maap_libs_jupyter_extension-1.2.5.data/data/share/jupyter/labextensions/maap_libs_jupyter_extension/static/remoteEntry.df617213481178fd8aba.js,sha256=32FyE0gReP2KuvaPPpCAm0E5E_VHd39zZTqDhAuuB7s,6710
+maap_libs_jupyter_extension-1.2.5.data/data/share/jupyter/labextensions/maap_libs_jupyter_extension/static/style.js,sha256=Ak3FcnUIflPBDwYNhLmhmKMEKZd91mpW-VgnYd6Jsgw,170
+maap_libs_jupyter_extension-1.2.5.data/data/share/jupyter/labextensions/maap_libs_jupyter_extension/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+maap_libs_jupyter_extension-1.2.5.data/data/share/jupyter/labextensions/maap_libs_jupyter_extension/install.json,sha256=jKxF07E01xcw1PdY4ut9DOL8fwg4OPSrEvTeSdNfans,215
+maap_libs_jupyter_extension-1.2.5.dist-info/METADATA,sha256=tMCQFNmetQ1Vr3Mxt-qzpQzyq9gQ8-TWe7k6w5hz6JQ,16794
+maap_libs_jupyter_extension-1.2.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+maap_libs_jupyter_extension-1.2.5.dist-info/licenses/LICENSE,sha256=uiovyVjDm0hEd3k_5PK8XUBAMDwQmH9LegS0YDm-y4w,10988
+maap_libs_jupyter_extension-1.2.5.dist-info/RECORD,,
