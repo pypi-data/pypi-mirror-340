@@ -1,0 +1,8 @@
+winrt/_winrt_windows_security_cryptography_certificates.cp312-win32.pyd,sha256=DHoDVTYjHQ31u-W2f2WxiYL5C4iiazGsbckuCc57pq0,430080
+winrt/_winrt_windows_security_cryptography_certificates.pyi,sha256=thKSbsWnWS8dSAvS3pGCVKeXH29jtTj0fBgYRYSTfFI,50665
+winrt/windows/security/cryptography/certificates/__init__.py,sha256=24Pu08ChEqVGzkvnNHhC5dRX8ugVmGYJvrXGvcXKf4E,2870
+winrt/windows/security/cryptography/certificates/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_security_cryptography_certificates-3.1.0.dist-info/METADATA,sha256=ZOIpLECfchDcQL1UmRBvuDLZdm7TeyBooIk3wSacQDE,1345
+winrt_windows_security_cryptography_certificates-3.1.0.dist-info/WHEEL,sha256=BPX3NNBHfZ-wRWUmorcafb98Azq-d3B5uBQoZtDmitY,97
+winrt_windows_security_cryptography_certificates-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_security_cryptography_certificates-3.1.0.dist-info/RECORD,,
