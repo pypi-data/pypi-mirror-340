@@ -1,0 +1,4 @@
+[console_scripts]
+deepdlncud=deepdlncud.predict:run
+deepdlncud_download=deepdlncud.predict:download
+
