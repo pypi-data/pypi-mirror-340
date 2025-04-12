@@ -1,0 +1,10 @@
+napari_mask_density/__init__.py,sha256=WBScVlhAcNEikDSbUGkhCCyZyYqH3mF5pZ_mFame0_4,180
+napari_mask_density/_version.py,sha256=Olnj0P417yZvGbXQOnbeTFrk9yzWuvCOHN4tVKBMeOc,506
+napari_mask_density/_widget.py,sha256=M9Bro_z3ajKHBAs7Gdw-wsMNMrzLRta4xJwV9EKJak0,8148
+napari_mask_density/napari.yaml,sha256=UTKohAh16C5PGI45SF8CFM1sC9d44IEwBK1Y7nXPYMc,548
+napari_mask_density-0.1.dist-info/licenses/LICENSE,sha256=dwDqRWqAnVvPvQUysxO7oSuBQW90tMRAGxjieudzl-U,1483
+napari_mask_density-0.1.dist-info/METADATA,sha256=TshQ8V89338y2jiouaIXU2629tZV12ApIngMsjTONWI,5882
+napari_mask_density-0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+napari_mask_density-0.1.dist-info/entry_points.txt,sha256=XOcyWqRyYC9Xhslnx4cOa5qvm6fACn2tmDSEP_LVNO8,72
+napari_mask_density-0.1.dist-info/top_level.txt,sha256=SiQlRF23gyLrOsJdJZuyN20inFopUMrKs6pcagwnmnk,20
+napari_mask_density-0.1.dist-info/RECORD,,
