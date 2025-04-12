@@ -1,0 +1,11 @@
+torchvision
+transformers
+datasets
+sentence-transformers
+spacy
+beautifulsoup4
+lightgbm
+optuna
+fastembed
+qdrant-client
+orjson
