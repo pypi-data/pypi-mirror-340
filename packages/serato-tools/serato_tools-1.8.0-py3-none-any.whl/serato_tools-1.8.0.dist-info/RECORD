@@ -1,0 +1,9 @@
+serato_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serato_tools/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serato_tools/utils/tags.py,sha256=sgm8LRYApi0y8lfyFD_DgZA4B_IXywEyufbuT4sg370,791
+serato_tools/utils/ui.py,sha256=QlF5hHIm-FZA2KlkJ6RXSu37CwTKIA4nNxy6Nz2c4kM,1082
+serato_tools-1.8.0.dist-info/licenses/LICENSE,sha256=d46520ZVaHetlPrsQpsJja9URC758UEi4MPhUIZJ7zg,1071
+serato_tools-1.8.0.dist-info/METADATA,sha256=g0YWGwn_736qgo3luVxMb_yweLg7T2wNOvHBuLbFPew,5760
+serato_tools-1.8.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+serato_tools-1.8.0.dist-info/top_level.txt,sha256=2yF12DgTk2HoxPj3yPsWAmkA2-YE4dOdTDQDoYsyazE,13
+serato_tools-1.8.0.dist-info/RECORD,,
