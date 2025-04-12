@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/jimaku_dl/__init__.py
+src/jimaku_dl/cli.py
+src/jimaku_dl/compat.py
+src/jimaku_dl/downloader.py
+src/jimaku_dl.egg-info/PKG-INFO
+src/jimaku_dl.egg-info/SOURCES.txt
+src/jimaku_dl.egg-info/dependency_links.txt
+src/jimaku_dl.egg-info/entry_points.txt
+src/jimaku_dl.egg-info/requires.txt
+src/jimaku_dl.egg-info/top_level.txt
