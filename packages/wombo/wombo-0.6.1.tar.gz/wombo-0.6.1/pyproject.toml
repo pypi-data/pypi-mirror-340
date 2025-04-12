@@ -1,0 +1,64 @@
+[project]
+name = "wombo"
+version = "0.6.1"
+description = "Image generation module. I use the dream neural network from wombo for my work."
+authors = [
+    {name = "Aleksey Baev",email = "skinxedovich@vk.com"}
+]
+maintainers = [
+  {name = "Aleksey Baev", email = "skinxedovich@vk.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+keywords = ["wombo", "dream", "API", "SDK"]
+dependencies = [
+    "httpx>=0.28.1",
+    "pydantic>=2.10.6",
+]
+
+[project.urls]
+Homepage = "https://github.com/pokedim13/wombo"
+Documentation = "https://github.com/pokedim13/wombo"
+Repository = "https://github.com/pokedim13/wombo.git"
+Issues = "https://github.com/pokedim13/wombo/issues"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.0",
+]
+test = [
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.25.3",
+    "python-dotenv>=1.0.1",
+]
+
+[project.optional-dependencies]
+cli = [
+    "typer>=0.9.0",
+    "rich>=13.7.1",
+]
+
+[project.scripts]
+wombo = "wombo.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+
+[[tool.uv.index]]
+name = "gitverse"
+url = "https://gitverse.ru/sweetdogs?tab=packages"
+publish-url = "https://gitverse.ru/api/packages/sweetdogs/pypi"
+
+
+
+[tool.ruff]
+line-length = 140
+
+[tool.ruff.lint]
+unfixable = ["B"]
+select = ["T20","B","F","E","I","UP","N","ANN","Q","COM","ERA","ASYNC","BLE","FIX","ISC","PIE","PTH"]
+ignore = ["ANN002", "ANN003", "ANN204"]
