@@ -1,0 +1,33 @@
+[project]
+name = "webtransport"
+version = "0.0.1.dev0"
+description = "A Python library for web transport protocols"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["aioquic"]
+packages = [{ include = "webtransport" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Typing :: Typed",
+    "Framework :: AsyncIO",
+]
+
+[project.scripts]
+webtransport = "webtransport.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/danchev/python-webtransport"
+Issues = "https://github.com/danchev/python-webtransport/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["webtransport"]
