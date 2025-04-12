@@ -1,0 +1,1224 @@
+# Global Datafeeds Python Library Description
+
+## Reference document for implementing python library of WebSocket API by Global Datafeeds
+
+  
+WebSocket API by Global Datafeeds is Versatile, most Modern, simple yet powerful API. This API will provide on demand real time and historical data in JSON format from server. It is Suitable for Web, Mobile as well as Desktop Applications. Below are the list of function and their respective details available in WebSocket API. For more detail Documentation & Support refer to the page by **Global Datafeeds** [here.](https://globaldatafeeds.in/global-datafeeds-apis/documentation-support/documentation/websockets-api-documentation/) <br>
+
+This python library is developed to save time and efforts of clients while working on implementation of WebSocket API of Global Datafeeds. List of functions (Data Requests) available is given below.
+ 
+
+## List of Functions:
+
+1. SubscribeRealtime
+2. SubscribeSnapshot
+3. GetLastQuote
+4. GetLastQuoteShort
+5. GetLastQuoteShortWithClose
+6. GetLastQuoteArray
+7. GetLastQuoteArrayShort
+8. GetLastQuoteArrayShortWithClose
+9.  GetSnapshot
+10. GetHistory
+11. GetHistoryAfterMarket
+12. GetExchanges
+13. GetInstrumentsOnSearch
+14. GetInstruments
+15. GetInstrumentTypes
+16. GetProducts
+17. GetExpiryDates
+18. GetOptionTypes
+19. GetStrikePrices
+20. GetServerInfo
+21. GetLimitation
+22. GetMarketMessages
+23. GetExchangeMessages
+24. GetLastQuoteOptionChain
+25. GetExchangeSnapshot
+26. SubscribeRealtimeGreeks
+27. GetLastQuoteOptionGreeks
+28. GetLastQuoteArrayOptionGreeks
+29. GetLastQuoteOptionGreeksChain
+30. SubscribeOptionChain
+31. SubscribeOptionChainGreeks
+32. SubscribeTopGainersLosers
+33. GetTopGainersLosers
+34. GetHistoryGreeks
+35. Parameters
+
+---
+
+# Getting Started
+
+## Installing a Library
+
+Client need to install this library to install the library by issuing the command from python console
+```
+python3 -m pip install wsgfdl-py
+```
+or on windows command prompt
+```
+pip install wsgfdl-py
+```
+---
+
+## How to Connect using WebSocket API
+
+Once installation is completed client can connect to API server by the code sample given below:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+```
+Here in above code sample:
+
+- Endpoint : endpoint is URL like 'ws://endpoint:port'. End point URL and Port number will be provided by Global Datafeeds.
+
+- API Key : This is the key which will be authenticated and once key was authenticated, client can request data by using function given in the above list.
+
+<br>**Response**<br>
+If key is authenticated server will send below response in JOSN format
+```
+{"Complete":true,"Message":"Welcome!","MessageType":"AuthenticateResult"}"
+```
+---
+
+# Realtime data requests
+
+Client can get real-time data through API. This data will be of two types:
+
+1. Client can subscribe Realtime data and get the data for every second.
+
+2. Client can subscribe Realtime snapshots data, returns data snapshot as per Periodicity & Period values.
+---
+## SubscribeRealtime
+In this client will receive the data with 1 second frequency. This data will start once request is sent and will continue till market is open. Below is the sample code to get this data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+	time.sleep(1)
+	response = gw.realtime.get(con,<Exchange>,<InstrumentIdentifier>, <Unsubscribe Optional [true]/[false][default=false]>)
+	print(str(response))
+```
+<br>**Example**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+    time.sleep(1)
+    response = gw.realtime.get(con, 'NFO', 'NIFTY-I')
+    print(str(response))
+```
+<br>Client will get data for 'SBIN' in response for each second. Sample response is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+{"Exchange":"NFO","InstrumentIdentifier":"NIFTY-I","LastTradeTime":1669262572,"ServerTime":1669262572,"AverageTradedPrice":18309.69,"BuyPrice":18323.9,"BuyQty":50,"Close":18286.75,"High":18329.35,"Low":18297.15,"LastTradePrice":18325.0,"LastTradeQty":750,"Open":18310.0,"OpenInterest":5657350,"QuotationLot":50.0,"SellPrice":18325.1,"SellQty":100,"TotalQtyTraded":681250,"Value":12473476312.5,"PreOpen":false,"PriceChange":38.25,"PriceChangePercentage":0.21,"OpenInterestChange":-98200,"MessageType":"RealtimeResult"}
+```
+---
+## SubscribeSnapshot:
+In this client will receive real-time Snapshots data, this function returns snapshot data as per Periodicity & Period values provided. This snapshot data will start once request is sent and will continue till market is open. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+```	
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+    time.sleep(1)
+	response = gw.realsnapshot.get(con,<Exchange>,<InstrumentIdentifier>,<Periodicity>,<Period>,<Unsubscribe Optional[true]/[false][default=false]>)
+	print(str(response))
+```	
+<br>**Example**<br>
+```	
+import gfdlws as gw
+import sys
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+    time.sleep(1)
+    response = gw.realsnapshot.get(con, 'NFO', 'NIFTY-I','MINUTE','1')
+    print(str(response))
+```
+Client will get data for 'NIFTY' current contact in response for each minute when minute id finished. 'NIFTY-I' is InstrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample response is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+{"Exchange":"NFO","InstrumentIdentifier":"NIFTY-I","Periodicity":"MINUTE","Period":1,"LastTradeTime":1669265340,"TradedQty":11300,"OpenInterest":5608700,"Open":18351.0,"High":18353.95,"Low":18350.25,"Close":18353.95,"MessageType":"RealtimeSnapshotResult"}
+```
+---
+## GetLastQuote:
+In this client will receive record of last (latest one) 'LastTradePrice' of single symbol with more details like Open, High, Low Close and many more fields. This function will return single latest record of the requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>
+	
+```
+import gfdlws as gw
+import sys  
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquote.get(con,<Exchange>,<InstrumentIdentifier>,<isShortIdentifier Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**  
+```
+import gfdlws as gw
+import sys  
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquote.get(con,'NFO','NIFTY-I','false')
+print(str(response))
+```
+
+Client will get latest data for 'NIFTY' current contact in response. 'NIFTY-I' is InstrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample response is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+{"Exchange":"NFO","InstrumentIdentifier":"NIFTY-I","LastTradeTime":1658138400,"ServerTime":1658138400,"AverageTradedPrice":16234.07,"BuyPrice":16310.0,"BuyQty":4900,"Close":16068.3,"High":16520.0,"Low":16170.45,"LastTradePrice":16312.95,"LastTradeQty":800,"Open":16199.0,"OpenInterest":11179850,"QuotationLot":50.0,"SellPrice":16312.95,"SellQty":300,"TotalQtyTraded":8102000,"Value":131528435140.0,"PreOpen":false,"PriceChange":244.65,"PriceChangePercentage":1.52,"OpenInterestChange":-767300,"MessageType":"LastQuoteResult"}
+```
+---
+## GetLastQuoteShort:
+In this client will receive record of last (latest one) 'LastTradePrice' of single symbol in short with limited fields/values. This function will return single latest record of the requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteshort.get(con,<Exchange>,<InstrumentIdentifier >,<isShortIdentifier Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example:**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteshort.get(con,'NFO','NIFTY-I','false')
+print(str(response))
+```
+Client will get latest data for 'NIFTY' current contact in response. 'NIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+{"Exchange":"NFO","InstrumentIdentifier":"NIFTY-I","LastTradeTime":1658138400,"BuyPrice":16310.0,"LastTradePrice":16312.95,"SellPrice":16312.95,"MessageType":"LastQuoteShortResult"}
+```
+---	
+## GetLastQuoteShortWithClose:
+In this client will receive record of last (latest one) 'LastTradePrice' of single symbol in short with Close of Previous Day. This function will return single latest record of the requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteshortclose.get(con,<Exchange>,<InstrumentIdentifier>,<isShortIdentifier Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteshortclose.get(con,'NFO','NIFTY-I','false')
+print(str(response))
+```
+
+Client will get latest data for 'NIFTY' current contact in response. 'NIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+{"Exchange":"NFO","InstrumentIdentifier":"NIFTY-I","LastTradeTime":1658138400,"BuyPrice":16310.0,"Close":16068.3,"LastTradePrice":16312.95,"SellPrice":16312.95,"MessageType":"LastQuoteShortWithCloseResult"}
+```
+---
+## GetLastQuoteArray:
+In this client will receive record of last (latest one) 'LastTradePrice' of multiple symbols with more details like Open, High, Low Close and many more fields. In this single call client can request maximum 25 number of symbols. This function will return array of latest record single for each requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquotearray.get(con,<Exchange>,<InstrumentIdentifiers>,<isShortIdentifiers Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquotearray.get(con,'NFO','NIFTY-I,BANKNIFTY-I','false')
+print(str(response))
+```
+
+Client will get array of latest data for 'NIFTY and BANKNIFTY' current contact in response. 'NIFTY-I AND BANKNIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+{"Exchange":"NFO","InstrumentIdentifier":"NIFTY-I","LastTradeTime":1658138400,"ServerTime":1658138400,"AverageTradedPrice":16234.07,"BuyPrice":16310.0,"BuyQty":4900,"Close":16068.3,"High":16520.0,"Low":16170.45,"LastTradePrice":16312.95,"LastTradeQty":800,"Open":16199.0,"OpenInterest":11179850,"QuotationLot":50.0,"SellPrice":16312.95,"SellQty":300,"TotalQtyTraded":8102000,"Value":131528435140.0,"PreOpen":false,"PriceChange":244.65,"PriceChangePercentage":1.52,"OpenInterestChange":-767300,"MessageType":"LastQuoteResult"},
+{"Exchange":"NFO","InstrumentIdentifier":"BANKNIFTY-I","LastTradeTime":1658138401,"ServerTime":1658138401,"AverageTradedPrice":35164.12,"BuyPrice":35424.25,"BuyQty":25,"Close":34782.3,"High":35690.0,"Low":34887.1,"LastTradePrice":35435.0,"LastTradeQty":125,"Open":35690.0,"OpenInterest":2348500,"QuotationLot":25.0,"SellPrice":35435.0,"SellQty":550,"TotalQtyTraded":3293900,"Value":115827094868.0,"PreOpen":false,"PriceChange":652.7,"PriceChangePercentage":1.88,"OpenInterestChange":253425,"MessageType":"LastQuoteResult"}],"MessageType":"LastQuoteArrayResult"}
+```
+---
+## GetLastQuoteArrayShort:
+In this client will receive array of records of lastest 'LastTradePrice' of multiple symbols in short with limited fields/values. In this single call client can request maximum 25 number of symbols. This function will return array of latest record single for each requested symbol. Below is the sample code to get last quote data:
+
+<br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquotearrayshort.get(con,<Exchange>,<InstrumentIdentifiers>,<isShortIdentifier Optional [true]/[false][default=false]>)
+print(str(response))
+```
+
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquotearrayshort.get(con,'NFO','NIFTY-I,BANKNIFTY-I','false')
+print(str(response))
+```
+	
+Client will get array of latest data for 'NIFTY and BANKNIFTY' current contact in response. 'NIFTY-I AND BANKNIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br> 
+
+```
+{"Exchange":"NFO","InstrumentIdentifier":"NIFTY-I","LastTradeTime":1658138400,"BuyPrice":16310.0,"LastTradePrice":16312.95,"SellPrice":16312.95,"MessageType":"LastQuoteShortResult"},{"Exchange":"NFO","InstrumentIdentifier":"BANKNIFTY-I","LastTradeTime":1658138401,"BuyPrice":35424.25,"LastTradePrice":35435.0,"SellPrice":35435.0,"MessageType":"LastQuoteShortResult"}],"MessageType":"LastQuoteArrayShortResult"}
+```
+---
+## GetLastQuoteArrayShortWithClose:
+In this client will receive array of records of lastest 'LastTradePrice' of multiple symbols in short with limited fields/values with Close of Previous Day. In this single call client can request maximum 25 number of symbols. This function will return array of latest record single for each requested symbol. Below is the sample code to get last quote data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquotearrayshortclose.get(con,<Exchange>,<InstrumentIdentifiers>,<isShortIdentifier Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquotearrayshortclose.get(con,'NFO','NIFTY-I,BANKNIFTY-I','false')
+print(str(response))
+```
+Client will get array of latest data for 'NIFTY and BANKNIFTY' current contact in response. 'NIFTY-I AND BANKNIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample response is given below. This response will be in JSON format.
+<br>**Response**<br>
+
+```
+{"Exchange":"NFO","InstrumentIdentifier":"NIFTY-I","LastTradeTime":1658138400,"BuyPrice":16310.0,"Close":16068.3,"LastTradePrice":16312.95,"SellPrice":16312.95,"MessageType":"LastQuoteShortWithCloseResult"},
+{"Exchange":"NFO","InstrumentIdentifier":"BANKNIFTY-I"," LastTradeTime":1658138401,"BuyPrice":35424.25,"Close":34782.3,"LastTradePrice":35435.0,"SellPrice":35435.0,"MessageType":"LastQuoteShortWithCloseResult"}],"MessageType":"LastQuoteArrayShortWithCloseResult"}
+```
+---
+## GetSnapshot:
+In this client will receive snapshots data. This function returns latest snapshot data as per Periodicity & Period values provided. In this single call client can request maximum 25 number of symbols. This function will return array of latest single record for each requested symbol. Below is the sample code to get snapshot data:
+<br>**Syntax:**<br>
+``` 
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.snapshot.get(con,<Exchange>,<InstrumentIdentifiers>,<Periodicity>,<Period>,<isShortIdentifier Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+``` 
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.snapshot.get(con,'NFO','NIFTY-I,BANKNIFTY-I','MINUTE','1','false')
+print(str(response))
+```  
+
+Client will get array of latest data for 'NIFTY and BANKNIFTY' current contact in response. 'NIFTY-I AND BANKNIFTY-I' is instrumentIdentifier (Symbol) to understand more about the 'Symbol Naming Conventions' check [here.](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/documentation-support/symbol-naming-conventions/)
+<br>Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br> 
+
+```
+{"InstrumentIdentifier":"FUTIDX_BANKNIFTY_28JUL2022_XX_0","Exchange":"NFO","LastTradeTime":1658204580,"TradedQty":31200,"OpenInterest":2306425,"Open":35436.5,"High":35443.0,"Low":35420.15,"Close":35434.0,"TokenNumber":null},
+{"InstrumentIdentifier":"FUTIDX_NIFTY_28JUL2022_XX_0","Exchange":"NFO","LastTradeTime":1658204580,"TradedQty":25550,"OpenInterest":11313250,"Open":16288.45,"High":16291.75,"Low":16286.5,"Close":16287.4,"TokenNumber":null}],"MessageType":"SnapshotResult"}
+```
+---
+# Historical data requests
+
+## GetHistory:
+This will returns historical data as per the periodicity and Period provided in request. Returned dat will be Tick, Minute candle or EOD. Client will get 2 types of response depend on the request
+<br>
+- Getbyperiod: This request will return the data between the provided period. Client need to provide From time and To time in this call. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.history.getbyperiod(con,<Exchange>,<InstrumentIdentifier>,<Periodicity>, <Period>,<From>,<To>,<UserTag>,<isShortIdentifier Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.history.getbyperiod(con,'NFO','NIFTY-I','MINUTE','1','1658115000','1658138400','0','Surendran','false')
+print(str(response))
+```
+
+Here in this request From and To is a numerical value of UNIX Timestamp like ‘1658138400’ (18-07-2022 15:30:00). This value is expressed as no. of seconds since Epoch time (i.e. 1st January 1970). Also known as Unix Time. Please Visit [Epoch Converter](https://www.epochconverter.com/) to get formulae to convert human readable time to Epoch and vice versa.
+
+As a response to above call client will get all the 1 minute candle records between provided period.
+<br>
+- Getcaldle: This request will return the data in number of latest candles. Client need to provide number of candles in this call. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.history.getcaldle(con,<Exchange>,<InstrumentIdentifier>,<Periodicity>, <Period>,<Max>,<UserTag>,<isShortIdentifier Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.history.getcaldle(con,'NFO','NIFTY-I','MINUTE','1','10','Surendran','false')
+print(str(response))
+```
+
+Here in this request From and To is a numerical value of UNIX Timestamp like ‘1658138400’ (18-07-2022 15:30:00). This value is expressed as no. of seconds since Epoch time (i.e. 1st January 1970). Also known as Unix Time. Please Visit [Epoch Converter](https://www.epochconverter.com/) to get formulae to convert human readable time to Epoch and vice versa.
+As a response to above call, client will get all 10 number of 1 minute candle records. 
+
+<br>Sample response for both the calls is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+*OHLC Format:*
+``` 
+{"LastTradeTime":1658138400,"QuotationLot":50,"TradedQty":800,"OpenInterest":11179850,"Open":16312.95,"High":16312.95,"Low":16312.95,"Close":16312.95},
+{"LastTradeTime":1658138340,"QuotationLot":50,"TradedQty":89800,"OpenInterest":11179850,"Open":16305.0,"High":16312.0,"Low":16304.45,"Close":16310.0}
+```
+  
+*TICK Format:*
+```
+[{"LastTradeTime":1594186301,"LastTradePrice":10775.0,"QuotationLot":75,"TradedQty":225,"OpenInterest":12176625,"BuyPrice":10774.3,"BuyQty":75,"SellPrice":10775.0,"SellQty":3150},
+{"LastTradeTime":1594186300,"LastTradePrice":10774.0,"QuotationLot":75,"TradedQty":0,"OpenInterest":12176625,"BuyPrice":10774.3,"BuyQty":75,"SellPrice":10775.0,"SellQty":3375}*
+```
+<br>
+- getadjusted: This request will return the data between the provided period and splitsadjusted data. Client need to provide From time and To time in this call. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.history.getadjusted(con,<Exchange>,<InstrumentIdentifier>,<Periodicity>, <Period>,<From>,<To>,<Adjustsplits Optional [true]/[false][default=false]>,<UserTag>,<isShortIdentifier Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+```
+import GFDLWS as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response =gw.history.getadjusted(con,"NFO","NIFTY-I","TICK",1,1726478707,1726740000,1,"true","surendran",'false')
+print(str(response))
+```
+
+Here in this request From and To is a numerical value of UNIX Timestamp like ‘1658138400’ (18-07-2022 15:30:00). This value is expressed as no. of seconds since Epoch time (i.e. 1st January 1970). Also known as Unix Time. Please Visit [Epoch Converter](https://www.epochconverter.com/) to get formulae to convert human readable time to Epoch and vice versa.
+As a response to above call, client will get all records between time frame with splitsadjusted data . 
+
+<br>Sample response for both the calls is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+*OHLC Format:*
+``` 
+{"LastTradeTime":1658138400,"QuotationLot":50,"TradedQty":800,"OpenInterest":11179850,"Open":16312.95,"High":16312.95,"Low":16312.95,"Close":16312.95},
+{"LastTradeTime":1658138340,"QuotationLot":50,"TradedQty":89800,"OpenInterest":11179850,"Open":16305.0,"High":16312.0,"Low":16304.45,"Close":16310.0}
+```
+  
+*TICK Format:*
+```
+[{"LastTradeTime":1594186301,"LastTradePrice":10775.0,"QuotationLot":75,"TradedQty":225,"OpenInterest":12176625,"BuyPrice":10774.3,"BuyQty":75,"SellPrice":10775.0,"SellQty":3150},
+{"LastTradeTime":1594186300,"LastTradePrice":10774.0,"QuotationLot":75,"TradedQty":0,"OpenInterest":12176625,"BuyPrice":10774.3,"BuyQty":75,"SellPrice":10775.0,"SellQty":3375}*
+```
+---
+## GetHistoryAfterMarket:
+This function returns historical data in the form of Tick, Minute or EOD as per request till previous working day. This function is useful for the users / service providers who want to provide services like back-testing as they do not need live / current day’s data. This should also save their API costs. To receive current day’s historical data via this function, you will need to send request after market is closed. Requests for this function are same as **History.**
+
+---
+## GetExchanges:
+Client will get the list of available exchanges configured for API Key. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.exchanges.get(con))
+print(str(response))
+```
+ <br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.exchanges.get(con))
+print(str(response))
+```
+Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+```
+{"Value":"CDS"},{"Value":"MCX"},{"Value":"NFO"},{"Value":"NSE"},{"Value":"NSE_IDX"}],"MessageType":"ExchangesResult"}
+```
+---
+## GetInstrumentsOnSearch:
+This function will returns array of max. 20 instruments by selected exchange and ‘search string’. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.instrumentsonsearch.get(con,<Exchnage>,<Search>,<InstrumentType Optional>,<Product Optional>,<Expiry Optional>,<OptionType Optional>,<StrikePrice Optional>,<OnlyActive Optional>)  
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.instrumentsonsearch.get(con,'NFO','NIFTY')  
+print(str(response))
+```
+
+As a response to above call, client will get records with details for 20 instruments under provided exchange and 'Search string'. <br> Sample response is given below. This response will be in JSON format.
+<br>**Response**<br>
+```
+{"Identifier":"OPTIDX_NIFTY_21JUL2022_CE_12900","Name":"OPTIDX","Expiry":"21Jul2022","StrikePrice":12900.0,"Product":"NIFTY","PriceQuotationUnit":"","OptionType":"CE","ProductMonth":"21Jul2022","UnderlyingAsset":"","UnderlyingAssetExpiry":"","IndexName":"","TradeSymbol":"NIFTY21JUL2212900CE","QuotationLot":50.0,"Description":"","TokenNumber":"69695","LowPriceRange":2667.2,"HighPriceRange":4221.1},
+{"Identifier":"OPTIDX_NIFTY_21JUL2022_PE_14350","Name":"OPTIDX","Expiry":"21Jul2022","StrikePrice":14350.0,"Product":"NIFTY","PriceQuotationUnit":"","OptionType":"PE","ProductMonth":"21Jul2022","UnderlyingAsset":"","UnderlyingAssetExpiry":"","IndexName":"","TradeSymbol":"NIFTY21JUL2214350PE","QuotationLot":50.0,"Description":"","TokenNumber":"53857","LowPriceRange":0.05,"HighPriceRange":3.6}*
+```
+--- 
+## GetInstruments:
+This function will returns array of instruments by selected exchange. Below is the sample code to get snapshot data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.instruments.get(con,<Exchnage>,<InstrumentType Optional>,<Product Optional>,<Expiry Optional>,<OptionType Optional>,<StrikePrice Optional>,<Series Optional>,<OnlyActive Optional>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.instruments.get(con, 'NFO')
+print(str(response))
+```  
+
+As a response to above call, client will get records with details for all the instruments under provided exchange. <br> Sample reponse is given below. This response will be in JSON format.
+<br>**Response**<br>
+```
+{"Identifier":"OPTIDX_NIFTY_17APR2025_PE_23700","Name":"OPTIDX","Expiry":"17Apr2025","StrikePrice":23700.0,"Product":"NIFTY","PriceQuotationUnit":"","OptionType":"PE","ProductMonth":"17Apr2025","UnderlyingAsset":"","UnderlyingAssetExpiry":"","IndexName":"","TradeSymbol":"NIFTY17APR2523700PE","QuotationLot":75.0,"Description":"","TokenNumber":"48283","LowPriceRange":158.45,"HighPriceRange":1254.9,"ISIN":"","Series":"","High52Week":0.0,"Low52Week":0.0},
+{"Identifier":"OPTIDX_NIFTY_17APR2025_CE_25650","Name":"OPTIDX","Expiry":"17Apr2025","StrikePrice":25650.0,"Product":"NIFTY","PriceQuotationUnit":"","OptionType":"CE","ProductMonth":"17Apr2025","UnderlyingAsset":"","UnderlyingAssetExpiry":"","IndexName":"","TradeSymbol":"NIFTY17APR2525650CE","QuotationLot":75.0,"Description":"","TokenNumber":"48449","LowPriceRange":0.05,"HighPriceRange":20.05,"ISIN":"","Series":"","High52Week":0.0,"Low52Week":0.0},
+```
+---  
+## GetInstrumentTypes:
+This function will returns list of Instrument Types (e.g. FUTIDX, FUTSTK, etc.) under provided exchange. Below is the sample code to get instrument types:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.instrumenttypes.get(con, <Exchange>)
+print(str(response))
+```
+<br>**Example:**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.instrumenttypes.get(con, 'NFO')
+print(str(response))
+```
+
+As a response to above call, client will get the instrument types under provided exchange. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{"Value":"FUTIDX"},{"Value":"FUTSTK"},{"Value":"OPTIDX"},{"Value":"OPTSTK"}
+```
+---	  
+## GetProducts: 
+This function will returns list of Products (e.g. NIFTY, BANKNIFTY, GAIL etc.) under provided exchange. Below is the sample code to get instrument types:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)`
+response = gw.products.get(con, <Exchange>,<InstrumentType Optional>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)`
+response = gw.products.get(con, 'NFO')
+print(str(response))
+```
+	  
+As a response to above call, client will get the list of products under provided exchange. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{"Value":"AARTIIND"},{"Value":"ABB"},{"Value":"ABBOTINDIA"},{"Value":"ABCAPITAL"},{"Value":"ABFRL"}
+```
+
+---
+## GetExpiryDates:
+This function will returns array of Expiry Dates (e.g. 25JUN2020, 30JUL2020, etc.) as per the parameter provided. Below is the sample code to get expiry dates:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.expirydates.get(con, <Exchange>,<InstrumentType Optional>,<Product Optional>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.expirydates.get(con, 'NFO')
+print(str(response))
+```
+As a response to above call, client will get the list of expiry dates for provided exchange. <br> Sample reponse is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+*{"Value":"21JUL2022"},{"Value":"26JUL2022"},{"Value":"28JUL2022"},{"Value":"02AUG2022"}*
+```
+
+---
+## GetOptionTypes:
+This function will returns list of Option Types (e.g. CE, PE, etc.) as per the parameter provided. Below is the sample code to get expiry dates:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.optiontypes.get(con, <Exchnage>,<InstrumentType Optional>,<Product Optional>,<Expiry Optional>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.optiontypes.get(con, 'NFO')
+print(str(response))
+```
+	
+As a response to above call, client will get the list of option types for provided exchange. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+``` 
+{"Value":"CE"},{"Value":"PE"}
+```
+---  
+## GetStrikePrices:
+This function will returns list of Strike Prices (e.g. 10000, 11000, 75.5, etc.) as per the provided parameter. Below is the sample code to get expiry dates:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.strikeprices.get(con, <Exchange>,<InstrumentType Optional>,<Product Optional>,<Expiry Optional>,<OptionType Optional>)
+print(str(response))
+```
+ <br> **Example**
+
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.strikeprices.get(con, 'NFO')
+print(str(response))
+```
+
+As a response to above call, client will get the list of strike prices for provided exchange. <br> Sample reponse is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{"Value":"3000"},{"Value":"3010"},{"Value":"3020"},{"Value":"3040"},{"Value":"3050"},{"Value":"3060"},{"Value":"3080"},{"Value":"3100"}
+```
+
+---  
+
+## GetServerInfo:
+This function will returns information about server where connection is made. Below is the sample code to get ServerInfo:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.serverinfo.get(con)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.serverinfo.get(con)
+print(str(response))
+```  
+
+As a response to above call, client will get the serverID where client is connected. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{"ServerID":"444A-C7","MessageType":"ServerInfoResult"}
+```
+---  
+## GetLimitation:
+This function will returns user account information (e.g. which functions are allowed, Exchanges allowed, symbol limit, etc.) Below is the sample code to get limitation:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.limitation.get(con)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.limitation.get(con)
+print(str(response))
+```
+As a response to above call, client will get the serverID where client is connected. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{
+"GeneralParams":{
+"AllowedBandwidthPerHour":-1.0,
+"AllowedCallsPerHour":-1,
+"AllowedCallsPerMonth":-1,
+"AllowedBandwidthPerMonth":-1.0,
+"ExpirationDate":1485468000,
+"Enabled":true
+},<
+"AllowedExchanges":[
+{"AllowedInstruments":-1,"DataDelay":0,"ExchangeName":"CDS"},
+{"AllowedInstruments":-1,"DataDelay":0,"ExchangeName":"MCX"},
+{"AllowedInstruments":-1,"DataDelay":0,"ExchangeName":"NFO"},
+{"AllowedInstruments":-1,"DataDelay":0,"ExchangeName":"NSE"},
+("AllowedInstruments":-1,"DataDelay":0,"ExchangeName":"NSE_IDX"}
+],
+"AllowedFunctions":[
+	{"FunctionName":"GetExchangeMessages","IsEnabled":false},
+	{"FunctionName":"GetHistory","IsEnabled":true},
+	{"FunctionName":"GetLastQuote","IsEnabled":false},
+	{"FunctionName":"GetLastQuoteArray","IsEnabled":false},
+	{"FunctionName":"GetLastQuoteArrayShort","IsEnabled":false},
+	{"FunctionName":"GetLastQuoteShort","IsEnabled":false},
+	{"FunctionName":"GetMarketMessages","IsEnabled":false},
+	{"FunctionName":"GetSnapshot","IsEnabled":true},
+	{"FunctionName":"SubscribeRealtime","IsEnabled":false}
+	],
+	"HistoryLimitation":{
+	"TickEnabled":true,
+	"DayEnabled":true,
+	"WeekEnabled":false,
+	"MonthEnabled":false,
+	"MaxEOD":100000,
+	"MaxIntraday":44,
+	"Hour_1Enabled":false,
+	"Hour_2Enabled":false,
+	"Hour_3Enabled":false,
+	"Hour_4Enabled":false,
+	"Hour_6Enabled":false,
+	"Hour_8Enabled":false,
+	"Hour_12Enabled":false,
+	"Minute_1Enabled":true,
+	"Minute_2Enabled":false,
+	"Minute_3Enabled":false,
+	"Minute_4Enabled":false,
+	"Minute_5Enabled":false,
+	"Minute_6Enabled":false,
+	"Minute_10Enabled":false,
+	"Minute_12Enabled":false,
+	"Minute_15Enabled":false,
+	"Minute_20Enabled":false,
+	"Minute_30Enabled":false,
+	"MaxTicks":5
+	},
+	"MessageType":"LimitationResult",
+	}
+```
+---
+## GetMarketMessages:
+This function will returns array of last market messages related to selected exchange. Below is the sample code to get limitation:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.marketmessages.get(con,<Exchange>)
+print(str(response))
+```  
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.marketmessages.get(con,'NFO')
+print(str(response))
+```  
+
+As a response to above call, client will get the market messages. <br>Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{"Request":{"Exchange":"NFO","MessageType":"GetMarketMessages"},"Result":[{"ServerTime":1658288700,"SessionID":0,"MarketType":"Normal Market Open","Exchange":"NFO","MessageType":"MarketMessagesItemResult"}],"MessageType":"MarketMessagesResult"}
+```
+---  
+## GetExchangeMessages:
+This function will returns array of last exchange messages related to selected exchange. Below is the sample code to get limitation:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.marketmessages.get(con,<Exchnage>)
+print(str(response))
+```
+**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.marketmessages.get(con,'NFO')
+print(str(response))
+```
+
+As a response to above call, client will get the market messages. <br> Sample response is given below. This response will be in JSON format.
+<br><br>**Response**<br>
+```
+{"ServerTime":1391822398,"Identifier":"Market","Message":"Members are requested to note that ...","MessageType":"ExchangeMessagesItemResult"},
+{"ServerTime":1391822399,"Identifier":"Market","Message":"2013 shall be levied subsequently.","MessageType":"ExchangeMessagesItemResult"}
+```
+---
+## GetLastQuoteOptionChain:
+This function will returns LastTradePrice of entire OptionChain of requested underlying. Below is the sample code to get Last Quote Option Chain:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteoptionchain.get(con,<Exchange>,<Product Optional>,<Expiry Optional>,<OptionType Optional>,<StrikePrice Optional>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteoptionchain.get(con,'NFO','NIFTY')
+print(str(response))
+```
+<br>**Response**<br>
+As a response to above call, client will get LastTradePrice of entire OptionChain. Sample reponse in JSON format can be downloaded from [here.](https://globaldatafeeds.in/resources/GetLastQuoteOptionChainResponse_JSON.zip)
+
+---
+## GetExchangeSnapshot:
+This function will return entire Exchange Snapshot as per Period & Periodicity.Below is the sample code to get Last Quote Option Chain:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.exchangesnapshot.get(con,<Exchange>,<Periodicity>,<Period>,<InstrumentType Optional>,<From Optional>,<To Optional>,<nonTraded Optional>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.exchangesnapshot.get(con,'NFO','MINUTE','1')
+print(str(response))
+```  
+<br>**Response**<br>
+
+As a response to above call, client will get entire Exchange Snapshot as per Period & Periodicity. Sample response of 1 minute ExchangeSnapshot in JSON format can be downloaded from [here.](https://globaldatafeeds.in/resources/GetExchangeSnapshot_1Min_JSON.zip)
+
+---
+## SubscribeRealtimeGreeks:
+This function will return Realtime Greek values of single Token, returns market data with 1 second frequency. This data will start once request is sent and will continue till market is open. Below is the sample code to get this data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.realtimegreeks.get(con,<Exchange>,<Token>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.realtimegreeks.get(con,'NFO','70222')
+print(str(response))
+```  
+<br>**Response**<br>
+
+```
+{"Exchange":"NFO","Token":"70222","Timestamp":1660292501,"IV":0.11267127841711044,"Delta":0.2549774944782257,"Theta":-6.706413269042969,"Vega":7.45473575592041,"Gamma":0.0012275002663955092,"IVVwap":0.1129087582230568,"Vanna":2.9635884761810303,"Charm":-0.026660971343517303,"Speed":3.0227099614421604E-06,"Zomma":-0.006058624479919672,"Color":-5.450446406030096E-05,"Volga":4533.580078125,"Veta":132.6668243408203,"ThetaGammaRatio":-5463.4716796875,"ThetaVegaRatio":-0.8996178507804871,"DTR":-0.038019951432943344,"MessageType":"SubscribeRealtimeGreeks"}
+```
+Token number can be get by using **GetInstruments** or **GetInstrumentsOnSearch** request. How to use these funcation can be find [here](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/websockets-api-documentation/getinstruments/).
+
+---
+## GetLastQuoteOptionGreeks:
+This function will return Last Traded Option Greek values of Single Symbol. Below is the sample code to get this data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteoptiongreeks.get(con,<Exchange>,<Token>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteoptiongreeks.get(con,'NFO','70222')
+print(str(response))
+```  
+<br>**Response**<br>
+
+```
+{"Exchange":"NFO","Token":"70222","Timestamp":1660293046,"IV":0.11312421411275864,"Delta":0.2495148926973343,"Theta":-6.668005466461182,"Vega":7.353806018829346,"
+Gamma":0.0012113795382902026,"IVVwap":0.11292107403278352,"Vanna":3.061586618423462,"Charm":-0.027760693803429604,"Speed":3.05659523291979E-06,"Zomma":-0.00570761
+55208051205,"Color":-5.1753351726802066E-05,"Volga":4794.48974609375,"Veta":136.56570434570312,"ThetaGammaRatio":-5504.47265625,"ThetaVegaRatio":-0.9067420959472656,"DTR":-0.037419721484184265,"MessageType":"LastQuoteOptionGreeksResult"}
+```
+Token number can be get by using **GetInstruments** or **GetInstrumentsOnSearch** request. How to use these funcation can be find [here](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/websockets-api-documentation/getinstruments/).
+
+---
+## GetLastQuoteArrayOptionGreeks:
+This function will returns Last Traded Option Greek values of multiple Symbols – max 25 in single call. Below is the sample code to get this data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquotearrayoptiongreeks.get(con,<Exchange>,<Tokens>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquotearrayoptiongreeks.get(con,'NFO','37982,35581')
+print(str(response))
+```  
+<br>**Response**<br>
+
+```
+[{"Exchange":"NFO","Token":"37982","Timestamp":1660293432,"IV":0.11281614750623704,"Delta":0.24168457090854645,"Theta":-6.5438151359558105,"Vega":7.2166
+36657714844,"Gamma":0.0011960952542722223,"IVVwap":0.11291974782943726,"Vanna":3.2351670265197754,"Charm":-0.02933545969426632,"Speed":3.1457541354029672E-06,"Zom
+ma":-0.005284379702061415,"Color":-4.791706669493577E-05,"Volga":5243.822265625,"Veta":142.34922790527344,"ThetaGammaRatio":-5470.9814453125,"ThetaVegaRatio":-0.906767964363098,"DTR":-0.036933280527591705,"MessageType":"LastQuoteOptionGreeksResult"},
+{"Exchange":"NFO","Token":"35581","Timestamp":1660293046,"IV":0.11312421411275864,"Delta":0.2495148926973343,"Theta":-6.668005466461182,"Vega":7.353806018829346,"
+Gamma":0.0012113795382902026,"IVVwap":0.11292107403278352,"Vanna":3.061586618423462,"Charm":-0.027760693803429604,"Speed":3.05659523291979E-06,"Zomma":-0.00570761
+55208051205,"Color":-5.1753351726802066E-05,"Volga":4794.48974609375,"Veta":136.56570434570312,"ThetaGammaRatio":-5504.47265625,"ThetaVegaRatio":-0.9067420959472656,"DTR":-0.037419721484184265}],"MessageType":"LastQuoteArrayOptionGreeksResult"}
+```
+Token number can be get by using **GetInstruments** or **GetInstrumentsOnSearch** request. How to use these funcation can be find [here](https://globaldatafeeds.in/global-datafeeds-apis/global-datafeeds-apis/websockets-api-documentation/getinstruments/).
+
+---
+## GetLastQuoteOptionGreeksChain:
+This function will returns Returns Last Traded Option Greek values of entire OptionChain of requested underlying. Below is the sample code to get this data:
+<br><br>**Syntax:**<br>
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteoptiongreekschain.get(con,<Exchange>,<Product>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.lastquoteoptiongreekschain.get(con,'NFO','NIFTY')
+print(str(response))
+```  
+<br>**Response**<br>
+
+As a response to above call, client will get Last Traded Option Greek values of entire OptionChain. Sample reponse in JSON format can be downloaded from [here.](https://globaldatafeeds.in/resources/OptionGreeksChainWithQuoteResponse_JSON.zip)
+
+---
+## SubscribeOptionChain:
+This function will push realtime option chain updates as per mentioned parameters. Returns array of realtime data of multiple symbols based on "StrikePrice" and "Depth" value.
+<br><br>*Syntax:**<br>
+```
+Import gfdlws as gw
+Import sys
+import time
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+	time.sleep(1)
+response = gw.subscribeoptionchain.get(con,<Exchange>,<instrumentidentifier>,<expiry>,<strikeprice>,<depth>,<OptionType Optional>,<Unsubscribe Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+import time
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+	time.sleep(1)
+response = gw.subscribeoptionchain.get(con, 'NFO', 'NIFTY','26SEP2024','25100','1','','false')
+print(str(response))
+``` 
+<br>**Response**<br>
+``` 
+
+{"Request":{"Exchange":"NFO","Product":"NIFTY","Expiry":"26SEP2024","OptionType":"","StrikePrice":25100.0,"Depth":1,"Unsubscribe":false,"MessageType":"SubscribeOptionChain"},"Result":[{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_PE_25050","LastTradeTime":1726476208,"ServerTime":1726476208,"AverageTradedPrice":84.25,"BuyPrice":74.7,"BuyQty":1225,"Close":106.5,"High":106.5,"Low":72.4,"LastTradePrice":75.0,"LastTradeQty":0,"Open":106.5,"OpenInterest":296475,"QuotationLot":25.0,"SellPrice":75.0,"SellQty":875,"TotalQtyTraded":326350,"Value":27494987.5,"PreOpen":false,"PriceChange":-31.5,"PriceChangePercentage":29.58,"OpenInterestChange":17550,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_CE_25050","LastTradeTime":1726476208,"ServerTime":1726476208,"AverageTradedPrice":464.55,"BuyPrice":480.4,"BuyQty":25,"Close":428.1,"High":505.6,"Low":419.75,"LastTradePrice":480.0,"LastTradeQty":0,"Open":450.0,"OpenInterest":158400,"QuotationLot":25.0,"SellPrice":481.95,"SellQty":25,"TotalQtyTraded":30200,"Value":14029410.0,"PreOpen":false,"PriceChange":51.9,"PriceChangePercentage":12.12,"OpenInterestChange":-9650,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_CE_25100","LastTradeTime":1726476209,"ServerTime":1726476209,"AverageTradedPrice":428.49,"BuyPrice":442.55,"BuyQty":450,"Close":392.35,"High":468.45,"Low":381.65,"LastTradePrice":443.7,"LastTradeQty":0,"Open":403.95,"OpenInterest":1620950,"QuotationLot":25.0,"SellPrice":443.55,"SellQty":225,"TotalQtyTraded":591250,"Value":253344712.5,"PreOpen":false,"PriceChange":51.35,"PriceChangePercentage":13.09,"OpenInterestChange":-79800,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_CE_25150","LastTradeTime":1726476209,"ServerTime":1726476209,"AverageTradedPrice":387.7,"BuyPrice":400.05,"BuyQty":225,"Close":354.25,"High":422.6,"Low":343.35,"LastTradePrice":399.05,"LastTradeQty":0,"Open":383.55,"OpenInterest":103225,"QuotationLot":25.0,"SellPrice":400.7,"SellQty":25,"TotalQtyTraded":104100,"Value":40359570.0,"PreOpen":false,"PriceChange":44.8,"PriceChangePercentage":12.65,"OpenInterestChange":-27725,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_PE_25100","LastTradeTime":1726476209,"ServerTime":1726476209,"AverageTradedPrice":94.34,"BuyPrice":84.15,"BuyQty":275,"Close":118.75,"High":113.15,"Low":81.6,"LastTradePrice":84.35,"LastTradeQty":75,"Open":110.0,"OpenInterest":2841975,"QuotationLot":25.0,"SellPrice":84.45,"SellQty":125,"TotalQtyTraded":1761325,"Value":166163400.5,"PreOpen":false,"PriceChange":-34.4,"PriceChangePercentage":28.97,"OpenInterestChange":149025,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_PE_25150","LastTradeTime":1726476209,"ServerTime":1726476209,"AverageTradedPrice":103.81,"BuyPrice":93.8,"BuyQty":325,"Close":132.4,"High":132.15,"Low":90.7,"LastTradePrice":94.1,"LastTradeQty":0,"Open":132.15,"OpenInterest":213150,"QuotationLot":25.0,"SellPrice":94.05,"SellQty":25,"TotalQtyTraded":323125,"Value":33543606.25,"PreOpen":false,"PriceChange":-38.3,"PriceChangePercentage":-28.93,"OpenInterestChange":3450,"MessageType":"LastQuoteResult"}],"MessageType":"RealtimeOptionChainResult"} 
+``` 
+---
+## SubscribeOptionChainGreeks:
+This function will push realtime option chain updates with greeks data as per mentioned parameters. Returns array of realtime data of multiple symbols based on "StrikePrice" and "Depth" value.  Depth : support values are 1,5,10,15,20, to receive count value up and down from the “Strike Price”.
+<br><br>*Syntax:**<br>
+```
+Import gfdlws as gw
+Import sys
+import time
+
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+	time.sleep(1)
+response = gw.subscribeoptionchaingreeks.get(con,<Exchange>,<instrumentidentifier>,<expiry>,<strikeprice>,<depth>,<OptionType Optional>,<Unsubscribe Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+import time
+
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+	time.sleep(1)
+response = gw.subscribeoptionchaingreeks.get(con, 'NFO', 'NIFTY','26SEP2024','25100','1','','false')
+print(str(response))
+``` 
+<br>**Response**<br>
+``` 
+
+{"Request":{"Exchange":"NFO","Product":"NIFTY","Expiry":"26SEP2024","OptionType":"","StrikePrice":25100.0,"Depth":1,"Unsubscribe":false,"MessageType":"SubscribeOptionChainGreeks"},
+"Result":[{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024PE25050","LastTradeTime":1726480800,"AverageTradedPrice":83.11,"BuyPrice":74.7,"BuyQty":1000,"Close":106.5,"High":106.5,"Low":72.4,"LastTradePrice":76.35,"LastTradeQty":0,"Open":106.5,"OpenInterest":283750,"QuotationLot":25.0,"SellPrice":77.4,"SellQty":75,"TotalQtyTraded":390450,"Value":32450299.5,"PreOpen":false,"PriceChange":-30.15,"PriceChangePercentage":28.31,"OpenInterestChange":4825,"IV":0.13010165095329285,"Delta":0.23550313711166385,"Theta":8.425938606262207,"Vega":12.95369815826416,"Gamma":0.0005616657435894012,"IVVwap":0.13039952516555786,"Vanna":-0.015611101873219011,"Charm":0.01148630678653717,"Speed":-7.616127959408915E-07,"Zomma":-2.167621460102964E-05,"Color":1.403034184477292E-05,"Volga":0.4573160111904144,"Veta":-1.0040597915649414,"ThetaGammaRatio":-15001.6962890625,"ThetaVegaRatio":-0.6504659056663513,"DTR":0.027949780225753784,"MessageType":null},
+{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_CE_25050","LastTradeTime":1726480796,"AverageTradedPrice":465.46,"BuyPrice":460.0,"BuyQty":250,"Close":428.1,"High":505.6,"Low":419.75,"LastTradePrice":466.15,"LastTradeQty":0,"Open":450.0,"OpenInterest":155725,"QuotationLot":25.0,"SellPrice":465.0,"SellQty":25,"TotalQtyTraded":37150,"Value":17291839.0,"PreOpen":false,"PriceChange":38.05,"PriceChangePercentage":8.89,"OpenInterestChange":-12325,"IV":0.1330488920211792,"Delta":0.7596797347068787,"Theta":-8.713056564331055,"Vega":13.098200798034668,"Gamma":0.0005553604569286108,"IVVwap":0.1287773698568344,"Vanna":-0.015087869949638844,"Charm":0.011355339549481869,"Speed":-7.214460424620485E-07,"Zomma":-2.1755882698926143E-05,"Color":1.457587586628506E-5,"Volga":0.4327859580516815,"Veta":-1.0003553628921509,"ThetaGammaRatio":-15689.0126953125,"ThetaVegaRatio":-0.6652101874351501,"DTR":-0.08718866109848022,"MessageType":null},
+{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_CE_25100","LastTradeTime":1726480800,"AverageTradedPrice":429.07,"BuyPrice":425.0,"BuyQty":225,"Close":392.35,"High":468.45,"Low":381.65,"LastTradePrice":426.95,"LastTradeQty":50,"Open":403.95,"OpenInterest":1617150,"QuotationLot":25.0,"SellPrice":426.65,"SellQty":25,"TotalQtyTraded":697250,"Value":299169057.5,"PreOpen":false,"PriceChange":34.6,"PriceChangePercentage":8.82,"OpenInterestChange":-83600,"IV":0.1302393525838852,"Delta":0.734275221824646,"Theta":-8.992115020751953,"Vega":13.809026718139648,"Gamma":0.0005981867434456944,"IVVwap":0.12862445414066315,"Vanna":-0.01430008001625538,"Charm":0.010619006119668484,"Speed":-7.067885121614381E-07,"Zomma":-2.8021186153637242E-05,"Color":1.9248667740612287E-5,"Volga":0.3637496829032898,"Veta":-0.9809419512748718,"ThetaGammaRatio":-15032.287109375,"ThetaVegaRatio":-0.6511766314506531,"DTR":-0.08165767788887024,"MessageType":null},
+{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_CE_25150","LastTradeTime":1726480795,"AverageTradedPrice":388.56,"BuyPrice":381.0,"BuyQty":25,"Close":354.25,"High":422.6,"Low":343.35,"LastTradePrice":381.0,"LastTradeQty":0,"Open":383.55,"OpenInterest":99125,"QuotationLot":25.0,"SellPrice":384.7,"SellQty":25,"TotalQtyTraded":126775,"Value":49259694.0,"PreOpen":false,"PriceChange":26.75,"PriceChangePercentage":7.55,"OpenInterestChange":-31825,"IV":0.12374435365200044,"Delta":0.7135971784591675,"Theta":-.864523887634277,"Vega":14.327936172485352,"Gamma":0.0006531318067573011,"IVVwap":0.1245633065700531,"Vanna":-0.013961371965706348,"Charm":0.009928394109010696,"Speed":-7.333687221944274E-07,"Zomma":-3.535791620379314E-05,"Color":2.370561014686245E-5,"Volga":0.31952711939811707,"Veta":-0.9646798968315125,"ThetaGammaRatio":-13572.3349609375,"ThetaVegaRatio":-0.6186881065368652,"DTR":-0.08050034195184708,"MessageType":null},
+{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_PE_25100","LastTradeTime":1726480800,"AverageTradedPrice":93.09,"BuyPrice":86.0,"BuyQty":250,"Close":118.75,"High":113.15,"Low":81.6,"LastTradePrice":87.3,"LastTradeQty":0,"Open":110.0,"OpenInterest":2844075,"QuotationLot":25.0,"SellPrice":87.15,"SellQty":1000,"TotalQtyTraded":2105850,"Value":196033576.5,"PreOpen":false,"PriceChange":-31.45,"PriceChangePercentage":26.48,"OpenInterestChange":151125,"IV":0.1285407841205597,"Delta":0.26010310649871826,"Theta":8.780183792114258,"Vega":13.661388397216797,"Gamma":0.000599391118157655,"IVVwap":0.1284608244895935,"Vanna":-0.014747226610779762,"Charm":0.0108014652505517,"Speed":-7.361942380157417E-07,"Zomma":-2.757858055701945E-05,"Color":1.8543416445027102E-05,"Volga":0.3853309452533722,"Veta":-0.9857524633407592,"ThetaGammaRatio":-14648.50390625,"ThetaVegaRatio":-0.6427006721496582,"DTR":0.029623880982398987,"MessageType":null},
+{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_NIFTY_26SEP2024_PE_25150","LastTradeTime":1726480799,"AverageTradedPrice":102.57,"BuyPrice":96.0,"BuyQty":200,"Close":132.4,"High":132.15,"Low":90.7,"LastTradePrice":97.5,"LastTradeQty":0,"Open":132.15,"OpenInterest":201775,"QuotationLot":25.0,"SellPrice":97.55,"SellQty":1000,"TotalQtyTraded":391850,"Value":40192054.5,"PreOpen":false,"PriceChange":-34.9,"PriceChangePercentage":26.36,"OpenInterestChange":7925,"IV":0.12574569880962372,"Delta":0.2904161512851715,"Theta":9.066729545593262,"Vega":14.421072006225586,"Gamma":0.0006470188964158297,"IVVwap":0.1258966326713562,"Vanna":-0.013529115356504915,"Charm":0.009775685146450996,"Speed":-7.010408467067465E-07,"Zomma":-3.505684799165465E-05,"Color":2.397120442765299E-05,"Volga":0.3033415973186493,"Veta":-0.9612189531326294,"ThetaGammaRatio":14013.0830078125,"ThetaVegaRatio":0.6287139654159546,"DTR":0.03203096985816956,"MessageType":null}],"MessageType":"RealtimeOptionChainGreeksResult"}``` 
+
+``` 
+---
+## SubscribeTopGainersLosers:
+This function will push realtime gainers/losers top "Count" for the subscribed "Exchange" from server. So you will need to send this request only once and subscribe for the data. Supported values: 5, 10, 15, 20 ,to receive count of Top N of Gainers and Top N of Losers
+<br><br>*Syntax:**<br>
+```
+Import gfdlws as gw
+Import sys
+import time
+
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+	time.sleep(1)
+response = gw.subscribetopgainerslosers.get(con,<Exchange>,<Count>,<Unsubscribe Optional [true]/[false][default=false]>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+import time
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+while True:
+	time.sleep(1)
+response = gw.subscribetopgainerslosers.get(con, 'NFO',5,’true’)
+print(str(response))
+``` 
+<br>**Response**<br>
+``` 
+
+{"Request":{"Exchange":"NFO","Count":5,"Unsubscribe":false,"MessageType":"SubscribeTopGainersLosers"},"Result":[{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_BAJAJ-AUTO_26SEP2024_CE_13400","LastTradeTime":1726480774,"ServerTime":1726480775,"AverageTradedPrice":6.64,"BuyPrice":6.3,"BuyQty":3900,"Close":0.45,"High":7.15,"Low":5.35,"LastTradePrice":6.3,"LastTradeQty":150,"Open":5.35,"OpenInterest":1200,"QuotationLot":75.0,"SellPrice":7.15,"SellQty":75,"TotalQtyTraded":1500,"Value":9960.0,"PreOpen":false,"PriceChange":5.85,"PriceChangePercentage":1300.0,"OpenInterestChange":1200,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_GRANULES_26SEP2024_CE_655","LastTradeTime":1726472590,"ServerTime":1726472590,"AverageTradedPrice":0.6,"BuyPrice":0.6,"BuyQty":6000,"Close":0.05,"High":0.6,"Low":0.6,"LastTradePrice":0.6,"LastTradeQty":4000,"Open":0.6,"OpenInterest":176000,"QuotationLot":2000.0,"SellPrice":3.3,"SellQty":4000,"TotalQtyTraded":4000,"Value":2400.0,"PreOpen":false,"PriceChange":0.55,"PriceChangePercentage":1100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_IPCALAB_26SEP2024_PE_1220","LastTradeTime":1726478445,"ServerTime":1726478444,"AverageTradedPrice":3.14,"BuyPrice":0.3,"BuyQty":650,"Close":0.65,"High":5.8,"Low":0.6,"LastTradePrice":5.8,"LastTradeQty":1950,"Open":0.6,"OpenInterest":3900,"QuotationLot":650.0,"SellPrice":4.95,"SellQty":650,"TotalQtyTraded":3250,"Value":10205.0,"PreOpen":false,"PriceChange":5.15,"PriceChangePercentage":792.31,"OpenInterestChange":650,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_MRF_26SEP2024_CE_161000","LastTradeTime":1726480589,"ServerTime":1726480589,"AverageTradedPrice":21.32,"BuyPrice":3.45,"BuyQty":35,"Close":3.05,"High":21.7,"Low":20.95,"LastTradePrice":21.7,"LastTradeQty":5,"Open":20.95,"OpenInterest":10,"QuotationLot":5.0,"SellPrice":0.0,"SellQty":0,"TotalQtyTraded":10,"Value":213.2,"PreOpen":false,"PriceChange":18.65,"PriceChangePercentage":611.48,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_WIPRO_31OCT2024_PE_400","LastTradeTime":1726478956,"ServerTime":1726478957,"AverageTradedPrice":0.82,"BuyPrice":0.3,"BuyQty":1500,"Close":0.55,"High":3.0,"Low":0.35,"LastTradePrice":3.0,"LastTradeQty":7500,"Open":0.6,"OpenInterest":27000,"QuotationLot":1500.0,"SellPrice":1.0,"SellQty":6000,"TotalQtyTraded":22500,"Value":18450.0,"PreOpen":false,"PriceChange":2.45,"PriceChangePercentage":445.45,"OpenInterestChange":-1500,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_FINNIFTY_24SEP2024_PE_22250","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":0.0,"BuyQty":0,"Close":89.8,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":25.0,"SellPrice":19.0,"SellQty":300,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-89.8,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_FINNIFTY_24SEP2024_CE_24750","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":0.0,"BuyQty":0,"Close":182.3,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":25.0,"SellPrice":69.0,"SellQty":300,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-182.3,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_BANKNIFTY_27NOV2024_PE_43000","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":5.15,"BuyQty":900,"Close":67.4,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":15.0,"SellPrice":0.0,"SellQty":0,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-67.4,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_FINNIFTY_24SEP2024_PE_22350","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":0.0,"BuyQty":0,"Close":104.75,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":25.0,"SellPrice":19.0,"SellQty":600,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-104.75,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_FINNIFTY_24SEP2024_CE_24350","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":0.0,"BuyQty":0,"Close":286.7,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":25.0,"SellPrice":199.0,"SellQty":300,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-286.7,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"}],"MessageType":"RealtimeGainersLosersResult"}
+``` 
+
+---
+## GetTopGainersLosers:
+This function will return  gainers/losers top "Count" for the given  "Exchange" from server. So you will need to send this request OnDemand basis and will deliver the data next moment. Supported values: 5, 10, 15, 20 ,to receive count of Top N of Gainers and Top N of Losers
+<br><br>*Syntax:**<br>
+```
+Import gfdlws as gw
+Import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.topgainerslosers.get(con,<Exchange>,<Count>)
+print(str(response))
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.topgainerslosers.get(con, 'NFO',5)
+print(str(response))
+
+``` 
+<br>**Response**<br>
+
+``` 
+
+{"Result":[{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_BAJAJ-AUTO_26SEP2024_CE_13400","LastTradeTime":1726480774,"ServerTime":1726480775,"AverageTradedPrice":6.64,"BuyPrice":6.3,"BuyQty":3900,"Close":0.45,"High":7.15,"Low":5.35,"LastTradePrice":6.3,"LastTradeQty":150,"Open":5.35,"OpenInterest":1200,"QuotationLot":75.0,"SellPrice":7.15,"SellQty":75,"TotalQtyTraded":1500,"Value":9960.0,"PreOpen":false,"PriceChange":5.85,"PriceChangePercentage":1300.0,"OpenInterestChange":1200,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_GRANULES_26SEP2024_CE_655","LastTradeTime":1726472590,"ServerTime":1726472590,"AverageTradedPrice":0.6,"BuyPrice":0.6,"BuyQty":6000,"Close":0.05,"High":0.6,"Low":0.6,"LastTradePrice":0.6,"LastTradeQty":4000,"Open":0.6,"OpenInterest":176000,"QuotationLot":2000.0,"SellPrice":3.3,"SellQty":4000,"TotalQtyTraded":4000,"Value":2400.0,"PreOpen":false,"PriceChange":0.55,"PriceChangePercentage":1100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_IPCALAB_26SEP2024_PE_1220","LastTradeTime":1726478445,"ServerTime":1726478445,"AverageTradedPrice":3.14,"BuyPrice":0.3,"BuyQty":650,"Close":0.65,"High":5.8,"Low":0.6,"LastTradePrice":5.8,"LastTradeQty":1950,"Open":0.6,"OpenInterest":3900,"QuotationLot":650.0,"SellPrice":4.95,"SellQty":650,"TotalQtyTraded":3250,"Value":10205.0,"PreOpen":false,"PriceChange":5.15,"PriceChangePercentage":792.31,"OpenInterestChange":650,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_MRF_26SEP2024_CE_161000","LastTradeTime":1726480589,"ServerTime":1726480589,"AverageTradedPrice":21.32,"BuyPrice":3.45,"BuyQty":35,"Close":3.05,"High":21.7,"Low":20.95,"LastTradePrice":21.7,"LastTradeQty":5,"Open":20.95,"OpenInterest":10,"QuotationLot":5.0,"SellPrice":0.0,"SellQty":0,"TotalQtyTraded":10,"Value":213.2,"PreOpen":false,"PriceChange":18.65,"PriceChangePercentage":611.48,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTSTK_WIPRO_31OCT2024_PE_400","LastTradeTime":1726478956,"ServerTime":1726478956,"AverageTradedPrice":0.82,"BuyPrice":0.3,"BuyQty":1500,"Close":0.55,"High":3.0,"Low":0.35,"LastTradePrice":3.0,"LastTradeQty":7500,"Open":0.6,"OpenInterest":27000,"QuotationLot":1500.0,"SellPrice":1.0,"SellQty":6000,"TotalQtyTraded":22500,"Value":18450.0,"PreOpen":false,"PriceChange":2.45,"PriceChangePercentage":445.45,"OpenInterestChange":-1500,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_FINNIFTY_24SEP2024_PE_22250","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":0.0,"BuyQty":0,"Close":89.8,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":25.0,"SellPrice":19.0,"SellQty":300,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-89.8,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_FINNIFTY_24SEP2024_CE_24750","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":0.0,"BuyQty":0,"Close":182.3,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":25.0,"SellPrice":69.0,"SellQty":300,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-182.3,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_BANKNIFTY_27NOV2024_PE_43000","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":5.15,"BuyQty":900,"Close":67.4,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":15.0,"SellPrice":0.0,"SellQty":0,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-67.4,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_FINNIFTY_24SEP2024_PE_22350","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":0.0,"BuyQty":0,"Close":104.75,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":25.0,"SellPrice":19.0,"SellQty":600,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-104.75,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"},{"Exchange":"NFO","InstrumentIdentifier":"OPTIDX_FINNIFTY_24SEP2024_CE_24350","LastTradeTime":1726458300,"ServerTime":1726458300,"AverageTradedPrice":0.0,"BuyPrice":0.0,"BuyQty":0,"Close":286.7,"High":0.0,"Low":0.0,"LastTradePrice":0.0,"LastTradeQty":0,"Open":0.0,"OpenInterest":0,"QuotationLot":25.0,"SellPrice":199.0,"SellQty":300,"TotalQtyTraded":0,"Value":0.0,"PreOpen":false,"PriceChange":-286.7,"PriceChangePercentage":-100.0,"OpenInterestChange":0,"MessageType":"LastQuoteResult"}],"MessageType":"LastQuoteArrayResult"}
+
+``` 
+---
+## GetHistoryGreeks:
+This function will returns historical data of SINGLE SYMBOL as per "Periodicity" & "Period" mentioned.This is a very powerful function which supports many optional parameters to download full / incremental data
+<br><br>*Syntax:**<br>
+```
+Import gfdlws as gw
+Import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response = gw.historygreeks.get(con,<Exchange>,< InstrumentIdentifier>,<isShortIdentifier>, <max Optional>, <from Optional>,<to Optional>)
+print(str(response))
+
+```
+<br>**Example**
+```
+import gfdlws as gw
+import sys
+
+con = gw.ws.connect(<EndPoint>, <API Key>)
+response=historygreeks.get(con,"NFO","BANKNIFTY18SEP2451000CE","true",10) 
+print(str(response))
+
+``` 
+<br>**Response**<br>
+
+``` 
+
+{"Request":{"Exchange":"NFO","InstrumentIdentifier":"BANKNIFTY18SEP2451000CE","IsShortIdentifier":true,"From":0,"To":0,"Max":10,"UserTag":null,"MessageType":"GetHistoryGreeks"},
+"Result":[{"Token":"44739","Timestamp":1726480798,"IV":0.19,"Delta":0.95,"Theta":-18.1,"Vega":3.84,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.04,"Speed":-0.0,"Zomma":0.0,"Color":0.0,"Volga":0.56,"Veta":3.15,"ThetaGammaRatio":132830.83,"ThetaVegaRatio":4.72,"DTR":0.05},
+{"Token":"44739","Timestamp":1726480797,"IV":0.19,"Delta":0.95,"Theta":-19.58,"Vega":4.07,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.04,"Speed":-0.0,"Zomma":0.0,"Color":-0.0,"Volga":0.55,"Veta":-3.3,"ThetaGammaRatio":-138485.17,"ThetaVegaRatio":-4.82,"DTR":-0.05},
+{"Token":"44739","Timestamp":1726480796,"IV":0.2,"Delta":0.94,"Theta":-23.48,"Vega":4.63,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.05,"Speed":-0.0,"Zomma":0.0,"Color":-0.0,"Volga":0.53,"Veta":-3.64,"ThetaGammaRatio":-153494.38,"ThetaVegaRatio":-5.07,"DTR":-0.04},
+{"Token":"44739","Timestamp":1726480794,"IV":0.19,"Delta":0.95,"Theta":-18.29,"Vega":3.87,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.04,"Speed":-0.0,"Zomma":0.0,"Color":-0.0,"Volga":0.56,"Veta":-3.17,"ThetaGammaRatio":-133675.45,"ThetaVegaRatio":-4.73,"DTR":-0.05},
+{"Token":"44739","Timestamp":1726480779,"IV":0.2,"Delta":0.94,"Theta":-23.72,"Vega":4.67,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.05,"Speed":-0.0,"Zomma":0.0,"Color":-0.0,"Volga":0.53,"Veta":-3.66,"ThetaGammaRatio":-154210.05,"ThetaVegaRatio":-5.08,"DTR":-0.04},
+{"Token":"44739","Timestamp":1726480777,"IV":0.2,"Delta":0.94,"Theta":-21.39,"Vega":4.34,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.04,"Speed":-0.0,"Zomma":0.0,"Color":-0.0,"Volga":0.55,"Veta":-3.47,"ThetaGammaRatio":-145127.52,"ThetaVegaRatio":-4.93,"DTR":-0.04},
+{"Token":"44739","Timestamp":1726480776,"IV":0.19,"Delta":0.95,"Theta":-19.61,"Vega":4.08,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.04,"Speed":-0.0,"Zomma":0.0,"Color":-0.0,"Volga":0.55,"Veta":-3.3,"ThetaGammaRatio":-138375.72,"ThetaVegaRatio":-4.81,"DTR":-0.05},
+{"Token":"44739","Timestamp":1726480775,"IV":0.2,"Delta":0.94,"Theta":-22.73,"Vega":4.53,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.05,"Speed":-0.0,"Zomma":0.0,"Color":-0.0,"Volga":0.54,"Veta":-3.58,"ThetaGammaRatio":-150248.41,"ThetaVegaRatio":-5.01,"DTR":-0.04},
+{"Token":"44739","Timestamp":1726480774,"IV":0.2,"Delta":0.94,"Theta":-21.74,"Vega":4.39,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.04,"Speed":-0.0,"Zomma":0.0,"Color":-0.0,"Volga":0.54,"Veta":-3.5,"ThetaGammaRatio":-146333.08,"ThetaVegaRatio":-4.95,"DTR":-0.04},
+{"Token":"44739","Timestamp":1726480773,"IV":0.2,"Delta":0.95,"Theta":-20.82,"Vega":4.26,"Gamma":0.0,"IVVwap":0.18,"Vanna":-0.01,"Charm":0.04,"Speed":-0.0,"Zomma":0.0,"Color":-0.0,"Volga":0.55,"Veta":-3.41,"ThetaGammaRatio":-143024.06,"ThetaVegaRatio":-4.89,"DTR":-0.05}],"MessageType":"HistoryGreeksResult"}
+``` 
+
+
+
+
+
+
+# Parameter List
+| Parameter                                       | Description                                                                                                                                                                     |
+|-------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Exchange**                                    | Name of supported exchange.                                                                                                                                                     |
+| **InstrumentIdentifier**                        | Name of the symbol                                                                                                                                                              |
+| **InstrumentIdentifiers**                       | List of symbols names maximum 25 symbols can be added in list.                                                                                                                  |
+| **Unsubscribe**                                 | Buy default subscribes to Realtime data. If [true], instrumentIdentifier is unsubscribed                                                                                        |
+| **Periodicity**                                 | String value of required periodicity.<br>*[“TICK”/“MINUTE”/“HOUR”/“DAY”/“WEEK”/“MONTH”, default = “TICK”]*                                                                      |
+| **Period**                                      | Period for historical data. Can be applied for [MINUTE]/[HOUR]/[DAY].<br>Periodicity types *[Numerical value 1, 2, 3…, default = 1]*                                            |
+| **From**                                        | It means starting timestamp for called historical data.                                                                                                                         |
+| **To**                                          | It means ending timestamp for request.                                                                                                                                          |
+| **isShortIdentifier**<br>**isShortIdentifiers** | Functions will use short instrument identifier format if set as [true]. Example of ShortIdentifiers are NIFTY25MAR21FUT, RELIANCE25MAR21FUT, NIFTY25MAR2115000CE, etc.          |
+| **MAX**                                         | It is the limit returned data records.                                                                                                                                          |
+| **Product**                                     | Name of supported Product. To get the list of product refer to the above **Product** function.                                                                                  |
+| **Expiry**                                      | Expiry dates for the exchange. To get the list of expiries refer to the above **Expiry** function.                                                                              |
+| **OptionType**                                  | Expiry dates for the exchange. To get the list of OptionType refer to the above **OptionType** function.                                                                        |
+| **StrikePrice**                                 | Expiry dates for the exchange. To get the list of StrikePrice refer to the above **StrikePrice** function.                                                                      |
+| **Token**<br>**Tokens**                         | Token numbers of instruments. <br> To get the token refer to the above **GetInstruments** or **GetInstrumentsOnSearch** functions.                                              |
+| **userTag**                                     | It will be string which returns with response.                                                                                                                                  |
+| **onlyActive**                                  | By default, function will return only active instruments.<br>[true]/[false], default = [true]                                                                                   |
+| **nonTraded**                                   | When true, results are sent with data of even non traded instruments. When false, data of only traded instruments during that period is sent. Optional, default value is “false” |
+| **Depth**                                       | when Depth given to the as 1,5,10,20 according to it will deliver the response of Both CE/PE after given strike price above and below.                                          |
+| **Count**                                       | when Count given as the 1,5,10,20 , it will delivery you teh response of the topaginer and loser append to teh number fo count given to he script                               |
+| **AdjustSplits**                                | When true, Sent the data with adjustedSplits . When false, it will sent teh data without SplitAdjusted  Optional, default value is “true”                                       |
