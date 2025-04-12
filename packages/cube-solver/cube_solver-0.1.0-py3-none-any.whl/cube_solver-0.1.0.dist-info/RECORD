@@ -1,0 +1,10 @@
+cube_solver/__init__.py,sha256=01hYR2aYWlCBC1sCdr328skcKen-9SCLxtozbPQlcRE,131
+cube_solver/cli.py,sha256=_Al8sCmmq-AatkxcVNmfuxu__ebf0Pay87HyFurnSno,420
+cube_solver/main.py,sha256=syDn8TjOC5wSSe2uEzoU0STfBBFpehSx4Fv8_2QGIR4,64
+cube_solver-0.1.0.dist-info/licenses/AUTHORS.rst,sha256=pbzqcyGAYlojhZCEVZ73iDr8U5kF1Z84NfTplsvef6k,158
+cube_solver-0.1.0.dist-info/licenses/LICENSE,sha256=ldu3eXb-0XXiLmfgu8vBCjQrZpj4vm_xpQgx9Ocvmr8,1072
+cube_solver-0.1.0.dist-info/METADATA,sha256=8u-UVWCJbbVcQdWVe8ceVHNYIRMoNrrz_Cs_8s1whU8,1950
+cube_solver-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cube_solver-0.1.0.dist-info/entry_points.txt,sha256=QfjtPDXfkv9PCXf7gqjVx0AzvBHT-ocNq531X7q7v18,52
+cube_solver-0.1.0.dist-info/top_level.txt,sha256=OXBt9fIKA5Jipm0M_JOFzy8hqJplDNsx50-Cjbo_RZI,12
+cube_solver-0.1.0.dist-info/RECORD,,
