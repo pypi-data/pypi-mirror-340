@@ -1,0 +1,16 @@
+discogs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discogs/chunker.py,sha256=BvDFSyxDuB1IX5OZ4EF1LVmfPv5Ao4zxU8NbZRW-bMw,3720
+discogs/config.py,sha256=mL-sSUxi7CH9e3XhQaslKQbK223jGGvhQl7l5Mx9Nvo,2561
+discogs/converter.py,sha256=jZFATXNahJE3I2RYZd0w9X4TZ_tb9qWRNgeYSSeLNiQ,7011
+discogs/deleter.py,sha256=f3eYk9CV6gzEe6n68HuYWl6uI-f0kQnolzK5UM8_ZZQ,1626
+discogs/downloader.py,sha256=tUxuGBrvi5iBP6QkIqqc-A7BnA5pJiOGn0Eg2REDAJ0,4432
+discogs/extractor.py,sha256=-MrIuurPtrAcPJY5Bf4J64pSRzi_iYacc671KBYh6tI,3063
+discogs/main.py,sha256=G3odBKXCbIf9LUQ6OOmSOWKqid8EA3k_s4QqABjreh4,4812
+discogs/scraper.py,sha256=l4EGPmZz1FZLw300F1GgA_kEs6kUlm3XoNgsS-zsbr4,3922
+discogs/selector.py,sha256=JIvNqkp0aezzMjuL_LxBasPaPpt9nKe2rxCQXkAeXZQ,8680
+discogs/utils.py,sha256=Cma8KUUNOhHkS1PJmK3SEMDLM5AeaTatw20cjOuyKp4,2992
+discogsdataprocessorcli-1.6.dist-info/METADATA,sha256=PwHdajkPmDBwfmwlwOOTZ0MPfhiRiRLvIYdF6JMOuyk,2757
+discogsdataprocessorcli-1.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+discogsdataprocessorcli-1.6.dist-info/entry_points.txt,sha256=XcqYD0jR7holJqYoTJrommsoHJGM3RHWW2hBwGqnFyk,52
+discogsdataprocessorcli-1.6.dist-info/top_level.txt,sha256=js1WLfs7_HtBVTsMrUKWsxr9KWphFGtdMo647NLcMlw,8
+discogsdataprocessorcli-1.6.dist-info/RECORD,,
