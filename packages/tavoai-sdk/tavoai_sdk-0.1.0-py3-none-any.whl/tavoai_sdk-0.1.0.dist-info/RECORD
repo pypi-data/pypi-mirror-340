@@ -1,0 +1,13 @@
+tavoai/__init__.py,sha256=SjNeDakdyP9D4hJQnbGvrhh_regrc1vo9j_Nw8vsO1c,72
+tavoai/py.typed,sha256=Nqnn8clbgv-5l0PgxcTOldg8mkMKrFn4TvPL-rYUUGg,1
+tavoai/sdk/__init__.py,sha256=qTh8fnpE-k5pPoXfUv9CRtVLvjcbiQkF_2C8w_SOK5c,305
+tavoai/sdk/client.py,sha256=chu97-fp-t9aLSnavAksw7UpgK9zz7YKy5ie4goWokE,8072
+tavoai/sdk/decorators.py,sha256=YEnQMBEFJFovVErU7UcxxBuilVdITMHawDU_kD0XT7c,5876
+tavoai/sdk/exceptions.py,sha256=V-LzghwPbUud5w9zENpi-pomauhG44IyUfcN_RuWPRk,481
+tavoai/sdk/models.py,sha256=5_A5QvSOrvPZgz_awBFsBvOyr2kR_ffnkyc4sZYe69g,1166
+tavoai/sdk/utils.py,sha256=ph3tuOQF8o_4X31E4z_gcQDp6Up4wYIcvI16rWTbNq0,1643
+tavoai_sdk-0.1.0.dist-info/licenses/LICENSE,sha256=LT3THRoF3cySOJzY7nCtG9DX7RLvykhZVdVDIcMrJno,1063
+tavoai_sdk-0.1.0.dist-info/METADATA,sha256=KJob0xiQHyGsSwDKm4Mu9lt5mdDUabndG_B3FfFkFMg,6898
+tavoai_sdk-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tavoai_sdk-0.1.0.dist-info/top_level.txt,sha256=lpPBuwYCjZ0qyTZ-1GzIKF6w94ZPJoWGCyOPbJOJRz4,7
+tavoai_sdk-0.1.0.dist-info/RECORD,,
