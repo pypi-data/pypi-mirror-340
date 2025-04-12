@@ -1,0 +1,15 @@
+[project]
+name = "vifapi"
+version = "0.0.4"
+description = "fastapi api for vif"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.12",
+    "uvicorn>=0.34.0",
+    "vigentools>=0.0.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
