@@ -1,0 +1,2 @@
+[console_scripts]
+vl16008uno-demo = vl16008uno.demo:main
