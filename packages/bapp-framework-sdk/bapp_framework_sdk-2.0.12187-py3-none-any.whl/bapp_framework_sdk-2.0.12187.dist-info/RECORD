@@ -1,0 +1,5 @@
+bapp_framework_sdk/__init__.py,sha256=BfFVKneUiCd0Vj7IPVDPJw6oMdDYX8VFj0UUL6B6M7Q,44
+bapp_framework_sdk/client.py,sha256=wmmQxYszBXt0G71DujP1Qi_9lcAcWL-_3lQerNeZpIM,5398
+bapp_framework_sdk-2.0.12187.dist-info/METADATA,sha256=SRQlmHV80E-a4oeBqCwT7aKKTFx8BXs9rkNCTv3dnOk,1114
+bapp_framework_sdk-2.0.12187.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+bapp_framework_sdk-2.0.12187.dist-info/RECORD,,
