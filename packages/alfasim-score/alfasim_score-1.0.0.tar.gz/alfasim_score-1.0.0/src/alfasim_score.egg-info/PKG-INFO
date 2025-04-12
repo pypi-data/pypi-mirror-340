@@ -1,0 +1,198 @@
+Metadata-Version: 2.4
+Name: alfasim-score
+Version: 1.0.0
+Summary: Python package to convert the SCORE input JSON to Alfacase
+Home-page: https://github.com/ESSS/alfasim-score
+Author: ESSS
+Author-email: foss@esss.co
+License: MIT license
+Keywords: ALFAsim,Score
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: alfasim-sdk==1.0.0
+Requires-Dist: attrs>=18.1.0
+Requires-Dist: numpy>=1.11.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: oop-ext>=1.1
+Requires-Dist: typing_extensions
+Provides-Extra: testing
+Requires-Dist: codecov; extra == "testing"
+Requires-Dist: mypy; extra == "testing"
+Requires-Dist: pre-commit; extra == "testing"
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Requires-Dist: pytest-mock; extra == "testing"
+Requires-Dist: pytest-regressions; extra == "testing"
+Requires-Dist: tox; extra == "testing"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+===============
+ALFAsim Score
+===============
+
+
+.. image:: https://img.shields.io/pypi/v/alfasim-score.svg
+    :target: https://pypi.python.org/pypi/alfasim-score
+
+.. image:: https://img.shields.io/pypi/pyversions/alfasim-score.svg
+    :target: https://pypi.org/project/alfasim-score
+
+.. image:: https://github.com/ESSS/alfasim-score/workflows/test/badge.svg
+    :target: https://github.com/ESSS/alfasim-score/actions
+
+.. image:: https://codecov.io/gh/ESSS/alfasim-score/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/ESSS/alfasim-score
+
+.. image:: https://img.shields.io/readthedocs/alfasim-score.svg
+    :target: https://alfasim-score.readthedocs.io/en/latest/
+
+.. image:: https://sonarcloud.io/api/project_badges/measure?project=ESSS_alfasim-score&metric=alert_status
+    :target: https://sonarcloud.io/project/overview?id=ESSS_alfasim-score
+
+
+What is alfasim-score?
+=======================
+
+Python package to convert the SCORE input JSON to Alfacase (ALFAsim input file).
+
+
+Features
+-----------
+
+* Converter from Score input JSON to Alfacase
+* Converter from Wellprop pvt tables to `.tab` pvt table format
+* Parser for the ALFAsim results and generate a JSON compatible with SCORE
+
+How to use it
+-------------
+#. First, the user needs to create an instance of the converter::
+
+    from pathlib import Path
+    from alfasim_score.converter.alfacase.alfasim_score_converter import AlfasimScoreConverter
+    # path indicating where the SCORE input file is
+    score_input_filepath = Path("path/to/score_input.json")
+    # path indicating where the output file (converted from ALFAsim results) should be created
+    score_output_filepath = Path("path/to/score_output_result.json")
+    # then create a converter instance
+    alfacase_converter = AlfasimScoreConverter(score_input_filepath, score_output_filepath)
+
+#. To convert the SCORE input into an alfacase file, the user can do the following::
+
+    alfacase_filepath = Path("path/where/save/converted_score.alfacase")
+    alfacase_converter.generate_alfasim_input_file(alfacase_filepath)
+
+#. Run the ALFAsim with the generated file (and the pvt tables in the same folder)
+
+#. Once the result file of ALFAsim is generated, one can call the converter for the output file::
+
+    alfasim_results_directory = Path("path/to/alfasim_results_folder")
+    alfacase_converter.generate_score_output_file(alfasim_results_directory)
+
+#. The user also must remember to convert and save the pvt table (as `.tab` file) if wellprop tables are being used::
+
+    from alfasim_score.converter.wellprop.wellprop_pvt_table_converter import WellpropToPvtConverter
+    table_converter = WellpropToPvtConverter(Path("name_of_folder_with_wellprop_tables"))
+    table_converter.generate_pvt_table_file(Path("name_of_folder_to_save_converted_pvt_table"))
+
+Development
+-----------
+
+For complete description of what type of contributions are possible,
+see the full `CONTRIBUTING <CONTRIBUTING.rst>`_ guide.
+
+Here is a quick summary of the steps necessary to setup your environment to contribute to ``alfasim-score``.
+
+#. Create a virtual environment and activate it::
+
+    $ python -m virtualenv .env
+    $ .env\Scripts\activate  # windows
+    $ source .env/bin/activate  # linux
+
+
+   .. note::
+
+       If you use ``conda``, you can install ``virtualenv`` in the root environment::
+
+           $ conda install -n root virtualenv
+
+       Don't worry as this is safe to do.
+
+#. Update ``pip``::
+
+    $ python -m pip install -U pip
+
+#. Install development dependencies::
+
+    $ pip install -e .[testing]
+
+#. Install pre-commit::
+
+    $ pre-commit install
+
+#. Run tests::
+
+    $ pytest --pyargs alfasim_score
+
+#. Generate docs locally::
+
+    $ tox -e docs
+
+   The documentation files will be generated in ``docs/_build``.
+
+Release
+-------
+
+A reminder for the maintainers on how to make a new release.
+
+Note that the VERSION should folow the semantic versioning as X.Y.Z
+Ex.: v1.0.5
+
+1. Create a ``release-VERSION`` branch from ``upstream/master``.
+2. Update ``CHANGELOG.rst``.
+3. Push a branch with the changes.
+4. Once all builds pass, push a ``VERSION`` tag to ``upstream``. Ex: ``git tag v1.0.5; git push origin --tags``
+5. Merge the PR.
+
+
+.. _`GitHub page` :                   https://github.com/ESSS/alfasim-score
+.. _pytest:                           https://github.com/pytest-dev/pytest
+.. _tox:                              https://github.com/tox-dev/tox
+
+
+
+0.1.0 (2024-06-10)
+------------------
+
+* First release on PyPI.
+
+
+0.2.0 (2024-12-18)
+------------------
+
+* Improvements on API.
+* Add documentation on how to use the API.
+
+1.0.0 (2025-04-11)
+------------------
+
+* Update the alfacase converter to create files compatible with ALFAsim APB plugin v1.1.0
+* Add new converter for pvt tables from wellprops to `.tab` format
