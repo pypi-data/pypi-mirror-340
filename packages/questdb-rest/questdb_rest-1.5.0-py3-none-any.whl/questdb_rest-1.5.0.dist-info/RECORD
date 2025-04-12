@@ -1,0 +1,7 @@
+questdb_rest/__init__.py,sha256=LMdQInwmr9gJvEA-DcSac1GnIwxoZNRGS6Lqyf1Yfpo,26735
+questdb_rest/cli.py,sha256=DBSo4mQ5voNb-YlmBUgsIcNegnyX3Qfp0Lp4_oNra8o,66029
+questdb_rest-1.5.0.dist-info/LICENSE,sha256=LB8eNJVIiCiQEt0mw4nH-ClNTAlBPKvKWhZGo7aNnl4,1106
+questdb_rest-1.5.0.dist-info/METADATA,sha256=qLmzj1ErqkWYONTLBLKii49Ze2HS2pkr5C3-KrmzB5Y,9557
+questdb_rest-1.5.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+questdb_rest-1.5.0.dist-info/entry_points.txt,sha256=pmnoPpX9L5VquvlPY5fm5iZjeX76s1zAqVlqD8GjkGk,83
+questdb_rest-1.5.0.dist-info/RECORD,,
