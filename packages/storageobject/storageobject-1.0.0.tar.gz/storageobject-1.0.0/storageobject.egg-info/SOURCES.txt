@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+storageObject/__init__.py
+storageObject/storageobject.py
+storageobject.egg-info/PKG-INFO
+storageobject.egg-info/SOURCES.txt
+storageobject.egg-info/dependency_links.txt
+storageobject.egg-info/top_level.txt
+tests/test_storageobject.py
