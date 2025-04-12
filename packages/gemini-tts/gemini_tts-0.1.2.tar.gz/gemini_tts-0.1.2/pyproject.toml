@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemini-tts"
+version = "0.1.2"
+authors = [
+    {name = "David Suragan", email = "dauitsuragan002@gmail.com"},
+]
+description = "A Python package for Gemini Text-to-Speech using the official API."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "websockets>=12.0",
+    "wave>=0.0.2",
+]
+keywords = ["gemini", "tts", "text-to-speech", "google", "ai"]
+
+[project.optional-dependencies]
+audio = ["pygame>=2.0.0"]
+
+[project.urls]
+"Homepage" = "https://github.com/dauitsuragan002/gemini-tts"
+"Bug Tracker" = "https://github.com/dauitsuragan002/gemini-tts/issues" 
