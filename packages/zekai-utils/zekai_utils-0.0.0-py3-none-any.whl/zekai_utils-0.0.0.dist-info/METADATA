@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: zekai_utils
+Version: 0.0.0
+Summary: Zekai's python utils
+Home-page: 
+Author: Zekai Zhang
+Author-email: justinzzk2002@163.com
+License: MIT
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: Pillow
+Requires-Dist: opencv-python
+Requires-Dist: imageio
+Requires-Dist: safetensors
+Requires-Dist: loguru
+Requires-Dist: tqdm
+Requires-Dist: colorama
+
+python setup.py sdist bdist_wheel
+pip install twine
+twine upload dist/*
