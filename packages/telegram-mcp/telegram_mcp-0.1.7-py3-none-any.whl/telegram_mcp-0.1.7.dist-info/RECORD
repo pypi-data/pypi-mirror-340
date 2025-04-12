@@ -1,0 +1,13 @@
+telegram_mcp/__init__.py,sha256=L_dW0HYlYEebZWzWERn_5pHwzONtpwWgblB5_1C6iPo,117
+telegram_mcp/__main__.py,sha256=fKD8l3SgraUDJxfw3TCcPGK2CaoFrsMoVleLQLuchZo,825
+telegram_mcp/cli.py,sha256=I-aMfQvtk4WCsp9hsowKmn1ygLwdsIUh4IdqZ-xUyCE,5690
+telegram_mcp/client.py,sha256=1Jn3dBpw3OQKIuS6ZNTyJFaCSaX_wdOKb7NQgwn-s5k,22589
+telegram_mcp/config.py,sha256=XlXwonoTp-rd39aSaYpqQy87kjOOMRk4NRyw2Ssog9g,996
+telegram_mcp/install.py,sha256=4aq3uvUZFLVOf9PK_lDAbjYAK40XoS4Q6o3QxHT3JQU,14628
+telegram_mcp/schemas.py,sha256=Kz0Dbo1l0DNTFGfmDuHJVmFtkuc3TQlDwPnmhKIlUQg,3421
+telegram_mcp/server.py,sha256=PH94dx9_Y77i6GZHIkAYovFpFqOM_VTpjHcJrlMbh4E,9902
+telegram_mcp-0.1.7.dist-info/METADATA,sha256=aXAUFthJr0N-b444Xl7Klxqy1i4xeST4C8tORcaFHE4,2433
+telegram_mcp-0.1.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+telegram_mcp-0.1.7.dist-info/entry_points.txt,sha256=AnkjeB4Oeu6bjL2mNoM3G8alvMfPhcn4fY54jIQm8g4,55
+telegram_mcp-0.1.7.dist-info/top_level.txt,sha256=kELLPViRws-RsRi-Zmm6R0uEY5jFMSkv9XGUcyOf6bQ,13
+telegram_mcp-0.1.7.dist-info/RECORD,,
