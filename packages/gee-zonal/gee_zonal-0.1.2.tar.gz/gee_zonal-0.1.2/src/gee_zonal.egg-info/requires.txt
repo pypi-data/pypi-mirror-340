@@ -1,0 +1,7 @@
+earthengine-api>=0.1.342
+pandas>=1.2.2
+geopandas>=0.12.2
+geojson
+
+[notebook]
+notebook>=6.5.2
