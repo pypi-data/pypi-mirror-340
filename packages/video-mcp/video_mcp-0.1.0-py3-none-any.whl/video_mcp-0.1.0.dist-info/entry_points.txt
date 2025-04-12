@@ -1,0 +1,2 @@
+[console_scripts]
+video-mcp = src.video_mcp_server:main
