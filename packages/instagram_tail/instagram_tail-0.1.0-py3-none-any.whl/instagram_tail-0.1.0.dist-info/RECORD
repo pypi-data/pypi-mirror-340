@@ -1,0 +1,12 @@
+instagram_tail-0.1.0.dist-info/METADATA,sha256=z14xVuIyf_f5OhF3tiKWez3q2x84Waj-qaY2n2gsfW8,1251
+instagram_tail-0.1.0.dist-info/WHEEL,sha256=tSfRZzRHthuv7vxpI4aehrdN9scLjk-dCJkPLzkHxGg,90
+instagram_tail-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+instagram_tail/__init__.py,sha256=IOOq2trLo0gP8nnNDcbKEGf5cu0oznoBR1q1JEGFHL0,86
+instagram_tail/_instagram_api.py,sha256=CwZB3Rt-Gu_30PXLeTSP8HuWfPDxiuj1Dg6Jhep9vO4,742
+instagram_tail/_model.py,sha256=QdrPrFRw8hueO3eIzTvI-4JsZ6TH6n6FEFr0TuyqEnk,1049
+instagram_tail/_params_service.py,sha256=FGH5z14r96qNUezU4OyATFUYrUQw0OuVfPloJ866kvY,15688
+instagram_tail/_parsers.py,sha256=7paYHelU0HZjZQZJb97V-J2OSukMTjfCRW2rG-rz1xI,2158
+instagram_tail/instagram_clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+instagram_tail/instagram_clients/instagram_client.py,sha256=HeAb1hYFjDvikAvhr_B95lI6vynihf-2AuTF7FmYdfc,4982
+instagram_tail/instagram_clients/instagram_client_async.py,sha256=nxxScjq2yLL3P1qQ_zBBEcwQlQlFI9_pRsK_06r3ZeM,5033
+instagram_tail-0.1.0.dist-info/RECORD,,
