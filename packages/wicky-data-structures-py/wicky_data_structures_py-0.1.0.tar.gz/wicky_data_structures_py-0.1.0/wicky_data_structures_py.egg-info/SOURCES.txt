@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+wicky_data_structures_py.egg-info/PKG-INFO
+wicky_data_structures_py.egg-info/SOURCES.txt
+wicky_data_structures_py.egg-info/dependency_links.txt
+wicky_data_structures_py.egg-info/top_level.txt

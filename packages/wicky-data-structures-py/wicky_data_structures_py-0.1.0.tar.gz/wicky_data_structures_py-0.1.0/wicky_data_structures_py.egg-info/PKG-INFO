@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: wicky-data-structures-py
+Version: 0.1.0
+Summary: A pedagogical Python package implementing core data structures from scratch
+Author: Wycliffe Nzomo
+Author-email: wycliffenzomo@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# data-structures-python
+
+Beginner-friendly Python package that implements core data structures from scratch using Object-Oriented Programming.
+
+## Features
+
+- Stack
+- Queue
+- Linked List
+- Binary Search Tree
+- Graph
+- Array
+
+## Installation (After Publishing)
+```bash
+pip install data-structures-py
