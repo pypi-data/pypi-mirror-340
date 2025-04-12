@@ -1,0 +1,13 @@
+README.md
+setup.py
+snipp-uploader/__init__.py
+snipp-uploader/cli.py
+snipp-uploader/config.py
+snipp-uploader/utils.py
+snipp-uploader/watcher.py
+snipp.egg-info/PKG-INFO
+snipp.egg-info/SOURCES.txt
+snipp.egg-info/dependency_links.txt
+snipp.egg-info/entry_points.txt
+snipp.egg-info/requires.txt
+snipp.egg-info/top_level.txt
