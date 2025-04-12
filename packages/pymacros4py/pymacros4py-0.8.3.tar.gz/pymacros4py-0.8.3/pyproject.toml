@@ -1,0 +1,42 @@
+[project]
+name = "pymacros4py"
+version = "0.8.3"
+authors = [
+  { name="Dr. Helmut Melcher", email="HeWeMel@web.de" },
+]
+description = """\
+    pymacros4py is a templating system for Python code. It is \
+    based on a source-level macro preprocessor. \
+    Expressions, statements, and functions in the macro domain \
+    are also written in Python.\
+    """
+readme = "README.rst"
+requires-python = ">=3.10"
+keywords = [
+    "macro", "preprocessor", "source-level", "python code", "replace",
+    "template"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/hewemel/pymacros4py"
+Repository = "https://github.com/hewemel/pymacros4py.git"
+Issues = "https://github.com/hewemel/pymacros4py/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

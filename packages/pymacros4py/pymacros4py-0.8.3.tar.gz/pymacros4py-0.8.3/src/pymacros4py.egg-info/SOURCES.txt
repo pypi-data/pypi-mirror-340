@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+src/pymacros4py/__init__.py
+src/pymacros4py/_evaluator.py
+src/pymacros4py/_files.py
+src/pymacros4py/_global_evaluation_context.py
+src/pymacros4py/_pre_processor.py
+src/pymacros4py/_template_script.py
+src/pymacros4py/_tokenizer.py
+src/pymacros4py/py.typed
+src/pymacros4py.egg-info/PKG-INFO
+src/pymacros4py.egg-info/SOURCES.txt
+src/pymacros4py.egg-info/dependency_links.txt
+src/pymacros4py.egg-info/top_level.txt
+tests/test_pymacros4py.py
+tests/test_unit_README.py
