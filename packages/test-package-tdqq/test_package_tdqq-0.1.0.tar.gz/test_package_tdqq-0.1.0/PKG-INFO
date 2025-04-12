@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: test_package_tdqq
+Version: 0.1.0
+Summary: Simple test package
+Home-page: https://github.com/yourusername/your-repo
+Author: Thuong Dang, Qiqi Chen
+Author-email: dangtuanthuong@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary

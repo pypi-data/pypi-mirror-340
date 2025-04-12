@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+test_package_tdqq.egg-info/PKG-INFO
+test_package_tdqq.egg-info/SOURCES.txt
+test_package_tdqq.egg-info/dependency_links.txt
+test_package_tdqq.egg-info/requires.txt
+test_package_tdqq.egg-info/top_level.txt
