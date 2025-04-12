@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: core4ai
+Version: 0.1.2
+Summary: Core4AI - Contextual Optimization and Refinement Engine for AI
+Author-email: Rahul Pandey <rpandey1901@gmail.com>
+Project-URL: Homepage, https://github.com/iRahulPandey/core4ai
+Project-URL: Bug Tracker, https://github.com/iRahulPandey/core4ai/issues
+Keywords: llm,prompt,mlflow,ai,template
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# core
+Contextual Optimization and Refinement Engine
