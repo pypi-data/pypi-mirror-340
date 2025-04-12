@@ -1,0 +1,8 @@
+winrt/_winrt_windows_applicationmodel_preview_holographic.cp310-win_amd64.pyd,sha256=x1nPQuiT4LK1isT3dkFZu7a0rFwRd3JiTxrlPT__20I,53248
+winrt/_winrt_windows_applicationmodel_preview_holographic.pyi,sha256=BdkvyAbopJsihbWIKZ9agjoT3b1cEg5iFLkhV7eZDg4,4309
+winrt/windows/applicationmodel/preview/holographic/__init__.py,sha256=Pt6Ig2GQMHCUe--XhaLeLMHHuG9S403C8p9QPiFbC2g,363
+winrt/windows/applicationmodel/preview/holographic/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_applicationmodel_preview_holographic-3.1.0.dist-info/METADATA,sha256=QCcuh9AVLigb7K_L1wW-6VouxfCNgmTEJl_D8Wfq5oo,1301
+winrt_windows_applicationmodel_preview_holographic-3.1.0.dist-info/WHEEL,sha256=xtqxYTqke_XhXNhgwydvlroVayIzBVjJDMBpIgge99s,101
+winrt_windows_applicationmodel_preview_holographic-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_applicationmodel_preview_holographic-3.1.0.dist-info/RECORD,,
