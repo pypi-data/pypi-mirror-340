@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: localdrop
+Version: 0.1.0
+Summary: Local file sharing tool
+Author-email: yasir-dev1 <yasireposta3@gmail.com>
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Dynamic: license-file
+
+# LocalDrop
+P2P CLI tool that allows users on the same local network to share text/files via terminal.
