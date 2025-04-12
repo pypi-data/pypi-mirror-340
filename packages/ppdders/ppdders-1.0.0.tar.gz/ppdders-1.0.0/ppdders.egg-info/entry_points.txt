@@ -1,0 +1,2 @@
+[console_scripts]
+library - management - system = library_management_system.main:main

@@ -1,0 +1,6 @@
+setup.py
+ppdders.egg-info/PKG-INFO
+ppdders.egg-info/SOURCES.txt
+ppdders.egg-info/dependency_links.txt
+ppdders.egg-info/entry_points.txt
+ppdders.egg-info/top_level.txt
