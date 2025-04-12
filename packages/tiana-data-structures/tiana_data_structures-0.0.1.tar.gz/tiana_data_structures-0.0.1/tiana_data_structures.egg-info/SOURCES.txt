@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+tiana_data_structures.egg-info/PKG-INFO
+tiana_data_structures.egg-info/SOURCES.txt
+tiana_data_structures.egg-info/dependency_links.txt
+tiana_data_structures.egg-info/top_level.txt
