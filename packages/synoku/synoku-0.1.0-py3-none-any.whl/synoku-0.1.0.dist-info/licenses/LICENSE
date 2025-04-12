@@ -1,0 +1,26 @@
+Business Source License 1.1
+
+Parameters
+=========
+
+Licensor: Synoku
+
+Licensed Work: synoku-cli-py (the Synoku CLI client), available at https://pypi.org/project/synoku/
+
+Change Date: None (the Licensed Work does not automatically convert to open source)
+
+Additional Use Grant: You may use this software solely to interact with the Synoku API at https://api.synoku.com
+
+License URL: https://api.synoku.com/bsl11/
+
+===================================================================
+
+Use of the Licensed Work is governed by the Business Source License 1.1 (https://mariadb.com/bsl11/).
+
+This license allows the Licensed Work to be used, modified, and distributed,
+but does not allow offering the Licensed Work or a modified version of it
+as a hosted or commercial service, unless you have a commercial agreement with Synoku.
+
+This license does not automatically convert to an open source license at a future date.
+
+For the full terms, see https://api.synoku.com/bsl11/
