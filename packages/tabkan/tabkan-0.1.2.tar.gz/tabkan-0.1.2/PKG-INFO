@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: tabkan
+Version: 0.1.2
+Summary: KAN-based neural architectures for tabular data
+Home-page: https://github.com/aseslamian/TAbKAN
+Author: Ali Eslamian
+Author-email: aseslamian@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=2.0
+Requires-Dist: numpy>=1.22
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Requires-Dist: optuna>=3.0
+Requires-Dist: fkan>=0.0.2
+Requires-Dist: rkan>=0.0.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+This Package is created by Ali Eslamian.
