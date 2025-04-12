@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+gedcomx_v1/__init__.py
+gedcomx_v1/_utila.py
+gedcomx_v1/dateformal.py
+gedcomx_v1/fs_session.py
+gedcomx_v1/gedcomx.py
+gedcomx_v1/json.py
+gedcomx_v1/xml.py
+gedcomx_v1.egg-info/PKG-INFO
+gedcomx_v1.egg-info/SOURCES.txt
+gedcomx_v1.egg-info/dependency_links.txt
+gedcomx_v1.egg-info/requires.txt
+gedcomx_v1.egg-info/top_level.txt
