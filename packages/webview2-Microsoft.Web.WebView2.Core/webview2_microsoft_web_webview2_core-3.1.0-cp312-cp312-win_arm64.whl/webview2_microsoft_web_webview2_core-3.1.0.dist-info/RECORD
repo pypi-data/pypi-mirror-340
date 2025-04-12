@@ -1,0 +1,14 @@
+webview2/_webview2_microsoft_web_webview2_core.cp312-win_arm64.pyd,sha256=k5srW45j3sGy_JK0ginARIZ3MGP-64JQ4zwaGraWtMY,1285120
+webview2/_webview2_microsoft_web_webview2_core.pyi,sha256=EDf7KJsFds2X1WxnCuwg0nkUmqZN1UZpsKLbSAXQSWA,191465
+webview2/cppwinrt/winrt/Microsoft.Web.WebView2.Core.h,sha256=EAL8SKdn3Od4PMxxMBQYIYUkZ1JMOGFxK7XXmD0nh9A,684831
+webview2/cppwinrt/winrt/impl/Microsoft.Web.WebView2.Core.0.h,sha256=sdgQcxVoC_LAHDWmGO0pUCRXPPEFb6Wa9OGyCUSKQoA,428850
+webview2/cppwinrt/winrt/impl/Microsoft.Web.WebView2.Core.1.h,sha256=f-XbI_k93KowZYXWMjpTxuLNCf-6DN1g3q4EnntP5Gk,77279
+webview2/cppwinrt/winrt/impl/Microsoft.Web.WebView2.Core.2.h,sha256=e4PiMLt_QOodaegAr-dOWmoXsY9a7SjAklXMtCUWdis,42425
+webview2/microsoft/web/webview2/core/Microsoft.Web.WebView2.Core.dll,sha256=fsP2CQ59sWsnsBh9_P-hh3tdsOAW0PJALD42haeQOfM,1080408
+webview2/microsoft/web/webview2/core/__init__.py,sha256=PHn54-D9SaXMKBz-vTIBB9Q-_arT4mrPbzDPlBa-3c0,16872
+webview2/microsoft/web/webview2/core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webview2/pywinrt/py.Microsoft.Web.WebView2.Core.h,sha256=xoG0vtEsNz0OxHH0qRayI4EVqMp418v06QJsWkZ8lkw,70714
+webview2_microsoft_web_webview2_core-3.1.0.dist-info/METADATA,sha256=bXggwoFaxDiFm8ECtqyV9row2U_euPLGlZssAxEGC3s,1644
+webview2_microsoft_web_webview2_core-3.1.0.dist-info/WHEEL,sha256=pYhIK3qx8EqEUszpzpfBG9Icpl8gWvSYj-z31CXLr10,101
+webview2_microsoft_web_webview2_core-3.1.0.dist-info/top_level.txt,sha256=G5luJMT1oCguI0-Ek0sMJz2j66PREMd4BXOVxIr-ApY,9
+webview2_microsoft_web_webview2_core-3.1.0.dist-info/RECORD,,
