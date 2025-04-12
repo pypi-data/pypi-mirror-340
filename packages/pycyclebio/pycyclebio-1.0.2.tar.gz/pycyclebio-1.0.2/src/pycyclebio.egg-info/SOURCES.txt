@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/pycyclebio/__init__.py
+src/pycyclebio/fitting.py
+src/pycyclebio.egg-info/PKG-INFO
+src/pycyclebio.egg-info/SOURCES.txt
+src/pycyclebio.egg-info/dependency_links.txt
+src/pycyclebio.egg-info/requires.txt
+src/pycyclebio.egg-info/top_level.txt
