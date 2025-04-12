@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-discord = discord_mcp:main
