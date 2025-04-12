@@ -1,0 +1,92 @@
+steps:
+  - name: gitversion
+    depends_on: [] # nothing start emititly
+    when:
+      event: push
+      branch: main
+    image: mcr.microsoft.com/dotnet/sdk:9.0
+    environment:
+      CI_TOKEN:
+        from_secret: CI_TOKEN
+    commands:
+      - git remote set-url origin https://CodeByMrFinchum:$CI_TOKEN@code.boxyfoxy.net/$CI_REPO.git
+      - git fetch --unshallow --tags
+      - apt-get update && apt-get install -y jq
+      - dotnet tool install --global GitVersion.Tool --version 5.*
+      - export PATH="$PATH:/root/.dotnet/tools"
+      - dotnet-gitversion -output json > version.json
+      - ls
+      - cat version.json
+      - |
+        echo "GitVersion_SemVer=$(jq -r '.SemVer' version.json)" >> gitversion.env
+        echo "GitVersion_LegacySemVer=$(jq -r '.LegacySemVer' version.json)" >> gitversion.env
+        echo "GitVersion_FullSemVer=$(jq -r '.FullSemVer' version.json)" >> gitversion.env
+        echo "GitVersion_Major=$(jq -r '.Major' version.json)" >> gitversion.env
+        echo "GitVersion_Minor=$(jq -r '.Minor' version.json)" >> gitversion.env
+        echo "GitVersion_Patch=$(jq -r '.Patch' version.json)" >> gitversion.env
+        echo "GitVersion_MajorMinorPatch=$(jq -r '.MajorMinorPatch' version.json)" >> gitversion.env
+        echo "GitVersion_BuildMetaData=$(jq -r '.BuildMetaData' version.json)" >> gitversion.env
+
+  - name: tagging
+    depends_on: [gitversion]
+    when:
+      event: push
+      branch: main
+    image: alpine/git
+    environment:
+      CI_TOKEN:
+        from_secret: CI_TOKEN
+    commands:
+      - ls
+      - cat gitversion.env
+      - git config --global user.email "ci@noreply.boxyfoxy.net"
+      - git config --global user.name "CI Bot"
+      - git remote set-url origin https://CodeByMrFinchum:$${CI_TOKEN}@code.boxyfoxy.net/$${CI_REPO}.git
+      - . gitversion.env
+      - git tag $GitVersion_SemVer
+      - git push origin tag $GitVersion_SemVer
+
+  - name: build
+    depends_on: [gitversion, tagging]
+    when:
+      event: push
+      branch: main
+    image: python:3.9.21
+    commands:
+      - ls
+      - cat gitversion.env
+      - export $(cat gitversion.env | xargs)
+      - sed -i "s/1.0.0/$GitVersion_SemVer/" src/optima35/__init__.py
+      - cat src/optima35/__init__.py
+      - python3 -m pip install build
+      - python3 -m build
+
+  - name: publish_pypi
+    depends_on: [gitversion, tagging, build]
+    when:
+      event: push
+      branch: main
+    image: python:3.9.21
+    environment:
+      TWINE_PASSWORD:
+        from_secret: TWINE_API
+      TWINE_USERNAME: "__token__"
+    commands:
+      - ls
+      - python3 -m pip install twine
+      - python3 -m twine upload dist/*
+
+  - name: publish_forgejo
+    depends_on: [gitversion, tagging, build]
+    when:
+      event: push
+      branch: main
+    image: python:3.9.21
+    environment:
+      TWINE_PASSWORD:
+        from_secret: PKG_TOKEN
+      TWINE_USERNAME: "CodeByMrFinchum"
+    commands:
+      - ls
+      - python3 -m pip install twine
+      - python3 -m twine upload --repository-url https://code.boxyfoxy.net/api/packages/CodeByMrFinchum/pypi dist/*
