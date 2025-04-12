@@ -1,0 +1,17 @@
+ipysim/__init__.py,sha256=hUovraJWjPsdDeL3Ef1-Mog1HgYgARmHLnAj-C_cjcc,430
+ipysim/core.py,sha256=tufy5luDEtev014PiYaf3UiJ0MlyqT6TF6fN6_vOO4Q,1474
+ipysim/params.py,sha256=V_XS7TX6vemmZ2xt3-ZWpHwRHwnxUGnDE3B0I2MbB9U,768
+ipysim/plotting.py,sha256=14wpWTXNUOGssD9Da3SrBajsN9kZbsiiVb2RUvtM-XE,1428
+ipysim/simulation_ui.py,sha256=YExG8BwrF_QY6oj8TocyAq8ZGjPyteBHausTmczpLgk,14472
+ipysim/utils.py,sha256=Upx_7poV3t39eCvgSlFwv6up3uNnMT46a3CxOCLiap4,1624
+ipysim/legacy/__init__.py,sha256=lvHeF-0q3z7LehJrv8k6vb1PuIalp4bWNgUeH3aPhlM,103
+ipysim/legacy/core.py,sha256=CrB9KXyy0DCbuTBwIRr2X_wsaQ8HSWOeEi1aluhtipQ,4128
+ipysim/legacy/params.py,sha256=5tvd3s5ppE-zO6FU14F2oycLnGzzrROjbrAGGkKnKZI,824
+ipysim/legacy/widgets.py,sha256=EOxZ_NSfCTanjWchVqHad5o3AHUyTbOXPnKNUHWFglw,27908
+ipysim/simulations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipysim/simulations/simulate_flip_magnet.py,sha256=0gOmljN1sqGisf_7w7ZkUAOCv8DHIrYVKkEJF5lNTJc,2668
+ipysim/simulations/simulate_maglev.py,sha256=ZqH1h3Ia8EmCvGJ8wVzfVZZb8Tp9-gieOZF1IKgkChE,12669
+ipysim/simulations/simulate_maglev_with_noise.py,sha256=GtfXhn1ugRwsaa4DXpBxv9Cu6LJf8-rQ2KhWJeOzrJk,2619
+ipysim-1.0.0.dist-info/METADATA,sha256=2SppkLrYBDcCEV2Dx0_uc60AJCiAT45SqSbXz3_OWcA,638
+ipysim-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ipysim-1.0.0.dist-info/RECORD,,
