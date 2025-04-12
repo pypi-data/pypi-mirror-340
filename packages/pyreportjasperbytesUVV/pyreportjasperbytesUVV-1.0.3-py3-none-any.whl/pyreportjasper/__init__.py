@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+# GNU GENERAL PUBLIC LICENSE
+#
+# 2023 Jadson Bonfim Ribeiro <contato@jadsonbr.com.br>
+## Versão alterada 2024 Eduardo Soares <edufrancoreis@hotmail.com>
+
+
+from .pyreportjasper import PyReportJasper
+
+__title__ = 'PyReportJasper'
+__version__ = '1.0.3'
+__author__ = 'Jadson Bonfim Ribeiro'
+__license__ = 'GNU GENERAL PUBLIC LICENSE'
+__copyright__ = 'Copyright 2024 J BONFIM RIBEIRO'
+__name__ = 'pyreportjasper'
+
+__all__ = [
+    "PyReportJasper"
+]
+
+# Version synonym
+VERSION = __version__
