@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+xarray_enmap/__init__.py
+xarray_enmap/xarray_enmap.py
+xarray_enmap.egg-info/PKG-INFO
+xarray_enmap.egg-info/SOURCES.txt
+xarray_enmap.egg-info/dependency_links.txt
+xarray_enmap.egg-info/entry_points.txt
+xarray_enmap.egg-info/requires.txt
+xarray_enmap.egg-info/top_level.txt

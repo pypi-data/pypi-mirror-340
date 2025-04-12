@@ -1,0 +1,15 @@
+rioxarray
+shapely
+xarray
+
+[dev]
+pytest
+pytest-cov
+black
+flake8
+
+[doc]
+mkdocs
+mkdocs-material
+mkdocstrings
+mkdocstrings-python

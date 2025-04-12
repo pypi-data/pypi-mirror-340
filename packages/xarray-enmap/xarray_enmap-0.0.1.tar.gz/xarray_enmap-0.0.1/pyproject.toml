@@ -1,0 +1,68 @@
+[build-system]
+requires = [
+  "setuptools >= 77.0.3",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xarray-enmap"
+dynamic = ["version"]
+authors = [
+  {name = "Pontus Lurcock", email = "pontus.lurcock@brockmann-consult.de"}
+]
+description = """\
+  xarray backend for EnMAP data archives\
+  """
+keywords = [
+  "analysis ready data", "data science", "datacube", "xarray", "zarr"
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+requires-python = ">=3.11"
+dependencies = [
+  "rioxarray",
+  "shapely",
+  "xarray",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Topic :: Scientific/Engineering"
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "xarray_enmap.__version__"}
+
+[tool.setuptools.packages.find]
+exclude = [
+  "test*",
+  "doc*",
+  "site*",
+  "htmlcov*"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "pytest-cov",
+  "black",
+  "flake8"
+]
+doc = [
+  "mkdocs",
+  "mkdocs-material",
+  "mkdocstrings",
+  "mkdocstrings-python"
+]
+
+[project.urls]
+Documentation = "https://github.com/xcube-dev/xarray_enmap/blob/main/README.md"
+Issues = "https://github.com/xcube-dev/xarray_enmap/issues"
+Changelog = "https://github.com/xcube-dev/xarray_enmap/blob/main/CHANGES.md"
+Repository = "https://github.com/xcube-dev/xarray_enmap"
+Homepage = "https://github.com/xcube-dev/xarray_enmap"
+
+[project.entry-points."xarray.backends"]
+enmap = "xarray_enmap.xarray_enmap:EnmapEntrypoint"
