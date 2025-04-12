@@ -1,0 +1,6 @@
+interval: 3  # 两次请求 javdb 间隔秒数, 太小可能被封 IP
+URL: https://javdb521.com  # javdb 网址, 代理经常无法访问永久地址, 用免翻地址会更稳定
+entries: 5  # 手动查询时最大显示的磁链条数
+user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36  # 自定义 ua
+http_proxy: http://localhost:7890  # http 代理地址
+https_proxy:  # https 代理地址, 留空则使用 http_proxy
