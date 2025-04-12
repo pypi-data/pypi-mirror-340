@@ -1,0 +1,3 @@
+[console_scripts]
+anime-light=anime_light.cli.main:main
+
