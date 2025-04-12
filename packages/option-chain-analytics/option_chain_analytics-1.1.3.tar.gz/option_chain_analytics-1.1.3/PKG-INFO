@@ -1,0 +1,122 @@
+Metadata-Version: 2.3
+Name: option_chain_analytics
+Version: 1.1.3
+Summary: Implementation of data management and outputs queries for Option Chains
+License: LICENSE.txt
+Keywords: options chain,implied volatility,volatility surface,volatility fitting,options data
+Author: Artur Sepp
+Author-email: artursepp@gmail.com
+Maintainer: Artur Sepp
+Maintainer-email: artursepp@gmail.com
+Requires-Python: >=3.8
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Requires-Dist: PyYAML (>=6.0)
+Requires-Dist: easydev (>=0.12.0)
+Requires-Dist: fsspec (>=2022.11.0)
+Requires-Dist: matplotlib (>=3.2.2)
+Requires-Dist: numba (>=0.56.4)
+Requires-Dist: numpy (>=1.22.4)
+Requires-Dist: openpyxl (>=3.0.10)
+Requires-Dist: pandas (>=1.5.2)
+Requires-Dist: psycopg2 (>=2.9.5)
+Requires-Dist: pyarrow (>=10.0.1)
+Requires-Dist: qis (>=1.0.30)
+Requires-Dist: scipy (>=1.10)
+Requires-Dist: seaborn (>=0.12.2)
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: yfinance (>0.1.38)
+Project-URL: Documentation, https://github.com/ArturSepp/OptionChainAnalytics
+Project-URL: Issues, https://github.com/ArturSepp/OptionChainAnalytics/issues
+Project-URL: Personal website, https://artursepp.com
+Project-URL: Repository, https://github.com/ArturSepp/OptionChainAnalytics
+Description-Content-Type: text/markdown
+
+# OptionChainAnalytics
+ Analytics for processing option chain and options time series data
+
+
+Core python dependencies:
+
+    python = ">=3.8,<3.11"
+    numba = ">=0.59.0"
+    numpy = ">=1.26.4"
+
+Core packages dependencies
+
+    vanilla_option_pricers = ">=1.0.1"
+    qis = ">=2.0.68"
+
+
+
+<strong>OptionChainAnalytics: Option Chain Analytics</strong>
+
+Module option_chain_analytics implements generic features for operations with option chains
+
+# Implemented dataclass analytics
+
+
+### Expiry Slices <a name="eslice"></a>
+
+[Expiry Slice](#eslice) in ```option_chain.py```
+
+Contains call and put options dataframes per each expiry
+
+Option chain core data and anlytics object. Generally, option chain is
+a table of trading data (strikes, bids, asks, sizes, deltas, etc)
+for puts and calls. These tables are indexed by contract ids and the tables are arranged by maturities.  
+We term these tables as expiry slices.
+
+implements request such as ```get_atm_vol``` , ```get_atm_option_strike``` , ```get_atm_call_id``` , 
+```get_atm_call_id``` , ```get_atm_put_id```,
+```get_call_delta_strike```, ```get_put_delta_strike``` 
+
+### **Option Chain** <a name="chain"></a>
+
+[SlicesChain](#chain) in ```option_chain.py```
+
+Dataclass 
+
+### **Slices Chain** <a name="chain"></a>
+
+[SlicesChain](#chain) in ```option_chain.py```
+
+### **OptionsDataDFs(ChainTs)** <a name="chainTs"></a>
+
+[ChainTs](#chain_ts) in ```chain_ts.py```
+
+
+dataclass containing time series of options data ```chain_ts: pd.DataFrame```
+and spot data ```spot_data: pd.DataFrame```
+
+it implements query ```get_time_slice(timestamp)``` which returns data to 
+create option chain dataclass
+
+
+### **OptionsDataDFs(ChainTs)** <a name="chainTs"></a>
+
+```python 
+def create_chain[test.py](..%2F..%2F..%2Fmisc%2Fderibit_websocket_Nova%2Ftest.py)_from_from_options_dfs(options_data_dfs: OptionsDataDFs,
+                                       value_time: pd.Timestamp,
+                                       ) -> Optional[SlicesChain]:
+```
+
+
+
+
+
