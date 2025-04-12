@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: actupy
+Version: 0.0.1
+Summary: Actuarial modelling in Python
+Author-email: Zuzanna Chmielewska <zchmielewska@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+actupy
