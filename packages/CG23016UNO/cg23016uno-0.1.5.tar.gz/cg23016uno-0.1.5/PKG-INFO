@@ -1,0 +1,37 @@
+Metadata-Version: 2.4
+Name: CG23016UNO
+Version: 0.1.5
+Summary: Libreria para resolver ecuaciones lineales y no lineales
+Author-email: Angel Cardoza <cg23016@ues.edu.sv>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# CG23016UNO
+
+Una libreria en Python para resolver sistemas de ecuaciones lineales y no lineales.
+
+## Instalación
+
+```bash
+pip install CG23016UNO
+```
+
+## Metodos incluidos
+
+### Lineales
+
+- Eliminacion de Gauss
+- Gauss-Jordan
+- Cramer
+- Descomposicion LU
+- Jacobi
+- Gauss-Seidel
+
+### No Lineales
+
+- Biseccion
+
+-Actualizacion confirmada
