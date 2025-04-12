@@ -1,0 +1,2 @@
+[console_scripts]
+network-call-analyzer = network_call_analyzer_mcp:main
