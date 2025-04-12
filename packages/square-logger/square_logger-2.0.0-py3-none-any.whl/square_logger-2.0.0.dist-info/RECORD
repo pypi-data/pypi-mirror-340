@@ -1,0 +1,9 @@
+square_logger/__init__.py,sha256=S5fL7lTFOQ5NwC9PGvRN8_Zfqi1JsuR-uhCY3elSDDo,44
+square_logger/main.py,sha256=2khOcWGr81mu7rObwKvmfpAx3FtFxlWjyPWsV7oFftc,6585
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=sP-3chjiX2HOtDU2W2ZvF00flwBN6sWh7cRfJltsIhE,211
+tests/test_auto_logger.py,sha256=fZVteURWgTvM18vmHAESdDG2Mx_Uw6FTIX84EPgvcVg,4068
+square_logger-2.0.0.dist-info/METADATA,sha256=GGmehk0QRpUFiyejkq_YhWarUwtmAkOEz_B-iIR3QSM,636
+square_logger-2.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+square_logger-2.0.0.dist-info/top_level.txt,sha256=oLXJK9-IsFGzs6uTe3didIvn3LCjml7AcfdRX-6hA-U,20
+square_logger-2.0.0.dist-info/RECORD,,
