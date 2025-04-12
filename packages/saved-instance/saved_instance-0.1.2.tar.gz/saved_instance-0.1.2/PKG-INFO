@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: saved-instance
+Version: 0.1.2
+Summary: saved-instance is a persistent Python dictionary
+Project-URL: Homepage, https://gitlab.com/manickamdeva62/saved_instance
+Author: manickamdeva62
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: click==8.1.8
+Requires-Dist: cryptography==44.0.2
+Requires-Dist: platformdirs==4.3.7
+Requires-Dist: pyyaml==6.0.2
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == 'docs'
+Description-Content-Type: text/markdown
+
+# saved_instance
+
+
+
+## About
+
+SavedInstance is a persistent Python dictionary. It allows you to store and retrieve data based on key and value in a dictionary format.
+
+
+## Introduction
+
+SavedInstance is:
+
+ - **Just dict**: For accessing or modifying data, there are no separate methods,  you can work with the same way as a dictionary.
+ - **Flexi type**: SavedInstance can store all python types and custom user defined class
+ - **Inbuilt secure**:  Provides a functionality to store the data in encrypted format, it automatically encrypts the data and decrypts it on demand.
+ - **Thread safe**: Designed to work reliably in multi-threaded and multi-processing environments.
+
+## Example
+Alice.py
+```
+Alice.py
+
+from saved_instace import simple_storage
+
+simple_storage = simple_storage()
+
+# writing
+simple_storage["message"] = "Hello World"
+
+```
+Bob.py
+```
+Bob.py
+
+from saved_instance import simple_storage
+
+simple_storage = simple_storage()
+
+# Reading
+print(simple_storage["message"])
+
+```
+
+## Getting Started
+
+### Install
+
+```
+pip install saved_instance
+```
+
+### Config
+```
+svd config init --project-name your-project-name
+```
+Run above the command in root of your project
+
+## License
+MIT
