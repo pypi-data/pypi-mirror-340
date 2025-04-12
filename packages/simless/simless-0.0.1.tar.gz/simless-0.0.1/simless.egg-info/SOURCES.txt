@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+simless/__init__.py
+simless/example.py
+simless.egg-info/PKG-INFO
+simless.egg-info/SOURCES.txt
+simless.egg-info/dependency_links.txt
+simless.egg-info/top_level.txt
