@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/Core4AI.egg-info/PKG-INFO
+src/Core4AI.egg-info/SOURCES.txt
+src/Core4AI.egg-info/dependency_links.txt
+src/Core4AI.egg-info/top_level.txt
+src/core/__init__.py
+src/core/engine.py
