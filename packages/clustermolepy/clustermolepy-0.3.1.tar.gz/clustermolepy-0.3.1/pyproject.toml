@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=65.5.1", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clustermolepy"
+version = "0.3.1"
+description = "Cluster annotation helper for single-cell RNA-seq data in Python"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+authors = [
+  {name = "Nikhil Mark Lakra", email = "nikhilmarklakra@gmail.com"}
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Bio-Informatics"
+]
+
+dependencies = [
+  "pandas",
+  "requests",
+  "biomart",
+  "anndata",
+  "numpy"
+]
+
+[project.optional-dependencies]
+dev = [
+  "flake8",
+  "isort",
+  "black",
+  "mypy",
+  "scanpy",
+  "jupyter"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-dir]
+"" = "."
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203", "W503"]
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+line_length = 88
