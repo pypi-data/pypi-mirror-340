@@ -1,0 +1,10 @@
+scratch.py,sha256=zXEFejDZm9KkLlt_7jY1y-dAInWHaApJTTp6SQc7Ems,493
+fetchfox_sdk/__init__.py,sha256=7e3i4QMwYi_BBof82VDb5hMgW5_P-uMS4U5A7YsiWws,149
+fetchfox_sdk/client.py,sha256=j0mdPzrs0JsuN3FcZqTEPCQfTAKMRRugJ5t28lpiULo,22096
+fetchfox_sdk/item.py,sha256=uC5gejX3I68PjSr0HYomkd447w7Sib03U6wDwVA2z9w,1475
+fetchfox_sdk/workflow.py,sha256=9Nrzi0WRfqRnbtxu6RaQq6OpMwUvZaFEKjetXCNs-10,18027
+fetchfox_sdk-0.6.0.dist-info/licenses/LICENSE,sha256=YqL-09bgjESDX85x8CIQsd2r-wZuOe3x5sJhmI-CTdM,7
+fetchfox_sdk-0.6.0.dist-info/METADATA,sha256=MJIgVkKYiVa4Nw_H-Ld08XFl1sHBl5SjrEXSyDxQxy8,4574
+fetchfox_sdk-0.6.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fetchfox_sdk-0.6.0.dist-info/top_level.txt,sha256=_gBfm1JyvZOZ66I16piQJ8quyiiUOk4ITIIIrfOgLDE,21
+fetchfox_sdk-0.6.0.dist-info/RECORD,,
