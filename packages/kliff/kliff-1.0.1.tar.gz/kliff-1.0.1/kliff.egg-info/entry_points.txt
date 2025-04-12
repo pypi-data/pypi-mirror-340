@@ -1,0 +1,2 @@
+[console_scripts]
+kliff = kliff.cmdline.cli:main
