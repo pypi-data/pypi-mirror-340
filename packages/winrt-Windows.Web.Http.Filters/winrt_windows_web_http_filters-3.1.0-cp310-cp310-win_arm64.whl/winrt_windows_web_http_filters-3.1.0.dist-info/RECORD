@@ -1,0 +1,8 @@
+winrt/_winrt_windows_web_http_filters.cp310-win_arm64.pyd,sha256=b9a0Sl_cUZgzVvxkzNJ9OOoV-j8CD_vuYs1an6-QBP0,178688
+winrt/_winrt_windows_web_http_filters.pyi,sha256=wltWB_DCN1ubzyn_Kd6N8P51nt25iRvKc9nUrFasLj8,11520
+winrt/windows/web/http/filters/__init__.py,sha256=kFvhq2eS5OQuUpvsuMMBCY0gJalG__K8ody95kJA8pA,814
+winrt/windows/web/http/filters/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_web_http_filters-3.1.0.dist-info/METADATA,sha256=njUlRw9EarKgvZWNjgQ7kwsn6-2exIRX8E6BcsP6k1g,1511
+winrt_windows_web_http_filters-3.1.0.dist-info/WHEEL,sha256=pofYnMLU3Lw9hLmGcdQPa1-EeVWgEhDHvVznZJkU9yo,101
+winrt_windows_web_http_filters-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_web_http_filters-3.1.0.dist-info/RECORD,,
