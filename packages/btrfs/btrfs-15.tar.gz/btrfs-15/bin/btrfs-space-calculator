@@ -1,0 +1,173 @@
+#!/usr/bin/python3
+#
+# Copyright (C) 2018 Hans van Kranenburg <hans@knorrie.org>
+#
+# Permission is hereby granted, free of charge, to any person obtaining
+# a copy of this software and associated documentation files (the
+# "Software"), to deal in the Software without restriction, including
+# without limitation the rights to use, copy, modify, merge, publish,
+# distribute, sublicense, and/or sell copies of the Software, and to
+# permit persons to whom the Software is furnished to do so, subject to
+# the following conditions:
+#
+# The above copyright notice and this permission notice shall be included
+# in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+# IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+# CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+import argparse
+import btrfs
+import sys
+
+
+class WastedSpaceError(Exception):
+    pass
+
+
+class FakeDevItem(object):
+    def __init__(self, devid, total_bytes):
+        self.devid = devid
+        self.total_bytes = total_bytes
+        self.bytes_used = 0
+
+
+class FakeFileSystem(object):
+    def __init__(self, device_sizes, mixed_groups, metadata_profile, data_profile):
+        self._mixed_groups = mixed_groups
+        self._devices = [FakeDevItem(devid+1, size)
+                         for devid, size in enumerate(device_sizes)]
+
+    def mixed_groups(self):
+        return self._mixed_groups
+
+    def space_info(self):
+        return []
+
+    def devices(self):
+        return self._devices
+
+    def chunks(self):
+        return []
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Calculate usable and unallocatable disk space")
+    parser.add_argument(
+        '-m', '--metadata',
+        required=True,
+        action='store',
+        help="metadata profile, values like for data profile",
+    )
+    parser.add_argument(
+        '-d', '--data',
+        required=True,
+        action='store',
+        help="data profile, raid0, raid1, raid5, raid6, raid10, dup or single",
+    )
+    parser.add_argument(
+        '-M', '--mixed',
+        action='store_true',
+        help="use mixed block groups (data and metadata profile must match)",
+    )
+    parser.add_argument(
+        '-r', '--ratio',
+        action='store',
+        type=int,
+        help="data to metadata ratio for non-mixed filesystem, e.g. 200 (the default), "
+             "which means allocate 0.5%% for metadata",
+    )
+    parser.add_argument(
+        'size',
+        nargs='+',
+        help="disk sizes, e.g. 2TB 500G 1TiB",
+    )
+    return parser.parse_args()
+
+
+_str_to_profile_map = {
+    'raid0': btrfs.BLOCK_GROUP_RAID0,
+    'raid1': btrfs.BLOCK_GROUP_RAID1,
+    'raid1c3': btrfs.BLOCK_GROUP_RAID1C3,
+    'raid1c4': btrfs.BLOCK_GROUP_RAID1C4,
+    'raid5': btrfs.BLOCK_GROUP_RAID5,
+    'raid6': btrfs.BLOCK_GROUP_RAID6,
+    'raid10': btrfs.BLOCK_GROUP_RAID10,
+    'single': 0,
+    'dup': btrfs.BLOCK_GROUP_DUP,
+}
+
+
+def main():
+    args = parse_args()
+
+    device_sizes = []
+    for size in args.size:
+        try:
+            device_sizes.append(btrfs.utils.parse_pretty_size(size))
+        except ValueError as e:
+            raise WastedSpaceError("Invalid device size {}".format(size))
+    mixed_groups = args.mixed
+    try:
+        metadata_profile = _str_to_profile_map[args.metadata]
+    except KeyError as e:
+        raise WastedSpaceError("Unknown profile {}".format(args.metadata))
+    try:
+        data_profile = _str_to_profile_map[args.data]
+    except KeyError as e:
+        raise WastedSpaceError("Unknown profile {}".format(args.data))
+    if mixed_groups and metadata_profile != data_profile:
+        raise WastedSpaceError(
+            "When using mixed groups, metadata and data profile need to be identical.")
+    fs = FakeFileSystem(device_sizes, mixed_groups, metadata_profile, data_profile)
+    if not mixed_groups:
+        usage = btrfs.fs_usage.FsUsage(
+            fs,
+            data_metadata_ratio=args.ratio,
+            target_profile_metadata=metadata_profile,
+            target_profile_data=data_profile,
+        )
+    else:
+        usage = btrfs.fs_usage.FsUsage(
+            fs,
+            target_profile_mixed=metadata_profile,
+        )
+    print("Target metadata profile: {}".format(
+        btrfs.utils.space_profile_description(metadata_profile)))
+    print("Target data profile: {}".format(
+        btrfs.utils.space_profile_description(data_profile)))
+    print("Mixed block groups: {}".format(mixed_groups))
+    print("Total raw filesystem size: {}".format(btrfs.utils.pretty_size(usage.total)))
+    print("Device sizes:")
+    for devid, size in enumerate(device_sizes):
+        print("  Device {}: {}".format(devid+1, btrfs.utils.pretty_size(size)))
+    if not mixed_groups:
+        print("Metadata to data ratio: 1:{}".format(usage.default_data_metadata_ratio))
+        print("Estimated virtual space to use for metadata: {}".format(
+            btrfs.utils.pretty_size(usage.estimated_full_allocatable_virtual_metadata)))
+        print("Estimated virtual space to use for data: {}".format(
+            btrfs.utils.pretty_size(usage.estimated_full_allocatable_virtual_data)))
+    else:
+        if args.ratio is not None:
+            print("Notice: Metadata to data ratio is not used in mixed mode.")
+        print("Estimated virtual space to use for metadata and data: {}".format(
+            btrfs.utils.pretty_size(usage.estimated_full_allocatable_virtual_mixed)))
+    print("Total unallocatable raw amount: {}".format(
+        btrfs.utils.pretty_size(usage.unallocatable_hard)))
+    print("Unallocatable raw bytes per device:")
+    for key in sorted(usage.dev_usage.keys()):
+        print("  Device {}: {}".format(
+            key, btrfs.utils.pretty_size(usage.dev_usage[key].unallocatable_hard)))
+
+
+if __name__ == '__main__':
+    try:
+        main()
+    except WastedSpaceError as e:
+        print("Error: {0}".format(e), file=sys.stderr)
+        sys.exit(1)
