@@ -1,0 +1,12 @@
+gx_sqlalchemy_redshift-0.8.16.dist-info/licenses/LICENSE,sha256=pON9Cuq-0H0cdr5wKVVufihTQFSYT7OXYHcf-AK4LrY,1055
+redshift_sqlalchemy/__init__.py,sha256=QMa5rvcYdIDMmfwYsd3o78Hj8Q1RbR5EdcACMTLdxeo,595
+sqlalchemy_redshift/__init__.py,sha256=9T7NmNpX7saRY1p8FVUbxd-5sWVNipZ9AhXkZgyg7Qg,935
+sqlalchemy_redshift/commands.py,sha256=mzb7JGtCaVvwUQ_wzGDOIwpMTmrxTdRyXzMXHvpKYu8,39701
+sqlalchemy_redshift/ddl.py,sha256=1B6TfbKbMPdwxNjUpoa5kIpfEI6Ikow5g6lyFPYjcV8,9972
+sqlalchemy_redshift/dialect.py,sha256=bpXgVeckx79ogX_amN0_ZmWSVasrhX3U7pyHexVsktE,54868
+sqlalchemy_redshift/redshift-ca-bundle.crt,sha256=532qYkOpQOstFE0mdXE1GVtL3v00XDKgZNTr6gK5-KE,8621
+gx_sqlalchemy_redshift-0.8.16.dist-info/METADATA,sha256=YgQVbqBuGiTxMXpM8pMYlxEGj7pKZBQVy1k3Mc8GFR8,16042
+gx_sqlalchemy_redshift-0.8.16.dist-info/WHEEL,sha256=MAQBAzGbXNI3bUmkDsiV_duv8i-gcdnLzw7cfUFwqhU,109
+gx_sqlalchemy_redshift-0.8.16.dist-info/entry_points.txt,sha256=Gjxhy9Ckd6PY-EkrMxPWnTh6-6YUQcQd0BBEqKJ5kEU,159
+gx_sqlalchemy_redshift-0.8.16.dist-info/top_level.txt,sha256=8adSIKaGjUIMknIFjU2HnSGhyjDeQ5x97AZ6i7wE-HU,40
+gx_sqlalchemy_redshift-0.8.16.dist-info/RECORD,,
