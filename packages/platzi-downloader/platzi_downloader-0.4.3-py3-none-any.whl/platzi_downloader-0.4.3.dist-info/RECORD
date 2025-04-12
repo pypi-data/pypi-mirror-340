@@ -1,0 +1,15 @@
+platzi/__init__.py,sha256=M8TNRpd804iCyQnqNIoBU9nI2NnbbA99gY7GjRM94cE,99
+platzi/async_api.py,sha256=39OUoEKLVt_uiWGUbAUhkB1zG4LmfSFhOJ7NVR0dBK4,12878
+platzi/cli.py,sha256=B_R_SJoTaZ7E_dsixSjzPvwZ6i-IB4-LgPNSX6zbIkY,2246
+platzi/collectors.py,sha256=mio9zU2_wdeKWV16gtZKbTgM6oXjS_1vgZ4UqMW_SxA,4572
+platzi/constants.py,sha256=Yx2SsCxa7ANXh4GO5PTeTA2GVT19bh8-LB5gdTETDLw,635
+platzi/helpers.py,sha256=Ucjh_M-DxYi12RfQBZi6oZlDEFQPsrISas9tB5-_P8M,577
+platzi/logger.py,sha256=5C2L_rUdXh7AyVZtyntQPT9j-Wcx7ng97i_bi_dq3wA,893
+platzi/m3u8.py,sha256=Npg3P0rXVJbFrV2onbX6SsGIsOnAk4WJUBoJNGmvexc,4575
+platzi/models.py,sha256=bs5i8cgoC0XSECYLtHe3EogtnyWAZebMpgFRieZQm1M,1861
+platzi/utils.py,sha256=87TdcV4nYjJKEHlHEAcQE9h5QDl4fuGvkkOV9_OeEUk,8471
+platzi_downloader-0.4.3.dist-info/LICENCE,sha256=MICUTOiebbpu1_drke5Pweq_MkMwvaHEK--uCjrSZp0,1064
+platzi_downloader-0.4.3.dist-info/METADATA,sha256=z8eDIyXY_NkHk0MHz9zW048qBuWZ3Cxv40iZzkmDZgA,4657
+platzi_downloader-0.4.3.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+platzi_downloader-0.4.3.dist-info/entry_points.txt,sha256=PHsJD6pyiGuwiuqIRZdBt_jSl3ciptDnkmfM93Z6Ezw,42
+platzi_downloader-0.4.3.dist-info/RECORD,,
