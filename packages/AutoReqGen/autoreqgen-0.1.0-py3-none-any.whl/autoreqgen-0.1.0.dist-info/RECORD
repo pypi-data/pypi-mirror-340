@@ -1,0 +1,13 @@
+AutoReqGen/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+AutoReqGen/cli.py,sha256=AlYAmRtCyOmwfbrMiHsnQAwmx7DQO9jWAlMz8kHx90g,1746
+AutoReqGen/docgen.py,sha256=x4nmPIDkPUrdITYHqsVLG-6mJdeWZEWbIv9sa0BHaP8,1526
+AutoReqGen/formatter.py,sha256=VfCwDPDXekn58YfW5K0pBKi_EED9Dm3RC2rvTCVM_bg,834
+AutoReqGen/requirements.py,sha256=sWhAouHv4pbB4sM3BU4CPfRaft1u_xGUgeXSEf6AUug,834
+AutoReqGen/scanner.py,sha256=EDFm-poS0Jg7EFvHcfcQuoM_CNqks2w_tSItOSk1_54,1161
+AutoReqGen/utils.py,sha256=0nL_xQ3SflSBr1-tpB-D2kfFW-mpwZiiasJo8ZXId3w,714
+autoreqgen-0.1.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoreqgen-0.1.0.dist-info/METADATA,sha256=AusLHc3zM_Gdk-cLF_2jVE5DW_o1C7nHlppG7Y4TN20,1045
+autoreqgen-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+autoreqgen-0.1.0.dist-info/entry_points.txt,sha256=sgRHD0I2nl1XD4OaFLv1pd-WG9TuVmF8uTRwdRpNIww,50
+autoreqgen-0.1.0.dist-info/top_level.txt,sha256=uAoJu4Z1jV-VLHF_ssw_wT02qR203T2Sgj2KWSKcXds,11
+autoreqgen-0.1.0.dist-info/RECORD,,
