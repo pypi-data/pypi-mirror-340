@@ -1,0 +1,14 @@
+browserstate/__init__.py,sha256=mrM7LvxgreAWJ8cSUtbOf2q4GN_dr9oHqmsDjYp2lLY,739
+browserstate/browser_state.py,sha256=htCS8NMDaKxcDnHIDSZKEhhGB_FK7pun8Xe5gk-66Bc,6353
+browserstate/storage/__init__.py,sha256=jlGVnFCkYYt88Q_DOG8hj5eMim9bUlT3bpVizkg7DKg,1231
+browserstate/storage/gcs_storage.py,sha256=Z0K1AEUu4PgeHHMfqrMmPTF1YC64vQcpfM_F0ulR-no,6588
+browserstate/storage/local_storage.py,sha256=yoSNTs69ALF6zJ5M4k6RSQt9bMieBJcb8FRWEEjUuvw,5246
+browserstate/storage/redis_storage.py,sha256=5vLZea2b9FNnBoiG0zWqQnO8RIuN1aWi9fQOQAY2aKQ,15395
+browserstate/storage/s3_storage.py,sha256=yMeC9sUyMwv-FyuQvd-Z-yWWPyDse0lN_JOLn7M5rJk,8193
+browserstate/storage/storage_provider.py,sha256=Ig2QMR6ZG2Y46Ij5IfQEjUF5hN4JmVXUn8RYvjkJmeo,1455
+browserstate/utils/__init__.py,sha256=ZcCUlh3yGn2jv3bmr5sPUbMckzvDhS25uMHif7w_Hew,79
+browserstate/utils/dynamic_import.py,sha256=MdiDsydR6mh2nlej6bpvSaBNmvRI1Z72ZeYSTEQMmBo,2633
+browserstate-0.0.3.dist-info/METADATA,sha256=duxG1evjKl-no_4dNT-8Zz1mo7iJ7SqLTCnHN02h7PY,5951
+browserstate-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+browserstate-0.0.3.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+browserstate-0.0.3.dist-info/RECORD,,
