@@ -1,0 +1,11 @@
+hugo/cli.py,sha256=IMH6IP59kpGTpjzQHSjOzp7c7nI3vA6a738fm31lAug,1773
+hugo/__main__.py,sha256=oivVy03lY91Mbd-m9lhsKaceYjtCFkvlL27ja35lBbI,278
+hugo/binaries/hugo-0.146.2-darwin-arm64,sha256=URWg6piVpdCIOlOFZ9QLdUXpCe23RY6dY_QSRxYTKQk,74722050
+hugo/binaries/.gitignore,sha256=kCpRPdl3S_jqYYZaOrc0-xa6-l3KqVjNRXc6jCkd_-Q,12
+hugo-0.146.2.dist-info/RECORD,,
+hugo-0.146.2.dist-info/WHEEL,sha256=_0NP86R42hwXo9qyXVywFV8a0WWep5v5xyG-E87zx5E,106
+hugo-0.146.2.dist-info/entry_points.txt,sha256=Ls4oXWdn8_WPbp5MRF8E8fSO0sbSv780-1MwtEbjUTI,41
+hugo-0.146.2.dist-info/top_level.txt,sha256=1YLtTirNxzts10vTa7nWCluyqrKG0jKpK87fgAIvTqI,5
+hugo-0.146.2.dist-info/METADATA,sha256=FS9GlCjD9t9n1zxREO9Dq5ZWsqLNWV3HuAdedq39OF8,23215
+hugo-0.146.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hugo-0.146.2.dist-info/licenses/LICENSE-hugo.txt,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
