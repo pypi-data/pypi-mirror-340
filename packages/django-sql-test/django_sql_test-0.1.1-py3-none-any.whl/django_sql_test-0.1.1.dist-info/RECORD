@@ -1,0 +1,8 @@
+django_sql_test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_sql_test/app_settings.py,sha256=6ZcM1ISSSTWfdQY0vsrtjmfuxarA8ZE0RuYLd-_4cq4,233
+django_sql_test/engine.py,sha256=4kFM0gvQeV2F9XQOZy3eCxl7seD7kxpeoa62aLKiy2I,1735
+django_sql_test/utils.py,sha256=AppVAn6TnFhL8Yj8FVPoQxa_gbR3GUG_Zno3kj69PJQ,2662
+django_sql_test-0.1.1.dist-info/LICENSE,sha256=yLMctRBu3EmaGxfE0TXvxXA4eOg9OGKsO1VncA-eews,1070
+django_sql_test-0.1.1.dist-info/METADATA,sha256=tr70qjVqpJYyXLN8txUy1ExxaZGApj1aTDnGMmdrl0E,1704
+django_sql_test-0.1.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+django_sql_test-0.1.1.dist-info/RECORD,,
