@@ -1,0 +1,15 @@
+quantalent/__init__.py,sha256=vzdik0irOcNMtospPCSGt2pacLMxNz8qtBz5ZESjaqY,176
+quantalent/llm/__init__.py,sha256=cvh3GM0PYAZ1U8RgGziGsYMsd6iaYydhsdfadKBW4I0,194
+quantalent/llm/base.py,sha256=Mhk1_YcJirMaz_9Przrfq3iG-ZSzDZaz5qSV5oJ_3Ck,241
+quantalent/llm/factory.py,sha256=3DC6LR1wWm3ad776nEo1Nas_GG4q1eVX3lA47NR08sQ,404
+quantalent/llm/ollama_provider.py,sha256=GJgMVEOVYttIZByqjj3ck44eH0xWpCDWysZxQvk1Vuo,2326
+quantalent/llm/openai_provider.py,sha256=AcIAnBess1nOU1-PbQL7BkvdUqZxUhyuiYJkvDMACUo,1307
+quantalent/search/__init__.py,sha256=oChRFHDyAGDpg4F4uFir5ChVuQc5lrnh0WOgdbwacm8,112
+quantalent/search/base.py,sha256=maQwXA_Yw2YMeI3-0o0zmwYbFzOJtgOv8CV6pKjs8lU,101
+quantalent/search/brave_provider.py,sha256=LcHyiNEEq_vUTyDFJ7OIoZnPpwAjRmpyv9Aa47sLqtk,1670
+quantalent/search/factory.py,sha256=htThoNz7DD6VIW_BvSDhOpJ-DgWhyjNUsnF-2uEZQg0,299
+quantalent/utils/__init__.py,sha256=p2Or783q3yO4Q0A7vqaftgn6bcAwn9SnH76MB5qYFjk,33
+quantalent/utils/_webutils.py,sha256=YHO2V1xzUP2vv6a7JLebQfzoaRuA4I35KeKPuBTPfhY,1519
+quantalent-0.1.2.dist-info/METADATA,sha256=lV9ojs5Sx3ze7sfxxpQBWgzCAM5I_2ruuTNoeDe-krw,543
+quantalent-0.1.2.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+quantalent-0.1.2.dist-info/RECORD,,
