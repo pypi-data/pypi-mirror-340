@@ -1,0 +1,9 @@
+README.md
+setup.py
+package_grecco.egg-info/PKG-INFO
+package_grecco.egg-info/SOURCES.txt
+package_grecco.egg-info/dependency_links.txt
+package_grecco.egg-info/top_level.txt
+package_name/__init__.py
+package_name/file1_name.py
+package_name/file2_name.py
