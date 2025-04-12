@@ -1,0 +1,117 @@
+Metadata-Version: 2.4
+Name: osher
+Version: 0.1.0
+Summary: A comprehensive OSINT (Open Source Intelligence) tool with multiple data sources
+Home-page: https://github.com/osintscout/osher
+Author: OSINT Scout Team
+Author-email: info@osintscout.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Security
+Classifier: Topic :: Internet
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: dnspython
+Requires-Dist: email-validator
+Requires-Dist: flask
+Requires-Dist: flask-sqlalchemy
+Requires-Dist: gunicorn
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: phonenumbers
+Requires-Dist: psycopg2-binary
+Requires-Dist: pyopenssl
+Requires-Dist: python-whois
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: seaborn
+Requires-Dist: whois
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# OSHER
+
+A comprehensive OSINT (Open Source Intelligence) tool with multiple data sources.
+
+## Features
+
+- IP address intelligence - geolocation, ISP information, and security assessment
+- Domain analysis - WHOIS data, DNS records, SSL certificate information
+- Email verification - format validation, breach checks, reputation analysis
+- Username search - presence checks across multiple social media platforms
+- Phone number intelligence - carrier information, location, validation
+- Report generation - export findings in HTML, JSON, or TXT formats
+- Data visualization capabilities
+- Both CLI and web interface
+
+## Installation
+
+```bash
+pip install osher
+```
+
+## Usage
+
+### Command Line Interface
+
+```bash
+# Get help
+osher --help
+
+# IP address lookup
+osher ip 8.8.8.8
+
+# Domain information
+osher domain example.com
+
+# Email analysis
+osher email user@example.com
+
+# Username search
+osher username johndoe
+
+# Phone number lookup
+osher phone +12125551234
+
+# Interactive mode
+osher interactive
+```
+
+### Web Interface
+
+```bash
+# Start the web interface
+osher-web
+```
+
+Then open your browser and navigate to http://localhost:5000
+
+## API Keys
+
+While OSHER works with free public APIs, some services require API keys for better results. The following optional API keys can be configured:
+
+- VirusTotal API Key - for security assessment
+- IPinfo.io Token - for additional IP intelligence
+- HaveIBeenPwned API Key - for breach checks
+- EmailRep API Key - for email reputation analysis
+- Hunter.io API Key - for email verification
+- NumVerify API Key - for phone number verification
+- Wappalyzer API Key - for website technology detection
+
+You can set these API keys as environment variables or configure them through the interactive mode.
+
+## License
+
+MIT

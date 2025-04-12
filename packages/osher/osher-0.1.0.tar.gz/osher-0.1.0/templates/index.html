@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSINT Scout - Open Source Intelligence Tool</title>
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <style>
+        .result-card {
+            margin-top: 20px;
+            display: none;
+        }
+        #loading {
+            display: none;
+        }
+        .fixed-height-results {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">OSINT Scout</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 class="mb-4">OSINT Scout</h1>
+                <p class="lead">A comprehensive open source intelligence gathering tool</p>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-8 offset-md-2">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">Intelligence Scan</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="scanForm">
+                            <div class="mb-3">
+                                <label for="target" class="form-label">Target</label>
+                                <input type="text" class="form-control" id="target" name="target" placeholder="Enter IP, domain, email, username, or phone number" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="scanType" class="form-label">Scan Type</label>
+                                <select class="form-select" id="scanType" name="scan_type" required>
+                                    <option value="" selected disabled>Select scan type</option>
+                                    <option value="ip">IP Address</option>
+                                    <option value="domain">Domain</option>
+                                    <option value="email">Email</option>
+                                    <option value="username">Username</option>
+                                    <option value="phone">Phone Number</option>
+                                </select>
+                            </div>
+                            <div class="mb-3 form-check d-none" id="fullScanOption">
+                                <input type="checkbox" class="form-check-input" id="fullScan" name="full_scan">
+                                <label class="form-check-label" for="fullScan">Perform full scan</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Scan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loading" class="text-center my-4">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Gathering intelligence data...</p>
+        </div>
+
+        <div id="error-message" class="alert alert-danger my-4" style="display: none;"></div>
+
+        <div id="results" class="result-card">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Results</h5>
+                    <div>
+                        <button id="exportJSON" class="btn btn-outline-secondary btn-sm me-2">Export JSON</button>
+                        <button id="exportHTML" class="btn btn-outline-secondary btn-sm me-2">Export HTML</button>
+                        <button id="exportTXT" class="btn btn-outline-secondary btn-sm">Export TXT</button>
+                    </div>
+                </div>
+                <div class="card-body fixed-height-results">
+                    <div id="resultsContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5 py-3 bg-dark text-center">
+        <div class="container">
+            <p class="text-white mb-0">OSINT Scout &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show full scan option only for domain scans
+            document.getElementById('scanType').addEventListener('change', function() {
+                const fullScanOption = document.getElementById('fullScanOption');
+                if (this.value === 'domain') {
+                    fullScanOption.classList.remove('d-none');
+                } else {
+                    fullScanOption.classList.add('d-none');
+                }
+            });
+
+            // Handle form submission
+            document.getElementById('scanForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading spinner
+                document.getElementById('loading').style.display = 'block';
+                
+                // Hide results and error message
+                document.getElementById('results').style.display = 'none';
+                document.getElementById('error-message').style.display = 'none';
+                
+                // Get form data
+                const formData = new FormData(this);
+                
+                // Make AJAX request
+                fetch('/scan', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Hide loading spinner
+                    document.getElementById('loading').style.display = 'none';
+                    
+                    if (data.error) {
+                        // Show error message
+                        const errorElement = document.getElementById('error-message');
+                        errorElement.textContent = data.error;
+                        errorElement.style.display = 'block';
+                    } else {
+                        // Display results
+                        displayResults(data);
+                        document.getElementById('results').style.display = 'block';
+                        
+                        // Store data for export
+                        window.resultData = data;
+                    }
+                })
+                .catch(error => {
+                    // Hide loading spinner
+                    document.getElementById('loading').style.display = 'none';
+                    
+                    // Show error message
+                    const errorElement = document.getElementById('error-message');
+                    errorElement.textContent = 'An error occurred while processing your request.';
+                    errorElement.style.display = 'block';
+                    console.error('Error:', error);
+                });
+            });
+
+            // Export buttons
+            document.getElementById('exportJSON').addEventListener('click', function() {
+                if (window.resultData) {
+                    exportReport('json');
+                }
+            });
+            
+            document.getElementById('exportHTML').addEventListener('click', function() {
+                if (window.resultData) {
+                    exportReport('html');
+                }
+            });
+            
+            document.getElementById('exportTXT').addEventListener('click', function() {
+                if (window.resultData) {
+                    exportReport('text');
+                }
+            });
+        });
+
+        function displayResults(data) {
+            const resultsContent = document.getElementById('resultsContent');
+            resultsContent.innerHTML = '';
+            
+            // Create a table for the results
+            const table = document.createElement('table');
+            table.className = 'table table-striped';
+            
+            // Create table header
+            const thead = document.createElement('thead');
+            const headerRow = document.createElement('tr');
+            
+            const keyHeader = document.createElement('th');
+            keyHeader.textContent = 'Property';
+            headerRow.appendChild(keyHeader);
+            
+            const valueHeader = document.createElement('th');
+            valueHeader.textContent = 'Value';
+            headerRow.appendChild(valueHeader);
+            
+            thead.appendChild(headerRow);
+            table.appendChild(thead);
+            
+            // Create table body
+            const tbody = document.createElement('tbody');
+            
+            // Handle different data types
+            formatData(data, tbody);
+            
+            table.appendChild(tbody);
+            resultsContent.appendChild(table);
+        }
+
+        function formatData(data, tbody, prefix = '') {
+            // Skip visualization_data
+            const skipKeys = ['visualization_data'];
+            
+            for (const key in data) {
+                if (skipKeys.includes(key)) continue;
+                
+                const row = document.createElement('tr');
+                
+                const keyCell = document.createElement('td');
+                keyCell.textContent = prefix + key;
+                row.appendChild(keyCell);
+                
+                const valueCell = document.createElement('td');
+                
+                // Handle different data types
+                if (data[key] === null) {
+                    valueCell.textContent = 'N/A';
+                } else if (typeof data[key] === 'object' && !Array.isArray(data[key])) {
+                    // For nested objects
+                    valueCell.textContent = 'Object';
+                    row.appendChild(valueCell);
+                    tbody.appendChild(row);
+                    
+                    // Add nested object data
+                    formatData(data[key], tbody, prefix + key + '.');
+                    continue;
+                } else if (Array.isArray(data[key])) {
+                    // For arrays
+                    if (data[key].length === 0) {
+                        valueCell.textContent = '[]';
+                    } else if (typeof data[key][0] === 'object') {
+                        // Array of objects
+                        valueCell.textContent = `Array (${data[key].length} items)`;
+                        
+                        // Create a collapsible section for array items
+                        const detailsDiv = document.createElement('div');
+                        
+                        data[key].forEach((item, index) => {
+                            const itemHeader = document.createElement('div');
+                            itemHeader.className = 'fw-bold mt-2';
+                            itemHeader.textContent = `Item ${index + 1}`;
+                            detailsDiv.appendChild(itemHeader);
+                            
+                            const itemTable = document.createElement('table');
+                            itemTable.className = 'table table-sm';
+                            
+                            const itemTbody = document.createElement('tbody');
+                            
+                            for (const itemKey in item) {
+                                const itemRow = document.createElement('tr');
+                                
+                                const itemKeyCell = document.createElement('td');
+                                itemKeyCell.textContent = itemKey;
+                                itemRow.appendChild(itemKeyCell);
+                                
+                                const itemValueCell = document.createElement('td');
+                                itemValueCell.textContent = formatValue(item[itemKey]);
+                                itemRow.appendChild(itemValueCell);
+                                
+                                itemTbody.appendChild(itemRow);
+                            }
+                            
+                            itemTable.appendChild(itemTbody);
+                            detailsDiv.appendChild(itemTable);
+                        });
+                        
+                        valueCell.appendChild(detailsDiv);
+                    } else {
+                        // Simple array
+                        valueCell.textContent = data[key].join(', ');
+                    }
+                } else {
+                    // Simple value
+                    valueCell.textContent = formatValue(data[key]);
+                }
+                
+                row.appendChild(valueCell);
+                tbody.appendChild(row);
+            }
+        }
+
+        function formatValue(value) {
+            if (typeof value === 'boolean') {
+                return value ? 'Yes' : 'No';
+            }
+            return value;
+        }
+
+        function exportReport(format) {
+            // Create form data for report generation
+            const formData = new FormData();
+            formData.append('report_type', window.resultData.scan_type);
+            formData.append('target', window.resultData.target);
+            formData.append('format', format);
+            formData.append('data', JSON.stringify(window.resultData));
+            
+            // Make AJAX request
+            fetch('/report', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    return response.blob();
+                }
+                throw new Error('Report generation failed');
+            })
+            .then(blob => {
+                // Create download link
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = `report_${window.resultData.scan_type}_${window.resultData.target}.${format === 'text' ? 'txt' : format}`;
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Failed to generate report. Please try again.');
+            });
+        }
+    </script>
+</body>
+</html>

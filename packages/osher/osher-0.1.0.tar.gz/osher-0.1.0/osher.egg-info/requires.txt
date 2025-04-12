@@ -1,0 +1,17 @@
+click
+dnspython
+email-validator
+flask
+flask-sqlalchemy
+gunicorn
+matplotlib
+numpy
+pandas
+phonenumbers
+psycopg2-binary
+pyopenssl
+python-whois
+requests
+rich
+seaborn
+whois
