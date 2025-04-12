@@ -1,0 +1,13 @@
+README.md
+setup.py
+addressbook/__init__.py
+addressbook/command_matcher.py
+addressbook/error_handler.py
+addressbook/main.py
+addressbook/utils.py
+goit_dev_nest_addressbook_cli.egg-info/PKG-INFO
+goit_dev_nest_addressbook_cli.egg-info/SOURCES.txt
+goit_dev_nest_addressbook_cli.egg-info/dependency_links.txt
+goit_dev_nest_addressbook_cli.egg-info/entry_points.txt
+goit_dev_nest_addressbook_cli.egg-info/requires.txt
+goit_dev_nest_addressbook_cli.egg-info/top_level.txt
