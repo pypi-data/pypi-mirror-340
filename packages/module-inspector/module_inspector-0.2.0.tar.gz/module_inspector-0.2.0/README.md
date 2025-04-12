@@ -1,0 +1,61 @@
+# Module Inspector
+
+A simple utility to inspect the currently imported packages, aliases, and members in the Python global namespace.
+
+## Installation
+
+Install from pip
+
+```bash
+pip install module-inspector
+```
+
+Clone the repository and install it:
+
+```bash
+git clone https://github.com/ntluong95/module-inspector.git
+cd module-inspector
+pip install .
+```
+
+## Usage
+```python
+from module_inspector import inspector
+import json
+import os
+
+import ibis
+import pandas as pd
+import numpy as np
+from dotenv import load_dotenv
+from IPython.display import Markdown, display
+from openai import OpenAI
+from tqdm import tqdm
+import bs4
+
+# Inspect imported modules
+packages_imported = inspector.extract_imported_packages(as_json=True)
+print(packages_imported)
+```
+
+## Example Output
+```json
+[
+  {
+    "module": "IPython",
+    "alias": null,
+    "members": ["Markdown", "display", "exit", "get_ipython", "quit"]
+  },
+  { "module": "bs4", "alias": null, "members": [] },
+  { "module": "dotenv", "alias": null, "members": ["load_dotenv"] },
+  { "module": "ibis", "alias": null, "members": [] },
+  { "module": "json", "alias": null, "members": [] },
+  { "module": "module_inspector", "alias": "inspector", "members": [] },
+  { "module": "numpy", "alias": "np", "members": [] },
+  { "module": "openai", "alias": null, "members": ["OpenAI"] },
+  { "module": "os", "alias": null, "members": [] },
+  { "module": "pandas", "alias": "pd", "members": [] },
+  { "module": "positron", "alias": null, "members": ["help"] },
+  { "module": "tqdm", "alias": null, "members": ["tqdm"] }
+]
+```

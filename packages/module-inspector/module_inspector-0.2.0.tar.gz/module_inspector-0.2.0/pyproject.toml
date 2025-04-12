@@ -1,0 +1,16 @@
+[project]
+name = "module-inspector"
+version = "0.2.0"
+authors = [{ name = "Luong Nguyen Thanh", email = "ph.ntluong95@gmail.com" }]
+description = "A utility package to inspect imported packages and their aliases."
+readme = "README.md"
+requires-python = ">=3.12.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ntluong95/module-inspector"
+Issues = "https://github.com/ntluong95/module-inspector/issues"
