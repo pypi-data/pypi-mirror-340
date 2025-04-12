@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "numcodecs-observers"
+version = "0.1.2"
+description = "Observe encoding and decoding in the `numcodecs` buffer compression API"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "numcodecs>=0.13.0,<0.17",
+    "numcodecs-combinators~=0.2.3",
+    "numpy~=2.0",
+    "typing-extensions~=4.6",
+]
+
+[dependency-groups]
+dev = ["mypy~=1.14", "pytest~=8.3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"numcodecs_observers" = ["py.typed"]
+
+[[tool.mypy.overrides]]
+module = ["numcodecs.*"]
+follow_untyped_imports = true
