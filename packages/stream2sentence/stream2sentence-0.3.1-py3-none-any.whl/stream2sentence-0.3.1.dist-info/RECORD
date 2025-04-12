@@ -1,0 +1,9 @@
+stream2sentence/__init__.py,sha256=pjpB2Hgsydn8RM1rv-5XbRjfZXaSZmVowtmGsuL7dnI,259
+stream2sentence/avoid_pause_words.py,sha256=5Su23Cit5utRz5FWZo1HBM4uMVKzEUyPWRoeZEMNbQc,1607
+stream2sentence/delimiter_ignore_prefixes.py,sha256=t60zW-ErCj2vbzMXKvzrgz52Adcy0TId6Juzr0mbA2o,1108
+stream2sentence/stream2sentence.py,sha256=JV4hA0SZuRC_6Hh5wK_UarfNiFebo-2lP_V0053XWSw,19136
+stream2sentence/stream2sentence_time_based.py,sha256=4c2RfzaDI7Zq_SLs3siX9oWl-kIIUWcn3fAv1M9g3T8,11834
+stream2sentence-0.3.1.dist-info/METADATA,sha256=ZhKhA-vSydoQcNAZ9xUSDvBP7JcDt8MDwhQgBC1A4a4,10731
+stream2sentence-0.3.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+stream2sentence-0.3.1.dist-info/top_level.txt,sha256=7RtS4EfUkpV3tMMyUqRgSGDvRm2rPBAYdazTN2z8m1A,16
+stream2sentence-0.3.1.dist-info/RECORD,,
