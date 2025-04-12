@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+cr_sendmail/__init__.py
+cr_sendmail/backends.py
+cr_sendmail_django.egg-info/PKG-INFO
+cr_sendmail_django.egg-info/SOURCES.txt
+cr_sendmail_django.egg-info/dependency_links.txt
+cr_sendmail_django.egg-info/requires.txt
+cr_sendmail_django.egg-info/top_level.txt
+django_sendmail_backend/__init__.py
+django_sendmail_backend/backends.py
