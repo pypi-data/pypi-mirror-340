@@ -1,0 +1,8 @@
+winrt/_winrt_windows_storage_bulkaccess.cp39-win_amd64.pyd,sha256=8BsOapMCN5VwpsJUYPsk7LzfLJVwm-Q0I8ke5PYkCWA,369152
+winrt/_winrt_windows_storage_bulkaccess.pyi,sha256=KiK1SrRPUa6DO1vnllRFYQQR4kcSeQPwj_BbC_dQC08,37310
+winrt/windows/storage/bulkaccess/__init__.py,sha256=Sd4HyyGlaPC8UE4AETSYLL1DTxIGiR68Yr3_2_b2Fys,413
+winrt/windows/storage/bulkaccess/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_storage_bulkaccess-3.1.0.dist-info/METADATA,sha256=8wNWcJVN8C-1578gGa7Ztl9tbNLFZBXEy43qjvVdhS4,1432
+winrt_windows_storage_bulkaccess-3.1.0.dist-info/WHEEL,sha256=3JRrBaG_r4GKEsQxd6dVT34joOu5By0wlyszd6u_ofs,99
+winrt_windows_storage_bulkaccess-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_storage_bulkaccess-3.1.0.dist-info/RECORD,,
