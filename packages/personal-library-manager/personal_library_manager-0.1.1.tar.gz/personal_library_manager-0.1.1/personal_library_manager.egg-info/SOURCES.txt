@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+personal_library_manager/__init__.py
+personal_library_manager/cli.py
+personal_library_manager/library.py
+personal_library_manager.egg-info/PKG-INFO
+personal_library_manager.egg-info/SOURCES.txt
+personal_library_manager.egg-info/dependency_links.txt
+personal_library_manager.egg-info/entry_points.txt
+personal_library_manager.egg-info/top_level.txt
