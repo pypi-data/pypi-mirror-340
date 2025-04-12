@@ -1,0 +1,10 @@
+geopandas
+rasterio
+tifffile==2023.8.12
+netCDF4
+pyproj
+joblib
+scipy
+matplotlib
+imagecodecs
+tensorflow
