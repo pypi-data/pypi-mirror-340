@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram-mcp"
+version = "0.1.7" # Consider bumping version after refactor/feature change
+authors = [
+  { name="Yaser Martinez Palenzuela", email="yaser.martinez@gmail.com" },
+]
+description = "An MCP server for interacting with Telegram, runnable as a single script or uv tool."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Communications :: Chat",
+    "Framework :: AsyncIO",
+]
+dependencies = [
+    "mcp[cli]",
+    "telethon",
+    "python-dotenv", # Still useful for optional overrides by dev
+    "pydantic",
+    # "qrcode[pil]", # Removed, no longer needed for phone login
+]
+
+[project.scripts]
+# Updated entry point to use the cli module within the package
+telegram-mcp = "telegram_mcp.cli:main"
+
+# Optional: Add project URLs if you have a repository
+# [project.urls]
+# "Homepage" = "https://github.com/elyase/telegram-mcp"
+# "Bug Tracker" = "https://github.com/elyase/telegram-mcp/issues"
+
+# --- Added Development Dependencies and Tool Configs ---
+
+[tool.setuptools.packages.find]
+# Added to support the src layout
+where = ["src"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "anyio[trio]>=4.5", # Added trio extra for anyio testing backend
+    "ruff>=0.8.5",
+    "pyright>=1.1.391",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py310"
+
+[tool.pyright]
+# Updated to include the src directory instead of the old runner script
+include = ["src", "tests"]
+
+
+[[tool.uv.index]]
+name = "testpypi"
+url = "https://test.pypi.org/simple/"
+publish-url = "https://test.pypi.org/legacy/"
+explicit = true

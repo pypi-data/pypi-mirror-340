@@ -1,0 +1,4 @@
+mcp[cli]
+telethon
+python-dotenv
+pydantic
