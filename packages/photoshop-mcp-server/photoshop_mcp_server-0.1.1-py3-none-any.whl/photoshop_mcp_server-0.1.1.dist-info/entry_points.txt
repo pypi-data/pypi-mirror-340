@@ -1,0 +1,3 @@
+[console_scripts]
+ps-mcp=photoshop_mcp_server.server:main
+
