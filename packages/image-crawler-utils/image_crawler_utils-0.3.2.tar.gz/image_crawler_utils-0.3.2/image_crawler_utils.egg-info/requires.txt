@@ -1,0 +1,6 @@
+bs4
+dill
+lxml
+nodriver>=0.45.1
+Requests
+rich
