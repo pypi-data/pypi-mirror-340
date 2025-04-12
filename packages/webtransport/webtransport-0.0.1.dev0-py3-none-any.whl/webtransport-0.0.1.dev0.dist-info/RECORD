@@ -1,0 +1,17 @@
+webtransport/__init__.py,sha256=BmSYJTFvmW1mqnS2gJDNxoa2xLV9C91aT_NbyWvU_yY,512
+webtransport/__main__.py,sha256=Q4zWrWx5MeV4I2w52Md5e5ejDKAB7Hs9v8Tp9de0WTI,2016
+webtransport/config.py,sha256=3NF77as2unZR6f04N3iT5uReBt0wBLyvZtDsbyYs6TE,273
+webtransport/server.py,sha256=l1ipQI9iXmU8ZeadeCUOSOZl-EJgO9n0sBUXdbKzum0,5244
+webtransport/handlers/__init__.py,sha256=tUddHXbsfS8JF-EXuf_CocOrp-8cVd8BIDakxyI7jZ8,219
+webtransport/handlers/base.py,sha256=ZkF_NacTRDGX1xxZwOImZsDLlTSH1GSbrxMmA_m6nYA,996
+webtransport/handlers/counter.py,sha256=jQAciyXClAWO4hI1SDZI3NnRglVDZ9hic2WeJzF6nPo,2716
+webtransport/handlers/echo.py,sha256=0FO04QZVmqsiILxyol9P60pn8n-8SWJ4LwDOk-5dTm4,1494
+webtransport/protocols/__init__.py,sha256=PqxXyMnEur_hVSRijHYz_axQx5TTVgpWN0DVZY1wL0Q,124
+webtransport/protocols/http3.py,sha256=2_oLPF-M-jVMsyqB0I8tyTuSxgCxHvdqzno5bnIIP_s,4625
+webtransport/utils/cert.py,sha256=rYenuHg4zmwAk98KucK3lPJJkq_InMvTXRjBx60BH_g,2646
+webtransport/utils/config.py,sha256=kU_8mpupRaEQJtWJsGKAedRRM5uIxJBdibaw1dANiIU,1742
+webtransport/utils/logging.py,sha256=Fps6moYmqdRaCvbEC_AqBneyHv0WXQ7efT-D4Gy9pKw,627
+webtransport-0.0.1.dev0.dist-info/METADATA,sha256=zDcix-T8h0dyUoYvjX1HFbK75iqnoSE2DDKPPxG5Law,1126
+webtransport-0.0.1.dev0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+webtransport-0.0.1.dev0.dist-info/entry_points.txt,sha256=jAH-rA4PAlEprqvMgVIi9O8GJOWK3RMPjqRD01Z5NHA,60
+webtransport-0.0.1.dev0.dist-info/RECORD,,

@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: webtransport
+Version: 0.0.1.dev0
+Summary: A Python library for web transport protocols
+Project-URL: Homepage, https://github.com/danchev/python-webtransport
+Project-URL: Issues, https://github.com/danchev/python-webtransport/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Requires-Dist: aioquic
+Description-Content-Type: text/markdown
+
+WebTransport Sample
+===
+See https://googlechrome.github.io/samples/webtransport/client.html for a live demo of the client.
+
+There's code for a sample local server at https://github.com/GoogleChrome/samples/blob/gh-pages/webtransport/webtransport_server.py
+
+Learn more at https://chromestatus.com/feature/4854144902889472

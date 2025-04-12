@@ -1,0 +1,2 @@
+[console_scripts]
+webtransport = webtransport.__main__:main
