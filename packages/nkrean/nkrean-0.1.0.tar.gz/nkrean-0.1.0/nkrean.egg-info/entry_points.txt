@@ -1,0 +1,2 @@
+[console_scripts]
+play-video = video_player.player:play_video

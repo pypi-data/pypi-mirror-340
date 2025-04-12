@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+nk/__init__.py
+nk/nkrean.py
+nkrean.egg-info/PKG-INFO
+nkrean.egg-info/SOURCES.txt
+nkrean.egg-info/dependency_links.txt
+nkrean.egg-info/entry_points.txt
+nkrean.egg-info/requires.txt
+nkrean.egg-info/top_level.txt
