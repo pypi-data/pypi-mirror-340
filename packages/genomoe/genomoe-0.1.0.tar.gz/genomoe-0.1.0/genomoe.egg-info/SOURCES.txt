@@ -1,0 +1,7 @@
+README.md
+hello.py
+pyproject.toml
+genomoe.egg-info/PKG-INFO
+genomoe.egg-info/SOURCES.txt
+genomoe.egg-info/dependency_links.txt
+genomoe.egg-info/top_level.txt
