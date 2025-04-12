@@ -1,0 +1,8 @@
+winrt/_winrt_windows_system_threading_core.cp313-win32.pyd,sha256=S1-mDqee_JWRwMecHz3zY2neavaNmNPtBTe8QyGWXhg,63488
+winrt/_winrt_windows_system_threading_core.pyi,sha256=VeW0-2ffcIiySd0TkIuBF_n_76Vfmpp6wieGJ2LPlaQ,2801
+winrt/windows/system/threading/core/__init__.py,sha256=5b5tZ81B4UwYPzTDnVt9y8SgSqV_brApeW92pmvda70,391
+winrt/windows/system/threading/core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_system_threading_core-3.1.0.dist-info/METADATA,sha256=rwshsZzcoJIbCbY1-qE03JnWFpQL6SbPODBB-jyAVjc,1144
+winrt_windows_system_threading_core-3.1.0.dist-info/WHEEL,sha256=iuBtox58ZfmdZzG-BEHKFn_UiBPbBDtT4b67THCTeoc,97
+winrt_windows_system_threading_core-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_system_threading_core-3.1.0.dist-info/RECORD,,
