@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: benchmarks
+Version: 0.1.0
+Summary: A library for building agentic benchmarks.
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: docker>=7.1.0
+Requires-Dist: pydantic>=2.10.6
+Dynamic: license-file
+
+# benchmarks
+
+A library for building agentic benchmarks.
