@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "kafka_pubsub"
+version = "0.2.2"
+description = "Kafka pub/sub utilities"
+authors = ["Emmanuel Chukwu <emmanuel.chukwu@gmail.com>"]
+license = "MIT"  # Optional, but good to include
+readme = "README.md"  # Optional if you have a README
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "^1.0.1"
+confluent-kafka = "^2.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
