@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="dark">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+            http-equiv="Content-Security-Policy"
+            content="connect-src 'self' http://localhost:8001;"
+        />
+        
+		<link rel="modulepreload" href="/_app/immutable/entry/start.Bx1t9BQt.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BpDtL3Bg.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/CYgJF_JY.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.Dzi642WQ.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/DtlzAxQq.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BcJYqscY.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/xPRKyJI4.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/B-RD8E05.js">
+    </head>
+    <body data-sveltekit-preload-data="hover" class="flex h-screen w-screen flex-col dark:bg-black">
+        <div style="display: contents">
+			<script>
+				{
+					__sveltekit_u2sji = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.Bx1t9BQt.js"),
+						import("/_app/immutable/entry/app.Dzi642WQ.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+    </body>
+</html>
