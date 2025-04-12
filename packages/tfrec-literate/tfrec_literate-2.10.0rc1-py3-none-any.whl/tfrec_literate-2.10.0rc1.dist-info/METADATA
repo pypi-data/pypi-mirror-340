@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: tfrec-literate
+Version: 2.10.0rc1
+Summary: Library for reading and writing TFRecords
+Home-page: https://github.com/vwhvpwvk/tfrec-literate
+Author: vwhvpwvk
+Project-URL: Source Code, https://github.com/vwhvpwvk/tfrec-literate
+License-File: LICENSE
+Requires-Dist: tensorflow<2.13
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: summary
