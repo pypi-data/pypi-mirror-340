@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: UVEC
+Version: 1.1.2
+Summary: User defined VEhiCle models [UVEC]
+Author: attr: UVEC.__author__
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=2.0.2
+Requires-Dist: matplotlib>=3.9.3
+Provides-Extra: testing
+Requires-Dist: pytest>=8.3; extra == "testing"
+Requires-Dist: pytest-cov>=6.0; extra == "testing"
+Requires-Dist: tox>=4.23; extra == "testing"
+Requires-Dist: mypy>=1.13; extra == "testing"
+Requires-Dist: yapf>=0.43; extra == "testing"
+Dynamic: license-file
+
+![Tests](https://github.com/StemVibrations/vehicle_models/actions/workflows/workflow.yml/badge.svg)
+[![codecov](https://codecov.io/gh/StemVibrations/vehicle_models/graph/badge.svg?token=0SCPA6LAGT)](https://codecov.io/gh/StemVibrations/vehicle_models)
+
+
+# User defined VEhiCle models [UVEC]
+
+This repository contains the User defined VEhiCle models [UVEC] for STEM.
+
+At the moment, the following vehicle models are available:
+
+* `ten_dof_vehicle_2D`: 2-dimensional 10 degrees-of-freedom vehicle model (based on [Zhai and Sun, 1994](https://www.tandfonline.com/doi/abs/10.1080/00423119308969544))
+
+* `two_dof_vehicle_2D`: 2-dimensional 2 degrees-of-freedom vehicle model (based on [Lou and Zeng, 2004](https://onlinelibrary.wiley.com/doi/epdf/10.1002/nme.1207))

@@ -1,0 +1,9 @@
+numpy>=2.0.2
+matplotlib>=3.9.3
+
+[testing]
+pytest>=8.3
+pytest-cov>=6.0
+tox>=4.23
+mypy>=1.13
+yapf>=0.43
