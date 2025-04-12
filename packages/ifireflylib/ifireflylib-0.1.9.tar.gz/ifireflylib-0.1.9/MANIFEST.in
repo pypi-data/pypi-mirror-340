@@ -1,0 +1,10 @@
+include README.md
+include LICENSE
+recursive-include ifireflylib/native *.dll *.so *.dylib
+recursive-include ifireflylib *.py
+recursive-include ifireflylib/client *.py
+recursive-include ifireflylib/api *.py
+recursive-include ifireflylib/client/ *.py
+recursive-include ifireflylib/api/ *.py
+recursive-include ifireflylib/client/__pycache__ *.pyc
+recursive-include ifireflylib/api/__pycache__ *.pyc
