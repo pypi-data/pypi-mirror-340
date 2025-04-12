@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "digurl"
+version = "0.1.1"
+description = "A command line tool to extract domain from URL and perform dig operations"
+authors = ["redshwin <yongdong.wu@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "digurl"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+urllib3 = "^2.0.0"
+
+[tool.poetry.scripts]
+digurl = "digurl.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
