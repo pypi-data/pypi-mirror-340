@@ -1,0 +1,197 @@
+# discogs/selector.py
+
+from rich.prompt import Prompt
+from typing import List
+import pandas as pd
+from rich.panel import Panel
+from rich.markdown import Markdown
+from rich.table import Table
+from rich.console import Console
+from discogs.utils import human_readable_size
+from pathlib import Path
+
+console = Console()
+
+def display_table(df: pd.DataFrame) -> None:
+    """
+    Displays a Rich-formatted table of available Discogs files.
+    Shows basic info: index, month, content type, file size, and URL.
+    """
+    table = Table(title="Available Discogs Files", show_lines=True)
+
+    table.add_column("No", style="cyan", justify="right")
+    table.add_column("Month", style="magenta")
+    table.add_column("Type", style="green")
+    table.add_column("Size (MB)", justify="right")
+    table.add_column("URL", style="dim", overflow="fold")
+
+    for i, row in df.iterrows():
+        size_mb = f"{row['size_bytes'] / (1024 ** 2):.2f}"
+        table.add_row(
+            str(i + 1),
+            row["month"],
+            row["content"],
+            size_mb,
+            row["url"]
+        )
+
+    console.print(table)
+
+def select_indices(df: pd.DataFrame, allow_all: bool = False) -> List[int]:
+    """
+    Prompts user to select files by number (comma-separated list or 'all' if allowed).
+    Returns a list of selected row indices.
+    """
+    while True:
+        selection = Prompt.ask(
+            "[bold green]Select file(s) by number (comma-separated)[/]",
+            default="1"
+        )
+
+        if allow_all and selection.strip().lower() == "all":
+            return list(range(len(df)))
+
+        try:
+            selected = [int(x.strip()) - 1 for x in selection.split(",")]
+            if all(0 <= i < len(df) for i in selected):
+                return selected
+            else:
+                raise ValueError
+        except ValueError:
+            console.print("[red]Invalid selection. Try again.[/red]")
+
+def select_files(df: pd.DataFrame) -> List[int]:
+    """
+    Allows user to select files using basic printed list.
+    Returns selected row indices.
+    """
+    if df.empty:
+        console.print("[red]No files to select.[/red]")
+        return []
+
+    for i, row in df.iterrows():
+        size_mb = f"{row['size_bytes'] / (1024 ** 2):.2f} MB"
+        console.print(f"[{i + 1}] {row['month']} | {row['content']} | {size_mb}")
+
+    while True:
+        selection = Prompt.ask("Select file(s) by number (comma-separated)", default="1")
+        try:
+            indices = [int(x.strip()) - 1 for x in selection.split(",")]
+            if all(0 <= i < len(df) for i in indices):
+                return indices
+        except Exception:
+            pass
+
+        console.print("[red]Invalid selection. Try again.[/red]")
+
+def display_status_table(df, download_dir: Path):
+    """
+    Displays the full download/extract/convert status of all files in a table.
+    Includes ✔/✗ markers for each status column.
+    """
+    table = Table(title="Available Discogs Files", show_lines=True)
+    table.add_column("No", justify="right", style="cyan", no_wrap=True)
+    table.add_column("Month", style="magenta")
+    table.add_column("Type", style="yellow")
+    table.add_column("Size", justify="right")
+    table.add_column("Downloaded", justify="center")
+    table.add_column("Extracted", justify="center")
+    table.add_column("Converted", justify="center")
+
+    for idx, row in df.iterrows():
+        filename = Path(row["url"]).name
+        year_month = row["month"]
+        data_dir = download_dir / "Datasets" / year_month
+        gz_path = data_dir / filename
+        xml_path = gz_path.with_suffix("")
+        csv_path = xml_path.with_suffix(".csv")
+
+        is_downloaded = gz_path.exists()
+        is_extracted = xml_path.exists()
+        is_converted = csv_path.exists()
+
+        check = lambda b: "[green]✔[/green]" if b else "[red]✗[/red]"
+
+        table.add_row(
+            str(idx + 1),
+            row["month"],
+            row["content"],
+            human_readable_size(row["size_bytes"]),
+            check(is_downloaded),
+            check(is_extracted),
+            check(is_converted),
+        )
+
+    console.print(table)
+
+def show_welcome():
+    """
+    Displays the ASCII welcome screen with a summary of available commands and features.
+    """
+    ascii_logo = r"""
+            ██████╗ ██╗███████╗ ██████╗ ██████╗  ██████╗ ███████╗             
+            ██╔══██╗██║██╔════╝██╔════╝██╔═══██╗██╔════╝ ██╔════╝             
+            ██║  ██║██║███████╗██║     ██║   ██║██║  ███╗███████╗             
+            ██║  ██║██║╚════██║██║     ██║   ██║██║   ██║╚════██║             
+            ██████╔╝██║███████║╚██████╗╚██████╔╝╚██████╔╝███████║             
+            ╚═════╝ ╚═╝╚══════╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚══════╝             
+
+                        ██████╗  █████╗ ████████╗ █████╗                      
+                        ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗                     
+                        ██║  ██║███████║   ██║   ███████║                     
+                        ██║  ██║██╔══██║   ██║   ██╔══██║                     
+                        ██████╔╝██║  ██║   ██║   ██║  ██║                     
+                        ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝                     
+
+    ██████╗ ██████╗  ██████╗  ██████╗███████╗███████╗███████╗ ██████╗ ██████╗ 
+    ██╔══██╗██╔══██╗██╔═══██╗██╔════╝██╔════╝██╔════╝██╔════╝██╔═══██╗██╔══██╗
+    ██████╔╝██████╔╝██║   ██║██║     █████╗  ███████╗███████╗██║   ██║██████╔╝
+    ██╔═══╝ ██╔══██╗██║   ██║██║     ██╔══╝  ╚════██║╚════██║██║   ██║██╔══██╗
+    ██║     ██║  ██║╚██████╔╝╚██████╗███████╗███████║███████║╚██████╔╝██║  ██║
+    ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚═════╝╚══════╝╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝
+        """
+
+    console.print(Panel.fit(
+        ascii_logo,
+        title="Discogs Data Processor CLI (v1.5)",
+        subtitle="by ofurkancoban",
+        style="bold cyan"
+    ))
+
+    md = Markdown("""
+Welcome to the **Discogs CLI**!
+
+This tool allows you to:
+- 🧠 Scrape the latest data dump list from Discogs
+- ⬇️  Download selected files
+- 📦 Extract `.gz` files
+- ✂️  Chunk large XML into smaller files
+- 📄 Convert everything into tidy CSV
+- 🗑 Delete downloaded/extracted/converted files
+- ⚙️  Configure your download folder
+
+---
+
+**Available Commands:**
+
+- `discogs run` — Full auto mode (download → extract → convert)
+- `discogs show` — Display available Discogs files
+- `discogs download` — Download selected files
+- `discogs extract` — Extract previously downloaded `.gz` files
+- `discogs convert` — Convert extracted `.xml` files to `.csv`
+- `discogs delete` — Delete files by selection (or `--all`)
+- `discogs config` — Set or change your download folder
+
+---
+
+**Connect with me:**
+
+- 🌐 GitHub: [github.com/ofurkancoban](https://github.com/ofurkancoban)
+- 💼 LinkedIn: [linkedin.com/in/ofurkancoban](https://linkedin.com/in/ofurkancoban)
+- 📊 Kaggle: [kaggle.com/ofurkancoban](https://www.kaggle.com/ofurkancoban)
+
+---
+
+""")
+
+    console.print(md)
