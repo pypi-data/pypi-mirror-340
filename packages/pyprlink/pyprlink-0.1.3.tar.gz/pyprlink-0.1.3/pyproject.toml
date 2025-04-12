@@ -1,0 +1,41 @@
+[project]
+name = "pyprlink"
+version = "0.1.3"
+description = "TCP/IP client for communicating with PriarieView"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["python-dotenv"]
+authors = [
+    {name = "Jenu Chacko", email ="jenu.chacko@wisc.com"}
+]
+license = {text = "MIT"}
+keywords = ["prairie-view", "microscopy", "bruker-fm"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JenuC/PyPrLink"
+"Bug Tracker" = "https://github.com/JenuC/PyPrLink/issues"
+#"Documentation" = "https://github.com/jenuv/PyPrLink/wiki"
+"Source Code" = "https://github.com/jenuv/PyPrLink"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v"
+
+[project.scripts]
+pypr = "pyprlink.main:main"

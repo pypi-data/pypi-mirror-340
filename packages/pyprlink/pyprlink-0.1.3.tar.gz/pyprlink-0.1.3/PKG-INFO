@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: pyprlink
+Version: 0.1.3
+Summary: TCP/IP client for communicating with PriarieView
+Author-email: Jenu Chacko <jenu.chacko@wisc.com>
+License: MIT
+Project-URL: Homepage, https://github.com/JenuC/PyPrLink
+Project-URL: Bug Tracker, https://github.com/JenuC/PyPrLink/issues
+Project-URL: Source Code, https://github.com/jenuv/PyPrLink
+Keywords: prairie-view,microscopy,bruker-fm
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+
+# PyPrLink
+
+A TCP/IP client for communicating with PrairieView.
+Alternate for PrairieLink Application from Python. 
+Python-PrairieLink (PyPrLink)
+
+## Installation
+
+```bash
+pip install pyprlink
+```
+
+## Usage
+
+### As a Python Module
+```python
+from pyprlink.tcp_client import ask_PV
+# Send commands to PrairieView
+ask_PV('-gmp', 'x')  # Get motor position for X-stage
+ask_PV('-pg', '3', '400')  # Set PMT Gain on Channel 3 to 400
+```
+### From Command Line
+After installation, you can use the `pypr` command directly:
+```bash
+pypr -gmp x
+pypr -pg 3 400
+```
+
+## Development
+Install development dependencies:
+```bash
+pip install -e ".[dev]"
+```
+Run tests:
+```bash
+pytest
+```
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
