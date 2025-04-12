@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyperfstats/__init__.py
+pyperfstats/cli.py
+pyperfstats/live_monitor.py
+pyperfstats/profiler.py
+pyperfstats/visualize.py
+pyperfstats.egg-info/PKG-INFO
+pyperfstats.egg-info/SOURCES.txt
+pyperfstats.egg-info/dependency_links.txt
+pyperfstats.egg-info/entry_points.txt
+pyperfstats.egg-info/requires.txt
+pyperfstats.egg-info/top_level.txt

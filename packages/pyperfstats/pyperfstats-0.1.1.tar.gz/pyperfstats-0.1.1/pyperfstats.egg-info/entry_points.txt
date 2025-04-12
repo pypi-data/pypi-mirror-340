@@ -1,0 +1,2 @@
+[console_scripts]
+pyperfstats = pyperfstats.cli:cli

@@ -1,0 +1,4 @@
+psutil>=5.8.0
+matplotlib>=3.3.0
+pandas>=1.2.0
+click>=7.0
