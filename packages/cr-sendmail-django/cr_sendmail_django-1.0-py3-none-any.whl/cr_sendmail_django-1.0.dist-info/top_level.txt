@@ -1,0 +1,2 @@
+cr_sendmail
+django_sendmail_backend
