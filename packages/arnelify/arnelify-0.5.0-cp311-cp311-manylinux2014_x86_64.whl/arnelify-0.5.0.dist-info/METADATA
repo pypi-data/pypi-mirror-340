@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: arnelify
+Version: 0.5.0
+Summary: Minimalistic dynamic library which is an SDK written in C and C++.
+Home-page: https://github.com/arnelify/arnelify-python
+Author: Arnelify
+License: MIT
+Keywords: arnelify arnelify-python arnelify-sdk arnelify-sdk-python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cffi
+Requires-Dist: setuptools
+Requires-Dist: wheel
+
+<img src="https://static.wikia.nocookie.net/arnelify/images/c/c8/Arnelify-logo-2024.png/revision/latest?cb=20240701012515" style="width:336px;" alt="Arnelify Logo" />
+
+![Arnelify SDK for Python](https://img.shields.io/badge/Arnelify%20SDK%20for%20Python-0.5.0-yellow) ![C++](https://img.shields.io/badge/C++-2b-red) ![G++](https://img.shields.io/badge/G++-14.2.0-blue) ![Python](https://img.shields.io/badge/Python-3.11.2-blue) ![Nuitka](https://img.shields.io/badge/Nuitka-2.6.4-blue)
+
+## 🚀 About
+**Arnelify® SDK for Python** - provides a convenient interface for interacting with the [Arnelify](https://arnelify.com|Arnelify) API
+
+> WARNING! This is an initial version of the package, and it is still under active development.
+
+## ⚙️ Before install
+
+* MacOS or Linux
+* Windows with WSL2
+* Docker
+* Git
+
+## 📦 Installation
+
+Download SDK via Git command:
+```
+$ git clone git@github.com:taronsarkisyan/cvmaker-sdk.git
+```
+
+Create .env and insert API key from Arnelify:
+```
+$ cd ./cvmaker-sdk
+$ cp ./.env.local ./.env
+```
+
+Open SDK-container:
+```
+$ docker compose up -d
+$ docker ps
+$ docker exec -it YOUR_CONTAINER_ID bash
+```
+Install dependencies:
+```
+$ yarn install
+```
+See the Target Class:
+```
+$ cat ./src/core/cvmaker.js
+```
+## 🚀  Usage
+Lets run our sample app:
+```
+$ yarn start
+```
+
+## Release Notes
+Version 0.5.0 - Release
+
+We are excited to introduce the first version of the Arnelify SDK. Target class is located in the ./src/core directory and is utilized in the ./src/index.js srcipt. You can further use it in any of your projects.
+
+Key Features:
+
+* Basic functionality
+* Easy integration
+
+The script reads, downloads, and writes files to disk. Please check the read and write permissions for files in the container.
+
+## Generate Payload
+
+API URL:
+```
+https://cv.arnelify.com/api/v0.5/generate
+```
+
+Payload example (application/json)
+```
+{
+  user_token: 'your-token-here',
+  description: 'your-job-description',
+}
+```
+You can also find an example of code in bash:
+```
+./src/examples/generate.sh
+```
+
+## Generate for fake User
+
+API URL:
+```
+https://cv.arnelify.com/api/v0.5/generate
+```
+
+Payload example (application/json):
+```
+{
+  "user_token": "your-token",
+  "description": "your-job-description",
+  "first_name": "Artur",
+  "last_name": "Doyle",
+  "country": "USA",
+  "city": "New York",
+  "education": "[{\"key\":\"New York Academy\",\"value\":\"2009 - 2016\"}]",
+  "customers": "[{\"key\":\"Apple\",\"value\":\"Jan 2022 - Present (2 years)\"},{\"key\":\"Google\",\"value\":\"Jan 2020 - Jan 2022 (2 years)\"},{\"key\":\"Meta\",\"value\":\"Jan 2018 - Jan 2020 (2 years)\"}]",
+  "languages": "[{\"key\":\"English\",\"value\":\"B2/C1\"},{\"key\":\"German\",\"value\":\"B1\"},{\"key\":\"Ukrainian\",\"value\":\"C2\"}]",
+  "contacts": "[{\"key\":\"Mobile\",\"value\":\"+1XXXXXXXXXX\"},{\"key\":\"E-Mail\",\"value\":\"artur@example.com\"},{\"key\":\"LinkedIn\",\"value\":\"https://linkedin.com\"}]",
+  "managed": "1",
+  "language": "en"
+}
+```
+You can also find an example of code in bash:
+```
+./src/examples/generateForFakeUser.sh
+```
+
+## Response Examples
+Success Response:
+```
+{
+  code: 200, //always 200
+  success: "https://download-link-for-pdf" //always has success
+}
+```
+
+Error Response:
+```
+{
+  code: 409, //not only 409
+  error: "Conflict" //always has error message (string)
+}
+```
