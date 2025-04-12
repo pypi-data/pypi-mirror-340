@@ -1,0 +1,2 @@
+freesimplegui>=4.60.0
+loguru>=0.7.0
