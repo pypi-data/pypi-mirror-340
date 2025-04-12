@@ -1,0 +1,3 @@
+The `CTD.py` script is derived from PyBioMed under path `PyBioMed/PyProtein`, a tool for feature extraction. Please cite the PyBioMed paper [^1] if you take this file and include it in your own project.
+
+[^1]: Dong, J., Yao, ZJ., Zhang, L. et al. PyBioMed: a python library for various molecular representations of chemicals, proteins and DNAs and their interactions. J Cheminform 10, 16 (2018). https://doi.org/10.1186/s13321-018-0270-2

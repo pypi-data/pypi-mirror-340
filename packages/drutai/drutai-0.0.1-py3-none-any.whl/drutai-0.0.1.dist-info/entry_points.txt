@@ -1,0 +1,4 @@
+[console_scripts]
+drutai=drutai.predict:run
+drutai_download=drutai.predict:download
+
