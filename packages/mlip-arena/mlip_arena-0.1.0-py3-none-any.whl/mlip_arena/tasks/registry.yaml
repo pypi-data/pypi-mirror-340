@@ -1,0 +1,21 @@
+Homonuclear diatomics:
+  category: Fundamentals
+  task-page: homonuclear-diatomics
+  task-layout: wide
+  rank-page: homonuclear-diatomics
+  last-update: 2024-09-19
+Combustion:
+  category: Molecular Dynamics
+  task-page: combustion
+  task-layout: centered
+  rank-page: combustion
+High pressure stability:
+  category: Molecular Dynamics
+  task-page: stability
+  task-layout: centered
+  rank-page: 
+Lattice thermal conductivity:
+  category: Properties and Physical Behaviors
+  task-page: thermal-conductivity
+  task-layout: centered
+  rank-page: thermal-conductivity
