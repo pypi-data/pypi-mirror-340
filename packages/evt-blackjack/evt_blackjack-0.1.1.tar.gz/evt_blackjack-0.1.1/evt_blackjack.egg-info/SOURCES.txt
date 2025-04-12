@@ -1,0 +1,9 @@
+README.md
+bj.py
+pyproject.toml
+setup.py
+evt_blackjack.egg-info/PKG-INFO
+evt_blackjack.egg-info/SOURCES.txt
+evt_blackjack.egg-info/dependency_links.txt
+evt_blackjack.egg-info/entry_points.txt
+evt_blackjack.egg-info/top_level.txt
