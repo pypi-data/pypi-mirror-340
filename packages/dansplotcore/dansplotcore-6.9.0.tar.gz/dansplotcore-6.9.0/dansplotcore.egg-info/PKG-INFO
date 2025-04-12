@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: dansplotcore
+Version: 6.9.0
+Summary: low-latency interactive plots
+Home-page: http://github.com/dansgithubuser/dansplotcore
+Author: danspypiuser
+Author-email: dansonlinepresence@gmail.com
+License: MIT
+Requires-Dist: pyglet<2,>=1.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+Dan's Plot Core is a minimal library that adds plots with low-latency interactivity to Python.
