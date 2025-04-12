@@ -1,0 +1,74 @@
+Metadata-Version: 2.4
+Name: opencv-mcp-server
+Version: 0.1.1
+Summary: MCP server providing OpenCV computer vision capabilities
+Project-URL: Homepage, https://github.com/gongrzhe/opencv-mcp-server
+Project-URL: Bug Tracker, https://github.com/gongrzhe/opencv-mcp-server/issues
+Author-email: GongRzhe <gongrzhe@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: mcp>=1.6.0
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: opencv-contrib-python>=4.11.0.86
+Description-Content-Type: text/markdown
+
+# OpenCV MCP Server
+
+MCP server providing OpenCV computer vision capabilities.
+
+
+![](https://badge.mcpx.dev?type=server 'MCP Server')
+
+
+## Introduction
+
+OpenCV MCP Server is a Python package that provides OpenCV's image and video processing capabilities through the Model Context Protocol (MCP). This allows AI assistants and language models to access powerful computer vision tools.
+
+## Features
+
+- Basic image handling and manipulation (read, save, convert)
+- Image processing (resize, crop, filter application)
+- Advanced computer vision capabilities (feature detection, object detection)
+- Video processing and analysis
+
+## Installation
+
+```bash
+pip install opencv-mcp-server
+```
+
+## Usage
+
+### Use in Claude Desktop
+
+```json
+    "opencv": {
+      "command": "uvx",
+      "args": [
+        "opencv-mcp-server"
+      ]
+    }
+```
+
+### Configuration
+
+The server can be configured using environment variables:
+
+- `MCP_TRANSPORT`: Transport method (default: "stdio")
+
+## Available Tools
+
+- `save_image_tool`: Save an image to a file
+- `convert_color_space_tool`: Convert image between color spaces
+- `resize_image_tool`: Resize an image to specific dimensions
+- `crop_image_tool`: Crop a region from an image
+- `get_image_stats_tool`: Get statistical information about an image
+
+More tools will be added in future releases.
+
+## License
+
+MIT License

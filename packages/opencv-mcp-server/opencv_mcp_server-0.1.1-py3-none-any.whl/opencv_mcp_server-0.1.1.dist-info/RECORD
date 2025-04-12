@@ -1,0 +1,12 @@
+opencv_mcp_server/__init__.py,sha256=sp9IIyZhiyEEhavmMDCka3hiUKTq2zo-WXMJlASy8cw,114
+opencv_mcp_server/computer_vision.py,sha256=mGH9k3NjXL0Bq6AKMPZqnNRWtPOfrwVluMe5YUc644M,29073
+opencv_mcp_server/image_basics.py,sha256=_w6SRSIFvvXtdt6wCu6EqVXnaG6yokzPJHcXgbA57o0,10566
+opencv_mcp_server/image_processing.py,sha256=YEmwzUiw0tHqFORa1I-MniwAhP1W3w0aTRrHstZ4xHQ,30655
+opencv_mcp_server/main.py,sha256=SQyF3AylxxEs9bIWHOXaiUp0CXX3P73IYQ2uOchAImg,2471
+opencv_mcp_server/utils.py,sha256=heLnoRmHfkuRUnorOmWgM5L9yf-LsyaOoq5JMiCnfIo,5140
+opencv_mcp_server/video_processing.py,sha256=C4LVYowBVJmkk8iS8kp6FzLy20qcgHs9e3P_Q5z_J6I,56485
+opencv_mcp_server-0.1.1.dist-info/METADATA,sha256=VCCya3I0uYxjVmgvPokEvAHle5krTmbl9gzzx-ft9Lc,2002
+opencv_mcp_server-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+opencv_mcp_server-0.1.1.dist-info/entry_points.txt,sha256=Rjb9KpcN1hGAZpoimZxouInDGVWb7gT4ANaRez_NOyA,66
+opencv_mcp_server-0.1.1.dist-info/licenses/LICENSE,sha256=l6425dmjnidzk4JQwhT01C8SpICmjSBMNREAdPnPA9E,1087
+opencv_mcp_server-0.1.1.dist-info/RECORD,,
