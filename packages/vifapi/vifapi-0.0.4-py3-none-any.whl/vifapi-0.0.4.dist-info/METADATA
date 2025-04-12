@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: vifapi
+Version: 0.0.4
+Summary: fastapi api for vif
+License-File: LICENSE.txt
+Requires-Python: >=3.10
+Requires-Dist: fastapi>=0.115.12
+Requires-Dist: uvicorn>=0.34.0
+Requires-Dist: vigentools>=0.0.3
+Description-Content-Type: text/markdown
+
+# 0.0.2
+
+添加了ChildPathFactory以兼容vigentools.BaseRouter
