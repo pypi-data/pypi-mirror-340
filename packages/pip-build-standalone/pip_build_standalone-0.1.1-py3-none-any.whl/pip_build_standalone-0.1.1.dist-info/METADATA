@@ -1,0 +1,72 @@
+Metadata-Version: 2.4
+Name: pip-build-standalone
+Version: 0.1.1
+Summary: Use uv to build a pip within a standalone Python installation
+Project-URL: Repository, https://github.com/jlevy/pip-build-standalone
+Author-email: Joshua Levy <joshua@cal.berkeley.edu>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Requires-Python: >=3.13.2
+Requires-Dist: funlog>=0.2.1
+Requires-Dist: prettyfmt>=0.3.0
+Requires-Dist: rich-argparse>=1.7.0
+Requires-Dist: rich>=14.0.0
+Requires-Dist: strif>=2.1.0
+Description-Content-Type: text/markdown
+
+# pip-build-standalone
+
+pip-build-standalone builds a standalone, relocatable Python installation with the given
+pips installed.
+
+Typically, Python installations are not relocatable or transferable between machines, in
+particular because scripts and libraries contain absolute file paths (such as your home
+folder at the time Python or the venv was installed).
+
+[uv](https://github.com/jlevy/uv) already uses
+[standalone Python distributions](https://github.com/astral-sh/python-build-standalone)
+and offers [relocatable venvs](https://github.com/astral-sh/uv/pull/5515). But Python
+installations created by uv still do typically have absolute paths in libs and scripts.
+
+This tool uses uv to set up a true (not venv) Python installation with the given pips
+installed, with zero absolute paths encoded in any of the Python scripts or libraries.
+So the resulting binary folder should be installable as at any location on a machine
+with compatible architecture.
+
+Warning: Experimental!
+Built initially for macOS and not yet tested on Windows and Linux!
+
+## Usage
+
+This tool requires uv to run.
+
+As an example, to create a full standalone Python 3.13 environment with the `cowsay`
+package:
+
+```sh
+uvx pip-build-standalone cowsay
+```
+
+Now the `./py-standalone` directory should work on macOS without being tied to a
+specific machine, your home folder, or any other system-specific paths.
+
+Binaries should be run from the directory above this target directory:
+
+```
+mv ./py-standalone /tmp && cd /tmp
+
+./py-standalone/cpython-3.13.2-macos-aarch64-none/bin/cowsay -t moo
+```
+
+* * *
+
+*This project was built from
+[simple-modern-uv](https://github.com/jlevy/simple-modern-uv).*
