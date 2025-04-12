@@ -1,0 +1,3 @@
+[pytest11]
+pytest_tuitest=pytest_tuitest.plugin
+

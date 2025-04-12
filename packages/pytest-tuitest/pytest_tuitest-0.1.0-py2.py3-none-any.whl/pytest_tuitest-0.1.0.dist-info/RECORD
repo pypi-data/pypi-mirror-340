@@ -1,0 +1,11 @@
+pytest_tuitest/__init__.py,sha256=mPVIoCasFlW3vFZ4KbtcQ6JjOiX3PUdiQghKQ6iPxhE,409
+pytest_tuitest/colors.py,sha256=JtR8mmJbGYoZEZqhgQufExxM4o0J33gmzntEPwq-ewM,6649
+pytest_tuitest/plugin.py,sha256=LEaO6HdI-EYcau62hkalq_vG6JblgfDon0wfMDdXKwk,11384
+pytest_tuitest/process.py,sha256=xchuqqdq_2f8Ux3cODOxuG6_BIutrE20JXSwfOdxk7Q,10082
+pytest_tuitest/styles.py,sha256=YxyNcF2W9q3oeonyPCPX42vWAzBzVvhiFLrJR4jxv1s,237
+pytest_tuitest/terminal.py,sha256=JJ5RV2vZisSB2fLyZ3jDXjekCxZB1QVId15A2ZEG4Ac,10882
+pytest_tuitest-0.1.0.dist-info/entry_points.txt,sha256=3NqHffMqs--SaSa5XV-BrLcYFM-kWbNG6DEXcplqYu0,49
+pytest_tuitest-0.1.0.dist-info/licenses/LICENSE,sha256=7GZ7UluoXTIPTECFiz00oO386ePycNLlPg1SpHohVNc,1092
+pytest_tuitest-0.1.0.dist-info/WHEEL,sha256=Dyt6SBfaasWElUrURkknVFAZDHSTwxg3PaTza7RSbkY,100
+pytest_tuitest-0.1.0.dist-info/METADATA,sha256=te9IoWlzTxZTUbgYkz8nMcTEfVDgPvdYoSXc4bj-fm8,3032
+pytest_tuitest-0.1.0.dist-info/RECORD,,
