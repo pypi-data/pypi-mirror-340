@@ -1,0 +1,58 @@
+Metadata-Version: 2.3
+Name: django-sql-test
+Version: 0.1.1
+Summary: A Django test mixin that captures and displays SQL query diffs between test runs, helping to track database-related changes in your tests.
+License: MIT
+Author: Denis Zalivin
+Author-email: zalivindenis@gmail.com
+Requires-Python: <4.0,>=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4
+Classifier: Framework :: Django :: 5
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: django (>=4.0,<6.0)
+Requires-Dist: sql-metadata (>=2.15.0,<3.0.0)
+Project-URL: Homepage, https://github.com/shaihulud/django-sql-test
+Project-URL: Repository, https://github.com/shaihulud/django-sql-test
+Project-URL: issues, https://github.com/shaihulud/django-sql-test/issues
+Description-Content-Type: text/markdown
+
+# django-sql-test
+
+A Django test mixin that captures and analyzes SQL queries during tests, with built-in support for displaying diffs between previous and current queries for spotting unexpected changes or regressions.
+
+## Usage
+
+### Requirements
+
+* Django >= 4.0
+* Python 3.9 and above.
+
+### Installation
+
+Install with:
+
+```shell
+pip install django-sql-test
+```
+
+### Quickstart
+
+In your test.py just import NumNewQueriesMixin and add it as a parent:
+
+```python
+from django.test import TestCase
+from django_sql_test.utils import NumNewQueriesMixin
+
+class FooTest(NumNewQueriesMixin, TestCase):
+    def test_bar(self):
+        with self.assertNumQueries(3):
+            response = self.client.get(self.url)
+
+        self.assertEqual(response.status_code, 200)
+
+```
+
