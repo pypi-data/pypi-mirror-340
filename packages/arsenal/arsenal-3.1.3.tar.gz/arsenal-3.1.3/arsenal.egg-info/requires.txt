@@ -1,0 +1,12 @@
+numpy
+scipy
+pandas
+cython
+matplotlib
+gprof2dot
+graphviz
+rich
+path.py
+IPython
+tqdm
+psutil
