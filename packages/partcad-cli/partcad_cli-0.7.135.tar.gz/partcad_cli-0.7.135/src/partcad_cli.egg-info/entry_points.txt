@@ -1,0 +1,3 @@
+[console_scripts]
+partcad = partcad_cli.click.command:cli
+pc = partcad_cli.click.command:cli
