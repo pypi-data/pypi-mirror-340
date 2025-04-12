@@ -1,0 +1,2 @@
+dagster>=1.10.10
+datacontract-cli>=0.10.23
