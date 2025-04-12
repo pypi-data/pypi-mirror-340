@@ -1,0 +1,13 @@
+pandas
+requests
+biomart
+anndata
+numpy
+
+[dev]
+flake8
+isort
+black
+mypy
+scanpy
+jupyter
