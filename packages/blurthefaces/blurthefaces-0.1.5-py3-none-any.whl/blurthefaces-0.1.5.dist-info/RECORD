@@ -1,0 +1,8 @@
+blurthefaces/__init__.py,sha256=KhDjBu_ADBa9aox3DxbW6Me44eOFoWiqCOlkyRZ0HPc,29
+blurthefaces/blur.py,sha256=ec12B2P7yuYPV9koWLOeiZA2TVzUb7Pk9GTvhJzcuRs,1002
+blurthefaces/detector.py,sha256=my_NiG7LFax1daxMFHnXsEd0_8154U5c0Srk-wdVMoI,186
+blurthefaces/utils.py,sha256=bHEjH9bJlBFeK5FmAhd_zN_hXDIvkbWEt45euC0GRuQ,181
+blurthefaces-0.1.5.dist-info/METADATA,sha256=0tWt4lIsdUDrwPHsaKCICXPO7PHvdmsAWc4L_2E1EdA,737
+blurthefaces-0.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+blurthefaces-0.1.5.dist-info/top_level.txt,sha256=538etwkKp6PZsChXgAnRmKv9ixai2fySQl5km8vj8hU,13
+blurthefaces-0.1.5.dist-info/RECORD,,
