@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-mask-density = napari_mask_density:napari.yaml

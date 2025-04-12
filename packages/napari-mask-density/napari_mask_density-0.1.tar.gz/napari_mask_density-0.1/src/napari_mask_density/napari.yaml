@@ -1,0 +1,14 @@
+name: napari-mask-density
+display_name: Mask Analyzer
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/technical_references/manifest.html#fields for valid categories
+categories: ["Annotation", "Segmentation", "Acquisition"]
+contributions:
+  commands:
+    - id: napari-mask-density.widget
+      python_name: napari_mask_density._widget:MaskAnalyzer
+      title: Create Mask Analyzer widget
+  widgets:
+    - command: napari-mask-density.widget
+      display_name: Mask Density
