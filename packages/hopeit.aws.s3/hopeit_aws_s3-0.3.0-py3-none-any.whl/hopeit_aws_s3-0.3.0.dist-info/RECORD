@@ -1,0 +1,8 @@
+hopeit/aws/s3/__init__.py,sha256=_gs7VKp3TlSeW2livzuDl-D_-1N_zxtYBc0DUYeweLo,283
+hopeit/aws/s3/object_storage.py,sha256=fTQnLgyI1yinQYTIQ_oip20T4g1u5Fp7v_r9GdTvi0Q,17962
+hopeit/aws/s3/partition.py,sha256=OlypF3Cs4q3MyFHpEe-3Ge_uSQzB1T-dpmT-WH8FnFo,559
+hopeit/aws/s3/py.typed,sha256=sow9soTwP9T_gEAQSVh7Gb8855h04Nwmhs2We-JRgZM,7
+hopeit_aws_s3-0.3.0.dist-info/METADATA,sha256=btN2jdawgV8nbr_Q3Kb65SCwyUJl3LcmHjleQaS73TY,3945
+hopeit_aws_s3-0.3.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hopeit_aws_s3-0.3.0.dist-info/top_level.txt,sha256=m-R472J_P82Xe5R09_jBDKP0kbMqrEHawwB90H1iWJI,7
+hopeit_aws_s3-0.3.0.dist-info/RECORD,,
