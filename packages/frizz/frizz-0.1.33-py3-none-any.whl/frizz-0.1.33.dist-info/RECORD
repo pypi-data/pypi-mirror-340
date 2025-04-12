@@ -1,0 +1,12 @@
+frizz/__init__.py,sha256=Ecnv6OMcYWKH8VpFtyt44QeV3F2IGqoQoJY311fPc1U,460
+frizz/errors.py,sha256=ds1xrRo0ZDAQcZJxIVeBk22_ClxqE_CWbtX3UkeMxN4,262
+frizz/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frizz/_internal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frizz/_internal/agent.py,sha256=lAsb8omRM_YfysA78vI5yO64_iDgrP56XjpHOqTXRCs,8307
+frizz/_internal/tools.py,sha256=bb83irh_JHM9tEDF5UN-juI-Fs83_5cArQUL9eM5QVE,5388
+frizz/_internal/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+frizz/_internal/types/response.py,sha256=xGbT0NBkAMTnIb19ariBxnpMFL690gaSPO6koLmMH3Q,1061
+frizz/_internal/types/system.py,sha256=k1z6NsC9Q_lZbDSnVG6ysKAU12cCB7BQdgHMQdZPzks,866
+frizz-0.1.33.dist-info/METADATA,sha256=jLqYAdCRNHrAvTbqj5sYHhqHWOTxy-vTdbG_mN2RJNQ,6477
+frizz-0.1.33.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+frizz-0.1.33.dist-info/RECORD,,
