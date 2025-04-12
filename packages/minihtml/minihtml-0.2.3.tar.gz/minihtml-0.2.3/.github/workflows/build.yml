@@ -1,0 +1,43 @@
+name: Build python package
+
+on: [push]
+
+permissions: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version:
+          - "3.10"
+          - "3.11"
+          - "3.12"
+          - "3.13"
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+
+      - name: Install just
+        run: uv tool install rust-just
+
+      - name: Install the project
+        run: uv sync --dev
+
+      - name: Run checks
+        run: just check
+
+      - name: Run tests
+        run: just test doctest
+
+      - name: Build package
+        run: uv build
