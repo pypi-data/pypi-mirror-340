@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: saved-instance
+Version: 0.1.0
+Summary: saved-instance is a persistent Python dictionary
+Project-URL: Homepage, https://gitlab.com/manickamdeva62/saved_instance
+Author: manickamdeva62
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: click==8.1.8
+Requires-Dist: cryptography==44.0.2
+Requires-Dist: platformdirs==4.3.7
+Requires-Dist: pyyaml==6.0.2
+Provides-Extra: dev
+Requires-Dist: pytest; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == 'docs'
