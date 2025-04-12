@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vfetch"
+version = "0.1.0"
+description = "A beautiful system information display tool with stunning visuals"
+readme = "README.md"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: System :: Monitoring",
+    "Topic :: Utilities",
+]
+keywords = ["system-info", "fetch", "monitoring", "cli", "terminal", "ascii-art"]
+dependencies = [
+    "build>=1.1.1",
+    "psutil>=5.9.0",
+    "rich>=12.2.0",
+    "setuptools>=68.0.0",
+    "twine>=4.0.2",
+]
+requires-python = ">=3.7"
+
+[project.scripts]
+vfetch = "vfetch:main"
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/vfetch"
+"Bug Tracker" = "https://github.com/yourusername/vfetch/issues"
+"Source" = "https://github.com/yourusername/vfetch"

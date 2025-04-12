@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+ascii_art.py
+formatters.py
+pyproject.toml
+setup.py
+system_info.py
+themes.py
+vfetch.py
+vfetch.egg-info/PKG-INFO
+vfetch.egg-info/SOURCES.txt
+vfetch.egg-info/dependency_links.txt
+vfetch.egg-info/entry_points.txt
+vfetch.egg-info/requires.txt
+vfetch.egg-info/top_level.txt
