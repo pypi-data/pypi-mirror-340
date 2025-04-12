@@ -1,0 +1,10 @@
+numcodecs_observers/__init__.py,sha256=wN4NEaOSCzdkJz1P1SgFMOsvkYJp1AwztOG2U4k97IQ,2929
+numcodecs_observers/abc.py,sha256=PtjdcRPKNPrbuY40Zhz0t5W7G9CKP7n1Vq8uKCqR1PM,2019
+numcodecs_observers/bytesize.py,sha256=jU_smqKAas5COxbyWaU5zOuKe6GopxPZXNh6P2c8ebA,2664
+numcodecs_observers/hash.py,sha256=RJy1ozig9xRQ64AlEkE82JvFVbOovwnw9pa1PR8Qfyc,1748
+numcodecs_observers/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numcodecs_observers/walltime.py,sha256=SWbHKZx5kjk66FfGh5OpIbuptzdsKgD27vkmfMRbwQg,2282
+numcodecs_observers-0.1.2.dist-info/METADATA,sha256=ka_dzPUaAE7TwdYq-PofVAGS6qAlo2bspk_iugih7y0,21778
+numcodecs_observers-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+numcodecs_observers-0.1.2.dist-info/licenses/LICENSE,sha256=zl_Aa08vQlcNL9a8Yw-w2ZYfIIs_1OxDYmU57ctqZRg,16761
+numcodecs_observers-0.1.2.dist-info/RECORD,,
