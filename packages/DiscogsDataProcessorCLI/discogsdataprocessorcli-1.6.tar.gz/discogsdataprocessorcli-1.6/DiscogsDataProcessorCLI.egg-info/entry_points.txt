@@ -1,0 +1,2 @@
+[console_scripts]
+discogs = discogs.main:entrypoint
