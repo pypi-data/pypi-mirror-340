@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: closive
+Version: 0.0.0.dev1
+Summary: A simple, composable, and declarative DSL for control flow management.
+Author-email: kosmolebryce <k.lebryce@pm.me>
+Requires-Python: >=3.12.8
+Requires-Dist: ipython>=9.1.0
