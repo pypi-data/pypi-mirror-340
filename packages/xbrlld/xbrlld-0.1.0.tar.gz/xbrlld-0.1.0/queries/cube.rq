@@ -1,0 +1,23 @@
+PREFIX qb: <http://purl.org/linked-data/cube#>
+PREFIX core: <http://xbrl.frc.org.uk/fr/core#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xbrll: <https://w3id.org/vocab/xbrll#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?hypercube ?fact ?period ?component ?member
+WHERE {
+    ?concept owl:sameAs core:Creditors .
+  
+    ?hypercube a qb:DataSet ;
+        qb:structure ?dsd .
+  
+    ?dsd qb:component/qb:measure ?concept ;
+        qb:component/(qb:dimension|qb:measure|qb:attribute) ?component .
+  
+    ?fact a xbrll:Fact ;
+        xbrll:concept ?concept ;
+        xbrll:period ?period ;
+        xbrll:value ?value ;
+  	    ?component ?member .
+}
