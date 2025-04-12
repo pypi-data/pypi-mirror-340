@@ -1,0 +1,1 @@
+[{"payload": {"output": "correcting...\n-5\ncorrecting...\n-4\ncorrecting...\n-3\ncorrecting...\n-2\ncorrecting...\n-1\ncorrecting...\n0", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Good work! The <code>while</code> loop is not that often used in Data Science, so let's head over to the <code>for</code> loop."}, "type": "sct"}]

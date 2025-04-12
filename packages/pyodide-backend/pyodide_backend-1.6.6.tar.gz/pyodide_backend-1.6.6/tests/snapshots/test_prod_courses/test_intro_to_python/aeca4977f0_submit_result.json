@@ -1,0 +1,1 @@
+[{"payload": {"output": "[ 70 195]\n75", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "This is going well!"}, "type": "sct"}]

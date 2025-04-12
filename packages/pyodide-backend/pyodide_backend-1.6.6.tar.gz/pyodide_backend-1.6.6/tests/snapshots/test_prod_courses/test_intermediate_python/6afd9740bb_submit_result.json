@@ -1,0 +1,1 @@
+[{"payload": {"output": "[False  True False  True]\n[False False False  True]", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Correcto perfecto!"}, "type": "sct"}]

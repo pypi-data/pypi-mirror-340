@@ -1,0 +1,1 @@
+[{"payload": {"output": "2\n1", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Nice! These were examples of <code>list</code> methods that did not change the list they were called on."}, "type": "sct"}]

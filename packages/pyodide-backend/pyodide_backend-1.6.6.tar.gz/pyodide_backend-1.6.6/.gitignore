@@ -1,0 +1,14 @@
+# Python
+*.egg-info
+dist
+build
+venv
+**/__pycache__/
+
+# IDE
+.idea
+.vscode
+
+# tests
+figure.svg
+cars.csv

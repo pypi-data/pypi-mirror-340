@@ -1,0 +1,1 @@
+[{"payload": {"output": "US: 809\nAUS: 731\nJPN: 588\nIN: 18\nRU: 200\nMOR: 70\nEG: 45", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Solid!"}, "type": "sct"}]

@@ -1,0 +1,1 @@
+[{"payload": {"output": "['hallway', 11.25, 'kitchen', 18.0, 'chill zone', 20.0, 'bedroom', 10.75, 'bathroom', 10.5, 'garage', 15.45]", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Correct! You'll learn about easier ways to remove specific elements from Python lists later on."}, "type": "sct"}]

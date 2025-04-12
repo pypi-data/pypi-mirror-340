@@ -1,0 +1,1 @@
+[{"payload": {"output": "the hallway is 11.25 sqm\nthe kitchen is 18.0 sqm\nthe living room is 20.0 sqm\nthe bedroom is 10.75 sqm\nthe bathroom is 9.5 sqm", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Off to next video!"}, "type": "sct"}]

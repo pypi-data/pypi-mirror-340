@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools >= 61.0", "setuptools_scm[toml] >= 8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+# This enables version inference from git tags
+
+[project]
+name="pyodide_backend"
+dynamic = ["version"]
+requires-python=">= 3.12"
+dependencies=[
+    "pythonwhat~=2.29.0"
+]
+
+[project.optional-dependencies]
+build=[
+    "setuptools~=74.1.2",
+    "build~=1.2.2"
+]
+test=[
+    "pytest~=8.3.3",
+    "black~=24.8.0",
+    "numpy==2.0.2",
+    "matplotlib==3.8.4",
+    "pytest-snapshot~=0.9.0"
+]

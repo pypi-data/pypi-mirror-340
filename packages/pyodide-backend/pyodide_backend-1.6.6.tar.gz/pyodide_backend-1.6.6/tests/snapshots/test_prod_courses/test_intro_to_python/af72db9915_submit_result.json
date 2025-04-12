@@ -1,0 +1,1 @@
+[{"payload": {"output": "[11.25, 18.0, 20.0, 10.75, 9.5]", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Nice! The difference between explicit and reference-based copies is subtle, but can be really important. Try to keep in mind how a list is stored in the computer's memory."}, "type": "sct"}]

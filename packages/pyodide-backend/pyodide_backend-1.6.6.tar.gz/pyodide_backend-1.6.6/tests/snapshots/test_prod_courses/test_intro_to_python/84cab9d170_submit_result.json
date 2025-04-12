@@ -1,0 +1,1 @@
+[{"payload": {"output": "<class 'numpy.ndarray'>", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Great job!"}, "type": "sct"}]

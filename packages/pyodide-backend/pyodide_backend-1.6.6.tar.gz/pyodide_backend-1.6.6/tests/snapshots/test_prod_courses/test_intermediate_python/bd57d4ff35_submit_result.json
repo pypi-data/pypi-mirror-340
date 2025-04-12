@@ -1,0 +1,1 @@
+[{"payload": "<graph-data-removed>", "type": "graph"}, {"payload": {"output": "2100\n10.85", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Great! Let's interpret the plot you just created."}, "type": "sct"}]

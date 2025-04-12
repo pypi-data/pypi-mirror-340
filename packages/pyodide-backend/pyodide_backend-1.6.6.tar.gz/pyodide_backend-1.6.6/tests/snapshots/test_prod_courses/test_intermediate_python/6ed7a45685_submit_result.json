@@ -1,0 +1,1 @@
+[{"payload": {"output": "6\n53", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Cool! You threw a 6, so the code for the <code>else</code> statement was executed. You threw again, and apparently you threw 3, causing you to take three steps up: you're currently at step 53."}, "type": "sct"}]

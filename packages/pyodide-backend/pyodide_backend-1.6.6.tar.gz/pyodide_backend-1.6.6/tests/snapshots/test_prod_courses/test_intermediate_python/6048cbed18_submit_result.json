@@ -1,0 +1,1 @@
+[{"payload": {"output": "dict_keys(['spain', 'france', 'germany', 'norway'])\noslo", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Good job, now you're warmed up for some more."}, "type": "sct"}]

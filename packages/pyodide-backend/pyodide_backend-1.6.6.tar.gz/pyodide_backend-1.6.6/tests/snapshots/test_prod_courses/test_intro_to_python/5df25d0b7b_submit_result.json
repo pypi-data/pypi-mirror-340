@@ -1,0 +1,1 @@
+[{"payload": {"output": "(1015, 2)", "script_name": "script.py"}, "type": "script-output"}, {"payload": {"correct": true, "message": "Slick! Time to show off some killer features of multi-dimensional <code>numpy</code> arrays!"}, "type": "sct"}]
