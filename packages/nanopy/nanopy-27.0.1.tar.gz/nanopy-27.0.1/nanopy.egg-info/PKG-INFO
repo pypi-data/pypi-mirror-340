@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: nanopy
+Version: 27.0.1
+Home-page: https://github.com/npy0/nanopy
+License: MIT
+Requires-Python: >=3.6
+License-File: LICENSE
+Provides-Extra: full
+Requires-Dist: requests; extra == "full"
+Requires-Dist: websocket-client[optional]; extra == "full"
+Requires-Dist: mnemonic; extra == "full"
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-python

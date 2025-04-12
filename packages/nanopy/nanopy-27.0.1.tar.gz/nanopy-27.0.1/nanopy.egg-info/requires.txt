@@ -1,0 +1,5 @@
+
+[full]
+requests
+websocket-client[optional]
+mnemonic
