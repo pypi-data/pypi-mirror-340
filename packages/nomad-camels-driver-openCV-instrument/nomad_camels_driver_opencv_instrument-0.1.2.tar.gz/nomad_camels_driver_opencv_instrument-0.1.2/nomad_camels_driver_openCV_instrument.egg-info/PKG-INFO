@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: nomad_camels_driver_openCV_instrument
+Version: 0.1.2
+Summary: Instrument driver for openCV_instrument for NOMAD CAMELS
+Author-email: LAP <nomad-camels@fau.de>
+Project-URL: NOMAD Camels GitHub, https://github.com/FAU-LAP/NOMAD-CAMELS
+Project-URL: CAMELS Drivers GitHub, https://github.com/FAU-LAP/CAMELS_drivers
+Project-URL: NOMAD Camels Documentation, https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nomad-camels
+Dynamic: license-file
+
+# NOMAD Camels driver for openCV cameras
+
+Generic driver for camera control using openCV written for the measurement software [NOMAD Camels](https://fau-lap.github.io/NOMAD-CAMELS/).
+
+## Changes
+
+### 0.1.1
+
+- Fixed broken import paths
+
+## Documentation
+
+For more information and instruments visit the [documentation](https://fau-lap.github.io/NOMAD-CAMELS/doc/instruments/instruments.html).
