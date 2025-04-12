@@ -1,0 +1,2 @@
+[console_scripts]
+http-code = src.httpcode.__main__:main
