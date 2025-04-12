@@ -1,0 +1,11 @@
+GA22038UNO/__init__.py,sha256=dkQEgZlxJe4c1ewFPBPAOSrtG6pJWw1A9LI98XBij_A,305
+GA22038UNO/linear_systems.py,sha256=UUN8vpCEdcqSRbPJoZFbH5mNLgTp0HesYwDBWhKxq_g,7539
+GA22038UNO/nonlinear_systems.py,sha256=4i2w-DKPSYLEqde7EKAPEtisSF9DWj1JdFnB1QpXHbU,1463
+ga22038uno-0.1.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=XRNuNflqPDQupfhmPTpojlgPyH5Gk0mLKdV9cdeZTPU,17
+tests/test_linear.py,sha256=LcRN4lUDIGcf0KUSLUBbjr2tnntDGoJPc11i1P4R-78,123
+tests/test_nonlinear.py,sha256=9kOixRIEWB8j3OVM-1pKVRKpRhZOiJd2JG_-4cs3cqI,86
+ga22038uno-0.1.0.dist-info/METADATA,sha256=Y59YDLYPpJoGHiImZcsktz8yVbL5fN95GzGQQhk4czY,541
+ga22038uno-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ga22038uno-0.1.0.dist-info/top_level.txt,sha256=MVRv7boMc2d1tzyMZyn-DR8hY0AbHxlB4psEtcfr3FI,17
+ga22038uno-0.1.0.dist-info/RECORD,,
