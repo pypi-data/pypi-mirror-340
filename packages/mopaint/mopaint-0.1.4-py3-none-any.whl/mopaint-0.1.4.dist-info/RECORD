@@ -1,0 +1,11 @@
+mopaint/__init__.py,sha256=nN-jsOKX8fxCnvR7vjCWwxcxl4Cv9VJLf2lfqO_YkGU,1059
+mopaint/static/draw.css,sha256=F5lU6_JI0rH4Di9Hti-bUHkO24eNrtVzV8grgFlnYGY,57
+mopaint/static/draw.js,sha256=apKqVlFAAC3IbJBzC83vQRW2w2ssdktB0VCugwKLHBU,191671
+mopaint/static/styles.css,sha256=fgjFlNjEVa7rJWIJN2mhxaia3ko96lH2vGquhe8CLhQ,21311
+mopaint-0.1.4.dist-info/licenses/LICENSE,sha256=W-o1UdN2OpcQRwyNCD5tXOfOHWU7Q49gDfb_1QKHhcQ,1077
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_basics.py,sha256=A1WocmH_b5CDWx85RvcqUl8VZKQHohXCyQYETdqEIDg,255
+mopaint-0.1.4.dist-info/METADATA,sha256=_1UW8Yip1lSV0pZUtvYuf8RQXpco2huiKe6VHhSNlHo,1112
+mopaint-0.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mopaint-0.1.4.dist-info/top_level.txt,sha256=WNyM2Ft4ARrnJZ4-qO3u_XCK9GaP08FeNTcFqHjnLU4,14
+mopaint-0.1.4.dist-info/RECORD,,
