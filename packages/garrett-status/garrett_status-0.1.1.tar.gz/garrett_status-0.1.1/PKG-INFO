@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: garrett-status
+Version: 0.1.1
+Summary: Check Garrett Remote Desktop user and system status
+Author: Maroti Belge
+Author-email: Your Name <your@email.com>
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Dynamic: author
+Dynamic: requires-python

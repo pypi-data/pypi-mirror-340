@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "garrett-status"
+version = "0.1.1"
+description = "Check Garrett Remote Desktop user and system status"
+authors = [
+  { name="Your Name", email="your@email.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+dependencies = [
+  "flask"
+]
+
+[project.scripts]
+garrett-status = "garrett_status.__main__:main"

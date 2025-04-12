@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+garrett_status/__init__.py
+garrett_status/__main__.py
+garrett_status/app.py
+garrett_status.egg-info/PKG-INFO
+garrett_status.egg-info/SOURCES.txt
+garrett_status.egg-info/dependency_links.txt
+garrett_status.egg-info/entry_points.txt
+garrett_status.egg-info/requires.txt
+garrett_status.egg-info/top_level.txt
