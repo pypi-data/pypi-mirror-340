@@ -1,0 +1,8 @@
+spida_api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spida_api/spida_api.py,sha256=YdXcLy3t1jAoabLnlxeEGXkGAoKTH1ZSOo7SUNc3ZM4,5525
+spida_api/spida_api_dataclasses.py,sha256=icTzacMiD2sRKHiOisszJQEf_qjc_ap1rvBp3gZtz04,2357
+spida_api/webhook_client.py,sha256=uO_C0HvR-_32sUN_xlx7dxGR2el_lzQq7S09DosnI_E,1967
+spida_api-1.0.5.dist-info/METADATA,sha256=Hqg6lC9DuLFwy3kq68gWeDqF8E9CXqTVazMysJBq8bs,6139
+spida_api-1.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+spida_api-1.0.5.dist-info/licenses/LICENSE,sha256=cDzjWUCuPDfKDMYIxDF4XcbKSLvNqf3Ts-2aJ7fwnIc,1089
+spida_api-1.0.5.dist-info/RECORD,,
