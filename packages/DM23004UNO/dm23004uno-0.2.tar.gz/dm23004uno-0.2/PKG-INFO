@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: DM23004UNO
+Version: 0.2
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales.
+Home-page: https://github.com/DM23004/DM23004UNO
+Author: Marvin
+Author-email: dm23004@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# DM23004UNO
+
+Esta librería resuelve sistemas de ecuaciones lineales y no lineales usando diferentes métodos matemáticos.
+
+## Métodos disponibles:
+
+- Eliminación de Gauss
+- Gauss-Jordan
+- Cramer
+- Descomposición LU
+- Jacobi
+- Gauss-Seidel
+- Bisección
+
+## Instalación
+
+Puedes instalar esta librería usando pip:
+
+```bash
+pip install DM23004UNO
