@@ -1,0 +1,10 @@
+winrt/_winrt_windows_ui_xaml_controls_primitives.cp311-win_amd64.pyd,sha256=PvSVDWkfBWyn4jMw4mIZE4AlCgTJgAvKOZX-EEANEuM,1618944
+winrt/_winrt_windows_ui_xaml_controls_primitives.pyi,sha256=WyAG-zjK9rSBH4OYnBLNArRbTihy6sCZUZ3YAYaq7x0,182673
+winrt/_winrt_windows_ui_xaml_controls_primitives_2.cp311-win_amd64.pyd,sha256=EYgWR1_V7Ua41xUuV3qP7ytmaNpoLB5qA2n7yqvcU8k,121856
+winrt/_winrt_windows_ui_xaml_controls_primitives_2.pyi,sha256=8seZNOOTohChJQKIFxbBozZbWv1G9zhZZTuDqZsTE5Q,4152
+winrt/windows/ui/xaml/controls/primitives/__init__.py,sha256=lwixpvHld3N4ag7t908sO_7RhA_Dge6OiMLtDgjY7BM,7823
+winrt/windows/ui/xaml/controls/primitives/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_ui_xaml_controls_primitives-3.1.0.dist-info/METADATA,sha256=mKmLJHAq6PlS32lh9WYOopG1rWFiv_9tzE57NrRaXMQ,1853
+winrt_windows_ui_xaml_controls_primitives-3.1.0.dist-info/WHEEL,sha256=_ZWIY2n7n6SpiuIFl1-RvcMp4Ty36T57FKf-7NzqZHM,101
+winrt_windows_ui_xaml_controls_primitives-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_ui_xaml_controls_primitives-3.1.0.dist-info/RECORD,,
