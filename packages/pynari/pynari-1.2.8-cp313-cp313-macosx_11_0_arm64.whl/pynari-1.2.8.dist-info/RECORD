@@ -1,0 +1,10 @@
+pynari/libbarney.dylib,sha256=bBIGF7uFSGZmRMWg6RnOgzbzt5dRfZwBWRCX35q_YZU,12607392
+pynari/__init__.py,sha256=7k2xuBFCQnLyueJKseRhVCgJ0ATmuYNltJHMQRJplM0,1270
+pynari/sample02.py,sha256=m3v6WHL-eYih6ey8bxcSjvstA3sS_vB1PGU4rx7plyk,5714
+pynari/libanari.0.14.0.dylib,sha256=Mw_p_IzqWMpzhDWijYW0eDV5OiYIJIQo7FRyVRvab9w,96744
+pynari/libanari_library_barney.dylib,sha256=AAQTKLP6qR6Z7t0YxcWIqyf_yc6wfL2M2EictDKiZXs,12992720
+pynari/pynari.cpython-313-darwin.so,sha256=_MLeBUQHXmPawvlLPa2kwBbnof_QBwZdNLhTGRscN4g,370160
+pynari/libanari.0.dylib,sha256=Mw_p_IzqWMpzhDWijYW0eDV5OiYIJIQo7FRyVRvab9w,96744
+pynari-1.2.8.dist-info/RECORD,,
+pynari-1.2.8.dist-info/WHEEL,sha256=eXHwyB1RdhCzPENBXiRF2Ly_mYZX2sKNxeIVuzbAtg8,114
+pynari-1.2.8.dist-info/METADATA,sha256=mpR3sC6RfYcfxvDt7nphZxscUW5IzSlxGaD3QMbDJds,3870
