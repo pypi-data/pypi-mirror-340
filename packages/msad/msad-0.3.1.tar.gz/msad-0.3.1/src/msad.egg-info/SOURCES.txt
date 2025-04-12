@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/msad/__init__.py
+src/msad/ad.py
+src/msad/command_line.py
+src/msad/group.py
+src/msad/search.py
+src/msad/user.py
+src/msad.egg-info/PKG-INFO
+src/msad.egg-info/SOURCES.txt
+src/msad.egg-info/dependency_links.txt
+src/msad.egg-info/entry_points.txt
+src/msad.egg-info/top_level.txt
