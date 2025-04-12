@@ -1,0 +1,74 @@
+{
+  "project_inputs": [
+    {
+      "name": "flag_image",
+      "job_input_type": "img",
+      "web_input_type": "img",
+      "description": "The image on the flag",
+      "type_settings": {},
+      "num_entries_min": 1,
+      "num_entries_max": 1
+    },
+    {
+      "name": "floating_box_color",
+      "job_input_type": "color",
+      "web_input_type": "color",
+      "description": "The color of the floating box",
+      "type_settings": {},
+      "num_entries_min": 1,
+      "num_entries_max": 1
+    },
+    {
+      "name": "weather",
+      "job_input_type": "string",
+      "web_input_type": "dropdown",
+      "description": "Choose the weather",
+      "type_settings": {
+        "dropdown_options": [
+          {
+            "label": "sunny",
+            "value": "sunny"
+          },
+          {
+            "label": "overcast",
+            "value": "overcast"
+          },
+          {
+            "label": "sunset",
+            "value": "sunset"
+          }
+        ]
+      },
+      "num_entries_min": 1,
+      "num_entries_max": 1
+    }
+  ],
+  "render_pipeline": {
+    "pipeline_jobs": [
+      {
+        "job_name": "render_the_flag",
+        "app_type": "hou",
+        "app_version": "20.0.547",
+        "app_render_settings": {
+          "target_node": "/out/karma1",
+          "frames": "0 30"
+        },
+        "job_input": {
+          "target": "hou_project/waving_flag_14_upgrade_hou_hda_test.hiplc",
+          "file_source": "project"
+        },
+        "job_output": "render_output.$F4.exr",
+        "job_dependencies": [],
+        "job_id": "81e85d28e09a46578e51b8fbf072df8b"
+      }
+    ],
+    "output_job": "render_the_flag",
+    "output_extras": []
+  },
+  "project_info": {
+    "title": "Test Render",
+    "description": "Test project short video.",
+    "tags": []
+  },
+  "project_uuid": "e8bdd183-fd0e-408d-9c38-e375f735925a"
+}

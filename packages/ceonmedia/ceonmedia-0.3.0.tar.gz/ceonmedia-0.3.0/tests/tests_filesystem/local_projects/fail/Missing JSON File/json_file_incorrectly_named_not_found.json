@@ -1,0 +1,61 @@
+{
+    "project_info": {
+        "description": "A big waving! flag.",
+        "tags": [
+            "flag",
+            "realistic"
+        ],
+        "title": "Waving Flag"
+    },
+    "project_inputs": [
+        {
+            "description": "",
+            "job_input_type": "img",
+            "name": "my_proj_input_1",
+            "required": true,
+            "type_settings": {},
+            "web_input_type": "img"
+        },
+        {
+            "description": "",
+            "job_input_type": "img",
+            "name": "my_proj_input_2",
+            "required": true,
+            "type_settings": {},
+            "web_input_type": "img"
+        }
+    ],
+    "render_pipeline": {
+        "render_tasks": [
+            {
+                "app_render_settings": {},
+                "app_type": "hou",
+                "app_version": "19.5",
+                "dependencies": [],
+                "name": "render_the_flag",
+                "output": "render_output.$F4.exr",
+                "render_file": "hou_project/waving_flag_11.hiplc",
+                "task_uuid": "4143e26e-30c0-4df4-9412-c038f05e3b83"
+            },
+            {
+                "app_render_settings": {},
+                "app_type": "ffmpeg",
+                "app_version": "",
+                "dependencies": ["my_render_task"],
+                "name": "transcode_to_mov",
+                "output": "waving_flag.mov",
+                "render_file": "render_output.$F4.exr",
+                "task_uuid": "5545e9f4-a816-46bb-bb80-e1b38f45ef41"
+            }
+        ],
+        "beauty_output": "transcode_to_mov",
+        "extra_outputs": [
+            {
+                "name": "flag_mask",
+                "file": "flag_mask.mov", 
+                "description": "An alpha mask for the flag."
+            }
+        ]
+        
+    }
+}
