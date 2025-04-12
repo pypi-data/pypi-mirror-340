@@ -1,0 +1,14 @@
+numpy
+ipyleaflet
+folium
+geopandas
+rasterio
+fiona
+matplotlib
+localtileserver
+
+[all]
+cookiecutter-practice[extra]
+
+[extra]
+pandas
