@@ -1,0 +1,6 @@
+README.md
+setup.py
+yandex_cestdrole_thop.egg-info/PKG-INFO
+yandex_cestdrole_thop.egg-info/SOURCES.txt
+yandex_cestdrole_thop.egg-info/dependency_links.txt
+yandex_cestdrole_thop.egg-info/top_level.txt
