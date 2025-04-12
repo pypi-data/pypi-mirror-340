@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configure Search Autocomplete</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .preview-container {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Configure Search Autocomplete</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form method="get" id="configForm">
+                    {% for field in form %}
+                    <div class="mb-3">
+                        <label class="form-label">{{ field.label }}</label>
+                        {{ field }}
+                        {% if field.help_text %}
+                        <div class="form-text">{{ field.help_text }}</div>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    <button type="submit" class="btn btn-primary">Update Preview</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="preview-container">
+                    <h4>Preview</h4>
+                    <div class="search-autocomplete">
+                        <input type="text" id="search-input" class="form-control" placeholder="Type to search...">
+                        <div id="search-results" class="list-group mt-2"></div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <h4>Integration Code</h4>
+                    <pre><code id="integrationCode"></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Update field choices when model changes
+            $('#id_model').change(function() {
+                $('#configForm').submit();
+            });
+
+            // Initialize search autocomplete if form is valid
+            {% if form.is_valid %}
+            const searchConfig = {
+                model: '{{ form.cleaned_data.model }}',
+                searchFields: {{ form.cleaned_data.search_fields|safe }},
+                displayFields: {{ form.cleaned_data.display_fields|safe }},
+                maxResults: {{ form.cleaned_data.max_results }}
+            };
+
+            let timeout = null;
+            $('#search-input').on('input', function() {
+                clearTimeout(timeout);
+                const query = $(this).val().trim();
+                
+                if (query.length < 2) {
+                    $('#search-results').empty().hide();
+                    return;
+                }
+
+                timeout = setTimeout(() => {
+                    $.get('/search/', {
+                        query: query,
+                        model: searchConfig.model,
+                        search_fields: searchConfig.searchFields,
+                        display_fields: searchConfig.displayFields,
+                        max_results: searchConfig.maxResults
+                    })
+                    .done(function(data) {
+                        const $results = $('#search-results').empty();
+                        
+                        data.results.forEach(function(result) {
+                            const $item = $('<div class="list-group-item">');
+                            searchConfig.displayFields.forEach(function(field) {
+                                const value = result[field];
+                                if (field.endsWith('__str')) {
+                                    $item.append($('<div>').text(value));
+                                } else if (value && value.startsWith('/media/')) {
+                                    $item.append($('<img>').attr({
+                                        src: value,
+                                        alt: field,
+                                        style: 'max-width: 50px; max-height: 50px;'
+                                    }));
+                                } else {
+                                    $item.append($('<div>').text(`${field}: ${value}`));
+                                }
+                            });
+                            $results.append($item);
+                        });
+                        
+                        $results.show();
+                    });
+                }, 300);
+            });
+
+            // Update integration code
+            const integrationCode = `
+<!-- Include required CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Add the search input -->
+<div class="search-autocomplete">
+    <input type="text" id="search-input" class="form-control" placeholder="Type to search...">
+    <div id="search-results" class="list-group mt-2"></div>
+</div>
+
+<!-- Include required JavaScript -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+const searchConfig = {
+    model: '${searchConfig.model}',
+    searchFields: ${JSON.stringify(searchConfig.searchFields)},
+    displayFields: ${JSON.stringify(searchConfig.displayFields)},
+    maxResults: ${searchConfig.maxResults}
+};
+
+// Initialize search functionality
+let timeout = null;
+$('#search-input').on('input', function() {
+    clearTimeout(timeout);
+    const query = $(this).val().trim();
+    
+    if (query.length < 2) {
+        $('#search-results').empty().hide();
+        return;
+    }
+
+    timeout = setTimeout(() => {
+        $.get('/search/', {
+            query: query,
+            model: searchConfig.model,
+            search_fields: searchConfig.searchFields,
+            display_fields: searchConfig.displayFields,
+            max_results: searchConfig.maxResults
+        })
+        .done(function(data) {
+            const $results = $('#search-results').empty();
+            
+            data.results.forEach(function(result) {
+                const $item = $('<div class="list-group-item">');
+                searchConfig.displayFields.forEach(function(field) {
+                    const value = result[field];
+                    if (field.endsWith('__str')) {
+                        $item.append($('<div>').text(value));
+                    } else if (value && value.startsWith('/media/')) {
+                        $item.append($('<img>').attr({
+                            src: value,
+                            alt: field,
+                            style: 'max-width: 50px; max-height: 50px;'
+                        }));
+                    } else {
+                        $item.append($('<div>').text(\`\${field}: \${value}\`));
+                    }
+                });
+                $results.append($item);
+            });
+            
+            $results.show();
+        });
+    }, 300);
+});
+</script>`;
+            $('#integrationCode').text(integrationCode);
+            {% endif %}
+        });
+    </script>
+</body>
+</html> 
