@@ -1,0 +1,8 @@
+cohere
+json-repair
+litellm==1.61.19
+rich
+saplings
+sortedcollections
+tree-sitter==0.21.3
+tree-sitter-languages==1.10.2

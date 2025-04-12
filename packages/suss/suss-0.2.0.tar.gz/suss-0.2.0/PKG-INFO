@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: suss
+Version: 0.2.0
+Summary: AI-powered bug finder that knows your codebase
+Home-page: https://github.com/shobrook/suss
+Author: shobrook
+Author-email: shobrookj@gmail.com
+Keywords: code-review bug-finder ai debugger agent llm codebase code-assistant
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: cohere
+Requires-Dist: json-repair
+Requires-Dist: litellm==1.61.19
+Requires-Dist: rich
+Requires-Dist: saplings
+Requires-Dist: sortedcollections
+Requires-Dist: tree-sitter==0.21.3
+Requires-Dist: tree-sitter-languages==1.10.2
