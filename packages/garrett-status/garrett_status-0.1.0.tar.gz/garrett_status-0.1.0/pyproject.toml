@@ -1,0 +1,11 @@
+[project]
+name = "garrett-status"
+version = "0.1.0"
+description = "Simple Flask app to display remote desktop details"
+authors = [{name = "Maroti belge"}]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["flask"]
+
+[project.scripts]
+garrett_status = "garrett_status.app:run"

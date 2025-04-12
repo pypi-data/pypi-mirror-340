@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: garrett-status
+Version: 0.1.0
+Summary: Simple Flask app to display remote desktop details
+Author: Maroti belge
+Author-email: maroti.belge@tatatecchnologies.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Dynamic: author-email
+Dynamic: requires-python
