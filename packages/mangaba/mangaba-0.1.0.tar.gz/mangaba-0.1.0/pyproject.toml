@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mangaba"
+dynamic = ["version"]
+description = "Framework Python para criacao de equipes de agentes AI autonomos"
+readme = "README.md"
+authors = [{name = "Dheiver Santos", email = "dheiver.santos@gmail.com"}]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.9"
+
+[project.urls]
+"Homepage" = "https://github.com/dheiver2/mangaba_ai"
+"Bug Tracker" = "https://github.com/dheiver2/mangaba_ai/issues" 
