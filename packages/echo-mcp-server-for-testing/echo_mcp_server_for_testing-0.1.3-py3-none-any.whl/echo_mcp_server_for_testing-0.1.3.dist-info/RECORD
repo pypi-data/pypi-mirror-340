@@ -1,0 +1,9 @@
+echo_mcp_server_for_testing/__init__.py,sha256=I7ep6Bq0FrA_CqnAOumRAxxPvfGm0n2Fwd2WQZQ_aD8,222
+echo_mcp_server_for_testing/_version.py,sha256=NIzzV8ZM0W-CSLuEs1weG4zPrn_-8yr1AwwI1iuS6yo,511
+echo_mcp_server_for_testing/server.py,sha256=SXn_-qRMA6vI_suJ3SEd6KBsc9DlYgxDGeCR7-O1e8k,379
+echo_mcp_server_for_testing-0.1.3.dist-info/licenses/LICENSE,sha256=pv0Vs4cLZzAN1KJiNsfeVYqQUNQp7GK906kr8cQFZps,1070
+echo_mcp_server_for_testing-0.1.3.dist-info/METADATA,sha256=akqemrFJmPpQ-03YpoCgMjBaq6f8f5YD0hHqKsqiTT0,2816
+echo_mcp_server_for_testing-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+echo_mcp_server_for_testing-0.1.3.dist-info/entry_points.txt,sha256=yb5o2ob3gwjWu6q8DiVPwZcvXK8-IrekYHl9iAdg7SU,88
+echo_mcp_server_for_testing-0.1.3.dist-info/top_level.txt,sha256=BlaXPKNDkL3BfikipNtq2aYW_bNR7yQtECOS5nBErgU,28
+echo_mcp_server_for_testing-0.1.3.dist-info/RECORD,,
