@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: pyMDReport
+Version: 0.0.1
+Summary: A Python package made to automatically create .md reports
+Project-URL: Homepage, https://github.com/jacozzola/pyMDReport
+Project-URL: Issues, https://github.com/jacozzola/pyMDReport/issues
+Author: jacozzola
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# R3port
+R3port is a Python package made to automatically create .md reports
