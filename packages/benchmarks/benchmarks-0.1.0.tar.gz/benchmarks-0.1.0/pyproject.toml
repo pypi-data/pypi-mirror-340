@@ -1,0 +1,7 @@
+[project]
+name = "benchmarks"
+version = "0.1.0"
+description = "A library for building agentic benchmarks."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["docker>=7.1.0", "pydantic>=2.10.6"]
