@@ -1,0 +1,11 @@
+netlogopy/__init__.py,sha256=i7hNuanz1R1kw95h6rtA34i8CJpLvgZeZHa7lI5znGk,25
+netlogopy/base.nls,sha256=62-OAGj_p7Y5jqk9IlwlAwIxpl4vz0uw1uROgNYpVR8,2318
+netlogopy/netlogopy.nlogo,sha256=DDNHrHdsy3au5ZwlpsmvmdwkQVpNzg7Puee034s6x8Q,139640
+netlogopy/netlogopy.py,sha256=k4gurPji3MWNQJAZPg9Ucg7iPVqCTcI9F_KQkvwZfdw,5752
+netlogopy-0.0.20.data/data/netlogo/base.nls,sha256=62-OAGj_p7Y5jqk9IlwlAwIxpl4vz0uw1uROgNYpVR8,2318
+netlogopy-0.0.20.data/data/netlogo/netlogopy.nlogo,sha256=DDNHrHdsy3au5ZwlpsmvmdwkQVpNzg7Puee034s6x8Q,139640
+netlogopy-0.0.20.dist-info/licenses/LICENSE,sha256=suJuE6D1Vz9FAG-8cYDR_97dM8GkkG2lSNsH7t1DtkM,1095
+netlogopy-0.0.20.dist-info/METADATA,sha256=Kjik_dtjrgp9YI930jSN56ytmch4cD9Ubft8Cxx2Cig,14847
+netlogopy-0.0.20.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+netlogopy-0.0.20.dist-info/top_level.txt,sha256=j0UAE4obmLnkduApJZT5TzXtoHkwdb7k4NIzeNnzL2w,10
+netlogopy-0.0.20.dist-info/RECORD,,
