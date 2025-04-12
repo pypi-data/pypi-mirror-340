@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: MM23084UNO
+Version: 1.0.2
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Author: Ricardo Mora
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+## Métodos disponibles:
+
+- Eliminación de Gauss
+- Gauss-Jordan
+- Regla de Cramer
+- Descomposición LU
+- Método de Jacobi
+- Método de Gauss-Seidel
+- Método de Bisección
+
+## Instalación (una vez publicada en PyPI)
+```bash
+pip install MM23084UNO==1.0.2
+```
+
+## Ejemplo de uso
+```python
+from MM23084UNO import resolver_gauss_jordan
+import copy
+
+# Ejemplo 1: Sistema 3x3
+matriz = [
+    [2, 1, -1],
+    [-3, -1, 2],
+    [-2, 1, 2]
+]
+vector = [8, -11, -3]
+
+# Hacer copias para no modificar los originales
+matriz_copia = copy.deepcopy(matriz)
+vector_copia = copy.deepcopy(vector)
+
+solucion = resolver_gauss_jordan(matriz_copia, vector_copia)
+print("Solución con Gauss-Jordan:", solucion)
+# Resultado esperado: [2.0, 3.0, -1.0]
+```
+
+## Autor
+Ricardo Mora - mm23084@ues.edu.sv
