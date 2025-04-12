@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+GA22038UNO/__init__.py
+GA22038UNO/linear_systems.py
+GA22038UNO/nonlinear_systems.py
+GA22038UNO.egg-info/PKG-INFO
+GA22038UNO.egg-info/SOURCES.txt
+GA22038UNO.egg-info/dependency_links.txt
+GA22038UNO.egg-info/requires.txt
+GA22038UNO.egg-info/top_level.txt
+tests/__init__.py
+tests/test_linear.py
+tests/test_nonlinear.py
