@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: ion-python
+Version: 1.8.10
+Summary: Python Binding for ion-kit
+Home-page: https://github.com/fixstars/ion-kit
+Author: Takuro Iizuka
+Author-email: t_iizuka@fixstars.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.24
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ionpy - Python binding for ion-kit
+
+```
+pip3 install "git+https://github.com/fixstars/ion-kit.git#egg=ionpy&subdirectory=python"
+```
+
+## Test
+
+```
+LD_LIBRARY_PATH=<path-to-ion-libs> PYTHONPATH=. pytest ./tests/
+```
