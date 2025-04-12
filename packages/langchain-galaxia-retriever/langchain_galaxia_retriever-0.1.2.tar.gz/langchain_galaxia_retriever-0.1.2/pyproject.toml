@@ -1,0 +1,15 @@
+[tool.poetry]
+authors = ["Robert Rozanski"]
+name = "langchain-galaxia-retriever"
+description = "langchain galaxia integration"
+license = "MIT"
+version = "0.1.2"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain-core = "^0.3.21"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
