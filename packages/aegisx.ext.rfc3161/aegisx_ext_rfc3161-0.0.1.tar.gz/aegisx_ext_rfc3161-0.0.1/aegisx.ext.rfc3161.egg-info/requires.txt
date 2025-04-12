@@ -1,0 +1,10 @@
+aegis>=0.0.4
+httpx
+pyasn1
+pyasn1_modules
+pydantic>=2
+
+[develop]
+pytest
+pytest_asyncio
+coverage
