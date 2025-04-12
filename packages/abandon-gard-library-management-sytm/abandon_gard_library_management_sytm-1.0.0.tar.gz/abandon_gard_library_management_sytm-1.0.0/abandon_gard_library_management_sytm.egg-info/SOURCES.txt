@@ -1,0 +1,10 @@
+setup.py
+abandon_gard_library_management_sytm.egg-info/PKG-INFO
+abandon_gard_library_management_sytm.egg-info/SOURCES.txt
+abandon_gard_library_management_sytm.egg-info/dependency_links.txt
+abandon_gard_library_management_sytm.egg-info/entry_points.txt
+abandon_gard_library_management_sytm.egg-info/top_level.txt
+library_management_system/__init__.py
+library_management_system/admin.py
+library_management_system/auth.py
+library_management_system/main.py
