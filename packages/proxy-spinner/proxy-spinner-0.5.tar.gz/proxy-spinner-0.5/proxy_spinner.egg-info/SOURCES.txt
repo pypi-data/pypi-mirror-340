@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+proxy_spinner/__init__.py
+proxy_spinner/constants.py
+proxy_spinner/proxy_spinner.py
+proxy_spinner.egg-info/PKG-INFO
+proxy_spinner.egg-info/SOURCES.txt
+proxy_spinner.egg-info/dependency_links.txt
+proxy_spinner.egg-info/requires.txt
+proxy_spinner.egg-info/top_level.txt
