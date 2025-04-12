@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: vl16008uno
+Version: 0.1.1
+Summary: Paquete para resolver sistemas de ecuaciones lineales y no lineales
+Author: Elmer Oswaldo Ventura Lemus
+Author-email: vl16008@ues.edu.sv
+Project-URL: Bug Reports, https://github.com/tuusuario/vl16008uno/issues
+Project-URL: Source, https://github.com/tuusuario/vl16008uno
+Keywords: numerical-methods linear-equations nonlinear-equations
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.19.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Métodos Numéricos
+
+Librería Python para resolver sistemas de ecuaciones lineales y no lineales.
+
+## Métodos implementados
+
+### Sistemas lineales
+- Eliminación de Gauss
+- Gauss-Jordan
+- Crammer
+- Descomposición LU
+- Jacobi
+- Gauss-Seidel
+
+### Sistemas no lineales
+- Bisección
+
+## Instalación
+
+```bash
+pip install metodos-numericos
