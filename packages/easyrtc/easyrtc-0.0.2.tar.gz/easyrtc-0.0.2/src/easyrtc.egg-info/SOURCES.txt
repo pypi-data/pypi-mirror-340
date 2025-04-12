@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/easyrtc/CameraStream.py
+src/easyrtc/DataStream.py
+src/easyrtc/WebRTCClient.py
+src/easyrtc/WebRTCServer.py
+src/easyrtc/__init__.py
+src/easyrtc.egg-info/PKG-INFO
+src/easyrtc.egg-info/SOURCES.txt
+src/easyrtc.egg-info/dependency_links.txt
+src/easyrtc.egg-info/requires.txt
+src/easyrtc.egg-info/top_level.txt
