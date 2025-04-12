@@ -1,0 +1,53 @@
+Metadata-Version: 2.4
+Name: prime_bits
+Version: 1.0.2
+Summary: A package to get prime numbers from bits.
+Home-page: https://github.com/Zikithezikit/prime_bits
+Author: Zikithezikit
+Author-email: zikithezikit@example.com
+License: MIT
+Keywords: prime number bits large
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# Prime Bits
+
+Prime Bits is a project focused on exploring and working with prime numbers in the context of computer science and programming.
+
+## Features
+
+- Efficient algorithms for prime number generation.
+- Utilities for prime number validation.
+- Tools for analyzing prime-related patterns.
+
+## How to install
+
+```bash
+python3 -m pip install prime-bits
+```
+
+## How to use
+```python
+from prime_bits import get_prime
+
+get_prime(1024) # 1024 -> number of bits in the number.
+```
+
+## License
+
+This project is licensed under the MIT License.
