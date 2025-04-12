@@ -1,0 +1,4 @@
+[console_scripts]
+jemma = jemma.main:main
+jemma-configure = jemma.config:configure_jemma
+jemma-init = jemma.init:set_api_key

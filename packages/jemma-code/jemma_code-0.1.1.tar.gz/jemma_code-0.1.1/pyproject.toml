@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jemma-code"   
+version = "0.1.1"
+description = "Get coding help, right in your terminal"
+readme = "README.md"
+authors = [{name = "Alabi Ayobami", email = "arocket04@gmail.com"}]
+requires-python = ">=3.6"
+dependencies = [
+    "requests>=2.25.0",
+    "colorama",
+]
+keywords = ["code", "code assistant", "gemini", "api"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+[project.scripts]
+jemma = "jemma.main:main"
+jemma-init = "jemma.init:set_api_key"
+jemma-configure = "jemma.config:configure_jemma" 
+
+[tool.setuptools]
+packages = ["jemma", "jemma.model", "jemma.utils"]   
