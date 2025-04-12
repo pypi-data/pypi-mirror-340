@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: sizestr
+Version: 1.2.1
+Summary: Simple and fast formatting of sizes for Python
+Project-URL: Issues, https://github.com/Zaczero/sizestr/issues
+Project-URL: Repository, https://github.com/Zaczero/sizestr
+Author-email: Kamil Monicz <kamil@monicz.dev>
+License-Expression: 0BSD
+License-File: LICENSE
+Keywords: file-size,human-readable,humanize,stringify
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zero-Clause BSD (0BSD)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# sizestr
+
+[![PyPI - Python Version](https://shields.monicz.dev/pypi/pyversions/sizestr)](https://pypi.org/project/sizestr)
+[![Liberapay Patrons](https://shields.monicz.dev/liberapay/patrons/Zaczero?logo=liberapay&label=Patrons)](https://liberapay.com/Zaczero/)
+[![GitHub Sponsors](https://shields.monicz.dev/github/sponsors/Zaczero?logo=github&label=Sponsors&color=%23db61a2)](https://github.com/sponsors/Zaczero)
+
+Simple and fast formatting of sizes for Python.
+
+## Installation
+
+```sh
+pip install sizestr
+```
+
+## Basic usage
+
+```py
+from sizestr import sizestr
+
+sizestr(10000)  # '9.77 KiB'
+sizestr(-42)  # '-42 B'
+sizestr(float('inf'))  # '(inf)'
+```
