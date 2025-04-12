@@ -1,0 +1,2 @@
+[console_scripts]
+els-utils = els_utils:main
