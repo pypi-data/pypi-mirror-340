@@ -1,0 +1,13 @@
+LICENSE
+setup.py
+SDK/__init__.py
+SDK/readme.md
+SDK/SDK_WS/__init__.py
+SDK/SDK_WS/main.py
+SDK/SDK_WS/examples/__init__.py
+SDK/SDK_WS/examples/basic_usage.py
+pythonweblog_client_ws.egg-info/PKG-INFO
+pythonweblog_client_ws.egg-info/SOURCES.txt
+pythonweblog_client_ws.egg-info/dependency_links.txt
+pythonweblog_client_ws.egg-info/requires.txt
+pythonweblog_client_ws.egg-info/top_level.txt
