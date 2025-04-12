@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traderfit-mcp-bridge"
+version = "0.1.0"
+description = "MCP Bridge Server for TraderFitAI backend"
+readme = "README.md"
+requires-python = ">=3.9" # Specify your minimum Python version
+license = {text = "MIT License"} # Or your chosen license
+authors = [
+  {name = "Your Name / TraderFitAI", email = "your@email.com"}, # Update placeholder
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License", # Adjust if needed
+    "Operating System :: OS Independent",
+    "Topic :: Communications",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "modelcontextprotocol",
+    "httpx[http2]",
+    "python-dotenv",
+    "uvloop; sys_platform != 'win32'", # uvloop is not available on Windows
+]
+
+[project.urls]
+Homepage = "https://github.com/your-repo/traderfit-mcp-bridge" # Update placeholder
+Repository = "https://github.com/your-repo/traderfit-mcp-bridge" # Update placeholder
+
+[project.scripts]
+# This allows running 'traderfit-mcp-bridge' command after installation
+# Not strictly needed for MCP client launch but good practice for packaging
+# traderfit-mcp-bridge = "traderfit_mcp_bridge.__main__:main" # Assuming a main() wrapper exists
+
+# We will primarily use python -m traderfit_mcp_bridge which uses __main__.py
+
+# Optional: Tool configurations like black, ruff, mypy can go here too
+# [tool.ruff]
+# ... 
