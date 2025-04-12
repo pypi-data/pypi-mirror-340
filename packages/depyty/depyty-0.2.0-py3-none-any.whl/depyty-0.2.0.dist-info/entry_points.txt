@@ -1,0 +1,2 @@
+[console_scripts]
+depyty = depyty.__main__:main
