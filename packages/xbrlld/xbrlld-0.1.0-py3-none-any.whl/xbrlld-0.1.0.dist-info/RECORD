@@ -1,0 +1,8 @@
+xbrlld/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xbrlld/cli.py,sha256=yWAyc_gblP-fh_MedU_nf_5cvI1QESRnMTqtzkW6PMI,1300
+xbrlld/converter.py,sha256=crOQZ_UN0atK5Ju1xNDrT8CzR00Wmp-B2K83u7vRK_8,31461
+xbrlld-0.1.0.dist-info/METADATA,sha256=4SfeRt7ON30YxYwtxZICUdDxWUGvjNJdh1sjhEAal9U,2698
+xbrlld-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+xbrlld-0.1.0.dist-info/entry_points.txt,sha256=DEICWQyhxw5aFPVXb-SNpH40Hs-nQzcscIO430dmsjE,42
+xbrlld-0.1.0.dist-info/licenses/LICENCE,sha256=cKEUaxIJCOxuYlSQttEmtHpPD3SKCKvnWz8t3D9NnaQ,1066
+xbrlld-0.1.0.dist-info/RECORD,,
