@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+jutuldarcy/__init__.py
+jutuldarcy/juliapkg.json
+jutuldarcy.egg-info/PKG-INFO
+jutuldarcy.egg-info/SOURCES.txt
+jutuldarcy.egg-info/dependency_links.txt
+jutuldarcy.egg-info/requires.txt
+jutuldarcy.egg-info/top_level.txt
