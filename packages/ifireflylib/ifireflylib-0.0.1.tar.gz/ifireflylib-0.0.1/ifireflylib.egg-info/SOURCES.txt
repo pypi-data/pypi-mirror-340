@@ -1,0 +1,16 @@
+License.txt
+README.md
+pyproject.toml
+setup.py
+./ifireflylib/__init__.py
+./ifireflylib/native/libFireflyClient.dll
+./ifireflylib/native/libFireflyClient.so
+ifireflylib/__init__.py
+ifireflylib.egg-info/PKG-INFO
+ifireflylib.egg-info/SOURCES.txt
+ifireflylib.egg-info/dependency_links.txt
+ifireflylib.egg-info/requires.txt
+ifireflylib.egg-info/top_level.txt
+ifireflylib/native/libFireflyClient.dll
+ifireflylib/native/libFireflyClient.so
+tests/test_basic.py
