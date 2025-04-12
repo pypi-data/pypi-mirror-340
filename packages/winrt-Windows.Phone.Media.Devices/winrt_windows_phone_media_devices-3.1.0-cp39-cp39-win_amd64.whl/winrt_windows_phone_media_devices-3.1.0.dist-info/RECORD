@@ -1,0 +1,8 @@
+winrt/_winrt_windows_phone_media_devices.cp39-win_amd64.pyd,sha256=wqHLp0YzWhCR9XEkOgO2ZDDFRMsyzky_m7gaTS7BPjM,57344
+winrt/_winrt_windows_phone_media_devices.pyi,sha256=cdLATHQvyltrkFp-JAZAYWbW9jrik_twpCMqZhktvZ8,2137
+winrt/windows/phone/media/devices/__init__.py,sha256=VZndjAKzjoni-VGMZI709ZrpOqyyZlA7nLRTqwrtMiU,686
+winrt/windows/phone/media/devices/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_phone_media_devices-3.1.0.dist-info/METADATA,sha256=mPN9w3_Ff7eEKtXKiaRN3gOgR1d4JpFzWIpPLoedTTc,1061
+winrt_windows_phone_media_devices-3.1.0.dist-info/WHEEL,sha256=3JRrBaG_r4GKEsQxd6dVT34joOu5By0wlyszd6u_ofs,99
+winrt_windows_phone_media_devices-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_phone_media_devices-3.1.0.dist-info/RECORD,,
