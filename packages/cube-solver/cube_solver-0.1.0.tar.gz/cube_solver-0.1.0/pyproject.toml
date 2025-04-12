@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools >= 75.8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cube-solver"
+dynamic = ["version"]
+dependencies = [
+  "typer"
+]
+requires-python = ">= 3.8"
+authors = [
+  {name = "Dave Barragan", email = "itsdaveba@gmail.com"}
+]
+maintainers = [
+  {name = "Dave Barragan", email = "itsdaveba@gmail.com"}
+]
+description = "Rubik's Cube Solver"
+readme = "README.rst"
+license = "MIT"
+license-files = ["LICEN[CS]E*", "AUTHORS.rst"]
+keywords = ["rubik"]
+classifiers = [  # Alphabetical order
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Games/Entertainment :: Puzzle Games",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+[project.optional-dependencies]
+dev = [
+  "coverage",  # testing
+  "mypy",  # linting
+  "pytest",  # testing
+  "ruff"  # linting
+]
+
+[project.urls]
+source = "https://github.com/itsdaveba/cube-solver"
+changelog = "https://github.com/itsdaveba/cube-solver/blob/main/HISTORY.rst"
+documentation = "https://cube-solver.readthedocs.io"
+issues = "https://github.com/itsdaveba/cube-solver/issues"
+
+[project.scripts]
+cube-solver = "cube_solver.cli:app"
+
+[tool.setuptools.dynamic]
+version = {attr = "cube_solver.__version__"}
+
+
+# Mypy
+# ----
+
+[tool.mypy]
+files = "."
+
+# Use strict defaults
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+# Don't require test functions to include types
+module = "tests.*"
+allow_untyped_defs = true
+disable_error_code = "attr-defined"
+
