@@ -1,0 +1,9 @@
+README.md
+setup.py
+glgrpa.egg-info/PKG-INFO
+glgrpa.egg-info/SOURCES.txt
+glgrpa.egg-info/dependency_links.txt
+glgrpa.egg-info/requires.txt
+glgrpa.egg-info/top_level.txt
+tests/test_Terminal.py
+tests/test_Windows.py
