@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: an_toolkit
+Version: 0.2.4
+Summary: A package for an_toolkit.
+Home-page: https://github.com/Atsushi888/Atsushi888
+Author: Atsushi888
+Author-email: Atsushi888 <vtgrotxu@gmail.com>
+Project-URL: Homepage, https://github.com/Atsushi888/an_toolkit
+Project-URL: Repository, https://github.com/Atsushi888/an_toolkit
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: an_DebugHelper>=1.3.2
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python

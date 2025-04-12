@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "an_toolkit"
+version = "0.2.4"
+description = "A package for an_toolkit."
+authors = [
+    { name = "Atsushi888", email = "vtgrotxu@gmail.com" }
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.6"
+dependencies = ['an_DebugHelper>=1.3.2']
+
+[project.urls]
+Homepage = "https://github.com/Atsushi888/an_toolkit"
+Repository = "https://github.com/Atsushi888/an_toolkit"
