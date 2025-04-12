@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: kuhl-haus-bedrock-app
+Version: 0.2.12
+Summary: Application layer abstraction for integrating with AWS bedrock APIs
+Author-Email: Tom Pounders <git@oldschool.engineer>
+License: The MIT License (MIT)
+         
+         Copyright (c) 2025 Tom Pounders
+         
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+         
+         The above copyright notice and this permission notice shall be included in all
+         copies or substantial portions of the Software.
+         
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+         SOFTWARE.
+         
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Project-URL: Homepage, https://github.com/kuhl-haus
+Project-URL: Documentation, https://github.com/kuhl-haus/kuhl-haus-bedrock-app/wiki
+Project-URL: Source, https://github.com/kuhl-haus/kuhl-haus-bedrock-app.git
+Project-URL: Changelog, https://github.com/kuhl-haus/kuhl-haus-bedrock-app/commits
+Project-URL: Tracker, https://github.com/kuhl-haus/kuhl-haus-bedrock-app/issues
+Requires-Python: >=3.12
+Requires-Dist: kuhl-haus-metrics
+Requires-Dist: attrs
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: colorama
+Requires-Dist: dataclasses
+Requires-Dist: dataclasses-json
+Requires-Dist: dnspython
+Requires-Dist: exceptiongroup
+Requires-Dist: fastapi
+Requires-Dist: iniconfig
+Requires-Dist: jmespath
+Requires-Dist: marshmallow
+Requires-Dist: marshmallow-enum
+Requires-Dist: mypy-extensions
+Requires-Dist: packaging
+Requires-Dist: pluggy
+Requires-Dist: python-dateutil
+Requires-Dist: s3transfer
+Requires-Dist: six
+Requires-Dist: tomli
+Requires-Dist: typing-inspect
+Requires-Dist: typing-extensions
+Requires-Dist: urllib3
+Requires-Dist: importlib-metadata
+Requires-Dist: pydantic
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: tiktoken
+Provides-Extra: testing
+Requires-Dist: setuptools; extra == "testing"
+Requires-Dist: pdm-backend; extra == "testing"
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Requires-Dist: pytest-asyncio; extra == "testing"
+Requires-Dist: httpx; extra == "testing"
+Requires-Dist: starlette; extra == "testing"
+Description-Content-Type: text/markdown
+
+<!-- These are examples of badges you might want to add to your README:
+   please update the URLs accordingly 
+
+[![ReadTheDocs](https://readthedocs.org/projects/kuhl-haus-bedrock-app/badge/?version=latest)](https://kuhl-haus-bedrock-app.readthedocs.io/en/stable/)
+[![Conda-Forge](https://img.shields.io/conda/vn/conda-forge/kuhl-haus-bedrock-app.svg)](https://anaconda.org/conda-forge/kuhl-haus-bedrock-app)
+[![Monthly Downloads](https://pepy.tech/badge/kuhl-haus-bedrock-app/month)](https://pepy.tech/project/kuhl-haus-bedrock-app)
+-->
+
+[![License](https://img.shields.io/github/license/kuhl-haus/kuhl-haus-bedrock-app)](https://github.com/kuhl-haus/kuhl-haus-bedrock-app/blob/mainline/LICENSE.txt)
+[![PyPI](https://img.shields.io/pypi/v/kuhl-haus-bedrock-app.svg)](https://pypi.org/project/kuhl-haus-bedrock-app/)
+[![Downloads](https://static.pepy.tech/badge/kuhl-haus-bedrock-app/month)](https://pepy.tech/project/kuhl-haus-bedrock-app)
+[![Build Status](https://github.com/kuhl-haus/kuhl-haus-bedrock-app/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/kuhl-haus/kuhl-haus-bedrock-app/actions/workflows/publish-to-pypi.yml)
+[![CodeQL](https://github.com/kuhl-haus/kuhl-haus-bedrock-app/workflows/CodeQL/badge.svg)](https://github.com/kuhl-haus/kuhl-haus-bedrock-app/actions/workflows/github-code-scanning/codeql/)
+[![codecov](https://codecov.io/gh/kuhl-haus/kuhl-haus-bedrock-app/branch/mainline/graph/badge.svg)](https://codecov.io/gh/kuhl-haus/kuhl-haus-bedrock-app)
+[![GitHub issues](https://img.shields.io/github/issues/kuhl-haus/kuhl-haus-bedrock-app)](https://github.com/kuhl-haus/kuhl-haus-bedrock-app/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/kuhl-haus/kuhl-haus-bedrock-app)](https://github.com/kuhl-haus/kuhl-haus-bedrock-app/pulls)
+
+
+# kuhl-haus-bedrock-app
+
+Application layer abstraction for integrating with AWS bedrock APIs
+
+... more to come!
+
+

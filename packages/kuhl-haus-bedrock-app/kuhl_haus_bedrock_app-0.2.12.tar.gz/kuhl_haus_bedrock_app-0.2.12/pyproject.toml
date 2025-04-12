@@ -1,0 +1,136 @@
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "kuhl-haus-bedrock-app"
+version = "0.2.12"
+description = "Application layer abstraction for integrating with AWS bedrock APIs"
+authors = [
+    { name = "Tom Pounders", email = "git@oldschool.engineer" },
+]
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+]
+dependencies = [
+    "kuhl-haus-metrics",
+    "attrs",
+    "boto3",
+    "botocore",
+    "colorama",
+    "dataclasses",
+    "dataclasses-json",
+    "dnspython",
+    "exceptiongroup",
+    "fastapi",
+    "iniconfig",
+    "jmespath",
+    "marshmallow",
+    "marshmallow-enum",
+    "mypy-extensions",
+    "packaging",
+    "pluggy",
+    "python-dateutil",
+    "s3transfer",
+    "six",
+    "tomli",
+    "typing-inspect",
+    "typing-extensions",
+    "urllib3",
+    "importlib-metadata",
+    "pydantic",
+    "numpy",
+    "requests",
+    "tiktoken",
+]
+
+[project.license]
+file = "LICENSE.txt"
+
+[project.urls]
+Homepage = "https://github.com/kuhl-haus"
+Documentation = "https://github.com/kuhl-haus/kuhl-haus-bedrock-app/wiki"
+Source = "https://github.com/kuhl-haus/kuhl-haus-bedrock-app.git"
+Changelog = "https://github.com/kuhl-haus/kuhl-haus-bedrock-app/commits"
+Tracker = "https://github.com/kuhl-haus/kuhl-haus-bedrock-app/issues"
+
+[project.optional-dependencies]
+testing = [
+    "setuptools",
+    "pdm-backend",
+    "pytest",
+    "pytest-cov",
+    "pytest-asyncio",
+    "httpx",
+    "starlette",
+]
+
+[tool.setuptools]
+zip-safe = true
+include-package-data = true
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = [
+    "src",
+]
+exclude = [
+    "tests",
+]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--verbose",
+]
+norecursedirs = [
+    "dist",
+    "build",
+    ".tox",
+]
+testpaths = [
+    "tests",
+]
+
+[tool.devpi.upload]
+no_vcs = 1
+formats = [
+    "bdist_wheel",
+]
+
+[tool.flake8]
+max_line_length = 88
+extend_ignore = [
+    "E203",
+    "W503",
+]
+exclude = [
+    ".tox",
+    "build",
+    "dist",
+    ".eggs",
+    "docs/conf.py",
+]
+
+[tool.pyscaffold]
+version = "4.6"
+package = "app"
+extensions = [
+    "namespace",
+]
+namespace = "kuhl_haus.bedrock"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+package-dir = "src"
+includes = [
+    "src/kuhl_haus",
+]
