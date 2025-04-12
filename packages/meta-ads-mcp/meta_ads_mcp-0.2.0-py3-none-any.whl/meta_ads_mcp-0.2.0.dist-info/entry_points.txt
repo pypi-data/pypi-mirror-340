@@ -1,0 +1,3 @@
+[console_scripts]
+meta-ads-login = meta_ads_mcp.api:login_cli
+meta-ads-mcp = meta_ads_mcp:entrypoint
