@@ -1,0 +1,102 @@
+Metadata-Version: 2.4
+Name: pyaddroute
+Version: 0.1.0
+Summary: A tool for managing network routes on Windows systems
+Author-email: fxyzbtc <fxyzbtc@users.noreply.github.com>
+License: MIT
+Project-URL: Homepage, https://github.com/fxyzbtc/pyaddroute
+Project-URL: Repository, https://github.com/fxyzbtc/pyaddroute
+Project-URL: Bug Tracker, https://github.com/fxyzbtc/pyaddroute/issues
+Project-URL: Documentation, https://github.com/fxyzbtc/pyaddroute#readme
+Keywords: network,routing,windows,ipv4
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: freesimplegui>=4.60.0
+Requires-Dist: loguru>=0.7.0
+
+# PyAddRoute 🌐
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+A Python GUI tool for managing network routes on Windows systems. Supports both IPv4 and IPv6 routes with an intuitive interface.
+
+## 🚀 Features
+
+- Intuitive GUI interface for managing network routes
+- Full support for both IPv4 and (IPv6 routes, not yet)
+- View, add, modify, and delete routes
+- Display interface metrics and network details
+- Real-time route table updates
+- Windows OS support
+- Lightweight and efficient
+
+## 📦 Installation
+
+```bash
+pip install pyaddroute
+```
+
+Or using UV (recommended):
+
+```bash
+uv pip install pyaddroute
+```
+
+## 🖥️ Usage Example
+
+Simply run the command:
+
+```bash
+pyaddroute
+```
+
+Or run as a module:
+
+```bash
+python -m pyaddroute
+```
+
+## 🖼️ Screenshot
+
+![PyAddRoute Interface](screenshot.png)
+
+## 📋 Requirements
+
+- Python 3.8 or later
+- Windows operating system
+- Administrator privileges (for route management)
+
+Dependencies are managed through `pyproject.toml`:
+- FreeSimpleGUI >= 4.60.0
+- loguru >= 0.7.0
+
+## 🔐 Permissions
+
+Administrator privileges are required to modify network routes on Windows systems.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📫 Contact
+
+If you have any questions or suggestions, please open an issue in the repository.
+
+---
+
+<div align="center">
+Made with ❤️ using Python
+</div>
