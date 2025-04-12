@@ -1,0 +1,2 @@
+[hexdoc]
+hextweaks = hexdoc_hextweaks._hooks:HextweaksPlugin
