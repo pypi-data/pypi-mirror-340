@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: starbot-blindbox
+Version: 1.2
+Summary: starbot-blindbox-plugin
+Home-page: https://github.com/mengnitj/starbot-blindbox-plugin
+Author: mengnitj
+Author-email: 12320360@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiomysql
+
+
+starbot-bilibili 盲盒统计插件
+
+# 安装
+```shell
+pip install starbot-blindbox
+```
+
+# 使用
+1、需要安装配置Mysql, 创建数据库
+2、请再main.py的bot.run前添加以下代码
+```shell
+import starbot_blindbox
+config.set("MYSQL_DB", "starbot")
+config.set("MYSQL_USERNAME", "starbot")
+config.set("MYSQL_PASSWORD", "starbot")
+config.set("CUSTOM_COMMANDS_PACKAGE", "starbot_blindbox.commands.builtin")
+starbot_blindbox.register()
+```
+
+# 新增以下查询命令
+1、我的盲盒、盲盒数据，查询上次开播的直播间盲盒数据
+2、（我的）今日盲盒、（我的）昨日盲盒，查询直播间日盲盒数据
+3、（我的）本周盲盒、（我的）上周盲盒，查询直播间周盲盒数据
+3、（我的）X月盲盒，查询直播间月盲盒数据
+
+
