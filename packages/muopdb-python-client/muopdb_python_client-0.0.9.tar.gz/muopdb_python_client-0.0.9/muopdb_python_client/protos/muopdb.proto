@@ -1,0 +1,218 @@
+syntax = "proto3";
+package muopdb;
+import "google/protobuf/any.proto";
+
+enum QuantizerType {
+  NO_QUANTIZER = 0;
+  PRODUCT_QUANTIZER = 1;
+}
+
+enum IntSeqEncodingType {
+  PLAIN_ENCODING = 0;
+  ELIAS_FANO = 1;
+}
+
+
+service IndexServer {
+  rpc CreateCollection(CreateCollectionRequest) returns (CreateCollectionResponse) {}
+
+  rpc Search(SearchRequest) returns (SearchResponse) {}
+
+  rpc Insert(InsertRequest) returns (InsertResponse) {}
+
+  rpc Remove(RemoveRequest) returns (RemoveResponse) {}
+
+  rpc InsertPacked(InsertPackedRequest) returns (InsertPackedResponse) {}
+
+  rpc Flush(FlushRequest) returns (FlushResponse) {}
+}
+
+message CreateCollectionRequest {
+  string collection_name = 1;
+  
+  // Collection configuration parameters. The default values for these are defined
+  // in `rs/config/src/collection.rs`. You just need to override those that differ
+  // from the default values.
+  optional uint32 dimension_size = 3;
+  optional uint32 centroids_max_neighbors = 4;
+  optional uint32 centroids_max_layers = 5;
+  optional uint32 centroids_ef_construction = 6;
+  optional uint64 centroids_builder_vector_storage_memory_size = 7;
+  optional uint64 centroids_builder_vector_storage_file_size = 8;
+  optional QuantizerType quantization_type = 9;
+  optional uint32 product_quantization_max_iteration = 10;
+  optional uint32 product_quantization_batch_size = 11;
+  optional uint32 product_quantization_subvector_dimension = 12;
+  optional uint32 product_quantization_num_bits = 13;
+  optional uint32 product_quantization_num_training_rows = 14;
+  optional uint32 initial_num_centroids = 15;
+  optional uint32 num_data_points_for_clustering = 16;
+  optional uint32 max_clusters_per_vector = 17;
+  optional float clustering_distance_threshold_pct = 18;
+  optional IntSeqEncodingType posting_list_encoding_type = 19;
+  optional uint64 posting_list_builder_vector_storage_memory_size = 20;
+  optional uint64 posting_list_builder_vector_storage_file_size = 21;
+  optional uint64 max_posting_list_size = 22;
+  optional float posting_list_kmeans_unbalanced_penalty = 23;
+  optional bool reindex = 24;
+  optional uint64 wal_file_size = 25;
+  optional uint64 max_pending_ops = 26;
+  optional uint64 max_time_to_flush_ms = 27;
+
+  // for hybrid-search
+  optional AttributeSchema attribute_schema = 28; 
+}
+
+message CreateCollectionResponse {
+   string message = 1;
+}
+
+message Id {
+  // The lower 64 bits of the id.
+  uint64 low_id = 1;
+
+  // The lower 64 bits of the id.
+  uint64 high_id = 2;
+}
+
+message SearchRequest {
+  string collection_name = 1;
+  repeated float vector = 2;
+  uint32 top_k = 3;
+  uint32 ef_construction = 4;
+
+  // For metrics, don't set by default. 
+  // This has some performance impact on the query.
+  bool record_metrics = 5;
+
+  // In MuopDB, we support 128-bit ids (which is what most UUIDs are).
+  // However, in protobuf, there is no uint128 type, so we have to break
+  // the ids into two 64-bit parts.
+  repeated Id user_ids = 6;
+}
+
+message SearchResponse {
+  repeated Id doc_ids = 1;
+
+  repeated float scores = 2;
+
+  // For metrics, not enabled by default
+  uint64 num_pages_accessed = 3;
+}
+
+message InsertRequest {
+  string collection_name = 1;
+
+  repeated Id doc_ids = 2;
+
+  // Flattened vector. If the dimension is 10, 
+  // and the number of vectors is 5,
+  // then this list should have 50 elements.
+  repeated float vectors = 3;
+
+  repeated Id user_ids = 4;
+
+  optional DocumentAttributeList attributes = 5;
+}
+
+message InsertResponse {
+  // The number of docs that were inserted.
+  uint32 num_docs_inserted = 1;
+}
+
+message RemoveRequest {
+  string collection_name = 1;
+
+  repeated Id doc_ids = 2;
+
+  repeated Id user_ids = 3;
+}
+
+message RemoveResponse {
+  // Whether the request was successful, i.e.
+  // no errors (though the removal may have not
+  // been effective).
+  bool success = 1;
+}
+
+message FlushRequest {
+  string collection_name = 1;
+}
+
+message FlushResponse {
+  repeated string flushed_segments = 1;
+}
+
+// If you send a large number of vectors, you can use this method to
+// save some time on serialization and deserialization.
+message InsertPackedRequest {
+  string collection_name = 1;
+
+  // the ids must be 16 bytes each, packed with little endian order
+  bytes doc_ids = 2;
+
+  // Packed flattened vector. If the dimension is 10, 
+  // and the number of vectors is 5, then this list should 
+  // have 50 elements, packed with 8 bytes per number.
+  bytes vectors = 3;
+
+  repeated Id user_ids = 4;
+
+  optional DocumentAttributeList attributes = 5;
+}
+
+message InsertPackedResponse {
+  // The number of docs that were inserted.
+  uint32 num_docs_inserted = 1;
+}
+
+// HybridSearch Message
+message DocumentAttribute {
+  map<string, AttributeValue> value = 1;
+}
+
+message DocumentAttributeList {
+  repeated DocumentAttribute values = 1; 
+}
+
+// Start of Attribute messages
+enum AttributeType {
+  ATTRIBUTE_TYPE_INT        = 0;
+  ATTRIBUTE_TYPE_FLOAT      = 1;
+  ATTRIBUTE_TYPE_BOOL       = 2;
+  ATTRIBUTE_TYPE_KEYWORD    = 3;
+  ATTRIBUTE_TYPE_TEXT       = 4; // full-text search index
+  
+  ATTRIBUTE_TYPE_VECTOR_INT     = 100;
+  ATTRIBUTE_TYPE_VECTOR_KEYWORD = 101;
+}
+
+message AttributeField {
+  string name         = 1;
+  AttributeType type  = 2;
+}
+
+message AttributeSchema {
+  repeated AttributeField attributes = 1;
+}
+
+message AttributeValue {
+  oneof value {
+    int64  int_value     = 1;
+    float  float_value   = 2;
+    bool   bool_value    = 3;
+    string keyword_value = 4; // exact-match string
+    string text_value    = 5; // full-text search
+
+    AttributeVectorIntValue      vector_int_value = 6;
+    AttributeVectorKeywordValue  vector_keyword_value = 7;
+  }
+}
+
+message AttributeVectorIntValue {
+  repeated int64 values = 1;
+}
+
+message AttributeVectorKeywordValue {
+  repeated string values = 1;
+}

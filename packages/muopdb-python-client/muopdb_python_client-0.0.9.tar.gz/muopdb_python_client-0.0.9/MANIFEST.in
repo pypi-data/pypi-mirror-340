@@ -1,0 +1,2 @@
+recursive-include muopdb_python_client/protos *.proto
+recursive-include muopdb_python_client/protos *.py
