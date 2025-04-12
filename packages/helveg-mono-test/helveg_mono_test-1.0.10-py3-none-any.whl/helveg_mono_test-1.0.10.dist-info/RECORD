@@ -1,0 +1,7 @@
+helveg_mono_test/__init__.py,sha256=B2bQYp3hgIQaKp4qMT_5Vxs3a63GveHMVIYZ8VqTKZY,37
+helveg_mono_test/hello.py,sha256=cj_lT8sLVMKBkY6SZ24fWtpfckxEiT7oOErRGfGakR0,271
+helveg_mono_test_dep/__init__.py,sha256=B2bQYp3hgIQaKp4qMT_5Vxs3a63GveHMVIYZ8VqTKZY,37
+helveg_mono_test_dep/hello.py,sha256=PYJeEBpTwiCVi2yVidOyblbPK0P_13lhc2JAWT1X7aM,131
+helveg_mono_test-1.0.10.dist-info/METADATA,sha256=LDXQkJCsI9RA9e9inmsovRb89P0M4XM44xxCGcrReE4,211
+helveg_mono_test-1.0.10.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+helveg_mono_test-1.0.10.dist-info/RECORD,,
