@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: results
+Version: 1.2.4
+License-File: LICENSE.txt
+Requires-Dist: psycopg[pool]
+Requires-Dist: click
+Requires-Dist: pendulum
+Requires-Dist: pyyaml
+Dynamic: license-file
