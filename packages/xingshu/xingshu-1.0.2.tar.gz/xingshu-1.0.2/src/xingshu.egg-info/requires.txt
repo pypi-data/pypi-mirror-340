@@ -1,0 +1,6 @@
+numpy>=2.2.3
+ta-lib>=0.6.0
+tzlocal>=5.3
+xingshu_ctp>=0.0.1
+xingshu-sqlite>=0.0.1
+xingshu-cta-jymokuai>=1.0.1
