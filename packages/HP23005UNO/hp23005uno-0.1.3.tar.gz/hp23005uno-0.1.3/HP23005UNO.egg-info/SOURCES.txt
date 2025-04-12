@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+HP23005UNO/__init__.py
+HP23005UNO.egg-info/PKG-INFO
+HP23005UNO.egg-info/SOURCES.txt
+HP23005UNO.egg-info/dependency_links.txt
+HP23005UNO.egg-info/requires.txt
+HP23005UNO.egg-info/top_level.txt
+HP23005UNO/equation_solver/__init__.py
+HP23005UNO/equation_solver/linear.py
+HP23005UNO/equation_solver/nonlinear.py
