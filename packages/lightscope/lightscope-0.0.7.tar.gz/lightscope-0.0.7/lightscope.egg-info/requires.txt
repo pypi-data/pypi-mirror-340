@@ -1,0 +1,5 @@
+psutil==7.0.0
+python-libpcap==0.5.2
+requests==2.32.3
+scapy==2.6.1
+urllib3==2.2.3
