@@ -1,0 +1,8 @@
+winrt/_winrt_windows_system_inventory.cp39-win_amd64.pyd,sha256=cWPshuxU01jhW7jnYOgsnHA6Ohw-6dchPdiPRc_R6SY,78848
+winrt/_winrt_windows_system_inventory.pyi,sha256=MQJwfd2bCGOvjCevZqtszjnLm8mqMw7UGLlmrU35Q5M,1616
+winrt/windows/system/inventory/__init__.py,sha256=qm06JtOF3n-SqPYx0U-4ZgutheOfJ0gPuJ9LvitAlhk,223
+winrt/windows/system/inventory/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_system_inventory-3.1.0.dist-info/METADATA,sha256=YFI6yovSfv34AAHdd_KuCCMMCkSm-yaOv3j_or1_Gvk,1130
+winrt_windows_system_inventory-3.1.0.dist-info/WHEEL,sha256=3JRrBaG_r4GKEsQxd6dVT34joOu5By0wlyszd6u_ofs,99
+winrt_windows_system_inventory-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_system_inventory-3.1.0.dist-info/RECORD,,
