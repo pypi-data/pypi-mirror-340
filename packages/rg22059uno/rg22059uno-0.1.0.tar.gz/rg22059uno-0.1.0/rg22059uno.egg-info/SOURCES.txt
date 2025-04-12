@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+rg22059uno/__init__.py
+rg22059uno/metodoBiseccion.py
+rg22059uno/metodoCramer.py
+rg22059uno/metodoDescomposicionLU.py
+rg22059uno/metodoGauss.py
+rg22059uno/metodoGaussJordan.py
+rg22059uno/metodoGaussSeidel.py
+rg22059uno/metodoJacobi.py
+rg22059uno.egg-info/PKG-INFO
+rg22059uno.egg-info/SOURCES.txt
+rg22059uno.egg-info/dependency_links.txt
+rg22059uno.egg-info/top_level.txt
