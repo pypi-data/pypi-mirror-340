@@ -1,0 +1,13 @@
+Update version number in setup.cfg
+******* OLD DEPRECATED
+python setup.py clean --all
+python setup.py sdist bdist_wheel
+******* NEW
+python -m build
+twine upload dist/*
+remember to update RikPy in final code
+
+USE RELATIVE IMPORTS!
+
+TO EXECUTE
+(venv) PS C:\Users\rforn\Dropbox\Code\RikPy> python -m RikPy.test
