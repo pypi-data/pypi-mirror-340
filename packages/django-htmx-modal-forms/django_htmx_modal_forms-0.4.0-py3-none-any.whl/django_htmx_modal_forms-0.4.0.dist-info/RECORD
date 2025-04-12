@@ -1,0 +1,17 @@
+django_htmx_modal_forms/__init__.py,sha256=AfXcv1Yu-a686_Pe3AXb0Mykz-LsVP1e6TzXLhBKG5I,231
+django_htmx_modal_forms/apps.py,sha256=hDT7vcLiG0ciKXnWYtROgZuEbVBuPqHnGOY-S7JD5Kw,262
+django_htmx_modal_forms/conf.py,sha256=PgBcTbelp_zNuahJNewxqtSq1UbFStMCERWEKC3SnUI,1183
+django_htmx_modal_forms/main.py,sha256=q83Cm4Bo7HSSA8axhm-ei5VFwGB9fuAtPmDZWTgJ25g,233
+django_htmx_modal_forms/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_htmx_modal_forms/views.py,sha256=5yyzU2w5JtHAmWmBIQP69USgVefyJBUKHe7Lt2RLNMA,5235
+django_htmx_modal_forms/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_htmx_modal_forms/static/htmx_modal_forms/js/modal-handlers.js,sha256=hn15AWHBZaw-nK5Zicri97cPh8YLi1BITbM6IENMlK0,2292
+django_htmx_modal_forms/templates/htmx_modal_forms/_form_content.html,sha256=IcchSoIuVsMSlcq0aeCNJ7Q_37bNWH9ZhYEqfbX4ysw,536
+django_htmx_modal_forms/templates/htmx_modal_forms/_modal_form.html,sha256=pps6g7kviXq-i289IBxpUBHK_4mhUrVk6d8IQZ74WLI,563
+django_htmx_modal_forms/templatetags/__init__.py,sha256=4aXW8biVtuI_9xm7JSfh_696QAKBqs8DWd5cRxqoEjg,42
+django_htmx_modal_forms/templatetags/htmx_modal_forms.py,sha256=vZSEIDWi0niCQD6WwvVJrSJA8z663brUvpjQLeF1yjQ,581
+django_htmx_modal_forms-0.4.0.dist-info/licenses/LICENSE,sha256=zqSNvZP-3R6wXgQBk6g5i5l8zGV6xoUpJWE1QQ2UPc0,1068
+django_htmx_modal_forms-0.4.0.dist-info/METADATA,sha256=39Pr2IK5t3UdfXPF2seJ9-e-CtyV4r0RIgclC361dkk,9508
+django_htmx_modal_forms-0.4.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_htmx_modal_forms-0.4.0.dist-info/top_level.txt,sha256=gOrEl9KhEnBFOLh2HUfrgkh1rvT0g5NsWWjP4A8pwd8,24
+django_htmx_modal_forms-0.4.0.dist-info/RECORD,,
