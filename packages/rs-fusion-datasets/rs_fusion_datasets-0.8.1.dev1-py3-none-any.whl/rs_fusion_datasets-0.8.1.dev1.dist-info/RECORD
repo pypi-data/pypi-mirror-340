@@ -1,0 +1,17 @@
+rs_fusion_datasets/__init__.py,sha256=Qwh-DjRIlZ94nfdhSiHpS5X-kVA9zzS0xY-SH6Hse50,923
+rs_fusion_datasets/core/_fetch_augsburg.py,sha256=NeNuL8u0yLKPnjmUsEendNbLnzqe6T8barqKXBoIuWM,6819
+rs_fusion_datasets/core/_fetch_houston2013mmrs.py,sha256=-iA4vX37yDKW6IpruT8AJbzl7UEwbWGo7kiIdVVSBKU,5575
+rs_fusion_datasets/core/common.py,sha256=3oCVrJWoa4A75jh3xL7i1vImtgO4gYmul9Mme3_e7Vg,1259
+rs_fusion_datasets/core/fetch_houston2013.py,sha256=QUJLH0v_-OABKSX_BJNe4NSpcYGFzeay2f5y0hc2-Xw,8764
+rs_fusion_datasets/core/fetch_houston2018.py,sha256=9gbEPXaA-7Z5C251oHguAfmR_AGKE6VJgP9PAKMMk1c,8167
+rs_fusion_datasets/core/fetch_muufl.py,sha256=xX-hurxeRrOne2Tq64Q8vhjpJng3qM6-PKJUVnQMmac,3615
+rs_fusion_datasets/core/fetch_trento.py,sha256=Zr3_U3k0DMlFuDnz7xpneXwgkWdwiJIMRk6JzxnRKX4,3996
+rs_fusion_datasets/torch/common_hsi_dsm_dataset.py,sha256=IElhVE7yGMQ7p1YBR4IlIum7Z_GUAMT785CLWAYJJfM,3363
+rs_fusion_datasets/torch/datasets.py,sha256=L-wXvCRtfAuH6tLt4B-YmIjVeYgq4K1RMEjaup1DRAQ,1865
+rs_fusion_datasets/util/fileio.py,sha256=QiM3e1K-FbAz9Lcq1hC59circtbpRKekWNstKsWCA5s,3117
+rs_fusion_datasets/util/lbl2rgb.py,sha256=_U_LPsfGP_xPc6U3duAx2QjEbbyOu1fg53OuBIeGwOI,1811
+rs_fusion_datasets/util/split_spmatrix.py,sha256=zBQSKIvxLFZExTJRfuSuBvVkPGpbYUcdqyvOyVzz26U,624
+rs_fusion_datasets-0.8.1.dev1.dist-info/METADATA,sha256=uh47cUCmiqj_ukoyYujeHyvWIaPc2IrEYAJ4iJnGEt8,6260
+rs_fusion_datasets-0.8.1.dev1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+rs_fusion_datasets-0.8.1.dev1.dist-info/licenses/LICENSE,sha256=wnT4A3LZDAEpNzcPDh8VCH0i4wjvmLJ86l3A0tCINmw,10279
+rs_fusion_datasets-0.8.1.dev1.dist-info/RECORD,,
