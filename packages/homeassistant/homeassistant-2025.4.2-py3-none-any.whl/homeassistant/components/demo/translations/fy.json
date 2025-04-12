@@ -1,0 +1,16 @@
+{
+    "entity": {
+        "climate": {
+            "ubercool": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "on_high": "Heech",
+                            "on_low": "Leech"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

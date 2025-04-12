@@ -1,0 +1,51 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured",
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "port": "Port",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Deluge device."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "download_speed": {
+                "name": "Download speed"
+            },
+            "protocol_traffic_download_speed": {
+                "name": "Protocol traffic download speed"
+            },
+            "protocol_traffic_upload_speed": {
+                "name": "Protocol traffic upload speed"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "downloading": "Downloading",
+                    "idle": "Idle",
+                    "seeding": "Seeding",
+                    "seeding_and_downloading": "Up/Down"
+                }
+            },
+            "upload_speed": {
+                "name": "Upload speed"
+            }
+        }
+    }
+}

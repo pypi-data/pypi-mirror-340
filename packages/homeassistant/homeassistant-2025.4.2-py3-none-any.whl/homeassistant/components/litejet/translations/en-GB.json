@@ -1,0 +1,12 @@
+{
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "default_transition": "Default Transition (seconds)"
+                },
+                "title": "Configure LiteJet"
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "step": {
+            "cloud": {
+                "data": {
+                    "password": "Password",
+                    "pin": "PIN code",
+                    "username": "Username"
+                }
+            },
+            "local": {
+                "data": {
+                    "host": "Host",
+                    "pin": "PIN code",
+                    "port": "Port"
+                }
+            },
+            "user": {
+                "menu_options": {
+                    "cloud": "Risco Cloud (recommended)",
+                    "local": "Local Risco Panel (advanced)"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "ac_trouble": {
+                "name": "A/C trouble"
+            },
+            "alarmed": {
+                "name": "Alarmed"
+            },
+            "armed": {
+                "name": "Armed"
+            },
+            "box_tamper": {
+                "name": "Box tamper"
+            },
+            "clock_trouble": {
+                "name": "Clock trouble"
+            },
+            "low_battery_trouble": {
+                "name": "Low battery trouble"
+            },
+            "monitoring_station_1_trouble": {
+                "name": "Monitoring station 1 trouble"
+            },
+            "monitoring_station_2_trouble": {
+                "name": "Monitoring station 2 trouble"
+            },
+            "monitoring_station_3_trouble": {
+                "name": "Monitoring station 3 trouble"
+            },
+            "phone_line_trouble": {
+                "name": "Phone line trouble"
+            }
+        },
+        "switch": {
+            "bypassed": {
+                "name": "Bypassed"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "concurrency": "Maximum concurrent requests in Risco local"
+                }
+            },
+            "risco_to_ha": {
+                "description": "Select what state your Home Assistant alarm will report for every state reported by Risco",
+                "title": "Map Risco states to Home Assistant states"
+            }
+        }
+    }
+}

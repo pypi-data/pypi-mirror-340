@@ -1,0 +1,52 @@
+{
+    "options": {
+        "step": {
+            "accessory": {
+                "data": {
+                    "entities": "Entity"
+                },
+                "title": "Select the entity for the accessory"
+            },
+            "advanced": {
+                "data": {
+                    "devices": "Devices (Triggers)"
+                },
+                "description": "Programmable switches are created for each selected device. When a device trigger fires, HomeKit can be configured to run an automation or scene."
+            },
+            "cameras": {
+                "data": {
+                    "camera_audio": "Cameras that support audio"
+                }
+            },
+            "exclude": {
+                "data": {
+                    "entities": "Entities"
+                },
+                "description": "All \u201c{domains}\u201d entities will be included except for the excluded entities and categorised entities.",
+                "title": "Select the entities to be excluded"
+            },
+            "include": {
+                "data": {
+                    "entities": "Entities"
+                },
+                "description": "Select entities from each domain in \u201c{domains}\u201d. The include will cover the entire domain if you do not select any entities for a given domain.",
+                "title": "Select the entities to be included"
+            },
+            "init": {
+                "data": {
+                    "include_exclude_mode": "Inclusion mode",
+                    "mode": "HomeKit mode"
+                }
+            }
+        }
+    },
+    "services": {
+        "reset_accessory": {
+            "description": "Resets a HomeKit accessory.",
+            "name": "Reset accessory"
+        },
+        "unpair": {
+            "name": "Unpair an accessory or bridge"
+        }
+    }
+}

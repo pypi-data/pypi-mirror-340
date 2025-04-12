@@ -1,0 +1,46 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "step": {
+            "reauth_validate": {
+                "data": {
+                    "password": "Password"
+                },
+                "description": "The Sense integration needs to re-authenticate your account {email}.",
+                "title": "Authentication expired for {name}"
+            },
+            "user": {
+                "data": {
+                    "timeout": "Timeout"
+                }
+            },
+            "validation": {
+                "data": {
+                    "code": "Verification code"
+                },
+                "title": "Sense Multi-factor authentication"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "bill_energy": {
+                "name": "Bill energy"
+            },
+            "daily_energy": {
+                "name": "Daily energy"
+            },
+            "monthly_energy": {
+                "name": "Monthly energy"
+            },
+            "weekly_energy": {
+                "name": "Weekly energy"
+            },
+            "yearly_energy": {
+                "name": "Yearly energy"
+            }
+        }
+    }
+}

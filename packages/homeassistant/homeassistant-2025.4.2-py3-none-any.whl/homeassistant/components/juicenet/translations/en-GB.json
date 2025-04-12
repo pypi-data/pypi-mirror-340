@@ -1,0 +1,22 @@
+{
+    "entity": {
+        "number": {
+            "amperage_limit": {
+                "name": "Amperage limit"
+            }
+        },
+        "sensor": {
+            "charge_time": {
+                "name": "Charge time"
+            },
+            "energy_added": {
+                "name": "Energy added"
+            }
+        },
+        "switch": {
+            "charge_now": {
+                "name": "Charge now"
+            }
+        }
+    }
+}

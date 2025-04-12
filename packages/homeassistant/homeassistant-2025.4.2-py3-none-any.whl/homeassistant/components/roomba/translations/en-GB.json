@@ -1,0 +1,55 @@
+{
+    "config": {
+        "step": {
+            "manual": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Roomba or Braava."
+                }
+            },
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Roomba or Braava."
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "bin_full": {
+                "name": "Bin full"
+            }
+        },
+        "sensor": {
+            "average_mission_time": {
+                "name": "Average mission time"
+            },
+            "battery_cycles": {
+                "name": "Battery cycles"
+            },
+            "canceled_missions": {
+                "name": "Cancelled missions"
+            },
+            "failed_missions": {
+                "name": "Failed missions"
+            },
+            "last_mission": {
+                "name": "Last mission start time"
+            },
+            "scrubs_count": {
+                "name": "Scrubs"
+            },
+            "successful_missions": {
+                "name": "Successful missions"
+            },
+            "total_cleaned_area": {
+                "name": "Total cleaned area"
+            },
+            "total_cleaning_time": {
+                "name": "Total cleaning time"
+            },
+            "total_missions": {
+                "name": "Total missions"
+            }
+        }
+    }
+}

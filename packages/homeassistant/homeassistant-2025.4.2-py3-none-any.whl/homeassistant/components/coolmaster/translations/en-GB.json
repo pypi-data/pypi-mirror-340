@@ -1,0 +1,35 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Failed to connect"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "swing_support": "Control swing mode"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your CoolMasterNet device."
+                },
+                "description": "Set up your CoolMasterNet connection details."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "clean_filter": {
+                "name": "Clean filter"
+            }
+        },
+        "button": {
+            "reset_filter": {
+                "name": "Reset filter"
+            }
+        },
+        "sensor": {
+            "error_code": {
+                "name": "Error code"
+            }
+        }
+    }
+}

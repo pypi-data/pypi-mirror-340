@@ -1,0 +1,26 @@
+{
+    "entity": {
+        "sensor": {
+            "caqi": {
+                "name": "Common air quality index"
+            },
+            "co": {
+                "name": "Carbon monoxide"
+            }
+        }
+    },
+    "exceptions": {
+        "no_station": {
+            "message": "An error occurred while retrieving data from the Airly API for {entry}: no measuring stations in this area"
+        },
+        "update_error": {
+            "message": "An error occurred while retrieving data from the Airly API for {entry}: {error}"
+        }
+    },
+    "system_health": {
+        "info": {
+            "requests_per_day": "Allowed requests per day",
+            "requests_remaining": "Remaining allowed requests"
+        }
+    }
+}

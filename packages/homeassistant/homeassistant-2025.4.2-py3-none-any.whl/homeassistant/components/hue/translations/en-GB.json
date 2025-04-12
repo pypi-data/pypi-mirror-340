@@ -1,0 +1,154 @@
+{
+    "config": {
+        "abort": {
+            "invalid_host": "Invalid hostname or IP address"
+        },
+        "step": {
+            "init": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Hue bridge."
+                }
+            }
+        }
+    },
+    "device_automation": {
+        "trigger_subtype": {
+            "clock_wise": "Rotation clockwise",
+            "counter_clock_wise": "Rotation counter-clockwise"
+        },
+        "trigger_type": {
+            "initial_press": "\"{subtype}\" pressed initially",
+            "repeat": "\"{subtype}\" held down",
+            "short_release": "\"{subtype}\" released after short press",
+            "start": "\"{subtype}\" pressed initially"
+        }
+    },
+    "entity": {
+        "event": {
+            "button": {
+                "name": "Button {button_id}",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "double_short_release": "Double press",
+                            "initial_press": "Initial press",
+                            "long_press": "Long press",
+                            "long_release": "Long release",
+                            "repeat": "Repeat",
+                            "short_release": "Short press"
+                        }
+                    }
+                }
+            },
+            "rotary": {
+                "name": "Rotary",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "clock_wise": "Clockwise",
+                            "counter_clock_wise": "Counter clockwise"
+                        }
+                    }
+                }
+            }
+        },
+        "light": {
+            "hue_light": {
+                "state_attributes": {
+                    "effect": {
+                        "state": {
+                            "candle": "Candle",
+                            "cosmos": "Cosmos",
+                            "enchant": "Enchant",
+                            "fire": "Fire",
+                            "glisten": "Glisten",
+                            "opal": "Opal",
+                            "prism": "Prism",
+                            "sparkle": "Sparkle",
+                            "sunbeam": "Sunbeam",
+                            "sunrise": "Sunrise",
+                            "sunset": "Sunset",
+                            "underwater": "Underwater"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "zigbee_connectivity": {
+                "name": "Zigbee connectivity",
+                "state": {
+                    "connected": "Connected",
+                    "connectivity_issue": "Connectivity issue",
+                    "disconnected": "Disconnected",
+                    "unidirectional_incoming": "Unidirectional incoming"
+                }
+            }
+        },
+        "switch": {
+            "light_sensor_enabled": {
+                "name": "Light sensor enabled"
+            },
+            "motion_sensor_enabled": {
+                "name": "Motion sensor enabled"
+            }
+        }
+    },
+    "issues": {
+        "deprecated_effect_none": {
+            "description": "A light was turned on with the deprecated effect `None`. This has been replaced with `off`. Please update any automations, scenes, or scripts that use this effect.",
+            "title": "Light turned on with deprecated effect"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "allow_hue_scenes": "Allow Hue scenes",
+                    "ignore_availability": "Ignore connectivity status for the given devices"
+                }
+            }
+        }
+    },
+    "services": {
+        "activate_scene": {
+            "description": "Activates a Hue scene with more control over the options.",
+            "fields": {
+                "brightness": {
+                    "description": "Set brightness for the scene.",
+                    "name": "Brightness"
+                },
+                "dynamic": {
+                    "description": "Enable dynamic mode of the scene."
+                },
+                "speed": {
+                    "description": "Speed of dynamic palette for this scene.",
+                    "name": "Speed"
+                },
+                "transition": {
+                    "description": "Transition duration it takes to bring devices to the state defined in the scene.",
+                    "name": "Transition"
+                }
+            },
+            "name": "Activate Hue scene"
+        },
+        "hue_activate_scene": {
+            "description": "Activates a Hue scene stored in the Hue hub.",
+            "fields": {
+                "dynamic": {
+                    "description": "Enable dynamic mode of the scene (V2 bridges and supported scenes only).",
+                    "name": "Dynamic"
+                },
+                "group_name": {
+                    "description": "Name of Hue group/room from the Hue app.",
+                    "name": "Group"
+                },
+                "scene_name": {
+                    "description": "Name of Hue scene from the Hue app.",
+                    "name": "Scene"
+                }
+            },
+            "name": "Activate scene"
+        }
+    }
+}

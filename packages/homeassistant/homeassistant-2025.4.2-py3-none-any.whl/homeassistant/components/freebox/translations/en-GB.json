@@ -1,0 +1,17 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Freebox router."
+                }
+            }
+        }
+    },
+    "services": {
+        "reboot": {
+            "description": "Reboots the Freebox.",
+            "name": "Reboot"
+        }
+    }
+}

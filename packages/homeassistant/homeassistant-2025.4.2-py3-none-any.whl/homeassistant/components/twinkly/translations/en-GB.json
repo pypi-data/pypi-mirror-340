@@ -1,0 +1,34 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "discovery_confirm": {
+                "description": "Do you want to set up {name} - {model} ({host})?"
+            },
+            "user": {
+                "data_description": {
+                    "host": "Hostname or IP address of your Twinkly device."
+                }
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "mode": {
+                "name": "Mode",
+                "state": {
+                    "color": "Colour",
+                    "demo": "Demo",
+                    "effect": "Effect",
+                    "movie": "Uploaded effect",
+                    "off": "Off",
+                    "playlist": "Playlist",
+                    "rt": "Real time"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "config": {
+        "abort": {
+            "cannot_connect": "Failed to connect"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "printer": {
+                "state": {
+                    "idle": "Idle",
+                    "printing": "Printing",
+                    "stopped": "Stopped"
+                }
+            },
+            "uptime": {
+                "name": "Uptime"
+            }
+        }
+    }
+}

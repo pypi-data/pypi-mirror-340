@@ -1,0 +1,21 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Connect"
+            }
+        }
+    },
+    "services": {
+        "set_time_to": {
+            "description": "Controls timers to turn the system on or off after a set number of minutes.",
+            "fields": {
+                "minutes": {
+                    "description": "Minutes until action.",
+                    "name": "Minutes"
+                }
+            },
+            "name": "Set time to"
+        }
+    }
+}

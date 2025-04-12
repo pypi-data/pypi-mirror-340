@@ -1,0 +1,10 @@
+{
+    "state": {
+        "tuya__air_quality": {
+            "good": "Good",
+            "great": "Great",
+            "mild": "Mild",
+            "severe": "Severe"
+        }
+    }
+}

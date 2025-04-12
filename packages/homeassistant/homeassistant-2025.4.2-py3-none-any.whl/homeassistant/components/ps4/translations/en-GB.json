@@ -1,0 +1,32 @@
+{
+    "config": {
+        "step": {
+            "link": {
+                "data_description": {
+                    "code": "On your PlayStation 4 console, go to **Settings**. Then, go to **Mobile App Connection Settings** and select **Add Device** to get the PIN."
+                }
+            },
+            "mode": {
+                "data_description": {
+                    "ip_address": "Leave blank if selecting auto-discovery."
+                }
+            }
+        }
+    },
+    "services": {
+        "send_command": {
+            "description": "Emulates button press for PlayStation 4.",
+            "fields": {
+                "command": {
+                    "description": "Button to press.",
+                    "name": "Command"
+                },
+                "entity_id": {
+                    "description": "Name of entity to send command.",
+                    "name": "Entity"
+                }
+            },
+            "name": "Send command"
+        }
+    }
+}

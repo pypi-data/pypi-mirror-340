@@ -1,0 +1,48 @@
+{
+    "config": {
+        "abort": {
+            "authorize_url_timeout": "Timeout generating authorise URL.",
+            "missing_credentials": "The integration requires application credentials."
+        }
+    },
+    "entity": {
+        "sensor": {
+            "indoor_humidity": {
+                "name": "Indoor humidity"
+            },
+            "indoor_temperature": {
+                "name": "Indoor temperature"
+            },
+            "next_period_time": {
+                "name": "Next period time"
+            },
+            "outdoor_humidity": {
+                "name": "Outdoor humidity"
+            },
+            "outdoor_temperature": {
+                "name": "Outdoor temperature"
+            },
+            "room_humidity": {
+                "name": "Room humidity"
+            },
+            "room_temperature": {
+                "name": "Room temperature"
+            },
+            "setpoint_status": {
+                "name": "Setpoint status"
+            }
+        }
+    },
+    "services": {
+        "set_hold_time": {
+            "description": "Sets the time period to keep the temperature and override the schedule.",
+            "fields": {
+                "time_period": {
+                    "description": "Duration for which to override the schedule.",
+                    "name": "Time period"
+                }
+            },
+            "name": "Set hold time"
+        }
+    }
+}

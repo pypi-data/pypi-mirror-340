@@ -1,0 +1,15 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Failed to connect"
+        },
+        "step": {
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of the Atag device."
+                },
+                "description": "Connect to the device"
+            }
+        }
+    }
+}

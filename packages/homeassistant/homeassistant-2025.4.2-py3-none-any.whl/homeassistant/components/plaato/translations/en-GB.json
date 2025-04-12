@@ -1,0 +1,15 @@
+{
+    "config": {
+        "abort": {
+            "cloud_not_connected": "Not connected to Home Assistant Cloud."
+        }
+    },
+    "options": {
+        "step": {
+            "webhook": {
+                "description": "Webhook info:\n\n- URL: `{webhook_url}`\n- Method: POST",
+                "title": "Options for Plaato Airlock"
+            }
+        }
+    }
+}

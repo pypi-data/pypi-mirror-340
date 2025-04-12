@@ -1,0 +1,39 @@
+{
+    "device_automation": {
+        "trigger_type": {
+            "changed_states": "{entity_name} turned on or off"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Off",
+                "on": "On"
+            }
+        },
+        "outlet": {
+            "name": "Socket",
+            "state": {
+                "off": "Off",
+                "on": "On"
+            }
+        },
+        "switch": {
+            "state": {
+                "off": "Off",
+                "on": "On"
+            }
+        }
+    },
+    "services": {
+        "toggle": {
+            "description": "Toggles a switch on/off."
+        },
+        "turn_off": {
+            "description": "Turns a switch off."
+        },
+        "turn_on": {
+            "description": "Turns a switch on."
+        }
+    }
+}
