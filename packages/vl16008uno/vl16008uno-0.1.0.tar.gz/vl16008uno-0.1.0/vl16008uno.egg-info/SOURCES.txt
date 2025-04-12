@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tests/test_lineales.py
+tests/test_no_lineales.py
+vl16008uno/__init__.py
+vl16008uno/metodos_lineales.py
+vl16008uno/metodos_no_lineales.py
+vl16008uno.egg-info/PKG-INFO
+vl16008uno.egg-info/SOURCES.txt
+vl16008uno.egg-info/dependency_links.txt
+vl16008uno.egg-info/requires.txt
+vl16008uno.egg-info/top_level.txt
