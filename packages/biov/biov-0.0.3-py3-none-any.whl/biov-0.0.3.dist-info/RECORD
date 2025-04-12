@@ -1,0 +1,7 @@
+biov/__init__.py,sha256=sVOaj-KDVRdrSTM2lz8VpiExsrpNGleMMgVJBMKgTXs,157
+biov/_patch.py,sha256=GRp1izeyBFhsDCkX88eD0O-K0hJ8z3HbLCLucvElCsw,636
+biov/config.py,sha256=khwWWiUZo95OSbSLxsrzjvM2EIAE6_Ict8LX44Hmyks,642
+biov/gff.py,sha256=QHomtTrha_1W1AygQPv7-k8HVq644FMiP-V2f8ViwYA,3011
+biov-0.0.3.dist-info/METADATA,sha256=8tIfgDctgehjOH3yGgOegzkJ8lHZijE-dbpaZ1aQldw,257
+biov-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+biov-0.0.3.dist-info/RECORD,,
