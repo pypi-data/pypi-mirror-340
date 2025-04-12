@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: rustipy
+Version: 0.1.1
+Summary: Rustipy your python project
+Author-email: Siyoung September <loldruger@gmail.com>
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.5; extra == "dev"
+Dynamic: license-file
