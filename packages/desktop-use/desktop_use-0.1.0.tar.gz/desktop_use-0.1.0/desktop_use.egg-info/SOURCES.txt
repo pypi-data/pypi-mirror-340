@@ -1,0 +1,10 @@
+pyproject.toml
+desktop_use.egg-info/PKG-INFO
+desktop_use.egg-info/SOURCES.txt
+desktop_use.egg-info/dependency_links.txt
+desktop_use.egg-info/requires.txt
+desktop_use.egg-info/top_level.txt
+desktop_use_sdk/__init__.py
+desktop_use_sdk/client.py
+desktop_use_sdk/exceptions.py
+desktop_use_sdk/models.py
