@@ -1,0 +1,82 @@
+Metadata-Version: 2.4
+Name: concurra
+Version: 1.0.0
+Summary: A simple parallel task execution library with error handling, progress tracking, and concurrency management.
+Home-page: https://github.com/Concurra/concurra
+Author: Sahil
+Author-email: parallelexecute@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tabulate>=0.8.10
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: flake8>=3.8; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Dynamic: license-file
+
+# Concurra
+
+Concurra is a Python library designed to execute tasks in parallel using a simple and efficient API. It provides a flexible solution for parallel task execution, supporting both threading and multiprocessing with an easy-to-use interface for task management, error handling, and progress monitoring.
+
+## Features
+- **Parallel Task Execution**: Execute multiple tasks concurrently using threads or processes.
+- **Error Handling**: Log and handle errors during task execution.
+- **Progress Tracking**: Track and log the progress of running tasks.
+- **Fast Failure**: Option to stop task execution immediately upon failure of a task.
+- **Multiprocessing Support**: Option to use multiprocessing for task execution.
+- **Simple API**: Easy-to-use API for adding tasks and managing execution.
+
+## Installation
+
+You can install Concurra using pip:
+
+```bash
+pip install concurra
+
+```
+
+## Usage
+
+Here’s a basic usage example:
+
+```python
+import concurra
+
+# Create a Concurra Task Runner with max concurrency of 4
+task_runner = concurra.Concurra(max_concurrency=4)
+
+# Define a sample task
+def sample_task(x):
+    return x * x
+
+# Add tasks to the runner
+task_runner.add_task(sample_task, 5)
+task_runner.add_task(sample_task, 10)
+
+# Execute tasks and get results
+results = task_runner.run()
+
+# Print task results
+print(results)
+
+
+```
+
+## Key Classes and Methods
+
+### Concurra
+The main class responsible for managing parallel task execution.
+
+add_task(task, *args, label=None, **kwargs): Add a task to be executed.
+
+run(): Execute all tasks and retrieve results.
+
+execute_in_background(): Start tasks in the background and continue main thread execution.
+
+get_background_results(): Retrieve results after background execution.
+
+verify(): Check if all tasks completed successfully and print a report.
+
+abort(): Abort the execution of all tasks.
