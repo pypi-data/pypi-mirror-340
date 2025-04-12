@@ -1,0 +1,27 @@
+{
+  "jupyter.lab.shortcuts": [],
+  "title": "sage-agent",
+  "description": "sage-agent settings.",
+  "type": "object",
+  "properties": {
+    "apiKey": {
+      "type": "string",
+      "title": "OpenAI API Key",
+      "description": "API key for accessing the OpenAI API",
+      "default": ""
+    },
+    "inferenceUrl": {
+      "type": "string",
+      "title": "Inference URL",
+      "description": "URL for the OpenAI API inference endpoint",
+      "default": "https://api.alpinex.ai/v1/chat/completions"
+    },
+    "modelName": {
+      "type": "string",
+      "title": "Model Name",
+      "description": "The AI model to use for chat completions",
+      "default": "Meta-Llama-3.1-405B-Instruct-Turbo"
+    }
+  },
+  "additionalProperties": false
+}

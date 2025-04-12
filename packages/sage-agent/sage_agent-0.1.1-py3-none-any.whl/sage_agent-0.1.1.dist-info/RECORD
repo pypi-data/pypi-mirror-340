@@ -1,0 +1,15 @@
+sage_agent/__init__.py,sha256=9uuR92GlmvGR7Q2GdfrRyjre4AKlzZbXswGOD9f4_hk,578
+sage_agent/_version.py,sha256=Ck6paNhex73Kx1qHGdOLqJ47XDpP7RpqmrOvdUNUfo0,175
+sage_agent-0.1.1.data/data/share/jupyter/labextensions/sage-agent/package.json,sha256=Mgrm14kEevrVodGy7WNfvwjNq346NNdaMqc6S7L8VCc,5858
+sage_agent-0.1.1.data/data/share/jupyter/labextensions/sage-agent/schemas/sage-agent/package.json.orig,sha256=kmS5AEARNfDMXbdqIggoVjnj2tIroNhfPHP2ULRPj9g,6814
+sage_agent-0.1.1.data/data/share/jupyter/labextensions/sage-agent/schemas/sage-agent/plugin.json,sha256=Sxyc9QBrQ-jTbQah7deu9lacmOJDSMuz5r96TFwuvFU,747
+sage_agent-0.1.1.data/data/share/jupyter/labextensions/sage-agent/static/509.19df6cfe3fe4a13b61b1.js,sha256=Gd9s_j_koTthsRmniGJLbUJGrCC3PPo2oRYF-WSQ_cQ,4967
+sage_agent-0.1.1.data/data/share/jupyter/labextensions/sage-agent/static/728.3bb17ab9c996c15fd97d.js,sha256=O7F6ucmWwV_ZfdLrB9BMLcUQ2YdMc5YndQiy20HkHLE,5867
+sage_agent-0.1.1.data/data/share/jupyter/labextensions/sage-agent/static/remoteEntry.98cac237103d8ed093c4.js,sha256=mMrCNxA9jtCTxPiJQ39JWfauxZkx4-RiA2plUPAtq70,6719
+sage_agent-0.1.1.data/data/share/jupyter/labextensions/sage-agent/static/style.js,sha256=9tXgKIEMcuTQs3WkNL6NsZSQthQhci9jaALQYqcB9dY,153
+sage_agent-0.1.1.data/data/share/jupyter/labextensions/sage-agent/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+sage_agent-0.1.1.data/data/share/jupyter/labextensions/sage-agent/install.json,sha256=tXP4ZIKEL1CAh7szYvK0ehnpaLlbj8YJqrQrcjULgrE,181
+sage_agent-0.1.1.dist-info/METADATA,sha256=1tX4k88DMb8rVxILRiLGXtJVzrZ4Q7af0pf2ui1xLqU,6034
+sage_agent-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sage_agent-0.1.1.dist-info/licenses/LICENSE,sha256=zsSUFnbKwCesfRSafkOcXkQGrMFo6zQ8LHlOt-MYHDY,1525
+sage_agent-0.1.1.dist-info/RECORD,,
