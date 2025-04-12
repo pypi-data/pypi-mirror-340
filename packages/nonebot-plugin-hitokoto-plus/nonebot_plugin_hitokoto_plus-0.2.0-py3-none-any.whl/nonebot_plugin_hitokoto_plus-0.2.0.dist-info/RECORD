@@ -1,0 +1,8 @@
+nonebot_plugin_hitokoto_plus/__init__.py,sha256=8APJ821-SNISqJLar7Bfbdpp4E4VaqfXnctc140yUjY,45859
+nonebot_plugin_hitokoto_plus/api.py,sha256=ybR6TTZbc7ts7lPZG4yTm_nhLsyIIZg6n9q1zwOXnek,6984
+nonebot_plugin_hitokoto_plus/config.py,sha256=k_N1ZrkD-lDoBb2uqQ03aK6hS-a0xA096L6-KzUGPVE,3711
+nonebot_plugin_hitokoto_plus/rate_limiter.py,sha256=_QtK0V5afB_T6kxIojSUHlgipVxpOhcSrW_2DgmXQUM,2798
+nonebot_plugin_hitokoto_plus-0.2.0.dist-info/METADATA,sha256=5n3VRlDKRHPqYaQds17Rjr-UBh9E-31vl5VJpDw-3vQ,6102
+nonebot_plugin_hitokoto_plus-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+nonebot_plugin_hitokoto_plus-0.2.0.dist-info/licenses/LICENSE,sha256=Wn-SMBMBBezGJhevGKaHpf_s2QBn2aDF3LGIKi0tCv0,1084
+nonebot_plugin_hitokoto_plus-0.2.0.dist-info/RECORD,,
