@@ -1,0 +1,81 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "browserstate"
+version = "0.0.3"
+authors = [
+  { name="BrowserState Team", email="info@browserstate.dev" },
+]
+description = "Manage browser profiles across cloud storage providers"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # No runtime dependencies required for core functionality
+]
+license = "MIT"
+license-files = ["LICENSE*"]
+
+[project.optional-dependencies]
+# Development dependencies that are not needed for runtime
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "pytest-asyncio>=0.23.0",
+    "flake8>=6.0.0",
+    "moto>=5.0.0",  # AWS mocking for tests
+    "ruff>=0.3.0",  # Formatting and linting
+]
+
+# Optional storage backend dependencies
+redis = [
+    "redis>=4.5.0",
+]
+s3 = [
+    "boto3>=1.26.0",
+]
+gcs = [
+    "google-cloud-storage>=2.7.0",
+]
+
+# Convenience groups
+all = [
+    "redis>=4.5.0",
+    "boto3>=1.26.0",
+    "google-cloud-storage>=2.7.0",
+]
+
+[project.urls]
+Homepage = "https://browserstate.io"
+Documentation = "https://browserstate.io"
+Repository = "https://github.com/browserstate-org/browserstate"
+Issues = "https://github.com/browserstate-org/browserstate/issues"
+"GitHub Packages" = "https://github.com/browserstate-org/browserstate/packages"
+
+[tool.hatch.build.targets.wheel]
+packages = ["browserstate"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "README.md",
+    "browserstate/**/*.py",
+]
+
+[tool.ruff]
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]  # Enable pycodestyle ('E'), pyflakes ('F'), and isort ('I') rules
+ignore = []
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
