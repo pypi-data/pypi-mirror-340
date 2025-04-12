@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: simless
+Version: 0.0.1
+Summary: Package for automation the process of creating simulation input files.
+Author-email: Barak Goldberg <goldberg.b@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/goldbergb/simless
+Project-URL: Issues, https://github.com/goldbergb/simless/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# simless
