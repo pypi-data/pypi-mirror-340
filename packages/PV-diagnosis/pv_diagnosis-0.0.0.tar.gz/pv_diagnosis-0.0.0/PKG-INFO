@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: PV-diagnosis
+Version: 0.0.0
+Summary: PV fault detection and diagnosis using IV curve
+Home-page: https://github.com/lbj2011/PV_diagnosis
+Author: baojieli
+Author-email: lbjxx2011@gmail.com
+License: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+
+
+
+# PV diagnosis
+
+
