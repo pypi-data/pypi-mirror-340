@@ -1,0 +1,16 @@
+wborm/__init__.py,sha256=bmYGAlzRu3YKxbbl3ANEF2xauJIq65NqeI1PFx2eSuI,389
+wborm/core.py,sha256=9Hp7tRNpq1kte1Z1XGLGifuKPwgA9YjUILA-hGy_Nic,12101
+wborm/expressions.py,sha256=24ALIGDGsdWbKOCUjttfeg7ZyMM7skm6yeBpL-yCzDE,1686
+wborm/fields.py,sha256=zLjKZqQnXeWkUrLCsdbZFbcUJXTpPVqzOyobXYyz3go,268
+wborm/introspect.py,sha256=3t_iDZunilN8enzCCYGRntY0EtQde4ikB0ZDYOtkeTE,1923
+wborm/model_cache.py,sha256=Tvs8G2hxoGGNAg9nLWr9xL3e6hN-o0IwAvxnwOG0_Ec,4015
+wborm/query.py,sha256=0kUKH3s27ffWj_xQ5eCgd1peszmY8lhfXsako8V1wjk,11420
+wborm/registry.py,sha256=ATYR0jK-jJAkAcBlvyxBlmaDuoYVHCBgw8P8jJFD8gA,87
+wborm/utils.py,sha256=nA2bMnUfXuW8jHrs-My3KZSo4NC88BW3xOHigr2MBDU,6473
+wborm/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wborm/tests/test_model.py,sha256=OVwklZKjCgFwQOxcdxSxg8QYAfF4mJEsoqyeGnlxM-E,1771
+wborm-0.2.0.dist-info/licenses/LICENSE,sha256=W0UdQWgdeJxAnKScs1FrJYJgl0UcSu09JxlO4vZDRfU,1081
+wborm-0.2.0.dist-info/METADATA,sha256=PEpQbUBA-iccoB0WINWSmEDU18Vd7BGRZgrUPKMB4RM,5713
+wborm-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+wborm-0.2.0.dist-info/top_level.txt,sha256=Y-7qg6si3Jr26N9QHwONPgoNbKEhGNAtQA_eJKHwfNM,6
+wborm-0.2.0.dist-info/RECORD,,
