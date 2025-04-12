@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: blurthefaces
+Version: 0.1.1
+Summary: A Python package to blur faces in images using MTCNN and OpenCV.
+Home-page: https://github.com/harichselvamc/blurthefaces
+Author: Harichselvam
+Author-email: harichselvamc@gmail.com
+Keywords: face blur,opencv,mtcnn,image processing,python package
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: opencv-python
+Requires-Dist: mtcnn
+Requires-Dist: tensorflow
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
