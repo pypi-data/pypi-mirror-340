@@ -1,0 +1,7 @@
+wayland_mcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wayland_mcp/server_mcp.py,sha256=UWQCTa3EdaBgWnk_o8oeg3ULE7jVbDLoEo3t525o8tI,1027
+wayland_mcp/server/app.py,sha256=WiGIKjUh3gWyJSOk98jjCbxCu-uv80Tj_TyEA4Fx78I,4087
+wayland_mcp-0.1.13.dist-info/METADATA,sha256=b4bcr9LuK2h6vVa45yUG2p2vmcuWEbYWKmOnUyAsm5E,297
+wayland_mcp-0.1.13.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+wayland_mcp-0.1.13.dist-info/entry_points.txt,sha256=dAbKBqV-UtijSOlsyICkkpI8RLaCmpWgtG8dNu2satU,60
+wayland_mcp-0.1.13.dist-info/RECORD,,
