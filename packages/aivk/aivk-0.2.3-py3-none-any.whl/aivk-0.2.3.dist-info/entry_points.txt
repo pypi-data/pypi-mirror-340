@@ -1,0 +1,2 @@
+[console_scripts]
+aivk = aivk.onCli.__main__:cli
