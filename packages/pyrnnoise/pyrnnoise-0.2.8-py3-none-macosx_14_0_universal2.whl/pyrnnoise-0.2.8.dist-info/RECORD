@@ -1,0 +1,11 @@
+pyrnnoise-0.2.8.data/purelib/pyrnnoise/__init__.py,sha256=LKho70MfrIoWCWv-qBvMo6zF1xLpCq1ntzBCXC3M3Lg,661
+pyrnnoise-0.2.8.data/purelib/pyrnnoise/cli.py,sha256=CVevX3SBpqcvL-VJLnl9urUuW-dLMZkpR1CIj9LatHk,1130
+pyrnnoise-0.2.8.data/purelib/pyrnnoise/librnnoise.dylib,sha256=R0nd0lvZHYHJ_36vZ9CKKj07N1xn3OdHIDBhDWLH9z8,14949168
+pyrnnoise-0.2.8.data/purelib/pyrnnoise/librnnoise.py,sha256=K2Qdb8t6O5Frd3VZFyFiPRw0wKko1kHhUC7_ks036p0,3042
+pyrnnoise-0.2.8.data/purelib/pyrnnoise/pyrnnoise.py,sha256=4hhQI5oUvf8B0bOQ1GNN6y6V-1lnQztNvQhXVGIql5M,4166
+pyrnnoise-0.2.8.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyrnnoise-0.2.8.dist-info/METADATA,sha256=btxKDQhSthV7cE_V2BOnzufg632FP8vkWSLfC_JMueQ,901
+pyrnnoise-0.2.8.dist-info/WHEEL,sha256=C5CdbfsW04b7O971S6wqAsjeWn9pcnmvSioTwEof988,111
+pyrnnoise-0.2.8.dist-info/entry_points.txt,sha256=z8ixRvP5sl3WC0L62YeQaxHeQSqWZdqgG0Nb-BByETQ,47
+pyrnnoise-0.2.8.dist-info/top_level.txt,sha256=_2ZZpJrj3mpll2U2B991Czzkwf5GkG5BhLdPYM1lBu0,10
+pyrnnoise-0.2.8.dist-info/RECORD,,
