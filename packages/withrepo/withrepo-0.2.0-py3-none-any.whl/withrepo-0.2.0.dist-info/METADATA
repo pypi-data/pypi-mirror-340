@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: withrepo
+Version: 0.2.0
+Summary: Pythonic access to git repositories
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx[http2]>=0.28.1
+Dynamic: license-file
+
+# withrepo
+Pythonic access to git repositories
+
+## TODO
+
+- [ ] Support gitlab (public)
+- [ ] Support bitbucket (public)
+
+- [ ] Support github (private)
+- [ ] Support gitlab (private)
+- [ ] Support bitbucket (private)
+
+- [ ] Support filesystem caching
+- [ ] Support explicit init for filesystem caching (for APIs, workers, etc.)
+- [ ] Investigate read-only mode
+- [ ] Readme
