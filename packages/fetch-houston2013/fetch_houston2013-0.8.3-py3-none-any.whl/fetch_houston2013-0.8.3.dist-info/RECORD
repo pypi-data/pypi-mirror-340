@@ -1,0 +1,16 @@
+fetch_houston2013/__init__.py,sha256=kM9PP0Tndl7HmQndwpDvT2EhVbbzOaqA2p1q7ssoGtg,878
+fetch_houston2013/core/_fetch_augsburg.py,sha256=NeNuL8u0yLKPnjmUsEendNbLnzqe6T8barqKXBoIuWM,6819
+fetch_houston2013/core/_fetch_houston2013mmrs.py,sha256=3Ey2xI7dBHcasBq_jont8_b3TIApxOWf6L03bXGW3sQ,5700
+fetch_houston2013/core/common.py,sha256=3oCVrJWoa4A75jh3xL7i1vImtgO4gYmul9Mme3_e7Vg,1259
+fetch_houston2013/core/fetch_houston2013.py,sha256=QUJLH0v_-OABKSX_BJNe4NSpcYGFzeay2f5y0hc2-Xw,8764
+fetch_houston2013/core/fetch_muufl.py,sha256=G_dL1AOjK8rSNVkkwVGsIJXrqyTt-ZAOlOs4Ljq_azI,3719
+fetch_houston2013/core/fetch_trento.py,sha256=Zr3_U3k0DMlFuDnz7xpneXwgkWdwiJIMRk6JzxnRKX4,3996
+fetch_houston2013/torch/common_hsi_dsm_dataset.py,sha256=IElhVE7yGMQ7p1YBR4IlIum7Z_GUAMT785CLWAYJJfM,3363
+fetch_houston2013/torch/datasets.py,sha256=L-wXvCRtfAuH6tLt4B-YmIjVeYgq4K1RMEjaup1DRAQ,1865
+fetch_houston2013/util/fileio.py,sha256=QiM3e1K-FbAz9Lcq1hC59circtbpRKekWNstKsWCA5s,3117
+fetch_houston2013/util/lbl2rgb.py,sha256=_U_LPsfGP_xPc6U3duAx2QjEbbyOu1fg53OuBIeGwOI,1811
+fetch_houston2013/util/split_spmatrix.py,sha256=zBQSKIvxLFZExTJRfuSuBvVkPGpbYUcdqyvOyVzz26U,624
+fetch_houston2013-0.8.3.dist-info/METADATA,sha256=AUzQO6Sd5R5mz-uqSDlp4Ut1dQ_9rVm8oHJ7KAL2hgE,6520
+fetch_houston2013-0.8.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fetch_houston2013-0.8.3.dist-info/licenses/LICENSE,sha256=hQp8BaH5uKNUGG0L4QJDLve7n-wbhqIJFKv5M83LqpE,10351
+fetch_houston2013-0.8.3.dist-info/RECORD,,
