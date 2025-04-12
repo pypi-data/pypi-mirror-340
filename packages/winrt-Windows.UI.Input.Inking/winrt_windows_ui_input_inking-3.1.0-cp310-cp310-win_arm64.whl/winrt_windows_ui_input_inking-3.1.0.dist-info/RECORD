@@ -1,0 +1,8 @@
+winrt/_winrt_windows_ui_input_inking.cp310-win_arm64.pyd,sha256=DkRb5vDqDC9afzh6fj_4vhnJIjm2jR36WxP_k-PDL_I,674816
+winrt/_winrt_windows_ui_input_inking.pyi,sha256=mO0N7WQb-Hs1ZlZXJ6zbBsYKh1hogEUMxHNGgElKDB4,61233
+winrt/windows/ui/input/inking/__init__.py,sha256=ZtnrkZitAUnTbc-RGNgY0twKpH5AYzlfe-O_8Kq0iw4,3247
+winrt/windows/ui/input/inking/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_ui_input_inking-3.1.0.dist-info/METADATA,sha256=3s305nWWqit3k_t5jqLjeFtx-YjeiGMCs8N--XELULo,1472
+winrt_windows_ui_input_inking-3.1.0.dist-info/WHEEL,sha256=pofYnMLU3Lw9hLmGcdQPa1-EeVWgEhDHvVznZJkU9yo,101
+winrt_windows_ui_input_inking-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_ui_input_inking-3.1.0.dist-info/RECORD,,
