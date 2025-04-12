@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "scraipe-st"
+version = "0.1.4"
+description = "Scraipe Streamlit app."
+readme = "README.md"
+license = "MIT"
+authors = ["Nibs"]
+homepage = "https://github.com/snpm/scraipe-st"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"  # Correct placement of Python version requirement
+scraipe = {extras = ["extended"], version = "*"}
+streamlit = "*"
+streamlit-scroll-navigation="*"
+pandas = "*"
+requests = "*"
+streamlit-pydantic = "0.6.0"
+pydantic-settings = "*"
+qrcode = ">=8.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+asdftimer = "*"
+pytest-asyncio = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+aioresponses = "*"
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8"
