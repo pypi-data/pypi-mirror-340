@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+tfrec_literate/__init__.py
+tfrec_literate/read.py
+tfrec_literate/write.py
+tfrec_literate.egg-info/PKG-INFO
+tfrec_literate.egg-info/SOURCES.txt
+tfrec_literate.egg-info/dependency_links.txt
+tfrec_literate.egg-info/requires.txt
+tfrec_literate.egg-info/top_level.txt
