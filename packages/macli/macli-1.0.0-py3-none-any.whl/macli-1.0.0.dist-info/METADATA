@@ -1,0 +1,38 @@
+Metadata-Version: 2.3
+Name: macli
+Version: 1.0.0
+Summary: module assembler cli
+License: Apache2
+Author: electrolyteJ
+Author-email: electrolytej@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: flashcli (>=1.3.0,<2.0.0)
+Requires-Dist: requests (==2.27.1)
+Requires-Dist: tqdm (>=4.65.0,<5.0.0)
+Project-URL: Bug Reports, https://github.com/pypa/sampleproject/issues
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Homepage, https://big-frontend.github.io/module-assembler/
+Project-URL: Source, https://github.com/electrolyteJ/module-assembler
+Description-Content-Type: text/markdown
+
+
+# 调试
+- poetry install | poetry build | poetry run macli
+- macli --help 
+
+# 发布
+poetry build | poetry publish

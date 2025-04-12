@@ -1,0 +1,14 @@
+cmds/__init__.py,sha256=0Go6I5Gbui1KyA1XBDp7el2Rwz6TvdxMjDCgjMS5iSE,66
+cmds/build/__init__.py,sha256=Q5LkS4GMMdZv41Gi80_hHxpj1likAjXYW0_OqzLKeNg,288
+cmds/bundle.py,sha256=rOCOm8Jes-jRlzUQD9yHZwAY5rZb3MOjp0mWb2Bfuiw,611
+cmds/config.py,sha256=OJa0wY0XyDM9MDd2aL8PXqC5xAHucqI9ivRlIKZ65qY,331
+cmds/create.py,sha256=XXcBRIpMx90MFqDGU37HlawIWhdplxk449NnKdIIFmA,1272
+cmds/init.py,sha256=4eKDVEsNPFbFTQlHjHVtZVdE2V3u31zCYbHYXY8BD3I,1479
+cmds/picker/__init__.py,sha256=i1NaH6NDu1KS1xIPxLkQnx2gG7JkCTVA1Q3dyYdHe7c,7206
+cmds/picker/property.py,sha256=5BV-qOAu2t8wIsh3oUN8KDM574WZ37ibqNE7yTcc4vk,9731
+cmds/strong_build.py,sha256=pU3RBqHEOZDratGHH8Z5RDd3jP-FlRukdw-hPWxR5Ts,2476
+cmds/util.py,sha256=JuY5cC4jyDiCOUnrwKFTuorDSWFoyAGrzVElocVhAZA,1268
+macli-1.0.0.dist-info/METADATA,sha256=ioLWLc562iz3BaTrKj3CKFy1czfDTLTThmSzFE0uWvo,1434
+macli-1.0.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+macli-1.0.0.dist-info/entry_points.txt,sha256=ViMX_GmSNwdNbRdI8GUO7MBVPq6daf1yA-fGtQ0GHF8,36
+macli-1.0.0.dist-info/RECORD,,
