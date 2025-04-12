@@ -1,0 +1,8 @@
+setup.py
+tursor.py
+tursor.egg-info/PKG-INFO
+tursor.egg-info/SOURCES.txt
+tursor.egg-info/dependency_links.txt
+tursor.egg-info/entry_points.txt
+tursor.egg-info/requires.txt
+tursor.egg-info/top_level.txt
