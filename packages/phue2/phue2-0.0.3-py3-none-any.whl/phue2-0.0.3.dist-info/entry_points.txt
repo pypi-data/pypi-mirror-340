@@ -1,0 +1,2 @@
+[console_scripts]
+phue = phue2.__main__:main
