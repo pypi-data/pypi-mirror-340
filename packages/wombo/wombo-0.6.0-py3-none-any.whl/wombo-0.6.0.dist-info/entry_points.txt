@@ -1,0 +1,2 @@
+[console_scripts]
+wombo = wombo.cli:app
