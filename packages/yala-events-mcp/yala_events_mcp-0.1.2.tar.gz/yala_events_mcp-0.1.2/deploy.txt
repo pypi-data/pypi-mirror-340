@@ -1,0 +1,2 @@
+Build package: python -m build .
+Upload to PyPI: twine upload dist/yala_events_mcp-{version}.tar.gz dist/yala_events_mcp-{version}-py3-none-any.whl
