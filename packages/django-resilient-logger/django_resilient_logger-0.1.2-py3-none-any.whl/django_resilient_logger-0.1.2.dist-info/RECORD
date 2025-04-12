@@ -1,0 +1,16 @@
+django_resilient_logger-0.1.2.dist-info/licenses/LICENSE,sha256=eCIdvinal5g0bfN1GkmwJZMw_1w97tfQ1LTl3LHJcME,1073
+resilient_logger/__init__.py,sha256=O1y2i1C4m602NbHgLdHmpflu9TGf21O6bs3ZEn_x0w4,23
+resilient_logger/abstract_log_facade.py,sha256=l8SaC2rgBKcCz1JaZSHBCL-phycEXGyIzqMa4ta9Q8g,1232
+resilient_logger/abstract_submitter.py,sha256=Xb8eel9UHnnvYY0v1MCXAOziq1V1kDR7L5gk3KpEivo,5282
+resilient_logger/admin.py,sha256=oqKqNSz1Ks-1tZrsjCYYhuEORSbJrof69lWI8WsAOaQ,1616
+resilient_logger/apps.py,sha256=bxx5GjOjXjOJMx2Pkm4sPiW3W8KgQAdP5FwvudZfLCQ,163
+resilient_logger/elasticsearch_submitter.py,sha256=-glXsCryg9J0XAOlFc7vqihKLXSewszBaSbDh6n_DK0,1675
+resilient_logger/handlers.py,sha256=W3vryl6cjnyAsfJjmL7YR7GGDFosJ_cSCMsQHwCvDIA,1974
+resilient_logger/models.py,sha256=P4KKKfb4AOMlPg8RHswu4_l3feYobpi5T3Ps15Yeu2M,649
+resilient_logger/proxy_submitter.py,sha256=hwlNJ4n8h58j5fuPTGeCF7_MXSDJ2VKeTm7qb7RNl9g,968
+resilient_logger/resilient_log_facade.py,sha256=i857BRXd7dm9PFsJA_Gtfcb0LwGowGanTr0ef3W4Vdw,2087
+resilient_logger/utils.py,sha256=fKDswxLxGy62xAxuoeDvdXfqw7aXhWecob9S-_EW4S4,1247
+django_resilient_logger-0.1.2.dist-info/METADATA,sha256=bFE4_IFLuGriXYjlWh6S7GprF_Szugaz6qzymBLzuqU,4166
+django_resilient_logger-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_resilient_logger-0.1.2.dist-info/top_level.txt,sha256=FUQvHiYZ2qyOlS58MT_MvZjl31N1ZX5wUV8tghZRBng,17
+django_resilient_logger-0.1.2.dist-info/RECORD,,
