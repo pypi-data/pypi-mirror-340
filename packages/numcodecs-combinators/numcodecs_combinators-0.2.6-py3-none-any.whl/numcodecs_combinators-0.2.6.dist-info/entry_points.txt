@@ -1,0 +1,2 @@
+[numcodecs.codecs]
+combinators.stack = numcodecs_combinators.stack:CodecStack
