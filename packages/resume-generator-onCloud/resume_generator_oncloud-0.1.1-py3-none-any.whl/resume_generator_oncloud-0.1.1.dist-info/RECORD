@@ -1,0 +1,19 @@
+custom library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom library/admin.py,sha256=LItHU28Ou8j8xpPGR7qNod4JPUdSkK9MlbxF796d1g8,93
+custom library/apps.py,sha256=tHeAR9V51EzmH_WWC9A7Dy6NoP5dFXHAz9sKxWrypSc,150
+custom library/djangoService.py,sha256=ReAnaG2KchD6eo98TiyIRqXSuD3iU9KkeeS3tMW61f4,1378
+custom library/dynamo_models.py,sha256=mTDlrppwocGAwrf8Kvd3zQFXJ5bJXYgfpkBSdWfNpEM,1011
+custom library/models.py,sha256=L228BZ4wqRgYWGLdLzqvqKmZdt-e_DJso5Qpa7Qln0g,1300
+custom library/serializers.py,sha256=9kyqK1cr80On_JacWhygCK66_kwQaLE93XXysy_ncP8,477
+custom library/tests.py,sha256=SrHYA7A1JRCUJh1vUdceoPFIn3VvalQ8JehYB0Y0Yyc,463
+custom library/urls.py,sha256=z3GQ7nu-9eHbhnk7KA0JokXezn7rfeAGqWXh__ajyuM,1806
+custom library/views.py,sha256=n7Q1tthmunqgCeffzaduUFFnrrMPYqN1186_3qbt9MQ,8994
+custom library/migrations/0001_initial.py,sha256=KcypTqbOIvI_yFgzGjKNQMFq3qw_V4Ntk1qxHpl-0gM,1154
+custom library/migrations/0002_resumeversion.py,sha256=F3UHSk6S-wjuf2ycZ3AY0JvFIfMfcCbqUSPMEvswNik,847
+custom library/migrations/0003_resume_extra_fields.py,sha256=Vi0KRJT84oaSJ5LIDnnYOd57mN6P-TY3V2N__0J26E8,411
+custom library/migrations/0004_resumeversion_extra_fields.py,sha256=yUBxZ2-4-faS6YF0bNGXYv1rgn5cuaHCGsosuVD3nNM,424
+custom library/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+resume_generator_oncloud-0.1.1.dist-info/METADATA,sha256=LudpQ308vFy7xyIoFmknR4Im9h7Q2ct-4yKCtUbhxlg,216
+resume_generator_oncloud-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+resume_generator_oncloud-0.1.1.dist-info/top_level.txt,sha256=xpHujmd83S_fgc1QOvz62FbhXDYCyNGXdFEygNe_c0E,15
+resume_generator_oncloud-0.1.1.dist-info/RECORD,,
