@@ -1,0 +1,12 @@
+README.md
+setup.py
+blurthefaces/__init__.py
+blurthefaces/blur.py
+blurthefaces/detector.py
+blurthefaces/utils.py
+blurthefaces.egg-info/PKG-INFO
+blurthefaces.egg-info/SOURCES.txt
+blurthefaces.egg-info/dependency_links.txt
+blurthefaces.egg-info/requires.txt
+blurthefaces.egg-info/top_level.txt
+tests/test_blur.py
