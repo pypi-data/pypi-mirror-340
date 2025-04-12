@@ -1,0 +1,10 @@
+compute_wer/__init__.py,sha256=eUMh0tU5KZGLWZKwKwD5fktg2q02uydh4wDKXWoCxyI,667
+compute_wer/calculator.py,sha256=ZqqU1QC0qJJ-7Ph5MxZg6W0wRCGQTzBTexzJE8aP8wE,4327
+compute_wer/cli.py,sha256=CTXgYg4jt6aA8DzKdZTwF86bk1y3xq49amY207fa5bA,3708
+compute_wer/utils.py,sha256=6ci15IHz3fkLEK6MEK4lM-MqkDOXqUqmlDbNdB790gs,3429
+compute_wer-0.1.0.dist-info/licenses/LICENSE,sha256=g-kl9rwsUgRm5Jf8e3qCke1WoMQe53TBIA63Bcm-o04,1066
+compute_wer-0.1.0.dist-info/METADATA,sha256=fD7EceJLBXpXij12xnOrShhTe7-aCeg4_R51wtc8_og,911
+compute_wer-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+compute_wer-0.1.0.dist-info/entry_points.txt,sha256=_v10xpbHMXrIUfYrr_6hM8h-8cWhUtLNfTvCtYbpbBk,53
+compute_wer-0.1.0.dist-info/top_level.txt,sha256=0ScNY7jniouUy7oqa2xsm_dpKgi5L5wtQyt8gyFRAGQ,12
+compute_wer-0.1.0.dist-info/RECORD,,
