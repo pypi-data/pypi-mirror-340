@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+apache_beam/utils/__init__.py
+apache_beam/utils/python_callable.py
+apache_beam/utils/python_callable_test.py
+apache_beam_utils.egg-info/PKG-INFO
+apache_beam_utils.egg-info/SOURCES.txt
+apache_beam_utils.egg-info/dependency_links.txt
+apache_beam_utils.egg-info/top_level.txt
