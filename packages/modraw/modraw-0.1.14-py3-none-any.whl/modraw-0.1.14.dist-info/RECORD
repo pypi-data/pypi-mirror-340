@@ -1,0 +1,10 @@
+modraw/__init__.py,sha256=kpceAZYziKOi9lyJyfmtu6YPOBlmMN-BDBhprCYbmm4,1269
+modraw/static/draw.css,sha256=07uPCmdQvZtm6sNxbxTpTaaVd3sG3cCOSnhrrxXRBxw,760012
+modraw/static/draw.js,sha256=PGdtk8j8LquCvHwHZwpe-xee267mfgD5Njw2BSrA7Ao,1601530
+modraw-0.1.14.dist-info/licenses/LICENSE,sha256=W-o1UdN2OpcQRwyNCD5tXOfOHWU7Q49gDfb_1QKHhcQ,1077
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_basics.py,sha256=J7Uvt5hspKEn3B0iVjwC5aWrePFfDcG0DAM3ObMcNOs,252
+modraw-0.1.14.dist-info/METADATA,sha256=atjTrTWTxO3GVkAaK_jAPTsbsfPUb5ywuUIJrs5x9h0,2740
+modraw-0.1.14.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+modraw-0.1.14.dist-info/top_level.txt,sha256=6v2llxUD6HXS4HiRjlsvhVC795EdOAsh1W7bpKF5K_M,13
+modraw-0.1.14.dist-info/RECORD,,
