@@ -1,0 +1,23 @@
+[project]
+name = "MyUVStudy.py"
+version = "0.1.3"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "basiclibrary-py>=0.6.55",
+]
+
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# 仅打包 src 目录下的代码
+packages = { find = { where = ["src"] } }
+
+
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
