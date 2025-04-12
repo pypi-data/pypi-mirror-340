@@ -1,0 +1,12 @@
+duckdb_tinyorm_py/__init__.py,sha256=12WorlfoGg4HHphaFElHKxariC7p8o73cNaTdt3ql1c,802
+duckdb_tinyorm_py/advanced_usage.py,sha256=DHiMZzmm6dXZEsC_23hAoLPk5fDVQFDc2ftbZqgnchY,9407
+duckdb_tinyorm_py/config.py,sha256=KmwIqBIG1xlauGvK-s1aHRYMYNVx9f4q437ebQ6ApKY,2382
+duckdb_tinyorm_py/decorators.py,sha256=Y6a2P4l-xXRGebgCYzTGVax09oIrP0wEf742_YvBcP0,10674
+duckdb_tinyorm_py/exceptions.py,sha256=4Ytcv1VtZZzhZa6K8zaI-BYiJn_DInjAJeqJtPOlOl0,620
+duckdb_tinyorm_py/migration.py,sha256=3w-XKvX5jrjodPIdgPJumV2O9xoKleQOAWqHKRwbx2c,6734
+duckdb_tinyorm_py/repository.py,sha256=N9O_UwwW-4B71CHS7k1T77MBgSqTDYdIOatn4KZGK30,35292
+duckdb_tinyorm_py/utils.py,sha256=miR62YP0QOzyyy8NTFKa7S1_GF5BkcVk9Ofx0lhVlso,1831
+duckdb_tinyorm_py-0.1.0.dist-info/LICENSE,sha256=--18Jt6g3Xic5CZBAjSgJFmFGxEroHvoQcP5nBIaTM0,1070
+duckdb_tinyorm_py-0.1.0.dist-info/METADATA,sha256=gHpPcKTNfVt4iKaoLmXeYi3onN82_RwDr82PD-EMywo,4467
+duckdb_tinyorm_py-0.1.0.dist-info/WHEEL,sha256=IrRNNNJ-uuL1ggO5qMvT1GGhQVdQU54d6ZpYqEZfEWo,92
+duckdb_tinyorm_py-0.1.0.dist-info/RECORD,,
