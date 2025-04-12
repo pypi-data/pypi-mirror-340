@@ -1,0 +1,6 @@
+mcp_neo4j_cypher_read_only/__init__.py,sha256=f6B8Xa9nFpJbnmX59iPWMqd7zFORPuQp1SgxGE0CQcI,3137
+mcp_neo4j_cypher_read_only/server.py,sha256=DP5W_kT-kMDd6NPoT9UyJ4n26TytqYfuqwnu_G32sHE,11658
+mcp_neo4j_cypher_read_only-0.1.4.dist-info/METADATA,sha256=ys5njnFMrALzk_QFfCCjYdDF8i57lYwnk5M_fh53g4s,5072
+mcp_neo4j_cypher_read_only-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_neo4j_cypher_read_only-0.1.4.dist-info/entry_points.txt,sha256=q76kR_fmqC0BCowMdMnj1U2ljZD6lIqG3-SbeyLMAEs,79
+mcp_neo4j_cypher_read_only-0.1.4.dist-info/RECORD,,
