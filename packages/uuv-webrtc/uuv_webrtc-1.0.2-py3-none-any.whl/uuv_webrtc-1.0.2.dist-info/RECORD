@@ -1,0 +1,12 @@
+uuv_webrtc/__init__.py,sha256=Fm4FMUcYNhvXPdjQOSs258qQC6ErAR9ii3xj-rqRyNw,791
+uuv_webrtc/cv_cap_stream_track.py,sha256=X7-4nf9DcY7VeXwo41XC0hQbwaru-siow92UvXKs2wY,1848
+uuv_webrtc/cv_capture.py,sha256=F5ersOlxIePEiqQKvYu_eWngkABA3OIDMXtn2nciXeU,4797
+uuv_webrtc/rtc_client.py,sha256=J2f8mfVC_h14Be4K5XtrDmur0vAU070g7hPzEu--G6E,7138
+uuv_webrtc/rtc_server.py,sha256=kiBk5AvYbljWw_qZBhWV80r73So7Qb9Jaar_4NOdhQg,5942
+uuv_webrtc/sdp_server.py,sha256=clSzpVo3T0Tc0AalFnCeTsdRt3U5qfqllZ84Dd7Sg1U,4940
+uuv_webrtc/utils.py,sha256=jE71KZlx6jTYgEEM9ZqZ8wqFaApwuEmOpF3Muaxn2sk,2107
+uuv_webrtc/video_stream_receiver.py,sha256=ezqILeZd_YlitZvtw6i1DwKy_BnXQDlaWKcwQnwjORg,3236
+uuv_webrtc-1.0.2.dist-info/METADATA,sha256=cd2i3jwNfGD7QzACLimimqiHGytFOtAP2QVe0zT1iOY,2151
+uuv_webrtc-1.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+uuv_webrtc-1.0.2.dist-info/top_level.txt,sha256=zhirRmx-Cams3y9wde0sWW8zdLTJ-F4Wwzm7kKuWkro,11
+uuv_webrtc-1.0.2.dist-info/RECORD,,
