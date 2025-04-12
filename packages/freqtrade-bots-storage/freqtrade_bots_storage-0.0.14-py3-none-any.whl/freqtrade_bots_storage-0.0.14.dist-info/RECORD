@@ -1,0 +1,11 @@
+hello.py,sha256=jCJuh7MFf9G1_L1HVE8gkZPLlJf7fp073icobV4lKtc,100
+freqtrade_bots_storage-0.0.14.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+protocol/__init__.py,sha256=PZMrPP1g1Ur9P6-5tK0R4zrRJHO7Y3UF6sfiP_FIY9w,91
+protocol/protocol.py,sha256=4BF9XNFo9VpxG0Jl7zz0pFHH5zoq2RexTjITc6ygFJ4,719
+storages/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+storages/file_storage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+storages/file_storage/file_tradig_bots_storage.py,sha256=UWE_NjFebNgzYLTYxwnnvrMz3HJ6nFtQvKaZCLVNSas,2654
+freqtrade_bots_storage-0.0.14.dist-info/METADATA,sha256=9R-ZPuo-jd-f4nLP0hWNFC3B6-7fqiVVxfRYcR8LjZ4,290
+freqtrade_bots_storage-0.0.14.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+freqtrade_bots_storage-0.0.14.dist-info/top_level.txt,sha256=m3lBaY5jaqBxiifxSPXM2d7EJ67X1RgSpVhGVElpTiM,24
+freqtrade_bots_storage-0.0.14.dist-info/RECORD,,
