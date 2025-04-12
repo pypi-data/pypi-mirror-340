@@ -1,0 +1,9 @@
+generalagents/__init__.py,sha256=B_zOKdvCT1nLBpQx8oAcfI3QNpWqHjuttADfEI2JxCA,59
+generalagents/action.py,sha256=8UpbP3HYZwr_2KzWHezczdelzLMhw9IrMsu45eE8V_w,4247
+generalagents/agent.py,sha256=fBudS6hyPYO83X8xk8wUXzL4JErS5D0UyjK7YLeaZn0,4557
+generalagents/macos/__init__.py,sha256=B5yq7S6uLTnwBFDSKmCfgFajYLcPnp8-JM7-BdfoHnk,74
+generalagents/macos/computer.py,sha256=FUvyIEoaUZkV_Q-zYFOj38nVgWbRbl5EHS5yDhlUSZ0,4185
+generalagents-0.1.1.dist-info/METADATA,sha256=QBm2lxvs-p1T7rOMMgfb4o9EvAKlWAOz9YRKBTlwS0c,2497
+generalagents-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+generalagents-0.1.1.dist-info/licenses/LICENSE,sha256=Dfs1q4-egGkcooeDhoOPRMHYKsjoCxb8_wCYVN-7aAo,11344
+generalagents-0.1.1.dist-info/RECORD,,
