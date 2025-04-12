@@ -1,0 +1,10 @@
+javcrawler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+javcrawler/config.py,sha256=eZpOHDFyCQCiOKkaFWZxMk2PnvavvgAVoBUDohUfnoU,672
+javcrawler/crawler.py,sha256=PEDBU_8E9nRqS6sHnn7j7N2Ap-MPwmVJEksH2gvOJuc,6319
+javcrawler/logger.py,sha256=4vxc1PEK4gBKipFQGjtvLY1hDNZPkup7actfj_UVWSc,421
+javcrawler/main.py,sha256=HamgTL7xRUs6le84atdIDQy4_Sg07U32sk_2O5n3Oi8,5796
+javcrawler/utils.py,sha256=PPqVCe13OllrhqOb8OQKHo6TVt9P-EYtDrrMSaO0Fp8,1342
+javcrawler-0.1.0.dist-info/METADATA,sha256=NdgY10etbck1mS8m_vifXNgUiBiYqZNHC94oIEE9_AI,239
+javcrawler-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+javcrawler-0.1.0.dist-info/entry_points.txt,sha256=KGM4eMyCyQU2xH3DiZtlNqJ-g1TpWAbfaPqvX33u3uI,45
+javcrawler-0.1.0.dist-info/RECORD,,
