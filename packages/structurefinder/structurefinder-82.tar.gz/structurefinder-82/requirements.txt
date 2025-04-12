@@ -1,0 +1,15 @@
+docutils
+macholib
+numpy~=2.1
+pefile
+pyqt6<6.9
+pyqt6-sip
+pywin32-ctypes~=0.2
+six
+requests
+gemmi<0.7.0
+gunicorn
+xlsxwriter
+qtawesome
+shelxfile
+py7zr
