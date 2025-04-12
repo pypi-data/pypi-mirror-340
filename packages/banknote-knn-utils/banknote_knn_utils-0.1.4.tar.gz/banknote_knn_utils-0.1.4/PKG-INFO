@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: banknote-knn-utils
+Version: 0.1.4
+Summary: Utilities for banknote classification and analysis
+Author: Danny Pirouz, William Ho, Sayana Imash, Arad Sabet
+License: MIT
+Project-URL: Homepage, https://github.com/DSCI-310-2025/banknote-knn-utils
+Project-URL: Bug Tracker, https://github.com/DSCI-310-2025/banknote-knn-utils/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: matplotlib>=3.0.0
+Requires-Dist: seaborn>=0.11.0
+Requires-Dist: scikit-learn>=1.0.0
+Dynamic: license-file
