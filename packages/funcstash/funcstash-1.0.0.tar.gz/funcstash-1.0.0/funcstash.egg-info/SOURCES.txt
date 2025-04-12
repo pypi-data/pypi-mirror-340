@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+funcstash/__init__.py
+funcstash/package.py
+funcstash.egg-info/PKG-INFO
+funcstash.egg-info/SOURCES.txt
+funcstash.egg-info/dependency_links.txt
+funcstash.egg-info/top_level.txt

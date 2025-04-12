@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: funcstash
+Version: 1.0.0
+Summary: A package that adds useful functions to Python.
+Home-page: https://github.com/DementiaGaming/py-plus-plus
+Author: Dementia Gaming
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: summary
+
+# Func Stash
+ A package that adds useful functions to Python.
+
+# Functions
+
+Increment variable:
+```
+inc(x)
+```
+Decrement variable:
+```
+dec(x)
+```
