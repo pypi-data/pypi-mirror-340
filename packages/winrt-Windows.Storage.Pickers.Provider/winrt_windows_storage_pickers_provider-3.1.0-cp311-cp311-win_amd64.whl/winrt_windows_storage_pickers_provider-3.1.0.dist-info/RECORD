@@ -1,0 +1,8 @@
+winrt/_winrt_windows_storage_pickers_provider.cp311-win_amd64.pyd,sha256=yQEx5Bi_yn1q7RjYHXYSXihg7T8rYq08B_WhSa2-80M,119808
+winrt/_winrt_windows_storage_pickers_provider.pyi,sha256=huICTKJ5SKdzsghC2faQPOSHJ01sHdBlW5GMGM_y9rM,8740
+winrt/windows/storage/pickers/provider/__init__.py,sha256=U-UJI8afeN_uyuBa_Q_pM-oX0YDJo0gq4nxvrtSiG_A,1045
+winrt/windows/storage/pickers/provider/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_storage_pickers_provider-3.1.0.dist-info/METADATA,sha256=gdHkAVNTE5kQBZ96KgrlWtY-X-r2VLTCrd-dkTDJPhk,1228
+winrt_windows_storage_pickers_provider-3.1.0.dist-info/WHEEL,sha256=_ZWIY2n7n6SpiuIFl1-RvcMp4Ty36T57FKf-7NzqZHM,101
+winrt_windows_storage_pickers_provider-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_storage_pickers_provider-3.1.0.dist-info/RECORD,,
