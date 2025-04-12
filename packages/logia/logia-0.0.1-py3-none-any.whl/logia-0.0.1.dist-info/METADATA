@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: logia
+Version: 0.0.1
+Summary: Simply printing Hello from Logia :)
+Home-page: 
+Author: 
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
