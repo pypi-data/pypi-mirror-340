@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: bilauth
+Version: 0.2.1
+Summary: Bilauth is a Python module that enables programmatic access to Bilfen Lisesi's student portal, offering tools for authentication, data scraping, and structured parsing of profile, exam, and club information. Designed for Bilfen students and developers, Bilauth powers student-only tools, early-stage app testing, and competition-specific access scenarios.
+Author: Kağan Erkan
+License: BODL(Custom)
+License-File: License
+Requires-Dist: requests>=2.25.0
+Requires-Dist: beautifulsoup4>=4.9.3
+Dynamic: author
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
