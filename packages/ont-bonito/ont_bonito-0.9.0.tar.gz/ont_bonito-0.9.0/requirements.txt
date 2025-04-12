@@ -1,0 +1,19 @@
+# general requirements
+edlib
+fast-ctc-decode
+mappy
+numpy
+pandas
+parasail
+pod5
+pysam
+python-dateutil
+requests
+toml
+tqdm
+wheel
+# specific requirements
+torch==2.6.0
+# ont requirements
+ont-fast5-api
+ont-koi==0.5.4
