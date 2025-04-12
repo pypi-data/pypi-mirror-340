@@ -1,0 +1,159 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Skill Registry API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/skill-registration": {
+      "post": {
+        "summary": "Register a new skill",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "description": { "type": "string" },
+                  "urlToExecute": { "type": "string", "format": "uri" },
+                  "token": { "type": "string" },
+                  "componentId": { "type": "string", "nullable": true },
+                  "tag": { "type": "string", "nullable": true },
+                  "configurationId": { "type": "string", "nullable": true },
+                  "parameters": {
+                    "type": "object",
+                    "nullable": true,
+                    "properties": {
+                      "properties": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "type": { "type": "string" },
+                            "description": { "type": "string" },
+                            "name": { "type": "string" },
+                            "required": { "type": "boolean", "nullable": true }
+                          },
+                          "required": ["type", "description", "name"]
+                        }
+                      }
+                    }
+                  }
+                },
+                "required": ["name", "description", "urlToExecute", "token"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Skill successfully registered"
+          }
+        }
+      }
+    },
+    "/skills": {
+      "get": {
+        "summary": "List all skills",
+        "responses": {
+          "200": {
+            "description": "A list of skills"
+          }
+        }
+      }
+    },
+    "/skills/{skillId}": {
+      "put": {
+        "summary": "Update an existing skill",
+        "parameters": [
+          {
+            "name": "skillId",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "description": { "type": "string" },
+                  "urlToExecute": { "type": "string", "format": "uri" },
+                  "token": { "type": "string" },
+                  "componentId": { "type": "string", "nullable": true },
+                  "tag": { "type": "string", "nullable": true },
+                  "configurationId": { "type": "string", "nullable": true },
+                  "parameters": {
+                    "type": "object",
+                    "nullable": true,
+                    "properties": {
+                      "properties": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "type": { "type": "string" },
+                            "nullable": { "type": "boolean", "nullable": true },
+                            "description": { "type": "string" },
+                            "name": { "type": "string" },
+                            "required": { "type": "boolean", "nullable": true }
+                          },
+                          "required": ["type", "description", "name"]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Skill successfully updated"
+          },
+          "404": {
+            "description": "Skill not found"
+          },
+          "400": {
+            "description": "Invalid request data"
+          }
+        }
+      }
+    },
+    "/skills/{skillId}/execute": {
+      "post": {
+        "summary": "Execute a registered skill",
+        "parameters": [
+          {
+            "name": "skillId",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "requestBody": {
+          "required": false,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Execution result"
+          }
+        }
+      }
+    }
+  }
+}
