@@ -1,0 +1,10 @@
+addressbook/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addressbook/command_matcher.py,sha256=w9sxTyIwDM0OiiJjuDTSNWN2YO7f_TvPLnuWuOW-SSY,609
+addressbook/error_handler.py,sha256=S253NXCRW1sG6q1XhTd_0p9LwcAVU3foi5NJqEhXZbc,1334
+addressbook/main.py,sha256=tsk_9oOfz7_Fb9n17A4P0eA-1o4P3cUz3WDVhpdbY7w,3301
+addressbook/utils.py,sha256=1G36yFXprWQsK6E6KwOz-OY9qnziBldTep0QQiD1r4k,2040
+goit_dev_nest_addressbook_cli-0.2.0.dist-info/METADATA,sha256=5tw-IR0lvejtrSujbM792NOvf9auQvnya_OuGv6qoDs,392
+goit_dev_nest_addressbook_cli-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+goit_dev_nest_addressbook_cli-0.2.0.dist-info/entry_points.txt,sha256=LSotPhkni5njZZ_Nm93hYmrd2BGleAQOaviOlqKrsjo,54
+goit_dev_nest_addressbook_cli-0.2.0.dist-info/top_level.txt,sha256=JOZ4plsJEA8Os7GpG75ylXrVKoPY2X96KRLJa26-0OU,12
+goit_dev_nest_addressbook_cli-0.2.0.dist-info/RECORD,,
