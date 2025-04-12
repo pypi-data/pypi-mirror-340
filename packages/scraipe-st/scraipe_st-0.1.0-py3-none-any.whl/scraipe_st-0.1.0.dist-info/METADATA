@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: scraipe-st
+Version: 0.1.0
+Summary: Scraipe Streamlit app.
+License: MIT
+Author: Nibs
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas
+Requires-Dist: pydantic-settings
+Requires-Dist: requests
+Requires-Dist: scraipe[extended]
+Requires-Dist: streamlit
+Requires-Dist: streamlit-pydantic (==0.6.0)
+Requires-Dist: streamlit-scroll-navigation
+Project-URL: Homepage, https://github.com/snpm/scraipe-st
+Description-Content-Type: text/markdown
+
+# Scraipe-st
+
+## Installation
+
