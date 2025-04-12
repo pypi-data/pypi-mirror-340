@@ -1,0 +1,3 @@
+include ntsulib/c/libs/*.dll
+include ntsulib/py.typed
+recursive-include stubs *.pyi
