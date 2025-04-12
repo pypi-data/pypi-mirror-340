@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+xtu/__init__.py
+xtu/api.py
+xtu/const.py
+xtu_edu.egg-info/PKG-INFO
+xtu_edu.egg-info/SOURCES.txt
+xtu_edu.egg-info/dependency_links.txt
+xtu_edu.egg-info/requires.txt
+xtu_edu.egg-info/top_level.txt
