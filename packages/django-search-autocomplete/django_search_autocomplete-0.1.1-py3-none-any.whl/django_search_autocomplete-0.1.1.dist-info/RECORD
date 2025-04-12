@@ -1,0 +1,14 @@
+django_search_autocomplete-0.1.1.dist-info/licenses/LICENSE,sha256=xLqRupCnEZ42DS0u8SJ5ayTycoIL25DiCP9kVyJl0Yc,1090
+search_autocomplete/__init__.py,sha256=eIwDgi9iCQPzO8YlZJn8np2IyN-4D9nSuXqWI5BNtzE,61
+search_autocomplete/forms.py,sha256=aAY39qDlW2IveI-sLW7frWmHsdiO7vSSVMkOcDIEy9k,2379
+search_autocomplete/urls.py,sha256=-DBLxM0zBsq9CwA5PBaR6qm4M_p9FfBS-ldpE89kSNQ,274
+search_autocomplete/views.py,sha256=xWdMiSlTHzcUurrCBSFdGVUzWK8HmxPTd2a7l8B0nNE,4823
+search_autocomplete/static/css/search-autocomplete.css,sha256=FJkRGcBYC_6GN0IWVDWDJO0N-1OJaLPWAqXLykTtOWo,1186
+search_autocomplete/static/js/search-autocomplete.js,sha256=_0es7TyPg7Kq_nuxrwWx_pZtGDfrGcweHgdyBQD2Sm8,3318
+search_autocomplete/static/search_autocomplete/css/search-autocomplete.css,sha256=X5r6RRrbX-eKbiTUVO38KLjcedppfKWxiGA9Fcr9Tx0,1531
+search_autocomplete/static/search_autocomplete/js/search-autocomplete.js,sha256=43B-F73LHCBaieSTZ8scHLcrmW4zypwbomNmJq9hS7o,3129
+search_autocomplete/templates/search_autocomplete/config.html,sha256=Tew_hbgbagLFgItSnNT_MUleZugMxygcs4uKpJZKt7c,7256
+django_search_autocomplete-0.1.1.dist-info/METADATA,sha256=F2mK5tO-YQBlWDi6QsEvvN74AaTnOFyTHYs-HyvbNmA,6197
+django_search_autocomplete-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_search_autocomplete-0.1.1.dist-info/top_level.txt,sha256=Db1ZrbrKtbj1CTvxIOa1HjTaIGWHm9V9Xm54O33mFxg,20
+django_search_autocomplete-0.1.1.dist-info/RECORD,,
