@@ -1,0 +1,8 @@
+winrt/_winrt_windows_applicationmodel_calls_background.cp311-win_arm64.pyd,sha256=oOGmOIseANPe3llRd9GHpNHopgdAHlsOqHJoCxUFrdI,70656
+winrt/_winrt_windows_applicationmodel_calls_background.pyi,sha256=UYtm8hU36baDLEXmzU_1wCUJK-t_aO2CBtnvmLcHaRk,4641
+winrt/windows/applicationmodel/calls/background/__init__.py,sha256=eBdTe-GMeePIJHxEdQEbGafwaD2CkliXrdS6CuYXeDk,1791
+winrt/windows/applicationmodel/calls/background/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_applicationmodel_calls_background-3.1.0.dist-info/METADATA,sha256=58dPwGiKnpKVJfFB-Im_k2xZSh8p_8tr8X3Tx_GhUuY,1117
+winrt_windows_applicationmodel_calls_background-3.1.0.dist-info/WHEEL,sha256=sBhYaL21dqiXhQM5J-ifdGDkONDmlqxO0u3ZWpw49mA,101
+winrt_windows_applicationmodel_calls_background-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_applicationmodel_calls_background-3.1.0.dist-info/RECORD,,
