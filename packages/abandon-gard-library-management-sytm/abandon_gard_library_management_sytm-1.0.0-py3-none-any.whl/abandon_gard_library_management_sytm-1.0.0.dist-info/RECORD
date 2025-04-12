@@ -1,0 +1,9 @@
+library_management_system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+library_management_system/admin.py,sha256=2NWI8LzDzw2H40noqcH4IQxXCkUUVKNByyILpYnqgvM,2711
+library_management_system/auth.py,sha256=Je5tw1BcHl6okUDUJG8q0eCaFVLGclvlGOapoyqjXRw,3083
+library_management_system/main.py,sha256=KWDLwEnEuoghj4LCHfs4O7boVXD4ENFGIBwvaOR4SQw,865
+abandon_gard_library_management_sytm-1.0.0.dist-info/METADATA,sha256=PN-Zx_8_PIOOuQVrj5HNWpgelc98AqEnHLu9zSlX4F8,302
+abandon_gard_library_management_sytm-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+abandon_gard_library_management_sytm-1.0.0.dist-info/entry_points.txt,sha256=EVTLJXvpkLr_Vt5XhjbheFdk8xFRLG0xuHmLdWEn_wI,87
+abandon_gard_library_management_sytm-1.0.0.dist-info/top_level.txt,sha256=Hr3oIAk0zVwxEoS-qB7qUBRjIJo8T_qI9v0G-Lrh9BI,26
+abandon_gard_library_management_sytm-1.0.0.dist-info/RECORD,,
