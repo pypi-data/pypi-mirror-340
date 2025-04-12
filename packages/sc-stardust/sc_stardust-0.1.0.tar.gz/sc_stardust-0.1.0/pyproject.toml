@@ -1,0 +1,35 @@
+[project]
+name = "sc-stardust"
+version = "0.1.0"
+description = "Subcellular-level Tool for the Analysis of RNA Distribution Using optimal Transport"
+authors = [
+    {name = "Emma Chen",email = "emmazhangchenn@gmail.com"}
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~=3.9"
+numpy = "1.26.4"
+pandas = "2.2.2"
+ott-jax = "0.4.6"
+networkx = "3.2.1"
+pot = "0.9.4"
+sim-fish = "0.2.0"
+scipy = "1.13.1"
+scikit-learn = "1.5.1"
+umap-learn = "0.5.6"
+matplotlib = "3.9.4"
+
+[tool.poetry.group.test.dependencies]
+scanpy = "1.10.2"
+jupyter = ">=1.1.1,<2.0.0"
+ipykernel = ">=6.29.5,<7.0.0"
+
+
+[tool.poetry]
+packages = [{include = "stardust", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
