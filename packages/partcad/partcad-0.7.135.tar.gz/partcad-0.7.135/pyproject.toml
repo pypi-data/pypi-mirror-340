@@ -1,0 +1,32 @@
+[project]
+name = "partcad"
+version = "0.7.135"
+description = "Package manager for CAD models and a modelling framework"
+readme = "README.md"
+keywords = ["cadquery", "build123d", "cad", "design", "openscad", "step", "stl"]
+requires-python = ">=3.10,<3.13"
+license = {file = "LICENSE"}
+authors = [
+  {name = "PartCAD", email = "support@partcad.org" }
+]
+maintainers = [
+  {name = "PartCAD", email = "support@partcad.org" }
+]
+dynamic = ["dependencies"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.package-data]
+"partcad.wrappers" = ["*.py"]
+"partcad.template" = ["*.yaml"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project.urls]
+Homepage = "https://github.com/partcad/partcad"
+Issues = "https://github.com/partcad/partcad/issues"

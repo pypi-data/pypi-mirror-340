@@ -1,0 +1,27 @@
+cadquery-ocp==7.7.2
+ocpsvg==0.3.4
+build123d==0.8.0
+pyyaml>=6.0.1
+GitPython>=3.1.40
+ruamel.yaml>=0.18.5
+packaging>=23.1
+setuptools
+jinja2
+requests
+aiofiles
+aiohttp
+vyper-config==1.2.1
+sentry-sdk[opentelemetry]==2.22.0
+async-lru==2.0.4
+filelock==3.17.0
+docker>=7.1.0
+
+# Google AI
+google.generativeai
+Pillow
+
+# OpenAI
+openai
+
+# Locally hosted AI
+ollama
