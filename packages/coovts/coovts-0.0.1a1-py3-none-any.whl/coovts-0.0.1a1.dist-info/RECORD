@@ -1,0 +1,13 @@
+coovts/__init__.py,sha256=Wm-UVQqhPYRbcm55K6cU4jvdBczSzb0yWlTv-P_NxaM,29
+coovts/errors.py,sha256=KX_GoqHSowhWssE4tE4WwNtuUxALp0aN-Uky2heAing,1064
+coovts/plugin.py,sha256=5qU3lXkuI0WXENTqAadWS2CnQz3Ei1NzjtZmGBE-9uw,14181
+coovts/request.py,sha256=09cvAPs065RbF8ITbMDA1xqXNCkg3wSDKiDFBPIpRT4,1759
+coovts/utils.py,sha256=pojW4j5JJOi17pvneogOkArL_jlVjGfLv_h3KOmjJ3g,730
+coovts/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coovts/types/event.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coovts/types/request.py,sha256=RM6pZz2wnNFYhS5sppZ6i_rZpGj7tFVblsMuyibhuy4,1208
+coovts/types/response.py,sha256=RnnFnvLXXrDRv87fc_Hmi9PFUzYq8hdi4jicfibZnq8,1843
+coovts-0.0.1a1.dist-info/METADATA,sha256=R-p6VSC_56304IG-mPeC4jx98J0ajaPQvRcqoBRvCX0,1710
+coovts-0.0.1a1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+coovts-0.0.1a1.dist-info/licenses/LICENSE,sha256=ITgrFzHSvXfbM2T6pdqvc5dnkdLo-IQqX390sjN6dIo,1065
+coovts-0.0.1a1.dist-info/RECORD,,
