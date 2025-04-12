@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: picovoice
+Version: 3.0.4
+Summary: ⚠️ DEPRECATED: This package is no longer maintained. Use better-package instead.
+Home-page: https://github.com/Picovoice/picovoice
+Author: Picovoice Inc.
+Author-email: hello@picovoice.ai
+Keywords: wake word,voice control,speech recognition,voice recognition,natural language understanding
+Classifier: Development Status :: 7 - Inactive
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pvporcupine (==3.0.3)
+Requires-Dist: pvrhino (==3.0.3)
+
+This package has been deprecated. Please use better-package.
