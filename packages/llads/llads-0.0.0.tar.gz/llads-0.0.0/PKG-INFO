@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: llads
+Version: 0.0.0
+Summary: LLM insights to data.
+Home-page: https://github.com/dhopp1/llads
+Author: Daniel Hopp
+Author-email: daniel.hopp@un.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# llads
+'Large Language Data and Statistics'. A library to generate LLM insights to data.
