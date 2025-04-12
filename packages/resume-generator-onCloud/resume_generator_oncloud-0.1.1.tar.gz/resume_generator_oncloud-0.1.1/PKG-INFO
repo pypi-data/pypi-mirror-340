@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: resume_generator_onCloud
+Version: 0.1.1
+Summary: It's a python library used to create a resume-generator on cloud
+Requires-Dist: django>=4.0
+Dynamic: requires-dist
+Dynamic: summary
