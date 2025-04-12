@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: user_management_common_timesheet_mfdenison_hopkinsep
+Version: 0.0.4
+Summary: Common models and utilities for User management
+Author: Mathew Denison
+Requires-Dist: sqlmodel>=0.0.6
+Requires-Dist: pydantic
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
