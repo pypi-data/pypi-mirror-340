@@ -1,0 +1,17 @@
+syntax = "proto3";
+import "google/protobuf/any.proto";
+
+
+message Envelope {
+    google.protobuf.Any payload = 1;
+}
+
+message LevelInformation {
+    int32 level = 1;
+
+    optional string desc = 2; // Optional in proto3 is handled by default unless you want to use 'optional'
+    float progress = 3;
+
+    float previous_progress = 4;
+    string previous_desc = 5;
+}

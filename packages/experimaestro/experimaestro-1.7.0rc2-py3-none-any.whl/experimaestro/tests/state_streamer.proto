@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message PartialUpdate {
+    int32 updated_field = 1;
+}
+
+message GlobalState {
+    int32 field = 1;
+}
