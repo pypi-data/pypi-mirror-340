@@ -1,0 +1,35 @@
+default_stages: [commit]
+# Disable PTY usage to avoid device errors
+no_pty: true
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+    -   id: trailing-whitespace
+        exclude: ^(venv|docs|\.grounding)/
+    -   id: end-of-file-fixer
+        exclude: ^(venv|docs|\.grounding)/
+    -   id: check-yaml
+        exclude: ^(venv|docs|\.grounding)/
+    -   id: check-added-large-files
+        exclude: ^(venv|docs|\.grounding)/
+
+-   repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+    -   id: black
+        exclude: ^(venv|docs|\.grounding)/
+
+# Uncomment these if you want to enable additional checks
+# -   repo: https://github.com/pycqa/isort
+#     rev: 5.12.0
+#     hooks:
+#     -   id: isort
+#         exclude: ^(venv|docs|\.grounding)/
+
+# -   repo: https://github.com/pycqa/flake8
+#     rev: 6.0.0
+#     hooks:
+#     -   id: flake8
+#         exclude: ^(venv|docs|\.grounding)/
