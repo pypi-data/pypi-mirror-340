@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-awesome-test-client"
+version = "0.0.2"
+authors = [
+  { name = "Dmitry Protsenko", email = "pypi2@protsenko.dev" }
+]
+description = "Just empty test client"
+readme = "README.md"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "build==1.2.2",
+    "pip==25.0.1",
+    "twine==6.1.0",
+]
