@@ -1,0 +1,4 @@
+albumentations
+matplotlib
+scipy
+tifffile
