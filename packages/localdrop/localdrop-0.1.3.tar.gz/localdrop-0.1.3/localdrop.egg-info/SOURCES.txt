@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+localdrop/__init__.py
+localdrop/__main__.py
+localdrop/cilent.py
+localdrop/sender.py
+localdrop.egg-info/PKG-INFO
+localdrop.egg-info/SOURCES.txt
+localdrop.egg-info/dependency_links.txt
+localdrop.egg-info/requires.txt
+localdrop.egg-info/top_level.txt
