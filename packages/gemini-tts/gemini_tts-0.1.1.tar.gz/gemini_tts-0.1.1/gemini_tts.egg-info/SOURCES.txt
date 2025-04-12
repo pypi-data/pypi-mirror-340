@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+gemini_tts/__init__.py
+gemini_tts/tts.py
+gemini_tts.egg-info/PKG-INFO
+gemini_tts.egg-info/SOURCES.txt
+gemini_tts.egg-info/dependency_links.txt
+gemini_tts.egg-info/requires.txt
+gemini_tts.egg-info/top_level.txt
