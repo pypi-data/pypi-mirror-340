@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: sc-stardust
+Version: 0.0.1
+Summary: Subcellular-level Tool for the Analysis of RNA Distribution Using optimal Transport
+Author: Emma Chen
+Author-email: emmazhangchenn@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: matplotlib (==3.9.4)
+Requires-Dist: networkx (==3.2.1)
+Requires-Dist: numpy (==1.26.4)
+Requires-Dist: ott-jax (==0.4.6)
+Requires-Dist: pandas (==2.2.2)
+Requires-Dist: pot (==0.9.4)
+Requires-Dist: scikit-learn (==1.5.1)
+Requires-Dist: scipy (==1.13.1)
+Requires-Dist: sim-fish (==0.2.0)
+Requires-Dist: umap-learn (==0.5.6)
+Description-Content-Type: text/markdown
+
+# STARDUST 🌌
+Imaging-based spatial transcriptomics technologies capture the location of transcripts at subcellular resolution, but established methods represent data at the cell level, ignoring subcellular structure.
+
+STARDUST (Subcellular-level Tool for Analyzing RNA Distribution USing optimal Transport) is a method for analyzing the subcellular spatial distribution of RNA molecules. STARDUST uses the Fused Gromov-Wasserstein distance from the optimal transport problem to model gene transcripts in relation to each other and the cell outline.
+
+### Installation
+```
+$ pip install stardust
+```
+
+### Functionalities
+STARDUST includes:
+
+- de_novo_analysis - Identifies the axes of variation in how one or more genes' transcripts are distributed in cells in a dataset. When multiple genes of interest are given, the model distinguishes between transcripts from differen genes and takes into account gene-gene spatial correlations.
+    - UMAP_de_novo_analysis_output - Generates an embedding of cells based on the similarity of their subcellular transcript distributions. 
+    - barycenters - Cluster cells based on their subcellular transcript distributions and generate barycenters that are representative of each cluster.
+
+- canonical_analysis - Scores cells based on how similar their transcript distributions (for a specific gene of interest) are to user-specified canonical patterns to look for.
+
+
+For the tutorial and more information, check out https://github.com/emmazchen/STARDUST.
