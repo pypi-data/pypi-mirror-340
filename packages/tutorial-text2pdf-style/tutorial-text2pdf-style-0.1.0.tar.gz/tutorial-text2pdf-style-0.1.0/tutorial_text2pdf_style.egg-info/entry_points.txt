@@ -1,0 +1,2 @@
+[console_scripts]
+txt2pdf-style = tutorial_text2pdf_style:main
