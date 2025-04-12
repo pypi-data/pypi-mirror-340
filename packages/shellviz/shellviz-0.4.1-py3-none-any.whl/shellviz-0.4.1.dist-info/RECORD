@@ -1,0 +1,14 @@
+shellviz/__init__.py,sha256=UcDSomWH8V-UM_COzPe7XU_uaeZq8OX575hUsvUfKlI,12632
+shellviz/build/index.html,sha256=C3qdjK02uWCsLM81NpLo_yX4m_zlm5kyGyRKDGK_W-8,2736
+shellviz/build/static/css/main.css,sha256=cLBdwYJ-EeGcKEmR0pU3vZML2bKxfhU0AfGdaLR8j5c,27751
+shellviz/build/static/js/main.js,sha256=LgFO872NGfs6H3i4JzBJtcl0NWAcEv9QXBCJZ4wsyaU,1292837
+shellviz/cli.py,sha256=ZZPHIfeY8lfmnjZcYGNJ8zDsGnqsjtGJ2247D3KUmc4,161
+shellviz/utils.py,sha256=1CE5nQyo4P7X7mfASP5CMELKwYZwd1Feb3SYFIz_ovU,736
+shellviz/utils_html.py,sha256=MOasLFWLPJ7nrY3eCjmLjFLw8EH5BO4ef2jIFmNa9mc,6704
+shellviz/utils_serialize.py,sha256=o-7M-HQm8Dk5kazFG34WApAG_dZEw9r6w0sEdL6o3K0,1740
+shellviz/utils_websockets.py,sha256=GtLEGE1Te_tnIUIKSewYiBgstA5LeacEEfq7xZcHmKg,2847
+shellviz-0.4.1.dist-info/LICENSE.txt,sha256=Qdds1GpwQMFPypT_1y3v_S7AjFuXEDHGL8_UKdhdTC0,1074
+shellviz-0.4.1.dist-info/METADATA,sha256=5AU-Bb-hCzH7iaB6MOoD2hl0kSIa3JAxucisXqRZ38w,3399
+shellviz-0.4.1.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+shellviz-0.4.1.dist-info/entry_points.txt,sha256=8s90XrMzttmlK_9QVklLvYXYAXn7GFQFuhdV7EDvEK4,45
+shellviz-0.4.1.dist-info/RECORD,,
