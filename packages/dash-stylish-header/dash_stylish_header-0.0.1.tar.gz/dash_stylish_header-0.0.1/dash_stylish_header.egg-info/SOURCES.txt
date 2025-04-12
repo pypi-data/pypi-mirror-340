@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+dash_stylish_header/__init__.py
+dash_stylish_header/header.py
+dash_stylish_header.egg-info/PKG-INFO
+dash_stylish_header.egg-info/SOURCES.txt
+dash_stylish_header.egg-info/dependency_links.txt
+dash_stylish_header.egg-info/entry_points.txt
+dash_stylish_header.egg-info/requires.txt
+dash_stylish_header.egg-info/top_level.txt
