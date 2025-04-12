@@ -1,0 +1,13 @@
+ubf/__init__.py,sha256=VVFzeKGmCg0FtKeEF2L3PwFXzmi_gW80RpOFJUX-14w,422
+ubf/core/__init__.py,sha256=B5O-o4zMi1IxAMyI3tZag11MJGTsiFbntF6usYFCqxQ,198
+ubf/core/ubf_core.py,sha256=FppmruzVO2ZyElK9XILuKVgzFYgyFnNzKS1LXiegSwc,7157
+ubf/numerics/__init__.py,sha256=M3710QXp_cfAN0xY3h-2V2bajk8n0Z3C0geb8qZj0IA,286
+ubf/numerics/integration.py,sha256=GSdJQ2CqJBNqkoaCOdD_EUC9SJDoszGM2RRqtoDIvjY,3179
+ubf/numerics/jacobian.py,sha256=8ZH1U7JXz12xsbqhfK3szfbFcbrh93rB4kq77WuBwHI,2108
+ubf/systems/__init__.py,sha256=qkTfKMf4swX9De0XsyXcLyJ_LAddH9WF0epqrrhhrKs,239
+ubf/systems/quadrotor.py,sha256=QtSYQ8andxMfEgEwTIf8baRSCguL44NqVgU8ZqxuSlI,14717
+ubf-0.1.0.dist-info/licenses/LICENSE,sha256=xm4H644_CBxpOpVr9MXzybD2O3DYqBjmlldst1PB7XI,1092
+ubf-0.1.0.dist-info/METADATA,sha256=4Ix9Jn2rtu4dzI_dNc_i74TeMu1EUOEP7iE0aMjP1xU,15301
+ubf-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ubf-0.1.0.dist-info/top_level.txt,sha256=jB0OaJqe6eaAMd9Tz2Qs4FQubrXo7zXISwMroks7Mz8,4
+ubf-0.1.0.dist-info/RECORD,,
