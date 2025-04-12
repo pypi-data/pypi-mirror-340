@@ -1,0 +1,9 @@
+README.md
+setup.py
+imagem_processing_frr.egg-info/PKG-INFO
+imagem_processing_frr.egg-info/SOURCES.txt
+imagem_processing_frr.egg-info/dependency_links.txt
+imagem_processing_frr.egg-info/requires.txt
+imagem_processing_frr.egg-info/top_level.txt
+package_name/__init__.py
+package_name/comparar_imagens.py
