@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: celus-pycounter
+Version: 4.1.0
+Summary: Project COUNTER/NISO SUSHI statistics
+License: MIT
+Keywords: COUNTER,SUSHI
+Author: Geoffrey Spear
+Author-email: speargh@pitt.edu
+Requires-Python: >=3.8,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: click (>=8.1.7,<8.2.0)
+Requires-Dist: lxml (>=5.3.2,<5.4.0)
+Requires-Dist: openpyxl (>=3.1.2,<3.2.0)
+Requires-Dist: pendulum (>=3.0.0,<3.1.0)
+Requires-Dist: requests (>=2.31.0,<2.32.0)
+Project-URL: Documentation, https://github.com/Big-Dig-Data/celus-pycounter/blob/master/README.rst
