@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: fake_plugin
+Version: 0.0.1
+Summary: A fake quantum plugin for tests
+Home-page: https://github.com/quantum-plugins/fake-plugin
+Author: Dpbm
+Author-email: dpbm136@gmail.com
+License: MIT
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Quantum Computing
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System
+Classifier: Topic :: System :: Hardware
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: summary
+
+# Fake Plugin
+
+This is a fake plugin for testing qserver.
+
+It's not meant to be used for real applications, just to ease the process of testing parts.
