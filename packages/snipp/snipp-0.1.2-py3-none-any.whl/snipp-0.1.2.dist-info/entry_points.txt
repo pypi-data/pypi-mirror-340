@@ -1,0 +1,2 @@
+[console_scripts]
+snipp-shadowplay = snipp_uploader.cli:main
