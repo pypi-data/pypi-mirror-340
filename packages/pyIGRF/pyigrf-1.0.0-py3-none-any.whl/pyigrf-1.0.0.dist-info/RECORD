@@ -1,0 +1,9 @@
+pyIGRF/__init__.py,sha256=sg6sDnwGDut9xHEJcpdTfzy25GyPH-gLI4rF2if5yY0,301
+pyIGRF/calculate.py,sha256=786uGsnTrPV3q6rnrySxuVR0WpWETah6Rot_pRmHO_I,5788
+pyIGRF/loadCoeffs.py,sha256=FCAyMvODNq-tTMq-0waDgTVspd09wbuYlvm6sCaKYA0,2875
+pyIGRF/value.py,sha256=HylQzbdEOv-Ruy7e8o35BJWWjVIS5G_Bg3yyopnxfSo,1401
+pyigrf-1.0.0.dist-info/licenses/LICENSE,sha256=uPI7HDml8AoDXzQolEkrb5U_-6ybM8Oz6laaVRyL_Cw,1064
+pyigrf-1.0.0.dist-info/METADATA,sha256=6QH5dOV_8aF_sctdqrcA58R2dM3orJfG1P6RAOBHO4o,1833
+pyigrf-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pyigrf-1.0.0.dist-info/top_level.txt,sha256=T8-iAzKzG4g0LRyF5ddr6bj7valq_vnCRgiNBusvroY,7
+pyigrf-1.0.0.dist-info/RECORD,,
