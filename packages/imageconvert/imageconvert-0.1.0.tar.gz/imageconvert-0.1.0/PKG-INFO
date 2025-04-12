@@ -1,0 +1,94 @@
+Metadata-Version: 2.4
+Name: imageconvert
+Version: 0.1.0
+Summary: A Python library for converting between different image formats with metadata preservation
+Author-email: mricardo <ricardo.lee.cm@gmail.com>
+Maintainer-email: mricardo <ricardo.lee.cm@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/mricardo888/ImageConvert
+Project-URL: Bug Tracker, https://github.com/mricardo888/ImageConvert/issues
+Project-URL: Documentation, https://github.com/mricardo888/ImageConvert#readme
+Keywords: image,conversion,metadata,exif,photos
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: piexif>=1.1.3
+Requires-Dist: svglib>=1.2.0
+Requires-Dist: reportlab>=3.6.0
+Requires-Dist: rawpy>=0.17.0
+Requires-Dist: pillow-heif>=0.8.0
+Requires-Dist: win32-setctime>=1.1.0; platform_system == "Windows"
+Dynamic: license-file
+
+# 🖼️ ImageConvert
+
+ImageConvert is a Python library that allows you to convert images between various formats while preserving metadata (EXIF) and timestamps.
+
+## 🔧 Features
+
+- Convert between common formats: JPEG, PNG, TIFF, WebP, BMP, SVG, RAW, HEIC/HEIF
+- Preserve EXIF metadata and file timestamps
+- Batch conversion with optional recursion
+- Extract image information including GPS and camera metadata
+
+## 🧰 Supported Formats
+
+| Format | Extensions       |
+|--------|------------------|
+| JPEG   | `.jpg`, `.jpeg`  |
+| PNG    | `.png`           |
+| TIFF   | `.tiff`, `.tif`  |
+| WebP   | `.webp`          |
+| BMP    | `.bmp`           |
+| HEIF   | `.heif`, `.heic` |
+| RAW    | `.raw`           |
+| SVG    | `.svg`           |
+
+## 📦 Installation
+
+```bash
+pip install imageconvert
+```
+
+## 🚀 Usage
+
+### Convert a single image
+
+```python
+from imageconvert import ImageConvert
+
+ImageConvert.convert(
+    "input.jpg",
+    "output.png",
+    quality=90,
+    preserve_metadata=True,
+    preserve_timestamps=True
+)
+```
+
+### Batch convert a directory
+
+```python
+ImageConvert.batch_convert(
+    "input_folder",
+    "output_folder",
+    ".webp",
+    recursive=True
+)
+```
+
+### Get image metadata
+
+```python
+info = ImageConvert.get_image_info("photo.jpg", include_exif=True)
+print(info)
+```
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
