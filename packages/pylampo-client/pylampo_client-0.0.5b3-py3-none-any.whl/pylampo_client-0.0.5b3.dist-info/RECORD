@@ -1,0 +1,6 @@
+pylampo_client/__init__.py,sha256=jEldKI12SNh4bFKvdK_fPr27yAFwzvSs8dVi-ZkxDmY,230
+pylampo_client/client.py,sha256=UUim4qY5ArZUfnRheHPc-VcTjI1JwdbOj-S82ic-fMs,1296
+pylampo_client/deamon.py,sha256=Rs_xWfx5EzAT5vBK0tKBpAb8Pukmpr9SUNQuR_2SGo4,3280
+pylampo_client-0.0.5b3.dist-info/METADATA,sha256=intGNE8CLZ2LsztrP1e2mFUmkyplikf6yXR5cuKLstU,629
+pylampo_client-0.0.5b3.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pylampo_client-0.0.5b3.dist-info/RECORD,,
