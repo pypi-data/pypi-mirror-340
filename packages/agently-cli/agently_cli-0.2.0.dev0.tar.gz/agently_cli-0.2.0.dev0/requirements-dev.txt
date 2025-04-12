@@ -1,0 +1,17 @@
+pytest
+pytest-cov
+pytest-mock
+pytest-asyncio
+pytest-timeout
+black
+flake8
+flake8-docstrings
+isort
+mypy
+pre-commit
+pydantic
+types-requests
+autoflake
+types-jsonschema
+types-PyYAML
+-e .
