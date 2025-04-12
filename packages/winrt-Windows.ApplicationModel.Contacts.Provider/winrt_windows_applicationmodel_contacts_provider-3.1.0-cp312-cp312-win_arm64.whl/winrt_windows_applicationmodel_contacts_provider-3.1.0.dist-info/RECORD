@@ -1,0 +1,8 @@
+winrt/_winrt_windows_applicationmodel_contacts_provider.cp312-win_arm64.pyd,sha256=nvbedHHVf57Vaw79SuofB39E1HVGU3XuvJIXBWAMm94,105984
+winrt/_winrt_windows_applicationmodel_contacts_provider.pyi,sha256=XaZqT6Iv_FEo_Z6AXR83LMPTnvj-weR0BII_IfZOdNk,3515
+winrt/windows/applicationmodel/contacts/provider/__init__.py,sha256=nSm1NtyYdHZGfK43XPNWZ1ykE3zWbBEqFdmaOHO5E3Y,425
+winrt/windows/applicationmodel/contacts/provider/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_applicationmodel_contacts_provider-3.1.0.dist-info/METADATA,sha256=0Bx4Yk-dfjLscla3qMKrQ0RWkb5Z7ZOpHwr02Jkyxs8,1286
+winrt_windows_applicationmodel_contacts_provider-3.1.0.dist-info/WHEEL,sha256=pYhIK3qx8EqEUszpzpfBG9Icpl8gWvSYj-z31CXLr10,101
+winrt_windows_applicationmodel_contacts_provider-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_applicationmodel_contacts_provider-3.1.0.dist-info/RECORD,,
