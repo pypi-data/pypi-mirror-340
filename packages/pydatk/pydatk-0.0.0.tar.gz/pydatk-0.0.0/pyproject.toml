@@ -1,0 +1,22 @@
+[project]
+name = "pydatk"
+version = "0.0.0"
+authors = [
+  { name="pydatk", email="dev@pydatk.com" },
+]
+description = "Python Data Analyst Toolkit (pydatk)"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "GPL-3.0-or-later"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://pydatk.com"
+Documentation = "https://pydatk.com"
+Repository = "https://github.com/pydatk/pydatk"
+Issues = "https://github.com/pydatk/pydatk/issues"
+Changelog = "https://github.com/pydatk/pydatk/blob/main/CHANGELOG.md"
