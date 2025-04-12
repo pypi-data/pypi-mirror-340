@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "{{ project_name }}"
+version = "0.0.3"
+description = "A project created with talos_loader"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+package-mode = false
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "2.9.1"
+pydantic-core = "2.23.3"
+talos-aclient = "1.6.0"
+talos-loader="0.0.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

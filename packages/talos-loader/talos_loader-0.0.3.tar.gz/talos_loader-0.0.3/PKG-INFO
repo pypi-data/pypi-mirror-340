@@ -1,0 +1,117 @@
+Metadata-Version: 2.4
+Name: talos-loader
+Version: 0.0.3
+Summary: A tool for creating and managing loader projects
+Author: Your Name
+Author-email: your.email@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: click<9.0.0,>=8.1.3
+Requires-Dist: inquirer<4.0.0,>=3.1.3
+Requires-Dist: jinja2<4.0.0,>=3.1.2
+Requires-Dist: pydantic<3.0.0,>=2.0.0
+Requires-Dist: talos-aclient==1.6.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Talos Loader
+
+一个用于创建和管理 Talos 加载器项目的工具。
+
+## 安装
+
+使用以下命令安装：
+
+```bash
+pip install talos-loader
+```
+
+## 使用方法
+
+### 初始化新项目
+
+```bash
+talos-loader init
+```
+
+这将启动交互式向导，引导您创建一个新的加载器项目。您需要提供：
+- 项目路径（默认为 ~/Downloads）
+- 项目名称
+
+执行后，将创建以下目录结构：
+
+```
+my_project_name/
+├── README.md                # 项目说明文档
+├── pyproject.toml           # 项目配置文件（Poetry配置）
+├── poetry.toml              # Poetry虚拟环境配置
+├── dry_run.py               # 用于测试加载器的脚本
+├── my_project_name/         # 主项目目录
+│   ├── __init__.py          # 包初始化文件
+│   └── loaders/             # 加载器模块目录
+│       ├── __init__.py      # 加载器包初始化文件
+│       └── my_custom_loaders.py  # 自定义加载器实现
+```
+
+### 项目初始化后的使用
+
+项目创建完成后，您可以进入项目目录并安装依赖：
+
+```bash
+cd my_project_name
+poetry install --no-root
+```
+
+然后，您可以开始开发自定义加载器。加载器模板已经包含了基本的结构，您只需要实现 `load` 方法即可。
+
+### 测试加载器
+
+项目中包含了一个 `dry_run.py` 文件，您可以用它来测试您的加载器：
+
+```bash
+python dry_run.py
+```
+
+## 开发
+
+### 依赖
+
+- Python 3.10+
+- click
+- inquirer
+- jinja2
+- pydantic
+- talos-aclient
+
+### 自定义加载器开发
+
+在 `my_project_name/loaders/my_custom_loaders.py` 文件中，您可以看到一个基本的加载器模板：
+
+```python
+from talos_loader import TalosLoader, Block, ContentType
+
+class MyCustomLoader(TalosLoader):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+    def load(self, context) -> list[Block]:
+        """Execute the custom operation"""
+        return []
+```
+
+您需要实现 `load` 方法，根据您的需求处理输入并返回适当的 `Block` 列表。
+
+## 许可证
+
+MIT

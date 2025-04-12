@@ -1,0 +1,2 @@
+[console_scripts]
+talos-loader = talos_loader.cli:main
