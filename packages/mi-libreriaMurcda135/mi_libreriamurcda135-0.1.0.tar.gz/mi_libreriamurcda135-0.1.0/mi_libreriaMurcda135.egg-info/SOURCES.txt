@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+mi_libreriaMurcda135.egg-info/PKG-INFO
+mi_libreriaMurcda135.egg-info/SOURCES.txt
+mi_libreriaMurcda135.egg-info/dependency_links.txt
+mi_libreriaMurcda135.egg-info/requires.txt
+mi_libreriaMurcda135.egg-info/top_level.txt
