@@ -1,0 +1,13 @@
+rg22059uno/__init__.py,sha256=BsNDCC1M51Y2rQL816PDXwbtfJremmO_wvi9MdlihxU,295
+rg22059uno/metodoBiseccion.py,sha256=fOr7lGjY5zfgnSsM_kKX-SNVY0yyPiL3RraZQa_dR3E,1119
+rg22059uno/metodoCramer.py,sha256=7abe3gKZUe5B6MbTs9yBl3Y-Rgyz6soqC8CB2ZsqxBY,1980
+rg22059uno/metodoDescomposicionLU.py,sha256=skq8NKmJIlc3n0S-CLAX5v5s6S5Ag4ery4eiFdqnFe4,1690
+rg22059uno/metodoGauss.py,sha256=3fgEpj0L61XgkWNP2uY_6XTfl0Yyvj16BXZPJQX7K2k,1226
+rg22059uno/metodoGaussJordan.py,sha256=ZegwWW0hGZghSprqbygZLATaJfiORCyTszx7PJASWvc,1198
+rg22059uno/metodoGaussSeidel.py,sha256=smwM_VpbDDtrFnFrHmvLfvohRPLCZuwPECiCCY7S64w,851
+rg22059uno/metodoJacobi.py,sha256=5tWmLpRSXtzhWDTTtXB_OzNTqwkKmRFEyc2_oOLadlQ,791
+rg22059uno-0.1.0.dist-info/licenses/LICENSE,sha256=Boc_ZYW-iltiKF_0HytOiPsR_8-7qMgD-jUBHzgc-OA,1085
+rg22059uno-0.1.0.dist-info/METADATA,sha256=M8qx6JqXI7BppG0MPJ_Dd9rE2qfJcZaYk122OOuYVQM,5644
+rg22059uno-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+rg22059uno-0.1.0.dist-info/top_level.txt,sha256=UAg3ladOwKqRfb1M3pSxONmPLx6-SQKtss9xUJlUses,11
+rg22059uno-0.1.0.dist-info/RECORD,,
