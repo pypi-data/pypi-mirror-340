@@ -1,0 +1,14 @@
+muopdb_python_client/__init__.py,sha256=_KK2WR0Z7cgKjslhH7Vy7fY_9XQOqgYjDFOpYUB2Ncs,784
+muopdb_python_client/client.py,sha256=sA-Yw3XoBU1bzxegktN8H-D0k1Xdsj8SN9WvB64OOFU,12076
+muopdb_python_client/exceptions.py,sha256=xqSTEpjXJR1s2fkcXu5ynJcFk6q5zMw6GXTICRf-e_I,578
+muopdb_python_client/utils.py,sha256=A-dAOHlJCjEl5wzQBgTNR6IVYQixv9-n3WJoBxW6dlU,1115
+muopdb_python_client/vectorizer.py,sha256=9qpbKv-XRsbcGF36K4RH1e_mWP4fKuWawBK-EYsYWJU,3943
+muopdb_python_client/protos/__init__.py,sha256=ykZyfZiCE7gLp3tUUtCssbePIXaZSb8tsFVeFv4easw,169
+muopdb_python_client/protos/muopdb.proto,sha256=cQrVcMkXXlHw3vsVEMaceO3LlUBoRdwNDBXEzZMbUW0,5739
+muopdb_python_client/protos/muopdb_pb2.py,sha256=w6KPBDFjn2_JhPpaY1B-yF0vVSNeIB5C0R_8vfjh_-Q,11263
+muopdb_python_client/protos/muopdb_pb2_grpc.py,sha256=oBLHnYmSsSQ7wUIlPUaJ5yZQdegyM0wpaf1LLWwdrFc,11707
+muopdb_python_client-0.0.9.dist-info/licenses/LICENSE,sha256=WE3M53b3X4QOv4-GF6GXvfMxTpdZTVP2wvPiWxCWWuo,1065
+muopdb_python_client-0.0.9.dist-info/METADATA,sha256=rZVHboJl7kDX_5CI9P9haNA-sAm2hsOoNPtsP_6Xmh4,4017
+muopdb_python_client-0.0.9.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+muopdb_python_client-0.0.9.dist-info/top_level.txt,sha256=qFxNoherRaBIfFaArPDc97zIRgyynztXqtXC8I6hb7o,21
+muopdb_python_client-0.0.9.dist-info/RECORD,,
