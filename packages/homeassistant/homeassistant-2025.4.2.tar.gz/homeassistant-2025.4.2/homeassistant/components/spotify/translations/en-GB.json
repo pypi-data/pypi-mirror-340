@@ -1,0 +1,9 @@
+{
+    "config": {
+        "abort": {
+            "connection_error": "Could not fetch account information. Is the user registered in the Spotify Developer Dashboard?",
+            "missing_credentials": "The integration requires application credentials.",
+            "reauth_successful": "Re-authentication was successful"
+        }
+    }
+}

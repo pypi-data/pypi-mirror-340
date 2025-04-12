@@ -1,0 +1,19 @@
+{
+    "entity_component": {
+        "identify": {
+            "name": "Identify"
+        },
+        "restart": {
+            "name": "Restart"
+        },
+        "update": {
+            "name": "Update"
+        }
+    },
+    "services": {
+        "press": {
+            "description": "Press the button entity.",
+            "name": "Press"
+        }
+    }
+}

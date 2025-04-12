@@ -1,0 +1,8 @@
+{
+    "config": {
+        "abort": {
+            "cloud_not_connected": "Not connected to Home Assistant Cloud.",
+            "webhook_not_internet_accessible": "Your Home Assistant instance needs to be accessible from the Internet to receive webhook messages."
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "config": {
+        "abort": {
+            "cannot_connect": "Failed to connect"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect"
+        }
+    }
+}

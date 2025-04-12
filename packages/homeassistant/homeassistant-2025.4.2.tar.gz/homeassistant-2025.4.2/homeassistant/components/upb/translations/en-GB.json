@@ -1,0 +1,85 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        }
+    },
+    "services": {
+        "light_blink": {
+            "description": "Blinks a light.",
+            "fields": {
+                "rate": {
+                    "description": "Amount of time that the link flashes on.",
+                    "name": "Rate"
+                }
+            },
+            "name": "Blink light"
+        },
+        "light_fade_start": {
+            "description": "Starts fading a light either up or down from current brightness.",
+            "fields": {
+                "brightness": {
+                    "description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness and 255 is the maximum brightness.",
+                    "name": "Brightness"
+                },
+                "brightness_pct": {
+                    "description": "Number indicating percentage of full brightness, where 0 turns the light off, 1 is the minimum brightness and 100 is the maximum brightness.",
+                    "name": "Brightness percentage"
+                },
+                "rate": {
+                    "description": "Rate for light to transition to new brightness.",
+                    "name": "Rate"
+                }
+            },
+            "name": "Start light fade"
+        },
+        "light_fade_stop": {
+            "description": "Stops a light fade.",
+            "name": "Stop light fade"
+        },
+        "link_blink": {
+            "description": "Blinks a link.",
+            "fields": {
+                "blink_rate": {
+                    "description": "Amount of time that the link flashes on.",
+                    "name": "Blink rate"
+                }
+            },
+            "name": "Blink link"
+        },
+        "link_deactivate": {
+            "description": "Deactivates a UPB scene.",
+            "name": "Deactivate link"
+        },
+        "link_fade_start": {
+            "description": "Starts fading a link either up or down from current brightness.",
+            "fields": {
+                "brightness": {
+                    "description": "Number indicating brightness, where 0 turns the scene off, 1 is the minimum brightness and 255 is the maximum brightness.",
+                    "name": "Brightness"
+                }
+            },
+            "name": "Start link fade"
+        },
+        "link_fade_stop": {
+            "description": "Stops a link fade.",
+            "name": "Stop link fade"
+        },
+        "link_goto": {
+            "description": "Set scene to brightness.",
+            "fields": {
+                "brightness": {
+                    "description": "Number indicating brightness, where 0 turns the scene off, 1 is the minimum brightness and 255 is the maximum brightness.",
+                    "name": "Brightness"
+                },
+                "brightness_pct": {
+                    "description": "Number indicating percentage of full brightness, where 0 turns the scene off, 1 is the minimum brightness and 100 is the maximum brightness."
+                },
+                "rate": {
+                    "description": "Amount of time for scene to transition to new brightness."
+                }
+            },
+            "name": "Go to link"
+        }
+    }
+}

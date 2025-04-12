@@ -1,0 +1,9 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "authorize_url_timeout": "Timeout generating authorise URL.",
+            "cannot_connect": "Failed to connect"
+        }
+    }
+}

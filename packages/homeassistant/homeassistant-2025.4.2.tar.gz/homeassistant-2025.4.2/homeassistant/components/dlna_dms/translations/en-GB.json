@@ -1,0 +1,13 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "step": {
+            "user": {
+                "description": "Choose a device to configure",
+                "title": "Discovered DLNA DMA devices"
+            }
+        }
+    }
+}

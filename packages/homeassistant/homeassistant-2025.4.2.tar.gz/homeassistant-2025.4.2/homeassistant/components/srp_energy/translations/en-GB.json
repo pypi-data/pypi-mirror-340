@@ -1,0 +1,23 @@
+{
+    "config": {
+        "abort": {
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "is_tou": "Is Time-of-Use Price Plan",
+                    "password": "Password",
+                    "username": "Username"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "energy_usage": {
+                "name": "Energy usage"
+            }
+        }
+    }
+}

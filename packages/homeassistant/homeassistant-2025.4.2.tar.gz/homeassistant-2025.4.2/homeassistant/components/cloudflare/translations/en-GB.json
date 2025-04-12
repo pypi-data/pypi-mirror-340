@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "API token",
+                    "description": "Re-authenticate with your Cloudflare account."
+                }
+            },
+            "records": {
+                "data": {
+                    "records": "Records"
+                },
+                "title": "Choose the records to update"
+            }
+        }
+    },
+    "services": {
+        "update_records": {
+            "description": "Manually triggers an update of Cloudflare records.",
+            "name": "Update records"
+        }
+    }
+}

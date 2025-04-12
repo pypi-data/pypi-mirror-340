@@ -1,0 +1,22 @@
+{
+    "entity": {
+        "sensor": {
+            "current_pickup": {
+                "name": "Current pickup"
+            },
+            "next_pickup": {
+                "name": "Next pickup"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "friendly_name": "Use friendly names for pickup types (when possible)"
+                },
+                "title": "Configure Recollect Waste"
+            }
+        }
+    }
+}

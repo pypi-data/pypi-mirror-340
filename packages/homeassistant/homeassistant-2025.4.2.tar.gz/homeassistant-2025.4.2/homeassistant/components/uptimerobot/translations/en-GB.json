@@ -1,0 +1,32 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "not_main_key": "Wrong API key type detected, use the 'main' API key",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "API key"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "monitor_status": {
+                "state": {
+                    "down": "Down",
+                    "not_checked_yet": "Not checked yet",
+                    "pause": "Pause",
+                    "seems_down": "Seems down",
+                    "up": "Up"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "config": {
+        "error": {
+            "unsupported_device": "Only the primary PowerView Hub can be added"
+        },
+        "flow_title": "{name} ({host})",
+        "step": {
+            "user": {
+                "data": {
+                    "api_version": "Hub generation"
+                },
+                "data_description": {
+                    "api_version": "API version is detectable, but you can override and force a specific version"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "calibrate": {
+                "name": "Calibrate"
+            },
+            "favorite": {
+                "name": "Favourite"
+            }
+        },
+        "cover": {
+            "bottom": {
+                "name": "Bottom"
+            },
+            "combined": {
+                "name": "Combined"
+            },
+            "front": {
+                "name": "Front"
+            },
+            "rear": {
+                "name": "Rear"
+            },
+            "top": {
+                "name": "Top"
+            }
+        },
+        "select": {
+            "power_source": {
+                "name": "Power source"
+            }
+        },
+        "sensor": {
+            "signal_strength": {
+                "name": "Signal strength"
+            }
+        }
+    }
+}

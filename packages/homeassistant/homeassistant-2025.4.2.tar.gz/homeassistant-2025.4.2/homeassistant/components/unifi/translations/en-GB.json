@@ -1,0 +1,69 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "flow_title": "{site} ({host})",
+        "step": {
+            "site": {
+                "data": {
+                    "site": "Site ID"
+                }
+            },
+            "user": {
+                "data_description": {
+                    "host": "Hostname or IP address of your UniFi Network."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "device_state": {
+                "state": {
+                    "adopting": "Adopting",
+                    "adoption_failed": "Adoption failed",
+                    "connected": "Connected",
+                    "deleting": "Deleting",
+                    "disconnected": "Disconnected",
+                    "firmware_mismatch": "Firmware mismatch",
+                    "heartbeat_missed": "Heartbeat missed",
+                    "inform_error": "Inform error",
+                    "isolated": "Isolated",
+                    "pending": "Pending",
+                    "provisioning": "Provisioning",
+                    "upgrading": "Upgrading"
+                }
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "integration_not_setup": "UniFi integration is not set up"
+        },
+        "step": {
+            "configure_entity_sources": {
+                "data": {
+                    "client_source": "Create entities from network clients"
+                },
+                "description": "Select sources to create entities from",
+                "title": "UniFi Network Entity Sources"
+            },
+            "statistics_sensors": {
+                "data": {
+                    "allow_uptime_sensors": "Uptime sensors for network clients"
+                }
+            }
+        }
+    },
+    "services": {
+        "reconnect_client": {
+            "description": "Tries to get wireless client to reconnect to UniFi Network.",
+            "name": "Reconnect wireless client"
+        },
+        "remove_clients": {
+            "description": "Cleans up clients that has only been associated with the controller for a short period of time.",
+            "name": "Remove clients from the UniFi Network"
+        }
+    }
+}

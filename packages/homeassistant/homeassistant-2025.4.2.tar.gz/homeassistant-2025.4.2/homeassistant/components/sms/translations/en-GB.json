@@ -1,0 +1,36 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "baud_speed": "Baud Speed"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "bit_error_rate": {
+                "name": "Bit error rate"
+            },
+            "cid": {
+                "name": "Cell ID"
+            },
+            "lac": {
+                "name": "Local area code"
+            },
+            "network_code": {
+                "name": "GSM network code"
+            },
+            "network_name": {
+                "name": "Network name"
+            },
+            "signal_percent": {
+                "name": "Signal percent"
+            },
+            "state": {
+                "name": "Network status"
+            }
+        }
+    }
+}

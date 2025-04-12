@@ -1,0 +1,36 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "no_selection": "Please select at least one city/county",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "_a_to_d": "City/county (A-D)",
+                    "_e_to_h": "City/county (E-H)",
+                    "headline_filter": "Blacklist regex to filter warning headlines"
+                }
+            }
+        }
+    },
+    "options": {
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "no_selection": "Please select at least one city/county",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "_a_to_d": "City/county (A-D)",
+                    "_e_to_h": "City/county (E-H)",
+                    "area_filter": "Whitelist regex to filter warnings based on affected areas",
+                    "headline_filter": "Blacklist regex to filter warning headlines"
+                },
+                "title": "Options"
+            }
+        }
+    }
+}

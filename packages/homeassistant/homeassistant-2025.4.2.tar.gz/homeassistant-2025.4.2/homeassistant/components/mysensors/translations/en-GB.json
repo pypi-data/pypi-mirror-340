@@ -1,0 +1,21 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "invalid_ip": "Invalid IP address",
+            "mqtt_required": "The MQTT integration is not set up"
+        },
+        "step": {
+            "select_gateway_type": {
+                "description": "Select which gateway to configure.",
+                "menu_options": {
+                    "gw_mqtt": "Configure an MQTT gateway",
+                    "gw_serial": "Configure a serial gateway",
+                    "gw_tcp": "Configure a TCP gateway"
+                }
+            }
+        }
+    }
+}

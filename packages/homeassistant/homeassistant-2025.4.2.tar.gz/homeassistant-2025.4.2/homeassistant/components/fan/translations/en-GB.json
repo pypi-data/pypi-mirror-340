@@ -1,0 +1,123 @@
+{
+    "device_automation": {
+        "action_type": {
+            "toggle": "Toggle {entity_name}"
+        },
+        "trigger_type": {
+            "changed_states": "{entity_name} turned on or off"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Off",
+                "on": "On"
+            },
+            "state_attributes": {
+                "direction": {
+                    "name": "Direction",
+                    "state": {
+                        "forward": "Forward",
+                        "reverse": "Reverse"
+                    }
+                },
+                "oscillating": {
+                    "name": "Oscillating",
+                    "state": {
+                        "false": "No",
+                        "true": "Yes"
+                    }
+                },
+                "percentage": {
+                    "name": "Speed"
+                },
+                "percentage_step": {
+                    "name": "Speed step"
+                },
+                "preset_mode": {
+                    "name": "Preset mode"
+                },
+                "preset_modes": {
+                    "name": "Available preset modes"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "not_valid_preset_mode": {
+            "message": "Preset mode {preset_mode} is not valid, valid preset modes are: {preset_modes}."
+        }
+    },
+    "selector": {
+        "direction": {
+            "options": {
+                "forward": "Forward",
+                "reverse": "Reverse"
+            }
+        }
+    },
+    "services": {
+        "decrease_speed": {
+            "description": "Decreases the speed of a fan.",
+            "fields": {
+                "percentage_step": {
+                    "description": "Percentage step by which the speed should be decreased.",
+                    "name": "Decrement"
+                }
+            },
+            "name": "Decrease speed"
+        },
+        "increase_speed": {
+            "description": "Increases the speed of a fan.",
+            "fields": {
+                "percentage_step": {
+                    "description": "Percentage step by which the speed should be increased.",
+                    "name": "Increment"
+                }
+            },
+            "name": "Increase speed"
+        },
+        "oscillate": {
+            "description": "Controls the oscillation of a fan.",
+            "fields": {
+                "oscillating": {
+                    "description": "Turns oscillation on/off.",
+                    "name": "Oscillating"
+                }
+            },
+            "name": "Oscillate"
+        },
+        "set_direction": {
+            "fields": {
+                "direction": {
+                    "name": "Direction"
+                }
+            },
+            "name": "Set direction"
+        },
+        "set_percentage": {
+            "fields": {
+                "percentage": {
+                    "description": "Speed of the fan.",
+                    "name": "Percentage"
+                }
+            },
+            "name": "Set speed"
+        },
+        "set_preset_mode": {
+            "fields": {
+                "preset_mode": {
+                    "name": "Preset mode"
+                }
+            },
+            "name": "Set preset mode"
+        },
+        "turn_off": {
+            "description": "Turns fan off.",
+            "name": "Turn off"
+        },
+        "turn_on": {
+            "description": "Turns fan on."
+        }
+    }
+}

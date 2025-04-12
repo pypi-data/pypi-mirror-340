@@ -1,0 +1,15 @@
+{
+    "entity": {
+        "switch": {
+            "fresh_air": {
+                "name": "Fresh air"
+            },
+            "health_mode": {
+                "name": "Health mode"
+            },
+            "light": {
+                "name": "Panel light"
+            }
+        }
+    }
+}

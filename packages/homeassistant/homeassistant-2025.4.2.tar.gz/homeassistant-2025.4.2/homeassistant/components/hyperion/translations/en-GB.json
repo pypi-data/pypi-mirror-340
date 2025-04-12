@@ -1,0 +1,63 @@
+{
+    "config": {
+        "abort": {
+            "auth_required_error": "Failed to determine if authorisation is required",
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "step": {
+            "auth": {
+                "description": "Configure authorisation to your Hyperion Ambilight server"
+            },
+            "user": {
+                "data_description": {
+                    "host": "The hostname or IP address of your Hyperion server."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "visible_priority": {
+                "name": "Visible priority"
+            }
+        },
+        "switch": {
+            "all": {
+                "name": "Component all"
+            },
+            "blackbar_detection": {
+                "name": "Component blackbar detection"
+            },
+            "boblight_server": {
+                "name": "Component boblight server"
+            },
+            "forwarder": {
+                "name": "Component forwarder"
+            },
+            "led_device": {
+                "name": "Component LED device"
+            },
+            "platform_capture": {
+                "name": "Component platform capture"
+            },
+            "smoothing": {
+                "name": "Component smoothing"
+            },
+            "usb_capture": {
+                "name": "Component USB capture"
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "cannot_connect": "Failed to connect"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "priority": "Hyperion priority to use for colours and effects"
+                }
+            }
+        }
+    }
+}
