@@ -1,0 +1,15 @@
+[project]
+name = "withrepo"
+version = "0.2.0"
+description = "Pythonic access to git repositories"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx[http2]>=0.28.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.9.6",
+]

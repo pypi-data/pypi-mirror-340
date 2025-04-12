@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+withrepo/__init__.py
+withrepo/constants.py
+withrepo/download.py
+withrepo/utils.py
+withrepo/withrepo.py
+withrepo.egg-info/PKG-INFO
+withrepo.egg-info/SOURCES.txt
+withrepo.egg-info/dependency_links.txt
+withrepo.egg-info/requires.txt
+withrepo.egg-info/top_level.txt
+withrepo/resources/__init__.py
+withrepo/resources/languages.py
+withrepo/resources/tree_sitter.py
+withrepo/resources/vendor.py
