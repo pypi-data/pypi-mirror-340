@@ -1,0 +1,8 @@
+winrt/_winrt_windows_devices_humaninterfacedevice.cp312-win_arm64.pyd,sha256=1agE6F1Yy2MD6IAJ52os1MOkFmHr9ZMDIZjvB3UGUCc,255488
+winrt/_winrt_windows_devices_humaninterfacedevice.pyi,sha256=Zo5YaY6hoWx8EKxeJsf3S0rR2pIu7jUY2hJi0x3fLlA,21021
+winrt/windows/devices/humaninterfacedevice/__init__.py,sha256=HJhoBaXXQ1mOxtGJEJqYRc6RVi-e8JNgcBGMoUJ4VOg,1025
+winrt/windows/devices/humaninterfacedevice/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_devices_humaninterfacedevice-3.1.0.dist-info/METADATA,sha256=s-SOX2D8tlCq6LUpLZtCX7on6iv0SWXlpRHkL9LfxZM,1318
+winrt_windows_devices_humaninterfacedevice-3.1.0.dist-info/WHEEL,sha256=pYhIK3qx8EqEUszpzpfBG9Icpl8gWvSYj-z31CXLr10,101
+winrt_windows_devices_humaninterfacedevice-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_devices_humaninterfacedevice-3.1.0.dist-info/RECORD,,
