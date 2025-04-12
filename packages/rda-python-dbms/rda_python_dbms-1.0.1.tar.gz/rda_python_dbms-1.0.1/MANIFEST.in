@@ -1,0 +1,2 @@
+include src/rda_python_dbms/pgddl.usg
+include src/rda_python_dbms/tables
