@@ -1,0 +1,7 @@
+aws_finops_dashboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_finops_dashboard/dashboard.py,sha256=Rj0JPNcyZgDPzBXkmbxMT69gWtSOBfSI8voakhzvDlQ,28205
+aws_finops_dashboard-2.1.0.dist-info/METADATA,sha256=jWpdrNKAHVy2wheNwwtbyDezctKhMvayg3OAcsr_gCg,6913
+aws_finops_dashboard-2.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aws_finops_dashboard-2.1.0.dist-info/entry_points.txt,sha256=S6PDz9NfEOc17eSeLTyBc1s8w9vKuLJ9uSDR8DbVmcQ,67
+aws_finops_dashboard-2.1.0.dist-info/licenses/LICENSE,sha256=89-0t0fHL7AlRIj_ajYyQNXfhLo4B-E24rD-i_lSXXk,1079
+aws_finops_dashboard-2.1.0.dist-info/RECORD,,
