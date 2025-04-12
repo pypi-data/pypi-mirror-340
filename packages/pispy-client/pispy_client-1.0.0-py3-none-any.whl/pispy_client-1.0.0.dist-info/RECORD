@@ -1,0 +1,13 @@
+pispy/__init__.py,sha256=626Xt2xy4NEv-r51B-9z75N6g6NZZ3YAt8jVs9IliCo,556
+pispy/__main__.py,sha256=c_RP97OQsBTi9iHmUG0FFHk1s60MBBupNVxYEjWcJtE,1543
+pispy/app.py,sha256=-zpe_PXymwHSQQkADyYex35e1r4dVYKs5YFNyt-6BQk,2509
+pispy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pispy/data/__init__.py,sha256=06NVpI6-QFfS_-Am6FCVBLBx6pWlJynTMdpDHDGz8BI,331
+pispy/data/package.py,sha256=njA7ml2lD-I6sVqwDP0SbdaA-y7kjSXwSVUNGPUyn_E,7069
+pispy/widgets/__init__.py,sha256=goraHY_lFuGvIQeVjw2YF0ksDMSB7co80MtodcOpxzA,346
+pispy/widgets/package_information.py,sha256=yzWP7nAeMIkfCYYzarvC-QvvgheVBmI6aaeQBFqyE_s,13472
+pispy_client-1.0.0.dist-info/METADATA,sha256=6dRR8NNY0YG7qcAdowqTHx4NTjYXfkGeclFjrFB8giY,2178
+pispy_client-1.0.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pispy_client-1.0.0.dist-info/entry_points.txt,sha256=kp-llmSkKw7NFamouTpEzyMG2esddy3XHjl-5YI-IRU,45
+pispy_client-1.0.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pispy_client-1.0.0.dist-info/RECORD,,
