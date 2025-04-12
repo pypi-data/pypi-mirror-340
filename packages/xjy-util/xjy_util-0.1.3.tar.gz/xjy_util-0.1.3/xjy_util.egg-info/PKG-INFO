@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: xjy-util
+Version: 0.1.3
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: cryptography>=36.0.0
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
