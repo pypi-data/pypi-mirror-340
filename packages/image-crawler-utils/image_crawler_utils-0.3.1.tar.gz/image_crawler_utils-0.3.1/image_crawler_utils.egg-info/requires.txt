@@ -1,0 +1,9 @@
+bs4
+deprecated
+dill
+lxml
+nodriver>=0.45.1
+pathvalidate
+Requests
+rich
+websockets
