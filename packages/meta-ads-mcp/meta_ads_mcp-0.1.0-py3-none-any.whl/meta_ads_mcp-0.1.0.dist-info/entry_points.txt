@@ -1,0 +1,2 @@
+[console_scripts]
+meta-ads-login = meta_ads_mcp.meta_ads_generated:login_cli
