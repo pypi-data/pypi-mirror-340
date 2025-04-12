@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "aidolon-browser-client"
+version = "1.0.1"
+description = "A client library for accessing Aidolon Browser"
+authors = [ "Aidolon Systems",]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/AidolonSystems/aidolon-browser-client"
+homepage = "https://github.com/AidolonSystems/aidolon-browser-client"
+include = [ "CHANGELOG.md", "aidolon_browser_client/py.typed",]
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Intended Audience :: Developers", "Topic :: Internet :: WWW/HTTP :: Browsers",]
+[[tool.poetry.packages]]
+include = "aidolon_browser_client"
+
+[tool.ruff]
+line-length = 120
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = ">=0.20.0,<0.29.0"
+attrs = ">=22.2.0"
+python-dateutil = "^2.8.0"
+
+[tool.ruff.lint]
+select = [ "F", "I", "UP",]
