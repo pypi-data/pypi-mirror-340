@@ -1,0 +1,12 @@
+usps_track/__init__.py,sha256=fqkq0X1t4p-Y8MoGcYkTXMpm1pyofCK5zy5iEyM1lF4,47
+usps_track/__main__.py,sha256=jlzFv2ilzKLqpzG_pQWfzRldCadQ2MIDSO4A1WPHQls,79
+usps_track/constants.py,sha256=s6Witqz7vEzmfLzHboJg5TGzK9kww7peO-CeX4GIkK0,961
+usps_track/lib.py,sha256=5UlcrU3hoeCWLmB75xHyrk2Oxu3fABkMmMlAhgBxInA,4472
+usps_track/main.py,sha256=FJbynb6_bGhOA5LpEfHrr1vBB88fRAeaRK9lDj__NzI,1718
+usps_track/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+usps_track/utils.py,sha256=VG2Z-3kkDsMCATiAyrOE-4n3Xg7TU1zk5761jTuJjak,174
+usps_track-0.0.2.dist-info/LICENSE.txt,sha256=fBqWLXoaVrXMLrxXzYMlTWDVCxSveR9WwyAQKiyqiI0,1085
+usps_track-0.0.2.dist-info/METADATA,sha256=JUzshoBt9jW7MKuGEFUNAopV3jOQhJIcdhYKXNHZOYI,2664
+usps_track-0.0.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+usps_track-0.0.2.dist-info/entry_points.txt,sha256=Fl7Zsgw1BxKJaurquNRpBN9k25g4454hS3fc6xBWCzs,51
+usps_track-0.0.2.dist-info/RECORD,,

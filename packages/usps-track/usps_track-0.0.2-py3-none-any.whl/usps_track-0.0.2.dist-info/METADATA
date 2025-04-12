@@ -1,0 +1,64 @@
+Metadata-Version: 2.3
+Name: usps-track
+Version: 0.0.2
+Summary: Quickly track via SMS several USPS (and some international) tracking numbers via the command line.
+License: MIT
+Keywords: command line,shipping,usps
+Author: Andrew Udvare
+Author-email: audvare@gmail.com
+Requires-Python: >=3.10,<3.14
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Provides-Extra: erdantic
+Requires-Dist: aiohttp (>=3.11.16,<4.0.0)
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: erdantic (<2.0) ; extra == "erdantic"
+Requires-Dist: typing-extensions (>=4.13.1,<5.0.0)
+Project-URL: Documentation, https://usps-track.readthedocs.org
+Project-URL: Homepage, https://tatsh.github.io/usps-track/
+Project-URL: Issues, https://github.com/Tatsh/usps-track/issues
+Project-URL: Repository, https://github.com/Tatsh/usps-track
+Description-Content-Type: text/markdown
+
+# usps-track
+
+[![QA](https://github.com/Tatsh/usps-track/actions/workflows/qa.yml/badge.svg)](https://github.com/Tatsh/usps-track/actions/workflows/qa.yml)
+[![Tests](https://github.com/Tatsh/usps-track/actions/workflows/tests.yml/badge.svg)](https://github.com/Tatsh/usps-track/actions/workflows/tests.yml)
+[![Coverage Status](https://coveralls.io/repos/github/Tatsh/usps-track/badge.svg?branch=master)](https://coveralls.io/github/Tatsh/usps-track?branch=master)
+[![Documentation Status](https://readthedocs.org/projects/usps-track/badge/?version=latest)](https://usps-track.readthedocs.org/?badge=latest)
+[![PyPI - Version](https://img.shields.io/pypi/v/usps-track)](https://pypi.org/project/usps-track/)
+[![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/usps-track)](https://github.com/Tatsh/usps-track/tags)
+[![License](https://img.shields.io/github/license/Tatsh/usps-track)](https://github.com/Tatsh/usps-track/blob/master/LICENSE.txt)
+[![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/usps-track/v0.0.2/master)](https://github.com/Tatsh/usps-track/compare/v0.0.2...master)
+
+Quickly track via SMS several USPS (and some international) tracking numbers via the command line.
+
+## Installation
+
+### Poetry
+
+```shell
+poetry add usps-track
+```
+
+### Pip
+
+```shell
+pip install usps-track
+```
+
+## Usage
+
+Add `-d` to show debug logs.
+
+```shell
+usps-track
+```
+
