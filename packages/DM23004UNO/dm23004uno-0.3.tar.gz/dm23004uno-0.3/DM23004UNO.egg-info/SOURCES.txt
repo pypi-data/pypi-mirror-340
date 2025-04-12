@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+DM23004UNO/__init__.py
+DM23004UNO/iterativos.py
+DM23004UNO/lineal.py
+DM23004UNO/no_lineal.py
+DM23004UNO.egg-info/PKG-INFO
+DM23004UNO.egg-info/SOURCES.txt
+DM23004UNO.egg-info/dependency_links.txt
+DM23004UNO.egg-info/requires.txt
+DM23004UNO.egg-info/top_level.txt
+DM23004UNO/__pycache__/iterativos.cpython-313.pyc
+DM23004UNO/__pycache__/lineal.cpython-313.pyc
+DM23004UNO/__pycache__/no_lineal.cpython-313.pyc
