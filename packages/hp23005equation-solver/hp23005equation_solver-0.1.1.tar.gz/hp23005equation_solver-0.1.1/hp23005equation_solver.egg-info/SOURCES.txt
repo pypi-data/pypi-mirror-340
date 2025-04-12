@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+equation_solver/__init__.py
+equation_solver/linear.py
+equation_solver/nonlinear.py
+hp23005equation_solver.egg-info/PKG-INFO
+hp23005equation_solver.egg-info/SOURCES.txt
+hp23005equation_solver.egg-info/dependency_links.txt
+hp23005equation_solver.egg-info/requires.txt
+hp23005equation_solver.egg-info/top_level.txt
+tests/test_linear.py
+tests/test_nonlinear.py
