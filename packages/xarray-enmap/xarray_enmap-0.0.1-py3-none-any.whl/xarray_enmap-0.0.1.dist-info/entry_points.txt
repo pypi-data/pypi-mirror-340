@@ -1,0 +1,2 @@
+[xarray.backends]
+enmap = xarray_enmap.xarray_enmap:EnmapEntrypoint
