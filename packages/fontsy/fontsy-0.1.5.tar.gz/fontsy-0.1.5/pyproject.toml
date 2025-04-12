@@ -1,0 +1,21 @@
+[project]
+name = "fontsy"
+version = "0.1.5"
+description = "An ASCII font explorer"
+readme = "README.md"
+authors = [
+    { name = "Andre Ratzenberger", email = "andre.ratzenberger@whiteduck.de" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "art>=6.4",
+    "pyperclip>=1.9.0",
+    "rich>=14.0.0",
+]
+
+[project.scripts]
+fontsy = "fontsy:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
