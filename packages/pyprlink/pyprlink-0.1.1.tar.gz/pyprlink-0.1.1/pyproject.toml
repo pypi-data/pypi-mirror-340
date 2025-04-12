@@ -1,0 +1,25 @@
+[project]
+name = "pyprlink"
+version = "0.1.1"
+description = "TCP/IP client for communicating with PriarieView"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["python-dotenv"]
+authors = [
+    {name = "Jenu Chacko", email ="jenu.chacko@bruker.com"}
+]
+license = "MIT"
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v"
+
+[project.scripts]
+pypr = "pyprlink.main:main"
