@@ -1,0 +1,12 @@
+dagster_deltalake/__init__.py,sha256=33njxbjv_ry2JA326n8kjCV2jyPX1tkrXlGzLpXVlDQ,1113
+dagster_deltalake/config.py,sha256=lwPe_1QQ9FeQmtc4HGJznquU3smYX76PXvSkaZ7c3CE,6531
+dagster_deltalake/handler.py,sha256=UIsBCJ4IDKOx6-C14w4y7gV4zE0xLn3DPG__yYCgTu4,10161
+dagster_deltalake/io_manager.py,sha256=sH2TTKn5IpSRIBZT5ZKrVgw7e5Az_iKCKsvUqv4XcPs,9367
+dagster_deltalake/py.typed,sha256=mDShSrm8qg9qjacQc2F-rI8ATllqP6EdgHuEYxuCXZ0,7
+dagster_deltalake/resource.py,sha256=Ddnx-UfqOdEyMSlcV7xW_8zdKOsUVB23K9yhJ7P0g2s,1711
+dagster_deltalake/version.py,sha256=ME_83c8BVbSixEHEcpqZ6-kklj3neFq1tYEhdbpNO5c,24
+dagster_deltalake-0.26.10.dist-info/LICENSE,sha256=-gtoVIAZYUHYmNHISZg982FI4Oh19mV1nxgTVW8eCB8,11344
+dagster_deltalake-0.26.10.dist-info/METADATA,sha256=ox0o8hEOaSHFvLa0Q0LGed9tl6A72LhJ29askPp8rh4,718
+dagster_deltalake-0.26.10.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+dagster_deltalake-0.26.10.dist-info/top_level.txt,sha256=tRQsmMfBgR4UqULYSOLE3cT-iM-6rB29lhNqrZjPo2w,18
+dagster_deltalake-0.26.10.dist-info/RECORD,,
