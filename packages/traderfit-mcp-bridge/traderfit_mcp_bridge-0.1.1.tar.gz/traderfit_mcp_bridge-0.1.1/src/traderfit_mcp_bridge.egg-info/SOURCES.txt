@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/traderfit_mcp_bridge/__main__.py
+src/traderfit_mcp_bridge.egg-info/PKG-INFO
+src/traderfit_mcp_bridge.egg-info/SOURCES.txt
+src/traderfit_mcp_bridge.egg-info/dependency_links.txt
+src/traderfit_mcp_bridge.egg-info/entry_points.txt
+src/traderfit_mcp_bridge.egg-info/requires.txt
+src/traderfit_mcp_bridge.egg-info/top_level.txt

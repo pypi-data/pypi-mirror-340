@@ -1,0 +1,6 @@
+modelcontextprotocol
+httpx[http2]
+python-dotenv
+
+[:sys_platform != "win32"]
+uvloop
