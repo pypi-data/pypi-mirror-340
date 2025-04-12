@@ -1,0 +1,11 @@
+SDK/__init__.py,sha256=KZZnel2w1AqL-mzpjVKyatWP6potlEXF9JhIRmEyyYE,313
+SDK/readme.md,sha256=0F8WQ7K-pxQJg1Ny4NnpJ6vAgbn1wSNVEOUNaSWahBo,1323
+SDK/SDK_WS/__init__.py,sha256=OYF8B7JNMVZ5j3lzS0QOJzNIimofS9kfobunGDEPEnQ,32
+SDK/SDK_WS/main.py,sha256=Y1Kk_UwrJX6mXEcIYENHtTfF-FRzGB1yhDPN8W4rLak,9510
+SDK/SDK_WS/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SDK/SDK_WS/examples/basic_usage.py,sha256=-mT-ygkJD5JlWMmWkHZyiySn3GRisQ7g0pz0-sjYd6s,647
+pythonweblog_client_ws-0.2.0.dist-info/licenses/LICENSE,sha256=w22Idks5DNLWOkB1P9M3f-wBRgddC-9UlTstmarTdqo,1086
+pythonweblog_client_ws-0.2.0.dist-info/METADATA,sha256=jZpWEbbQ5RzX5P84tCCXsShz3M_q-x5jERr4o2DZilc,2208
+pythonweblog_client_ws-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pythonweblog_client_ws-0.2.0.dist-info/top_level.txt,sha256=ruq0MkBBmYNyD-ApxuWmHwkN__hVYAx-QhQEdTKMI0g,4
+pythonweblog_client_ws-0.2.0.dist-info/RECORD,,
