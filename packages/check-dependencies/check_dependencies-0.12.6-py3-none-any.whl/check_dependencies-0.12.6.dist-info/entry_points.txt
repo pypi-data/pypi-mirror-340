@@ -1,0 +1,5 @@
+[console_scripts]
+check-dependencies = check_dependencies.__main__:main
+
+[gui_scripts]
+
