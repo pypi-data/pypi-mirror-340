@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/varnishlog_to_elasticsearch/__init__.py
+src/varnishlog_to_elasticsearch/cli.py
+src/varnishlog_to_elasticsearch/parser.py
+src/varnishlog_to_elasticsearch.egg-info/PKG-INFO
+src/varnishlog_to_elasticsearch.egg-info/SOURCES.txt
+src/varnishlog_to_elasticsearch.egg-info/dependency_links.txt
+src/varnishlog_to_elasticsearch.egg-info/entry_points.txt
+src/varnishlog_to_elasticsearch.egg-info/requires.txt
+src/varnishlog_to_elasticsearch.egg-info/top_level.txt
+tests/test_parser.py
