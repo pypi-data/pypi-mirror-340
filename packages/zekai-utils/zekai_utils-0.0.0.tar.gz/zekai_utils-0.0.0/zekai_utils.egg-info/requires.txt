@@ -1,0 +1,10 @@
+pandas
+torch
+numpy
+Pillow
+opencv-python
+imageio
+safetensors
+loguru
+tqdm
+colorama

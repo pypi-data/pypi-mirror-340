@@ -1,0 +1,8 @@
+README.md
+setup.py
+zekai_utils/__init__.py
+zekai_utils.egg-info/PKG-INFO
+zekai_utils.egg-info/SOURCES.txt
+zekai_utils.egg-info/dependency_links.txt
+zekai_utils.egg-info/requires.txt
+zekai_utils.egg-info/top_level.txt
