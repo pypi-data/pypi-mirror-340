@@ -1,0 +1,10 @@
+setup.py
+lmc_library_management_system.egg-info/PKG-INFO
+lmc_library_management_system.egg-info/SOURCES.txt
+lmc_library_management_system.egg-info/dependency_links.txt
+lmc_library_management_system.egg-info/entry_points.txt
+lmc_library_management_system.egg-info/top_level.txt
+图书管理打包/__init__.py
+图书管理打包/login_register.py
+图书管理打包/main.py
+图书管理打包/user_info_maintenance.py
