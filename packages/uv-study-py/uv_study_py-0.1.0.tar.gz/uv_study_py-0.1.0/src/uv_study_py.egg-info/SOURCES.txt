@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/bar.py
+src/uv_study_py.egg-info/PKG-INFO
+src/uv_study_py.egg-info/SOURCES.txt
+src/uv_study_py.egg-info/dependency_links.txt
+src/uv_study_py.egg-info/requires.txt
+src/uv_study_py.egg-info/top_level.txt
