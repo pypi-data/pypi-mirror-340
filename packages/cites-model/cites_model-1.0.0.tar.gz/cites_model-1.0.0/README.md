@@ -1,0 +1,63 @@
+# Datový model CITES
+
+Projekt obsahuje knihovnu Pythos s kompletním datovým modelem CITES
+
+## Verze 1
+
+V této verzi jsou implementovány tyto třídy: 
+
+### cites_common
+
+Třídy pro obecné použití rozšířené pro CITES
+
+1. BaseEntryListType
+2. BirthTypeEnum
+3. CertifiedEnum
+4. ConditionsType
+5. DeliveryEnum
+6. DocumentPrincipalCustomsGoodsType
+7. DocumentPrincipalCustomsPermitType
+8. EntryType
+9. GeneralType
+10. GoodsBirthType
+11. GoodsIdetificationHistoryItemType
+12. GoodsIdetificationType
+13. GoodsItemBaseType
+14. GoodsOrderType
+15. GoodsPrincipalType
+16. GoodsQuantityType
+17. IssuingPurposeEnum
+18. IssuingType
+19. MailAddressType
+20. MetricEnum
+21. OtherType
+22. PermitSpecialConditionsType
+23. PermitTypeEnum
+24. PersonExtendedType
+25. PersonHistoryItemType
+26. PersonTypeEnum
+27. PhoneNumberType
+28. RelatedType
+29. SingleWindowType
+30. TaxonItemType
+31. TransactionType
+32. TransportType
+33. ValidityEnum
+34. WorkflowCitesType
+35. WorkflowListType
+
+### cites_document
+
+Základní dokumenty CITES
+
+1. CitesDocumentEntryListType
+2. CitesDocumentPrincipalType
+3. CitesDocumentPrincipalTypeWrite
+
+
+### cites_reg_card
+
+Evidenční list CITES CZ
+
+1. CitesDocumentRegistrationCardType
+2. CitesDocumentRegistrationCardTypeWrite
