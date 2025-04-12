@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+orofacIAnalysis/__init__.py
+orofacIAnalysis/chew_annotator.py
+orofacIAnalysis/cycle.py
+orofacIAnalysis/landmarks.py
+orofacIAnalysis/smoothing.py
+orofacIAnalysis/utils.py
+orofacIAnalysis.egg-info/PKG-INFO
+orofacIAnalysis.egg-info/SOURCES.txt
+orofacIAnalysis.egg-info/dependency_links.txt
+orofacIAnalysis.egg-info/requires.txt
+orofacIAnalysis.egg-info/top_level.txt
+tests/__init__.py
+tests/test_orofacIAnalysis.py
