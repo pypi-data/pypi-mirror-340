@@ -1,0 +1,8 @@
+auto_upgrade_pip/__init__.py,sha256=sSBwyHwBXNR5SSUVCN82jsWtvkiKPqe_hG2jwbuNHlo,2760
+auto_upgrade_pip/__main__.py,sha256=uBCh9Kcyabptd7UAVQHUXch_DVQf_Z7MAbupZzCqs8M,1009
+auto_upgrade_pip-0.2.1.data/data/Scripts/pip-upgrade.exe,sha256=chF2w4wzTay_wEKjTyL7YGF8lMYKtX9kh9LvysIeHOY,7240821
+auto_upgrade_pip-0.2.1.dist-info/licenses/LICENSE,sha256=KjBTF0kti2lYYAVaNJliGSqsuNfiZbB2pgRnm5bgl8M,1087
+auto_upgrade_pip-0.2.1.dist-info/METADATA,sha256=C9Tb_dvITKioqV1auki_hyZlSyEbIY40_qCxNEycWIA,424
+auto_upgrade_pip-0.2.1.dist-info/WHEEL,sha256=1tXe9gY0PYatrMPMDd6jXqjfpz_B-Wqm32CPfRC58XU,91
+auto_upgrade_pip-0.2.1.dist-info/top_level.txt,sha256=DeEUCayHsf9EdmIzhJgMTgaOGt6hGkPe_XNLXJnNgqM,17
+auto_upgrade_pip-0.2.1.dist-info/RECORD,,
