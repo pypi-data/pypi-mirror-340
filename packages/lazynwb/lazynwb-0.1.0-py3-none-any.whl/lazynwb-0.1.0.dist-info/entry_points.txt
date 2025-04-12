@@ -1,0 +1,2 @@
+[console_scripts]
+task-runner = poethepoet:main
