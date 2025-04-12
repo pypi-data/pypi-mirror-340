@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: gsslt
+Version: 0.1.1
+Summary: Siegfried Gessulat's Python utilities
+Author-email: Siegfried Gessulat <s.gessulat@gmail.com>
+License: MIT
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: altair>=5.5.0
+Requires-Dist: boto3>=1.37.32
+Requires-Dist: duckdb>=1.2.2
+Requires-Dist: jupyter>=1.1.1
+Requires-Dist: numpy>=2.2.4
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: polars>=1.27.0

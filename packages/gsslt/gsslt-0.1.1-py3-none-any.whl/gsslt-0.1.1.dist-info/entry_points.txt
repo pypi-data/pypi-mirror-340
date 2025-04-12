@@ -1,0 +1,2 @@
+[console_scripts]
+gsslt = gsslt:main
