@@ -1,0 +1,10 @@
+snipp_uploader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snipp_uploader/cli.py,sha256=i1CTPCCFgsTGd9ARkdZVCwkGxdTfUYPM0tTR0o__9Ms,202
+snipp_uploader/config.py,sha256=lEZJyXTzOmxkSU8DjkrmZlWlYguTGYWCx4nxiNAOqWc,368
+snipp_uploader/utils.py,sha256=BlHiT9iuQGsLmktm2bP9ZxgFPTquBfSEI9wBIXNv1dw,536
+snipp_uploader/watcher.py,sha256=bbYOF1rZm992l_I9IEiuUiOPB_Hjek-5NJSAUUHRIqA,2496
+snipp-0.1.1.dist-info/METADATA,sha256=VPe_7fw9pQN0Xi-sDFURJRUa9hPFZsXUV4isQgur9wo,2999
+snipp-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+snipp-0.1.1.dist-info/entry_points.txt,sha256=EXQ8fFow6IJOcbOwQnpw9Ag8VT-jnOO1xRbHa3KFk6Y,61
+snipp-0.1.1.dist-info/top_level.txt,sha256=Jc_bXskNjMtReN0-z-wBPQlb080qH-ll_FrD95s0b5U,15
+snipp-0.1.1.dist-info/RECORD,,
