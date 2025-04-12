@@ -1,0 +1,6 @@
+data_acquisition
+database
+main
+retrieval
+testing
+text_processing
