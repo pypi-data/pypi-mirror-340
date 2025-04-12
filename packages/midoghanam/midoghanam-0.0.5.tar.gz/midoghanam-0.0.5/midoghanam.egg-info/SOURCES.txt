@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+midoghanam/__init__.py
+midoghanam.egg-info/PKG-INFO
+midoghanam.egg-info/SOURCES.txt
+midoghanam.egg-info/dependency_links.txt
+midoghanam.egg-info/requires.txt
+midoghanam.egg-info/top_level.txt
