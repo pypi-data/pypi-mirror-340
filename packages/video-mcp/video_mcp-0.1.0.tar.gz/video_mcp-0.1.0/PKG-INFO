@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: video-mcp
+Version: 0.1.0
+Summary: Video information search MCP server
+Project-URL: Repository, https://github.com/yourusername/video-mcp
+Author: Cline
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: tmdbv3api>=1.9.0
+Description-Content-Type: text/markdown
+
+# Video MCP Server
+
+这是一个基于 TMDB API 的视频信息查询 MCP 服务器，支持电影和电视剧的搜索及详细信息获取。
+
+## 安装
+
+```bash
+uvx video-mcp
+```
+
+## 环境变量配置
+
+在使用之前，你需要设置 TMDB API Key。创建一个 `.env` 文件并添加以下内容：
+
+```
+TMDB_API_KEY=your_tmdb_api_key_here
+```
+
+你可以从 [TMDB 设置页面](https://www.themoviedb.org/settings/api) 获取 API Key。
+
+## 可用工具
+
+### search_video
+
+搜索电影和电视剧信息。
+
+参数：
+- query: 搜索关键词
+- media_type: 指定搜索类型：movie(电影)、tv(电视剧)或all(全部)
+- year: 指定年份进行过滤（可选）
+- page: 页码，默认为1
+
+### get_video_details
+
+获取特定影视作品的详细信息。
+
+参数：
+- video_id: 影视作品的ID
+- media_type: 作品类型：movie(电影)或tv(电视剧)

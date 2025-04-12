@@ -1,0 +1,45 @@
+[project]
+name = "video-mcp"
+version = "0.1.0"
+description = "Video information search MCP server"
+authors = [{"name" = "Cline"}]
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "tmdbv3api>=1.9.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[project.scripts]
+video-mcp = "src.video_mcp_server:main"
+
+[project.urls]
+Repository = "https://github.com/yourusername/video-mcp"
+
+[tool.hatch.envs.default]
+dependencies = [
+    "pytest",
+    "pytest-cov",
+]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "pytest --cov {args:src}"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
