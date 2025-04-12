@@ -1,0 +1,15 @@
+rda_python_dbms/MyDBI.py,sha256=VXtzR6zYojez2sPJreGlHKHgEJfF-V359T2mhSGJKHk,64376
+rda_python_dbms/PgDDLLib.py,sha256=DzBocr7c4c482zB8jxw0lughXOj327OL_TTx6ZvmjXA,40814
+rda_python_dbms/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+rda_python_dbms/pgbackup.py,sha256=ICYmuFCjlI_ICRaL33ZUGVzEE1CyEfC5xwhq3t9vJH0,3647
+rda_python_dbms/pgchksum.py,sha256=NlIW4N45nRYj16qF00lndiw5wyIB2YAFi5NfORRbuPk,19044
+rda_python_dbms/pgcmptables.py,sha256=y5Tx45BguJ4IVw0thgZmg9D9B2gcYMdem3shNugtAcA,47126
+rda_python_dbms/pgddl.py,sha256=0obj6Lsc0DVKSIvaP1n9d9TCMYb10f_Hoyc3Gg4jYnI,5441
+rda_python_dbms/pgddl.usg,sha256=7ly6YbusvyIy9yQn9reGIUtZQ5Wiehp9-DKDgfjqSBE,2267
+rda_python_dbms/pgseq.py,sha256=OkGhdYB03smGMo9fecdS3dZgR2jOm-ZODM9_1QjAlWE,4736
+rda_python_dbms-1.0.1.dist-info/licenses/LICENSE,sha256=Uky6fiiVw7cakFVRtVpzg-mvqOQ-WcA_H8lHqhPRg58,1101
+rda_python_dbms-1.0.1.dist-info/METADATA,sha256=CxpCsnO_spfFnD6vFY8aqAU5Xq8dB0q_N5w95PoPnpc,617
+rda_python_dbms-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+rda_python_dbms-1.0.1.dist-info/entry_points.txt,sha256=e-Mc9poQZhN4C82G03V5Vyoh56jpz75-bpWkb7yG9l4,217
+rda_python_dbms-1.0.1.dist-info/top_level.txt,sha256=4T1ShNUMyiqmwDIuDL7pDOm_S-6zWWW3Vy6OdAzYA4c,16
+rda_python_dbms-1.0.1.dist-info/RECORD,,
