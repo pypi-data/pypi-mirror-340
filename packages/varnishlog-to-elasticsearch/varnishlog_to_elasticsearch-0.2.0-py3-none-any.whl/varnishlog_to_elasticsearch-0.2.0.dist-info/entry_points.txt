@@ -1,0 +1,2 @@
+[console_scripts]
+varnishlog-to-es = varnishlog_to_elasticsearch.cli:main
