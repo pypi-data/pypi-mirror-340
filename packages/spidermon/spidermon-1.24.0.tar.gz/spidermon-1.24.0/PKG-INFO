@@ -1,0 +1,109 @@
+Metadata-Version: 2.4
+Name: spidermon
+Version: 1.24.0
+Summary: Spidermon is a framework to build monitors for Scrapy spiders.
+Home-page: https://github.com/scrapinghub/spidermon
+Author: Zyte
+Author-email: opensource@zyte.com
+License: BSD
+Project-URL: Documentation, https://spidermon.readthedocs.io/
+Project-URL: Source, https://github.com/scrapinghub/spidermon
+Project-URL: Tracker, https://github.com/scrapinghub/spidermon/issues
+Project-URL: Release notes, https://spidermon.readthedocs.io/en/latest/changelog.html
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Scrapy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: jsonschema[format]>=4.21.0
+Requires-Dist: python-slugify
+Provides-Extra: monitoring
+Requires-Dist: Jinja2; extra == "monitoring"
+Requires-Dist: boto; extra == "monitoring"
+Requires-Dist: boto3; extra == "monitoring"
+Requires-Dist: itemadapter; extra == "monitoring"
+Requires-Dist: premailer; extra == "monitoring"
+Requires-Dist: requests; extra == "monitoring"
+Requires-Dist: scrapinghub; extra == "monitoring"
+Requires-Dist: scrapinghub-entrypoint-scrapy; extra == "monitoring"
+Requires-Dist: scrapy; extra == "monitoring"
+Requires-Dist: sentry_sdk; extra == "monitoring"
+Requires-Dist: slack_sdk; extra == "monitoring"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+=========
+Spidermon
+=========
+
+.. image:: https://github.com/scrapinghub/spidermon/workflows/CI/badge.svg?branch=master
+    :target: https://github.com/scrapinghub/spidermon/actions?workflow=CI
+    :alt: CI Status
+
+.. image:: https://img.shields.io/codecov/c/github/scrapinghub/spidermon.svg
+    :target: http://codecov.io/github/scrapinghub/spidermon?branch=master
+    :alt: Coverage report
+
+.. image:: https://img.shields.io/pypi/v/spidermon.svg
+    :target: https://pypi.python.org/pypi/spidermon
+    :alt: pypi version
+
+.. image:: https://img.shields.io/pypi/l/spidermon.svg
+    :target: https://github.com/scrapinghub/spidermon/blob/master/LICENSE
+    :alt: licence
+
+.. image:: https://img.shields.io/pypi/pyversions/spidermon.svg
+    :target: https://pypi.python.org/pypi/spidermon
+    :alt: python versions
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+    :target: https://github.com/ambv/black
+    :alt: Code style: black
+
+Overview
+========
+
+Spidermon is an extension for Scrapy spiders. The package provides useful tools for data validation, stats monitoring, and notification messages. This way you leave the monitoring task to Spidermon and just check the reports/notifications.
+
+Requirements
+============
+
+* Python Version: 3.8, 3.9, 3.10, 3.11 or 3.12
+
+Install
+=======
+
+The quick way::
+
+    pip install spidermon
+
+For more details see the install section in the documentation:
+https://spidermon.readthedocs.io/en/latest/installation.html
+
+Documentation
+=============
+
+Documentation is available online at https://spidermon.readthedocs.io/ and in the ``docs`` directory.
