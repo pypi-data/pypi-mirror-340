@@ -1,0 +1,9 @@
+agently/__init__.py,sha256=z7tg9Ms6lPwaEvoxEDi3JtEWZtrxAy0Zp_cAYsLbmds,63
+agently/version.py,sha256=9TptGfHnbSSOAkrkgvFeerrLuMwExxuntrFSXUBuoQI,524
+agently/config/schema.json,sha256=HmP1iVNuPc6Ug8zIeVLtoAb2wQ6qmiFWwAipzp5H4Kw,9614
+agently_cli-0.2.0.dev3.dist-info/licenses/LICENSE,sha256=AGaSEpbXymQGy4VrrjkOp9X-z8EaqNu3X6ulxGeB7ec,1073
+agently_cli-0.2.0.dev3.dist-info/METADATA,sha256=UwXsZDD5BIMlVVlM3Ows6EfXsQHn9mzi3Zb2_1ao3JM,11587
+agently_cli-0.2.0.dev3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+agently_cli-0.2.0.dev3.dist-info/entry_points.txt,sha256=Yb1dDU2JMrAtPybQALecEauC3M0MR0TU6Yoffrfg3MI,53
+agently_cli-0.2.0.dev3.dist-info/top_level.txt,sha256=8zZSidza9RGPUn3oPNEuH_ArX90fSV6LjqAUtmN7lNI,8
+agently_cli-0.2.0.dev3.dist-info/RECORD,,
