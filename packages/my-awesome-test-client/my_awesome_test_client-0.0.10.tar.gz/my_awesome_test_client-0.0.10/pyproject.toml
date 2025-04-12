@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-awesome-test-client"
+version = "0.0.10"
+readme = "README.md"
+
+dependencies = [
+    "build==1.2.2",
+    "pip==25.0.1",
+    "twine==6.1.0",
+]
