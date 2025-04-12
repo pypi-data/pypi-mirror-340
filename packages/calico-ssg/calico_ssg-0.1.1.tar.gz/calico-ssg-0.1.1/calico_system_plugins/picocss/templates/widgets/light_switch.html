@@ -1,0 +1,4 @@
+<button @click.prevent="light=!light; localStorage.setItem('useLight', light)" :aria-label="`${light?'dark':'light'} mode toggle`">
+  <cc-svg.moon with x_show="light" style="display: inline-block; vertical-align: text-bottom; width: 24px;"></cc-svg.moon>
+  <cc-svg.sun with x_show="!light" style="display: inline-block; vertical-align: text-bottom; width: 24px;"></cc-svg.sun>
+</button>
