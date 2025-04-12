@@ -1,0 +1,9 @@
+pynari/__init__.py,sha256=7k2xuBFCQnLyueJKseRhVCgJ0ATmuYNltJHMQRJplM0,1270
+pynari/anari.dll,sha256=bTq04pJsnl-R-Nb5rJpx2Xn7yYyL2UosYKWABJDaW5o,41984
+pynari/anari_library_barney.dll,sha256=kPzPLPZG0oCau5RTmbm3eu3JjUtabL7m8qZ_spcIQlc,25615872
+pynari/barney.dll,sha256=8BQo-X47-ZfxzYJ8YiOgU09lG7IoEH_tpdeCPhcITZM,25311232
+pynari/pynari.cp39-win_amd64.pyd,sha256=jMe8QJGeRviQi_f4Hn3yOiwlvWqGbJruTemrl7mq9oA,453120
+pynari/sample02.py,sha256=m3v6WHL-eYih6ey8bxcSjvstA3sS_vB1PGU4rx7plyk,5714
+pynari-1.2.8.dist-info/METADATA,sha256=mpR3sC6RfYcfxvDt7nphZxscUW5IzSlxGaD3QMbDJds,3870
+pynari-1.2.8.dist-info/WHEEL,sha256=k3r5zLv1t8z7JCqYC2-rKkfvrw2hvjPkH6-V2Jw00vI,104
+pynari-1.2.8.dist-info/RECORD,,
