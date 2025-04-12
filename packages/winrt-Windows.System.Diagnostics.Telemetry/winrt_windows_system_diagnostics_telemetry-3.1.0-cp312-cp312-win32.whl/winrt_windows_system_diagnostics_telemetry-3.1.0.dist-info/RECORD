@@ -1,0 +1,8 @@
+winrt/_winrt_windows_system_diagnostics_telemetry.cp312-win32.pyd,sha256=KQjeNV3d1FNVV1OYQeMjBf9rGIlP04cgXa3mxEjJ7tA,53760
+winrt/_winrt_windows_system_diagnostics_telemetry.pyi,sha256=wdhY2jWfOO8nsA4WWQqGXTRr3I9EjPY-zoJyO7cMcow,2479
+winrt/windows/system/diagnostics/telemetry/__init__.py,sha256=Qw7mXijiv9Rw0VT8fzG_TZSAjKudI474Yqx8a4Bzd1o,599
+winrt/windows/system/diagnostics/telemetry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+winrt_windows_system_diagnostics_telemetry-3.1.0.dist-info/METADATA,sha256=WBpx5W9cvzxrYDXx5bdq3vPtORXwlz4mr03mVCDP7ZI,1007
+winrt_windows_system_diagnostics_telemetry-3.1.0.dist-info/WHEEL,sha256=BPX3NNBHfZ-wRWUmorcafb98Azq-d3B5uBQoZtDmitY,97
+winrt_windows_system_diagnostics_telemetry-3.1.0.dist-info/top_level.txt,sha256=BzwQb4dZRt0NxCXi10ARjWsox7Asmtf_lXrw_KR-D_E,6
+winrt_windows_system_diagnostics_telemetry-3.1.0.dist-info/RECORD,,
