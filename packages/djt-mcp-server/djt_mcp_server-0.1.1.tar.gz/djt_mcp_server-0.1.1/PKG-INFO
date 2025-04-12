@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: djt-mcp-server
+Version: 0.1.1
+Summary: Add your description here
+Author-email: duanjiatao <duanjiatao@xgd.com>
+Requires-Python: >=3.12
+Requires-Dist: fastapi>=0.115.12
+Description-Content-Type: text/markdown
+
+# 这是djt-mcp-server
