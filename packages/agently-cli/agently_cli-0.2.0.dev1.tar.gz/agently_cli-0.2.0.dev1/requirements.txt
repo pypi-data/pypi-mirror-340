@@ -1,0 +1,14 @@
+agently-sdk
+click
+semantic-kernel
+semantic-kernel[mcp]
+python-dotenv
+aiohttp
+jsonschema
+pyyaml
+requests
+azure-identity
+ollama
+mcp
+typing-extensions
+prompt_toolkit
