@@ -1,0 +1,16 @@
+streamlit>=1.43.0
+anthropic[bedrock,vertex]>=0.37.1
+jsonschema>=4.0.0
+keyboard>=0.13.5
+boto3>=1.28.57
+google-auth>=2.0.0
+python-dotenv>=1.0.1
+watchdog>=5.0.3
+mouse>=0.7.1
+pynput>=1.7.6
+
+[dev]
+pytest>=7.0.0
+ruff>=0.1.0
+black>=23.0.0
+mypy>=1.0.0

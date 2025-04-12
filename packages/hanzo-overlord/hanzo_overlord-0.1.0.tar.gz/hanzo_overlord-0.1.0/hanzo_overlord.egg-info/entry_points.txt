@@ -1,0 +1,2 @@
+[console_scripts]
+overlord = overlord.streamlit:cli
