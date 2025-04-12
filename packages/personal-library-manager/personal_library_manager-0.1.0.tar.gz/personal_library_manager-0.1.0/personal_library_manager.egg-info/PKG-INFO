@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: personal-library-manager
+Version: 0.1.0
+Summary: A CLI app to manage your personal book collection
+Home-page: https://github.com/muhammadwaheedairi/personal-library-manager.git
+Author: Muhammad waheed
+Author-email: wm0297567@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Personal Library Manager
+
+A simple CLI tool written in Python to manage your personal book collection.
+
+## Features
+
+- Add a new book
+- Remove a book
+- Search for a book by title or author
+- Display all books in a formatted list
+- Display statistics (total books and percentage read)
+- Save library data to a file and load it on startup
+
+## Installation
+
+You can install this package via pip (after publishing on PyPI):
+
+```bash
+pip install personal-library-manager
