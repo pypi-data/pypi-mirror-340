@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: database_mongodb
+Version: 0.0.11
+Summary: A Python package for connecting with MongoDB.
+Home-page: https://github.com/Abdoul1996/mlops2
+Author: Abdoul1996
+Author-email: aabdillahid@gmail.com
+Project-URL: Bug Tracker, https://github.com/Abdoul1996/mlops2/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pymongo[srv]
+Requires-Dist: dnspython
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: ensure
+Provides-Extra: testing
+Requires-Dist: pytest>=8.1.1; extra == "testing"
+Requires-Dist: mypy>=1.9.0; extra == "testing"
+Requires-Dist: flake8>=7.0.0; extra == "testing"
+Requires-Dist: tox>=4.14.1; extra == "testing"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# mlops2

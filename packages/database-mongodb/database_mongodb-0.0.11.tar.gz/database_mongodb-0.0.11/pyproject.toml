@@ -1,0 +1,13 @@
+# 🔧 Build system configuration required by PEP 518
+[build-system]
+requires = ["setuptools>=42.0", "wheel"]  # Minimum requirements for building the package
+build-backend = "setuptools.build_meta"   # Use setuptools as the build backend
+
+# 🧪 Pytest configuration
+[tool.pytest.ini_options]
+testpaths = ["tests"]                     # Pytest will look for tests inside this folder
+
+# 🧠 Mypy type checker configuration
+[tool.mypy]
+mypy_path = "src"                         # Point mypy to your source directory
+ignore_missing_imports = true            # Prevents errors from unresolved third-party imports
