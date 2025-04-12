@@ -1,0 +1,14 @@
+regressionmadesimple/__init__.py,sha256=KCU7SZgw6JVcFU8V1CSPgWPoaX8CpBZsXPV4wdiKjLs,513
+regressionmadesimple/base_class.py,sha256=bmQViZNrfgBufIW4tCYrs6tBPyX6NtU9bW8BvQtmBSg,196
+regressionmadesimple/cubic.py,sha256=DSSBhi4FNFBlNk94E0QBMSkZFFVhewZFImgAjEO7jTQ,6025
+regressionmadesimple/curves.py,sha256=zK1PGT9v7gz-fex7Is5mwQtiAg7mHQP8pDHcQM4T4rI,2929
+regressionmadesimple/linear.py,sha256=O9s3wtFNa-tEpYibUQ9yQTxI1vaKDaWfDfFkWyxl8Nw,5095
+regressionmadesimple/options.py,sha256=e14BYc2Q2nSp3eDUvZC5Xt1EyQlhwmpWxZsiQzL4wF0,1791
+regressionmadesimple/quadratic.py,sha256=NrmQixeFGuOSbeXJp-yqYq8BGpHituRwuLOjkcQMV_A,6021
+regressionmadesimple/utils_preworks.py,sha256=Ti_Hidg7s1unqLojREEIgzVw3jaLOBUPON3iSyLRai0,1057
+regressionmadesimple/wrapper.py,sha256=xQgR3nDCxDcXKHifsCAbMpHfS_4vKSh3qiWAp-P3j5Q,837
+regressionmadesimple-1.4.0.dist-info/licenses/LICENSE,sha256=f0I40x7pjecna1N5b66dhKD2YqiNjJYSqSKEGdtV9RI,1086
+regressionmadesimple-1.4.0.dist-info/METADATA,sha256=mEDIf6OYkSJPNWAK4YRRYcSmhXbtV5iHZ9uJ9qt-yWs,3984
+regressionmadesimple-1.4.0.dist-info/WHEEL,sha256=DK49LOLCYiurdXXOXwGJm6U4DkHkg4lcxjhqwRa0CP4,91
+regressionmadesimple-1.4.0.dist-info/top_level.txt,sha256=fN2zFvLHVK6j9-zaraKpeaisVzpWY7Q6aPiPSEJOpKc,21
+regressionmadesimple-1.4.0.dist-info/RECORD,,
