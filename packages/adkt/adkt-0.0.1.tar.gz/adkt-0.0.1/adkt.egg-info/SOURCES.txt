@@ -1,0 +1,8 @@
+README.md
+setup.py
+adkt/__init__.py
+adkt.egg-info/PKG-INFO
+adkt.egg-info/SOURCES.txt
+adkt.egg-info/dependency_links.txt
+adkt.egg-info/requires.txt
+adkt.egg-info/top_level.txt
