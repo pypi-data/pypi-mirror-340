@@ -1,0 +1,6 @@
+agent_patterns/__init__.py,sha256=V8dhdlfNqc8lmD5k2_qXgBCqPGm6ZnVtgOCEGTRjogc,140
+agent_patterns/core/__init__.py,sha256=FFiU3UKbMYLr9oprGUbzQ6jZzwGmDfhwXikq4XY9cg8,41
+agent_patterns/core/base_agent.py,sha256=_oNCDge0ygtcv2HVNiKo5z4m-9jvHbHP27O1xD1ctl8,1103
+agent_patterns-0.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+agent_patterns-0.1.0.dist-info/METADATA,sha256=Wt8fl38kcBATfiRAu5F4X02e1hz_8KwZxU8GE4lGnyc,619
+agent_patterns-0.1.0.dist-info/RECORD,,
