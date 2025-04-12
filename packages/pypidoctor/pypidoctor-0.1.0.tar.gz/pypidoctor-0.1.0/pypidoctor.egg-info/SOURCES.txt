@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+pypidoctor/__init__.py
+pypidoctor/main.py
+pypidoctor.egg-info/PKG-INFO
+pypidoctor.egg-info/SOURCES.txt
+pypidoctor.egg-info/dependency_links.txt
+pypidoctor.egg-info/top_level.txt
