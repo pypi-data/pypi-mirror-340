@@ -1,0 +1,24 @@
+saving:
+    plt_dir : /tmp/dmu/tests/plotting/2d_weighted
+selection:
+  cuts:
+    xlow : x > -1.5
+definitions:
+  z : x + y
+general:
+    size : [20, 10]
+plots_2d:
+    - [x, y, weights, 'xy_wgt', false]
+    - [x, y,    null, 'xy_raw', false]
+    - [x, z,    null, 'xz_raw', false]
+    - [x, z,    null, 'xz_log',  true]
+axes:
+    x :
+        binning : [-3.0, 3.0, 40]
+        label   : 'x'
+    y :
+        binning : [-5.0, 8.0, 40]
+        label   : 'y'
+    z :
+        binning : [-5.0, 16.0, 40]
+        label   : 'z'
