@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: nk30
+Version: 1.0.0
+Summary: Hybrid Hangul + Hanja base-30000 numeral compression
+Home-page: https://github.com/dzbuit/nk30
+Author: blueradiance
+Author-email: none@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# nk30
+
+Hybrid Hangul + Hanja numeral system using base-30,000 encoding.
+
+```bash
+pip install nk30
+```
+
+```python
+import nk30
+
+s = nk30.encode_nk30(123456789)
+n = nk30.decode_nk30(s)
+```
