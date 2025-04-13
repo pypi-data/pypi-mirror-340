@@ -1,0 +1,15 @@
+README.md
+setup.py
+ab23007uno/__init__.py
+ab23007uno/bisection.py
+ab23007uno/cramer_rule.py
+ab23007uno/gauss_elimination.py
+ab23007uno/gauss_jordan.py
+ab23007uno/gauss_seidel.py
+ab23007uno/jacobi.py
+ab23007uno/lu_decomposition.py
+ab23007uno.egg-info/PKG-INFO
+ab23007uno.egg-info/SOURCES.txt
+ab23007uno.egg-info/dependency_links.txt
+ab23007uno.egg-info/requires.txt
+ab23007uno.egg-info/top_level.txt
