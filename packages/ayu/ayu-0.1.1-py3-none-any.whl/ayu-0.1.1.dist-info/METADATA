@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: ayu
+Version: 0.1.1
+Summary: An interactive TUI for pytest
+Author-email: Zaloog <gramslars@gmail.com>
+Requires-Python: >=3.12
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: textual-slidecontainer>=0.2.5
+Requires-Dist: textual[syntax]>=3.0.0
+Requires-Dist: websockets>=15.0.1
