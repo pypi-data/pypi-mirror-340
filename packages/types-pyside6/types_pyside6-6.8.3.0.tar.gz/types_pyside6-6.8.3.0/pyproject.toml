@@ -1,0 +1,25 @@
+[project]
+name = "types-pyside6"
+version = "6.8.3.0"
+description = "Types for PySide6"
+authors = [
+    { name = "Inhwan Kim", email = "moreih29@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyside6==6.8.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+package-dir = "types-pyside6"
+include = [
+    "**/*.pyi",
+]
+
+[tool.mypy]
+strict = true
