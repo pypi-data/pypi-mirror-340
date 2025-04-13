@@ -1,0 +1,42 @@
+# This file is placed in the Public Domain.
+
+
+[build-system]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "nixbot"
+version = "2"
+authors = [
+    {name = "Bart Thate", email = "nixtniet@gmail.com" },
+]
+description = "NIXBOT"
+readme = "README.rst"
+license = { text="Public Domain"}
+dependencies = [
+    'nixt',
+]
+classifiers=[
+    'Development Status :: 3 - Alpha',
+    'License :: Public Domain',
+    'Operating System :: Unix',
+    'Programming Language :: Python :: 3',
+    'Topic :: Utilities'
+]
+
+
+[project.urls]
+"home" = "https://pypi.org/project/nixt"
+"bugs" = "https://github.com/nixtniet/nixt/issues"
+"source" = "https://github.com/nixtniet/nixt"
+
+
+[tool.setuptools]
+script-files = [
+    'bin/nixbot',
+]
+packages = [
+    'nixbot',
+]
