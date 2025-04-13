@@ -1,0 +1,155 @@
+Metadata-Version: 2.4
+Name: THCustomLogger
+Version: 0.1.3
+Summary: A custom logging package with multiline formatting
+Project-URL: Homepage, https://github.com/TabgoHotel/CustomLogger.git
+Author-email: Tyler Haunreiter <silentbox23@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: colorlog
+Description-Content-Type: text/markdown
+
+# THCustomLogger
+
+A simple, reusable logger setup to use across projects. Automatically configures
+setup for log and console. 
+
+## Table of Contents
+<!-- TOC -->
+* [THCustomLogger](#thcustomlogger)
+  * [Table of Contents](#table-of-contents)
+  * [Installation](#installation)
+  * [Quick Start](#quick-start)
+  * [Features](#features)
+  * [Configuration](#configuration)
+    * [Basic Configuration](#basic-configuration)
+    * [Advanced Settings](#advanced-settings)
+  * [Usage Examples](#usage-examples)
+    * [Basic Logging](#basic-logging)
+    * [Advanced Usage](#advanced-usage)
+  * [API Reference](#api-reference)
+    * [`setup_logger()`](#setup_logger)
+    * [`get_commit_hash()`](#get_commit_hash)
+  * [Contributing](#contributing)
+  * [License](#license)
+<!-- TOC -->
+
+## Installation
+
+```bash
+pip install THCustomLogger
+```
+
+## Quick Start
+
+```python
+from THCustomLogger import setup_logger, get_commit_hash
+
+# Use the logger
+logger.info("This is an info message")
+logger.debug("This is a debug message")
+
+# Get the current git commit hash
+commit = get_commit_hash()
+logger.info(f"Current commit: {commit}")
+```
+
+## Features
+
+- Creates a logger instance, directory, and log file
+- Custom logging setup with predefined formatting
+- Multi-line formatting
+- Prints color to console
+- Git commit hash integration to track versions
+
+## Configuration
+
+### Basic Configuration
+- None at this time
+
+### Advanced Settings
+- None at this time
+
+## Usage Examples
+
+### Basic Logging
+```python
+logger.info(f"Done.", extra={'msg_break': '*'})
+logger.info(f"Done.\n----------", extra={'no_indent': True})
+logger.info(f"Done.\nfffffffffff", extra={'msg_break': '/', 'no_indent': True})
+
+logger.debug('debug message')
+logger.info('hello world')
+logger.warning('Oh No')
+logger.error('Error')
+logger.critical('Critical')
+logger.info(f"Commit hash: {get_commit_hash()}\nLatest tag:")
+```
+```output
+2025-04-12 20:19:40.493 | Line: 118 logger_setup.main                 | INFO    : Done.
+**********************************************************************************
+2025-04-12 20:19:40.493 | Line: 119 logger_setup.main                 | INFO    : Done.
+----------
+2025-04-12 20:19:40.493 | Line: 120 logger_setup.main                 | INFO    : Done.
+fffffffffff
+//////////////////////////////////////////////////////////////////////////////////
+2025-04-12 20:19:40.493 | Line: 122 logger_setup.main                 | DEBUG   : debug message
+2025-04-12 20:19:40.493 | Line: 123 logger_setup.main                 | INFO    : hello world
+2025-04-12 20:19:40.493 | Line: 124 logger_setup.main                 | WARNING : Oh No
+2025-04-12 20:19:40.493 | Line: 125 logger_setup.main                 | ERROR   : Error
+2025-04-12 20:19:40.493 | Line: 126 logger_setup.main                 | CRITICAL: Critical
+2025-04-12 20:19:40.507 | Line: 127 logger_setup.main                 | INFO    : Commit hash: f633ac2edf0e15e8a1507b5371de653d21b9ded2
+                                                                                  Latest tag:
+2025-04-12 20:19:40.507 | Line: 134 logger_setup.example              | ERROR   : division by zero
+Traceback (most recent call last):
+  File "/CustomLogger/src/THCustomLogger/logger_setup.py", line 132, in example
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero
+```
+
+
+### Advanced Usage
+```python
+[Add advanced usage examples]
+```
+
+## API Reference
+
+### `setup_logger()`
+[Document parameters and return values]
+
+### `get_commit_hash()`
+[Document functionality and usage]
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT License
+
+Copyright (c) 2025 Tyler Haunreiter
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
