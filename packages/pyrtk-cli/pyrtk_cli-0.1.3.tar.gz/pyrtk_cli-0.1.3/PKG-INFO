@@ -1,0 +1,103 @@
+Metadata-Version: 2.4
+Name: pyrtk-cli
+Version: 0.1.3
+Summary: A modern CLI for scaffolding and managing FastAPI projects with clean architecture.
+Author: Andres Mardones
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Framework :: FastAPI
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.9.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: python-dotenv
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# 🛠️ PyRTK - Python REST Toolkit CLI
+
+PyRTK is a modern CLI tool to scaffold and manage clean, modular FastAPI projects and microservices — with style 😎
+
+---
+
+## 🚀 Installation (Recommended via pipx)
+
+Make sure you have [pipx](https://pypa.github.io/pipx/) installed:
+
+```bash
+brew install pipx && pipx ensurepath
+# or
+python3 -m pip install --user pipx && python3 -m pipx ensurepath
+```
+
+Then install PyRTK globally via pipx:
+
+```bash
+pipx install pyrtk-cli
+```
+
+Or install it via pip:
+
+```bash
+pip install pyrtk-cli
+```
+
+Now you can use the `pyrtk` command from anywhere 🎉
+
+---
+
+## 📦 Commands
+
+### `pyrtk create <project-name> --type api|ms`
+
+Scaffolds a complete API or Microservice:
+
+- `api`: simple FastAPI project with routers, schemas, middleware, and main.py
+- `ms`: full microservice architecture (core, models, services, routers, etc.)
+
+Example:
+
+```bash
+pyrtk create panaderia --type ms
+```
+
+✅ This will also:
+- Create a virtual environment inside the project
+- Install dependencies
+- Show you how to activate the environment manually
+
+---
+
+### `pyrtk run`
+
+Runs your FastAPI project automatically using the environment created.
+
+```bash
+cd panaderia
+pyrtk run
+```
+
+This will launch the Uvicorn server using the right Python environment automatically 🚀
+
+---
+
+## 🔜 Coming Soon
+
+- `pyrtk generate <type> <name>` → Auto-generate routers, schemas, models, etc.
+- Plugin system
+- Custom project templates
+- Docker & deployment helpers
+
+---
+
+## 🧡 Made with love by Andrés Mardones
