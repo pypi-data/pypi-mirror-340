@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: multi_crypt
+Version: 0.0.2
+Summary: A single unified interface for working with alternative cryptographic algorithms.
+Author: emendir
+Requires-Dist: pycryptodome
+Requires-Dist: eciespy
