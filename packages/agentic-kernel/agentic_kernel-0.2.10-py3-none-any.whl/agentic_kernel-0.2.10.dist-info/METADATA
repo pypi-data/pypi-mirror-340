@@ -1,0 +1,268 @@
+Metadata-Version: 2.4
+Name: agentic-kernel
+Version: 0.2.10
+Summary: A Python library for building agentic applications
+Project-URL: Homepage, https://github.com/qredence/agentic-kernel
+Project-URL: Documentation, https://github.com/qredence/agentic-kernel/docs
+Project-URL: Repository, https://github.com/qredence/agentic-kernel.git
+Project-URL: Bug Tracker, https://github.com/qredence/agentic-kernel/issues
+Project-URL: Changelog, https://github.com/qredence/agentic-kernel/blob/main/CHANGELOG.md
+Author-email: "Qredence.ai" <contact@qredence.ai>
+License-Expression: MIT
+License-File: CHANGELOG.md
+License-File: LICENSE
+Keywords: agents,ai,automation,langchain,openai,semantic-kernel
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: <3.14,>=3.10
+Requires-Dist: aiohttp<4.0.0,>=3.11.14
+Requires-Dist: asyncio<4.0.0,>=3.4.3
+Requires-Dist: asyncpg<1.0.0,>=0.29.0
+Requires-Dist: azure-ai-documentintelligence<1.1.0,>=1.0.2
+Requires-Dist: azure-ai-evaluation<1.6.0,>=1.5.0
+Requires-Dist: azure-ai-inference<2.0.0,>=1.0.0b1
+Requires-Dist: azure-ai-projects<2.0.0,>=1.0.0b6
+Requires-Dist: azure-core<2.0.0,>=1.30.1
+Requires-Dist: azure-identity<2.0.0,>=1.15.0
+Requires-Dist: azure-search-documents<12.0.0,>=11.6.0b10
+Requires-Dist: azure-storage-blob<13.0.0,>=12.19.0
+Requires-Dist: beautifulsoup4<4.14.0,>=4.13.3
+Requires-Dist: chainlit<3.0.0,>=2.4.400
+Requires-Dist: fastapi<0.116.0,>=0.115.12
+Requires-Dist: google-adk<0.2.0,>=0.1.1
+Requires-Dist: httpx<0.29.0,>=0.28.1
+Requires-Dist: langchain<1.0.0,>=0.0.309
+Requires-Dist: markitdown<0.2.0,>=0.1.1
+Requires-Dist: matplotlib<3.11.0,>=3.10.1
+Requires-Dist: mem0ai<0.2.0,>=0.1.90
+Requires-Dist: networkx<3.5.0,>=3.4.2
+Requires-Dist: openai<1.73.0,>=1.72.0
+Requires-Dist: playwright<2.0.0,>=1.51.0
+Requires-Dist: psutil<6.0.0,>=5.9.5
+Requires-Dist: pyautogui<1.0.0,>=0.9.54
+Requires-Dist: pydantic<3.0.0,>=2.6.3
+Requires-Dist: pydot<3.1.0,>=3.0.4
+Requires-Dist: python-dotenv<1.2.0,>=1.1.0
+Requires-Dist: requests<3.0.0,>=2.31.0
+Requires-Dist: rich<15.0.0,>=14.0.0
+Requires-Dist: ruff<1.0.0,>=0.11.4
+Requires-Dist: semantic-kernel<1.29.0,>=1.28.0
+Requires-Dist: starlette<0.42.0,>=0.41.3
+Requires-Dist: tabulate<0.10.0,>=0.9.0
+Requires-Dist: typer[all]<1.0.0,>=0.15.2
+Provides-Extra: dev
+Requires-Dist: black<25.0.0,>=24.10.0; extra == 'dev'
+Requires-Dist: coverage[toml]<8.0.0,>=7.4.0; extra == 'dev'
+Requires-Dist: isort<6.0.0,>=5.13.2; extra == 'dev'
+Requires-Dist: mypy<2.0.0,>=1.15.0; extra == 'dev'
+Requires-Dist: pylint<4.0.0,>=3.1.0; extra == 'dev'
+Requires-Dist: pytest-asyncio<0.27.0,>=0.26.0; extra == 'dev'
+Requires-Dist: pytest<9.0.0,>=8.3.5; extra == 'dev'
+Requires-Dist: responses<1.0.0,>=0.25.0; extra == 'dev'
+Requires-Dist: ruff<1.0.0,>=0.11.4; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme<1.4.0,>=1.3.0; extra == 'dev'
+Requires-Dist: sphinx<8.0.0,>=7.0.0; extra == 'dev'
+Requires-Dist: types-requests<3.0.0,>=2.31.0; extra == 'dev'
+Requires-Dist: types-tabulate<0.10.0,>=0.9.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+<!-- Optional: Add a project logo/banner here -->
+<!-- <p align="center"><img src="path/to/your/logo.png" alt="Agentic Kernel Logo" width="200"/></p> -->
+
+# Agentic Kernel: A Modular Framework for Autonomous AI Agents
+
+<!-- GitAds-Verify: TKYMBH2ORRFZ8TBQZ3MULLAW37BSXJ1P -->
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python Version](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+<!-- [![PyPI version](https://badge.fury.io/py/agentic-kernel.svg)](https://badge.fury.io/py/agentic-kernel) -->
+<!-- [![Build Status](https://travis-ci.org/your-repo/agentic-kernel.svg?branch=main)](https://travis-ci.org/your-repo/agentic-kernel) -->
+<!-- [![Coverage Status](https://coveralls.io/repos/github/your-repo/agentic-kernel/badge.svg?branch=main)](https://coveralls.io/github/your-repo/agentic-kernel?branch=main) -->
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+**Build, orchestrate, and manage sophisticated multi-agent systems with ease.**
+
+Agentic Kernel provides a robust and flexible foundation for creating autonomous AI agents that can collaborate, reason,
+and execute complex tasks. Inspired by frameworks like Semantic Kernel and Autogen, it offers a modular architecture,
+dynamic workflow management, and seamless integration capabilities.
+
+---
+
+## ✨ Key Features
+
+* **🤖 Modular Multi-Agent Architecture:** Design systems with specialized agents, dynamic registration, and secure
+  communication.
+* **⚙️ Sophisticated Workflow Engine:** Intelligently decompose tasks, track progress in real-time, handle errors
+  gracefully, and manage concurrent execution.
+* **🧠 Dynamic Planning & Orchestration:** Features a powerful Orchestrator Agent capable of creating, managing, and
+  adapting complex plans using a nested loop architecture.
+* **🔌 Pluggable Components:** Easily extend functionality with custom plugins, tools, and memory systems.
+* **💬 Standardized Communication:** Agents interact using a clear and consistent message format, compliant with
+  Google's [A2A (Agent-to-Agent) interoperability standard](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/).
+* **🖥️ Interactive UI:** Includes a Chainlit-based interface for real-time interaction, task visualization, and
+  monitoring.
+* **🛠️ Rich Tooling & Integration:** Leverage built-in tools and integrate with external systems (e.g., via MCP).
+
+## 🚀 Getting Started
+
+Follow these steps to get Agentic Kernel up and running on your local machine.
+
+**Prerequisites:**
+
+* Python 3.10 or higher
+* `uv` (recommended) or `pip` package manager
+* Git (for cloning the repository)
+
+**Installation & Setup:**
+
+1. **Clone the Repository (if you haven't already):**
+    ```bash
+    git clone https://github.com/qredence/agentic-kernel.git # Replace with your repo URL
+    cd agentic-kernel
+    ```
+
+2. **Create and Activate a Virtual Environment:**
+
+    * **Using `uv` (Recommended):**
+      ```bash
+      # Install uv if you don't have it (e.g., pip install uv)
+      uv venv
+      source .venv/bin/activate
+      ```
+    * **Using standard `venv`:**
+      ```bash
+      python -m venv .venv
+      source .venv/bin/activate # On Windows use: .venv\Scripts\activate
+      ```
+
+3. **Install Dependencies:**
+    ```bash
+    # Using uv
+    uv pip install -r requirements.txt
+
+    # Using pip
+    # pip install -r requirements.txt
+    ```
+   *Note: If you plan to develop the kernel itself, you might install it in editable mode:*
+    ```bash
+    # uv pip install -e .
+    # pip install -e .
+    ```
+
+4. **Configure Environment Variables:**
+    * Copy the example environment file:
+      ```bash
+      cp .env.example .env
+      ```
+    * Edit the `.env` file and add your API keys and endpoints for required services (e.g., Azure OpenAI, specific
+      tools).
+
+**Running the Chainlit UI:**
+
+1. **Ensure your virtual environment is active.**
+2. **Run the application using the provided script or manually:**
+
+    * **Using the script:**
+        ```bash
+        ./scripts/run_chainlit.sh
+        ```
+      *(This script conveniently handles activating the environment and setting the `PYTHONPATH`)*
+
+    *   **Manually with Chainlit:**
+        ```bash
+        chainlit run src/agentic_kernel/app.py -w
+        ```
+        *(The `-w` flag enables auto-reloading during development)*
+
+3. **Access the application** in your web browser, typically at `http://localhost:8000`.
+
+## 🏛️ System Architecture
+
+Agentic Kernel employs a modular design centered around interacting components:
+
+```
+src/agentic_kernel/
+├── agents/         # Specialized agent implementations (e.g., Orchestrator, Worker)
+├── communication/  # Protocols and message formats for inter-agent communication
+├── config/        # Configuration loading and management
+├── ledgers/       # State tracking for tasks and progress
+├── memory/        # Systems for agent memory and knowledge storage
+├── orchestrator/  # Core logic for workflow planning and execution
+├── plugins/       # Extensible plugin system for adding capabilities
+├── systems/       # Foundational system implementations
+├── tools/         # Reusable tools agents can leverage
+├── ui/           # User interface components (e.g., Chainlit app)
+├── utils/        # Helper functions and utilities
+└── workflows/     # Definitions and handlers for specific workflows
+```
+
+### A2A Compliance
+
+Agentic Kernel is compliant with
+Google's [A2A (Agent-to-Agent) interoperability standard](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/),
+which enables seamless communication and collaboration between different agent systems. Key A2A features include:
+
+- **Capability Discovery**: Agents can advertise their capabilities and discover the capabilities of other agents.
+- **Agent Discovery**: Agents can announce their presence and find other agents in the system.
+- **Standardized Message Format**: All agent communication follows a consistent format with required A2A fields.
+- **Consensus Building**: Agents can request and build consensus on decisions.
+- **Conflict Resolution**: The system provides mechanisms for detecting and resolving conflicts between agents.
+- **Task Decomposition**: Complex tasks can be broken down into subtasks and distributed among agents.
+- **Collaborative Memory**: Agents can share and access a common memory space.
+
+To test A2A compliance, run the provided test script:
+
+```bash
+python src/debug/test_a2a_compliance.py
+```
+
+### Core Concepts
+
+* **Agents:** Autonomous units with specific capabilities (e.g., planning, executing, validating). The
+  `OrchestratorAgent` is key for managing complex tasks.
+* **Workflows:** Sequences of steps managed by the Workflow Engine, involving task decomposition, execution, and
+  monitoring.
+* **Communication Protocol:** A standardized JSON format for messages exchanged between agents.
+* **Ledgers:** Track the state and progress of tasks and workflows.
+* **Plugins & Tools:** Extend agent functionality by providing access to external capabilities or data.
+
+Refer to the code documentation within each directory for more detailed information.
+
+## 📚 Examples & Usage
+
+Explore the capabilities of Agentic Kernel through practical examples:
+
+* **Core Feature Examples (`docs/examples/`)**: Detailed markdown files demonstrating specific functionalities like:
+    * Advanced Plugin Usage
+    * Agent Communication Patterns
+    * Basic Workflow Definition
+    * Memory System Interaction
+    * Orchestrator Features (Conditional Steps, Dynamic Planning, Error Recovery)
+    * Workflow Optimization
+
+* **Multi-Agent System (`examples/adk_multi_agent/`)**: A complete example showcasing collaboration between multiple
+  agents (Task Manager, Worker, Validator).
+    * See the [Multi-Agent Example README](examples/adk_multi_agent/README.md) for setup and execution instructions.
+
+## 🤝 Contributing
+
+We welcome contributions! Please read our `CONTRIBUTING.md` guide to learn about our development process, how to propose
+bug fixes and improvements, and coding standards.
+
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## 🐛 Debugging
+
+* The `src/debug/` directory contains scripts useful for isolating and testing specific components of the kernel.
+  Explore these scripts if you encounter issues or want to understand individual parts better.
