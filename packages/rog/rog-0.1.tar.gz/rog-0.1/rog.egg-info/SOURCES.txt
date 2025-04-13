@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+rog/Nawabi.py
+rog/__init__.py
+rog.egg-info/PKG-INFO
+rog.egg-info/SOURCES.txt
+rog.egg-info/dependency_links.txt
+rog.egg-info/top_level.txt
