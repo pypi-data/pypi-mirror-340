@@ -1,0 +1,3 @@
+[console_scripts]
+llmtaskgrader = llmtaskgrader.cli.commands:main
+llmtg = llmtaskgrader.cli.commands:main
