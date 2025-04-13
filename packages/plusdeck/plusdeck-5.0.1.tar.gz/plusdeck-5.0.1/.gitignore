@@ -1,0 +1,12 @@
+*.pyc
+dist/*
+build/*
+.cache
+.eggs
+.python-version
+plusdeck.egg-info/
+.tox/
+venv
+.env
+.ipynb_checkpoints
+plusdeck-*.tar.gz

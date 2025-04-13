@@ -1,0 +1,10 @@
+click
+configurence
+ipywidgets
+pyee
+pyserial
+pyserial-asyncio
+pyyaml
+
+[dbus]
+sdbus
