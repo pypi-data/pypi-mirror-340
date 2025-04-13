@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: HA23039UNO
+Version: 0.1.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/tuusuario/HA23039UNO
+Author: Tu Nombre
+Author-email: tu.email@ejemplo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# HA23039UNO
+
+Una librería Python para resolver sistemas de ecuaciones lineales y no lineales mediante métodos numéricos.
+
+## Instalación
+
+```bash
+pip install HA23039UNO
+```
+
+## Características
+
+Esta librería implementa varios métodos para resolver sistemas de ecuaciones:
+
+### Sistemas lineales:
+- **Eliminación de Gauss**: Resuelve un sistema de ecuaciones lineales mediante eliminación gaussiana.
+- **Gauss-Jordan**: Resuelve un sistema de ecuaciones lineales mediante el método de Gauss-Jordan.
+- **Regla de Cramer**: Resuelve un sistema de ecuaciones lineales utilizando determinantes.
+- **Descomposición LU**: Resuelve un sistema de ecuaciones lineales mediante la descomposición LU.
+- **Método iterativo de Jacobi**: Resuelve un sistema de ecuaciones lineales mediante iteraciones sucesivas.
+- **Método iterativo de Gauss-Seidel**: Resuelve un sistema de ecuaciones lineales mediante iteraciones sucesivas mejoradas.
+
+### Ecuaciones no lineales:
+- **Método de bisección**: Encuentra una raíz de una ecuación no lineal dentro de un intervalo.
+
+## Ejemplos de uso
+
+### Sistemas lineales con Eliminación de Gauss
+
+```python
+from HA23039UNO import gauss_elimination
+
+# Definir un sistema de ecuaciones lineales
+A = [
+    [2, 6, 1],
+    [1, 2, -1],
+    [5, 7, -4]
+]
+b = [7, -1, 9]
+
+# Resolver usando eliminación de Gauss
+x = gauss_elimination(A, b)
+print("Solución:", x)
+```
+
+### Sistemas lineales con Gauss-Jordan
+
+```python
+from HA23039UNO import gauss_jordan
+
+# Definir un sistema de ecuaciones lineales
+A = [
+    [0.30, 0.20, -0.30],
+    [-0.30, 0.10, 0.10],
+    [-1, 1, 0]
+]
+b = [0, 0, 100]
+
+# Resolver usando Gauss-Jordan
+x = gauss_jordan(A, b)
+print("Solución:", x)
+```
+
+### Sistemas lineales con Cramer
+
+```python
+from HA23039UNO import cramer
+
+# Definir un sistema de ecuaciones lineales
+A = [
+    [1, 1, 1],
+    [0.08, 0.05, 0.1],
+    [0, 1, -2]
+]
+b = [50000, 3750, 0]
+
+# Resolver usando la regla de Cramer
+x = cramer(A, b)
+print("Solución:", x)
+```
+
+### Sistemas lineales con Descomposición LU
+
+```python
+from HA23039UNO import lu_decomposition
+
+# Definir un sistema de ecuaciones lineales
+A = [
+    [4, -1, 0],
+    [-1, 4, -1],
+    [0, -1, 4]
+]
+b = [15, 10, 10]
+
+# Resolver usando descomposición LU
+x = lu_decomposition(A, b)
+print("Solución:", x)
+```
+
+### Sistemas lineales con Jacobi
+
+```python
+from HA23039UNO import jacobi
+
+# Definir un sistema de ecuaciones lineales
+A = [
+    [10, -1, 2, 0],
+    [-1, 11, -1, 3],
+    [2, -1, 10, -1],
+    [0, 3, -1, 8]
+]
+b = [6, 25, -11, 15]
+
+# Resolver usando el método de Jacobi
+x, iteraciones = jacobi(A, b)
+print(f"Solución (en {iteraciones} iteraciones):", x)
+```
+
+### Sistemas lineales con Gauss-Seidel
+
+```python
+from HA23039UNO import gauss_seidel
+
+# Definir un sistema de ecuaciones lineales
+A = [
+    [4, -1, 0],
+    [-1, 4, -1],
+    [0, -1, 4]
+]
+b = [15, 10, 10]
+
+# Resolver usando el método de Gauss-Seidel
+x, iteraciones = gauss_seidel(A, b)
+print(f"Solución (en {iteraciones} iteraciones):", x)
+```
+
+### Ecuaciones no lineales con Bisección
+
+```python
+from HA23039UNO import bisection
+
+# Definir una función no lineal
+def f(x):
+    return x**4 + 0.5*(x**3) - 2*x - 5
+
+# Resolver usando el método de bisección
+raiz, iteraciones = bisection(f, 1, 3)
+print(f"Raíz aproximada: {raiz} (encontrada en {iteraciones} iteraciones)")
+```
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - vea el archivo LICENSE para más detalles.
