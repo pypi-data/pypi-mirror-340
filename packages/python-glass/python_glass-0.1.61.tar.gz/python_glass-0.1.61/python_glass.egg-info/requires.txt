@@ -1,0 +1,11 @@
+PyOpenGL
+PyGLM
+numpy
+opencv-python
+maxminddb-geolite2
+wget
+requests
+chardet
+tree-sitter>=0.22.0
+tree-sitter-glsl
+freetype-py
