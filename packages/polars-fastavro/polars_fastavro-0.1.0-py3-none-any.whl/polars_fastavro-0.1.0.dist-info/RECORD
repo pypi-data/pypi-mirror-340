@@ -1,0 +1,7 @@
+polars_fastavro/__init__.py,sha256=Mqs64FuT9csXWxeDXaZjKCwJlvgt9ZWk0PvAR0pZwvI,1240
+polars_fastavro/_scan.py,sha256=TSuna5P0WWebJ3QR3IKUPlfvjjatCwFqTtwLBRxwQ2E,10341
+polars_fastavro/_sink.py,sha256=cv7H-sX9l5Fwbq_6VgY6x-c44w-fRC_ReCtiqo4t2ew,5190
+polars_fastavro-0.1.0.dist-info/METADATA,sha256=fkxfTTbrHbQ181mYHdYiMDKpCYFaRLsEoLeDbDGayyk,1701
+polars_fastavro-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+polars_fastavro-0.1.0.dist-info/licenses/LICENSE,sha256=L-HikluuUiDf-NEfk8uhPRrRUP9FWiEMMG2Ns5lPxo8,1064
+polars_fastavro-0.1.0.dist-info/RECORD,,
