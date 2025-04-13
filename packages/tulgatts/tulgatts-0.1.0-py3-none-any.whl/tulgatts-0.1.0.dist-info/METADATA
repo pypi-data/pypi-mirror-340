@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: tulgatts
+Version: 0.1.0
+Summary: TulgaTTS is an AI-based TTS library for generating speech with various voices popular in the region of Kazakhstan
+Home-page: https://github.com/dauitsuragan002/tulgatts
+Author: David Suragan
+Author-email: dauitsuragan002@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: PyCharacterAI >=0.2.0
+Requires-Dist: requests >=2.20.0
+Requires-Dist: python-dotenv >=0.10.0
+Provides-Extra: audio
+Requires-Dist: pygame >=2.0.0 ; extra == 'audio'
+
+TulgaTTS - AI-based TTS library for generating speech with various voices popular in Kazakhstan
