@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+MS23056UNO/__init__.py
+MS23056UNO/biseccion.py
+MS23056UNO/cramer.py
+MS23056UNO/gauss.py
+MS23056UNO/gauss_jordan.py
+MS23056UNO/gauss_seidel.py
+MS23056UNO/jacobi.py
+MS23056UNO/lu.py
+MS23056UNO.egg-info/PKG-INFO
+MS23056UNO.egg-info/SOURCES.txt
+MS23056UNO.egg-info/dependency_links.txt
+MS23056UNO.egg-info/requires.txt
+MS23056UNO.egg-info/top_level.txt

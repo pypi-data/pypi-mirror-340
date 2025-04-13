@@ -1,0 +1,62 @@
+Metadata-Version: 2.4
+Name: MS23056UNO
+Version: 0.1.1
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/MOiUES23/MS230565UNO
+Author: Moises Jonathan Martinez Saravia
+Author-email: ms23056@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# MS23056UNO
+
+LibrerÃ­a hecha en Python para resolver sistemas de ecuaciones lineales y no lineales.
+
+## MÃ©todos incluidos
+
+- EliminaciÃ³n de Gauss
+- Gauss-Jordan
+- Cramer
+- DescomposiciÃ³n LU
+- Jacobi
+- Gauss-Seidel
+- BisecciÃ³n
+
+## InstalaciÃ³n
+
+```bash
+pip install MS23056UNO
+```
+
+## Ejemplo de uso
+
+```python
+from MS23056UNO.gauss import gauss_elimination
+
+a = [[2, -1, 1],
+     [3, 3, 9],
+     [3, 3, 5]]
+b = [2, -1, 4]
+
+sol = gauss_elimination(a, b)
+print("SoluciÃ³n:", sol)
+```
+
+## Autor
+
+Tu Nombre MS23056
