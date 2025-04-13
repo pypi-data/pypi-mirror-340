@@ -1,0 +1,82 @@
+Metadata-Version: 2.4
+Name: tgppuserlocationinfo
+Version: 0.1.2
+Summary: A tool for retrieving and managing user location information based on 3GPP standards
+Project-URL: Homepage, https://github.com/fxyzbtc/tgppuserlocationinfo
+Project-URL: Repository, https://github.com/fxyzbtc/tgppuserlocationinfo
+Project-URL: Bug Tracker, https://github.com/fxyzbtc/tgppuserlocationinfo/issues
+Project-URL: Documentation, https://github.com/fxyzbtc/tgppuserlocationinfo#readme
+Author-email: fxyzbtc <fxyzbtc@users.noreply.github.com>
+License: MIT
+Keywords: 3gpp,location,mobile,telecommunications
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.12
+Requires-Dist: typer>=0.15.2
+Description-Content-Type: text/markdown
+
+# TGPPUserLocationInfo 🌍
+
+[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+A Python package for handling and processing user location information with precision and ease.
+
+## references
+1. 3gpp 29061
+2. 3gpp 29273
+
+## 🚀 Features
+
+- User location data processing
+- Easy-to-use API
+- Lightweight and efficient
+- Python 3.12+ support
+
+## 📦 Installation
+
+```bash
+uv pip install tgppuserlocationinfo
+```
+
+## 🖥️ Usage Example
+
+
+```python
+# save this as example.py
+from tgppuserlocationinfo import decode
+
+data = "8202f480879002f480003a0d21"
+decoded_data = decode(data)
+print(f"Decoded Data: {decoded_data}")
+```
+
+```bash
+python -m tgppuserlocationinfo 8202f480879002f480003a0d21
+
+# or run exe
+tgppuserlocationinfo.exe 8202f480879002f480003a0d21
+```
+
+## 📋 Requirements
+
+This package requires Python 3.12 or later. Dependencies are managed through `pyproject.toml`.
+
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📫 Contact
+
+If you have any questions or suggestions, please open an issue in the repository.
+
+---
+
+<div align="center">
+Made with ❤️ using Python
+</div>

@@ -1,0 +1,2 @@
+[console_scripts]
+tgppuserlocationinfo = tgppuserlocationinfo.main:app
