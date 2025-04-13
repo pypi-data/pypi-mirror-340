@@ -1,0 +1,10 @@
+include ntsulib/c/libs/*.dll
+include ntsulib/py.typed
+recursive-include ntsulib *.pyd
+graft ntsulib
+graft stubs
+global-exclude *.py
+global-exclude *.pyc
+recursive-include ntsulib __init__.py
+recursive-include ntsulib nio.py
+recursive-include ntsulib nout.py
