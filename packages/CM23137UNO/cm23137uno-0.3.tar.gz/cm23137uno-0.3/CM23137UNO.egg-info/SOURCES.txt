@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+CM23137UNO/__init__.py
+CM23137UNO/lineales.py
+CM23137UNO/no_lineales.py
+CM23137UNO.egg-info/PKG-INFO
+CM23137UNO.egg-info/SOURCES.txt
+CM23137UNO.egg-info/dependency_links.txt
+CM23137UNO.egg-info/requires.txt
+CM23137UNO.egg-info/top_level.txt
