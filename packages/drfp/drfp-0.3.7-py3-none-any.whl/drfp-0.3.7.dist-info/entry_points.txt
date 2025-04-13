@@ -1,0 +1,2 @@
+[console_scripts]
+drfp = drfp.cli:main
