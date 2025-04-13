@@ -1,0 +1,2 @@
+[console_scripts]
+hey = hey_cli.hey:main
