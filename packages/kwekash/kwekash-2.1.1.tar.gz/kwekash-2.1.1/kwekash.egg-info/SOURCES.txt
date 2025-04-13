@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+kwekash/__main__.py
+kwekash.egg-info/PKG-INFO
+kwekash.egg-info/SOURCES.txt
+kwekash.egg-info/dependency_links.txt
+kwekash.egg-info/entry_points.txt
+kwekash.egg-info/top_level.txt
