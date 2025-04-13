@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: pypi-honeypot-project-xyz-321
+Version: 0.0.6
+Description-Content-Type: text/markdown
+
+# Research package for install analytics
+
+## Description
+
+Founded that new packages are downloaded in the first ours. This behavior should be discovered closer.
+Package is not supposed to be installed to any systems, it's just raising error and collecting analytics.

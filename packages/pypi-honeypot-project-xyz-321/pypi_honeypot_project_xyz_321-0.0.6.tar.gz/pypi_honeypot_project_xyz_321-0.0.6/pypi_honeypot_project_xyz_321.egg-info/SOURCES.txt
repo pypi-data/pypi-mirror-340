@@ -1,0 +1,8 @@
+README.md
+analytics.py
+pyproject.toml
+setup.py
+pypi_honeypot_project_xyz_321.egg-info/PKG-INFO
+pypi_honeypot_project_xyz_321.egg-info/SOURCES.txt
+pypi_honeypot_project_xyz_321.egg-info/dependency_links.txt
+pypi_honeypot_project_xyz_321.egg-info/top_level.txt
