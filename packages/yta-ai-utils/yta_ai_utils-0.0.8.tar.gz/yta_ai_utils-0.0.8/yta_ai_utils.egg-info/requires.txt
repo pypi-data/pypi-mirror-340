@@ -1,0 +1,2 @@
+yta-general-utils
+google-generativeai
