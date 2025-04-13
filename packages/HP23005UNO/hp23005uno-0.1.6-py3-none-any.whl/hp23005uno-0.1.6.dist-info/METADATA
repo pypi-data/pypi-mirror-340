@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: HP23005UNO
+Version: 0.1.6
+Summary: Librería para resolver ecuaciones lineales y no lineales con métodos numéricos
+Home-page: https://github.com/HP23005/HP23005UNO
+Author: HP23005
+Author-email: hp23005@ues.edu.sv
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.18
+Requires-Dist: scipy>=1.4
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# HP23005UNO
+
+`HP23005UNO` es una librerÃ­a de Python que permite resolver sistemas de ecuaciones lineales y no lineales mediante distintos metodos numericos.
+
+## Metodos disponibles
+
+### Ecuaciones lineales:
+- Eliminacion de Gauss
+- Gauss-Jordan
+- Regla de Cramer
+- Descomposicion LU
+- Metodo de Jacobi
+- Metodo de Gauss-Seidel
+
+### Ecuaciones no lineales:
+- Metodo de BisecciÃ³n
+
+## InstalaciÃ³n
+```bash
+.\venv\Scripts\Activate
+pip numpy
+pip install --upgrade setuptools pip wheel
+pip install --upgrade HP23005UNO
