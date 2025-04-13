@@ -1,0 +1,2 @@
+[console_scripts]
+jsdesign-mcp = jsdesign_mcp.server:main
