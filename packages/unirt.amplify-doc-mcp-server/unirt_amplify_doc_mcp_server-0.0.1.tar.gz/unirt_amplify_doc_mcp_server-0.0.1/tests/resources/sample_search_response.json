@@ -1,0 +1,937 @@
+{
+    "results": [
+        {
+            "hits": [
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/storage/authorization/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Customize authorization rules - React - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Customize authorization rules",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/storage/authorization/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Customize <mark>auth</mark>orization rules",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Customize <mark>auth</mark>orization rules - React - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Customize <mark>auth</mark>orization rules",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/functions/examples/custom-auth-flows/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Custom Auth Challenge - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Custom Auth Challenge",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/functions/examples/custom-auth-flows/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Custom <mark>Auth</mark> Challenge",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Custom <mark>Auth</mark> Challenge - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Custom <mark>Auth</mark> Challenge",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/data/customize-authz/using-oidc-authorization-provider/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Use OpenID Connect as an authorization provider - React - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Use OpenID Connect as an authorization provider",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/data/customize-authz/using-oidc-authorization-provider/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Use OpenID Connect as an <mark>auth</mark>orization provider",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Use OpenID Connect as an <mark>auth</mark>orization provider - React - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Use OpenID Connect as an <mark>auth</mark>orization provider",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/data/customize-authz/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Customize your auth rules - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Customize your auth rules",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/data/customize-authz/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Customize your <mark>auth</mark> rules",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Customize your <mark>auth</mark> rules - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Customize your <mark>auth</mark> rules",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/set-up-auth/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Set up Amplify Auth - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Set up Amplify Auth",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/auth/set-up-auth/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Set up Amplify <mark>Auth</mark>",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Set up Amplify <mark>Auth</mark> - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Set up Amplify <mark>Auth</mark>",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/manage-users/manage-webauthn-credentials/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Manage WebAuthn credentials - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Manage WebAuthn credentials",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/auth/manage-users/manage-webauthn-credentials/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Manage Web<mark>Auth</mark>n credentials",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Manage Web<mark>Auth</mark>n credentials - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Manage Web<mark>Auth</mark>n credentials",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/grant-access-to-auth-resources/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Grant access to auth resources - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Grant access to auth resources",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/auth/grant-access-to-auth-resources/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Grant access to <mark>auth</mark> resources",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Grant access to <mark>auth</mark> resources - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Grant access to <mark>auth</mark> resources",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/customize-auth-lifecycle/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Customize auth lifecycle - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Customize auth lifecycle",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/auth/customize-auth-lifecycle/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Customize <mark>auth</mark> lifecycle",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Customize <mark>auth</mark> lifecycle - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Customize <mark>auth</mark> lifecycle",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/connect-your-frontend/using-the-authenticator/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Using the Authenticator - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Using the Authenticator",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/auth/connect-your-frontend/using-the-authenticator/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Using the <mark>Auth</mark>enticator",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Using the <mark>Auth</mark>enticator - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Using the <mark>Auth</mark>enticator",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/connect-your-frontend/switching-authentication-flows/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Switching authentication flows - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Switching authentication flows",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/auth/connect-your-frontend/switching-authentication-flows/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Switching <mark>auth</mark>entication flows",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Switching <mark>auth</mark>entication flows - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Switching <mark>auth</mark>entication flows",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/connect-your-frontend/listen-to-auth-events/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Listen to auth events - React - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Listen to auth events",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/auth/connect-your-frontend/listen-to-auth-events/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Listen to <mark>auth</mark> events",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Listen to <mark>auth</mark> events - React - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Listen to <mark>auth</mark> events",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/concepts/multi-factor-authentication/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Multi-factor authentication - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Multi-factor authentication",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/auth/concepts/multi-factor-authentication/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Multi-factor <mark>auth</mark>entication",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Multi-factor <mark>auth</mark>entication - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Multi-factor <mark>auth</mark>entication",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Authentication - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Authentication",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/auth/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "<mark>Auth</mark>entication",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "<mark>Auth</mark>entication - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "<mark>Auth</mark>entication",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/add-aws-services/rest-api/customize-authz/#pageMain",
+                    "content": null,
+                    "type": "lvl1",
+                    "hierarchy": {
+                        "lvl0": "Define authorization rules - React - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Define authorization rules",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "0-https://docs.amplify.aws/react/build-a-backend/add-aws-services/rest-api/customize-authz/",
+                    "_snippetResult": {
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Define <mark>auth</mark>orization rules",
+                                "matchLevel": "full"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Define <mark>auth</mark>orization rules - React - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            },
+                            "lvl1": {
+                                "value": "Define <mark>auth</mark>orization rules",
+                                "matchLevel": "full",
+                                "fullyHighlighted": false,
+                                "matchedWords": [
+                                    "auth"
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/data/customize-authz/signed-in-user-data-access/#pageMain",
+                    "content": "The authenticated authorization strategy restricts record access to only signed-in users authenticated through IAM, Cognito, or OpenID Connect, applying the authorization rule to all users. It provides a simple way to make data private to all authenticated users.\r\nauthenticated\r\nYou can use the authenticated authorization strategy to restrict a record's access to every signed-in user.\r\nauthenticated\r\nNote: If you want to restrict a record's access to a specific user, see Per-user/per-owner data access. The authenticated authorization strategy detailed on this page applies the authorization rule for data access to every signed-in user.\r\nauthenticated\r\nIn the example below, anyone with a valid JWT token from the Cognito user pool is allowed access to all Todos.\r\nconst schema = a.schema({ Todo: a .model({ content: a.string(), }) .authorization(allow =&gt; [allow.authenticated()]),});\r\nIn your application, you can perform CRUD operations against the model using client.models.&lt;model-name&gt; with the userPool auth mode.\r\nclient.models.&lt;model-name&gt;\r\nuserPool\r\nimport { generateClient } from 'aws-amplify/data';import type { Schema } from '../amplify/data/resource'; // Path to your backend resource definition\nconst client = generateClient&lt;Schema&gt;();\nconst { errors, data: newTodo } = await client.models.Todo.create( { content: 'My new todo', },Copy highlighted code example { authMode: 'userPool', });\r\nYou can also override the authorization provider. In the example below, identityPool is specified as the provider which allows you to use an \"Unauthenticated Role\" from the Cognito identity pool for public access instead of an API key. Your Auth resources defined in amplify/auth/resource.ts generates scoped down IAM policies for the \"Unauthenticated role\" in the Cognito identity pool automatically.\r\nidentityPool\r\namplify/auth/resource.ts\r\nconst schema = a.schema({ Todo: a .model({ content: a.string(), }) .authorization(allow =&gt; [allow.authenticated('identityPool')]),});\r\nIn your application, you can perform CRUD operations against the model using client.models.&lt;model-name&gt; with the iam auth mode.\r\nclient.models.&lt;model-name&gt;\r\niam\r\nThe user must be logged in for the Amplify Library to use the authenticated role from your Cognito identity pool.\r\nimport { generateClient } from 'aws-amplify/data';import type { Schema } from '../amplify/data/resource'; // Path to your backend resource definition\nconst client = generateClient&lt;Schema&gt;();\nconst { errors, data: newTodo } = await client.models.Todo.create( { content: 'My new todo', },Copy highlighted code example { authMode: 'identityPool', });\r\nIn addition, you can also use OpenID Connect with authenticated authorization. See OpenID Connect as an authorization provider.\r\nauthenticated",
+                    "type": "content",
+                    "hierarchy": {
+                        "lvl0": "Signed-in user data access - React - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Signed-in user data access",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "1-https://docs.amplify.aws/react/build-a-backend/data/customize-authz/signed-in-user-data-access/",
+                    "_snippetResult": {
+                        "content": {
+                            "value": "… <mark>auth</mark>enticated\r\nYou can use the <mark>auth</mark>enticated <mark>auth</mark>orization strategy to restrict …",
+                            "matchLevel": "full"
+                        },
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Signed-in user data access",
+                                "matchLevel": "none"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "content": {
+                            "value": "The <mark>auth</mark>enticated <mark>auth</mark>orization strategy restricts record access to only signed-in users <mark>auth</mark>enticated through IAM, Cognito, or OpenID Connect, applying the <mark>auth</mark>orization rule to all users. It provides a simple way to make data private to all <mark>auth</mark>enticated users.\r\n<mark>auth</mark>enticated\r\nYou can use the <mark>auth</mark>enticated <mark>auth</mark>orization strategy to restrict a record's access to every signed-in user.\r\n<mark>auth</mark>enticated\r\nNote: If you want to restrict a record's access to a specific user, see Per-user/per-owner data access. The <mark>auth</mark>enticated <mark>auth</mark>orization strategy detailed on this page applies the <mark>auth</mark>orization rule for data access to every signed-in user.\r\n<mark>auth</mark>enticated\r\nIn the example below, anyone with a valid JWT token from the Cognito user pool is allowed access to all Todos.\r\nconst schema = a.schema({ Todo: a .model({ content: a.string(), }) .<mark>auth</mark>orization(allow =&gt; [allow.<mark>auth</mark>enticated()]),});\r\nIn your application, you can perform CRUD operations against the model using client.models.&lt;model-name&gt; with the userPool <mark>auth</mark> mode.\r\nclient.models.&lt;model-name&gt;\r\nuserPool\r\nimport { generateClient } from 'aws-amplify/data';import type { Schema } from '../amplify/data/resource'; // Path to your backend resource definition\nconst client = generateClient&lt;Schema&gt;();\nconst { errors, data: newTodo } = await client.models.Todo.create( { content: 'My new todo', },Copy highlighted code example { <mark>auth</mark>Mode: 'userPool', });\r\nYou can also override the <mark>auth</mark>orization provider. In the example below, identityPool is specified as the provider which allows you to use an \"Unauthenticated Role\" from the Cognito identity pool for public access instead of an API key. Your <mark>Auth</mark> resources defined in amplify/<mark>auth</mark>/resource.ts generates scoped down IAM policies for the \"Unauthenticated role\" in the Cognito identity pool automatically.\r\nidentityPool\r\namplify/<mark>auth</mark>/resource.ts\r\nconst schema = a.schema({ Todo: a .model({ content: a.string(), }) .<mark>auth</mark>orization(allow =&gt; [allow.<mark>auth</mark>enticated('identityPool')]),});\r\nIn your application, you can perform CRUD operations against the model using client.models.&lt;model-name&gt; with the iam <mark>auth</mark> mode.\r\nclient.models.&lt;model-name&gt;\r\niam\r\nThe user must be logged in for the Amplify Library to use the <mark>auth</mark>enticated role from your Cognito identity pool.\r\nimport { generateClient } from 'aws-amplify/data';import type { Schema } from '../amplify/data/resource'; // Path to your backend resource definition\nconst client = generateClient&lt;Schema&gt;();\nconst { errors, data: newTodo } = await client.models.Todo.create( { content: 'My new todo', },Copy highlighted code example { <mark>auth</mark>Mode: 'identityPool', });\r\nIn addition, you can also use OpenID Connect with <mark>auth</mark>enticated <mark>auth</mark>orization. See OpenID Connect as an <mark>auth</mark>orization provider.\r\n<mark>auth</mark>enticated",
+                            "matchLevel": "full",
+                            "fullyHighlighted": false,
+                            "matchedWords": [
+                                "auth"
+                            ]
+                        },
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Signed-in user data access - React - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            "lvl1": {
+                                "value": "Signed-in user data access",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/use-existing-cognito-resources/#pageMain",
+                    "content": "Amplify Auth can be configured to use an existing Amazon Cognito user pool and identity pool. If you are in a team setting or part of a company that has previously created auth resources, you can configure the client library directly, or maintain references with AWS Cloud Development Kit (AWS CDK) in your Amplify backend.\r\nNote: when using existing auth resources, it may be necessary to add additional policies or permissions for your authenticated and unauthenticated IAM roles. These changes must be performed manually.\r\nYou can use existing resources without an Amplify backend by configuring the client library directly.\r\nimport { Amplify } from \"aws-amplify\"\nAmplify.configure({ Auth: { Cognito: { userPoolId: \"&lt;your-cognito-user-pool-id&gt;\", userPoolClientId: \"&lt;your-cognito-user-pool-client-id&gt;\", identityPoolId: \"&lt;your-cognito-identity-pool-id&gt;\", loginWith: { email: true, }, signUpVerificationMethod: \"code\", userAttributes: { email: { required: true, }, }, allowGuestAccess: true, passwordFormat: { minLength: 8, requireLowercase: true, requireUppercase: true, requireNumbers: true, requireSpecialCharacters: true, }, }, },})\r\nAmplify cannot modify the configuration of your referenced resources and only captures the resource configuration at the time of reference, any subsequent changes made to the referenced resources will not be automatically reflected in your Amplify backend.\r\nIf you have created Amazon Cognito resources outside of the context of your Amplify app such as creating resources through the AWS Console or consuming resources created by a separate team, you can use referenceAuth to reference the existing resources. It requires a user pool, a user pool client, identity pool, and an authenticated &amp; unauthenticated IAM role configured on your identity pool.\r\nreferenceAuth\r\nimport { referenceAuth } from '@aws-amplify/backend';\nexport const auth = referenceAuth({ userPoolId: 'us-east-1_xxxx', identityPoolId: 'us-east-1:b57b7c3b-9c95-43e4-9266-xxxx', authRoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplifyAuthauthenticatedU-xxxx', unauthRoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplifyAuthunauthenticate-xxxx', userPoolClientId: 'xxxx',});\r\nIAM policies specific to your Amplify application will be appended to your authenticated and unauthenticated roles, and applications using the referenced resource will be able to create users in the Cognito user pool and identities in the Cognito identity pool.\r\nYou can also use the access property to grant permissions to your auth resource from other Amplify backend resources. For example, if you have a function that needs to retrieve details about a user:\r\naccess\r\nimport { referenceAuth } from '@aws-amplify/backend';import { getUser } from \"../functions/get-user/resource\";\nexport const auth = referenceAuth({ userPoolId: 'us-east-1_xxxx', identityPoolId: 'us-east-1:b57b7c3b-9c95-43e4-9266-xxxx', authRoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplifyAuthauthenticatedU-xxxx', unauthRoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplifyAuthunauthenticate-xxxx', userPoolClientId: 'xxxx', access: (allow) =&gt; [ allow.resource(getUser).to([\"getUser\"]), ],});\r\nAdditionally, you can also use the groups property to reference groups in your user pool. This is useful if you want to work with groups in your application and provide access to resources such as storage based on group membership.\r\ngroups\r\nimport { referenceAuth } from '@aws-amplify/backend';import { getUser } from \"../functions/get-user/resource\";\nexport const auth = referenceAuth({ userPoolId: 'us-east-1_xxxx', identityPoolId: 'us-east-1:b57b7c3b-9c95-43e4-9266-xxxx', authRoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplifyAuthauthenticatedU-xxxx', unauthRoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplifyAuthunauthenticate-xxxx', userPoolClientId: 'xxxx', groups: { admin: \"arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplifyAuthadminGroupRole-xxxx\", },});\r\nIn a team setting you may want to reference a different set of auth resources depending on the deployment context. For instance if you have a staging branch that should reuse resources from a separate \"staging\" environment compared to a production branch that should reuse resources from the separate \"production\" environment. In this case we recommend using environment variables.\r\nstaging\r\nproduction\r\nimport { referenceAuth } from '@aws-amplify/backend';\nexport const auth = referenceAuth({ userPoolId: process.env.MY_USER_POOL_ID, identityPoolId: process.env.MY_IDENTITY_POOL_ID, authRoleArn: process.env.MY_AUTH_ROLE_ARN, unauthRoleArn: process.env.MY_UNAUTH_ROLE_ARN, userPoolClientId: process.env.MY_USER_POOL_CLIENT_ID,});\r\nEnvironment variables must be configured separately on your machine for sandbox deployments and Amplify console for branch deployments.\r\nLearn how to connect your frontend",
+                    "type": "content",
+                    "hierarchy": {
+                        "lvl0": "Use existing Cognito resources - React - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Use existing Cognito resources",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "1-https://docs.amplify.aws/react/build-a-backend/auth/use-existing-cognito-resources/",
+                    "_snippetResult": {
+                        "content": {
+                            "value": "… on your identity pool.\r\nreference<mark>Auth</mark>\r\nimport { reference<mark>Auth</mark> } from …",
+                            "matchLevel": "full"
+                        },
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Use existing Cognito resources",
+                                "matchLevel": "none"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "content": {
+                            "value": "Amplify <mark>Auth</mark> can be configured to use an existing Amazon Cognito user pool and identity pool. If you are in a team setting or part of a company that has previously created <mark>auth</mark> resources, you can configure the client library directly, or maintain references with AWS Cloud Development Kit (AWS CDK) in your Amplify backend.\r\nNote: when using existing <mark>auth</mark> resources, it may be necessary to add additional policies or permissions for your <mark>auth</mark>enticated and unauthenticated IAM roles. These changes must be performed manually.\r\nYou can use existing resources without an Amplify backend by configuring the client library directly.\r\nimport { Amplify } from \"aws-amplify\"\nAmplify.configure({ <mark>Auth</mark>: { Cognito: { userPoolId: \"&lt;your-cognito-user-pool-id&gt;\", userPoolClientId: \"&lt;your-cognito-user-pool-client-id&gt;\", identityPoolId: \"&lt;your-cognito-identity-pool-id&gt;\", loginWith: { email: true, }, signUpVerificationMethod: \"code\", userAttributes: { email: { required: true, }, }, allowGuestAccess: true, passwordFormat: { minLength: 8, requireLowercase: true, requireUppercase: true, requireNumbers: true, requireSpecialCharacters: true, }, }, },})\r\nAmplify cannot modify the configuration of your referenced resources and only captures the resource configuration at the time of reference, any subsequent changes made to the referenced resources will not be automatically reflected in your Amplify backend.\r\nIf you have created Amazon Cognito resources outside of the context of your Amplify app such as creating resources through the AWS Console or consuming resources created by a separate team, you can use reference<mark>Auth</mark> to reference the existing resources. It requires a user pool, a user pool client, identity pool, and an <mark>auth</mark>enticated &amp; unauthenticated IAM role configured on your identity pool.\r\nreference<mark>Auth</mark>\r\nimport { reference<mark>Auth</mark> } from '@aws-amplify/backend';\nexport const <mark>auth</mark> = reference<mark>Auth</mark>({ userPoolId: 'us-east-1_xxxx', identityPoolId: 'us-east-1:b57b7c3b-9c95-43e4-9266-xxxx', <mark>auth</mark>RoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplify<mark>Auth</mark>authenticatedU-xxxx', unauthRoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplify<mark>Auth</mark>unauthenticate-xxxx', userPoolClientId: 'xxxx',});\r\nIAM policies specific to your Amplify application will be appended to your <mark>auth</mark>enticated and unauthenticated roles, and applications using the referenced resource will be able to create users in the Cognito user pool and identities in the Cognito identity pool.\r\nYou can also use the access property to grant permissions to your <mark>auth</mark> resource from other Amplify backend resources. For example, if you have a function that needs to retrieve details about a user:\r\naccess\r\nimport { reference<mark>Auth</mark> } from '@aws-amplify/backend';import { getUser } from \"../functions/get-user/resource\";\nexport const <mark>auth</mark> = reference<mark>Auth</mark>({ userPoolId: 'us-east-1_xxxx', identityPoolId: 'us-east-1:b57b7c3b-9c95-43e4-9266-xxxx', <mark>auth</mark>RoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplify<mark>Auth</mark>authenticatedU-xxxx', unauthRoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplify<mark>Auth</mark>unauthenticate-xxxx', userPoolClientId: 'xxxx', access: (allow) =&gt; [ allow.resource(getUser).to([\"getUser\"]), ],});\r\nAdditionally, you can also use the groups property to reference groups in your user pool. This is useful if you want to work with groups in your application and provide access to resources such as storage based on group membership.\r\ngroups\r\nimport { reference<mark>Auth</mark> } from '@aws-amplify/backend';import { getUser } from \"../functions/get-user/resource\";\nexport const <mark>auth</mark> = reference<mark>Auth</mark>({ userPoolId: 'us-east-1_xxxx', identityPoolId: 'us-east-1:b57b7c3b-9c95-43e4-9266-xxxx', <mark>auth</mark>RoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplify<mark>Auth</mark>authenticatedU-xxxx', unauthRoleArn: 'arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplify<mark>Auth</mark>unauthenticate-xxxx', userPoolClientId: 'xxxx', groups: { admin: \"arn:aws:iam::xxxx:role/amplify-xxxx-mai-amplify<mark>Auth</mark>adminGroupRole-xxxx\", },});\r\nIn a team setting you may want to reference a different set of <mark>auth</mark> resources depending on the deployment context. For instance if you have a staging branch that should reuse resources from a separate \"staging\" environment compared to a production branch that should reuse resources from the separate \"production\" environment. In this case we recommend using environment variables.\r\nstaging\r\nproduction\r\nimport { reference<mark>Auth</mark> } from '@aws-amplify/backend';\nexport const <mark>auth</mark> = reference<mark>Auth</mark>({ userPoolId: process.env.MY_USER_POOL_ID, identityPoolId: process.env.MY_IDENTITY_POOL_ID, <mark>auth</mark>RoleArn: process.env.MY_<mark>AUTH</mark>_ROLE_ARN, unauthRoleArn: process.env.MY_UNAUTH_ROLE_ARN, userPoolClientId: process.env.MY_USER_POOL_CLIENT_ID,});\r\nEnvironment variables must be configured separately on your machine for sandbox deployments and Amplify console for branch deployments.\r\nLearn how to connect your frontend",
+                            "matchLevel": "full",
+                            "fullyHighlighted": false,
+                            "matchedWords": [
+                                "auth"
+                            ]
+                        },
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Use existing Cognito resources - React - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            "lvl1": {
+                                "value": "Use existing Cognito resources",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/moving-to-production/#pageMain",
+                    "content": "Amplify Auth provisions Amazon Cognito resources that are provisioned with limited capabilities for sending email and SMS messages. In its default state, it is not intended to handle production workloads, but is sufficient for developing your application and associated business logic.\r\nCognito provides a default email functionality that limits how many emails can be sent in one day. When considering production workloads, Cognito can be configured to send emails using Amazon Simple Email Service (Amazon SES).\r\nAll new AWS accounts default to a \"sandbox\" status with Amazon SES. This comes with the primary caveat that you can only send mail to verified email addresses and domains\r\nTo get started with Amazon SES in production, you must first request production access. Once you submit your request the submission cannot be modified, however you will receive a response from AWS within 24 hours.\r\nAfter you have configured your account for production access and have verified your sender email, you can configure your Cognito user pool to send emails using the verified sender:\r\nimport { defineAuth } from \"@aws-amplify/backend\"\n/** * Define and configure your auth resource * @see https://docs.amplify.aws/react/build-a-backend/auth */export const auth = defineAuth({ loginWith: { email: true, }, senders: { email: { // configure using the email registered and verified in Amazon SES fromEmail: \"registrations@example.com\", }, },})\r\nNow when emails are sent on new user sign-ups, password resets, etc., the sending account will be your verified email! To customize further, you can change the display name of the sender, or optionally apply a custom address for your users to reply.\r\nimport { defineAuth } from \"@aws-amplify/backend\"\n/** * Define and configure your auth resource * @see https://docs.amplify.aws/react/build-a-backend/auth */export const auth = defineAuth({ loginWith: { email: true, }, senders: { email: { fromEmail: \"registrations@example.com\",Copy highlighted code example fromName: \"MyApp\", replyTo: \"inquiries@example.com\" }, },})\r\nIn order to send SMS authentication codes, you must request an origination number. Authentication codes will be sent from the origination number. If your AWS account is in the SMS sandbox, you must also add a destination phone number, which can be done by going to the Amazon Pinpoint Console, selecting SMS and voice in the navigation pane, and selecting Add phone number in the Destination phone numbers tab. To check if your AWS account is in the SMS sandbox, go to the SNS console, select the Text messaging (SMS) tab from the navigation pane, and check the status under the Account information section.",
+                    "type": "content",
+                    "hierarchy": {
+                        "lvl0": "Moving to production - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Moving to production",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "1-https://docs.amplify.aws/react/build-a-backend/auth/moving-to-production/",
+                    "_snippetResult": {
+                        "content": {
+                            "value": "… a-backend/<mark>auth</mark> */export const <mark>auth</mark> = define<mark>Auth</mark>({ loginWith …",
+                            "matchLevel": "full"
+                        },
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Moving to production",
+                                "matchLevel": "none"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "content": {
+                            "value": "Amplify <mark>Auth</mark> provisions Amazon Cognito resources that are provisioned with limited capabilities for sending email and SMS messages. In its default state, it is not intended to handle production workloads, but is sufficient for developing your application and associated business logic.\r\nCognito provides a default email functionality that limits how many emails can be sent in one day. When considering production workloads, Cognito can be configured to send emails using Amazon Simple Email Service (Amazon SES).\r\nAll new AWS accounts default to a \"sandbox\" status with Amazon SES. This comes with the primary caveat that you can only send mail to verified email addresses and domains\r\nTo get started with Amazon SES in production, you must first request production access. Once you submit your request the submission cannot be modified, however you will receive a response from AWS within 24 hours.\r\nAfter you have configured your account for production access and have verified your sender email, you can configure your Cognito user pool to send emails using the verified sender:\r\nimport { define<mark>Auth</mark> } from \"@aws-amplify/backend\"\n/** * Define and configure your <mark>auth</mark> resource * @see https://docs.amplify.aws/react/build-a-backend/<mark>auth</mark> */export const <mark>auth</mark> = define<mark>Auth</mark>({ loginWith: { email: true, }, senders: { email: { // configure using the email registered and verified in Amazon SES fromEmail: \"registrations@example.com\", }, },})\r\nNow when emails are sent on new user sign-ups, password resets, etc., the sending account will be your verified email! To customize further, you can change the display name of the sender, or optionally apply a custom address for your users to reply.\r\nimport { define<mark>Auth</mark> } from \"@aws-amplify/backend\"\n/** * Define and configure your <mark>auth</mark> resource * @see https://docs.amplify.aws/react/build-a-backend/<mark>auth</mark> */export const <mark>auth</mark> = define<mark>Auth</mark>({ loginWith: { email: true, }, senders: { email: { fromEmail: \"registrations@example.com\",Copy highlighted code example fromName: \"MyApp\", replyTo: \"inquiries@example.com\" }, },})\r\nIn order to send SMS <mark>auth</mark>entication codes, you must request an origination number. <mark>Auth</mark>entication codes will be sent from the origination number. If your AWS account is in the SMS sandbox, you must also add a destination phone number, which can be done by going to the Amazon Pinpoint Console, selecting SMS and voice in the navigation pane, and selecting Add phone number in the Destination phone numbers tab. To check if your AWS account is in the SMS sandbox, go to the SNS console, select the Text messaging (SMS) tab from the navigation pane, and check the status under the Account information section.",
+                            "matchLevel": "full",
+                            "fullyHighlighted": false,
+                            "matchedWords": [
+                                "auth"
+                            ]
+                        },
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Moving to production - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            "lvl1": {
+                                "value": "Moving to production",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/modify-resources-with-cdk/#pageMain",
+                    "content": "Amplify Auth provides sensible defaults for the underlying Amazon Cognito resource definitions. You can customize your authentication resource to enable it to behave exactly as needed for your use cases by modifying it directly using AWS Cloud Development Kit (CDK)\r\nYou can override the password policy by using the L1 cfnUserPool construct and adding a addPropertyOverride.\r\ncfnUserPool\r\naddPropertyOverride\r\nimport { defineBackend } from '@aws-amplify/backend';import { auth } from './auth/resource';\nconst backend = defineBackend({ auth,});// extract L1 CfnUserPool resourcesconst { cfnUserPool } = backend.auth.resources.cfnResources;// modify cfnUserPool policies directlycfnUserPool.policies = { passwordPolicy: { minimumLength: 10, requireLowercase: true, requireNumbers: true, requireSymbols: true, requireUppercase: true, temporaryPasswordValidityDays: 20, },};\r\nWhile Email MFA is not yet supported with defineAuth, this feature can be enabled by modifying the underlying CDK construct.\r\ndefineAuth\r\nStart by ensuring your defineAuth resource configuration includes a compatible account recovery option and a custom SES sender.\r\ndefineAuth\r\nimport { defineAuth } from \"@aws-amplify/backend\"\n/** * Define and configure your auth resource * @see https://docs.amplify.aws/gen2/build-a-backend/auth */export const auth = defineAuth({ loginWith: { email: true, phone: true, }, multifactor: { mode: \"OPTIONAL\", sms: true, totp: false, }, // Important! The logic to resolve this value cannot determine whether email mfa is enabled when overriding the resource. // Be sure to pick a recovery option appropriate for your application. accountRecovery: \"EMAIL_AND_PHONE_WITHOUT_MFA\", senders: { email: { fromEmail: \"registrations@example.com\", }, },})\r\nNext, extend the underlying CDK construct by activating Amazon Cognito's Advanced Security Features (ASF) and add EMAIL_OTP to the enabled MFA options.\r\nEMAIL_OTP\r\nimport { defineBackend } from \"@aws-amplify/backend\"import { auth } from \"./auth/resource\"\nconst backend = defineBackend({ auth,})\nconst { cfnUserPool } = backend.auth.resources.cfnResources\n// enable ASFcfnUserPool.userPoolAddOns = { advancedSecurityMode: \"AUDIT\",}\n// add email mfa// https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-enabledmfascfnUserPool.enabledMfas = [...(cfnUserPool.enabledMfas || []), \"EMAIL_OTP\"]\r\nYou can modify the underlying Cognito user pool resource to enable sign in with passwordless methods. Learn more about passwordless sign-in methods.\r\nimport { defineBackend } from \"@aws-amplify/backend\"import { auth } from \"./auth/resource\"\nconst backend = defineBackend({ auth,})\nconst { cfnResources } = backend.auth.resources;const { cfnUserPool, cfnUserPoolClient } = cfnResources;\ncfnUserPool.addPropertyOverride(\t'Policies.SignInPolicy.AllowedFirstAuthFactors',\t['PASSWORD', 'WEB_AUTHN', 'EMAIL_OTP', 'SMS_OTP']);\ncfnUserPoolClient.explicitAuthFlows = [\t'ALLOW_REFRESH_TOKEN_AUTH',\t'ALLOW_USER_AUTH'];\n/* Needed for WebAuthn */cfnUserPool.addPropertyOverride('WebAuthnRelyingPartyID', '&lt;RELYING_PARTY&gt;');cfnUserPool.addPropertyOverride('WebAuthnUserVerification', 'preferred');",
+                    "type": "content",
+                    "hierarchy": {
+                        "lvl0": "Modify Amplify-generated Cognito resources with CDK - React - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Modify Amplify-generated Cognito resources with CDK",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "1-https://docs.amplify.aws/react/build-a-backend/auth/modify-resources-with-cdk/",
+                    "_snippetResult": {
+                        "content": {
+                            "value": "… a-backend/<mark>auth</mark> */export const <mark>auth</mark> = define<mark>Auth</mark>({ loginWith …",
+                            "matchLevel": "full"
+                        },
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Modify Amplify-generated Cognito resources with CDK",
+                                "matchLevel": "none"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "content": {
+                            "value": "Amplify <mark>Auth</mark> provides sensible defaults for the underlying Amazon Cognito resource definitions. You can customize your <mark>auth</mark>entication resource to enable it to behave exactly as needed for your use cases by modifying it directly using AWS Cloud Development Kit (CDK)\r\nYou can override the password policy by using the L1 cfnUserPool construct and adding a addPropertyOverride.\r\ncfnUserPool\r\naddPropertyOverride\r\nimport { defineBackend } from '@aws-amplify/backend';import { <mark>auth</mark> } from './<mark>auth</mark>/resource';\nconst backend = defineBackend({ <mark>auth</mark>,});// extract L1 CfnUserPool resourcesconst { cfnUserPool } = backend.<mark>auth</mark>.resources.cfnResources;// modify cfnUserPool policies directlycfnUserPool.policies = { passwordPolicy: { minimumLength: 10, requireLowercase: true, requireNumbers: true, requireSymbols: true, requireUppercase: true, temporaryPasswordValidityDays: 20, },};\r\nWhile Email MFA is not yet supported with define<mark>Auth</mark>, this feature can be enabled by modifying the underlying CDK construct.\r\ndefine<mark>Auth</mark>\r\nStart by ensuring your define<mark>Auth</mark> resource configuration includes a compatible account recovery option and a custom SES sender.\r\ndefine<mark>Auth</mark>\r\nimport { define<mark>Auth</mark> } from \"@aws-amplify/backend\"\n/** * Define and configure your <mark>auth</mark> resource * @see https://docs.amplify.aws/gen2/build-a-backend/<mark>auth</mark> */export const <mark>auth</mark> = define<mark>Auth</mark>({ loginWith: { email: true, phone: true, }, multifactor: { mode: \"OPTIONAL\", sms: true, totp: false, }, // Important! The logic to resolve this value cannot determine whether email mfa is enabled when overriding the resource. // Be sure to pick a recovery option appropriate for your application. accountRecovery: \"EMAIL_AND_PHONE_WITHOUT_MFA\", senders: { email: { fromEmail: \"registrations@example.com\", }, },})\r\nNext, extend the underlying CDK construct by activating Amazon Cognito's Advanced Security Features (ASF) and add EMAIL_OTP to the enabled MFA options.\r\nEMAIL_OTP\r\nimport { defineBackend } from \"@aws-amplify/backend\"import { <mark>auth</mark> } from \"./<mark>auth</mark>/resource\"\nconst backend = defineBackend({ <mark>auth</mark>,})\nconst { cfnUserPool } = backend.<mark>auth</mark>.resources.cfnResources\n// enable ASFcfnUserPool.userPoolAddOns = { advancedSecurityMode: \"AUDIT\",}\n// add email mfa// https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpool.html#cfn-cognito-userpool-enabledmfascfnUserPool.enabledMfas = [...(cfnUserPool.enabledMfas || []), \"EMAIL_OTP\"]\r\nYou can modify the underlying Cognito user pool resource to enable sign in with passwordless methods. Learn more about passwordless sign-in methods.\r\nimport { defineBackend } from \"@aws-amplify/backend\"import { <mark>auth</mark> } from \"./<mark>auth</mark>/resource\"\nconst backend = defineBackend({ <mark>auth</mark>,})\nconst { cfnResources } = backend.<mark>auth</mark>.resources;const { cfnUserPool, cfnUserPoolClient } = cfnResources;\ncfnUserPool.addPropertyOverride(\t'Policies.SignInPolicy.AllowedFirst<mark>Auth</mark>Factors',\t['PASSWORD', 'WEB_<mark>AUTH</mark>N', 'EMAIL_OTP', 'SMS_OTP']);\ncfnUserPoolClient.explicit<mark>Auth</mark>Flows = [\t'ALLOW_REFRESH_TOKEN_<mark>AUTH</mark>',\t'ALLOW_USER_<mark>AUTH</mark>'];\n/* Needed for Web<mark>Auth</mark>n */cfnUserPool.addPropertyOverride('Web<mark>Auth</mark>nRelyingPartyID', '&lt;RELYING_PARTY&gt;');cfnUserPool.addPropertyOverride('Web<mark>Auth</mark>nUserVerification', 'preferred');",
+                            "matchLevel": "full",
+                            "fullyHighlighted": false,
+                            "matchedWords": [
+                                "auth"
+                            ]
+                        },
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Modify Amplify-generated Cognito resources with CDK - React - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            "lvl1": {
+                                "value": "Modify Amplify-generated Cognito resources with CDK",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/manage-users/with-admin-actions/#pageMain",
+                    "content": "Amplify Auth can be managed with the AWS SDK's @aws-sdk/client-cognito-identity-provider package. This package is intended to use server-side, and can be used within a Function. This example focuses on the addUserToGroup action and will be defined as a custom mutation.\r\n@aws-sdk/client-cognito-identity-provider\r\naddUserToGroup\r\nTo get started, create an \"ADMINS\" group that will be used to authorize the mutation:\r\nimport { defineAuth } from \"@aws-amplify/backend\"\nexport const auth = defineAuth({ loginWith: { email: true, },Copy highlighted code example groups: [\"ADMINS\"]})\r\nNext, create the Function resource:\r\nimport { defineFunction } from \"@aws-amplify/backend\"\nexport const addUserToGroup = defineFunction({ name: \"add-user-to-group\",})\r\nThen, in your auth resources, grant access for the function to perform the addUserToGroup action. Learn more about granting access to auth resources.\r\naddUserToGroup\r\nimport { defineAuth } from \"@aws-amplify/backend\"Copy highlighted code exampleimport { addUserToGroup } from \"../data/add-user-to-group/resource\"\nexport const auth = defineAuth({ loginWith: { email: true, }, groups: [\"ADMINS\"],Copy highlighted code example access: (allow) =&gt; [ allow.resource(addUserToGroup).to([\"addUserToGroup\"]) ],})\r\nYou're now ready to define the custom mutation. Here you will use the newly-created addUserToGroup function resource to handle the addUserToGroup mutation. This mutation can only be called by a user in the \"ADMINS\" group.\r\naddUserToGroup\r\naddUserToGroup\r\nimport type { ClientSchema } from \"@aws-amplify/backend\"import { a, defineData } from \"@aws-amplify/backend\"import { addUserToGroup } from \"./resource\"\nconst schema = a.schema({ addUserToGroup: a .mutation() .arguments({ userId: a.string().required(), groupName: a.string().required(), }) .authorization((allow) =&gt; [allow.group(\"ADMINS\")]) .handler(a.handler.function(addUserToGroup)) .returns(a.json())})\nexport type Schema = ClientSchema&lt;typeof schema&gt;\nexport const data = defineData({ schema, authorizationModes: { defaultAuthorizationMode: \"iam\", },})\r\nLastly, create the function's handler using the exported client schema to type the handler function, and the generated env to specify the user pool ID you'd like to interact with:\r\nenv\r\nimport type { Schema } from \"../resource\"import { env } from \"$amplify/env/add-user-to-group\"import { AdminAddUserToGroupCommand, CognitoIdentityProviderClient,} from \"@aws-sdk/client-cognito-identity-provider\"\ntype Handler = Schema[\"addUserToGroup\"][\"functionHandler\"]const client = new CognitoIdentityProviderClient()\nexport const handler: Handler = async (event) =&gt; { const { userId, groupName } = event.arguments const command = new AdminAddUserToGroupCommand({ Username: userId, GroupName: groupName, UserPoolId: env.AMPLIFY_AUTH_USERPOOL_ID, }) const response = await client.send(command) return response}\r\nIn your frontend, use the generated client to call your mutation using the group name and the user's ID.\r\nimport type { Schema } from \"../amplify/data/resource\"import { generateClient } from \"aws-amplify/data\"\nconst client = generateClient&lt;Schema&gt;()\nawait client.mutations.addUserToGroup({ groupName: \"ADMINS\", userId: \"5468d468-4061-70ed-8870-45c766d26225\",})",
+                    "type": "content",
+                    "hierarchy": {
+                        "lvl0": "With admin actions - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "With admin actions",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "1-https://docs.amplify.aws/react/build-a-backend/auth/manage-users/with-admin-actions/",
+                    "_snippetResult": {
+                        "content": {
+                            "value": "… <mark>auth</mark>orize the mutation:\r\nimport { define<mark>Auth</mark> } from \"@aws-amplify/backend …",
+                            "matchLevel": "full"
+                        },
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "With admin actions",
+                                "matchLevel": "none"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "content": {
+                            "value": "Amplify <mark>Auth</mark> can be managed with the AWS SDK's @aws-sdk/client-cognito-identity-provider package. This package is intended to use server-side, and can be used within a Function. This example focuses on the addUserToGroup action and will be defined as a custom mutation.\r\n@aws-sdk/client-cognito-identity-provider\r\naddUserToGroup\r\nTo get started, create an \"ADMINS\" group that will be used to <mark>auth</mark>orize the mutation:\r\nimport { define<mark>Auth</mark> } from \"@aws-amplify/backend\"\nexport const <mark>auth</mark> = define<mark>Auth</mark>({ loginWith: { email: true, },Copy highlighted code example groups: [\"ADMINS\"]})\r\nNext, create the Function resource:\r\nimport { defineFunction } from \"@aws-amplify/backend\"\nexport const addUserToGroup = defineFunction({ name: \"add-user-to-group\",})\r\nThen, in your <mark>auth</mark> resources, grant access for the function to perform the addUserToGroup action. Learn more about granting access to <mark>auth</mark> resources.\r\naddUserToGroup\r\nimport { define<mark>Auth</mark> } from \"@aws-amplify/backend\"Copy highlighted code exampleimport { addUserToGroup } from \"../data/add-user-to-group/resource\"\nexport const <mark>auth</mark> = define<mark>Auth</mark>({ loginWith: { email: true, }, groups: [\"ADMINS\"],Copy highlighted code example access: (allow) =&gt; [ allow.resource(addUserToGroup).to([\"addUserToGroup\"]) ],})\r\nYou're now ready to define the custom mutation. Here you will use the newly-created addUserToGroup function resource to handle the addUserToGroup mutation. This mutation can only be called by a user in the \"ADMINS\" group.\r\naddUserToGroup\r\naddUserToGroup\r\nimport type { ClientSchema } from \"@aws-amplify/backend\"import { a, defineData } from \"@aws-amplify/backend\"import { addUserToGroup } from \"./resource\"\nconst schema = a.schema({ addUserToGroup: a .mutation() .arguments({ userId: a.string().required(), groupName: a.string().required(), }) .<mark>auth</mark>orization((allow) =&gt; [allow.group(\"ADMINS\")]) .handler(a.handler.function(addUserToGroup)) .returns(a.json())})\nexport type Schema = ClientSchema&lt;typeof schema&gt;\nexport const data = defineData({ schema, <mark>auth</mark>orizationModes: { default<mark>Auth</mark>orizationMode: \"iam\", },})\r\nLastly, create the function's handler using the exported client schema to type the handler function, and the generated env to specify the user pool ID you'd like to interact with:\r\nenv\r\nimport type { Schema } from \"../resource\"import { env } from \"$amplify/env/add-user-to-group\"import { AdminAddUserToGroupCommand, CognitoIdentityProviderClient,} from \"@aws-sdk/client-cognito-identity-provider\"\ntype Handler = Schema[\"addUserToGroup\"][\"functionHandler\"]const client = new CognitoIdentityProviderClient()\nexport const handler: Handler = async (event) =&gt; { const { userId, groupName } = event.arguments const command = new AdminAddUserToGroupCommand({ Username: userId, GroupName: groupName, UserPoolId: env.AMPLIFY_<mark>AUTH</mark>_USERPOOL_ID, }) const response = await client.send(command) return response}\r\nIn your frontend, use the generated client to call your mutation using the group name and the user's ID.\r\nimport type { Schema } from \"../amplify/data/resource\"import { generateClient } from \"aws-amplify/data\"\nconst client = generateClient&lt;Schema&gt;()\nawait client.mutations.addUserToGroup({ groupName: \"ADMINS\", userId: \"5468d468-4061-70ed-8870-45c766d26225\",})",
+                            "matchLevel": "full",
+                            "fullyHighlighted": false,
+                            "matchedWords": [
+                                "auth"
+                            ]
+                        },
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "With admin actions - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            "lvl1": {
+                                "value": "With admin actions",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "https://docs.amplify.aws/react/build-a-backend/auth/manage-users/manage-passwords/#pageMain",
+                    "content": "Amplify Auth provides a secure way for your users to change their password or recover a forgotten password.\r\nBy default, your users can retrieve access to their accounts if they forgot their password by using either their phone or email. The following are the default account recovery methods used when either phone or email are used as login options.\r\nphone\r\nemail\r\nphone\r\nemail\r\nemail\r\nphone\r\nTo reset a user's password, use the resetPassword API which will send a reset code to the destination (e.g. email or SMS) based on the user's settings.\r\nresetPassword\r\nimport { resetPassword } from 'aws-amplify/auth';\nconst output = await resetPassword({ username: \"hello@mycompany.com\"});\nconst { nextStep } = output;switch (nextStep.resetPasswordStep) { case 'CONFIRM_RESET_PASSWORD_WITH_CODE': const codeDeliveryDetails = nextStep.codeDeliveryDetails; console.log( `Confirmation code was sent to ${codeDeliveryDetails.deliveryMedium}` ); // Collect the confirmation code from the user and pass to confirmResetPassword. break; case 'DONE': console.log('Successfully reset password.'); break;}\r\nTo complete the password reset process, invoke the confirmResetPassword API with the code your user received and the new password they want to set.\r\nconfirmResetPassword\r\nimport { confirmResetPassword } from 'aws-amplify/auth';\nawait confirmResetPassword({ username: \"hello@mycompany.com\", confirmationCode: \"123456\", newPassword: \"hunter3\",});\r\nYou can update a signed in user's password using the updatePassword API.\r\nupdatePassword\r\nimport { updatePassword } from 'aws-amplify/auth';\nawait updatePassword({ oldPassword: \"hunter2\", newPassword: \"hunter3\",});\r\nYou can always change the channel used by your authentication resources by overriding the following setting.\r\nimport { defineAuth } from '@aws-amplify/backend';\nexport const auth = defineAuth({ loginWith: { email: true },Copy highlighted code example accountRecovery: 'EMAIL_ONLY'});\r\nBy default your password policy is set to the following:\r\nMinLength: 8 characters\r\nMinLength\r\nrequireLowercase: true\r\nrequireLowercase\r\nrequireUppercase: true\r\nrequireUppercase\r\nrequireNumbers: true\r\nrequireNumbers\r\nrequireSymbols: true\r\nrequireSymbols\r\ntempPasswordValidity: 3 days\r\ntempPasswordValidity\r\nYou can customize the password format acceptable by your auth resource by modifying the underlying cfnUserPool resource:\r\ncfnUserPool\r\nimport { defineBackend } from '@aws-amplify/backend';import { auth } from './auth/resource';\nconst backend = defineBackend({ auth,});// extract L1 CfnUserPool resourcesconst { cfnUserPool } = backend.auth.resources.cfnResources;// modify cfnUserPool policies directlycfnUserPool.policies = { passwordPolicy: { minimumLength: 32, requireLowercase: true, requireNumbers: true, requireSymbols: true, requireUppercase: true, temporaryPasswordValidityDays: 20, },};",
+                    "type": "content",
+                    "hierarchy": {
+                        "lvl0": "Manage passwords - AWS Amplify Gen 2 Documentation",
+                        "lvl1": "Manage passwords",
+                        "lvl2": null,
+                        "lvl3": null,
+                        "lvl4": null,
+                        "lvl5": null,
+                        "lvl6": null
+                    },
+                    "objectID": "1-https://docs.amplify.aws/react/build-a-backend/auth/manage-users/manage-passwords/",
+                    "_snippetResult": {
+                        "content": {
+                            "value": "… aws-amplify/backend';\nexport const <mark>auth</mark> = define<mark>Auth</mark>({ loginWith …",
+                            "matchLevel": "full"
+                        },
+                        "hierarchy": {
+                            "lvl1": {
+                                "value": "Manage passwords",
+                                "matchLevel": "none"
+                            }
+                        }
+                    },
+                    "_highlightResult": {
+                        "content": {
+                            "value": "Amplify <mark>Auth</mark> provides a secure way for your users to change their password or recover a forgotten password.\r\nBy default, your users can retrieve access to their accounts if they forgot their password by using either their phone or email. The following are the default account recovery methods used when either phone or email are used as login options.\r\nphone\r\nemail\r\nphone\r\nemail\r\nemail\r\nphone\r\nTo reset a user's password, use the resetPassword API which will send a reset code to the destination (e.g. email or SMS) based on the user's settings.\r\nresetPassword\r\nimport { resetPassword } from 'aws-amplify/<mark>auth</mark>';\nconst output = await resetPassword({ username: \"hello@mycompany.com\"});\nconst { nextStep } = output;switch (nextStep.resetPasswordStep) { case 'CONFIRM_RESET_PASSWORD_WITH_CODE': const codeDeliveryDetails = nextStep.codeDeliveryDetails; console.log( `Confirmation code was sent to ${codeDeliveryDetails.deliveryMedium}` ); // Collect the confirmation code from the user and pass to confirmResetPassword. break; case 'DONE': console.log('Successfully reset password.'); break;}\r\nTo complete the password reset process, invoke the confirmResetPassword API with the code your user received and the new password they want to set.\r\nconfirmResetPassword\r\nimport { confirmResetPassword } from 'aws-amplify/<mark>auth</mark>';\nawait confirmResetPassword({ username: \"hello@mycompany.com\", confirmationCode: \"123456\", newPassword: \"hunter3\",});\r\nYou can update a signed in user's password using the updatePassword API.\r\nupdatePassword\r\nimport { updatePassword } from 'aws-amplify/<mark>auth</mark>';\nawait updatePassword({ oldPassword: \"hunter2\", newPassword: \"hunter3\",});\r\nYou can always change the channel used by your <mark>auth</mark>entication resources by overriding the following setting.\r\nimport { define<mark>Auth</mark> } from '@aws-amplify/backend';\nexport const <mark>auth</mark> = define<mark>Auth</mark>({ loginWith: { email: true },Copy highlighted code example accountRecovery: 'EMAIL_ONLY'});\r\nBy default your password policy is set to the following:\r\nMinLength: 8 characters\r\nMinLength\r\nrequireLowercase: true\r\nrequireLowercase\r\nrequireUppercase: true\r\nrequireUppercase\r\nrequireNumbers: true\r\nrequireNumbers\r\nrequireSymbols: true\r\nrequireSymbols\r\ntempPasswordValidity: 3 days\r\ntempPasswordValidity\r\nYou can customize the password format acceptable by your <mark>auth</mark> resource by modifying the underlying cfnUserPool resource:\r\ncfnUserPool\r\nimport { defineBackend } from '@aws-amplify/backend';import { <mark>auth</mark> } from './<mark>auth</mark>/resource';\nconst backend = defineBackend({ <mark>auth</mark>,});// extract L1 CfnUserPool resourcesconst { cfnUserPool } = backend.<mark>auth</mark>.resources.cfnResources;// modify cfnUserPool policies directlycfnUserPool.policies = { passwordPolicy: { minimumLength: 32, requireLowercase: true, requireNumbers: true, requireSymbols: true, requireUppercase: true, temporaryPasswordValidityDays: 20, },};",
+                            "matchLevel": "full",
+                            "fullyHighlighted": false,
+                            "matchedWords": [
+                                "auth"
+                            ]
+                        },
+                        "hierarchy": {
+                            "lvl0": {
+                                "value": "Manage passwords - AWS Amplify Gen 2 Documentation",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            },
+                            "lvl1": {
+                                "value": "Manage passwords",
+                                "matchLevel": "none",
+                                "matchedWords": []
+                            }
+                        }
+                    }
+                }
+            ],
+            "nbHits": 173,
+            "page": 0,
+            "nbPages": 9,
+            "hitsPerPage": 20,
+            "exhaustiveNbHits": true,
+            "exhaustiveTypo": true,
+            "exhaustive": {
+                "nbHits": true,
+                "typo": true
+            },
+            "query": "auth",
+            "params": "query=auth&attributesToRetrieve=%5B%22hierarchy.lvl0%22%2C%22hierarchy.lvl1%22%2C%22hierarchy.lvl2%22%2C%22hierarchy.lvl3%22%2C%22hierarchy.lvl4%22%2C%22hierarchy.lvl5%22%2C%22hierarchy.lvl6%22%2C%22content%22%2C%22type%22%2C%22url%22%5D&attributesToSnippet=%5B%22hierarchy.lvl1%3A10%22%2C%22hierarchy.lvl2%3A10%22%2C%22hierarchy.lvl3%3A10%22%2C%22hierarchy.lvl4%3A10%22%2C%22hierarchy.lvl5%3A10%22%2C%22hierarchy.lvl6%3A10%22%2C%22content%3A10%22%5D&snippetEllipsisText=%E2%80%A6&highlightPreTag=%3Cmark%3E&highlightPostTag=%3C%2Fmark%3E&hitsPerPage=20&clickAnalytics=false&facetFilters=%5B%22platform%3Areact%22%2C%22gen%3Agen2%22%5D",
+            "index": "amplify",
+            "renderingContent": {},
+            "processingTimeMS": 3,
+            "processingTimingsMS": {
+                "_request": {
+                    "roundTrip": 88
+                },
+                "afterFetch": {
+                    "format": {
+                        "highlighting": 2,
+                        "snippeting": 3,
+                        "total": 7
+                    }
+                },
+                "fetch": {
+                    "query": 2,
+                    "total": 3
+                },
+                "total": 3
+            },
+            "serverTimeMS": 11
+        }
+    ]
+}
