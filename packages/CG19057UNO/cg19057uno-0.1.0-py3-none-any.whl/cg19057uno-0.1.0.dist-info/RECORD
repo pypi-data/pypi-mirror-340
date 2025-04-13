@@ -1,0 +1,11 @@
+CG19057UNO/EcuacionesLineales.py,sha256=XSOkv16Hj3RBBntMMEhdnjCArw8SZFXgHAnjS9kV37I,4903
+CG19057UNO/EcuacionesNoLineales.py,sha256=4g2l2DlwuRIAIuii_ZwBgHcXzzNwm5o82UaiV0HU3pc,1001
+CG19057UNO/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cg19057uno-0.1.0.dist-info/licenses/LICENSE,sha256=6VVoIYl9IHGksHeyjGe85sTkOf4BHflMIhtgQkFQzJk,1075
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_EcuacionesLineales.py,sha256=ZRqk8yeAlPx3aG3N3izZ4p54nxBjYiujCJcwDsynZKU,1747
+tests/test_EcuacionesNoLineales.py,sha256=OCC3jrPoUsE-_uZmwlLir2odJuQ0aB-Jhy3gmn3MzzA,419
+cg19057uno-0.1.0.dist-info/METADATA,sha256=8OUuVgdCYvdg8NK1I9f4nI7Ni-7GQRkMqJ1ZdM9Y-Fs,3820
+cg19057uno-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cg19057uno-0.1.0.dist-info/top_level.txt,sha256=iu8lI0Fqlrr4VjUAWsbMWTyMuPyOGf-24uuTLdotUBI,17
+cg19057uno-0.1.0.dist-info/RECORD,,
