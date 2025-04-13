@@ -1,0 +1,24 @@
+[project]
+name = "konseki"
+version = "0.1.2"
+description = "A Python CLI tool to view and summarize a GitHub user's recent activity from their public events."
+license = { file = "LICENSE" }
+authors = [{ name = "Ahmad Azwar Annas", email = "ahmadazw2@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["requests (>=2.32.3,<3.0.0)"]
+
+[project.urls]
+repository = "https://github.com/Aerysh/konseki"
+
+[tool.poetry]
+packages = [{ include = "konseki", from = "src" }]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+konseki = "konseki.bin.konseki:main"
