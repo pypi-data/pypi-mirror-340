@@ -1,0 +1,13 @@
+duckdi/__init__.py,sha256=vfh0arPGzZ8gbSYFuWTEsNO5yrW6QzjtgWMV9ilZ80c,94
+duckdi/cli.py,sha256=L761qkahwd1JvxAFCXfc4nU0LeVGaiGfxOm87BALzVs,1135
+duckdi/duck.py,sha256=ilgtc5s1LKL6J24BJUR9G3t6GFc1WgStHfGaGqZJ22k,2811
+duckdi/errors/__init__.py,sha256=sghw6AqCETH65f9c6VWY_pTJNGxMsTQf3fzNojMWFqE,265
+duckdi/errors/invalid_adapter_implementation_error.py,sha256=MY-GRPet9oqn4YyIVu4D0F-jU-dYvKCVrrYWj8ZrV1c,617
+duckdi/errors/missing_injection_payload_error.py,sha256=hnpNlznhXr8hi7-tEHbocx5UCeWLBizLcP5DBsK9FdQ,731
+duckdi/utils/__init__.py,sha256=F7P4ktyN93z7aoHln8KMfcBHdzeaBLbVCpxvmICnjvM,135
+duckdi/utils/buffer_readers.py,sha256=qQJP8Z8Uf_ABuU4zz9ABGJyPCqyAcHMiH4A8CNRhZUI,277
+duckdi/utils/serializers.py,sha256=K_qrO0p2ZBSMTxkkrSegb5QZc-v11hOX6XypYSPp0xs,186
+duckdi-0.1.0.dist-info/METADATA,sha256=Ww2Y-OgR07TfmKrXuxvBFU5ySTbMM9rhq9cDakE358A,3801
+duckdi-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+duckdi-0.1.0.dist-info/entry_points.txt,sha256=dbGCj7NscHKq4__rHqGohTkeFnztPoFjEJpyjMmNN2w,42
+duckdi-0.1.0.dist-info/RECORD,,
