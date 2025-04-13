@@ -1,0 +1,42 @@
+[tool.poetry]
+name = "pyhowto"
+version = "0.0.2"
+authors = [ "ablil <ablil@proton.me>" ]
+maintainers = [ "ablil <ablil@proton.me>" ]
+description = "Ask AI how to do something"
+readme = "README.md"
+repository = "https://github.com/ablil/pyhowto"
+
+[project]
+license = "LICENSE"
+keywords = ["howto", "help", "console", "command", "line", "answer", "AI"]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/ablil/pyhowto/issues"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+openai = "^1.73.0"
+google-generativeai = "^0.8.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = ">=24.8,<26.0"
+pre-commit = ">=3.8,<5.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# see https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
+[tool.black]
+line-length = 120
+
+
+[tool.poetry.scripts]
+howto = "pyhowto.__main__:main"
