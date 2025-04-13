@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: equations_solver_system
+Version: 0.1.0
+Summary: Librería sencilla para resolver sistemas de ecuaciones lineales y no lineales
+Author: Luis Eduardo Salamanca Garcia
+License-File: LICENSE
+Dynamic: author
+Dynamic: license-file
+Dynamic: summary
