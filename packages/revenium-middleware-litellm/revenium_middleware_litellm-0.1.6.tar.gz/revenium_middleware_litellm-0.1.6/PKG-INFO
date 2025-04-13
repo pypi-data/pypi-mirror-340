@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: revenium-middleware-litellm
+Version: 0.1.6
+Summary: A Python library that meters LiteLLM usage to Revenium.
+Author-email: Revenium <info@revenium.io>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/revenium/revenium-middleware-litellm-python
+Project-URL: Bug Tracker, https://github.com/revenium/revenium-middleware-litellm-python/issues
+Project-URL: Documentation, https://github.com/revenium/revenium-middleware-litellm-python/blob/main/README.md
+Keywords: litellm,middleware,logging,token-usage,metering,revenium
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: wrapt
+Requires-Dist: revenium_middleware
+Requires-Dist: litellm
+Provides-Extra: litellm-proxy
+Requires-Dist: litellm[proxy]; extra == "litellm-proxy"
+Requires-Dist: logging; extra == "litellm-proxy"
+Provides-Extra: litellm-client
+Requires-Dist: litellm; extra == "litellm-client"
+Requires-Dist: logging; extra == "litellm-client"
+Requires-Dist: wrapt; extra == "litellm-client"
+Requires-Dist: revenium_middleware; extra == "litellm-client"
+Provides-Extra: litellm-all
+Requires-Dist: revenium-middleware[litellm_proxy]; extra == "litellm-all"
+Requires-Dist: revenium-middleware[litellm_client]; extra == "litellm-all"
