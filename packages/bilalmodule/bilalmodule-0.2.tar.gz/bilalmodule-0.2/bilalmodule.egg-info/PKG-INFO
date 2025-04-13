@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: bilalmodule
+Version: 0.2
+Summary: A secure note-taking module with encryption capabilities
+Home-page: https://github.com/yourusername/bilalmodule
+Author: Bilal
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# BilalModule
+
+A secure note-taking module with encryption capabilities for Python applications.
+
+## Installation
+
+```bash
+pip install bilalmodule
+```
+
+## Usage
+
+```python
+from bilalmodule import secretnotesmodule
+
+# Create a new notes instance
+notes = secretnotesmodule()
+
+# Save an encrypted note
+notes.secret_notes("My Title", "My Secret Message", "master_password")
+
+# Decrypt a note
+notes.decrypt("master_password", "encryption_key")
+```
+
+## Features
+
+- Secure note encryption
+- Master key protection
+- Easy to use interface
+- Compatible with tkinter applications

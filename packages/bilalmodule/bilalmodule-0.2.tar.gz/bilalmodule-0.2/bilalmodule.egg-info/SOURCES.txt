@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+bilalmodule/__init__.py
+bilalmodule/core.py
+bilalmodule.egg-info/PKG-INFO
+bilalmodule.egg-info/SOURCES.txt
+bilalmodule.egg-info/dependency_links.txt
+bilalmodule.egg-info/requires.txt
+bilalmodule.egg-info/top_level.txt
