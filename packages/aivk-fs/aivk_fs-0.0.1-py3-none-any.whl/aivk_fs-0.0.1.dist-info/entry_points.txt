@@ -1,0 +1,2 @@
+[console_scripts]
+aivk-fs = aivk_fs.onCli.__main__:cli
