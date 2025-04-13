@@ -1,0 +1,2 @@
+Version: 1.10.0
+Arguments: ['C:\\hostedtoolcache\\windows\\Python\\3.11.9\\x64\\Scripts\\delvewheel', 'repair', 'dist/neptrainkit-2.0.5.dev42-cp311-cp311-win_amd64.whl', '-w', 'dist/']
