@@ -1,0 +1,2 @@
+[console_scripts]
+image_gallery = image_gallery.__main__:main
