@@ -1,0 +1,13 @@
+kroger/__init__.py,sha256=lJpZVcrBfdPw6fAWL9lg6EfQXfxsRijsUSDq5nuyYKQ,126
+kroger/client.py,sha256=piw9zFGBqZbxQPvdhlBpb-MhIsG6_NJ-Ao90XAG5kbU,8106
+kroger/location.py,sha256=B-jXCQUwXZM72hhqWxocUXyYPlqxuHqe8pLRcm8pWPg,10042
+kroger/product.py,sha256=2YjycJ3lcIOoU2RN6XFyfDXC9kCs_JBPnek874H4JMw,7673
+kroger/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kroger/tests/test_client.py,sha256=icbMQhvJDeut9KoKCe1595iySoYjZcpM-iQcRR00A8I,3601
+kroger/tests/test_location.py,sha256=joLtpV8eLvfqT9Lq-_m4U8aSeJT3qFY39JBI8sfrK2s,13430
+kroger/tests/test_product.py,sha256=WyMyy5GJXGYDNXtln_KhCupqI_Njrou6JcI5IGVIoNw,5264
+kroger_python-0.1.1.dist-info/licenses/LICENSE,sha256=306wOc3ENMieHsRYCV5mDGrbJpNRyEElUWAO79ahYMg,1498
+kroger_python-0.1.1.dist-info/METADATA,sha256=q3bwvb2114po5Fjee30oBirhBA5Vhar_voHq03XnQMI,1800
+kroger_python-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+kroger_python-0.1.1.dist-info/top_level.txt,sha256=Rng348jqqz7SzddI0v4mEM5JQNLCvPwh5CQTKqFeTok,7
+kroger_python-0.1.1.dist-info/RECORD,,
