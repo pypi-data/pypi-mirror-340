@@ -1,0 +1,9 @@
+torch_find_peaks/__init__.py,sha256=XXPD1cFzsANwDRNVjs5tAVXmU_Yn0TxVmpVQsDh4F-I,605
+torch_find_peaks/find_peaks.py,sha256=DFBnKuJiOSuYOBlJjE2cOeC8wreGbR17HgFW9LrIeQw,8123
+torch_find_peaks/gaussians.py,sha256=EacjySRoBsJZ-2r_mMKFmwbs-R-o289R0FOecWLluls,11914
+torch_find_peaks/py.typed,sha256=esB4cHc6c07uVkGtqf8at7ttEnprwRxwk8obY8Qumq4,187
+torch_find_peaks/refine_peaks.py,sha256=nYenIpqcTs4cKlrwXp47cXrBMuLfGCWdYntrXbOn3iY,13286
+torch_find_peaks-0.0.1.dist-info/METADATA,sha256=X2Rerft15Xc-tcJneR7NQYIQfutWLfaIIky7_Z_NHJk,2259
+torch_find_peaks-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+torch_find_peaks-0.0.1.dist-info/licenses/LICENSE,sha256=v5piEbKoWiOoWmXl8to-1zafegIJYPgXPMLX2Dwce4c,1504
+torch_find_peaks-0.0.1.dist-info/RECORD,,
