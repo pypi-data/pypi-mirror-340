@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+tensorlens/__init__.py
+tensorlens.egg-info/PKG-INFO
+tensorlens.egg-info/SOURCES.txt
+tensorlens.egg-info/dependency_links.txt
+tensorlens.egg-info/top_level.txt
