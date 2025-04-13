@@ -1,0 +1,43 @@
+{
+    "project_uuid": "47a69219-3011-4fd7-ab76-2ea0f9cb1566",
+    "project_info": {
+        "title": "Papers on Desk",
+        "description": "Upload a word or pdf document. The pages of your file will be the papers on the desk. This is a dev test project, it does not reflect the final quality of ceonmedia projects."
+    },
+    "project_inputs": [
+        {
+            "job_input_type": "img",
+            "name": "document_pages",
+            "description": "Upload a word or PDF document.\nThe pages of your document will be shown in the video.", 
+            "type_settings": {},
+            "web_input_type": "doc"
+        },
+        {
+            "job_input_type": "color",
+            "name": "pencil_color",
+            "description": "Choose the color of the pen/cil.", 
+            "type_settings": {},
+            "web_input_type": "color"
+        }
+    ],
+    "render_pipeline": {
+        "render_tasks": [
+            {
+                "task_input": {"target": "hou_project/documents_10_updateCstockJsonLoading.hiplc"},
+                "task_output": "render_output.$F4.exr",
+                "app_type": "hou",
+                "app_version": "20.0",
+                "app_render_settings": {
+                    "target_node": "/out/karma1",
+                    "frames": "1 300"
+                },
+                "task_name": "render_the_video",
+                "task_dependencies": [],
+                "task_uuid": "4143e26e-30c0-4df4-9412-c038f05e3b83"
+            }
+        ],
+        "output_task": "render_the_video",
+        "output_extras": []
+        
+    }
+}
