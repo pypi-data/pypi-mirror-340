@@ -1,0 +1,6 @@
+httpx>=0.28.1
+mcp[cli]>=1.6.0
+flask==3.0.2
+flask-cors==4.0.0
+flask-sock==0.7.0
+gevent-websocket==0.10.1
