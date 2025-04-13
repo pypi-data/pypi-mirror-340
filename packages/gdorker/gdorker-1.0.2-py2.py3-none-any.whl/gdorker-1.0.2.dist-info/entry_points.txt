@@ -1,0 +1,2 @@
+[console_scripts]
+gdorker = gdorker:entrypoint
