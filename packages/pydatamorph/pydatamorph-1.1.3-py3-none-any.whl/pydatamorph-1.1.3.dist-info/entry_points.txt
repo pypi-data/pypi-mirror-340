@@ -1,0 +1,2 @@
+[console_scripts]
+datamorph = datamorph.core.runner:main
