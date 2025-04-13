@@ -1,0 +1,150 @@
+Metadata-Version: 2.4
+Name: WordPResT
+Version: 0.0.4
+Summary: A simple wordpress api
+Author-email: Ishaga Bello <bello@bellodoesseo.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/ishaga-bello/Wordpress-API
+Project-URL: Issues, https://github.com/ishaga-bello/Wordpress-API/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# WordPress REST API Client
+
+Finally a simple and efficient API to work with your WordPress. 
+A Python client for interacting with the WordPress REST API to manage content, media, and categories.
+
+## Features
+
+- Create posts/pages
+- Upload images from URLs
+- Create categories
+- Secure authentication handling
+- Error handling for API requests
+
+## Installation
+
+**Requirements**:
+- Python 3.6+
+- WordPress site with REST API enabled (v4.7+)
+- Application password (WordPress > Users > Profile > Application Passwords)
+
+**Install dependencies**:
+```
+pip install WordPRest
+```
+
+**Initialize client**
+```
+from wpAPI import WordPress
+wp = WordPress(
+    domain='yourdomain.com',
+    username='admin',
+    password='your_application_password'
+)
+```
+
+**Create a category**
+```
+new_category = wp.category("Tech News")
+print(f"Created category ID: {new_category['id']}")
+```
+
+**Upload an image**
+```
+image_url = "https://example.com/image.jpg"
+media = wp.upload_image(image_url)
+print(f"Uploaded media ID: {media['id']}")
+```
+
+**Create a post**
+```
+post_data = {
+    "title": "My First API Post",
+    "content": "This post was created programmatically!",
+    "status": "publish",
+    "categories": [new_category['id']],
+    "featured_media": media['id']
+}
+post = wp.publish(post_data)
+print(f"Published post at: {post['link']}")
+```
+
+
+## API Methods
+
+category(data)
+Purpose: Create a new category
+
+Parameters:
+content_data (str): Category name
+
+Returns: Category object or None on failure
+```
+upload_image(image_url)
+```
+Purpose: Upload image from URL to media library
+
+Parameters:
+```
+image_url (str): Publicly accessible image URL
+```
+Returns: Media object or None on failure
+
+```
+publish(content_data, content_type="post")
+```
+Purpose: Create posts/pages
+
+Parameters:
+
+content_data (dict): Post/page content (see WP REST API docs)
+
+content_type (str): "post" (default) or "page"
+
+Returns: Post/Page object or None on failure
+
+Content Data Structure
+
+## Typical post structure:
+
+```
+{
+    "title": "Post Title",
+    "content": "Post content",
+    "status": "publish",  # or "draft"
+    "categories": [1, 2], # Array of category IDs
+    "featured_media": 123, # Media ID from upload_image()
+    "tags": [3, 4],       # Array of tag IDs
+    "excerpt": "Summary text"
+}
+```
+
+## Error Handling
+Methods return None on failure
+
+Errors are printed to console with details
+
+**Common error sources**:
+
+- Invalid credentials
+
+- Network issues
+
+- Invalid image URLs
+
+- Insufficient user permissions
+
+**Important Security Practices**:
+
+- Always use application passwords (not regular user passwords)
+
+- Store credentials in environment variables (not in code)
+
+- Use HTTPS for your WordPress site
+
+- Restrict API access through permissions/plugins
