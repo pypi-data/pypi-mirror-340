@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: SG23001UNO
+Version: 0.1.1
+Summary: Librería sencilla para resolver sistemas de ecuaciones lineales y no lineales
+Author: Luis Eduardo Salamanca Garcia
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: summary
+
+# SG23001UNO
+
+Librería sencilla para resolver sistemas de ecuaciones lineales y no lineales en Python. Implementa métodos clásicos como Gauss, Gauss-Jordan, Cramer, LU, Jacobi, Gauss-Seidel y Bisección.

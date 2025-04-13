@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+SG23001UNO/__init__.py
+SG23001UNO/bisection.py
+SG23001UNO/cramer.py
+SG23001UNO/gauss.py
+SG23001UNO/gauss_jordan.py
+SG23001UNO/gauss_seidel.py
+SG23001UNO/jacobi.py
+SG23001UNO/lu.py
+SG23001UNO.egg-info/PKG-INFO
+SG23001UNO.egg-info/SOURCES.txt
+SG23001UNO.egg-info/dependency_links.txt
+SG23001UNO.egg-info/top_level.txt
