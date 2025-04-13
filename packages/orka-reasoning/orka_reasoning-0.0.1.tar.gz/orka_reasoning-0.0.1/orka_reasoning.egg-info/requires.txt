@@ -1,0 +1,9 @@
+python-dotenv
+redis
+pyyaml
+openai
+duckduckgo-search
+
+[dev]
+pytest
+coverage
