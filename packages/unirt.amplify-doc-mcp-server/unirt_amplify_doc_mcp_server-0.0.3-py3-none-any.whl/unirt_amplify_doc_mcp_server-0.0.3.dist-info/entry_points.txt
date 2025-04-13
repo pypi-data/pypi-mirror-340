@@ -1,0 +1,2 @@
+[console_scripts]
+unirt.amplify-doc-mcp-server = unirt.amplify_doc_mcp_server.server:main
