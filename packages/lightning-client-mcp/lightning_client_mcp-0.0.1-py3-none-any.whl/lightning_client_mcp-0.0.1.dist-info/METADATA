@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: lightning-client-mcp
+Version: 0.0.1
+Summary: A Bitcoin lightning client designed for agentic workflows and tools.
+Author-email: Evan Hallmark <ehallmark1122@gmail.com>
+Project-URL: Homepage, https://github.com/ehallmark/lightning_client
+Project-URL: Issues, https://github.com/ehallmark/lightning_client/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: grpcio-tools==1.71.0
+Requires-Dist: grpcio==1.71.0
+Requires-Dist: protobuf==5.29.4
+Dynamic: license-file
+
+# Lightning Client for Agentic Workflows
