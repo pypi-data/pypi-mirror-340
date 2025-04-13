@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/ajishCalc/__init__.py
+src/ajishCalc/core.py
+src/ajishCalc.egg-info/PKG-INFO
+src/ajishCalc.egg-info/SOURCES.txt
+src/ajishCalc.egg-info/dependency_links.txt
+src/ajishCalc.egg-info/top_level.txt
