@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: jdoff
+Version: 0.1
+Summary: A library that downloads a txt file upon installation.
+Home-page: https://github.com/yourusername/jdoff
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# jdoff
+
+Р‘РёР±Р»РёРѕС‚РµРєР°, РєРѕС‚РѕСЂР°СЏ СЃРєР°С‡РёРІР°РµС‚ С‚РµРєСЃС‚РѕРІС‹Р№ С„Р°Р№Р» РїСЂРё СѓСЃС‚Р°РЅРѕРІРєРµ.
+
+## РЈСЃС‚Р°РЅРѕРІРєР°
+```bash
+pip install jdoff

@@ -1,0 +1,8 @@
+README.md
+setup.py
+jdoff/__init__.py
+jdoff.egg-info/PKG-INFO
+jdoff.egg-info/SOURCES.txt
+jdoff.egg-info/dependency_links.txt
+jdoff.egg-info/requires.txt
+jdoff.egg-info/top_level.txt
