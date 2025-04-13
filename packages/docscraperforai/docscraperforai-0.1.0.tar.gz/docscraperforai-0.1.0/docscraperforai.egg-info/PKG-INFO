@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: docscraperforai
+Version: 0.1.0
+Summary: A powerful library to scrape documentation pages (or entire domains) into text, Markdown, or JSON files.
+Home-page: https://github.com/Prakashmaheshwaran/docscraperforai
+Author: kash.me
+Author-email: diinoprakash@gmail.com
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: aiohttp
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary

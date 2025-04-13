@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+docscraper/__init__.py
+docscraper/async_scraper.py
+docscraper/cli.py
+docscraper/crawler.py
+docscraper/scraper.py
+docscraper/utils.py
+docscraperforai.egg-info/PKG-INFO
+docscraperforai.egg-info/SOURCES.txt
+docscraperforai.egg-info/dependency_links.txt
+docscraperforai.egg-info/requires.txt
+docscraperforai.egg-info/top_level.txt
