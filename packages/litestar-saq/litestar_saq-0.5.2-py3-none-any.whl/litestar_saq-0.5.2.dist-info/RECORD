@@ -1,0 +1,13 @@
+litestar_saq/__init__.py,sha256=qlRlU_UctwhDnJRghyVHeWFBr3QBArA02IbeFyOQtrI,416
+litestar_saq/__metadata__.py,sha256=JLhluAP1Sjt0BY93FSAUD-YFV_VD-2MCNEmywl4Iy9s,511
+litestar_saq/base.py,sha256=lAjLgfqjKO-zEDtTXBb3BkVle0LPuSLBf5U7mPnolfo,3519
+litestar_saq/cli.py,sha256=D9Jx4bKyAloM81J9O31CRm5z77cHMe_TZiQJbp0e9P8,6705
+litestar_saq/config.py,sha256=_LK2HiTphlV0nyquRz1XPEPuU04dam0i0xgKcIjHxYw,14731
+litestar_saq/controllers.py,sha256=pp07a7-S0ckffeMLrsuOVJc5qbofnUREZEzDEVF6ujg,6358
+litestar_saq/exceptions.py,sha256=p30fPqhTMZRgVmZeFPnWhYPSC9AkaPWB3bjye7LGSSI,380
+litestar_saq/plugin.py,sha256=ufhnps17QD6YTmiJK0fo4S5UIdmZdqm9z3ulP1D4UoU,7881
+litestar_saq/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+litestar_saq-0.5.2.dist-info/METADATA,sha256=mC7R0Jr5_eBobC1ObhzdSbvrGkphQluCP0STF81E3mM,3859
+litestar_saq-0.5.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+litestar_saq-0.5.2.dist-info/licenses/LICENSE,sha256=HeTiEfEgvroUXZe_xAmYHxtTBgw--mbXyZLsWDYabHc,1069
+litestar_saq-0.5.2.dist-info/RECORD,,
