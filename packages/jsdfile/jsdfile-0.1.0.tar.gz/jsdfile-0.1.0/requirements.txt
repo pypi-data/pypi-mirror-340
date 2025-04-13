@@ -1,0 +1,30 @@
+# Dependencies
+msgpack
+lz4
+
+# Benchmark Requirements
+numpy
+pandas
+tabulate
+psutil
+
+# Plotting
+seaborn
+matplotlib
+tqdm
+
+# Testing
+pytest
+pytest-benchmark
+coverage
+
+# Dev Requirements
+twine
+build
+poetry
+
+# types
+types-tqdm
+types-seaborn
+pandas-stubs
+types-tabulate
