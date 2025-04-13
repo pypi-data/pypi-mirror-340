@@ -1,0 +1,2 @@
+[console_scripts]
+emotiva-cli = pymotivaxmc2.cli:main
