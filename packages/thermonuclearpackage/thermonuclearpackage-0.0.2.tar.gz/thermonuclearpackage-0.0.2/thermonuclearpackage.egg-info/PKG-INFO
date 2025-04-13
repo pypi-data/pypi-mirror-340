@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: thermonuclearpackage
+Version: 0.0.2
+Summary: Thermonuclear package
+Author: Aditya Jain
+Author-email: aditya.jain22@imperial.ac.uk
+Keywords: terrorism,hate crimes
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: summary
+
+allows you to blow up a target no problem

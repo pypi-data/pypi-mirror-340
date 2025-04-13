@@ -1,0 +1,1 @@
+from strikemissile import strike
