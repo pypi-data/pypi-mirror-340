@@ -1,0 +1,17 @@
+package_sampling/sampling/__init__.py,sha256=H30Q19JhHIDI_vNaK_UrweKjUd0-HkJ1OQiqQuCldhk,1048
+package_sampling/sampling/up_brewer.py,sha256=jSGCkY9mOTzN4LJRIPA5W31jnkVsYFTGbm_KtKQkXr8,2903
+package_sampling/sampling/up_max_entropy.py,sha256=YlD4Q0T0mJq_P24mXJfBMEoNW1qW2MMVnO4ZcsGRBUE,1487
+package_sampling/sampling/up_systematic.py,sha256=336A_Tolog7UEjBzVisioiZGFUSYzYwsEmGTIVahjXw,1734
+package_sampling/sampling/up_tille.py,sha256=fKCRpEwpwtj78KQpt69H550F8PdY5mZl29pAU--m0LI,3159
+package_sampling/sampling/upme_pik_from_q.py,sha256=HQNiUDOU2B9WHuUxvu1R5AXR-NWTxLYNs8ei1xV5xCU,1316
+package_sampling/sampling/upme_pik_tilde_from_pik.py,sha256=G46wwdWY54G9ZuFzvlnDgZhxqhVX7sA9RkB658l3b6o,3309
+package_sampling/sampling/upme_q_from_w.py,sha256=n_vAAWGTk8xRzslgw4Uk0_W1xgTtCTdZz1kMhyYkg24,1959
+package_sampling/sampling/upme_s_from_q.py,sha256=fkc_a2YahkipJmFjWsTqIASDCljO68w4vPG5fonCX-E,1466
+package_sampling/utils/__init__.py,sha256=lY9c6iedgPrNZMYecUqXGrwT3aVuaGkJa5s7zxEMqZo,422
+package_sampling/utils/as_int.py,sha256=HRDIAPdUlZZp6pvzrraByQBaOsgMI-5sW7D-agK4nio,944
+package_sampling/utils/inclusion_probabilities.py,sha256=oLdwiBTbdRlceSYMfak9cmOD-YRKKgb00b-7xlOqjoU,2692
+package_sampling-0.3.0.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_sampling-0.3.0.dist-info/METADATA,sha256=KTbOpdaGhs7CUzGxe-qYoA2T-6-bqz7YK4nZp7-_ZB0,1183
+package_sampling-0.3.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+package_sampling-0.3.0.dist-info/top_level.txt,sha256=O5GbDl3tDWuWKCV_kshqVeJEGktgZxDspU7SFvge9ZI,17
+package_sampling-0.3.0.dist-info/RECORD,,
