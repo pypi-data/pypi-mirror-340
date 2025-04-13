@@ -1,0 +1,32 @@
+[project]
+name = "moroccan-atlas"
+version = "0.1.0"
+description = "A Python toolbox of validators, parsers, and datasets for Moroccan-specific data formats and regions."
+authors = [
+    {name = "TAnas0",email = "anastiour@gmail.com"}
+]
+license = {text = "See LICENSE"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest",
+  "black",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/TAnas0/moroccan-atlas"
+"Issue Tracker" = "https://github.com/TAnas0/moroccan-atlas/issues"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+    { include = "src/moroccan_atlas/personal" },         # include the main source
+    # { include = "your_package/data" },    # if you need data files
+]
