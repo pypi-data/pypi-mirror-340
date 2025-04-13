@@ -1,0 +1,19 @@
+pip install pybind11
+rm -rf build
+
+python3 -m pybind11 --cmakedir
+cmake -S . -B build -Dpybind11_DIR=$(python3 -m pybind11 --cmakedir) -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=$(pwd)/grubbstest
+cmake --build build
+
+
+python3 -m build 
+python3 -m build --sdist
+python3 -m build --wheel
+
+twine upload dist/*.whl
+
+pip install -i https://test.pypi.org/simple/ \
+             --extra-index-url https://pypi.org/simple \
+             grubbstest --upgrade
+
+twine upload --repository testpypi dist/*.tar.gz
