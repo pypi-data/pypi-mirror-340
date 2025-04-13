@@ -1,0 +1,6 @@
+setup.py
+linearregress/__init__.py
+linearregress.egg-info/PKG-INFO
+linearregress.egg-info/SOURCES.txt
+linearregress.egg-info/dependency_links.txt
+linearregress.egg-info/top_level.txt
