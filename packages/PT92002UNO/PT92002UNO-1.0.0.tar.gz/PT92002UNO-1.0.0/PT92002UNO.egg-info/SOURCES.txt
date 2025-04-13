@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PT92002UNO/__init__.py
+PT92002UNO/metodos_lineales.py
+PT92002UNO/metodos_no_lineales.py
+PT92002UNO/utils.py
+PT92002UNO.egg-info/PKG-INFO
+PT92002UNO.egg-info/SOURCES.txt
+PT92002UNO.egg-info/dependency_links.txt
+PT92002UNO.egg-info/requires.txt
+PT92002UNO.egg-info/top_level.txt
