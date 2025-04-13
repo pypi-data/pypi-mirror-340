@@ -1,0 +1,9 @@
+python_package_starter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+python_package_starter/bar.py,sha256=KNqT5NTm6OfERtL8jB-CUjMuOJfkqw4RkXIgxCY9C6Y,55
+python_package_starter/fizzbugzz.py,sha256=n1FjIlEn1cf-eRDkCit7j5ti8G3x67joPGEDsCtecYs,190
+python_package_starter/foo.py,sha256=lgSvlrcNcE8_rV4ocQAnIIKUIfL9eGloXeeaH9Pchu0,54
+python_package_starter/welcome.py,sha256=CGz6WgGquGCOjVbVbrENSWWKIBT5Abn7i8TGAKgt5s8,158
+python_package_starter-2.0.2.dist-info/LICENSE,sha256=6yA_P5igU2LdPe-3OLwfD5D5pUGK6VaUHU0HIqheG1E,1061
+python_package_starter-2.0.2.dist-info/METADATA,sha256=FfVYt5Apq9cLJcd5joKOVi6gdRfirz8XOQFh9QwLTS0,1499
+python_package_starter-2.0.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+python_package_starter-2.0.2.dist-info/RECORD,,
