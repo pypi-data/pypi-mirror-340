@@ -1,0 +1,10 @@
+rexpi/__init__.py,sha256=b-dPZsxfKgDuUIdyuoAvC8lLagtsPOp_G_7LgUJiti0,151
+rexpi/cheb.py,sha256=PYDhJk1M5bpjnBp_IJ5TEX2pabGfAMsBiriKJZh3TY8,1665
+rexpi/errorestimates.py,sha256=yX0rmTq-LsncNpENvXDuwZ0yDBkn6uyCuHYOabWXWzQ,6474
+rexpi/expimv.py,sha256=kDOd-LSuJmO1mOcacymGSL0C72N_snHLFHhmw0grhk4,1889
+rexpi/pade.py,sha256=BVEYAG8uKjt1FQiHWYgAgZbF7NSD57d4wMigXzsnWNQ,1491
+rexpi/unitarybestapprox.py,sha256=qUt_cGyyNuO3mS6xqMs_WO0Riqq7p8MYessSWbwKcmI,29186
+rexpi-0.0.4.dist-info/METADATA,sha256=wRFHovz1623T268gkuQrcHsHB1PC1TbIzEctVc-8ykk,1055
+rexpi-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+rexpi-0.0.4.dist-info/licenses/LICENSE,sha256=RQSvmitQAkDNX5kYErArN9RCDJCD3_1l04pfAm0COMc,1529
+rexpi-0.0.4.dist-info/RECORD,,
