@@ -1,0 +1,7 @@
+README.md
+main.py
+pyproject.toml
+readerllamaindex.egg-info/PKG-INFO
+readerllamaindex.egg-info/SOURCES.txt
+readerllamaindex.egg-info/dependency_links.txt
+readerllamaindex.egg-info/top_level.txt
