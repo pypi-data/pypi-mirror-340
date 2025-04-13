@@ -1,0 +1,9 @@
+from PyQt5 import QtCore as QtCore
+from PyQt5.QtCore import QRect
+from PyQt5.QtWidgets import QMainWindow, QWidget
+from typing import Union
+
+def get_center_screenGeometry(window: Union[QWidget, QMainWindow], width: int = ..., height: int = ...) -> Union[QRect, None]: ...
+def setAntiScreenShot(window: int | QWidget): ...
+
+class n_qthread: ...
