@@ -1,0 +1,39 @@
+Metadata-Version: 2.4
+Name: simgle
+Version: 1.1.2
+Summary: Save time and money by easily finding the cheapest virtual numbers on OnlineSim.
+Project-URL: Homepage, https://github.com/zelevar/simgle
+Author: zelevar
+License-Expression: MIT
+License-File: LICENSE
+Requires-Python: >=3.9
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+# Simgle
+Helps you save time and money by easily finding the cheapest virtual numbers on [OnlineSim](https://onlinesim.io).
+
+## Installation
+> [!IMPORTANT]
+> Make sure you have Python 3.9+ installed.
+
+Install the utility from PyPI:
+```sh
+pip install simgle
+```
+
+## Usage
+After installing, you can use it like this:
+```sh
+simgle [arguments]
+```
+
+> [!TIP]
+> To see all available flags and arguments, run:
+> ```sh
+> simgle --help
+> ```
+> This will display a list of all the options and how to use them.
+
+### Example
+![Usage showcase](https://raw.githubusercontent.com/zelevar/simgle/b5076c591e897e175c393a42d0e7491650ad87eb/images/showcase.png)
