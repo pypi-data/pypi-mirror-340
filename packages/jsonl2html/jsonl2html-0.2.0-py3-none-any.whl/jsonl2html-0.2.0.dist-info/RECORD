@@ -1,0 +1,9 @@
+jsonl2html/__init__.py,sha256=173ogW1HxyAZm4wO_W3R2OYMvg5Dozuj2AQTM8nCVyo,65
+jsonl2html/convert.py,sha256=CZHhCmpe9RIjj3UfUACvtssZwKjHEU07lfGz-eAYfBQ,8272
+jsonl2html/create_table_of_content.py,sha256=KnGYb6ZL8Pv2p1lv5AgIoRQXKITIA8u4rYFj2lUBbY0,4634
+jsonl2html/html_template.html,sha256=Fz-2P2n82_SwMaW5DzPokycDEel2xhMe8luIZaGyw1E,11373
+jsonl2html-0.2.0.dist-info/METADATA,sha256=sJjJJrmu68yGOIjdIyVq41xHeDWWdTeGn0GLrmLCNUE,2190
+jsonl2html-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+jsonl2html-0.2.0.dist-info/entry_points.txt,sha256=pu-iM3nsJUe1YBkDiMGJeV1XwjJTCV6KWdnwPhaVfFs,72
+jsonl2html-0.2.0.dist-info/top_level.txt,sha256=5mUaZW3rjZ1DHa7t1UROgOx5nJ4an0jW98Q3oc3mQxM,11
+jsonl2html-0.2.0.dist-info/RECORD,,
