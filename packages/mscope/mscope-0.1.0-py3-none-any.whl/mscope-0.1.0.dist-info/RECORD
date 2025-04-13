@@ -1,0 +1,12 @@
+mscope/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mscope/cfgloader.py,sha256=oSFPwIOZ2qLwODawzuPlmftxBGJDbnv5vhbnVgorUE0,195
+mscope/logg.py,sha256=3iFcJKRQ0oO3EwVsPzoRvupaLuk3L79iBTXi10dHrYM,480
+mscope/mailgen.py,sha256=8oaz62M5iIXrCH-x11GuFRJpnxE-KT_3qqJlrqB32Mg,783
+mscope/mailscan.py,sha256=unjbujkieB4HoGtsbtCtqdq7KiqAphTxPRtEDOnLFek,2903
+mscope/main.py,sha256=CJHD5gVA_G009tZ3UY_1zumtdxkVPrxKI1LDgqucVPk,2629
+mscope/utils01.py,sha256=mv7DenJhsDvxFeKp9Vb13aH6OkiQjNdijSUSdeZR8RM,1234
+mscope-0.1.0.dist-info/METADATA,sha256=Lddr0NQlIJGKm_INMth2mRU3lYI4KCoITsVvF4BvDII,1333
+mscope-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mscope-0.1.0.dist-info/entry_points.txt,sha256=fqn13AiKK6VRyxqfQGQqaYlRBGa1AchwOPeddJ8j6R4,44
+mscope-0.1.0.dist-info/top_level.txt,sha256=grEhsp04WQtf51lVoXwleG1jyCWPRGU5W-QjuZivVzA,7
+mscope-0.1.0.dist-info/RECORD,,
