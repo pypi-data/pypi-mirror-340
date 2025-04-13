@@ -1,0 +1,9 @@
+unirt/__init__.py,sha256=8zJJx3Lqa0amf2M0ezhix_KXdtXhnEn_8-xw0nvPaMs,31
+unirt/amplify_doc_mcp_server/__init__.py,sha256=mX4RHuCQFMYvVMp5i0lfaxDrmyIFoRV8Z6AQnlYiNBQ,73
+unirt/amplify_doc_mcp_server/models.py,sha256=MUCwdo0gTu4TVFsKA3ukIdcu0FvDnOaXQ-cncWBLTvM,792
+unirt/amplify_doc_mcp_server/server.py,sha256=EBVz4iOnn6Ml3uWJHrjG10l5Gp2fmAzBJtDFt3WApl0,12474
+unirt/amplify_doc_mcp_server/util.py,sha256=Htt5q8EuW_PhboeKrxxATKrv_esjT73ZG9VL8Ba-YuI,9284
+unirt_amplify_doc_mcp_server-0.0.1.dist-info/METADATA,sha256=dR4nfS3WMmLutDOodxFPnGZCrhlh8rn4ejG5C6YZXtk,2325
+unirt_amplify_doc_mcp_server-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+unirt_amplify_doc_mcp_server-0.0.1.dist-info/entry_points.txt,sha256=gnKDQ9tUzM5shkXBzqHNWWyV5CFjnTHtOm1NIUB0GTM,90
+unirt_amplify_doc_mcp_server-0.0.1.dist-info/RECORD,,
