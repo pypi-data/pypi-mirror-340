@@ -1,0 +1,2 @@
+[console_scripts]
+multimodel-ai = multimodel_ai.cli:main

@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multimodel-ai"
+dynamic = ["version"]
+description = "A Python module for efficient multi-model AI inference with memory management"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    {name = "VRImage", email = "vrimage70@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "accelerate>=1.6.0",
+    "qwen-omni-utils[decord]>=0.0.4",
+    "qwen-vl-utils[decord]==0.0.8",
+    "torchvision>=0.21.0",
+    "bitsandbytes>=0.45.5",
+    "transformers>=4.37.0",
+    "torch>=2.6.0",
+    "torchaudio>=2.6.0",
+    "librosa>=0.11.0",
+    "soundfile>=0.13.1",
+    "numpy>=1.22.3",
+    "scipy>=1.6.0",
+]
+
+[project.scripts]
+multimodel-ai = "multimodel_ai.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/VRImage/multimodel-ai"
+
+[tool.setuptools_scm]
+write_to = "multimodel_ai/_version.py"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"] 
