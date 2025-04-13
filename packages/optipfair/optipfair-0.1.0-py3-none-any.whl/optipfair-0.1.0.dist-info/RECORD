@@ -1,0 +1,16 @@
+cli/__init__.py,sha256=zXFlgks4qK6E94fExZsJToZIMkEgcBWcSpKKL0vhjjw,80
+cli/commands.py,sha256=tVc0cRvqriWqjXAfnQwXuaslaip33k0POjy06AxUU90,8716
+evaluation/__init__.py,sha256=4Bv7kFHji5lP6LnlcbYtwBrnw8MC7MUwRY85Y2-RgNg,114
+evaluation/benchmarks.py,sha256=lb603AqR7udHA8ru9hKd3eDfV_Pp7Aa-KUXStloEvro,5054
+pruning/__init__.py,sha256=t86KAxqZluSXz4Cz2LofmQpsf8o7thGUcejKOUL7q6o,425
+pruning/mlp_glu.py,sha256=8r7idI_2Dzey16dZ4Q2No0CGj8YRNpRkKYR51koSM0A,10338
+pruning/utils.py,sha256=RlyHmomzrwaRNGhSbUV5-7Lm4mMFCDJM521-zDvfdu4,5051
+pruning/future_extensions/__init__.py,sha256=TJIpxmqHPXBKFaTskK-O9sScAkBWa4_SrteOgk1-oLc,130
+pruning/future_extensions/attention.py,sha256=K-BAgoUpTGyQIoDVfilxbiNA4NBHuQ3MZCm0N_5xLzw,697
+pruning/future_extensions/block.py,sha256=AvOvXYOqKQuCH5-Q4V2T6sM0nLbGVgx1r7q7PEwPLDI,678
+optipfair-0.1.0.dist-info/LICENSE,sha256=jePzZyOOJNMJn9MaXviqb7sKrkuNFnrtMwnBYs22Ilc,11345
+optipfair-0.1.0.dist-info/METADATA,sha256=9ikleULsAieZbljpwv5GtAAWnTbspN2VR5oybtouGSQ,5583
+optipfair-0.1.0.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+optipfair-0.1.0.dist-info/entry_points.txt,sha256=g_jYd69Iz2iPaddlBoXx99W4ATZ8_fQQYRKP0BwYa2s,48
+optipfair-0.1.0.dist-info/top_level.txt,sha256=m910PciT6fKdznCidcHuUZ1K4vxhQprVnpnSm-pBCzs,23
+optipfair-0.1.0.dist-info/RECORD,,
