@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: wayland-mcp
+Version: 0.2.0
+Summary: Wayland MCP server (Python, uvx-compatible)
+Author: someaka
+Requires-Python: >=3.8
+Requires-Dist: fastmcp
+Requires-Dist: flask>=3.0.0
+Requires-Dist: pillow>=11.0.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: requests>=2.32.3
