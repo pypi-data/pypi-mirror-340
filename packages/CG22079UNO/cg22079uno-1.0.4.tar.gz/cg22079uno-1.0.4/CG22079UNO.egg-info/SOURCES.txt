@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+CG22079UNO/__init__.py
+CG22079UNO/ejemplos.py
+CG22079UNO/main.py
+CG22079UNO/metodos.py
+CG22079UNO.egg-info/PKG-INFO
+CG22079UNO.egg-info/SOURCES.txt
+CG22079UNO.egg-info/dependency_links.txt
+CG22079UNO.egg-info/entry_points.txt
+CG22079UNO.egg-info/requires.txt
+CG22079UNO.egg-info/top_level.txt
