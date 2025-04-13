@@ -1,0 +1,7 @@
+ffup/__init__.py,sha256=JOvFvqYGeEJu1XMhcDSw-tVGZhGxX1AjSoX384iB1VU,30
+ffup/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+ffup/cli.py,sha256=JrC2y5YAIhdOLs_YhfbXDb3--p2d2KuTteUD-2U5vvY,4781
+ffmpeg_update-1.4.1.dist-info/METADATA,sha256=OTKG0q1VFXYtAKK7KiyilrmJ3jul9IucFG0pXwA8cKc,4308
+ffmpeg_update-1.4.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ffmpeg_update-1.4.1.dist-info/entry_points.txt,sha256=1PwlMliyeJa6o_dC6u0A0fPLu7fE72m2LeB671z6_IQ,35
+ffmpeg_update-1.4.1.dist-info/RECORD,,
