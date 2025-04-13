@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+aletheia_quantum_genetic_optimizer/__init__.py
+aqgo.egg-info/PKG-INFO
+aqgo.egg-info/SOURCES.txt
+aqgo.egg-info/dependency_links.txt
+aqgo.egg-info/requires.txt
+aqgo.egg-info/top_level.txt
