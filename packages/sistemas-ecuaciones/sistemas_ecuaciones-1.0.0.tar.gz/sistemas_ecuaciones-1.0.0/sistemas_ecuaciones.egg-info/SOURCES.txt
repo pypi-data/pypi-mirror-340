@@ -1,0 +1,9 @@
+README.md
+setup.py
+LR20029-UNO/LR20029UNO.py
+LR20029-UNO/__init__.py
+sistemas_ecuaciones.egg-info/PKG-INFO
+sistemas_ecuaciones.egg-info/SOURCES.txt
+sistemas_ecuaciones.egg-info/dependency_links.txt
+sistemas_ecuaciones.egg-info/requires.txt
+sistemas_ecuaciones.egg-info/top_level.txt
