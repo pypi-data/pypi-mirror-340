@@ -1,0 +1,2 @@
+[console_scripts]
+qr-gen = qr_code_engine.mainwindow:run_app

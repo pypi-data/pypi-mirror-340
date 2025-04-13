@@ -1,0 +1,14 @@
+license.txt
+setup.py
+qr_code_engine/__init__.py
+qr_code_engine/mainwindow.py
+qr_code_engine.egg-info/PKG-INFO
+qr_code_engine.egg-info/SOURCES.txt
+qr_code_engine.egg-info/dependency_links.txt
+qr_code_engine.egg-info/entry_points.txt
+qr_code_engine.egg-info/requires.txt
+qr_code_engine.egg-info/top_level.txt
+qr_code_engine/logic/__init__.py
+qr_code_engine/logic/qrcodegenerator.py
+qr_code_engine/subwindow/__init__.py
+qr_code_engine/subwindow/multitextwindow.py
