@@ -1,0 +1,15 @@
+README.rst
+pyproject.toml
+setup.py
+nixt/__init__.py
+nixt/client.py
+nixt/disk.py
+nixt/handler.py
+nixt/json.py
+nixt/object.py
+nixt/store.py
+nixt/thread.py
+nixt.egg-info/PKG-INFO
+nixt.egg-info/SOURCES.txt
+nixt.egg-info/dependency_links.txt
+nixt.egg-info/top_level.txt
