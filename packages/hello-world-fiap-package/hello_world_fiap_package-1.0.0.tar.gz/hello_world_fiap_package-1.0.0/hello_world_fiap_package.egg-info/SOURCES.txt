@@ -1,0 +1,9 @@
+README.md
+setup.py
+cursofiap/__init__.py
+cursofiap/core.py
+hello_world_fiap_package.egg-info/PKG-INFO
+hello_world_fiap_package.egg-info/SOURCES.txt
+hello_world_fiap_package.egg-info/dependency_links.txt
+hello_world_fiap_package.egg-info/top_level.txt
+tests/test_core.py
