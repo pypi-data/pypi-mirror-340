@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include src/bestmcp/protocols */protocol_manifest.json
+recursive-include src/bestmcp/configs *.yaml 
