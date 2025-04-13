@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+Pybmp/__init__.py
+Pybmp/main.py
+easybmp.egg-info/PKG-INFO
+easybmp.egg-info/SOURCES.txt
+easybmp.egg-info/dependency_links.txt
+easybmp.egg-info/top_level.txt
