@@ -1,0 +1,37 @@
+query plannedAbsencesForPerson(
+  $orderBy: [String]
+  $filters: JSONString
+  $person: ID!
+) {
+  items: plannedAbsencesForPerson(
+    orderBy: $orderBy
+    filters: $filters
+    person: $person
+  ) {
+    id
+    person {
+      id
+      fullName
+    }
+    reason {
+      id
+      shortName
+      name
+      colour
+      default
+    }
+    comment
+    datetimeStart
+    datetimeEnd
+    dateStart
+    dateEnd
+    canEdit
+    canDelete
+  }
+}
+
+mutation deletePlannedAbsences($ids: [ID]!) {
+  deleteAbsences(ids: $ids) {
+    deletionCount
+  }
+}

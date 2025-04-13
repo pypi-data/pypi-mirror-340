@@ -1,0 +1,38 @@
+{
+  "kolego": {
+    "absence": {
+      "comment": "Kommentar",
+      "create": "Abwesenheit anlegen",
+      "menu_title": "Abwesenheiten",
+      "reason": "Grund",
+      "title_plural": "Abwesenheiten"
+    },
+    "absence_reason": {
+      "colour": "Farbe",
+      "create": "Abwesenheitsgrund erstellen",
+      "count_as_absent": "Als abwesend zählen",
+      "default": "Standard-Abwesenheits-Grund",
+      "default_helptext": "Wird vorherigen Standard deaktivieren, wenn aktiviert",
+      "menu_title": "Abwesenheitsgründe",
+      "name": "Name",
+      "present": "Anwesend",
+      "short_name": "Kurzname",
+      "tags": "Tags",
+      "title_plural": "Abwesenheitsgründe"
+    },
+    "absence_reason_tag": {
+      "create": "Abwesenheitsgrund-Tag erstellen",
+      "menu_title": "Abwesenheitsgrund-Tags",
+      "name": "Name",
+      "short_name": "Kurzname",
+      "title_plural": "Abwesenheitsgrund-Tags"
+    },
+    "menu_title": "Abwesenheiten",
+    "widgets": {
+      "planned_absences": {
+        "title": "Geplante Abwesenheiten",
+        "no_data": "Es gibt keine geplanten Abwesenheiten."
+      }
+    }
+  }
+}
