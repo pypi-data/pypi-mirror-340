@@ -1,0 +1,31 @@
+[project]
+name = "py-nlp-utils"
+authors = [
+  { name="Shen Fuchen", email="sfc@tju.edu.cn" },
+]
+dynamic = ["version", "description"]
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Utilities",
+]
+keywords = ["nlp", "utils", "transformers", "openai", "deepseek"]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/phuturesh/nlp_utils"
+
+[project.optional-dependencies]
+openai = ["tiktoken"]
+deepseek = ["transformers"]
+transformers = ["transformers"]
+
+[build-system]
+requires = ["flit_core >= 3.12.0, <4"]
+build-backend = "flit_core.buildapi"
