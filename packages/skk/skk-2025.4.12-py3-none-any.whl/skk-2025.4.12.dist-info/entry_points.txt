@@ -1,0 +1,3 @@
+[console_scripts]
+skk_excel=skk.excel._skk_excel_callback:skk_excel_callback
+
