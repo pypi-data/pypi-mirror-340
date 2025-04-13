@@ -1,0 +1,6 @@
+README.md
+stock_clock.egg-info/PKG-INFO
+stock_clock.egg-info/SOURCES.txt
+stock_clock.egg-info/dependency_links.txt
+stock_clock.egg-info/requires.txt
+stock_clock.egg-info/top_level.txt
