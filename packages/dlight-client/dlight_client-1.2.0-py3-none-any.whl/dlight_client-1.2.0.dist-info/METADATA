@@ -1,0 +1,348 @@
+Metadata-Version: 2.4
+Name: dlight-client
+Version: 1.2.0
+Summary: A Python client for the dLight smart lamp API.
+Author-email: David Kernan <dave@paddez.com>
+License: Creative Commons Legal Code
+        
+        CC0 1.0 Universal
+        
+            CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
+            LEGAL SERVICES. DISTRIBUTION OF THIS DOCUMENT DOES NOT CREATE AN
+            ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
+            INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
+            REGARDING THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS
+            PROVIDED HEREUNDER, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM
+            THE USE OF THIS DOCUMENT OR THE INFORMATION OR WORKS PROVIDED
+            HEREUNDER.
+        
+        Statement of Purpose
+        
+        The laws of most jurisdictions throughout the world automatically confer
+        exclusive Copyright and Related Rights (defined below) upon the creator
+        and subsequent owner(s) (each and all, an "owner") of an original work of
+        authorship and/or a database (each, a "Work").
+        
+        Certain owners wish to permanently relinquish those rights to a Work for
+        the purpose of contributing to a commons of creative, cultural and
+        scientific works ("Commons") that the public can reliably and without fear
+        of later claims of infringement build upon, modify, incorporate in other
+        works, reuse and redistribute as freely as possible in any form whatsoever
+        and for any purposes, including without limitation commercial purposes.
+        These owners may contribute to the Commons to promote the ideal of a free
+        culture and the further production of creative, cultural and scientific
+        works, or to gain reputation or greater distribution for their Work in
+        part through the use and efforts of others.
+        
+        For these and/or other purposes and motivations, and without any
+        expectation of additional consideration or compensation, the person
+        associating CC0 with a Work (the "Affirmer"), to the extent that he or she
+        is an owner of Copyright and Related Rights in the Work, voluntarily
+        elects to apply CC0 to the Work and publicly distribute the Work under its
+        terms, with knowledge of his or her Copyright and Related Rights in the
+        Work and the meaning and intended legal effect of CC0 on those rights.
+        
+        1. Copyright and Related Rights. A Work made available under CC0 may be
+        protected by copyright and related or neighboring rights ("Copyright and
+        Related Rights"). Copyright and Related Rights include, but are not
+        limited to, the following:
+        
+          i. the right to reproduce, adapt, distribute, perform, display,
+             communicate, and translate a Work;
+         ii. moral rights retained by the original author(s) and/or performer(s);
+        iii. publicity and privacy rights pertaining to a person's image or
+             likeness depicted in a Work;
+         iv. rights protecting against unfair competition in regards to a Work,
+             subject to the limitations in paragraph 4(a), below;
+          v. rights protecting the extraction, dissemination, use and reuse of data
+             in a Work;
+         vi. database rights (such as those arising under Directive 96/9/EC of the
+             European Parliament and of the Council of 11 March 1996 on the legal
+             protection of databases, and under any national implementation
+             thereof, including any amended or successor version of such
+             directive); and
+        vii. other similar, equivalent or corresponding rights throughout the
+             world based on applicable law or treaty, and any national
+             implementations thereof.
+        
+        2. Waiver. To the greatest extent permitted by, but not in contravention
+        of, applicable law, Affirmer hereby overtly, fully, permanently,
+        irrevocably and unconditionally waives, abandons, and surrenders all of
+        Affirmer's Copyright and Related Rights and associated claims and causes
+        of action, whether now known or unknown (including existing as well as
+        future claims and causes of action), in the Work (i) in all territories
+        worldwide, (ii) for the maximum duration provided by applicable law or
+        treaty (including future time extensions), (iii) in any current or future
+        medium and for any number of copies, and (iv) for any purpose whatsoever,
+        including without limitation commercial, advertising or promotional
+        purposes (the "Waiver"). Affirmer makes the Waiver for the benefit of each
+        member of the public at large and to the detriment of Affirmer's heirs and
+        successors, fully intending that such Waiver shall not be subject to
+        revocation, rescission, cancellation, termination, or any other legal or
+        equitable action to disrupt the quiet enjoyment of the Work by the public
+        as contemplated by Affirmer's express Statement of Purpose.
+        
+        3. Public License Fallback. Should any part of the Waiver for any reason
+        be judged legally invalid or ineffective under applicable law, then the
+        Waiver shall be preserved to the maximum extent permitted taking into
+        account Affirmer's express Statement of Purpose. In addition, to the
+        extent the Waiver is so judged Affirmer hereby grants to each affected
+        person a royalty-free, non transferable, non sublicensable, non exclusive,
+        irrevocable and unconditional license to exercise Affirmer's Copyright and
+        Related Rights in the Work (i) in all territories worldwide, (ii) for the
+        maximum duration provided by applicable law or treaty (including future
+        time extensions), (iii) in any current or future medium and for any number
+        of copies, and (iv) for any purpose whatsoever, including without
+        limitation commercial, advertising or promotional purposes (the
+        "License"). The License shall be deemed effective as of the date CC0 was
+        applied by Affirmer to the Work. Should any part of the License for any
+        reason be judged legally invalid or ineffective under applicable law, such
+        partial invalidity or ineffectiveness shall not invalidate the remainder
+        of the License, and in such case Affirmer hereby affirms that he or she
+        will not (i) exercise any of his or her remaining Copyright and Related
+        Rights in the Work or (ii) assert any associated claims and causes of
+        action with respect to the Work, in either case contrary to Affirmer's
+        express Statement of Purpose.
+        
+        4. Limitations and Disclaimers.
+        
+         a. No trademark or patent rights held by Affirmer are waived, abandoned,
+            surrendered, licensed or otherwise affected by this document.
+         b. Affirmer offers the Work as-is and makes no representations or
+            warranties of any kind concerning the Work, express, implied,
+            statutory or otherwise, including without limitation warranties of
+            title, merchantability, fitness for a particular purpose, non
+            infringement, or the absence of latent or other defects, accuracy, or
+            the present or absence of errors, whether or not discoverable, all to
+            the greatest extent permissible under applicable law.
+         c. Affirmer disclaims responsibility for clearing rights of other persons
+            that may apply to the Work or any use thereof, including without
+            limitation any person's Copyright and Related Rights in the Work.
+            Further, Affirmer disclaims responsibility for obtaining any necessary
+            consents, permissions or other rights required for any use of the
+            Work.
+         d. Affirmer understands and acknowledges that Creative Commons is not a
+            party to this document and has no duty or obligation with respect to
+            this CC0 or use of the Work.
+        
+Project-URL: Homepage, https://github.com/irishsmurf/dlight-client
+Project-URL: Bug Tracker, https://github.com/irishsmurf/dlight-client/issues
+Keywords: dlight,smart home,lighting,api,iot
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Home Automation
+Classifier: Topic :: System :: Networking
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# python-dlight-client - Async Python Client for dLight API
+
+[![PyPI version](https://badge.fury.io/py/dlight-client.svg)](https://badge.fury.io/py/dlight-client)
+[![Python Versions](https://img.shields.io/pypi/pyversions/dlight-client.svg)](https://pypi.org/project/dlight-client/)
+
+This Python package provides an asynchronous client library (`asyncio`) for interacting with the dLight smart lamp API, based on the documentation dated 2023-01-04. It allows discovering dLight devices using UDP broadcasts and controlling them over a local Wi-Fi network using TCP commands.
+
+The library has been refactored for better organization:
+* `dlightclient.client`: Contains the `AsyncDLightClient` for TCP control.
+* `dlightclient.discovery`: Provides the `discover_devices` function for UDP discovery.
+* `dlightclient.exceptions`: Defines custom error types.
+* `dlightclient.constants`: Holds shared constants.
+* `dlightclient.cli`: Offers a basic command-line interface.
+
+## Features
+
+* **Asynchronous:** Built with `asyncio` for non-blocking network operations.
+* **Discover Devices:** Find dLight devices on the local network via UDP broadcast (`discover_devices`).
+* **Control Light State:**
+    * Turn On/Off (`AsyncDLightClient.set_light_state`)
+    * Set Brightness (0-100%) (`AsyncDLightClient.set_brightness`)
+    * Set Color Temperature (2600K-6000K) (`AsyncDLightClient.set_color_temperature`)
+* **Query Device:**
+    * Get current state (`AsyncDLightClient.query_device_state`).
+    * Get device information (`AsyncDLightClient.query_device_info`).
+* **Wi-Fi Provisioning:** Support for sending Wi-Fi credentials (`AsyncDLightClient.connect_to_wifi` - typically used when device is in SoftAP mode).
+* **Robust Communication:** Handles the specific dLight TCP response format (4-byte length prefix + JSON payload) and includes timeouts.
+* **Error Handling:** Custom exceptions for specific error conditions (e.g., `DLightError`, `DLightTimeoutError`, `DLightConnectionError`).
+* **Command-Line Tool:** A basic CLI (`cli.py`) for discovery and interaction.
+
+## Prerequisites
+
+* A dLight device connected to your local Wi-Fi network (or in SoftAP mode for initial setup).
+* Python 3.9+ (due to `asyncio` features used)
+
+## Installation
+
+```bash
+pip install dlight-client
+```
+
+## Usage
+
+You can use this package as a library in your Python projects or via the included command-line tool.As a LibraryFirst, discover your dLight device(s) to get their IP address and Device ID. Then, use these details to send commands via an AsyncDLightClient instance within an async function.import asyncio
+
+```py
+import logging
+import time # For delays in example
+
+# Import the public interface
+from dlightclient import (
+    AsyncDLightClient,
+    discover_devices,
+    DLightError,
+    DLightTimeoutError,
+    DLightConnectionError
+)
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+log = logging.getLogger(__name__)
+
+async def run_example():
+    log.info("--- Async dLight Python Client Example ---")
+
+    log.info("\n--- Discovering Devices (3 seconds) ---")
+    try:
+        # Use the discover_devices function directly
+        devices = await discover_devices(discovery_duration=3.0)
+    except Exception as e:
+         log.exception(f"Discovery failed with an unexpected error: {e}")
+         devices = []
+
+    if not devices:
+        log.warning("\nNo dLight devices found on the network.")
+        log.warning("Ensure dLight is powered on and connected to the same network.")
+        # Add Wi-Fi connect example if needed (see cli.py or client.py for details)
+        return
+
+    # --- Interact with the first discovered device ---
+    target_device = devices[0]
+    target_ip = target_device.get('ip_address')
+    # Handle potential case difference for deviceId from discovery
+    device_id = target_device.get('deviceId') or target_device.get('deviceid')
+
+    if not target_ip or not device_id:
+        log.error(f"Could not get IP address or Device ID from discovered device: {target_device}")
+        return
+
+    log.info(f"\n--- Interacting with: {device_id} at {target_ip} ---")
+    client = AsyncDLightClient(default_timeout=5.0) # Adjust timeout if needed
+
+    try:
+        # Query Info
+        log.info("\nQuerying Device Info...")
+        info = await client.query_device_info(target_ip, device_id)
+        log.info(f"  Info: {info}")
+
+        # Query State
+        log.info("\nQuerying Device State...")
+        state_resp = await client.query_device_state(target_ip, device_id)
+        current_state = state_resp.get('states', {})
+        log.info(f"  Current State: {current_state}")
+
+        # Turn On
+        log.info("\nTurning Light ON...")
+        await client.set_light_state(target_ip, device_id, True)
+        await asyncio.sleep(0.5) # Give device time to react
+
+        # Set Brightness
+        log.info("\nSetting Brightness to 60%...")
+        await client.set_brightness(target_ip, device_id, 60)
+        await asyncio.sleep(0.5)
+
+        # Set Color Temperature
+        log.info("\nSetting Color Temperature to 4500K...")
+        await client.set_color_temperature(target_ip, device_id, 4500)
+        await asyncio.sleep(0.5)
+
+        # Query State Again
+        log.info("\nQuerying Device State Again...")
+        state_resp = await client.query_device_state(target_ip, device_id)
+        new_state = state_resp.get('states', {})
+        log.info(f"  New State: {new_state}")
+
+        # Turn Off
+        log.info("\nTurning Light OFF...")
+        await client.set_light_state(target_ip, device_id, False)
+
+    except (DLightTimeoutError, DLightConnectionError) as e:
+        log.error(f"\n--- Network Error during interaction ---")
+        log.error(e)
+    except DLightError as e:
+        log.error(f"\n--- A dLight error occurred during interaction ---")
+        log.error(e)
+    except ValueError as e:
+         log.error(f"\n--- Invalid value provided during interaction ---")
+         log.error(e)
+    except Exception as e:
+         log.exception(f"\n--- An unexpected error occurred during interaction ---")
+
+
+if __name__ == "__main__":
+    try:
+        asyncio.run(run_example())
+    except KeyboardInterrupt:
+        print("Example stopped.")
+```
+
+###  Using the Command-Line Tool (cli.py)
+
+The package includes a basic command-line tool for common operations. You can run it as a module:
+
+```py
+python -m dlightclient.cli [OPTIONS]
+```
+
+### Common Commands:
+
+- **Discover devices:**
+    - `python -m dlightclient.cli --discover`
+    - `python -m dlightclient.cli --discover --discover-duration <DURATION>`
+- **Interact with a device (requires IP and ID):** 
+    - *Replace <IP_ADDRESS> and <DEVICE_ID> with actual values*
+    - `python -m dlightclient.cli --ip <IP_ADDRESS> --id <DEVICE_ID>`
+- **Send Wi-Fi credentials (for setup):**
+    - *Warning: Use this only when the device is in SoftAP mode and your computer is connected to its network.*
+    - ```
+        # Replace <DEVICE_ID>, <YOUR_WIFI_SSID>, <YOUR_WIFI_PASSWORD>
+    	python -m dlightclient.cli --connect-wifi --id <DEVICE_ID> --ssid "<YOUR_WIFI_SSID>" --password "<YOUR_WIFI_PASSWORD>"
+      ```
+- **Get Help:**
+    - python -m dlightclient.cli --help
+- **Increase Verbosity:**
+    - Use -v for INFO level logging, -vv for DEBUG level.# Discover with DEBUG logging
+    - `python -m dlightclient.cli --discover -vv`
+
+# Interact with DEBUG logging
+`python -m dlightclient.cli --ip <IP_ADDRESS> --id <DEVICE_ID> -vv`
+
+# API Details
+- **TCP Commands:** Sent to device IP on port 3333 (default).  Handled by `AsyncDLightClient.`
+- **UDP Discovery:** Broadcast sent to 255.255.255.255 (default) on port 9478. Responses listened for on port 9487. Handled by `discover_devices`.
+
+# Development and Testing
+
+1. Setup Virtual Environment:
+```sh
+python -m venv .venv
+source .venv/bin/activate  # or .\.venv\Scripts\activate on Windows
+```
+
+2. Install Dependencies (if any beyond standard library):
+```sh
+# Add requirements-dev.txt if needed for linters, pytest, etc.
+# pip install -r requirements-dev.txt
+```
+
+3. Install in Editable Mode:
+```sh
+pip install -e .
+```
+
+# Testing
+Note: The test suite (tests/test_dlight.py) needs to be updated to reflect the refactored code structure (module paths for patching, imports, etc.).Once updated, you can run tests using:python -m unittest discover -s tests/ -p 'test_*.py'
+# Or potentially targeting the specific test file if structure changed:
+# python -m unittest tests.test_dlight
