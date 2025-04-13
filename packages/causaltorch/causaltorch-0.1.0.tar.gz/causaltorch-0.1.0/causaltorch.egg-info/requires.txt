@@ -1,0 +1,12 @@
+torch>=1.8.0
+numpy>=1.19.0
+matplotlib>=3.3.0
+networkx>=2.5
+
+[dev]
+pytest>=6.0.0
+black>=21.5b2
+isort>=5.8.0
+
+[text]
+transformers>=4.5.0
