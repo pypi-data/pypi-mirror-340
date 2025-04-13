@@ -1,0 +1,8 @@
+LICENSE
+README.md
+nk256_full.py
+setup.py
+nk256_full.egg-info/PKG-INFO
+nk256_full.egg-info/SOURCES.txt
+nk256_full.egg-info/dependency_links.txt
+nk256_full.egg-info/top_level.txt
