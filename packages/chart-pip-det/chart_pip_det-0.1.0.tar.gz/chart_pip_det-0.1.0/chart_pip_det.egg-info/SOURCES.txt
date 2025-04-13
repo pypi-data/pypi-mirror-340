@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+chart_pip_det.egg-info/PKG-INFO
+chart_pip_det.egg-info/SOURCES.txt
+chart_pip_det.egg-info/dependency_links.txt
+chart_pip_det.egg-info/requires.txt
+chart_pip_det.egg-info/top_level.txt
+pipdet/__init__.py
+pipdet/dataset.py
+pipdet/pip.py
+pipdet/pipgen.py
+pipdet/utils.py
