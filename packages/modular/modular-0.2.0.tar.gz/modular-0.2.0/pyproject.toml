@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "modular"
+version = "0.2.0"
+authors = [
+    { name = "Jeffrey Spies", email = "code@jeffspies.com" },
+]
+description = "A modular package for all sorts of things where you want choices"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/221b-io/modular"
+"Bug Tracker" = "https://github.com/221b-io/modular/issues"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+] 

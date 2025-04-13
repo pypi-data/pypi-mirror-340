@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+modular/__init__.py
+modular.egg-info/PKG-INFO
+modular.egg-info/SOURCES.txt
+modular.egg-info/dependency_links.txt
+modular.egg-info/requires.txt
+modular.egg-info/top_level.txt
+modular/tables/__init__.py
+modular/tables/converters.py
+modular/tables/normalize.py
+modular/tables/table.py
