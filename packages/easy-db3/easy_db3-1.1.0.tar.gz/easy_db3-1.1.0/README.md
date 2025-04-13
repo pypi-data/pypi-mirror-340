@@ -1,0 +1,85 @@
+# EasyDB
+
+EasyDB is a simple, category-based key-value database that stores data in plain text files. It's designed to be lightweight and easy to use.
+
+## Features
+- Simple key-value storage
+- Stores data in plain text files
+- Supports categories to organize data
+
+## Usage
+
+```python
+# example.py
+
+from easydb import Database
+
+# Create an instance of the Database class
+db = Database("example.db")
+
+# --- Step 1: Store Data ---
+# Store some user data under the "USER" category
+db.storage("name: Alice", "age: 28", category="USER")
+db.storage("admin: True", category="USER")
+
+# Store server and channel data under "CHANNELS" category
+db.storage("server_id: 9876", "channel_id: 1234", category="CHANNELS")
+
+# --- Step 2: Load Data ---
+# After storing the data, let's load it from the file
+db.load()
+
+# --- Step 3: Retrieve Data ---
+# Retrieve specific data from the "USER" category
+print("User Name:", db.get_data("name", category="USER"))  # Alice
+print("User Age:", db.get_data("age", category="USER"))  # 28
+print("Admin:", db.get_data("admin", category="USER"))  # True
+
+# Retrieve entire category data (all keys in "USER" category)
+print("User Category Data:", db.get_data(category="USER"))
+# Output: {'name': 'Alice', 'age': '28', 'admin': 'True'}
+
+# Retrieve specific data from the "CHANNELS" category
+print("Server ID:", db.get_data("server_id", category="CHANNELS"))  # 9876
+print("Channel ID:", db.get_data("channel_id", category="CHANNELS"))  # 1234
+
+# Retrieve entire category data (all keys in "CHANNELS" category)
+print("Channels Category Data:", db.get_data(category="CHANNELS"))
+# Output: {'server_id': '9876', 'channel_id': '1234'}
+
+# --- Step 4: Delete Data ---
+# Delete a key from a specific category ("USER" category)
+db.del_data("age", category="USER")
+print("After Deleting Age from USER:", db.get_data(category="USER"))
+# Output: {'name': 'Alice', 'admin': 'True'}
+
+# Delete the entire "USER" category
+db.del_data(category="USER")
+print("After Deleting USER category:", db.get_data(category="USER"))
+# Output: None (since the category was deleted)
+
+# --- Step 5: Store More Data and Delete from Flat Structure ---
+# Store data without a category (flat structure)
+db.storage("app_name: MyApp")
+
+# Load and retrieve the flat data
+db.load()
+print("App Name:", db.get_data("app_name"))  # MyApp
+
+# Delete the flat data
+db.del_data("app_name")
+print("After Deleting app_name:", db.get_data("app_name"))
+# Output: None (since the key was deleted)
+
+# --- Step 6: Clean-up and Save Changes ---
+# The data is automatically saved after each operation (storage and deletion).
+# You can manually save it by calling db._save(), but it's not necessary.
+```
+
+## Installation
+
+You can install EasyDB via pip:
+
+```bash
+pip install easydb
+```
