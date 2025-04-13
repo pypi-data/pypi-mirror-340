@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: atropylib
+Version: 0.0.12
+Author-email: atropos <sv7n@pm.me>
+Requires-Python: >=3.11
+Requires-Dist: nats-py>=2.10.0
+Requires-Dist: nest-asyncio>=1.6.0
+Requires-Dist: opentelemetry-api>=1.31.1
+Requires-Dist: opentelemetry-exporter-otlp>=1.31.1
+Requires-Dist: opentelemetry-instrumentation-asyncio>=0.52b1
+Requires-Dist: opentelemetry-instrumentation-click>=0.52b1
+Requires-Dist: opentelemetry-instrumentation-fastapi>=0.52b1
+Requires-Dist: opentelemetry-instrumentation-logging>=0.52b1
+Requires-Dist: opentelemetry-instrumentation-requests>=0.52b1
+Requires-Dist: opentelemetry-sdk>=1.31.1
+Requires-Dist: pydantic>=2.11.1
