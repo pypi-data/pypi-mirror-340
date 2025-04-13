@@ -1,0 +1,9 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+config.py,sha256=yrcMSou2YuSs9VHJ4k7nzbrApS7yRLAz96EZK6FMuNU,1171
+server.py,sha256=pOrIOCN9cRMnixPAPmNK5ljcNR1wrIdzY-5hV4vKXdA,7585
+trino_client.py,sha256=gyJncqnkXi3s0jWTzxIt2IMaBZs5GbcFlUvfPYiUc5E,12902
+mcp_trino_python-0.2.0.dist-info/licenses/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+mcp_trino_python-0.2.0.dist-info/METADATA,sha256=w89DfV4WAEMdqbtAh92_UXQA9Yv2RZ6Wh_6RFE2gxpo,7086
+mcp_trino_python-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mcp_trino_python-0.2.0.dist-info/top_level.txt,sha256=IaNppvaB5R57HjeQAk_6sMCitRe2OxIOGiDWrmgcpqM,36
+mcp_trino_python-0.2.0.dist-info/RECORD,,
