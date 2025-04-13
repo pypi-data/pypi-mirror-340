@@ -1,0 +1,17 @@
+[project]
+name = "ceon-render"
+version = "0.3.0"
+description = "Rendering pipeline functionality for multi-app CGI workflows."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Dayne Kolk", email = "daynekolk@hotmail.com" }
+]
+dependencies = [
+    "ciocore>=9.1",
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

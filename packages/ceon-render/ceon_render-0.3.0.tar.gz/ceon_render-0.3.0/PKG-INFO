@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: ceon-render
+Version: 0.3.0
+Summary: Rendering pipeline functionality for multi-app CGI workflows.
+Author-email: Dayne Kolk <daynekolk@hotmail.com>
+Requires-Python: >=3.11
+Requires-Dist: ciocore>=9.1
+Description-Content-Type: text/markdown
+
+# ceon_render
+Rendering Pipeline management for VFX apps with support for third party rendering providers.
