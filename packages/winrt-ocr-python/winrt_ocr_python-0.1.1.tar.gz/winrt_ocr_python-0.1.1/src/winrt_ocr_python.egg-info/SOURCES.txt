@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/winrt_ocr_python.egg-info/PKG-INFO
+src/winrt_ocr_python.egg-info/SOURCES.txt
+src/winrt_ocr_python.egg-info/dependency_links.txt
+src/winrt_ocr_python.egg-info/requires.txt
+src/winrt_ocr_python.egg-info/top_level.txt
+src/winrtocr/__init__.py
+src/winrtocr/main.py
+src/winrtocr/utils.py
+tests/test_ocr.py

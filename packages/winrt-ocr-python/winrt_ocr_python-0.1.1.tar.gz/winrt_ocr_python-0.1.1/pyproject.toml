@@ -1,0 +1,30 @@
+[project]
+name = "winrt-ocr-python"
+version = "0.1.1"
+authors = [
+  { name="Le Hien Hieu", email="hieulh.work@example.com" },
+]
+description = "Python wrapper for OCR by Windows Runtime API"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows :: Windows 10",
+    "Operating System :: Microsoft :: Windows :: Windows 11",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Multimedia :: Graphics :: Capture :: Scanners"
+]
+dependencies = [
+    "winsdk",
+    "numpy",
+    "opencv-python",
+    "pillow"
+]
+license = "Apache-2.0"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/hieulhaiwork/winrt-ocr-python"
+Issues = "https://github.com/hieulhaiwork/winrt-ocr-python/issues"
