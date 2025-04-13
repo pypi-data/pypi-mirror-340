@@ -1,0 +1,7 @@
+minagent/__init__.py,sha256=XTrJCHmAeGaqacSM0ZtFF-l6nZqx4LQI1NPDB34tf6I,52
+minagent/agent.py,sha256=NoyFZZpYtlFd1iC5RtvmY0LAREcbZ4SeqCv85Y2NwMM,14583
+minagent/prompt.py,sha256=Np6OSXMEL5HcLJs16mmF9-IaF8KetNZdS-ZDzbOnlqs,665
+minagent-0.1.1.dist-info/METADATA,sha256=nuWGFYb_Afm1I6awHjDzm9qUf0fAUNIyFbnzMei1TCk,2253
+minagent-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+minagent-0.1.1.dist-info/licenses/LICENSE,sha256=0znnbJmc4ntloUiR_n7Ehvyx4JnxN7iajJBOmr9u51M,1067
+minagent-0.1.1.dist-info/RECORD,,
