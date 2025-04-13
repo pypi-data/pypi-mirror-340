@@ -1,0 +1,2 @@
+[console_scripts]
+cg22079uno = CG22079UNO.main:menu
