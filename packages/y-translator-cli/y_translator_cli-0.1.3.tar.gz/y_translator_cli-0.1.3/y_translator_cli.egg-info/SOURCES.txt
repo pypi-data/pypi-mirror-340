@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test_cli.py
+translator/__init__.py
+translator/agent.py
+translator/cli.py
+translator/config.py
+y_translator_cli.egg-info/PKG-INFO
+y_translator_cli.egg-info/SOURCES.txt
+y_translator_cli.egg-info/dependency_links.txt
+y_translator_cli.egg-info/entry_points.txt
+y_translator_cli.egg-info/requires.txt
+y_translator_cli.egg-info/top_level.txt
