@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+MM22025UNO/__init__.py
+MM22025UNO/lineales.py
+MM22025UNO/no_lineales.py
+MM22025UNO.egg-info/PKG-INFO
+MM22025UNO.egg-info/SOURCES.txt
+MM22025UNO.egg-info/dependency_links.txt
+MM22025UNO.egg-info/requires.txt
+MM22025UNO.egg-info/top_level.txt
