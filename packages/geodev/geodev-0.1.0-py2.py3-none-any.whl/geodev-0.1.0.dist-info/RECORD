@@ -1,0 +1,10 @@
+geodev/__init__.py,sha256=V87pMTmVXGWjYfXM_UxS0Axtj_IZGDbSQYjZHK0e2gs,144
+geodev/common.py,sha256=Rw6d9qmZDu3dUGTyJto1Y97S7-QA-m2p-pbCNvMDrm4,184
+geodev/foliumap.py,sha256=5c2ei480mMrNea7DdtmGXNv2isx1Y-t5wq20psEXqL4,4514
+geodev/geodev.py,sha256=5efpw1N1eJuS_WPABVPnTBeFWTtR9fI0Mx7DcKox4vM,9251
+geodev-0.1.0.dist-info/licenses/LICENSE,sha256=_BktjO_lZVQtxUpieKTALScgneY3NXwhCqduJoxCAW4,1070
+geodev-0.1.0.dist-info/METADATA,sha256=TeUA25SXYGcy2TsKDb1CBkoSOxHKIgw2ooUUchIEKto,1527
+geodev-0.1.0.dist-info/WHEEL,sha256=MAQBAzGbXNI3bUmkDsiV_duv8i-gcdnLzw7cfUFwqhU,109
+geodev-0.1.0.dist-info/entry_points.txt,sha256=_9nNoJJ9ajg5dO-CltTIvoL15mNaIfD9m5wxkBbCpgw,43
+geodev-0.1.0.dist-info/top_level.txt,sha256=5jE9hUtYE-Omeq-SfyR1F0mem7t9rWklIp7ASkSW-io,7
+geodev-0.1.0.dist-info/RECORD,,
