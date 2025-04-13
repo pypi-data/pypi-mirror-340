@@ -1,0 +1,31 @@
+[tool.pyright]
+# Enable extra warning for "basic" (default) type
+# checking mode
+reportUnusedVariable = "warning"
+reportUnusedImport = "warning"
+reportDuplicateImport = "warning"
+
+# Helpers
+reportUnnecessaryComparison = "warning"
+reportUnnecessaryContains = "warning"
+reportUnnecessaryCast = "warning"
+# reportUnnecessaryIsInstance = "warning"
+
+[project]
+name = "ceonmedia-s3"
+version = "0.2.2"
+description = "Developer interface for interacting with ceonmedia S3 storage"
+authors = [
+    { name = "Dayne Kolk", email = "daynekolk@hotmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.4",
+]

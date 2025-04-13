@@ -1,0 +1,6 @@
+ASSETS = "ceonstock-assets-bucket"
+SUBMISSION = "ceonstock-submission-bucket"
+SUBMISSION_TEMP = "ceonstock-temp-submission-bucket"
+PROJECT = "ceonstock-project-bucket"
+JOB = "ceonstock-job-bucket"
+PUBLIC = "ceonstock-public-bucket"
