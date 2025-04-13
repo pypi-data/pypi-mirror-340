@@ -1,0 +1,12 @@
+qr_code_engine/__init__.py,sha256=_N_V0PaBJx4vut-TJ2gIXcjox1-VzQEk-hiL-UsJtvE,36
+qr_code_engine/mainwindow.py,sha256=w6-MuMDB1mB3nL82Q5R63lOSCVEYHx8BgHvqZJD3p7g,2919
+qr_code_engine/logic/__init__.py,sha256=dOUuiDSzTwbVeD2oX5BE1Xk2MsoN6ybWOO9VlZ9k9ls,44
+qr_code_engine/logic/qrcodegenerator.py,sha256=Gfv5ZmGLFDYQgbPykr2V1TXI-ody0muuveMXG8Nvq0I,3469
+qr_code_engine/subwindow/__init__.py,sha256=I1WP2n5w9PEvDTwcGYpVxsvz3yaMb1fZD5Ct9-m8KPs,44
+qr_code_engine/subwindow/multitextwindow.py,sha256=FJGtBiJ4nLPgb6fn0ORXjiuEuyyWDHP6J6MRPewZRWs,1850
+qr_code_engine-0.2.0.dist-info/METADATA,sha256=WF7fmGIK_bOh-n_CjiMS8rpzvAFxEYWSR5609pc5Qlc,3512
+qr_code_engine-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+qr_code_engine-0.2.0.dist-info/entry_points.txt,sha256=sI9XtSpC-PV5bnytqdybV0N-mIqvhF9lhHApSLTEK3k,61
+qr_code_engine-0.2.0.dist-info/license.txt,sha256=uek2nBef5KMpoqblQSxiHn4LwqWW8pyhOWI7I6rPNYo,1158
+qr_code_engine-0.2.0.dist-info/top_level.txt,sha256=4WFS938YYfMzj75qBR1vcVKFe-rG7YkNqtFGslK5Gws,15
+qr_code_engine-0.2.0.dist-info/RECORD,,
