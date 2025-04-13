@@ -1,0 +1,6 @@
+setup.py
+datavs.egg-info/PKG-INFO
+datavs.egg-info/SOURCES.txt
+datavs.egg-info/dependency_links.txt
+datavs.egg-info/top_level.txt
+dvs/__init__.py
