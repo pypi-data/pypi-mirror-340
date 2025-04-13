@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c7806eae-179d-4fe5-a969-1d5b81226cf3" name="Changes" comment="feat: 添加 Apache 2.0 开源许可证" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;dxjia0673&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sansec-ai/mcp-cryptokit&quot;,
+    &quot;accountId&quot;: &quot;6a80b42c-e845-47f3-bd29-75e699c51f0f&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2v7XBFkT8NOWm9Awx9OZNMS062Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/agent/mcp-hsm&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c7806eae-179d-4fe5-a969-1d5b81226cf3" name="Changes" comment="" />
+      <created>1743496948947</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743496948947</updated>
+    </task>
+    <task id="LOCAL-00001" summary="feat: 初始化 mcp-cryptokit 项目">
+      <option name="closed" value="true" />
+      <created>1743501566838</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743501566838</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(cryptokit): 实现国密算法支持和密钥管理系统- 新增 SM4 加密/解密功能&#10;- 新增 SM2 加密/解密和签名/验证功能&#10;- 实现统一密钥管理系统，支持多种算法密钥生成和管理&#10;- 重构代码，优化模块结构和功能接口&#10;- 增加测试客户端和使用示例">
+      <option name="closed" value="true" />
+      <created>1743943929245</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743943929245</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(cryptokit): mcp客户端测试增加openai兼容大模型的支持">
+      <option name="closed" value="true" />
+      <created>1743994884367</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743994884367</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(cryptokit): 修改README">
+      <option name="closed" value="true" />
+      <created>1744095515923</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744095515923</updated>
+    </task>
+    <task id="LOCAL-00005" summary="refactor: 采用环境变量配置密钥存储路径，移除mcp_client, 修改readme">
+      <option name="closed" value="true" />
+      <created>1744344935292</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744344935292</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: 添加 Apache 2.0 开源许可证">
+      <option name="closed" value="true" />
+      <created>1744374549463</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744374549463</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 初始化 mcp-cryptokit 项目" />
+    <MESSAGE value="feat(cryptokit): 实现国密算法支持和密钥管理系统- 新增 SM4 加密/解密功能&#10;- 新增 SM2 加密/解密和签名/验证功能&#10;- 实现统一密钥管理系统，支持多种算法密钥生成和管理&#10;- 重构代码，优化模块结构和功能接口&#10;- 增加测试客户端和使用示例" />
+    <MESSAGE value="feat(cryptokit): mcp客户端测试增加openai兼容大模型的支持" />
+    <MESSAGE value="feat(cryptokit): 修改README" />
+    <MESSAGE value="refactor: 采用环境变量配置密钥存储路径，移除mcp_client, 修改readme" />
+    <MESSAGE value="feat: 添加 Apache 2.0 开源许可证" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加 Apache 2.0 开源许可证" />
+  </component>
+</project>

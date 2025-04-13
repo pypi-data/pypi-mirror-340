@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "mcp-cryptokit": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/mnt/d/agent/mcp-cryptokit",
+        "run",
+        "server.py"
+      ],
+      "timeout": 30,
+      "alwaysAllow": [],
+      "disabled": false,
+      "env": {
+        "CRYPTOKIT_KEY_STORE_PATH": "./test/keystore.json"
+      }
+    }
+  }
+}

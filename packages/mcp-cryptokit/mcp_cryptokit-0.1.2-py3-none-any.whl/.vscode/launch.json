@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Current",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python TEST",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/mnt/d/agent/mcp-cryptokit/test/test_crypto.py"
+        },
+        {
+            "name": "mcp_client",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/mnt/d/agent/mcp-cryptokit/test/mcp_client.py",
+            "args": [
+                "server.py"
+            ],
+            "env": {
+                //"DASHSCOPE_API_KEY": "sk-1d06e75d7fd94338b5b32cf8f9099651",
+                "OPENAI_API_BASE": "http://10.10.112.132:3300/v1",
+                "OPENAI_API_KEY": "sk-hMp1KfD35Nic3gOGjhnf5EPwfGPsIoY4vmllcMcvkUu9DZVE",
+                "LLM_MODEL":"qwq-32b"
+            }
+        }
+    ]
+}
