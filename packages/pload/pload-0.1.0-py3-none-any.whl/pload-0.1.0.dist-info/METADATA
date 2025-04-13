@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: pload
+Version: 0.1.0
+Summary: A simple command line tool for python virtual env management.
+Author: Yunming Hu
+Author-email: hugonelsonm3@gmail.com
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: argcomplete
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
