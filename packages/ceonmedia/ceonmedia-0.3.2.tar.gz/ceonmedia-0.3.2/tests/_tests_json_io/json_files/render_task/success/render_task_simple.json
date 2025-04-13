@@ -1,0 +1,13 @@
+{
+    "app_render_settings": {
+        "target_node": "/out/karma1",
+        "frames": "0 25"
+    },
+    "app_type": "hou",
+    "app_version": "20.0.547",
+    "task_dependencies": [],
+    "task_name": "render_the_flag",
+    "task_output": "render_output.$F4.exr",
+    "task_input": {"target": "hou_project/waving_flag_14_upgrade_hou_hda_test.hiplc"},
+    "task_uuid": "4143e26e-30c0-4df4-9412-c038f05e3b83"
+}
