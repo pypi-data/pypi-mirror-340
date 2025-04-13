@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pypi-honeypot-project-xyz-321"
+version = "0.0.7"
+readme = "README.md"
+dependencies = [
+]
