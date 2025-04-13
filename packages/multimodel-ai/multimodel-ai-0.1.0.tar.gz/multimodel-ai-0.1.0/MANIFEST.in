@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+include zonos-0.1.0-py3-none-any.whl
+recursive-include multi_ai *.py
+recursive-include multi_ai *.json
+recursive-include multi_ai *.txt
+recursive-include multi_ai *.md
+global-include *.whl 
