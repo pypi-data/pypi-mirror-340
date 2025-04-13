@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/wpApi.py
+src/WordPResT.egg-info/PKG-INFO
+src/WordPResT.egg-info/SOURCES.txt
+src/WordPResT.egg-info/dependency_links.txt
+src/WordPResT.egg-info/top_level.txt
