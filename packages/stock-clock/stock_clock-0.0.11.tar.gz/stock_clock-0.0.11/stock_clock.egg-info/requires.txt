@@ -1,0 +1,8 @@
+requests>=2.28
+polars[all]>=0.19
+pymysql>=1.1
+sqlalchemy>=2.0
+numpy>=1.24
+mysql-connector-python>=8.0
+python-dotenv>=1.0
+typing-extensions>=4.5
