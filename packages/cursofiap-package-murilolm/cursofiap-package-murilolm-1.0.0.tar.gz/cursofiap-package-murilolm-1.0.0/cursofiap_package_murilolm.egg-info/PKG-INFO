@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cursofiap-package-murilolm
+Version: 1.0.0
+Summary: Descricao da sua lib cursofiap
+Home-page: https://github.com/tadrianonet/cursofiap
+Author: Murilo
+Author-email: murilolmartins1@gmail.com
+License: MIT
+Description: # Cursofiap
+        A simple example library.
+        ## Installation
+        ```sh
+        pip install cursofiap
+        ```
+        ## Usage
+        ```python
+        from cursofiap import hello_world
+        print(hello_world())
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
