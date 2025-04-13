@@ -1,0 +1,10 @@
+README.md
+setup.py
+PF23019UNO/_init_.py
+PF23019UNO/metodos_lineales.py
+PF23019UNO/metodos_no_lineales.py
+PF23019UNO.egg-info/PKG-INFO
+PF23019UNO.egg-info/SOURCES.txt
+PF23019UNO.egg-info/dependency_links.txt
+PF23019UNO.egg-info/requires.txt
+PF23019UNO.egg-info/top_level.txt
