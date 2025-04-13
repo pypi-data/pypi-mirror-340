@@ -1,0 +1,11 @@
+[console_scripts]
+nasr = nasr.__main__:main
+nasr-run = nasr.__main__:main
+
+[distutils.commands]
+bdist_nasr = nasr.distutils.DistutilCommands:bdist_nasr
+build_nasr = nasr.distutils.DistutilCommands:build
+install_nasr = nasr.distutils.DistutilCommands:install
+
+[distutils.setup_keywords]
+build_with_nasr = nasr.distutils.DistutilCommands:setupPyTanicDistutilsCommands

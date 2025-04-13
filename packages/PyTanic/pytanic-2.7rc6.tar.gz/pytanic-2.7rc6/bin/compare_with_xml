@@ -1,0 +1,108 @@
+#!/usr/bin/env python
+#     Copyright 2025, PyTanicTools :nasr2python@gmail.com find license text at end of file
+
+
+""" Tool to compare XML outputs of two PyTanic versions.
+
+"""
+
+import os
+import sys
+
+# Unchanged, running from checkout, use the parent directory, the nasr
+# package ought to be there.
+sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(__file__), "..")))
+
+# isort:start
+
+import difflib
+
+from nasr.tools.testing.Common import my_print
+from nasr.utils.Execution import executeProcess
+
+nasr1 = sys.argv[1]
+nasr2 = sys.argv[2]
+filename = sys.argv[3]
+
+my_print(
+    """\
+Comparing output of '{filename}' using '{nasr1}' <-> '{nasr2}' ...""".format(
+        filename=filename, nasr1=nasr1, nasr2=nasr2
+    )
+)
+
+extra_settings = os.getenv("DEVILPY_EXTRA_OPTIONS", "")
+
+nasr1_cmd = "{nasr1} --xml {filename}".format(nasr1=nasr1, filename=filename)
+nasr2_cmd = "{nasr2} --xml {filename}".format(nasr2=nasr2, filename=filename)
+
+stdout_nasr1, stderr_nasr1, exit_nasr1 = executeProcess(nasr1_cmd, shell=True)
+stdout_nasr2, stderr_nasr2, exit_nasr2 = executeProcess(nasr2_cmd, shell=True)
+
+
+def makeDiffable(output):
+    result = []
+
+    for line in output.split(b"\n"):
+        line = str(line)
+        result.append(line)
+
+    return result
+
+
+def compareOutput(kind, out1, out2):
+    diff = difflib.unified_diff(
+        makeDiffable(out1),
+        makeDiffable(out2),
+        "{program} ({detail})".format(program="nasr1 " + filename, detail=kind),
+        "{program} ({detail})".format(program="nasr2 " + filename, detail=kind),
+        None,
+        None,
+        n=3,
+    )
+
+    result = list(diff)
+
+    if result:
+        for line in result:
+            my_print(line, end="\n" if not line.startswith("---") else "")
+        return 1
+    else:
+        return 0
+
+
+exit_code_stdout = compareOutput("stdout", stdout_nasr1, stdout_nasr2)
+exit_code_return = exit_nasr1 != exit_nasr2
+
+if exit_code_return:
+    my_print(
+        """\
+Exit codes {exit_nasr1:d} ({nasr1}) != {exit_nasr2:d} ({nasr2})""".format(
+            exit_nasr1=exit_nasr1,
+            nasr1=nasr1,
+            exit_nasr2=exit_nasr2,
+            nasr2=nasr2,
+        )
+    )
+
+exit_code = exit_code_stdout or exit_code_return
+
+if exit_code:
+    sys.exit("Error, outputs differed.")
+
+my_print("OK, same outputs.")
+
+#     Part of "PyTanic", an optimizing Python compiler that is compatible and
+#     integrates with CPython, but also works on its own.
+#
+#     Licensed under the Apache License, Version 2.0 (the "License");
+#     you may not use this file except in compliance with the License.
+#     You may obtain a copy of the License at
+#
+#        http://www.apache.org/licenses/LICENSE-2.0
+#
+#     Unless required by applicable law or agreed to in writing, software
+#     distributed under the License is distributed on an "AS IS" BASIS,
+#     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#     See the License for the specific language governing permissions and
+#     limitations under the License.
