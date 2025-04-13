@@ -1,0 +1,14 @@
+AUTHORS.md
+LICENSE
+README.md
+pyproject.toml
+src/fetch_my_weather.egg-info/PKG-INFO
+src/fetch_my_weather.egg-info/SOURCES.txt
+src/fetch_my_weather.egg-info/dependency_links.txt
+src/fetch_my_weather.egg-info/requires.txt
+src/fetch_my_weather.egg-info/top_level.txt
+src/simple-weather/__init__.py
+src/simple-weather/core.py
+src/simple_weather/__init__.py
+src/simple_weather/core.py
+tests/test_core.py
