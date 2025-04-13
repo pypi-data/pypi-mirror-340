@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: ineedproxy
+Version: 0.1.3
+Summary: An aio library designed for easy and reliable access to working proxies. It primarily fetches, manages, rotates, and stores proxy data.
+Home-page: https://github.com/paul-hartwich/ineedproxy
+Author: Paul Hartwich
+Author-email: paulnoahhartwich@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: aiohttp~=3.11.11
+Requires-Dist: msgpack~=1.1.0
+Requires-Dist: orjson~=3.10.15
+Requires-Dist: brotli
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# ineedproxy
+
+*Note: Please use this library with caution.
+It is Only For Educational Purposes.
+Neither I Say Nor I Promote To Do Anything Illegal.
+Don't use this library for illegal activities, I
+will not take responsibility for any misuse of this library.*
+
+## Installation
+
+*Python 3.12.8 is recommended and is the one worked with. But others will probably work too.*
+
+```bash
+pip install ineedproxy
+```
+
+**Example:**
+
+For code example, see [basic_usage.py](https://github.com/paul-hartwich/ineedproxy/blob/master/example/basic_usage.py)
+
