@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: jcx
+Version: 0.3.10
+Summary: 
+Author: dayn9t
+Author-email: dayn9t@gmail.com
+Requires-Python: ~=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: arrow
+Requires-Dist: interval
+Requires-Dist: loguru
+Requires-Dist: numpy
+Requires-Dist: paho-mqtt
+Requires-Dist: parse
+Requires-Dist: pre-commit
+Requires-Dist: pydantic
+Requires-Dist: redis
+Requires-Dist: requests
+Requires-Dist: rustshed
+Requires-Dist: sh
+Requires-Dist: typer
+Requires-Dist: types-paho-mqtt
+Description-Content-Type: text/markdown
+
+# JCX
+
+一些基础功能库。
+
+## TODO
+
+- 通过单元测试，因为改用 pydantic 导致大量问题
+- python稀烂的泛型
+

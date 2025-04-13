@@ -1,0 +1,44 @@
+[project]
+name = "jcx"
+version = "0.3.10"
+description = ""
+readme = "README.md"
+authors = [
+    { name = "dayn9t", email = "dayn9t@gmail.com" }
+]
+requires-python = "~=3.12"
+
+dependencies = [
+    "rustshed",
+    "pydantic",
+    "typer",
+    "loguru",
+    "arrow",
+    "paho-mqtt",
+    "parse",
+    "redis",
+    "requests",
+    "sh",
+    "interval",
+    "numpy",
+    "pre-commit",
+    "types-paho-mqtt",
+]
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "*"
+black = "*"
+pyinstaller = "*"
+
+
+[tool.ruff]
+ignore = ["F403", "F405"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
