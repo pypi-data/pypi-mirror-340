@@ -1,0 +1,14 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "arts"
+version = "2025.4.12"
+description = "一个简单的基于 JSON 文件的键-值存储类"
+dependencies = []
+
+
+requires-python = ">=3.12"
+readme = "README.md"
+authors = [{name = "许灿标", email = "lcctoor@outlook.com"}]
