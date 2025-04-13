@@ -1,0 +1,2 @@
+[console_scripts]
+atca-cal = cal_cabb.cli.atca_cal:main

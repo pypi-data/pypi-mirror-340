@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: cal-cabb
+Version: 0.1.0
+Summary: ATCA CABB continuum calibration pipeline.
+Requires-Python: <3.12,>=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: astropy>=6.1.7
+Requires-Dist: click>=8.1.8
+Requires-Dist: colorlog>=6.9.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pre-commit>=4.1.0
