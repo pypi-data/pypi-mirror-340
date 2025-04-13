@@ -1,0 +1,67 @@
+{
+    "project_uuid": "e8bdd183-fd0e-408d-9c38-e375f735925a",
+    "project_info": {
+        "title": "Test Render",
+        "description": "Test project short video."
+    },
+    "project_inputs": [
+        {
+            "description": "The image on the flag",
+            "job_input_type": "img",
+            "name": "flag_image",
+            "required": true,
+            "type_settings": {},
+            "web_input_type": "img"
+        },
+        {
+            "description": "The color of the floating box",
+            "job_input_type": "color",
+            "name": "floating_box_color",
+            "required": true,
+            "type_settings": {},
+            "web_input_type": "color"
+        },
+        {
+            "name": "weather",
+            "description": "Choose the weather", 
+            "required": true, 
+            "job_input_type": "string", 
+            "web_input_type": "dropdown", 
+            "type_settings": {
+                "dropdown_options": [
+                    {
+                        "label": "sunny", 
+                        "value": "sunny"
+                    }, 
+                    {
+                        "label": "overcast", 
+                        "value": "overcast"
+                    }, 
+                    {
+                        "label": "sunset", 
+                        "value": "sunset"
+                    }
+                ]
+            }
+        }
+    ],
+    "render_pipeline": {
+        "render_tasks": [
+            {
+                "app_render_settings": {
+                    "target_node": "/out/karma1",
+                    "frames": "0 25"
+                },
+                "app_type": "hou",
+                "app_version": "20.0.547",
+                "dependencies": [],
+                "task_name": "render_the_flag",
+                "task_output": "render_output.$F4.exr",
+                "task_input": {"target": "hou_project/waving_flag_14_upgrade_hou_hda_test.hiplc"},
+                "task_uuid": "4143e26e-30c0-4df4-9412-c038f05e3b83"
+            }
+        ],
+        "output_task": "render_the_flag",
+        "output_extras": []
+    }
+}

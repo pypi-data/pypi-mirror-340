@@ -1,0 +1,8 @@
+{
+    "description": "",
+    "job_input_type": "img",
+    "name": "myTestProjInput",
+    "required": true,
+    "type_settings": {},
+    "web_input_type": "img"
+}

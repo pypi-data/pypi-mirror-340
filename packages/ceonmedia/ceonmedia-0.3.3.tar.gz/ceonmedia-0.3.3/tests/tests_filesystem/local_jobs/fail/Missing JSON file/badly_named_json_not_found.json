@@ -1,0 +1,15 @@
+{
+  "job_type": "preview",
+  "project_uuid": "2134-afdsf-1242354",  
+  "job_inputs": [  
+    {
+      "name": "my_test_input",
+      "values": "#ff0000"
+    },
+    {
+      "name": "flag_img",
+      "job_input_type": "img",
+      "values": ["file_name.jpg"]
+    }
+  ]
+}

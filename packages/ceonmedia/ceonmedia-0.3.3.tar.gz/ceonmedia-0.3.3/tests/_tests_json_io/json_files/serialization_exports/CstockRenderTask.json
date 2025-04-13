@@ -1,0 +1,10 @@
+{
+    "app_render_settings": {},
+    "app_type": "hou",
+    "app_version": "19.5",
+    "dependencies": [],
+    "name": "myTestRenderTask",
+    "output": "relpath/to/otuputfile/todo/figure_out_proper_approach",
+    "render_file": "relpath/to/somefile/my_project_hip.hiplc",
+    "task_uuid": "a3fa23f5-0749-4989-b29c-bb014e3c2520"
+}

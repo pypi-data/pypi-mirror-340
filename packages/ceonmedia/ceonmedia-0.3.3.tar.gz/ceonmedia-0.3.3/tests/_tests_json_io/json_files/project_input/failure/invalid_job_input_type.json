@@ -1,0 +1,8 @@
+{
+    "description": "The image on the flag",
+    "job_input_type": "invalidjobtype",
+    "name": "flag_image",
+    "type_settings": {},
+    "web_input_type": "img"
+}
+

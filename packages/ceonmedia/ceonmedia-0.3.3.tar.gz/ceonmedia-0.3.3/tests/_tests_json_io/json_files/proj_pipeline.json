@@ -1,0 +1,25 @@
+{
+    "render_pipeline": {
+        "render_tasks": [
+            {
+                "task_name": "first_houdini_render",
+                "app": "hou",
+                "app_version": "19.0.622",
+                "app_project_folder": "hou_project",
+                "target_file": "hou_project/waving_flag_10.hiplc",
+                "app_render_settings": {
+                    "target_node": "/out/rs_render1",
+                    "nodetype": "Redshift_ROP",
+                    "take": "Main",
+                    "frames": "6 10 1"
+                },
+                "output": "defaultNameFromProjTask.$F4.exr",
+                "dependencies": []
+            }
+        ],
+        "outputs": {
+            "primary": ["defaultNameFromProjTask.0010.exr"],
+            "auxiliary": []
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "job_input_type": "img",
+    "name": "myTestJobInput",
+    "values": [
+        "rel_fldr/to/somefile.jpg"
+    ]
+}

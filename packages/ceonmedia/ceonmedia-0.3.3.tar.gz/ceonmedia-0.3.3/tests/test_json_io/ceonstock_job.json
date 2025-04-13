@@ -1,0 +1,32 @@
+{
+    "job_inputs": [
+        {
+            "name": "flag_image",
+            "job_input_type": "IMG",
+            "values": [
+                "CeonAvatar_512_cropped.png"
+            ],
+            "is_file_type": true
+        },
+        {
+            "name": "floating_box_color",
+            "job_input_type": "COLOR",
+            "values": [
+                "#AA0000"
+            ],
+            "is_file_type": false
+        },
+        {
+            "name": "weather",
+            "job_input_type": "STRING",
+            "values": [
+                "sunny"
+            ],
+            "is_file_type": false
+        }
+    ],
+    "project_uuid": "e8bdd183-fd0e-408d-9c38-e375f735925a",
+    "job_type": "PREVIEW",
+    "job_uuid": "57b1e120-d103-4f5f-bbd9-7d482da2d8e3",
+    "limit_frames": null
+}

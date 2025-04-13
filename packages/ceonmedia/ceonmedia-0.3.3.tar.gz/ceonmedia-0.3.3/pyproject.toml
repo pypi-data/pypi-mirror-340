@@ -1,0 +1,16 @@
+[project]
+name = "ceonmedia"
+version = "0.3.3"
+description = "Core functionality for ceonmedia projects"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ceon-render>=0.2.1",
+]
+authors = [
+    { name = "Dayne Kolk", email = "daynekolk@hotmail.com" }
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,28 @@
+{
+    "extra_outputs": [],
+    "primary_output": "ffmpeg_frames_to_mov",
+    "render_tasks": [
+        {
+            "app_render_settings": {},
+            "app_type": "hou",
+            "app_version": "19.5",
+            "dependencies": [],
+            "name": "render_the_frames",
+            "output": "render_images.$F4.exr",
+            "render_file": "hou_project/waving_flag_11.hiplc",
+            "task_uuid": "62752b6f-fbb2-41a6-ab23-81dd1bb41943"
+        },
+        {
+            "app_render_settings": {},
+            "app_type": "ffmpeg",
+            "app_version": "",
+            "dependencies": [
+                "render_the_frames"
+            ],
+            "name": "ffmpeg_frames_to_mov",
+            "output": "render_images.$F4.exr",
+            "render_file": "render_images.$F4.exr",
+            "task_uuid": "baa83c9d-594e-4c64-9abb-db414c588964"
+        }
+    ]
+}

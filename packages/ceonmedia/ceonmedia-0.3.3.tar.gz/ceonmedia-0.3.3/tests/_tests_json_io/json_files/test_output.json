@@ -1,0 +1,28 @@
+{
+    "proj_inputs": [
+        {
+            "description": "Pick a color. Any color",
+            "job_input_type": "color",
+            "name": "box_one",
+            "required": true,
+            "type_settings": {},
+            "web_input_type": "color"
+        },
+        {
+            "description": "And another.",
+            "job_input_type": "color",
+            "name": "box_two",
+            "required": true,
+            "type_settings": {},
+            "web_input_type": "color"
+        },
+        {
+            "description": "Choose an image for the flag.",
+            "job_input_type": "img",
+            "name": "flag_image",
+            "required": true,
+            "type_settings": {},
+            "web_input_type": "img"
+        }
+    ]
+}

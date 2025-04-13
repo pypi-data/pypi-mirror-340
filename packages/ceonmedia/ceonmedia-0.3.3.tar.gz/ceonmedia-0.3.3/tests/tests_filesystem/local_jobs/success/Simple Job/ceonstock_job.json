@@ -1,0 +1,16 @@
+{
+  "job_type": "preview",
+  "project_uuid": "93ca13bf-5c43-4c02-a10a-a9012c442596",  
+  "job_inputs": [  
+    {
+      "name": "my_test_input",
+      "job_input_type": "color",
+      "values": ["#ff0000"]
+    },
+    {
+      "name": "flag_img",
+      "job_input_type": "img",
+      "values": ["file_name.jpg"]
+    }
+  ]
+}
