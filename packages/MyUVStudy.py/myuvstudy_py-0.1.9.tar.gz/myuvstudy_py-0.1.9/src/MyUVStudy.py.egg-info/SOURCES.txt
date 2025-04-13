@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/bar.py
+src/MyUVStudy.py.egg-info/PKG-INFO
+src/MyUVStudy.py.egg-info/SOURCES.txt
+src/MyUVStudy.py.egg-info/dependency_links.txt
+src/MyUVStudy.py.egg-info/requires.txt
+src/MyUVStudy.py.egg-info/top_level.txt
+src/utils/__init__.py
+src/utils/foo.py
