@@ -1,0 +1,143 @@
+Metadata-Version: 2.4
+Name: reflexions
+Version: 0.1.0
+Summary: Reflex components
+Project-URL: Documentation, https://phil65.github.io/reflexions/
+Project-URL: Source, https://github.com/phil65/reflexions
+Project-URL: Issues, https://github.com/phil65/reflexions/issues
+Project-URL: Discussions, https://github.com/phil65/reflexions/discussions
+Project-URL: Code coverage, https://app.codecov.io/gh/phil65/reflexions
+Author-email: Philipp Temminghoff <philipptemminghoff@googlemail.com>
+License: MIT License
+        
+        Copyright (c) 2024, Philipp Temminghoff
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pydantic
+Classifier: Framework :: Pydantic :: 2
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Documentation
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Requires-Dist: pydantic
+Requires-Dist: reflex-chakra>=0.7.0
+Requires-Dist: reflex>=0.7.4
+Description-Content-Type: text/markdown
+
+# Reflexions
+
+[![PyPI License](https://img.shields.io/pypi/l/reflexions.svg)](https://pypi.org/project/reflexions/)
+[![Package status](https://img.shields.io/pypi/status/reflexions.svg)](https://pypi.org/project/reflexions/)
+[![Daily downloads](https://img.shields.io/pypi/dd/reflexions.svg)](https://pypi.org/project/reflexions/)
+[![Weekly downloads](https://img.shields.io/pypi/dw/reflexions.svg)](https://pypi.org/project/reflexions/)
+[![Monthly downloads](https://img.shields.io/pypi/dm/reflexions.svg)](https://pypi.org/project/reflexions/)
+[![Distribution format](https://img.shields.io/pypi/format/reflexions.svg)](https://pypi.org/project/reflexions/)
+[![Wheel availability](https://img.shields.io/pypi/wheel/reflexions.svg)](https://pypi.org/project/reflexions/)
+[![Python version](https://img.shields.io/pypi/pyversions/reflexions.svg)](https://pypi.org/project/reflexions/)
+[![Implementation](https://img.shields.io/pypi/implementation/reflexions.svg)](https://pypi.org/project/reflexions/)
+[![Releases](https://img.shields.io/github/downloads/phil65/reflexions/total.svg)](https://github.com/phil65/reflexions/releases)
+[![Github Contributors](https://img.shields.io/github/contributors/phil65/reflexions)](https://github.com/phil65/reflexions/graphs/contributors)
+[![Github Discussions](https://img.shields.io/github/discussions/phil65/reflexions)](https://github.com/phil65/reflexions/discussions)
+[![Github Forks](https://img.shields.io/github/forks/phil65/reflexions)](https://github.com/phil65/reflexions/forks)
+[![Github Issues](https://img.shields.io/github/issues/phil65/reflexions)](https://github.com/phil65/reflexions/issues)
+[![Github Issues](https://img.shields.io/github/issues-pr/phil65/reflexions)](https://github.com/phil65/reflexions/pulls)
+[![Github Watchers](https://img.shields.io/github/watchers/phil65/reflexions)](https://github.com/phil65/reflexions/watchers)
+[![Github Stars](https://img.shields.io/github/stars/phil65/reflexions)](https://github.com/phil65/reflexions/stars)
+[![Github Repository size](https://img.shields.io/github/repo-size/phil65/reflexions)](https://github.com/phil65/reflexions)
+[![Github last commit](https://img.shields.io/github/last-commit/phil65/reflexions)](https://github.com/phil65/reflexions/commits)
+[![Github release date](https://img.shields.io/github/release-date/phil65/reflexions)](https://github.com/phil65/reflexions/releases)
+[![Github language count](https://img.shields.io/github/languages/count/phil65/reflexions)](https://github.com/phil65/reflexions)
+[![Github commits this week](https://img.shields.io/github/commit-activity/w/phil65/reflexions)](https://github.com/phil65/reflexions)
+[![Github commits this month](https://img.shields.io/github/commit-activity/m/phil65/reflexions)](https://github.com/phil65/reflexions)
+[![Github commits this year](https://img.shields.io/github/commit-activity/y/phil65/reflexions)](https://github.com/phil65/reflexions)
+[![Package status](https://codecov.io/gh/phil65/reflexions/branch/main/graph/badge.svg)](https://codecov.io/gh/phil65/reflexions/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![PyUp](https://pyup.io/repos/github/phil65/reflexions/shield.svg)](https://pyup.io/repos/github/phil65/reflexions/)
+
+[Read the documentation!](https://phil65.github.io/reflexions/)
+
+
+A collection of ready-to-use components for Reflex applications.
+
+## Components
+
+### Icons
+```python
+from reflexions import iconify
+
+# Create an icon with customizable properties
+iconify("mdi:bell", color="blue", size=24)
+iconify("mdi:account", color="red", rotate=90, flip="horizontal")
+```
+
+### Loading Animation
+```python
+from reflexions import loading_icon
+
+# Add a spinning circle loading animation
+loading_icon(stroke="#3182CE", speed="0.75")
+```
+
+### Template Cards
+```python
+from reflexions import cards, TemplateItem
+
+# Create template cards for selection interfaces
+templates = [
+    TemplateItem(
+        icon="mdi:web",
+        title="Website Template",
+        description="Basic website with header and footer",
+        color="blue",
+    ),
+    # Add more templates...
+]
+
+# Create a responsive grid of cards with an optional click handler
+cards(templates, on_click=lambda item: handle_selection(item), cols=3)
+```
+
+### Pydantic Forms
+```python
+from reflexions import pydantic_form
+from pydantic import BaseModel, Field
+
+class UserProfile(BaseModel):
+    name: str = Field(..., description="Your full name")
+    age: int = Field(..., gt=0, description="Your age in years")
+    bio: str | None = Field(None, description="Tell us about yourself")
+
+# Generate a complete form with validation from your model
+form = pydantic_form(
+    UserProfile,
+    on_submit=handle_submission,
+    submit_label="Save Profile",
+)
+```

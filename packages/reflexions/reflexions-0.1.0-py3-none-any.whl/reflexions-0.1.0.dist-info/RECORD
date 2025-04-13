@@ -1,0 +1,16 @@
+reflexions/__init__.py,sha256=nmx4S_yhbSnWqhyVxWSIUG0AxwJzhJfNN1MJyX-vV7E,313
+reflexions/cards.py,sha256=mAJDaDawMeZYX8-d-jCzK1O3EtC-UQ9NoIufqKWTt_M,2083
+reflexions/iconify.py,sha256=7icE1Fj3B5haxkMPoPnKypJ93I2dKLp6ol0YtGV7UUE,1723
+reflexions/loading_icon.py,sha256=Q7U6Ez4ambVxi73Bgw2ubpMNDFKvJicNRCetFW_01WQ,517
+reflexions/pdf.py,sha256=cz3N-J5TXWDKDpLlF5D6sVcFAvXFdwvJ48Nw7K_6yNQ,787
+reflexions/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reflexions/slider.py,sha256=XPjGqKp_ZbyYDPN2pvT6mBcHPPFA20n6K9-LF1qOKq8,3140
+reflexions/model_form/__init__.py,sha256=Ex6lDwMqGMW4DVMM-4_wfMiipLUoGWqPrruYAizTsjs,256
+reflexions/model_form/base.py,sha256=eKU2X-nxuXqT0H4NGQYrwan3UH3YhqNtRt9JFNFOEIs,9575
+reflexions/model_form/number_handlers.py,sha256=7xbIS8cBg13oXXh3Yw6ObwVR7fPb0jqypU5oTnWaffA,3338
+reflexions/model_form/union_handler.py,sha256=bu1qAMrjoyTCCnhqLKoITaVBRbCWoXYyF6ZnhGWwYqY,8850
+reflexions/model_form/utils.py,sha256=TSdRT-sFA7uAHccLEVWUzB4Gtlvc_CU-b2MFAHqhfPs,1592
+reflexions-0.1.0.dist-info/METADATA,sha256=_tHSs-BrBk5D703up0Ei0yrB9B6WJnqT1UVbDd_yWlk,7315
+reflexions-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+reflexions-0.1.0.dist-info/licenses/LICENSE,sha256=AteGCH9r177TxxrOFEiOARrastASsf7yW6MQxlAHdwA,1078
+reflexions-0.1.0.dist-info/RECORD,,
