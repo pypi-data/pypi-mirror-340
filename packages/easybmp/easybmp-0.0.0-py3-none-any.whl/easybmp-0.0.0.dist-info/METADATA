@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: easybmp
+Version: 0.0.0
+Summary: A Python library which can easily read / modify / compare / and other functions with .bmp files
+License-File: LICENSE
+
