@@ -1,0 +1,29 @@
+[project]
+name = "sorthosts"
+version = "0.1.2"
+description = "Sort ssh known_hosts file."
+keywords = ["sort", "ssh", "hosts", "known_hosts"]
+license = "MIT"
+license-files = ["LICENSE*"]
+readme = "README.md"
+authors = [{ name = "darkclip", email = "darkclip@hanv.dev" }]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+homepage = "https://github.com/darkclip/sorthosts"
+repository = "https://github.com/darkclip/sorthosts"
+documentation = "https://github.com/darkclip/sorthosts"
+
+[project.scripts]
+sorthosts = "sorthosts:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.setuptools]
+packages = ["sorthosts"]
+
+[tool.ruff.format]
+quote-style = "single"

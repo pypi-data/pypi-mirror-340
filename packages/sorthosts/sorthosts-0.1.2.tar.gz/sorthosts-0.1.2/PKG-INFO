@@ -1,0 +1,34 @@
+Metadata-Version: 2.4
+Name: sorthosts
+Version: 0.1.2
+Summary: Sort ssh known_hosts file.
+Project-URL: homepage, https://github.com/darkclip/sorthosts
+Project-URL: repository, https://github.com/darkclip/sorthosts
+Project-URL: documentation, https://github.com/darkclip/sorthosts
+Author-email: darkclip <darkclip@hanv.dev>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: hosts,known_hosts,sort,ssh
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# sorthosts
+
+Sort ssh known_hosts file.
+
+- group by algorithm and hash
+- sort by IP addresses and domains
+
+
+## Install
+
+`pip install sorthosts`
+
+
+## Usage
+
+- `INPUT` input file (default: ~/.ssh/known_hosts)
+- `OUTPUT` output file, print to screen if not defined
+
+`python3 -m sorthosts [-i INPUT] [-o OUTPUT]`
+
