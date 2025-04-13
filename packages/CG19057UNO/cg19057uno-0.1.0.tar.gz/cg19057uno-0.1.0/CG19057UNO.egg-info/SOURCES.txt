@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+CG19057UNO/EcuacionesLineales.py
+CG19057UNO/EcuacionesNoLineales.py
+CG19057UNO/__init__.py
+CG19057UNO.egg-info/PKG-INFO
+CG19057UNO.egg-info/SOURCES.txt
+CG19057UNO.egg-info/dependency_links.txt
+CG19057UNO.egg-info/top_level.txt
+tests/__init__.py
+tests/test_EcuacionesLineales.py
+tests/test_EcuacionesNoLineales.py
