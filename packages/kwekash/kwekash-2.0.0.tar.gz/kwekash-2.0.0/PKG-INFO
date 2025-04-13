@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: kwekash
+Version: 2.0.0
+Summary: Run weka commands in WEKA drive pods inside Kubernetes.
+Author: Rodney Peck
+Author-email: rodney@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
