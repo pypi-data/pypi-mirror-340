@@ -1,0 +1,10 @@
+installkernel_wsl/__init__.py,sha256=frH8meZIWYI7zl-MIoZvj2oTBrxH2Hfv2AIFUs1YYAo,54
+installkernel_wsl/__main__.py,sha256=jlzFv2ilzKLqpzG_pQWfzRldCadQ2MIDSO4A1WPHQls,79
+installkernel_wsl/main.py,sha256=97QCHwNGtMPEMkrby2vZQTsONb-yK7JC1dGMy1Ja1MM,742
+installkernel_wsl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+installkernel_wsl/utils.py,sha256=fa7jdN-Dm6g43mqKmoonmz9i9HRISTVZp_hr2zClppw,5565
+installkernel_wsl-0.0.2.dist-info/LICENSE.txt,sha256=pxBO-6SbYkzsa1t0O77eA55ofL4jEUylxv241heWQq4,1092
+installkernel_wsl-0.0.2.dist-info/METADATA,sha256=Yn3L3gl-vM0iea8XEozjV3rM3xwQkCXmnNLTwpjg6oE,2946
+installkernel_wsl-0.0.2.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+installkernel_wsl-0.0.2.dist-info/entry_points.txt,sha256=7FjKWjracI_w9DK4K5sYE7GoAwRe-N32h5sW1iEpG28,65
+installkernel_wsl-0.0.2.dist-info/RECORD,,
