@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: json-explore
+Version: 1.2.1
+Summary: A package for searching through JSONs via CLI
+Author: Matthew Raburn
+Requires-Python: >=3.6
+Dynamic: author
+Dynamic: requires-python
+Dynamic: summary
