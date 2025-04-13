@@ -1,0 +1,96 @@
+# Hey CLI
+
+An AI-powered CLI assistant that helps with coding and system tasks.
+
+## Installation
+
+### From PyPI
+
+```bash
+pip install hey-cli
+```
+
+### From Source (for development)
+
+```bash
+git clone https://github.com/Kawai-Senpai/hey-cli.git
+cd hey-cli/library
+pip install -e .
+```
+
+## Configuration
+
+Create a `.env` file in your working directory with your OpenAI API key:
+
+```
+OPENAI_API_KEY=your_api_key_here
+AI_MODEL=gpt-4o  # Optional, defaults to gpt-4o
+AI_TEMPERATURE=0.1  # Optional, defaults to 0.1
+```
+
+## Usage
+
+After installation, you can use the `hey` command followed by your question or instruction:
+
+```bash
+# Ask for help
+hey help me understand how to use this tool
+
+# Create a simple script
+hey create a hello world script in python
+
+# Get system information
+hey what files do I have in this directory?
+
+# Create files for a project
+hey create a new React component for a login form
+```
+
+## Testing Locally
+
+1. Install the package in development mode:
+   ```bash
+   cd /path/to/hey-cli/library
+   pip install -e .
+   ```
+
+2. Create a `.env` file in any directory where you want to use the tool:
+   ```
+   OPENAI_API_KEY=your_actual_openai_key_here
+   ```
+
+3. Navigate to that directory and run commands:
+   ```bash
+   cd /your/project/directory
+   hey create a simple python script that prints the current date
+   ```
+
+4. Check that the tool:
+   - Creates a `.hey` directory for storing history
+   - Correctly analyzes your directory
+   - Communicates with OpenAI
+   - Executes operations like creating files, etc.
+
+## Features
+
+- Performs file operations (create, edit, delete)
+- Executes shell commands
+- Manages directories
+- Answers questions about code and development
+- Maintains conversation context
+
+## File Operations
+
+Hey CLI can perform various file operations:
+
+- `create_file`: Create new files with content
+- `edit_file`: Modify existing files
+- `delete_file`: Remove files
+- `rename_file`: Rename files
+- `create_directory`: Create new directories
+- `delete_directory`: Remove directories
+- `execute_command`: Run shell commands
+
+## License
+
+MIT License - See LICENSE.rst for details.

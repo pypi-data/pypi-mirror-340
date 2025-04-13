@@ -1,0 +1,5 @@
+openai>=1.0.0
+ultraprint>=3.0.0
+python-dotenv>=0.15.0
+pydantic>=2.0.0
+keyring>=24.0.0
