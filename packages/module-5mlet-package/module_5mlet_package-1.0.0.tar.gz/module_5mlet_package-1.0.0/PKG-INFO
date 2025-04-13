@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: module-5mlet-package
+Version: 1.0.0
+Summary: Descrição da biblioteca module
+Home-page: https://github.com/devrictrovato/postech-5mlet
+Author: Ricardo O. Trovato
+Author-email: devrictrovato@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# Module
+
+Uma biblioteca de exemplo simples.
+
+## 📦 Instalação
+
+```sh
+pip install module
+```
+
+## 🚀 Uso
+```py
+from module.core import hello_world
+
+print(hello_world())
+```
+
+## 📄 Licença
+
+Este projeto está licenciado sob os termos da `LICENSE`.
