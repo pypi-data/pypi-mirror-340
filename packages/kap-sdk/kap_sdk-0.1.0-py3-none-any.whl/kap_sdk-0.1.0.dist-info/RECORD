@@ -1,0 +1,11 @@
+kap_sdk/__init__.py,sha256=5YdTwwQoP6maFB-_aV12Jf5cZJMLoUeunz-pb1XWKV0,14
+kap_sdk/_companies.py,sha256=kw5ztSaW8SqLnW6rIKhedbOOSlApY9g7Ml554nqLYGk,1254
+kap_sdk/_company_info.py,sha256=nhx7864ROnkmeKZhzrlN7-Utt5KlUxtn4_5Bu-OfpG0,1846
+kap_sdk/_financial_report.py,sha256=Mi84i2mXTyT1OFJoicYhG_cNAy_I77bU7vEE2i6m8sE,2395
+kap_sdk/_indices.py,sha256=usrTUUio8fGio_f37Kdc7PHUXG1OipIU2O9HAZwXX54,2020
+kap_sdk/kap_client.py,sha256=oQRqTq4vNjoG4bEu65p-Ea0MAdBdnBPpYV9eAevsvbQ,2556
+kap_sdk/main.py,sha256=Uk7ya9JxZrebfg1MDXJ3cXXRYw60SARlLnzCIWLwKIc,1083
+kap_sdk-0.1.0.dist-info/METADATA,sha256=RYWSMYBQiXt6NNTBDhfNJ89XV83OfqsOz_lvVAlDBag,198
+kap_sdk-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+kap_sdk-0.1.0.dist-info/top_level.txt,sha256=LZ8pwVI9XFbW9ZKHdEVMZ8p7yqvHh6r4B-Sa7TpGSG4,8
+kap_sdk-0.1.0.dist-info/RECORD,,
