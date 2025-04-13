@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: ecoscape-utilities
+Version: 0.0.31
+Summary: A collection of EcoScape utilities.
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: scgt>=0.0.20
+Requires-Dist: pyproj>=3.0.0
+Requires-Dist: numpy>=1.0.0
+Dynamic: license-file
+
+# EcoScape Utilities
+
+This package is simply a collection of utilities that are useful for running 
+Colab notebooks and other code.  
+These are not packages distributed with pip.  To install on Colab, simply do: 
+
+    !pip install git+https://github.com/ecoscape-earth/ecoscape-utilities.git
+
