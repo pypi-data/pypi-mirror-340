@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+librarytest_iza23456.egg-info/PKG-INFO
+librarytest_iza23456.egg-info/SOURCES.txt
+librarytest_iza23456.egg-info/dependency_links.txt
+librarytest_iza23456.egg-info/top_level.txt
+test-lib/__init__.py
+test-lib/substract.py
+test-lib/sum.py
