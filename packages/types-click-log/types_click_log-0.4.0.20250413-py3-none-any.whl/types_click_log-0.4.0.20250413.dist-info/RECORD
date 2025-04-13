@@ -1,0 +1,10 @@
+click_log-stubs/METADATA.toml,sha256=RHGQxtEj9cqwZUEzpSJY_27FGOhFLSL-Uzdd8JLYUNk,113
+click_log-stubs/__init__.pyi,sha256=IlC3_nn3WD4y5QXoxwCEZ2wPbvcdB31sODQj3zgfXtw,201
+click_log-stubs/core.pyi,sha256=izy87xBHlgjypbB2Kiru2JeyksaIQ_KpnLkj2IKbyg0,389
+click_log-stubs/options.pyi,sha256=-LQnUGJFGHf-GrQK5l6ziGgCJT329bmzSY-vM-u1eSs,371
+click_log-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_click_log-0.4.0.20250413.dist-info/licenses/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_click_log-0.4.0.20250413.dist-info/METADATA,sha256=2xEGYKoRk0_ACrYKLTZSv86Oxb_j6rhsNhO6jwGcY70,1865
+types_click_log-0.4.0.20250413.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+types_click_log-0.4.0.20250413.dist-info/top_level.txt,sha256=yw7K714on1zjCxnpsqup-ZX8MmB1pkHLEy8NfluT6ZA,16
+types_click_log-0.4.0.20250413.dist-info/RECORD,,
