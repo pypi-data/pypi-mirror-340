@@ -1,0 +1,49 @@
+query absenceReasonTags($orderBy: [String], $filters: JSONString) {
+  items: absenceReasonTags(orderBy: $orderBy, filters: $filters) {
+    id
+    shortName
+    name
+    canEdit
+    canDelete
+  }
+}
+
+query allAbsenceReasonTags($orderBy: [String], $filters: JSONString) {
+  items: allAbsenceReasonTags(orderBy: $orderBy, filters: $filters) {
+    id
+    shortName
+    name
+    canEdit
+    canDelete
+  }
+}
+
+mutation createAbsenceReasonTags($input: [BatchCreateAbsenceReasonTagInput]!) {
+  createAbsenceReasonTags(input: $input) {
+    items: absenceReasonTags {
+      id
+      shortName
+      name
+      canEdit
+      canDelete
+    }
+  }
+}
+
+mutation deleteAbsenceReasonTags($ids: [ID]!) {
+  deleteAbsenceReasonTags(ids: $ids) {
+    deletionCount
+  }
+}
+
+mutation updateAbsenceReasonTags($input: [BatchPatchAbsenceReasonTagInput]!) {
+  updateAbsenceReasonTags(input: $input) {
+    items: absenceReasonTags {
+      id
+      shortName
+      name
+      canEdit
+      canDelete
+    }
+  }
+}

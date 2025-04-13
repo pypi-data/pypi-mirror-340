@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-10 17:40+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: aleksis/apps/kolego/models/absence.py:20
+#: aleksis/apps/kolego/models/absence.py:35
+msgid "Short name"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:21
+#: aleksis/apps/kolego/models/absence.py:36
+msgid "Name"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:30
+msgid "Absence reason tag"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:31
+msgid "Absence reason tags"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:38
+msgid "Colour"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:42
+msgid "Count as absent"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:44
+msgid "If checked, this excuse type will be counted as absent. If not checked,it won't show up in absence reports."
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:49
+msgid "Default Reason"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:52
+msgid "Tags"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:75
+msgid "Unexcused"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:82
+#: aleksis/apps/kolego/models/absence.py:101
+msgid "Absence reason"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:83
+msgid "Absence reasons"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:108
+msgid "Person"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:111
+msgid "Comment"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:295
+msgid "Absence"
+msgstr ""
+
+#: aleksis/apps/kolego/models/absence.py:296
+#: aleksis/apps/kolego/preferences.py:11
+msgid "Absences"
+msgstr ""
+
+#: aleksis/apps/kolego/preferences.py:22
+msgid "User is allowed to manage (planned) absences for members of groups the user is an owner of with these group types"
+msgstr ""
