@@ -1,0 +1,3 @@
+include apsitv27_mysql/dockerfile
+include apsitv27_mysql/Dockerfile
+include apsitv27_mysql/entrypoint.sh

@@ -1,0 +1,18 @@
+FROM mysql:8.0
+
+ENV MYSQL_ROOT_PASSWORD=1234
+ENV MYSQL_DATABASE=mydb
+
+VOLUME ["/var/lib/mysql"]
+
+# Copy entrypoint script to a standard location
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+
+# Ensure it's executable
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+EXPOSE 3306
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+
+CMD ["mysqld"]
