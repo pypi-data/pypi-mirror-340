@@ -1,0 +1,64 @@
+Metadata-Version: 2.3
+Name: brokest
+Version: 0.0.0
+Summary: More broke than a broker
+License: GPL
+Author: RenChu Wang
+Author-email: patrick1031wang@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: freqtrade (>=2025.3,<2026.0)
+Requires-Dist: numpy
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: scipy (>=1.15.2,<2.0.0)
+Requires-Dist: torch (>=2.6.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Brokest
+
+More broke than a broker.
+
+## Development
+
+### Cloning
+
+First, clone the project
+
+```bash
+git clone https://github.com/rentrueawng/brokest --recurse-submodules
+
+# Go into the project root.
+cd brokest
+```
+
+### Installation
+
+First, install TA-Lib
+```bash
+# Get the TA-Lib library
+git clone https://github.com/TA-Lib/ta-lib
+cd ta-lib
+
+# Install the library.
+sudo ./install
+```
+
+You might need to enter your password.
+
+Then, install the build tool poetry
+
+```bash
+pipx install poetry
+
+# Or using pip
+pip install poetry.
+```
+
+Then, install the packages from PyPI, in editable mode.
+```bash
+poetry install
+```
+
