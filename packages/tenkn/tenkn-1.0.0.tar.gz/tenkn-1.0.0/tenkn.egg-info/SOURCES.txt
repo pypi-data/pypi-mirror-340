@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+tenkn.py
+tenkn.egg-info/PKG-INFO
+tenkn.egg-info/SOURCES.txt
+tenkn.egg-info/dependency_links.txt
+tenkn.egg-info/top_level.txt

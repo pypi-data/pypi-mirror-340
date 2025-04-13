@@ -1,0 +1,57 @@
+# 10KN · Hangul-Based Unicode Numeral System
+Created by **blueradiance**
+
+**10KN** is a 10,000-radix numeral system based on Korean Hangul characters (U+AC00 to U+D7A3).
+It enables ultra-compact, reversible integer encoding using only readable, sortable Unicode characters.
+
+---
+
+## 🔢 Features
+
+- Uses Hangul characters: `'가'` (U+AC00) to `'힣'` (U+D7A3)
+- Encodes integers with base-10,000 compression
+- Lexicographically sortable
+- Reversible with no loss
+- Perfect for file names, compact identifiers, or tagging systems
+
+---
+
+## 🚀 Quick Start
+
+```bash
+pip install tenkn
+```
+
+```python
+from tenkn import encode_10kn, decode_10kn
+
+encoded = encode_10kn(123456789)
+print(encoded)  # e.g., '각삳엉'
+
+decoded = decode_10kn(encoded)
+print(decoded)  # 123456789
+```
+
+---
+
+## 📦 Encoding Logic
+
+- `0 → '가'`
+- `1 → '각'`
+- ...
+- `9999 → '힣'`
+
+Each digit is a Hangul character in base-10,000, compressed and reversible.
+
+---
+
+## 📜 License
+
+Custom license. Free to use with attribution. No unauthorized modification or redistribution without credit.
+
+---
+
+## 📅 Version
+
+First release: 2025.04.12  
+Author: **blueradiance**
