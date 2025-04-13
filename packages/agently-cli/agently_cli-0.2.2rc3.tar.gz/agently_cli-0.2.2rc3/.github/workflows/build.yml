@@ -1,0 +1,117 @@
+name: Cross-Platform Build
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  release:
+    types: [created]
+
+jobs:
+  build:
+    name: Build ${{ matrix.os }} ${{ matrix.arch }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        arch: [x64]
+        include:
+          - os: ubuntu-latest
+            platform: linux
+          - os: macos-latest
+            platform: macos
+          - os: windows-latest
+            platform: windows
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Get full history for versioning
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Set version for release builds
+      if: github.event_name == 'release'
+      run: |
+        # Strip the 'v' prefix from the tag
+        VERSION=${GITHUB_REF_NAME#v}
+        echo "Using release version: $VERSION"
+        echo "SETUPTOOLS_SCM_PRETEND_VERSION=$VERSION" >> $GITHUB_ENV
+      shell: bash
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build twine
+    
+    - name: Build package
+      run: |
+        python -m build --outdir dist/${{ matrix.platform }}
+    
+    - name: Check package
+      run: |
+        twine check dist/${{ matrix.platform }}/*
+    
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: agently-cli-${{ matrix.platform }}-${{ matrix.arch }}
+        path: dist/${{ matrix.platform }}/*
+        retention-days: 5
+
+  # Only run this job on GitHub Releases
+  publish:
+    name: Publish to PyPI
+    needs: build
+    if: github.event_name == 'release' && github.event.action == 'created'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Get full history for versioning
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Set explicit version from release tag
+      run: |
+        # Strip the 'v' prefix from the tag
+        VERSION=${GITHUB_REF_NAME#v}
+        echo "Using release version: $VERSION"
+        echo "SETUPTOOLS_SCM_PRETEND_VERSION=$VERSION" >> $GITHUB_ENV
+      shell: bash
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install twine
+    
+    - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      with:
+        path: dist
+    
+    - name: Publish to PyPI
+      env:
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      run: |
+        # Create combined directory
+        mkdir -p dist/combined
+        
+        # Copy first occurrence of each wheel and tarball to avoid duplicates
+        find dist -type f -name "*.whl" -not -path "*/combined/*" | head -1 | xargs -I{} cp {} dist/combined/
+        find dist -type f -name "*.tar.gz" -not -path "*/combined/*" | head -1 | xargs -I{} cp {} dist/combined/
+        
+        # Verify the files are there
+        ls -la dist/combined/
+        
+        # Publish to PyPI
+        twine check dist/combined/*
+        twine upload dist/combined/* 
