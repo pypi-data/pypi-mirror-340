@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+GC23100UNO/__init__.py
+GC23100UNO/metodos_numericos.py
+GC23100UNO.egg-info/PKG-INFO
+GC23100UNO.egg-info/SOURCES.txt
+GC23100UNO.egg-info/dependency_links.txt
+GC23100UNO.egg-info/requires.txt
+GC23100UNO.egg-info/top_level.txt
+tests/test_metodos.py
