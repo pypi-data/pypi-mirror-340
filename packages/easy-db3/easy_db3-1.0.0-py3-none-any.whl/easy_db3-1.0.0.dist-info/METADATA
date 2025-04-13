@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: easy-db3
+Version: 1.0.0
+Summary: A simple category-based key-value database using plain text files.
+Home-page: https://github.com/imAnesYT/easydb
+Author: imAnesYT Dev
+Author-email: imanesytdev.contact@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
