@@ -1,0 +1,10 @@
+cmddocgen/__init__.py,sha256=sM1QtY5BDkDcxU-F5bgBB03IxDOGp91hkdGfDC5aq14,239
+cmddocgen/cli.py,sha256=nj5QIdCg6MySTkkke_cbmfQBYZembGsiKSNmWoIpOMc,535
+cmddocgen/cmd_doc_gen.py,sha256=QtyT_KSVsMT7CaPncbrsajmNaoV3SvxnCdgSutLZEZQ,22150
+cmddocgen/llm.py,sha256=NMJk-VMUatvx1aOICa5nBvIs0kgQdaiFuwkegQhfPJg,20194
+cmddocgen-0.1.0.dist-info/licenses/LICENSE,sha256=liR3LRzyKNlsr5jmhDDnb_BN7P73c7KHVVvM0tN2DDE,1063
+cmddocgen-0.1.0.dist-info/METADATA,sha256=kBePV4UwYI1Op9rGh3-xFN5K5OMueMi9njSWIYca76I,4305
+cmddocgen-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cmddocgen-0.1.0.dist-info/entry_points.txt,sha256=Ar3x2hpH3p32gBOsqteLDtLIVHrUTKbvbKX1P4QWDeE,49
+cmddocgen-0.1.0.dist-info/top_level.txt,sha256=V3A4GbqOui_UAIlEIpKAewy7fGpUCUbtWkFEdsonZ6I,10
+cmddocgen-0.1.0.dist-info/RECORD,,

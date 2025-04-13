@@ -1,0 +1,2 @@
+[console_scripts]
+cmddocgen = cmddocgen.cli:main
