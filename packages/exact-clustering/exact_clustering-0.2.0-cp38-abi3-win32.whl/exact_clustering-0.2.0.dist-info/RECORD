@@ -1,0 +1,9 @@
+exact_clustering-0.2.0.dist-info/METADATA,sha256=BxhSTY_snXIxFt5eosp4PHdjc2yz63xOWu5IuKKYXs0,2463
+exact_clustering-0.2.0.dist-info/WHEEL,sha256=RdYej9g_futKd6Tdhfgw26Xz0AC-l7pOevjJbjFph0M,90
+exact_clustering-0.2.0.dist-info/licenses/LICENSE-APACHE,sha256=degAD5ZhqtUJOXElsjgvYIBviR9adozyBQd2NTqsiD0,560
+exact_clustering-0.2.0.dist-info/licenses/LICENSE-MIT,sha256=sg-BnDqttGY9VrQQDse-UTIW_ziSPNiYZ560F8O_rVo,1069
+exact_clustering/__init__.py,sha256=0I094qUioSiuDEFZDB9-EvfHsrmUxSqVeQmePxgnm1c,147
+exact_clustering/__init__.pyi,sha256=oV_I4nlncSfNiXPaYuEb80haC_9Japq_EosUJtaA768,1332
+exact_clustering/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exact_clustering/exact_clustering.pyd,sha256=sDS1qz3LZBEasT0lxL0Nlll2STSnxTnNEU51OZP3DLM,370688
+exact_clustering-0.2.0.dist-info/RECORD,,
