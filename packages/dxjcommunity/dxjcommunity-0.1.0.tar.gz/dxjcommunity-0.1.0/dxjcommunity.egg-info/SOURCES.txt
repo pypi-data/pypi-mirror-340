@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+DXJCOMMUNITY/__init__.py
+DXJCOMMUNITY/logo.py
+dxjcommunity.egg-info/PKG-INFO
+dxjcommunity.egg-info/SOURCES.txt
+dxjcommunity.egg-info/dependency_links.txt
+dxjcommunity.egg-info/top_level.txt
