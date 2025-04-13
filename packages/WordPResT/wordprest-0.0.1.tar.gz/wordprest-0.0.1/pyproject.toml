@@ -1,0 +1,19 @@
+[project]
+name = "WordPResT"
+version = "0.0.1"
+authors = [
+  { name="Ishaga Bello", email="bello@bellodoesseo.com" },
+]
+description = "A simple wordpress api"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/ishaga-bello/Wordpress-API"
+Issues = "https://github.com/ishaga-bello/Wordpress-API/issues"
