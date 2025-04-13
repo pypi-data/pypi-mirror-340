@@ -1,0 +1,67 @@
+Gentoricass Programming Language | Gentoricass编程语言
+   Built by: Dickily
+   Version: 1.5 (Improved!)
+Gentoricass is a beginner-friendly programming language based on Python.  
+Its intuitive commands simplify coding while retaining Python's power.  
+Gentoricass是一种基于Python的初学者友好型编程语言。  
+它的直观命令简化了编程，同时保留了Python的强大功能。
+
+## Features | 特点:
+1. Interactive Input | 交互式输入 (`gin`)
+2. Flexible Output | 灵活的输出 (`gout`)
+3. Logical Conditions | 条件控制 (`gif_true_false`, `gif_in`)
+4. Loops with Shared Variables | 支持共享变量的循环 (`grepeat`, `gloop`)
+5. Break & Skip in Loops | 循环中的Break和Skip (`gstop`, `gskip`)
+6. Random Utilities | 随机数支持 (`gran_int`, `gran_choice`)
+7. Custom Function Creation | 自定义函数创建 (`gset`, `grun`)
+8. Built-In Documentation | 内置文档支持 (`help(gentoricass)`)
+
+---
+
+## Usage | 用法:
+Call `help(gentoricass)` to see a list of functions and their explanations.  
+调用`help(gentoricass)`可以查看函数列表及其解释。
+
+---
+
+## Version 1.5 Improvements | 版本1.5改进:
+1. **Break & Skip Commands in Conditions**:  
+   Loops (`grepeat`, `gloop`) now detect `gstop` and `gskip` commands within `gif_true_false()` logic for dynamic flow control.  
+
+2. **Enhanced Loop Handling**:  
+   Optimized loop execution with better variable sharing and dynamic error handling.  
+
+3. **Added Random Utilities**:  
+   Introduced `gran_int()` for random integers and `gran_choice()` for selecting random items.  
+
+4. **Improved User Experience**:  
+   Simplified syntax and increased clarity in dynamic function creation (`gset`, `grun`).  
+
+Explore Gentoricass and unleash your creativity! 🚀  
+'''
+
+
+
+import time  # Import the time module for delays | 导入time模块用于延时
+import math# Import the math module for mathematical functions | 导入math模块用于数学功能
+from math import *# Import all math attributes | 导入math模块的所有属性
+import asyncio  # Import asyncio for asynchronous tasks | 导入asyncio模块用于异步任务
+import random
+### Function 1: gin() ###
+def gin(word):
+    '''
+Interactive Input | 交互式输入
+
+gin() prompts the user for input, with support for multi-line prompts using `(nextline)`.
+gin() 提示用户输入，并支持使用`(nextline)`进行多行提示。
+
+Arguments | 参数:
+- word (str): The prompt message. Use "(nextline)" to add line breaks.
+  提示信息，使用`(nextline)`添加换行。
+
+Returns | 返回:
+- str: User input | 用户输入。
+
+Example | 示例:
+name = gin("What is your name?(nextline)")
+gout("Hello,", name)
