@@ -1,0 +1,4 @@
+[console_scripts]
+brave-bookmarks = brave_bookmarks.main:documentation
+bravemark = brave_bookmarks.main:bookmark
+bravemarks = brave_bookmarks.main:bookmarks

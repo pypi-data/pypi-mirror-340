@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+brave_bookmarks/__init__.py
+brave_bookmarks/main.py
+brave_bookmarks.egg-info/PKG-INFO
+brave_bookmarks.egg-info/SOURCES.txt
+brave_bookmarks.egg-info/dependency_links.txt
+brave_bookmarks.egg-info/entry_points.txt
+brave_bookmarks.egg-info/top_level.txt
