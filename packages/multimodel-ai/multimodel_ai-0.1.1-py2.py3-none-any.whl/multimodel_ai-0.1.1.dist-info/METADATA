@@ -1,0 +1,309 @@
+Metadata-Version: 2.1
+Name: multimodel-ai
+Version: 0.1.1
+Summary: A Python module for efficient multi-model AI inference with memory management
+Home-page: https://github.com/VRImage/multi-ai
+Author: VRImage
+Author-email: vrimage70@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: accelerate
+Requires-Dist: bitsandbytes
+Requires-Dist: qwen-omni-utils[decord]
+Requires-Dist: qwen-vl-utils[decord]==0.0.8
+Requires-Dist: torchvision
+Requires-Dist: zonos
+
+# Multi-AI
+
+A powerful Python module for managing and utilizing multiple AI models for various tasks including text generation, image analysis, speech synthesis, and audio transcription.
+
+## Features
+
+- **Vision Models**: Extract text from images using Qwen-VL
+- **Text Models**: Generate text using Qwen-Text
+- **Speech Models**: Convert text to speech using Zonos TTS
+- **Audio Models**: Transcribe audio using Qwen-Audio
+- **Memory Management**: Efficient handling of model loading and GPU memory
+- **CLI Interface**: Easy-to-use command-line interface for all operations
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/multi-ai.git
+cd multi-ai
+
+# Install the package
+pip install -e .
+```
+
+## Usage
+
+### Command Line Interface
+
+The module provides a CLI for easy access to all features:
+
+```bash
+# List available models
+multi-ai list
+
+# Generate text
+multi-ai generate qwen-text "Write a poem about nature"
+
+# Extract text from image
+multi-ai generate qwen-vl "Extract all text from this image" --image path/to/image.png
+
+# Convert text to speech
+multi-ai tts "Hello, world!" --output output.wav
+
+# Transcribe audio
+multi-ai transcribe path/to/audio.wav
+```
+
+### Python API
+
+#### Basic Usage
+
+```python
+from multi_ai import ModelManager
+
+# Initialize the model manager
+manager = ModelManager(device="cuda")  # or "cpu"
+
+# Load and use a model
+model = manager.load_model("qwen-text")
+response = model.generate("Write a poem about nature")
+print(response)
+
+# Unload the model when done
+manager.unload_model("qwen-text")
+```
+
+#### Vision Text Extraction
+
+```python
+from multi_ai import ModelManager
+
+# Initialize manager
+manager = ModelManager(device="cuda")
+
+# Load vision model
+vision_model = manager.load_model("qwen-vl")
+
+# Extract text from image
+extracted_text = vision_model.generate_with_image(
+    "path/to/image.png",
+    "Extract and output all text from this image, preserving the original formatting."
+)
+print(extracted_text)
+
+# Clean up
+manager.unload_model("qwen-vl")
+```
+
+#### Text-to-Speech Generation
+
+```python
+from multi_ai import ModelManager
+
+# Initialize manager
+manager = ModelManager(device="cuda")
+
+# Load TTS model
+tts_model = manager.load_model("zonos-tts")
+
+# Generate speech
+tts_model.generate_speech(
+    "Hello, this is a test of the text-to-speech system.",
+    "output.wav"
+)
+
+# Clean up
+manager.unload_model("zonos-tts")
+```
+
+#### Audio Transcription
+
+```python
+from multi_ai import ModelManager
+
+# Initialize manager (use CPU for audio model)
+manager = ModelManager(device="cpu")
+
+# Load audio model
+audio_model = manager.load_model("qwen-audio")
+
+# Transcribe audio
+transcription = audio_model.generate_with_audio(
+    "path/to/audio.wav",
+    "Transcribe the following audio accurately."
+)
+print(transcription)
+
+# Clean up
+manager.unload_model("qwen-audio")
+```
+
+#### Complete Pipeline Example
+
+Here's an example of a complete pipeline that extracts text from an image, converts it to speech, and then transcribes it back:
+
+```python
+import os
+from multi_ai import ModelManager
+import torch
+import gc
+
+def split_into_sentences(text):
+    """Split text into sentences, handling common abbreviations."""
+    text = re.sub(r'([A-Z])\. ', r'\1\.  ', text)
+    text = re.sub(r'(Mr|Mrs|Dr|Ms|Prof|vs|etc|e\.g|i\.e)\. ', r'\1\.  ', text)
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    return [s.strip() for s in sentences if s.strip()]
+
+def process_pipeline(image_path):
+    # Initialize manager
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    manager = ModelManager(device=device)
+    
+    try:
+        # Step 1: Extract text from image
+        print("Extracting text from image...")
+        vision_model = manager.load_model("qwen-vl")
+        extracted_text = vision_model.generate_with_image(
+            image_path,
+            "Extract and output all text from this image, preserving the original formatting."
+        )
+        manager.unload_model("qwen-vl")
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+            gc.collect()
+        
+        # Step 2: Generate speech
+        print("Generating speech...")
+        tts_model = manager.load_model("zonos-tts")
+        sentences = split_into_sentences(extracted_text)
+        
+        os.makedirs("output_audio", exist_ok=True)
+        audio_files = []
+        for i, sentence in enumerate(sentences):
+            output_file = f"output_audio/sentence_{i}.wav"
+            tts_model.generate_speech(sentence, output_file)
+            audio_files.append(output_file)
+        manager.unload_model("zonos-tts")
+        if torch.cuda.is_available():
+            torch.cuda.empty_cache()
+            gc.collect()
+        
+        # Step 3: Transcribe audio
+        print("Transcribing audio...")
+        manager.device = "cpu"  # Use CPU for audio model
+        audio_model = manager.load_model("qwen-audio")
+        
+        transcribed_text = ""
+        for audio_file in audio_files:
+            transcription = audio_model.generate_with_audio(
+                audio_file,
+                "Transcribe the following audio accurately."
+            )
+            transcribed_text += transcription + " "
+        manager.unload_model("qwen-audio")
+        
+        # Clean up audio files
+        for audio_file in audio_files:
+            os.remove(audio_file)
+        os.rmdir("output_audio")
+        
+        return extracted_text, transcribed_text
+        
+    finally:
+        manager.clear_all_models()
+
+# Run the pipeline
+extracted, transcribed = process_pipeline("path/to/image.png")
+print("\nExtracted text:", extracted)
+print("\nTranscribed text:", transcribed)
+```
+
+### Memory Management
+
+The module includes efficient memory management features:
+
+```python
+from multi_ai import ModelManager
+import torch
+import gc
+
+# Initialize manager
+manager = ModelManager(device="cuda")
+
+try:
+    # Load and use models
+    model1 = manager.load_model("qwen-text")
+    # ... use model1 ...
+    manager.unload_model("qwen-text")
+    
+    # Clear CUDA cache between models
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
+        gc.collect()
+    
+    model2 = manager.load_model("qwen-vl")
+    # ... use model2 ...
+    manager.unload_model("qwen-vl")
+    
+finally:
+    # Clean up all models
+    manager.clear_all_models()
+```
+
+## Model Configuration
+
+The module supports various model configurations:
+
+- **Qwen-VL**: Vision-language model for image analysis
+- **Qwen-Text**: Text generation model
+- **Zonos-TTS**: Text-to-speech model
+- **Qwen-Audio**: Audio transcription model
+
+Each model can be configured with specific parameters:
+
+```python
+# Example: Configure model with specific parameters
+model = manager.load_model(
+    "qwen-text",
+    max_tokens=1000,
+    temperature=0.7,
+    top_p=0.9
+)
+```
+
+## Error Handling
+
+The module includes comprehensive error handling:
+
+```python
+from multi_ai import ModelManager, ModelError
+
+try:
+    manager = ModelManager(device="cuda")
+    model = manager.load_model("qwen-text")
+    response = model.generate("Hello")
+except ModelError as e:
+    print(f"Error loading or using model: {e}")
+finally:
+    manager.clear_all_models()
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
