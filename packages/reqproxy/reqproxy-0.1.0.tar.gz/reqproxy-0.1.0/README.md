@@ -1,0 +1,106 @@
+# ReqProxy
+
+A Python library for making HTTP requests through a rotating set of proxies.
+
+## Overview
+
+ReqProxy is a lightweight Python library that provides a simple way to make HTTP requests through a rotating set of proxies. It automatically handles proxy selection and error management, attempting multiple proxies until a successful response is received or all proxies have been tried.
+
+## Features
+
+- Supports all common HTTP methods (GET, POST, PUT, PATCH, DELETE)
+- Automatically rotates through a list of proxies
+- Handles proxy failures gracefully
+- Similar interface to the popular `requests` library
+- Configurable timeout and proxy sample size
+
+## Installation
+
+```bash
+pip install reqproxy
+```
+
+## Usage
+
+### Basic Usage
+
+```python
+from reqproxy import ProxyRequests
+
+# List of proxy URLs
+proxies = [
+    "http://user1:pass1@192.168.1.1:8080",
+    "http://user2:pass2@192.168.1.2:8080"
+]
+
+# Create a ProxyRequests instance
+proxy_req = ProxyRequests(proxy_list=proxies)
+
+# Make a GET request
+response = proxy_req.get('https://example.com')
+print(response.status_code)  # 200
+print(response.text)  # HTML content
+```
+
+### Making POST Requests with JSON Data
+
+```python
+from reqproxy import ProxyRequests
+
+proxies = ["http://user:pass@proxy.example.com:8080"]
+proxy_req = ProxyRequests(proxy_list=proxies, timeout=5.0)
+
+# JSON data to send
+data = {"username": "test_user", "password": "test_pass"}
+
+# Make a POST request with JSON data
+response = proxy_req.post('https://api.example.com/login', json=data)
+result = response.json()
+```
+
+### Using Custom Parameters and Headers
+
+```python
+headers = {"User-Agent": "Custom User Agent"}
+params = {"page": 1, "limit": 10}
+
+response = proxy_req.get(
+    'https://api.example.com/products',
+    params=params,
+    headers=headers
+)
+```
+
+## Configuration Options
+
+When creating a `ProxyRequests` instance, you can configure the following options:
+
+- `proxy_list` (required): A list of proxy URLs with the format "http://user:pass@ip:port"
+- `proxy_sample_size` (optional): The number of proxies to sample for each request (default: 10)
+- `timeout` (optional): The timeout for requests in seconds (default: 10.0)
+
+## Error Handling
+
+If all proxies fail, a `ProxyRequestException` is raised containing all the individual errors:
+
+```python
+from reqproxy import ProxyRequests, ProxyRequestException
+
+try:
+    proxy_req = ProxyRequests(proxy_list=["http://invalid.proxy:8080"])
+    response = proxy_req.get('https://example.com')
+except ProxyRequestException as e:
+    print(f"All proxies failed: {e}")
+    # Access individual errors
+    for error in e.errors:
+        print(f"Error: {error}")
+```
+
+## Requirements
+
+- Python 3.12+
+- requests library
+
+## License
+
+This project is licensed under the terms of the MIT license.
