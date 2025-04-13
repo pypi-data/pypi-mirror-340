@@ -1,0 +1,2 @@
+[console_scripts]
+legion-code-generator = legion_code_generator.agent:main
