@@ -1,0 +1,113 @@
+# MultiModel-AI
+
+A Python module for efficient multi-model AI inference with memory management.
+
+## Features
+
+- Efficient memory management for multiple AI models
+- Automatic model loading and unloading
+- Support for various AI model types
+- Easy-to-use API
+
+## Installation
+
+```bash
+pip install multimodel-ai
+```
+
+## Usage
+
+```python
+from multimodel_ai import ModelManager
+
+# Initialize the model manager
+manager = ModelManager()
+
+# Load a model
+model = manager.load_model("model_name")
+
+# Use the model
+result = model.predict(input_data)
+
+# The model will be automatically unloaded when not in use
+```
+
+## Examples
+
+### Basic Usage
+
+```python
+from multimodel_ai import ModelManager
+
+# Initialize the manager
+manager = ModelManager()
+
+# Load a model
+model = manager.load_model("gpt2")
+
+# Generate text
+text = model.generate("Hello, world!")
+
+# The model will be automatically unloaded
+```
+
+### Multiple Models
+
+```python
+from multimodel_ai import ModelManager
+
+# Initialize the manager
+manager = ModelManager()
+
+# Load multiple models
+model1 = manager.load_model("gpt2")
+model2 = manager.load_model("bert")
+
+# Use the models
+text1 = model1.generate("Hello")
+text2 = model2.classify("World")
+
+# Models will be automatically unloaded when not in use
+```
+
+### Custom Model Configuration
+
+```python
+from multimodel_ai import ModelManager
+
+# Initialize the manager with custom settings
+manager = ModelManager(
+    max_memory_usage=0.8,  # Use up to 80% of available memory
+    model_cache_dir="./models"  # Custom cache directory
+)
+
+# Load a model with specific configuration
+model = manager.load_model(
+    "gpt2",
+    device="cuda",
+    precision="fp16"
+)
+
+# Use the model
+result = model.generate("Hello, world!")
+```
+
+### Error Handling
+
+```python
+from multimodel_ai import ModelManager, ModelError
+
+try:
+    manager = ModelManager()
+    model = manager.load_model("non_existent_model")
+except ModelError as e:
+    print(f"Error loading model: {e}")
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 

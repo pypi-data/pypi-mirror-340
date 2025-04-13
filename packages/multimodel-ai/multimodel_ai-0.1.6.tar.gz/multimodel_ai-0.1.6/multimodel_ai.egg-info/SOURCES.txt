@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+multi_ai/__init__.py
+multi_ai/models.py
+multi_ai/utils.py
+multimodel_ai.egg-info/PKG-INFO
+multimodel_ai.egg-info/SOURCES.txt
+multimodel_ai.egg-info/dependency_links.txt
+multimodel_ai.egg-info/entry_points.txt
+multimodel_ai.egg-info/requires.txt
+multimodel_ai.egg-info/top_level.txt
+tests/__init__.py
+tests/test_models.py
