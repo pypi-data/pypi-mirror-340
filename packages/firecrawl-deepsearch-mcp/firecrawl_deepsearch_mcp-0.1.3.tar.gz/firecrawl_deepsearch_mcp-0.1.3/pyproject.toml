@@ -1,0 +1,27 @@
+[project]
+name = "firecrawl-deepsearch-mcp"
+version = "0.1.3"
+description = "Deepsearch by firecrawl. MCP server"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+ "bump2version>=1.0.1",
+ "fastmcp>=2.1.0",
+ "firecrawl-py>=1.15.0",
+ "mcp[cli]>=1.6.0",
+]
+[[project.authors]]
+name = "Tolik"
+email = "tolik@svl.services"
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[bumpversion]
+current_version = "0.1.3"
+commit = "True"
+tag = "True"
+
+[project.scripts]
+firecrawl-deepsearch-mcp = "firecrawl_deepsearch_mcp.server:main"
