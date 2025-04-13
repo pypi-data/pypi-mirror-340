@@ -1,0 +1,10 @@
+genoray/__init__.py,sha256=tWtrmF7KGaEd4srU52E7vJ7yhGMraBkZe9VWy7Y2tio,110
+genoray/_pgen.py,sha256=GtRgzDHROZvpuIhQMlPl-QRoGeaDJff9cuMHAMhtlHA,12575
+genoray/_types.py,sha256=8V0WwVERN0jKhg4xy2rH5UExQLkYKHK4cYQ59_rQGUQ,4770
+genoray/_utils.py,sha256=Fye7E00vR4yPFEqEjZ68a--TYfUrhIWvFnPWJ23EVwU,3137
+genoray/_vcf.py,sha256=embwyO_5-Ohgw3VeTGmfEGT9AKGN34IwKMTzQNOKszE,14243
+genoray/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genoray-0.1.0.dist-info/METADATA,sha256=vzXz8tqUjL-FCWfl0zbMX9wfp1b6xswH-B2Ft_gdYpY,1652
+genoray-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+genoray-0.1.0.dist-info/licenses/LICENSE.txt,sha256=EivGStymUtQnfOFAAsvA0ySuVFxS5rMH3HceeQUIkFk,1053
+genoray-0.1.0.dist-info/RECORD,,
