@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+lernaean.egg-info/PKG-INFO
+lernaean.egg-info/SOURCES.txt
+lernaean.egg-info/dependency_links.txt
+lernaean.egg-info/top_level.txt
