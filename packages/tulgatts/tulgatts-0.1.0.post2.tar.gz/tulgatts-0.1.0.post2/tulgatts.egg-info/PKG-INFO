@@ -1,0 +1,163 @@
+Metadata-Version: 2.4
+Name: tulgatts
+Version: 0.1.0.post2
+Summary: TulgaTTS is an AI-based TTS library for generating speech with various voices popular in the region of Kazakhstan
+Home-page: https://github.com/dauitsuragan002/tulgatts
+Author: David Suragan
+Author-email: dauitsuragan002@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyCharacterAI>=0.2.0
+Requires-Dist: requests>=2.20.0
+Requires-Dist: python-dotenv>=0.10.0
+Provides-Extra: audio
+Requires-Dist: pygame>=2.0.0; extra == "audio"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# TulgaTTS
+**TulgaTTS - Қазақстанда танымал әр түрлі дауыстармен мәтінді сөйлетуге арналған кітапхана.**
+
+## Орнату
+
+```bash
+# Pip арқылы (болашақта)
+pip install tulgatts
+# Аудио ойнату үшін (опционалды):
+pip install -e .[audio]
+```
+
+## Жұмысты бастау
+
+1.  **Токенді алу:**
+    *   ⚠️ **ТОКЕНДІ БӨЛІСПЕҢІЗ!** Бұл сіздің аккаунтыңыздан сұраулар жіберу үшін қажет.
+    *   Браузеріңізде **Developer Tools** (Әзірлеуші құралдары) ашыңыз (көбінесе F12 пернесі).
+    *   **Storage** (Сақтау орны) қойындысына өтіңіз (кейде **Application** немесе **Application Storage** деп аталуы мүмкін).
+    *   Сол жақтағы мәзірден **Local Storage** тармағын тауып, астындағы character.ai сайтын таңдаңыз.
+    *   Оң жақтағы тізімнен `char_token` кілтін табыңыз.
+    *   Оның мәнін (`Value`) көшіріп алыңыз. Бұл сіздің токеніңіз.
+    *   `CHARACTER_AI_TOKEN` орта айнымалысын орнатыңыз немесе жоба түбірінде `.env` файлын жасап, ішіне `CHARACTER_AI_TOKEN=сіздің_көшіріп_алған_токеніңіз` деп жазыңыз.
+
+2.  Кітапхананы қолданыңыз.
+
+## Қолдану Мысалдары
+
+Кітапхананы қолданудың бірнеше жолы бар. Қарапайым скрипттер үшін синхронды әдісті, ал асинхронды қосымшалар үшін `async`/`await` әдісін қолдануға болады.
+
+### 1. Ең қарапайым қолдану әдісі. 
+
+```python
+# Қажетті импорттар
+from tulgatts import TulgaTTS
+
+# Клиентті жасау (әдепкі дауыс – Tokaev)
+client = TulgaTTS(api_token="CHARACTER_AI_TOKEN", voice="Tokaev")
+
+# 1. Әдепкі дауыспен сөйлеу және файлға сақтау
+client.say("Бұл класс арқылы жасалған мысал")
+
+```
+
+### 2. Cинхронды қолдану
+
+```python
+import os
+from tulgatts import TulgaTTS
+from dotenv import load_dotenv
+
+# .env ішінен токенді жүктейміз
+load_dotenv()
+api_token = os.getenv("CHARACTER_AI_TOKEN")
+
+def sync_say_usage():
+    if not api_token:
+        print("❌ Токен жоқ!")
+        return
+
+    try:
+        # Клиент жасау
+        tts_client = TulgaTTS(api_token=api_token, voice='Tokaev')
+        print(f"✅ Клиент '{tts_client.voice}' дауысына дайын.")
+
+        # Әдепкі дауыспен синхронды сөйлету
+        tts_client.say("Синхронды мысал.", output_file="sync_example.mp3")
+        print("🎧 Файл дайын: sync_example.mp3")
+
+    except Exception as e:
+        print(f"⚠️ Қате орын алды: {e}")
+
+if __name__ == "__main__":
+    print("2. Синхронды мысал...")
+    sync_say_usage()
+    print("-" * 20)
+
+```
+
+### 3. Ансинхронды қолдану
+
+```python
+
+import os, asyncio
+from tulgatts import TulgaTTS
+from dotenv import load_dotenv
+
+# .env ішінен токенді жүктейміз
+load_dotenv()
+api_token = os.getenv("CHARACTER_AI_TOKEN")
+
+async def advanced_async_say():
+    if not api_token: return print("Токен жоқ!")
+    
+    try:
+        tts_client = TulgaTTS(api_token=api_token)
+        print(f"Клиент '{tts_client.voice}' дауысымен дайын.")
+        await tts_client.say_async("Үшінші мысал, бірінші бөлім.", voice="Tokaev", output_file="advanced_async1.mp3", play_audio=True)
+    except Exception as e: print(f"Қате: {e}")
+
+if __name__ == "__main__":
+    print("\n3. Күрделірек асинхронды мысал...")
+    asyncio.run(advanced_async_say())
+    print("Барлық мысалдар аяқталды.")
+
+```
+
+## Қолжетімді Дауыстар
+
+Кітапханада келесі дауыстар алдын ала конфигурацияланған:
+
+*   Nursultan Nazarbaev
+*   Tokaev
+*   Pavel Durov
+*   Nurlan Saburov
+*   Putin
+*   Skriptonit
+*   Elon Musk
+*   Albert E
+*   Yandex Alica
+*   J.A.R.V.I.S
+*   Tony Stark
+
+Сіз күткен мәтінді TulgaTTS дыбыстамауы мүмкін екенін ексертемін. Қазір сол мәселені шешу бойынша жұмыс жүріп жатыр.
+
+Рақметімді осы жігітке айтамын
+[PyCharacterAI](https://github.com/Xtr4F/PyCharacterAI) арқылы Character AI дауыстарымен мәтінді сөйлету (TTS). 
+
+## Авторлар
+- David Suragan (TulgaTTS)
+- Gemini AI
+
+## Лицензия
+MIT 
