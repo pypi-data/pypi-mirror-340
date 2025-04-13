@@ -1,0 +1,7 @@
+README.md
+setup.py
+r3alai.egg-info/PKG-INFO
+r3alai.egg-info/SOURCES.txt
+r3alai.egg-info/dependency_links.txt
+r3alai.egg-info/requires.txt
+r3alai.egg-info/top_level.txt
