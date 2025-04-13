@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: navio_blsct
+Version: 0.0.14
+Summary: Python bindings for the Navio blsct library
+Project-URL: Homepage, https://github.com/nav-io/libblsct-bindings
+Project-URL: Repository, https://github.com/nav-io/libblsct-bindings
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# navio_blsct
+
+## Requirements
+Python 3.12 or above
+
+## Local installation
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install build setuptools
+python -m build
+pip install dist/*.whl
+```
+
+
