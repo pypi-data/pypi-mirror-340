@@ -1,0 +1,92 @@
+Metadata-Version: 2.4
+Name: mcp_radiation
+Version: 0.1.0
+Summary: A package for retrieving solar radiation data using NASA's POWER API
+Home-page: https://github.com/yuhai8203/mcp_radiation
+Author: 俞海
+Author-email: yuhai_8203@126.com
+Project-URL: Bug Reports, https://github.com/yuhai8203/mcp_radiation/issues
+Project-URL: Source, https://github.com/yuhai8203/mcp_radiation
+Keywords: solar radiation,NASA POWER,weather data,renewable energy
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: python-dateutil>=2.8.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# MCP Radiation
+
+A Python package for retrieving solar radiation data using NASA's POWER API.
+
+## Features
+
+- Retrieve hourly solar radiation data for any location
+- Support for total, direct, and diffuse irradiance
+- Temperature and wind speed data included
+- Automatic date validation and adjustment
+- Retry mechanism for API requests
+- Export data to CSV format
+
+## Installation
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+```python
+from mcp_radiation import RadiationMCP
+
+# Initialize with location coordinates
+mcp = RadiationMCP(latitude=39.9042, longitude=116.4074)
+
+# Get data for a specific date range
+data = mcp.fetch_data('2023-01-01', '2023-12-31')
+
+# Get five years of hourly data
+df, stats = mcp.get_five_years_hourly_data('data')
+```
+
+## Data Format
+
+The package retrieves the following parameters:
+- Total irradiance (W/m²)
+- Direct irradiance (W/m²)
+- Diffuse irradiance (W/m²)
+- Temperature (°C)
+- Wind speed (m/s)
+
+## License
+
+MIT License
+
+## Author
+
+俞海 (yuhai_8203@126.com) 

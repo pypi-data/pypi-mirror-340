@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+mcp_radiation.egg-info/PKG-INFO
+mcp_radiation.egg-info/SOURCES.txt
+mcp_radiation.egg-info/dependency_links.txt
+mcp_radiation.egg-info/requires.txt
+mcp_radiation.egg-info/top_level.txt
