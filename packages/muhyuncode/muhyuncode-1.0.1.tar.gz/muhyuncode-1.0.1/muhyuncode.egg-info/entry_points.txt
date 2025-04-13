@@ -1,0 +1,2 @@
+[console_scripts]
+muhyun = 무현코드:main
