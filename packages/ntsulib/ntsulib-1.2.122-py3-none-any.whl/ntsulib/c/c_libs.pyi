@@ -1,0 +1,13 @@
+from ctypes import *
+from _typeshed import Incomplete
+
+__all__ = ['test_lib']
+
+class external_libs:
+    class _test_lib:
+        def __init__(self) -> None: ...
+        def func1(self, string: str): ...
+        def func2(self, a: int, b: int) -> int: ...
+        def func3(self) -> float: ...
+
+test_lib: Incomplete
