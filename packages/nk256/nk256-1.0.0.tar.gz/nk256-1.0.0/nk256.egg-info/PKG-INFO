@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: nk256
+Version: 1.0.0
+Summary: Unicode-based Base-256,000 numeral encoding system.
+Home-page: https://github.com/dzbuit/nk256
+Author: blueradiance
+Author-email: none@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# nk256
+
+Unicode-based Base-256,000 numeral encoding system.
+
+This package encodes massive integers using a custom 256,000-character set starting from U+20000 in the Unicode range. The encoding is compact, reversible, and supports full numeric sorting. Some characters may not render properly on all systems, but the data is fully intact and designed for machine use.
+
+## Example
+
+```python
+import nk256
+
+n = 98765432101234567890
+encoded = nk256.encode_nk256(n)
+decoded = nk256.decode_nk256(encoded)
+
+print("🔐 Encoded:", encoded)
+print("🔓 Decoded:", decoded)
+print("✅ Success:", decoded == n)
+```
