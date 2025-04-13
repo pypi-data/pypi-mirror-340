@@ -1,0 +1,13 @@
+qiskit>=1.4.0
+qiskit-machine-learning>=0.8.2
+torch>=2.5.0
+tqdm
+scikit-learn
+pandas
+requests
+quantum_launcher
+
+[test]
+pytest
+pylint
+pre-commit
