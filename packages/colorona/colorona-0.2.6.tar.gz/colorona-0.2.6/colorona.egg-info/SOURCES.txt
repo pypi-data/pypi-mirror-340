@@ -1,0 +1,8 @@
+README.txt
+pyproject.toml
+setup.py
+colorona/__init__.py
+colorona.egg-info/PKG-INFO
+colorona.egg-info/SOURCES.txt
+colorona.egg-info/dependency_links.txt
+colorona.egg-info/top_level.txt
