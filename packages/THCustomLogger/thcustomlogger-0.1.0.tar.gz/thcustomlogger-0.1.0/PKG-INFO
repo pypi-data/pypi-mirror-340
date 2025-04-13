@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: THCustomLogger
+Version: 0.1.0
+Summary: A custom logging package with multiline formatting
+Project-URL: Homepage, https://github.com/TabgoHotel/CustomLogger.git
+Author-email: Tyler Haunreiter <silentbox23@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: colorlog
+Description-Content-Type: text/markdown
+
+# custom_logger
+
+A simple, reusable logger setup to use across projects.
+
+## Usage
