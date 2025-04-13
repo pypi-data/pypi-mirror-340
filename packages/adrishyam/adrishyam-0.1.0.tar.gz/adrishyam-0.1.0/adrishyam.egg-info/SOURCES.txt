@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+adrishyam.egg-info/PKG-INFO
+adrishyam.egg-info/SOURCES.txt
+adrishyam.egg-info/dependency_links.txt
+adrishyam.egg-info/requires.txt
+adrishyam.egg-info/top_level.txt
