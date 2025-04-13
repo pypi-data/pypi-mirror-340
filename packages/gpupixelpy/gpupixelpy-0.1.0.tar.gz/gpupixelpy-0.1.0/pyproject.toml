@@ -1,0 +1,19 @@
+[project]
+name = "gpupixelpy"
+version = "0.1.0"
+description = "gpupixel python wrapper"
+authors = [
+    {name = "angleyanalbedo",email = "100198247+angleyanalbedo@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "gpupixelpy", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
