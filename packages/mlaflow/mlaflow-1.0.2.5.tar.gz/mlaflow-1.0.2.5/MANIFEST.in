@@ -1,0 +1,4 @@
+include README.md  # 如果有 README 文件，请确保它被包含
+include LICENSE  # 如果有许可证文件，请确保它被包含
+recursive-include my_package *.py  # 包含所有的 Python 源代码文件
+recursive-include docs *  # 如果有 docs 文件夹，请确保它被包含
