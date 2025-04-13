@@ -1,0 +1,15 @@
+README.md
+setup.py
+SR23002UNO/_init_.py
+SR23002UNO/biseccion.py
+SR23002UNO/crammer.py
+SR23002UNO/descomposicion_lu.py
+SR23002UNO/eliminacion_gauss.py
+SR23002UNO/gauss_jordan.py
+SR23002UNO/gauss_seidel.py
+SR23002UNO/jacobi.py
+SR23002UNO.egg-info/PKG-INFO
+SR23002UNO.egg-info/SOURCES.txt
+SR23002UNO.egg-info/dependency_links.txt
+SR23002UNO.egg-info/requires.txt
+SR23002UNO.egg-info/top_level.txt
