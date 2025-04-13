@@ -1,0 +1,9 @@
+cli_wrapper/__init__.py,sha256=L9I3ftuQHgu-dtMbsy3oshTjyYgK-OKhQFuK7jkncx8,36
+cli_wrapper/cli_wrapper.py,sha256=MnNlXYE4JJX7pCALgQlGKnQqOFN3abHx1MNZbRDXTPE,13523
+cli_wrapper/parsers.py,sha256=CeNs33DGLiuOlBkkZM354GThYKOvyaseFgB14Ke5j2s,3805
+cli_wrapper/util.py,sha256=mAP7Mnb7fGq6eDXA7NoC9_XgUz-Nxo6L1exIaUeu18E,290
+cli_wrapper-0.0.0.dist-info/licenses/LICENSE.txt,sha256=ibrG12d1BMSiL9ix8Nn7_KFMxeT9E_ZNdspbvZuO74o,7444
+cli_wrapper-0.0.0.dist-info/METADATA,sha256=LHSRgI5KCS6PVkn4eAKabxct-XPJb8SFoP4cNZENxHQ,4570
+cli_wrapper-0.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+cli_wrapper-0.0.0.dist-info/top_level.txt,sha256=3_dglww5mkmNJo0xBkgtrkLkQMwBlh2Fbyxz3tX5jBQ,12
+cli_wrapper-0.0.0.dist-info/RECORD,,
