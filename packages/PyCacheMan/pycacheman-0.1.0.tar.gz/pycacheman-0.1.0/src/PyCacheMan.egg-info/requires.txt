@@ -1,0 +1,4 @@
+loggerman<0.2,>=0.1
+mdit<0.2,>=0.1
+pkgdata<0.2,>=0.1
+pyserials<0.2,>=0.1

@@ -1,0 +1,22 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: Serializable Cache
+description: |
+  Cached data that can be serialized to a file.
+type: object
+additionalProperties:
+  title: Cache Category
+  description: A group of cached data with a common retention time.
+  type: object
+  additionalProperties:
+    title: Cached Datapoint
+    description: |
+      A specific cached data within the group.
+    type: object
+    required: [ timestamp, data ]
+    additionalProperties: false
+    properties:
+      timestamp:
+        description: Timestamp of the last update.
+        type: string
+      data:
+        description: Cached data.
