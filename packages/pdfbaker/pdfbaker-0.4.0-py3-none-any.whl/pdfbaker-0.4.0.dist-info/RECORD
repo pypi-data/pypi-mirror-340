@@ -1,0 +1,13 @@
+pdfbaker/__init__.py,sha256=2xuns9w0GqQZxp3a_IVyIQ9R_xgM8jbHd5b-lp0VOMo,176
+pdfbaker/__main__.py,sha256=BFizUSoyR6zELPWs7PHoug8acERE12k_9k8w9M738Ls,1486
+pdfbaker/baker.py,sha256=YsbwZcn1S-mZN4KvPi4LiTc9OirGXiifHoy9LyXyvlY,4702
+pdfbaker/common.py,sha256=XgiLUY0Log-Aldi-zWi08ntcjIFOqAi5AG-94ER3tuE,7427
+pdfbaker/document.py,sha256=FWDitHsgExEZLGX7CCEOa3SDeatgNYoiWpdZRSN8pXA,8243
+pdfbaker/errors.py,sha256=-8RkZTVUPSGQrx474HKJ-m_QjkuJW_sQh8rZwCTOl-Y,760
+pdfbaker/render.py,sha256=JaXqvaHvLZlR-9awW2Wc9MGpjIWWJupHnODtokzA3bk,3544
+pdfbaker/types.py,sha256=4nnxeC-vnCYsWWYoPHXqGcd5IYle3NEr0Vbo8uh0nNA,389
+pdfbaker-0.4.0.dist-info/METADATA,sha256=S81efxaKOvklMq7yTnw6AGRONirPUPZCXth1HIbhAJ4,2772
+pdfbaker-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pdfbaker-0.4.0.dist-info/entry_points.txt,sha256=bRcx2wRHVj_hSIRpm9o3x1s3rQ6Vs2FyqISFvzOMEn0,51
+pdfbaker-0.4.0.dist-info/licenses/LICENSE,sha256=mvOfE40l537k4lcs6NTxqYObULjROLS9nThj3xHCJu8,1068
+pdfbaker-0.4.0.dist-info/RECORD,,
