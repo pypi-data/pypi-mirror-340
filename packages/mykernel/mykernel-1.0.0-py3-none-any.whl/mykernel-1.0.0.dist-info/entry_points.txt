@@ -1,0 +1,3 @@
+[console_scripts]
+mykernel=mykernel.mykernel_compile:main
+
