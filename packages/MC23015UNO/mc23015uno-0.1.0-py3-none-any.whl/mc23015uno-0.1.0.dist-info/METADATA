@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: MC23015UNO
+Version: 0.1.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/Edu-04/MC23015UNO
+Author: Tu Nombre
+Author-email: Luis Molina <luiseduardomolinacaseres6@gmail.com>
+Project-URL: Homepage, https://github.com/tuusuario/MC23015UNO
+Project-URL: Bug Tracker, https://github.com/tuusuario/MC23015UNO/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
