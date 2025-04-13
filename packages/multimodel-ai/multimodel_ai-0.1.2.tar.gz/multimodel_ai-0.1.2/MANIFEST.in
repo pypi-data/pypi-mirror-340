@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+include multimodel_ai/data/*.whl
+recursive-include multimodel_ai *.py
+recursive-include multimodel_ai *.json
+recursive-include multimodel_ai *.txt
+recursive-include multimodel_ai *.md 
