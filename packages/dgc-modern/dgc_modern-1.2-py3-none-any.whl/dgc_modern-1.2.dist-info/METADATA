@@ -1,0 +1,69 @@
+Metadata-Version: 2.4
+Name: dgc_modern
+Version: 1.2
+Summary: DGC-Modern is Best Progress Bar Library!
+Author-email: DiamondGotCat <diamondgotcat@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 DiamondGotCat
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/DiamondGotCat/Modern
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+DGC-Modern is Best Progres Bar Library!
+
+## Installation
+
+```bash
+pip install dgc_modern
+```
+
+## Usage
+
+```python
+from dgc_modern import Task
+```
+
+### Progress Bar
+
+```python
+import time
+
+t1 = Task(100, "Download A", process_color="green")
+t2 = Task(50, "Processing B", process_color="yellow", iswaiting=True)
+
+for i in range(100):
+    t1.update()
+    t2.update()
+    time.sleep(0.05)
+
+t2.waitmode(False)
+for i in range(50):
+    t2.update()
+    time.sleep(0.1)
+
+t1.finish()
+t2.finish()
+```
