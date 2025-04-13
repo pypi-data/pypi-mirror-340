@@ -1,0 +1,237 @@
+Metadata-Version: 2.4
+Name: EVENT_PACKAGE
+Version: 0.1.2
+Home-page: https://github.com/jorelix/Event_analysis_code
+Author: Emeka Aniekwensi
+Author-email: felixaniekwensi@gmail.com; aniekwen@msu.edu
+License: MIT License
+        
+        Copyright (c) [year] [fullname]
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+
+## DRAINAGE DISCHARGE EVENT ANALYSIS
+
+Catches *EVENTS* separating the event flow from base flow
+
+ 
+## Instructions 
+
+'''
+pip install EVENT_PACKAGE
+'''
+
+There are two such categories to this package
+
+a. You have the daily event data that can be called when the discharge data is in the daily data resolution
+
+b. You have the hourly event data that can be called when the discharge data is in the hourly data resolution
+
+## DATA TYPES
+
+This code would require that you input 2 datas
+
+## DATA A - Discharge data
+The discharge data should be saved in a txt file like:
+
+0.007218727
+0.005881466
+0.00455219
+0.00358201
+0.002039253
+0.000509867
+0
+0
+0
+
+0
+0
+0
+0
+
+0
+0
+0
+
+
+
+
+
+
+
+
+
+
+
+
+
+0
+0.016186071
+0.580750349
+0.415380911
+0.128053619
+0.103510445
+0.072126293
+0.054555909
+0.047435888
+0.043544909
+0.054222972
+0.058603367
+
+(zero or miss data point does not matter (The code assume there are no flows for those days))
+
+
+## DATA B - DATES
+
+The dates should also be put in a txt file like this:
+
+## Hourly
+
+9/28/2023 4:00
+9/28/2023 5:00
+9/28/2023 6:00
+9/28/2023 7:00
+9/28/2023 8:00
+9/28/2023 9:00
+9/28/2023 10:00
+9/28/2023 11:00
+9/28/2023 12:00
+9/28/2023 13:00
+9/28/2023 14:00
+9/28/2023 15:00
+9/28/2023 16:00
+9/28/2023 17:00
+9/28/2023 18:00
+9/28/2023 19:00
+9/28/2023 20:00
+9/28/2023 21:00
+9/28/2023 22:00
+9/28/2023 23:00
+9/29/2023 0:00
+9/29/2023 1:00
+9/29/2023 2:00
+9/29/2023 3:00
+9/29/2023 4:00
+9/29/2023 5:00
+9/29/2023 6:00
+9/29/2023 7:00
+9/29/2023 8:00
+9/29/2023 9:00
+9/29/2023 10:00
+9/29/2023 11:00
+9/29/2023 12:00
+9/29/2023 13:00
+9/29/2023 14:00
+9/29/2023 15:00
+9/29/2023 16:00
+9/29/2023 17:00
+9/29/2023 18:00
+9/29/2023 19:00
+9/29/2023 20:00
+9/29/2023 21:00
+9/29/2023 22:00
+9/29/2023 23:00
+
+
+
+## Daily
+
+13/01/2019
+14/01/2019
+15/01/2019
+16/01/2019
+17/01/2019
+18/01/2019
+19/01/2019
+20/01/2019
+21/01/2019
+22/01/2019
+23/01/2019
+24/01/2019
+25/01/2019
+26/01/2019
+27/01/2019
+28/01/2019
+29/01/2019
+30/01/2019
+31/01/2019
+01/02/2019
+02/02/2019
+03/02/2019
+04/02/2019
+05/02/2019
+06/02/2019
+07/02/2019
+08/02/2019
+09/02/2019
+10/02/2019
+11/02/2019
+12/02/2019
+13/02/2019
+14/02/2019
+15/02/2019
+16/02/2019
+17/02/2019
+18/02/2019
+19/02/2019
+20/02/2019
+21/02/2019
+22/02/2019
+23/02/2019
+24/02/2019
+25/02/2019
+26/02/2019
+27/02/2019
+28/02/2019
+01/03/2019
+02/03/2019
+
+
+Ensure the Flow and Load data are of equal size.
+
+
+## file names
+
+for drainage discharge
+
+Drainage = 'file_name1.txt'
+
+for date
+
+Date = 'file_name2.txt'
