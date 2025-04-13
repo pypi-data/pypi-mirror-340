@@ -1,0 +1,14 @@
+scikit-learn
+lxml
+spacy
+textstat
+model2vec
+pandas
+matplotlib
+seaborn
+nltk
+imbalanced-learn
+supertree
+
+[dev]
+datasets
