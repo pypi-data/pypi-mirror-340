@@ -1,0 +1,8 @@
+src/moroccan_atlas/personal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/moroccan_atlas/personal/constants.py,sha256=_JkKhiHceDjKqLFExfS2zIFOpGHYn6xLKt7umfJWv4w,3076
+src/moroccan_atlas/personal/main.py,sha256=aU7gGUzi0z5ZuWJND5cPr2o0cb2EyazTGG7Jyd_WWSo,2460
+src/moroccan_atlas/personal/utils.py,sha256=X5iG6Lf9UFFumGBiSVln17WjwKtttg7kZGNQ3PrHPX0,389
+moroccan_atlas-0.1.0.dist-info/LICENSE,sha256=lHKXSL9fAikBjp1aiyGA6Wn96Dal69Rv6NBqptUmXnQ,515
+moroccan_atlas-0.1.0.dist-info/METADATA,sha256=L0aJPeKRZTdERVMJmRxTBjlCncgcULJsUild1RDwhr0,2272
+moroccan_atlas-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+moroccan_atlas-0.1.0.dist-info/RECORD,,
