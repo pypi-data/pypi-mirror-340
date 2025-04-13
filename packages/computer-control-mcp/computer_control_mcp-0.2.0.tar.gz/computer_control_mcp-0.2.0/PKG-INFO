@@ -1,0 +1,108 @@
+Metadata-Version: 2.4
+Name: computer-control-mcp
+Version: 0.2.0
+Summary: Computer control capabilities using PyAutoGUI through a Model Context Protocol (MCP) server
+Project-URL: Homepage, https://github.com/AB498/computer-control-mcp
+Project-URL: Issues, https://github.com/AB498/computer-control-mcp/issues
+Project-URL: Documentation, https://github.com/AB498/computer-control-mcp#readme
+Author-email: Computer Control MCP Authors <example@example.com>
+License: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Requires-Python: >=3.12
+Requires-Dist: fuzzywuzzy
+Requires-Dist: mcp[cli]
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+Requires-Dist: pyautogui
+Requires-Dist: pygetwindow
+Requires-Dist: rapidocr-onnxruntime
+Description-Content-Type: text/markdown
+
+# Computer Control MCP
+
+A Python package that provides computer control capabilities, like mouse, keyboard, OCR, etc. using PyAutoGUI through a Model Context Protocol (MCP) server. With Zero External Dependencies.
+
+## Quick Usage (MCP Setup Using `uvx`)
+
+```json
+{
+  "mcpServers": {
+    "computer-control-mcp": {
+      "command": "uvx",
+      "args": ["computer-control-mcp"]
+    }
+  }
+}
+```
+
+OR install globally with `pip`:
+```bash
+pip install computer-control-mcp
+```
+Then run the server with:
+```bash
+computer-control-mcp # instead of uvx computer-control-mcp, so you can use the latest version, also you can `uv cache clean` to clear the cache and `uvx` again to use latest version.
+```
+
+## Features
+
+- Control mouse movements and clicks
+- Type text at the current cursor position
+- Take screenshots of the entire screen or specific windows with optional saving to downloads directory
+- Extract text from screenshots using OCR (Optical Character Recognition)
+- List and activate windows
+- Press keyboard keys
+- Drag and drop operations
+
+### Running as a Module
+
+You can run the package as a module:
+
+```bash
+python -m computer_control_mcp
+```
+
+## Development
+
+### Setting up the Development Environment
+
+```bash
+# Clone the repository
+git clone https://github.com/AB498/computer-control-mcp.git
+cd computer-control-mcp
+
+# Install in development mode
+pip install -e .
+```
+
+Or with uv:
+
+```bash
+# Clone the repository
+git clone https://github.com/AB498/computer-control-mcp.git
+cd computer-control-mcp
+
+# Install in development mode
+uv pip install -e .
+```
+
+### Running Tests
+
+```bash
+python -m pytest
+```
+
+## API Reference
+
+See the [API Reference](docs/api.md) for detailed information about the available functions and classes.
+
+## License
+
+MIT
