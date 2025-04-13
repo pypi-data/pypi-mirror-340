@@ -1,0 +1,8 @@
+mcpxcodebuild/__init__.py,sha256=FX9q3YQ8CTix7QQbRRit8hlhWFeXL50sXxtpLZJKE0k,190
+mcpxcodebuild/__main__.py,sha256=7Wo3sve9e5epR1K-u2PbPYu9PUmseIThUBsxHookOcc,38
+mcpxcodebuild/server.py,sha256=TwvImChTn0X9QaxH02BT66Yins7J3LsieOD6ci3zVm8,4423
+mcpxcodebuild-0.10.0.dist-info/METADATA,sha256=4GIVrH-6WoAlzLOb5B9aZS8YrkMGOypSY1aRzsGCsSA,2538
+mcpxcodebuild-0.10.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcpxcodebuild-0.10.0.dist-info/entry_points.txt,sha256=DU7NjcmMweGGic8log8tDaCtOI8TyJ3jfBS9PWInceU,53
+mcpxcodebuild-0.10.0.dist-info/licenses/LICENSE,sha256=x5_Sz6SjIQ8ba0GaPJ1MprGyBXFmsy7YP7Ja2B4S4aE,1051
+mcpxcodebuild-0.10.0.dist-info/RECORD,,
