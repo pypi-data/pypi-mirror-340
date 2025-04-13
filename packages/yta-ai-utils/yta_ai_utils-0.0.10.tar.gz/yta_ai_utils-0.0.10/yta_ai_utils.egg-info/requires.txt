@@ -1,0 +1,4 @@
+yta-general-utils
+google-generativeai
+transformers
+ollama
