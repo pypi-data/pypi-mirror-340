@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+freerouting/__init__.py
+freerouting/client.py
+freerouting_client.egg-info/PKG-INFO
+freerouting_client.egg-info/SOURCES.txt
+freerouting_client.egg-info/dependency_links.txt
+freerouting_client.egg-info/requires.txt
+freerouting_client.egg-info/top_level.txt
+tests/test_client.py
