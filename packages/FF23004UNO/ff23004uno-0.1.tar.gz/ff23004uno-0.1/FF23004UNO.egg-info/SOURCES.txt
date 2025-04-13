@@ -1,0 +1,9 @@
+README.txt
+setup.py
+FF23004UNO/__init__.py
+FF23004UNO/metodos.py
+FF23004UNO.egg-info/PKG-INFO
+FF23004UNO.egg-info/SOURCES.txt
+FF23004UNO.egg-info/dependency_links.txt
+FF23004UNO.egg-info/requires.txt
+FF23004UNO.egg-info/top_level.txt
