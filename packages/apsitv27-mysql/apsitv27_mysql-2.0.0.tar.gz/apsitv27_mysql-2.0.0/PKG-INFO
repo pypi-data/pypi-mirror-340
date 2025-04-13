@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: apsitv27-mysql
+Version: 2.0.0
+Requires-Dist: docker
+Requires-Dist: setuptools>=65.0.0
+Dynamic: requires-dist
