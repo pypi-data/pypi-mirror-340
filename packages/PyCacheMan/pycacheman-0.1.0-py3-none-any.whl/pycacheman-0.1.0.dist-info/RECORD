@@ -1,0 +1,9 @@
+pycacheman/__init__.py,sha256=xjuo2_WUBC_9dk6FNmIRwPwQJcdazIFkChZffVygN7c,18
+pycacheman/exception.py,sha256=DwJ-Q5E0RZeWeWukvfXrgvJbTcMI0o-aH-TdfIZJXqk,255
+pycacheman/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycacheman/serializable.py,sha256=IjZXPuT0wSmb9fp6cLiPwA4DVT_Q3g-vWDVy3rTWEAk,5263
+pycacheman/data/schema/serializable_cache.yaml,sha256=9Ej1kNSnWyLsMx8HgD21doQqBapu39ITc2aJZ1DBJUU,637
+pycacheman-0.1.0.dist-info/METADATA,sha256=7SmP3dGKUhfWk_SzGIfFZn9Sf8Xf1-x9Ujto61nGAO0,211
+pycacheman-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+pycacheman-0.1.0.dist-info/top_level.txt,sha256=aBKptWk_ZPaz1nAaLikKkaIkb2weutzxmd1Ixb5X3LE,11
+pycacheman-0.1.0.dist-info/RECORD,,
