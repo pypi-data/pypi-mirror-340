@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+information_parity/__init__.py
+information_parity/information_parity.py
+information_parity.egg-info/PKG-INFO
+information_parity.egg-info/SOURCES.txt
+information_parity.egg-info/dependency_links.txt
+information_parity.egg-info/requires.txt
+information_parity.egg-info/top_level.txt
