@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: simpletask
+Version: 1.0.2
+Summary: Library for scheduled tasks in Python (like Celery but simpler). Ideal for scripts, Django, and small projects.
+Author: Nicolás Castro (nicocastronc)
+Requires-Python: >=3.6
+License-File: LICENSE
