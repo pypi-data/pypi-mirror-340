@@ -1,0 +1,69 @@
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nngeometry"
+dynamic = ["version"]
+description = '{KFAC,EKFAC,Diagonal,Implicit} Fisher Matrices and finite width NTKs in PyTorch'
+readme = "Readme.md"
+requires-python = ">=3.9"
+license = "BSD-3-Clause"
+authors = [
+  { name = "Thomas George", email = "tfjgeorge@gmail.com" },
+]
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+  "torch",
+  "torchvision"
+]
+
+[project.urls]
+Documentation = "https://nngeometry.readthedocs.io/"
+Issues = "https://github.com/tfjgeorge/nngeometry/issues"
+Source = "https://github.com/tfjgeorge/nngeometry"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nngeometry"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["nngeometry"]
+
+[tool.uv-dynamic-versioning]
+vcs = "git"
+style = "pep440"
+metadata = false
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[dependency-groups]
+dev=[
+  "ipykernel",
+  "pytest", 
+  "pytest-cov", 
+  "pytest-xdist",
+]
+
+[tool.coverage.run]
+omit = ["tests/*"]
+
+[tool.ruff]
+line-length = 88
+exclude = ["docs"]
+
+[tool.ruff.lint]
+preview = true
+select = ["A", "E", "F", "W", "I"]
