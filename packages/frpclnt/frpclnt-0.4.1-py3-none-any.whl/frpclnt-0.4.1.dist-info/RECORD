@@ -1,0 +1,7 @@
+frpclnt/__init__.py,sha256=QaGsVJzXOC9DkGU6ykSlzbFkd7bv9zgYQN6ccPizFrY,124
+frpclnt/client.py,sha256=ydzRQ4WaWpfT8CGRu86uWuxs6vT8BIePx5i_wwniUZg,3007
+frpclnt/exceptions.py,sha256=yF7yxdqFlHb5sB0dEfUlrRo4gKLCPXKxi4ll4sbcN6M,169
+frpclnt/utils.py,sha256=1x6lp1WAG_fQc72F0yZkn2DP5hY46j2f8H_e-DZqrBk,338
+frpclnt-0.4.1.dist-info/METADATA,sha256=XQ6WOqPfqtGTeV6TcJ4wwtHw3mA-Ox4Eq979yC7EhXw,548
+frpclnt-0.4.1.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+frpclnt-0.4.1.dist-info/RECORD,,
