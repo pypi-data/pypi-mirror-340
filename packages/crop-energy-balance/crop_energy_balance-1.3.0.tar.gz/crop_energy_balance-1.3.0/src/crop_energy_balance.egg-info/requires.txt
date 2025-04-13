@@ -1,0 +1,7 @@
+numpy
+
+[tests]
+mock
+nose
+numpy
+pytest

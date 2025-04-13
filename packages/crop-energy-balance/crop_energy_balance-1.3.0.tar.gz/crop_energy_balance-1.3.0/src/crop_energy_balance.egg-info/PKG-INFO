@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: crop-energy-balance
+Version: 1.3.0
+Summary: A model for simulating energy balance in the soil-crop-atmosphere continuum
+Author-email: Rami ALBASHA <rami.albasha@inrae.fr>
+License-Expression: CECILL-C
+Project-URL: Homepage, https://github.com/RamiALBASHA/crop_energy_balance
+Project-URL: Bug Tracker, https://github.com/RamiALBASHA/issues
+Project-URL: Discussions, https://github.com/RamiALBASHA/discussions
+Project-URL: Changelog, https://github.com/RamiALBASHA/releases
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Provides-Extra: tests
+Requires-Dist: mock; extra == "tests"
+Requires-Dist: nose; extra == "tests"
+Requires-Dist: numpy; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Dynamic: license-file
+
+# crop_energy_balance
+A model for simulating energy balance in the soil-crop-atmosphere continuum
