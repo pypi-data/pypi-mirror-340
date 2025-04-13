@@ -1,0 +1,2 @@
+[console_scripts]
+carp = carpenter_py.cli:app

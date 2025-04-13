@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: carpenter-py
+Version: 0.1.0
+Summary: Core runtime for executing and managing actions in Carpenter ecosystem.
+Author: Eric Kweyunga
+Author-email: Eric Kweyunga <maverickweyunga@gmail.com>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Carpenter Python
+
+Python backend module for [CarpenterJS](https://github.com/erickweyunga/CarpenterJS) – enabling server-side actions with a clean interface and developer-first tooling.
+
+## Features
+
+- Register and handle server actions
+- Plug into existing frameworks (FastAPI, Starlette)
+- Simple CLI for bootstrapping apps
+
+## Installation
+
+```bash
+pip install carpenter
