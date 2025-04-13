@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: nngeometry
+Version: 0.3.2
+Summary: {KFAC,EKFAC,Diagonal,Implicit} Fisher Matrices and finite width NTKs in PyTorch
+Home-page: https://github.com/tfjgeorge/nngeometry
+Author: tfjgeorge
+Author-email: tfjgeorge@gmail.com
+License: MIT
+License-File: LICENSE
+Requires-Dist: torch>=2.0.0
+Requires-Dist: torchvision>=0.9.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
