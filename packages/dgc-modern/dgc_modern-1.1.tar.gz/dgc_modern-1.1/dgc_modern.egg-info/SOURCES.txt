@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+dgc_modern/__init__.py
+dgc_modern.egg-info/PKG-INFO
+dgc_modern.egg-info/SOURCES.txt
+dgc_modern.egg-info/dependency_links.txt
+dgc_modern.egg-info/top_level.txt
