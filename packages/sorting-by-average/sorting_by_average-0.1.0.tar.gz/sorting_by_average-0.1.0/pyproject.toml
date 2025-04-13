@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sorting-by-average"
+version = "0.1.0"
+description = "Python library for sorting collections of integers, dictionaries, or tuples based on their average values."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{ name="Bartosz Biesiadecki", email="bbiesiadecki@protonmail.com" }]
+requires-python = ">=3.6"
+dependencies = ["numpy>=1.20"]
+
+[project.urls]
+Homepage = "https://gitlab.com/biesiad99/sortingbyaverage"
+
+[project.optional-dependencies]
+dev = ["pytest"]

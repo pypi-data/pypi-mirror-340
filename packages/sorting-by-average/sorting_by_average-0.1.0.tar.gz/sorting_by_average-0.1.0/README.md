@@ -1,0 +1,132 @@
+# SortByAverage Library
+
+**SortByAverage** is a powerful and intuitive Python library for sorting collections of integers, dictionaries, or tuples based on their average values. It provides flexible sorting options, supports custom data transformations via external functions, and seamlessly handles complex datasets, making it perfect for tasks like medical data analysis, network monitoring, or statistical processing.
+
+## Key Features
+- Sort arrays of integers, dictionaries, or tuples by calculating average values.
+- Extract and sort dictionary values using customizable keys for precision.
+- Apply external functions to transform or filter data before sorting.
+- Retrieve original datasets with sorted and calculated values included.
+- Simple, lightweight API for quick integration.
+
+## Installation
+
+Install the library using pip:
+
+```bash
+pip install sortbyaverage
+```
+
+## Usage Examples
+
+### Sorting Medical Data by Average Heart Rate
+
+Sort a dataset of patient records by their average heart rate, stored as a list of dictionaries:
+
+
+```python
+from sortbyaverage import SortByAverage
+
+medical_data = [
+    {"patient_id": 1, "heart_rate": 75},
+    {"patient_id": 2, "heart_rate": 80},
+    {"patient_id": 3, "heart_rate": 65},
+    {"patient_id": 4, "heart_rate": 90}
+]
+
+sorter = SortByAverage(
+    data=medical_data,
+    dict_key_value="heart_rate",
+    dict_key_index="patient_id"
+)
+sorted_data = sorter.sort()
+print(sorted_data)
+```
+
+Output:
+```python
+[65, 75, 80, 90]
+```
+
+### Sorting Network Latency Data
+
+Sort network latency data from multiple nodes, stored as a list of dictionaries:
+
+```python
+network_data = [
+    {"node": "A", "latency": 120},
+    {"node": "B", "latency": 110},
+    {"node": "C", "latency": 150},
+    {"node": "D", "latency": 130}
+]
+
+sorter = SortByAverage(
+    data=network_data,
+    dict_key_value="latency",
+    dict_key_index="node"
+)
+sorted_data = sorter.sort()
+print(sorted_data)
+```
+
+Output:
+```python
+[110, 120, 130, 150]
+```
+
+### Custom Data Processing with External Functions
+
+Transform data before sorting using external functions. For example, multiply heart rate values by 2:
+
+```python
+def process_values(data, **kwargs):
+    return [value * 2 for value in data]
+
+sorter = SortByAverage(
+    data=medical_data,
+    dict_key_value="heart_rate",
+    dict_key_index="patient_id",
+    module_name="processing_module",
+    function_name="process_values",
+    is_i_called=True
+)
+sorted_data = sorter.sort()
+print(sorted_data)
+```
+
+Output:
+```python
+[130, 150, 160, 180]
+```
+
+The `is_i_called` parameter allows the external function to access iteration counts for dynamic, step-based processing.
+
+## Retrieving Original Data with Calculated Averages
+
+Retrieve the original dataset with sorted values and additional calculated averages using `get_original_data_from_dict`:
+
+```python
+sorted_full_data = sorter.get_original_data_from_dict()
+print(sorted_full_data)
+```
+
+Output:
+```python
+[
+    {"patient_id": 3, "heart_rate": 65, "calculated_value": 130},
+    {"patient_id": 1, "heart_rate": 75, "calculated_value": 150},
+    {"patient_id": 2, "heart_rate": 80, "calculated_value": 160},
+    {"patient_id": 4, "heart_rate": 90, "calculated_value": 180}
+]
+```
+
+This method preserves the original data structure while adding transformed and sorted values under a specified key.
+
+## Contributing
+
+I welcome contributions! Please submit issues or pull requests on the GitHub repository.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+

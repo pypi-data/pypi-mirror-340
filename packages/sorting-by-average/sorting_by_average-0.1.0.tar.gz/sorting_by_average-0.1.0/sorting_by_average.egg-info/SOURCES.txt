@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+sort_by_average/__init__.py
+sort_by_average/call_func.py
+sort_by_average/sort_by_average.py
+sorting_by_average.egg-info/PKG-INFO
+sorting_by_average.egg-info/SOURCES.txt
+sorting_by_average.egg-info/dependency_links.txt
+sorting_by_average.egg-info/requires.txt
+sorting_by_average.egg-info/top_level.txt
+tests/test_func.py
+tests/test_sort_by_average.py
