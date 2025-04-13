@@ -1,0 +1,2 @@
+[console_scripts]
+no_script = engine.__main__:main

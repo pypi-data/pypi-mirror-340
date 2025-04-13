@@ -1,0 +1,120 @@
+Metadata-Version: 2.4
+Name: plazma-chess
+Version: 1.2.2
+Summary: A fully function chess engine written in python
+Author-email: CaptainDeathead <unstableplazma@gmail.com>
+Project-URL: Homepage, https://github.com/CaptainDeathead/plazma-chess-engine
+Keywords: chess,engine,game
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >3
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Provides-Extra: dev
+Dynamic: license-file
+
+# Plazma Chess Engine
+
+## In development!
+
+### This is a basic chess engine based off of the [python-chess](https://github.com/niklasf/python-chess) library
+
+#### The engine has a [client](https://github.com/niklasf/python-chess-client) which supports multiplayer, singleplayer and bot chess matches!
+
+## Documentation
+### Setting up the board
+```python
+import engine # Import the plazma-chess module
+
+chessEngine = engine.Engine() # Create instance of the Engine class
+```
+
+This will initialize the engine class which contains all of the information of the board.
+All pieces will be set to normal chess starting positions.
+
+### Acessing the board
+```python
+import engine # Import the plazma-chess module
+
+chessEngine = engine.Engine() # Create instance of the Engine class
+print(chessEngine.board.board) # Access the board class stored in the engine class and get the board list
+
+# Example output of starting positions
+"""[[10, 8, 9, 11, 12, 9, 8, 10],
+    [7, 7, 7, 7, 7, 7, 7, 7],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [1, 1, 1, 1, 1, 1, 1, 1],
+    [4, 2, 3, 5, 6, 3, 2, 4]]"""
+```
+To Access the board class, and the board list within that you need to use the engine class.
+This is because when the engine class is initialized it also initializes the board.
+
+### Generating moves
+```python
+import engine # Import the plazma-chess module
+
+chessEngine = engine.Engine() # Create instance of the Engine class
+
+legalMoves = chessEngine.generateMoves((4, 6)) # Get the legal moves for the kings pawn
+```
+To get the legal moves for a piece you just need to specify the coordinates of the piece and call the `generateMoves` function in the engine class, passing in those coordinates.
+
+### Finding pieces
+```python
+import engine # Import the plazma-chess module
+
+chessEngine = engine.Engine() # Create instance of the Engine class
+
+pos = any_pieces_position
+
+print(chessEngine.board.pieceAt(pos)) # Call the 'pieceAt' function in the board
+# Prints:
+#   bool -> Found a piece
+#   int -> Piece value (0 if no piece)
+```
+To check if a piece is on a specific part of the board you can either access the board list manually or use the `pieceAt` function in the board class.
+
+### Moving pieces
+```python
+import engine # Import the plazma-chess module
+
+chessEngine = engine.Engine() # Create instance of the Engine class
+
+pos = current_piece_position
+newPos = new_piece_position
+
+status = chessEngine.move(pos, newPos) # Call the move function in the engine
+
+# If status = 0 the move was successfull.
+# If status = 1 the move ended in checkmate.
+# If an Illegal Move error surfaces the move was unsuccessfull.
+```
+To move pieces simply call the move function in the engine class. It will not allow illegal moves to be played and it uses the same `generateMoves` function to validate moves.
+
+Neither the `generateMoves` function or the `move` function will return moves that may result in a check.
+
+### Bots
+Bot support is not fully implemented yet so creating bots requires a little more work than expected.
+
+Generating moves is a little easier thanks to the individual move generation functions.
+
+These include:
+* `generatePawnMoves`
+* `generateKnightMoves`
+* `generateSlidingMoves`
+* `generateDiagonalMoves`
+* `generateKingMoves`
+
+This allows you to generate moves with more speciallity and presicion.
+
+These functions all take the same argument, `pos` which defines the piece position.
+
+These functions do not take checks into account so illegal move errors are a risk.
+
+You can remedy this by using the `inCheck` function which takes a `turn` argument and and optional `square` argument which is used to check for a specific piece. It returns `True` or `False` if the king is in check.
+
+To bypass the check detection there is a function called `__moveWithoutCheck`. This function is dangerous as it defies the rules of chess. It should only be used for move generation in bots which will garrentee faster move generation. chess. It should only be used for move generation in bots which will garrentee faster move generation.
