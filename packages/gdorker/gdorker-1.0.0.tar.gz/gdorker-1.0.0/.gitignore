@@ -1,0 +1,5 @@
+output.txt
+venv
+gdorker_session*
+__pycache__
+.coverage
