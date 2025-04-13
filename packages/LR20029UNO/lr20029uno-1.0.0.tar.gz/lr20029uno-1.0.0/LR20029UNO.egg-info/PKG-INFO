@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: LR20029UNO
+Version: 1.0.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Author: Balmore
+Author-email: LR20029@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# LibrerÃ­a: Sistemas de Ecuaciones en Python
+
+Una librerÃ­a en Python para resolver sistemas de ecuaciones lineales y no lineales utilizando diversos mÃ©todos numÃ©ricos.
+
+## MÃ©todos disponibles
+Esta librerÃ­a incluye los siguientes mÃ©todos para resolver sistemas de ecuaciones:
+
+### Sistemas lineales
+1. **EliminaciÃ³n de Gauss**: Resuelve sistemas de ecuaciones por eliminaciÃ³n progresiva y retrocesiva.
+2. **Gauss-Jordan**: ExtensiÃ³n del mÃ©todo de Gauss para obtener la soluciÃ³n en forma escalonada reducida.
+3. **Cramer**: Utiliza determinantes para resolver sistemas de ecuaciones con matrices cuadradas.
+4. **DescomposiciÃ³n LU**: Divide la matriz en componentes triangular inferior (L) y superior (U) para resolver sistemas.
+5. **Jacobi**: MÃ©todo iterativo para resolver sistemas de ecuaciones.
+6. **Gauss-Seidel**: Otro mÃ©todo iterativo con condiciones de convergencia mÃ¡s fuertes.
+
+### Ecuaciones no lineales
+7. **BisecciÃ³n**: Encuentra raÃ­ces de ecuaciones no lineales en un intervalo dado.
+
+
