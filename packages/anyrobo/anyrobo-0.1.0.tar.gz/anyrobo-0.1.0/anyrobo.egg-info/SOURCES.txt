@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+anyrobo/__init__.py
+anyrobo/assistant.py
+anyrobo/cli.py
+anyrobo.egg-info/PKG-INFO
+anyrobo.egg-info/SOURCES.txt
+anyrobo.egg-info/dependency_links.txt
+anyrobo.egg-info/entry_points.txt
+anyrobo.egg-info/requires.txt
+anyrobo.egg-info/top_level.txt
+tests/test_assistant.py
