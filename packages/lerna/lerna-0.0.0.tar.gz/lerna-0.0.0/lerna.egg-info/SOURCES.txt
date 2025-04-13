@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+lerna.egg-info/PKG-INFO
+lerna.egg-info/SOURCES.txt
+lerna.egg-info/dependency_links.txt
+lerna.egg-info/top_level.txt
