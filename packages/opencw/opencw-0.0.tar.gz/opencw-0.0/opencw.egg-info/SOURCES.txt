@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+opencw/Task.py
+opencw.egg-info/PKG-INFO
+opencw.egg-info/SOURCES.txt
+opencw.egg-info/dependency_links.txt
+opencw.egg-info/not-zip-safe
+opencw.egg-info/top_level.txt
