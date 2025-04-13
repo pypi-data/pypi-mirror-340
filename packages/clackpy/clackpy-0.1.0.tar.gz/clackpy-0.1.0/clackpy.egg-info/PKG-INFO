@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: clackpy
+Version: 0.1.0
+Summary: Interactive command-line prompts for Python, inspired by clack.cc
+Author: SpyC0der77
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: readchar
+Dynamic: license-file

@@ -1,0 +1,13 @@
+[project]
+name = "clackpy"
+version = "0.1.0"
+description = "Interactive command-line prompts for Python, inspired by clack.cc"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "SpyC0der77" }]
+requires-python = ">=3.7"
+dependencies = ["readchar"]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
