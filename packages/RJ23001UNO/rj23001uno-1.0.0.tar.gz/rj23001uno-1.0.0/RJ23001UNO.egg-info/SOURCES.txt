@@ -1,0 +1,9 @@
+README.md
+setup.py
+RJ23001UNO/__init__.py
+RJ23001UNO/metodos.py
+RJ23001UNO.egg-info/PKG-INFO
+RJ23001UNO.egg-info/SOURCES.txt
+RJ23001UNO.egg-info/dependency_links.txt
+RJ23001UNO.egg-info/top_level.txt
+tests/test_metodos.py
