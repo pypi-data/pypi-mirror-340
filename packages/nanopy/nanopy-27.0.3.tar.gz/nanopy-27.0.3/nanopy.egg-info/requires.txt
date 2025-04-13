@@ -1,0 +1,12 @@
+
+[mnemonic]
+mnemonic
+
+[rpc]
+requests
+
+[tor]
+pysocks
+
+[wssrpc]
+websocket-client
