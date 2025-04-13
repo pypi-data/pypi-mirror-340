@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: nanopy
+Version: 27.0.2
+License-Expression: MIT
+Project-URL: Repository, https://github.com/npy0/nanopy
+License-File: LICENSE
+Provides-Extra: rpc
+Requires-Dist: requests; extra == "rpc"
+Provides-Extra: wssrpc
+Requires-Dist: requests; extra == "wssrpc"
+Requires-Dist: websocket-client; extra == "wssrpc"
+Provides-Extra: mnemonic
+Requires-Dist: mnemonic; extra == "mnemonic"
+Dynamic: license-file

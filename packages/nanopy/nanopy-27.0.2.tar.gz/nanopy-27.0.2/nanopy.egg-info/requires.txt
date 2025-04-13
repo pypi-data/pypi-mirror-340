@@ -1,0 +1,10 @@
+
+[mnemonic]
+mnemonic
+
+[rpc]
+requests
+
+[wssrpc]
+requests
+websocket-client
