@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+IA23005UNO/__init__.py
+IA23005UNO/metodos.py
+IA23005UNO.egg-info/PKG-INFO
+IA23005UNO.egg-info/SOURCES.txt
+IA23005UNO.egg-info/dependency_links.txt
+IA23005UNO.egg-info/requires.txt
+IA23005UNO.egg-info/top_level.txt

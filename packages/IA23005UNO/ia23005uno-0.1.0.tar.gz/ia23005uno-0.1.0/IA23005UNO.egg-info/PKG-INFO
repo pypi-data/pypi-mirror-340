@@ -1,0 +1,52 @@
+Metadata-Version: 2.4
+Name: IA23005UNO
+Version: 0.1.0
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales
+Home-page: https://github.com/RubenIglesias1F20/IA23005UNO
+Download-URL: 
+Author: Rubén Iglesias IA23005
+Author-email: rubenedgardo70080503@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# IA23005UNO
+Ruben Edgardo Iglesias Alfaro IA23005
+Examen Corto de la Materia Calculo Numerico para Desarollo de Aplicaciones
+GT01
+LibrerÃ­a para resolver sistemas de ecuaciones lineales y no lineales.
+
+## MÃ©todos implementados
+
+- EliminaciÃ³n de Gauss
+- Gauss-Jordan
+- Crammer
+- DescomposiciÃ³n LU
+- Jacobi
+- Gauss-Seidel
+- BisecciÃ³n
+
+## InstalaciÃ³n local, esto si desea usarlo en forma local
+python -m pip install -e .
+
+## InstalaciÃ³n por libreria
+
+```bash
+pip install IA23005UNO
+
