@@ -1,0 +1,44 @@
+Log {
+    border: $primary;
+    max-height: 10;
+    height:auto;
+}
+TestTree {
+    width:1fr;
+    height: 1fr;
+    border-top: white;
+
+}
+CodePreview {
+    height: auto;
+    border: white;
+
+    TextArea {
+        height: auto;
+    }
+}
+TreeFilter {
+    height: auto;
+    border: white;
+
+    Horizontal{
+        height: auto;
+    }
+
+    Button {
+        width:1fr;
+    }
+
+}
+
+Vertical{
+    width:1fr;
+}
+
+Collapsible {
+    height: auto;
+}
+
+#adasd:focus {
+    background: $error;
+}
