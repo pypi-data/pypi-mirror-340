@@ -1,0 +1,11 @@
+docscraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docscraper/async_scraper.py,sha256=UKoj-vZg4gdlobj_nV_Mjf74rikQFmyDyi3UXWvMWIk,1666
+docscraper/cli.py,sha256=X0_XKuRgqxy7Lvsv5LmX8yk2WVJxZ5XSSNOd-I_YM5c,2102
+docscraper/crawler.py,sha256=HuaxWlcBTXj-QpP_SVmIlmw9WUzXuJYMxKSc-FhhyFE,2169
+docscraper/scraper.py,sha256=ChnYE1PaU2cePUhc69kG3nDa42ZHy2pfDe4BqiEaREc,1605
+docscraper/utils.py,sha256=rSalmUBxRwjWFqwj-imdUXlT_wnPjhpdv8WHq1dyF_k,425
+docscraperforai-0.1.0.dist-info/licenses/LICENSE,sha256=3I5pVC_9m7WMMNHgW-vnPYnx7V_IGdbJ0-G3oclljVc,227
+docscraperforai-0.1.0.dist-info/METADATA,sha256=HIugQPXD43PlMOk0i-uEvN0ReO91Mh0TVkPYwwuHiC0,526
+docscraperforai-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+docscraperforai-0.1.0.dist-info/top_level.txt,sha256=hN1637_ukGLF6h4AFDnvsaOITAhUPQMLC0NlXqsUBuI,11
+docscraperforai-0.1.0.dist-info/RECORD,,
