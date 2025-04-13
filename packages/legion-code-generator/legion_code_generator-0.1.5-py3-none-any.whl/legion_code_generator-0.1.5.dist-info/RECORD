@@ -1,0 +1,14 @@
+legion_code_generator/__init__.py,sha256=8aODuxDPiWwWYbWFIFxcM9sRHEw9Md5_Pi9IfLF1clA,235
+legion_code_generator/__main__.py,sha256=JETnh7IcJKGC-TSbhpL8HpNZtaH34s4phCHML6ZHlhI,470
+legion_code_generator/agent.py,sha256=QGX1e2VkTl6kkCCjJ0ecajJT03AwAcTLfAtKDPNsZIU,24267
+legion_code_generator/context.py,sha256=-m1qXgb9eYrDjsUVzJ7GzKRM7jEG-KC9QN06pm0LNDw,11597
+legion_code_generator/executor.py,sha256=8cZQu-0OMS7qRDYhJ7QNsb87q1zvWc-NmpcI4ycGE84,10040
+legion_code_generator/llm.py,sha256=Bk28SHzcpVgsyiUwt7VIh5ukYa6XkQv-ubnScKjVfF0,11959
+legion_code_generator/prompts.py,sha256=2kJCXr3FoYZ2MEFAqRwMeei-PNzL1Rltx4qhMUunT-o,7917
+legion_code_generator/utils.py,sha256=Exvs-MX3SZaWXMpTnJuuSZZxx1cOiBW1DgXzG8PiwLU,14746
+legion_code_generator-0.1.5.dist-info/licenses/LICENSE,sha256=rb10SZzKiGeL11sNWfMziocg1fmsRqzyvUTB0cZ_1Gc,1112
+legion_code_generator-0.1.5.dist-info/METADATA,sha256=g3xHEZGkPz7uSXzdFOS7qmuas1O9VBT0dmXYGEhyKX4,7321
+legion_code_generator-0.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+legion_code_generator-0.1.5.dist-info/entry_points.txt,sha256=393x9EDyox1eGcbG4fznLOtOCufaWiksS2LIR9eOa1Y,75
+legion_code_generator-0.1.5.dist-info/top_level.txt,sha256=UVe9yx9rgqF9oLHTOJ5PRRMDeUu4-1WkljnyUAdabVA,22
+legion_code_generator-0.1.5.dist-info/RECORD,,
