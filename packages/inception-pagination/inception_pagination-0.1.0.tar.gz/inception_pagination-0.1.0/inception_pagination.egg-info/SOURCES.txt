@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+inception_pagination/__init__.py
+inception_pagination/pagination.py
+inception_pagination.egg-info/PKG-INFO
+inception_pagination.egg-info/SOURCES.txt
+inception_pagination.egg-info/dependency_links.txt
+inception_pagination.egg-info/requires.txt
+inception_pagination.egg-info/top_level.txt

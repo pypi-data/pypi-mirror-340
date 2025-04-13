@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: inception_pagination
+Version: 0.1.0
+Summary: inception_pagination is a package that allows you to paginate the data
+Home-page: https://github.com/KhaduaBloom/inceptionforcepackages/tree/main/PythonPackage/inceptionPagination
+Author: KhaduaBloom
+Author-email: khaduabloom@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: graypy==2.1.0
+Requires-Dist: psutil==6.1.0
+
+python 3.13.0
