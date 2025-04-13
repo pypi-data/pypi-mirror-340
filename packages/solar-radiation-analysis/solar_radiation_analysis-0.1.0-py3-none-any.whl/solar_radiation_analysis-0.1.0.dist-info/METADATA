@@ -1,0 +1,65 @@
+Metadata-Version: 2.2
+Name: solar-radiation-analysis
+Version: 0.1.0
+Summary: A Python package for analyzing solar radiation and wind speed data from NASA POWER API
+Home-page: https://github.com/yuhai8203/solar-radiation-analysis
+Author: Yu Hai
+Author-email: Yu Hai <yuhai_8203@126.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: python-dateutil
+Requires-Dist: tqdm
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# Solar Radiation Analysis
+
+A Python package for analyzing solar radiation and wind speed data from NASA POWER API.
+
+## Installation
+
+```bash
+pip install solar-radiation-analysis
+```
+
+## Usage
+
+```python
+from solar_radiation_analysis import SolarRadiationAnalysis
+
+# Initialize the analysis with location coordinates
+analysis = SolarRadiationAnalysis(latitude=39.9042, longitude=116.4074)
+
+# Get analysis results
+results = analysis.get_analysis()
+
+# Print the results
+print(results)
+```
+
+## Features
+
+- Retrieves solar radiation and wind speed data from NASA POWER API
+- Calculates five-year averages
+- Analyzes yearly and monthly trends
+- Identifies daily peaks and extreme values
+- Provides comprehensive statistical analysis
+
+## Dependencies
+
+- requests
+- pandas
+- numpy
+
+## License
+
+MIT License
+
+## Author
+
+Yu Hai (yuhai_8203@126.com) 
