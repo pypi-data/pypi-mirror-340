@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+gentoricass/__init__.py
+gentoricass/main.py
+gentoricass.egg-info/PKG-INFO
+gentoricass.egg-info/SOURCES.txt
+gentoricass.egg-info/dependency_links.txt
+gentoricass.egg-info/top_level.txt
