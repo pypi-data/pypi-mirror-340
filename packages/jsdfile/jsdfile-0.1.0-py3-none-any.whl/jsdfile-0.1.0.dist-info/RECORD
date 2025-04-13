@@ -1,0 +1,14 @@
+jsdfile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsdfile/benchmark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsdfile/benchmark/bench.py,sha256=UxrBC5tYI3Iai2jRx5qblau2DYHvoXG5Lr82eGcYv4s,18925
+jsdfile/benchmark/config.py,sha256=v_UEN_CB4jXgxYzSLPp73hgkan8JjOcsv679s2uoym4,4843
+jsdfile/benchmark/utils.py,sha256=kFSnHHij68liIaQvy2PDUbkyJ5VlqLBxMo_vx0mEvJU,2940
+jsdfile/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsdfile/core/main.py,sha256=G4zPia8xChs-eQqyodbmJUnTLcconMNTPWn6x_nKbGI,4776
+jsdfile/plot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsdfile/plot/plot.py,sha256=4ii25SIrfjcEcDnWo7Jt7ZdQ0uTNo8nSdmj3UVeCaKw,29914
+jsdfile/plot/utility.py,sha256=UoGd34JZqg5DzPKRJub6M0bNq2Q3h0xAWG1ZPQZvCSQ,6744
+jsdfile-0.1.0.dist-info/LICENSE,sha256=2Vhwvx8IR61fPnXH-_FSH9hxQJxTllSwjRQqdvGKZis,1065
+jsdfile-0.1.0.dist-info/METADATA,sha256=dipBeBz0Ro2UMpFcm2zgY_onFZxO_XhJNABESjrHruE,5252
+jsdfile-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+jsdfile-0.1.0.dist-info/RECORD,,
