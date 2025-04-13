@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: image_processing-ransgg
+Version: 0.0.1
+Summary: Processamento de Imagens
+Home-page: https://github.com/Ransgg/image-processing-package
+Author: Guilherme M. R.
+Author-email: guilherme.moraes@unifesp.br
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Image Processing
+
+## DescriÃ§Ã£o:
+O package image_processing Ã© utilizado para:
+	Processinhg:
+		- Histogram matching
+		- Structural similarity
+		- Resize image
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## InstalaÃ§Ã£o
+
+Utilize o gerenciador de pacote [pip](https://pip.pypa.io/en/stable/) para instalar o image_processing
+
+```bash
+pip install image_processing
+```
+
+## Author
+Guilherme M. R.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
