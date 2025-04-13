@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: aivk-fs
+Version: 0.0.1
+Summary: AIVFS Is Virtual FileSystem
+Project-URL: homepage, https://github.com/LIghtJUNction/AIVFS
+Author-email: LIghtJUNction <lightjunction.me@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: aivk>=0.2.4
+Description-Content-Type: text/markdown
+
+# AIVFS
+AIVFS Is Virtual FileSystem

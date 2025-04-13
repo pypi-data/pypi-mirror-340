@@ -1,0 +1,22 @@
+[project]
+name = "aivk-fs"
+version = "0.0.1"
+description = "AIVFS Is Virtual FileSystem"
+readme = "README.md"
+authors = [
+    { name = "LIghtJUNction", email = "lightjunction.me@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "aivk>=0.2.4",
+]
+
+[project.scripts]
+aivk-fs = "aivk_fs.onCli.__main__:cli"
+
+[project.urls]
+homepage = "https://github.com/LIghtJUNction/AIVFS"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
