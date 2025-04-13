@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: seasnake-bite
+Version: 0.0.15
+Summary: seasnake-bite is a Python library for looking at sea snakes.
+Author-email: sea-snake-developer <seasnake.dev@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/seasnakedev/sea-snake
+Project-URL: Contributing, https://github.com/seasnakedev/sea-snake/blob/main/CONTRIBUTING.md
+Project-URL: CLA, https://github.com/seasnakedev/sea-snake/blob/main/CLA.md
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# sea-snake
+
+Coming soon. 2025.

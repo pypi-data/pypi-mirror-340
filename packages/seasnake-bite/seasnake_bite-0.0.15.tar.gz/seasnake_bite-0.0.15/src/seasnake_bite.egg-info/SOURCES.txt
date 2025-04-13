@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/seasnake/__init__.py
+src/seasnake_bite.egg-info/PKG-INFO
+src/seasnake_bite.egg-info/SOURCES.txt
+src/seasnake_bite.egg-info/dependency_links.txt
+src/seasnake_bite.egg-info/top_level.txt

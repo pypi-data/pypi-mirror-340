@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seasnake-bite"
+version = "0.0.15"
+description = "seasnake-bite is a Python library for looking at sea snakes."
+readme = { file = "README.md", content-type = "text/markdown" }
+license = {text = "MIT"}
+authors = [{ name = "sea-snake-developer", email = "seasnake.dev@gmail.com" }]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/seasnakedev/sea-snake"
+"Contributing" = "https://github.com/seasnakedev/sea-snake/blob/main/CONTRIBUTING.md"
+"CLA" = "https://github.com/seasnakedev/sea-snake/blob/main/CLA.md"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["seasnake", "seasnake.*"]
