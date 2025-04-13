@@ -1,0 +1,7 @@
+README.md
+setup.py
+GabrielDiazCalculadoraAlgebraicaMatricial.egg-info/PKG-INFO
+GabrielDiazCalculadoraAlgebraicaMatricial.egg-info/SOURCES.txt
+GabrielDiazCalculadoraAlgebraicaMatricial.egg-info/dependency_links.txt
+GabrielDiazCalculadoraAlgebraicaMatricial.egg-info/requires.txt
+GabrielDiazCalculadoraAlgebraicaMatricial.egg-info/top_level.txt
