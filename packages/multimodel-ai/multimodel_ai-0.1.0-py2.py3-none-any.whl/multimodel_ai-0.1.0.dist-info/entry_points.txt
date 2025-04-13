@@ -1,0 +1,2 @@
+[console_scripts]
+multi-ai = multi_ai.cli:main

@@ -1,0 +1,13 @@
+multi_ai/__init__.py,sha256=rY1wmGVcDk6l797RN4Hpa1-XDnxIxLP0zxlU_eZvb5Y,458
+multi_ai/cli.py,sha256=16UOIHdrfttdhsOXzHat2nOg5hbbs76En7rAINCr-WU,5743
+multi_ai/model_manager.py,sha256=MBe_wpj1lJB3WNK2JyXcYgHjDjBUmIkCa8Gndfo19pw,3275
+multi_ai/models.py,sha256=JkFVfklkpXtD-yxHhqiA8DCR-B7uyJ9VL6PCMvKQv18,12536
+multi_ai/post_install.py,sha256=78bpvpawn5ZkJUBRdf387O2qK-xAiFEydkFd9HTCy9I,939
+tests/__init__.py,sha256=CktpNYZooXMRIhxuoQGCW6cC5YsV8VNth_-7m_tHVPk,33
+tests/test_models.py,sha256=A8Lo9lxaV4w1pqPeVrM0aOpRrP3xPgERhoRFxNu_qM0,518
+multimodel_ai-0.1.0.dist-info/LICENSE,sha256=FyuBsNr3YLXHPRQfWIpCAC4brUeSdYelr01V-Fkog8U,1066
+multimodel_ai-0.1.0.dist-info/METADATA,sha256=MvtbQVvSNRgZ3KCGTfASzAO2HoSAIWvv0puwIt0SqsI,8020
+multimodel_ai-0.1.0.dist-info/WHEEL,sha256=Kh9pAotZVRFj97E15yTA4iADqXdQfIVTHcNaZTjxeGM,110
+multimodel_ai-0.1.0.dist-info/entry_points.txt,sha256=KcRbM5iFvhwQDAlGYHGpTzYh3L0pbso08HJuBL0UyR0,47
+multimodel_ai-0.1.0.dist-info/top_level.txt,sha256=BqgpgNlF6eyp2TTMCaqyFlEWvBXAtlGgfiwC-9ZMPDM,15
+multimodel_ai-0.1.0.dist-info/RECORD,,
