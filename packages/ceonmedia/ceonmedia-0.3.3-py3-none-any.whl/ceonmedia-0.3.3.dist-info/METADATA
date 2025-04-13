@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: ceonmedia
+Version: 0.3.3
+Summary: Core functionality for ceonmedia projects
+Author-email: Dayne Kolk <daynekolk@hotmail.com>
+Requires-Python: >=3.11
+Requires-Dist: ceon-render>=0.2.1
+Description-Content-Type: text/markdown
+
+# cstock_python
+Must function with python 3.11 to be compatible with Hou and other apps
+
+[![Python application](https://github.com/Ceonsamea/cstock_python/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/Ceonsamea/cstock_python/actions/workflows/python-app.yml)
