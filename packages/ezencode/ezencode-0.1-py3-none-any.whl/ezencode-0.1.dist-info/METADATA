@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: ezencode
+Version: 0.1
+Summary: A simple text encoder: EZ Encode
+Author-email: "Rayshawn Levy (sneekyfoxx)" <sneekyfoxx09@gmail.com>
+Maintainer-email: "Rayshawn Levy (sneekyfoxx)" <sneekyfoxx09@gmail.com>
+License-Expression: BSD-3-Clause
+Keywords: EZ,decode,encode,ez,ezencode
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+
+# EZ Encode
+
+## About
+**EZ Encode** is an attempt at making a custom simple encoder / decoder just for fun.
+It has a *two* layer encoding mechanism that allows for a bit more security, though
+the conecpt could be improved upon, it still works.
+
+## How It Works
+
+```python
+# import the Encode and Decode classes
+from ezencode.encoder import Encode
+from ezencode.decoder import Decode
+
+# Generate some text to encode
+text = "Hello, world! The encoder and decoder really works. \n\n"
+
+# Encode the text
+encoder = Encode(text)
+encoded = encoder.encoded_text()  # get the encoded text
+
+# Decode the text
+decoder = Decode(encoded)
+decoded = decoder.decoded_text()  # get the decoded text
+
+print("Encoded: ", encoded, end="\n")  # print the encoded text
+print("Decoded: ", decoded, end="\n")  # print the decoded text
+```
