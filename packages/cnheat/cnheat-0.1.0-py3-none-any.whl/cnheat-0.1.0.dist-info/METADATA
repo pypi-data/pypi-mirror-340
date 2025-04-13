@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: cnheat
+Version: 0.1.0
+Summary: Python module for interacting with the Cambium Networks cnHeat API
+Author-email: JckHmr <cjosey@cjevolutions.com>
+License: MIT
+Project-URL: Homepage, https://github.com/JckHamm3r/cnHeat
+Project-URL: Issues, https://github.com/JckHamm3r/cnHeat/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
