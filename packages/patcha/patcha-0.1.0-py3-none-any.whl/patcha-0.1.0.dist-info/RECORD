@@ -1,0 +1,9 @@
+patcha/__init__.py,sha256=rf9Bda9C2HWHsCdTPcKrhfQKquaZB_h6klHLTPJAXBQ,170
+patcha/cli.py,sha256=ZnFUaFYue8WFTJmUVXFcwUCQRrzD0kewWZorya8DqKo,1204
+patcha/scanner.py,sha256=l3k8sh1OYJlWSsvKEWZARat1y_wQX5iCNuc-EomwR4A,65591
+patcha-0.1.0.dist-info/licenses/LICENSE,sha256=JYfAl3ToMUMwsueWjxywfKp-QzsFy3UO48yb85WzK6w,1070
+patcha-0.1.0.dist-info/METADATA,sha256=m2Ge_D9Z4s8CZsVH5bckjtPck9pv080ITtsUsuwfreg,1451
+patcha-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+patcha-0.1.0.dist-info/entry_points.txt,sha256=gIKLJTXbVo-lCacueqG86w2uK78tQ-MtKCHri6muWgs,43
+patcha-0.1.0.dist-info/top_level.txt,sha256=KnQYgCJLpIWQVzF3cRQWx2t2npwlKrZ2934CyjNU9Jg,7
+patcha-0.1.0.dist-info/RECORD,,
