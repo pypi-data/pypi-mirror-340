@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: SB14009UNO
+Version: 0.1.1
+Summary: Librería para resolver sistemas de ecuaciones
+Author: Oscar Santos
+Author-email: sb14009@ues.edu.sv
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# Sistema de Ecuaciones
+
+Esta librerÃ­a es para resolver sistemas de ecuaciones lineales y no lineales utilizando los siguientes mÃ©todos:
+
+- EliminaciÃ³n de Gauss
+- Gauss-Jordan
+- Cramer
+- DescomposiciÃ³n LU
+- Jacobi
+- Gauss-Seidel
+- BisecciÃ³n
+
+## InstalaciÃ³n
+
+Para instalarlo solo se debe anteponer el comando pip
+
+
