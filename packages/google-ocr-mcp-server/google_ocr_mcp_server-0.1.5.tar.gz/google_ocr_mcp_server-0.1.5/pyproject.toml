@@ -1,0 +1,36 @@
+[project]
+name = "google-ocr-mcp-server"
+version = "v0.1.5"
+description = "Google OCR MCP server"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+keywords = [
+    "Scientific/Engineering",
+    "Artificial Intelligence",
+    "Software Development",
+    "MCP",
+    "Agent",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = ["google-cloud-vision>=3.10.1", "loguru>=0.7.3", "mcp>=1.6.0"]
+[[project.authors]]
+name = "Zerohertz"
+email = "ohg3417@gmail.com"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+google-ocr-mcp-server = "google_ocr_mcp_server:main"
