@@ -1,0 +1,2 @@
+[console_scripts]
+firecrawl-deepsearch-mcp = firecrawl_deepsearch_mcp.server:main
