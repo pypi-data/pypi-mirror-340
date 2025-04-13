@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: simple-streamlit-calculator
+Version: 1.0.0
+Author: Your Name
+Requires-Python: >=3.7
+Requires-Dist: streamlit>=1.0
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python

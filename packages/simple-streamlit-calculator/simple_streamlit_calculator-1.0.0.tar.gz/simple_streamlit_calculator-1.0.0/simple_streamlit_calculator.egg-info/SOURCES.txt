@@ -1,0 +1,10 @@
+README.md
+setup.py
+calculator_app/__init__.py
+calculator_app/calculator_app.py
+simple_streamlit_calculator.egg-info/PKG-INFO
+simple_streamlit_calculator.egg-info/SOURCES.txt
+simple_streamlit_calculator.egg-info/dependency_links.txt
+simple_streamlit_calculator.egg-info/entry_points.txt
+simple_streamlit_calculator.egg-info/requires.txt
+simple_streamlit_calculator.egg-info/top_level.txt
