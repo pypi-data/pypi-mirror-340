@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: CG22079UNO
+Version: 1.0.1
+Summary: Librería para resolver sistemas de ecuaciones lineales y no lineales con métodos numéricos
+Author: Gloria Elena Castellanos Garcia
+Author-email: Gloria Elena Castellanos Garcia <cg22079@ues.edu.sv>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-python
+
+# CG22079UNO
+
+Una librería de Python para resolver sistemas de ecuaciones lineales y no lineales usando métodos numéricos clásicos.
+
+## Métodos incluidos
+
+- Eliminación de Gauss
+- Gauss-Jordan
+- Regla de Crammer
+- Descomposición LU
+- Método de Jacobi
+- Método de Gauss-Seidel
+- Método de Bisección
+
+## Instalación
+
+```bash
+pip install CG22079UNO
