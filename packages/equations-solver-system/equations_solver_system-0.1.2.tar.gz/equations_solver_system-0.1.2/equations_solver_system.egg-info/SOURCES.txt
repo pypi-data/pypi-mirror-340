@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+equations_solver_system/__init__.py
+equations_solver_system/bisection.py
+equations_solver_system/cramer.py
+equations_solver_system/gauss.py
+equations_solver_system/gauss_jordan.py
+equations_solver_system/gauss_seidel.py
+equations_solver_system/jacobi.py
+equations_solver_system/lu.py
+equations_solver_system.egg-info/PKG-INFO
+equations_solver_system.egg-info/SOURCES.txt
+equations_solver_system.egg-info/dependency_links.txt
+equations_solver_system.egg-info/top_level.txt
