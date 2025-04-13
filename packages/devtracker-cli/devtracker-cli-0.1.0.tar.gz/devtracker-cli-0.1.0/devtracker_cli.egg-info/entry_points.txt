@@ -1,0 +1,2 @@
+[console_scripts]
+devtracker = devtracker_cli.cli:cli
