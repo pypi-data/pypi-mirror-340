@@ -1,0 +1,5 @@
+print("[numpyUtilsNani] Submodules loaded: daa, cs, ai")
+print("for more details import the submodule you want to use:")
+print("use `import numpyUtilsNani.daa`....")
+print("use `import numpyUtilsNani.cs`....")
+print("use `import numpyUtilsNani.ai`....")
