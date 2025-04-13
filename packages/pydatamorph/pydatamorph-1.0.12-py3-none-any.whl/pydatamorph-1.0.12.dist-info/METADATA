@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: pydatamorph
+Version: 1.0.12
+Summary: Adaptive LLM-native data pipeline orchestrator
+Author: Chockalingam Subramanian
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: streamlit>=1.0
+Requires-Dist: pyyaml>=6.0
+Requires-Dist: python-dotenv>=1.1.0
+Dynamic: author
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
