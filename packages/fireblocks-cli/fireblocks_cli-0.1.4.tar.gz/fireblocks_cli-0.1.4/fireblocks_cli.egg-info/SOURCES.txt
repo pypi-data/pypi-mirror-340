@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+fireblocks_cli/__init__.py
+fireblocks_cli/config.py
+fireblocks_cli/crypto.py
+fireblocks_cli/main.py
+fireblocks_cli.egg-info/PKG-INFO
+fireblocks_cli.egg-info/SOURCES.txt
+fireblocks_cli.egg-info/dependency_links.txt
+fireblocks_cli.egg-info/entry_points.txt
+fireblocks_cli.egg-info/requires.txt
+fireblocks_cli.egg-info/top_level.txt
+fireblocks_cli/commands/configure.py
