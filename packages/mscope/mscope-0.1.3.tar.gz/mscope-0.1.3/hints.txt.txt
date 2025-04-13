@@ -1,0 +1,5 @@
+{username}@{domain} - 
+> example --> example@domain
+
+{username}{num1-5}@{domain} -
+> example --> example1@domain, example2@domain.. etc
