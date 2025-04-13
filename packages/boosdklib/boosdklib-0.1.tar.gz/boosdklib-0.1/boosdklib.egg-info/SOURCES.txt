@@ -1,0 +1,7 @@
+setup.py
+boosdklib.egg-info/PKG-INFO
+boosdklib.egg-info/SOURCES.txt
+boosdklib.egg-info/dependency_links.txt
+boosdklib.egg-info/entry_points.txt
+boosdklib.egg-info/requires.txt
+boosdklib.egg-info/top_level.txt

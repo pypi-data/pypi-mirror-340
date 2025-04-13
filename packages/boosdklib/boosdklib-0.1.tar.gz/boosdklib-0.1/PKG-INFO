@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: boosdklib
+Version: 0.1
+Summary: BoosSDK CLI για μετατροπή HTML σε .exe μέσω pywebview
+Author: panoscodergr
+Requires-Dist: pywebview
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
