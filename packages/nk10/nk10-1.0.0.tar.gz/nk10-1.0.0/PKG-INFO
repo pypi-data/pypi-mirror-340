@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: nk10
+Version: 1.0.0
+Summary: Unicode Hangul base-10000 numeric compression
+Home-page: https://github.com/dzbuit/nk10
+Author: blueradiance
+Author-email: none@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# nk10
+
+High-compression Unicode Hangul numeral system (base-10,000).
+
+```bash
+pip install nk10
+```
+
+```python
+import nk10
+
+s = nk10.encode_nk10(123456789)
+n = nk10.decode_nk10(s)
+```
