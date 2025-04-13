@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+MC23152UNO/__init__.py
+MC23152UNO/metodos.py
+MC23152UNO.egg-info/PKG-INFO
+MC23152UNO.egg-info/SOURCES.txt
+MC23152UNO.egg-info/dependency_links.txt
+MC23152UNO.egg-info/requires.txt
+MC23152UNO.egg-info/top_level.txt
+test/test_metodos.py

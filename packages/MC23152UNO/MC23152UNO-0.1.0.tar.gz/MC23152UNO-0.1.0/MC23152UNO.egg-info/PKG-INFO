@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: MC23152UNO
+Version: 0.1.0
+Summary: Librería de métodos numéricos para resolver sistemas de ecuaciones (lineales y no lineales)
+Home-page: https://github.com/moisescorado91
+Author: Moises Isaac Molina Corado
+Author-email: mc23512@ues.edu.sv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<h1 align="left">Libreria para resolver ecuaciones Lineales Y no lineales</h1>
+
+###
+
+<p align="left"></p>
+
+###
+
+<h2 align="left">Metodos que puede resolver:</h2>
+
+###
+
+<p align="left">
+✨Eliminación de Gauss<br> 
+✨Gauss-Jordan<br> 
+✨Crammer<br> 
+✨Descomposición LU<br> 
+✨Jacobi<br> 
+✨Gauss-Seidel<br> 
+✨Bisección<br> 
+</p>
+
+###
+
+<h2 align="left">Lenguaje Utilizado</h2>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+</div>
+
+###
