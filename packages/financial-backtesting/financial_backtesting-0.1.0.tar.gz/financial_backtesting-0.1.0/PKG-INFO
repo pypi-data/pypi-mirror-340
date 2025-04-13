@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: financial-backtesting
+Version: 0.1.0
+Summary: A backtesting framework for machine learning and financial trading strategies.
+Home-page: https://github.com/shashwatop3/backtesting_package
+Author: Shashwat Chaturvedi
+Author-email: chaturvedishashwat5@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Financial Backtesting
+
+A Python library for backtesting financial trading strategies.
+
+## Installation
+
+```bash
+pip install financial-backtesting
