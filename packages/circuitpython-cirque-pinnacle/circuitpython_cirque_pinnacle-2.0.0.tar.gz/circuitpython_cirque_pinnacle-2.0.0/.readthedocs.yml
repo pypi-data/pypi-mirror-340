@@ -1,0 +1,16 @@
+version: 2
+
+sphinx:
+  # Path to your Sphinx configuration file.
+  configuration: docs/conf.py
+
+build:
+  os: "ubuntu-24.04"
+  tools:
+    python: "latest"
+
+python:
+  install:
+    - requirements: docs/requirements.txt
+    - method: pip
+      path: .
