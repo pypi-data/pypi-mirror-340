@@ -1,0 +1,13 @@
+neurovortex/__init__.py,sha256=wCJgiFaH_VLSyqX7nsjaf_IYxk3nf6tv7PjCSFFRSBw,851
+neurovortex/model_loader.py,sha256=D0VCNePZ60AeRmAX32nUg2CpiJJUKvk35zpTZJKpwg4,4810
+neurovortex/optimizer.py,sha256=TE55O-Y3pRVSgEdJ2RYdA9ctzSZaGpyDqN9XMaDCLi0,5700
+neurovortex/resource_manager.py,sha256=v9hq2wozyAqFiXFeBWNLuTMSUsLucmz_RpI72TU-o8g,4219
+neurovortex/utils.py,sha256=fIdRHE-wiSjdzrKD0Uw5ncvS0Igie6bWPU_tMB6yVSc,2179
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_model_loader.py,sha256=6549aMGFTGqjYCfAgb8XMh6s_AkUKQmpOT_-PS-1pXg,795
+tests/test_optimizer.py,sha256=LUzKuI9Br8jRx5As8j8goKMvefR_I7wKptaL9EYDjCs,349
+tests/test_resource_manger.py,sha256=krk_nEEIpIwUKTT8JZC0gw9H1ONdjq4ctr6haCK07C4,306
+neurovortex-0.1.0.dist-info/METADATA,sha256=mvw-AoXsLblSB5COC9sUd_bTE3zRL5gteZPlWu2UMxw,2399
+neurovortex-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+neurovortex-0.1.0.dist-info/top_level.txt,sha256=QrlsnOiZ9Z-aePk_V5LFtxjTmuP9nHXJalkUgSj8cSo,18
+neurovortex-0.1.0.dist-info/RECORD,,
