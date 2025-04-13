@@ -1,0 +1,7 @@
+setup.py
+thermonuclearpackage/__init__.py
+thermonuclearpackage/strikemissile.py
+thermonuclearpackage.egg-info/PKG-INFO
+thermonuclearpackage.egg-info/SOURCES.txt
+thermonuclearpackage.egg-info/dependency_links.txt
+thermonuclearpackage.egg-info/top_level.txt
