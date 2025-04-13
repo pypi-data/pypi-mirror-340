@@ -1,0 +1,33 @@
+{
+  "GreenwichLongitude": 0.0,
+  "Unit": {
+    "Code": 9102,
+    "Name": "degree",
+    "href": "https://apps.epsg.org/api/v1/Unit/9102"
+  },
+  "Code": 8901,
+  "Changes": [
+    {
+      "Code": 1996.29,
+      "href": "https://apps.epsg.org/api/v1/Change/1996.29"
+    },
+    {
+      "Code": 2016.045,
+      "href": "https://apps.epsg.org/api/v1/Change/2016.045"
+    }
+  ],
+  "Alias": [],
+  "Links": [
+    {
+      "rel": "self",
+      "href": "https://apps.epsg.org/api/v1/PrimeMeridian/8901"
+    }
+  ],
+  "Name": "Greenwich",
+  "Remark": "The international reference meridian as defined first by the 1884 International Meridian Conference and later by the Bureau International de l'Heure (BIH) and then the International Earth Rotation Service (IERS).",
+  "DataSource": "EPSG",
+  "InformationSource": "OGP",
+  "RevisionDate": "2016-12-15T00:00:00",
+  "Deprecations": [],
+  "Supersessions": []
+}

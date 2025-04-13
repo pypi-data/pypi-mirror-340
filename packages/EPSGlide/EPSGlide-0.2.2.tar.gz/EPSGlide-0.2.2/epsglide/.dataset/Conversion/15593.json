@@ -1,0 +1,49 @@
+{
+  "ParameterValues": [],
+  "Method": {
+    "Code": 9659,
+    "Name": "Geographic3D to 2D conversion",
+    "href": "https://apps.epsg.org/api/v1/CoordOperationMethod/9659"
+  },
+  "Usage": [
+    {
+      "Code": 11604,
+      "Name": "World",
+      "ScopeDetails": "Geographic 3D to geographic 2D conversions.",
+      "Scope": {
+        "Code": 1155,
+        "Name": "Geographic 3D to geographic 2D conversions.",
+        "href": "https://apps.epsg.org/api/v1/Scope/1155"
+      },
+      "Extent": {
+        "Code": 1262,
+        "Name": "World",
+        "href": "https://apps.epsg.org/api/v1/Extent/1262"
+      },
+      "Links": [],
+      "Deprecation": null,
+      "Supersession": null
+    }
+  ],
+  "Type": "Projection",
+  "Code": 15593,
+  "Changes": null,
+  "Alias": [],
+  "Links": [
+    {
+      "rel": "self",
+      "href": "https://apps.epsg.org/api/v1/Conversion/15593"
+    },
+    {
+      "rel": "Method",
+      "href": "https://apps.epsg.org/api/v1/CoordOperationMethod/9659"
+    }
+  ],
+  "Name": "geographic3D to geographic2D",
+  "Remark": "See EPSG Guidance Note #7 or Coordinate Operation Method description for techniques for handling reverse conversion.",
+  "DataSource": "EPSG",
+  "InformationSource": "EPSG Guidance Note #7-2.",
+  "RevisionDate": "2007-08-27T00:00:00",
+  "Deprecations": [],
+  "Supersessions": []
+}

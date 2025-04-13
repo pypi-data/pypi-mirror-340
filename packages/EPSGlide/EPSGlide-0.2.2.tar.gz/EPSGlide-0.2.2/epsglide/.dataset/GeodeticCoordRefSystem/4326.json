@@ -1,0 +1,87 @@
+{
+  "Datum": {
+    "Code": 6326,
+    "Name": "World Geodetic System 1984 ensemble",
+    "href": "https://apps.epsg.org/api/v1/Datum/6326"
+  },
+  "DatumEnsemble": null,
+  "BaseCoordRefSystem": {
+    "Code": 4979,
+    "Name": "WGS 84",
+    "href": "https://apps.epsg.org/api/v1/GeodeticCoordRefSystem/4979"
+  },
+  "Conversion": {
+    "Code": 15593,
+    "Name": "geographic3D to geographic2D",
+    "href": "https://apps.epsg.org/api/v1/Conversion/15593"
+  },
+  "GeoidModels": [],
+  "Usage": [
+    {
+      "Code": 3202,
+      "Name": "World (by country)",
+      "ScopeDetails": "Horizontal component of 3D system.",
+      "Scope": {
+        "Code": 1183,
+        "Name": "Horizontal component of 3D system.",
+        "href": "https://apps.epsg.org/api/v1/Scope/1183"
+      },
+      "Extent": {
+        "Code": 2830,
+        "Name": "World (by country)",
+        "href": "https://apps.epsg.org/api/v1/Extent/2830"
+      },
+      "Links": [],
+      "Deprecation": null,
+      "Supersession": null
+    }
+  ],
+  "CoordSys": {
+    "Code": 6422,
+    "Name": "Ellipsoidal 2D CS. Axes: latitude, longitude. Orientations: north, east. UoM: degree",
+    "href": "https://apps.epsg.org/api/v1/CoordSystem/6422"
+  },
+  "Kind": "geographic 2D",
+  "Deformations": [],
+  "Code": 4326,
+  "Changes": [
+    {
+      "Code": 2002.151,
+      "href": "https://apps.epsg.org/api/v1/Change/2002.151"
+    },
+    {
+      "Code": 2003.37,
+      "href": "https://apps.epsg.org/api/v1/Change/2003.37"
+    },
+    {
+      "Code": 2006.81,
+      "href": "https://apps.epsg.org/api/v1/Change/2006.81"
+    },
+    {
+      "Code": 2007.079,
+      "href": "https://apps.epsg.org/api/v1/Change/2007.079"
+    },
+    {
+      "Code": 2020.027,
+      "href": "https://apps.epsg.org/api/v1/Change/2020.027"
+    },
+    {
+      "Code": 2022.086,
+      "href": "https://apps.epsg.org/api/v1/Change/2022.086"
+    }
+  ],
+  "Alias": [],
+  "Links": [
+    {
+      "rel": "self",
+      "href": "https://apps.epsg.org/api/v1/GeodeticCoordRefSystem/4326"
+    }
+  ],
+  "Name": "WGS 84",
+  "Remark": null,
+  "DataSource": "EPSG",
+  "InformationSource": "EPSG. See 3D CRS for original information source.",
+  "RevisionDate": "2022-11-29T00:00:00",
+  "Deprecations": [],
+  "Supersessions": []
+}

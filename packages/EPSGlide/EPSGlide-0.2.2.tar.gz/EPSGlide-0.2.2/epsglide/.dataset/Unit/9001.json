@@ -1,0 +1,65 @@
+{
+  "Type": "length",
+  "TargetUnit": {
+    "Code": 9001,
+    "href": "https://apps.epsg.org/api/v1/Unit/9001"
+  },
+  "FactorB": 1.0,
+  "FactorC": 1.0,
+  "Code": 9001,
+  "Changes": [
+    {
+      "Code": 2015.062,
+      "href": "https://apps.epsg.org/api/v1/Change/2015.062"
+    },
+    {
+      "Code": 2018.028,
+      "href": "https://apps.epsg.org/api/v1/Change/2018.028"
+    }
+  ],
+  "Alias": [
+    {
+      "Code": 7,
+      "Alias": "meter",
+      "NamingSystem": {
+        "Code": 7300,
+        "Name": "EPSG alternative spelling",
+        "href": "https://apps.epsg.org/api/v1/NamingSystem/7300"
+      },
+      "Remark": null
+    },
+    {
+      "Code": 74,
+      "Alias": "International metre",
+      "NamingSystem": {
+        "Code": 7301,
+        "Name": "EPSG alias",
+        "href": "https://apps.epsg.org/api/v1/NamingSystem/7301"
+      },
+      "Remark": null
+    },
+    {
+      "Code": 344,
+      "Alias": "m",
+      "NamingSystem": {
+        "Code": 1041,
+        "Name": "EPSG/Energistics abbreviation",
+        "href": "https://apps.epsg.org/api/v1/NamingSystem/1041"
+      },
+      "Remark": null
+    }
+  ],
+  "Links": [
+    {
+      "rel": "self",
+      "href": "https://apps.epsg.org/api/v1/Unit/9001"
+    }
+  ],
+  "Name": "metre",
+  "Remark": "SI base unit for length.",
+  "DataSource": "EPSG",
+  "InformationSource": "Bureau International des Poids et Mesures (BIPM), www.bipm.org",
+  "RevisionDate": "2018-05-29T00:00:00",
+  "Deprecations": [],
+  "Supersessions": []
+}

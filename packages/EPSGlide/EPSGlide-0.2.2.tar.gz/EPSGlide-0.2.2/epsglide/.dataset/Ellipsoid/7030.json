@@ -1,0 +1,47 @@
+{
+  "SemiMajorAxis": 6378137.0,
+  "SemiMinorAxis": "NaN",
+  "InverseFlattening": 298.257223563,
+  "Shape": 1,
+  "Unit": {
+    "Code": 9001,
+    "Name": "metre",
+    "href": "https://apps.epsg.org/api/v1/Unit/9001"
+  },
+  "Code": 7030,
+  "Changes": [
+    {
+      "Code": 1998.32,
+      "href": "https://apps.epsg.org/api/v1/Change/1998.32"
+    },
+    {
+      "Code": 2015.047,
+      "href": "https://apps.epsg.org/api/v1/Change/2015.047"
+    }
+  ],
+  "Alias": [
+    {
+      "Code": 67,
+      "Alias": "WGS84",
+      "NamingSystem": {
+        "Code": 7301,
+        "Name": "EPSG alias",
+        "href": "https://apps.epsg.org/api/v1/NamingSystem/7301"
+      },
+      "Remark": null
+    }
+  ],
+  "Links": [
+    {
+      "rel": "self",
+      "href": "https://apps.epsg.org/api/v1/Ellipsoid/7030"
+    }
+  ],
+  "Name": "WGS 84",
+  "Remark": "1/f derived from four defining parameters semi-major axis; C20 = -484.16685*10e-6; earth's angular velocity \u03c9 = 7292115e-11 rad/sec; gravitational constant GM = 3986005e8 m*m*m/s/s. In 1994 new GM = 3986004.418e8 m*m*m/s/s but a and 1/f retained.",
+  "DataSource": "EPSG",
+  "InformationSource": "DMA Technical Manual 8350.2-B",
+  "RevisionDate": "2015-11-25T00:00:00",
+  "Deprecations": [],
+  "Supersessions": []
+}

@@ -1,0 +1,70 @@
+{
+  "Type": "angle",
+  "TargetUnit": {
+    "Code": 9101,
+    "Name": "radian",
+    "href": "https://apps.epsg.org/api/v1/Unit/9101"
+  },
+  "FactorB": 3.14159265358979,
+  "FactorC": 180.0,
+  "Code": 9102,
+  "Changes": [
+    {
+      "Code": 1996.22,
+      "href": "https://apps.epsg.org/api/v1/Change/1996.22"
+    },
+    {
+      "Code": 2002.86,
+      "href": "https://apps.epsg.org/api/v1/Change/2002.86"
+    },
+    {
+      "Code": 2015.062,
+      "href": "https://apps.epsg.org/api/v1/Change/2015.062"
+    }
+  ],
+  "Alias": [
+    {
+      "Code": 382,
+      "Alias": "deg",
+      "NamingSystem": {
+        "Code": 7302,
+        "Name": "EPSG abbreviation",
+        "href": "https://apps.epsg.org/api/v1/NamingSystem/7302"
+      },
+      "Remark": null
+    },
+    {
+      "Code": 1202,
+      "Alias": "dega",
+      "NamingSystem": {
+        "Code": 7306,
+        "Name": "Energistics symbol",
+        "href": "https://apps.epsg.org/api/v1/NamingSystem/7306"
+      },
+      "Remark": null
+    },
+    {
+      "Code": 7063,
+      "Alias": "angular degree",
+      "NamingSystem": {
+        "Code": 1040,
+        "Name": "Energistics name",
+        "href": "https://apps.epsg.org/api/v1/NamingSystem/1040"
+      },
+      "Remark": null
+    }
+  ],
+  "Links": [
+    {
+      "rel": "self",
+      "href": "https://apps.epsg.org/api/v1/Unit/9102"
+    }
+  ],
+  "Name": "degree",
+  "Remark": "= pi/180 radians",
+  "DataSource": "EPSG",
+  "InformationSource": null,
+  "RevisionDate": "2015-11-25T00:00:00",
+  "Deprecations": [],
+  "Supersessions": []
+}
