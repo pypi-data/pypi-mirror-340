@@ -1,0 +1,76 @@
+Metadata-Version: 2.4
+Name: pyqueuex
+Version: 0.1.0
+Summary: A powerful, feature-rich job queue system for Python with advanced retry strategies, job chaining, and intelligent job processing.
+Project-URL: Homepage, https://github.com/yourusername/pyqueuex
+Project-URL: Repository, https://github.com/yourusername/pyqueuex.git
+Project-URL: Issues, https://github.com/yourusername/pyqueuex/issues
+Project-URL: Documentation, https://pyqueuex.readthedocs.io/
+Author-email: Avijit <avijitsen24.me@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Avijit Sen
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: redis>=5.0.0
+Description-Content-Type: text/markdown
+
+# pyqueuex 🚀
+
+A powerful, feature-rich job queue system for Python with advanced retry strategies, job chaining, and intelligent job processing.
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![Redis](https://img.shields.io/badge/Redis-Required-red.svg)](https://redis.io/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![PyPI Version](https://img.shields.io/pypi/v/pyqueuex)](https://pypi.org/project/pyqueuex/)
+
+## ✨ Features
+
+- 🔄 **Advanced Retry Strategies**
+  - Exponential, Linear, and Fixed backoff
+  - Configurable delays and attempts
+  - Maximum retry limit
+
+- ⏱️ **Smart Job Processing**
+  - Job timeout handling
+  - Time-to-live (TTL) support
+  - Multiple queue processing strategies
+  - Concurrent job execution
+
+- 🔗 **Job Dependencies & Chaining**
+  - Sequential job execution
+  - Result passing between jobs
+  - Complex workflow support
+  - Dependency graph management
+
+- 📊 **Queue Management**
+  - FIFO/LIFO processing
+  - Priority queues
+  - Round-robin distribution
+  - Rate limiting
+
+## 🚀 Quick Start
+
+```bash
+pip install pyqueuex

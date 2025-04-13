@@ -1,0 +1,31 @@
+[project]
+name = "pyqueuex"
+version = "0.1.0"
+description = "A powerful, feature-rich job queue system for Python with advanced retry strategies, job chaining, and intelligent job processing."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Avijit", email = "avijitsen24.me@gmail.com"}
+]
+dependencies = [
+    "redis>=5.0.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/pyqueuex"
+Repository = "https://github.com/yourusername/pyqueuex.git"
+Issues = "https://github.com/yourusername/pyqueuex/issues"
+Documentation = "https://pyqueuex.readthedocs.io/"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pyqueuex"]
