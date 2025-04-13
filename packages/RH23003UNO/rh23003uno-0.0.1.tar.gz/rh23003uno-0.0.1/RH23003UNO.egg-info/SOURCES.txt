@@ -1,0 +1,16 @@
+LICENSE.txt
+README.txt
+setup.py
+RH23003UNO/__init__.py
+RH23003UNO/biseccion.py
+RH23003UNO/crammer.py
+RH23003UNO/descomposicion_lu.py
+RH23003UNO/gauss.py
+RH23003UNO/gauss_jordan.py
+RH23003UNO/gauss_seidel.py
+RH23003UNO/jacobi.py
+RH23003UNO.egg-info/PKG-INFO
+RH23003UNO.egg-info/SOURCES.txt
+RH23003UNO.egg-info/dependency_links.txt
+RH23003UNO.egg-info/requires.txt
+RH23003UNO.egg-info/top_level.txt
