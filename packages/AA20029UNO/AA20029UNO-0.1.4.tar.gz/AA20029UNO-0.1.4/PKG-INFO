@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: AA20029UNO
+Version: 0.1.4
+Summary: Una librería para resolver sistemas de ecuaciones lineales y no lineales.
+Home-page: https://github.com/Moises211
+Author: Moises Aaron Alvarenga Acosta
+Author-email: moisesacosta8@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# AA20029UNO
+
+AA20029UNO es una librería de Python que ofrece herramientas para resolver sistemas de ecuaciones lineales y realizar otros cálculos matemáticos fundamentales. Su objetivo es proporcionar implementaciones claras y eficientes de métodos numéricos comunes, junto con utilidades para trabajar con precisión numérica.
+
+## Métodos Implementados
+
+* **Sistemas de Ecuaciones Lineales:**
+    * Eliminación Gaussiana
+    * Eliminación de Gauss-Jordan
+    * Regla de Cramer (para sistemas 3x3)
+    * Descomposición LU
+    * Método de Jacobi
+    * Método de Gauss-Seidel
+* **Búsqueda de Raíces:**
+    * Método de Bisección
+* **Aritmética Racional:**
+    * Clase `Fraccion` para operaciones exactas con fracciones.
+
+## Instalación
+
+Puedes instalar AA20029UNO utilizando pip:
+
+```bash
+pip install AA20029UNO
+
