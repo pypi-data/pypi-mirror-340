@@ -1,0 +1,6 @@
+setup.py
+analys/__init__.py
+analys.egg-info/PKG-INFO
+analys.egg-info/SOURCES.txt
+analys.egg-info/dependency_links.txt
+analys.egg-info/top_level.txt
