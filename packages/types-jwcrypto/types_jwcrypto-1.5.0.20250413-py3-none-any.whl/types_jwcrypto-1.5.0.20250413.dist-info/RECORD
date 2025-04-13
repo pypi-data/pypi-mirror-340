@@ -1,0 +1,14 @@
+jwcrypto-stubs/METADATA.toml,sha256=vo2ByH3emxnHCPdho3Y2FXW-7wkvGyZFJxuz-nPnhiY,107
+jwcrypto-stubs/__init__.pyi,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jwcrypto-stubs/common.pyi,sha256=KJyAF6vSDu0iLDpe3LqTBMucKtkR4yrIFZ_ddgvGOzA,1927
+jwcrypto-stubs/jwa.pyi,sha256=GJO7sOXHWBh64cAW38QIxRGswpKRhjG2AO0Ywo6Yx1E,999
+jwcrypto-stubs/jwe.pyi,sha256=KLTZW36Pr2_-L8uXby8ubESXtkEOQQHkuvy-CjpmUsE,1992
+jwcrypto-stubs/jwk.pyi,sha256=BHIW6NldsqPb7Gl1k-6py_EwicMLYTEJd0ZYYuflH7c,8589
+jwcrypto-stubs/jws.pyi,sha256=_BvdRFEP5joRoZzK_ZsM2ikSlOpyqgquxZH0djUSGMQ,2327
+jwcrypto-stubs/jwt.pyi,sha256=2e8L_hL4gTlwOojWAEPOM19dSFfqSSO45wr8FdQ3IEg,2905
+jwcrypto-stubs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+types_jwcrypto-1.5.0.20250413.dist-info/licenses/LICENSE,sha256=KV-FOMlK5cMEMwHPfP8chS2ranhqjd7kceBhtA1eyr4,12657
+types_jwcrypto-1.5.0.20250413.dist-info/METADATA,sha256=_bgwFJMEPoVQTSscDj-iCvVtFnP9F4a6TGqs_I3MLOs,1849
+types_jwcrypto-1.5.0.20250413.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+types_jwcrypto-1.5.0.20250413.dist-info/top_level.txt,sha256=gvg5MCgQiQbv93ZA4s8w6CZbWFRighIzwJU6wpiSj6Y,15
+types_jwcrypto-1.5.0.20250413.dist-info/RECORD,,
