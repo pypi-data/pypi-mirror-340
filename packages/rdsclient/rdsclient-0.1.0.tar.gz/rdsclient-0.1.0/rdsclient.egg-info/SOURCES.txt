@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+rdsclient/__init__.py
+rdsclient/rds.py
+rdsclient.egg-info/PKG-INFO
+rdsclient.egg-info/SOURCES.txt
+rdsclient.egg-info/dependency_links.txt
+rdsclient.egg-info/requires.txt
+rdsclient.egg-info/top_level.txt
