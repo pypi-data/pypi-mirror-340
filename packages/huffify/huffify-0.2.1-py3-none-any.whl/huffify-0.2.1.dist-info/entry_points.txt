@@ -1,0 +1,3 @@
+[console_scripts]
+huffify=huffify.presentation.cli:main
+

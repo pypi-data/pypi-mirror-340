@@ -1,0 +1,15 @@
+huffify/__init__.py,sha256=meAVdeIngl04vsG3b6HY9RcULi1im4z4WAv_IPV9Dys,140
+huffify/core/__init__.py,sha256=rBVBcJnunb1v17GteZP01ge0GGIxFdG5Bv3yzTMK790,38
+huffify/core/abstract.py,sha256=jomWKrxDxOrD_NplkYLnT9RmAJxGrHfkxAGJl6VrJIk,699
+huffify/core/annotations.py,sha256=yxHOqLsXSx2848DQe7g34IL5VZEO4aIz7LMieNkqIU8,111
+huffify/core/encoders.py,sha256=H0n-vUh1UELEozedevIOs3TvT5QHq2xFHzGjlaogDoY,34204
+huffify/core/file_manager.py,sha256=FAaT0xJRqq8CDguQmfnIRIKUNGDcQ2gSsmKuPtQnTrc,1201
+huffify/core/heap_nodes.py,sha256=CAYTVuDOnStsELP-43j4XjbdG6Os5tDF3n-veb5iPss,914
+huffify/core/huffify.py,sha256=Cf2IeYdbhwiuiXSO0jomSXZCkUlofRwPw0xNuCLAA68,3475
+huffify/presentation/benchmarks.py,sha256=JIURzMWh763PQKb_5pUlVwHRdd9wv8qZJLZxeEqkDos,6467
+huffify/presentation/cli.py,sha256=qssfaOeiDboRpRMK1rAzRwsLlD6I6W-bc7ZG24IM3bs,2698
+huffify-0.2.1.dist-info/LICENSE,sha256=mnd1HRFKJml4cFeubTeceq5MGhVPjVRcHufgErWU2s4,1073
+huffify-0.2.1.dist-info/METADATA,sha256=rgW9O2pa4yC7z0Ko4coU7XVLqbOn2X0tyh7scao7GOs,5470
+huffify-0.2.1.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+huffify-0.2.1.dist-info/entry_points.txt,sha256=X_IMMPl5FMaRGDG08AvjkhbLnIKQ059ZdX3tZnKs_n0,57
+huffify-0.2.1.dist-info/RECORD,,
