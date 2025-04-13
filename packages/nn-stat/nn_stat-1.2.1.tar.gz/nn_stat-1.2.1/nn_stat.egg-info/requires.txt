@@ -1,0 +1,8 @@
+openpyxl
+matplotlib
+pandas
+numpy
+seaborn
+
+[dataset]
+nn-dataset
