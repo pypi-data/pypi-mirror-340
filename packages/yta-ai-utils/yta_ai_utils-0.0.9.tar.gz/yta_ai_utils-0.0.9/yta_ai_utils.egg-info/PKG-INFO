@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: yta_ai_utils
+Version: 0.0.9
+Summary: Youtube Autónomo AI utils are here.
+Author: Daniel Alcalá
+Author-email: <danielalcalavalera@gmail.com>
+Keywords: youtube autonomo ai utils
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: yta-general-utils
+Requires-Dist: google-generativeai
+Requires-Dist: transformers
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+These are the AI utils we need in the Youtube Autónomo project to work in a better way.
