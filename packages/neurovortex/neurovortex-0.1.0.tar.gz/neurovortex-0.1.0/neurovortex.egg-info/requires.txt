@@ -1,0 +1,14 @@
+torch>=1.9.0
+onnx>=1.10.0
+tensorflow>=2.6.0
+psutil>=5.8.0
+gputil>=1.4.0
+
+[dev]
+pytest
+black
+flake8
+
+[docs]
+sphinx
+sphinx_rtd_theme

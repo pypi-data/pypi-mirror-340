@@ -1,0 +1,17 @@
+README.md
+setup.py
+neurovortex/__init__.py
+neurovortex/model_loader.py
+neurovortex/optimizer.py
+neurovortex/resource_manager.py
+neurovortex/utils.py
+neurovortex.egg-info/PKG-INFO
+neurovortex.egg-info/SOURCES.txt
+neurovortex.egg-info/dependency_links.txt
+neurovortex.egg-info/not-zip-safe
+neurovortex.egg-info/requires.txt
+neurovortex.egg-info/top_level.txt
+tests/__init__.py
+tests/test_model_loader.py
+tests/test_optimizer.py
+tests/test_resource_manger.py
