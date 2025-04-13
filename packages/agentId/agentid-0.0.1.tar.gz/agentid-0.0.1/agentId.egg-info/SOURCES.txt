@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+agentId/__init__.py
+agentId/client.py
+agentId/exceptions.py
+agentId.egg-info/PKG-INFO
+agentId.egg-info/SOURCES.txt
+agentId.egg-info/dependency_links.txt
+agentId.egg-info/top_level.txt
