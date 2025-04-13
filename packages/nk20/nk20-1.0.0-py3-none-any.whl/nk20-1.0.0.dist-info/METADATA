@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: nk20
+Version: 1.0.0
+Summary: Unicode Hanja base-20000 numeric compression
+Home-page: https://github.com/dzbuit/nk20
+Author: blueradiance
+Author-email: none@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# nk20
+
+Unicode Hanja-based base-20,000 numeral compression system.
+
+```bash
+pip install nk20
+```
+
+```python
+import nk20
+
+s = nk20.encode_nk20(123456789)
+n = nk20.decode_nk20(s)
+```
