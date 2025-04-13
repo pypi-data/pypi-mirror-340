@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: package-sampling
+Version: 0.3.0
+Summary: Python implementation of various probability-based sampling algorithms inspired by the R package Sampling.
+Author-email: Mohammadreza Razavian <smrrazavian@outlook.com>, Bardia Panahbehagh <Panahbehagh@khu.ac.ir>
+Project-URL: Homepage, https://github.com/smrrazavian/package-sampling
+Project-URL: Repository, https://github.com/smrrazavian/package-sampling
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26
+Dynamic: license-file
+
+# Package Sampling
+
+python version of Package Sampling in R
+
+## Installation
+
+You can install the package directly from PyPI:
+
+```bash
+pip install package-sampling
+```
+
+## Usage Example
+
+```python
+from package_sampling.sampling import up_brewer
+import numpy as np
+
+probabilities = np.array([0.1, 0.2, 0.3, 0.4])
+
+# Draw a sample using Brewer's method
+sample = up_brewer(probabilities)
+print(sample)
+```
+
+## Authors
+
+Mohammadreza Razavian - <smrrazavian@outlook.com>
+Bardia Panahbehagh - <Panahbehagh@khu.ac.ir>
+
+## Acknowledgments
+
+This package is inspired by the R package "Sampling"
+Thanks to all contributors and users
