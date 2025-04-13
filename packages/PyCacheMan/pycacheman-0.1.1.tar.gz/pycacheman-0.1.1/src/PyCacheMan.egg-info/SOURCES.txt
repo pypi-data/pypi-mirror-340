@@ -1,0 +1,13 @@
+MANIFEST.in
+pyproject.toml
+src/PyCacheMan.egg-info/PKG-INFO
+src/PyCacheMan.egg-info/SOURCES.txt
+src/PyCacheMan.egg-info/dependency_links.txt
+src/PyCacheMan.egg-info/not-zip-safe
+src/PyCacheMan.egg-info/requires.txt
+src/PyCacheMan.egg-info/top_level.txt
+src/pycacheman/__init__.py
+src/pycacheman/exception.py
+src/pycacheman/py.typed
+src/pycacheman/serializable.py
+src/pycacheman/data/schema/serializable_cache.yaml
