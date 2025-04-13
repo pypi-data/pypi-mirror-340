@@ -1,0 +1,9 @@
+.pytest_cache/
+__pycache__/
+notebooks/
+.venv/
+dist/
+
+# pixi environments
+.pixi
+*.egg-info
