@@ -1,0 +1,2 @@
+[console_scripts]
+bestmcp = bestmcp.cli:main
