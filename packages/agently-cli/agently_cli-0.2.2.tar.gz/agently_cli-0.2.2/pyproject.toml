@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=6.0"]
+build-backend = "setuptools.build_meta"
+
+# Remove the problematic project section since we're using setup.py
+# [project]
+# dynamic = ["version"]
+
+[tool.black]
+line-length = 125
+target-version = ["py38", "py39", "py310", "py311"]
+exclude = '''
+(
+  /(
+      \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | venv
+  )/
+)
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 125
+skip = ["venv", ".grounding"]
+
+[tool.autoflake]
+exclude = ["venv", ".grounding"]
+in-place = true
+remove-all-unused-imports = true
+remove-unused-variables = true
+recursive = true
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = false
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = true
+disallow_untyped_decorators = false
+no_implicit_optional = false
+strict_optional = false
+packages = ["agently"]
+
+[[tool.mypy.overrides]]
+module = "semantic_kernel.*"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "agently_sdk.*"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
+
+[tool.setuptools_scm]
+write_to = "agently/_version.py"
+local_scheme = "no-local-version"
