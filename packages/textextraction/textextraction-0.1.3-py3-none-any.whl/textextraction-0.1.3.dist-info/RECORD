@@ -1,0 +1,14 @@
+textextraction/__init__.py,sha256=MDMDrWu2sgSu9aksGTVmlEzDdgM9i2G4YFaHvXPLfjI,1807
+textextraction/image_text.py,sha256=LttleqyC8OszTqPKQ4UldO1CaDyiW075AYaiDeriOQU,4347
+textextraction/pdf_text.py,sha256=v02wLBspWNrmAPZ9Ricn1fJsJLRqp7icmL9zsGhIIC4,12126
+textextraction/scanned_pdf_text.py,sha256=ZaVaybIEQI06fyac8hpeHnGsSxZSkE02GX36z3JJ8xA,35847
+textextraction/utils.py,sha256=3cWiYMH-X1QBSk2ZmZ2iBGlOCo8W4wBAQ5xsih2ew_k,3547
+textextraction/engines/__init__.py,sha256=fIaCzV9J5WZQPD1LvDM-UNYShu2op2a6kMDGrXok4Ts,881
+textextraction/engines/base.py,sha256=3ckzTPFUT7oobbM6_QjVP4KOzd9RqQz3GZ-Qn_O3-rk,667
+textextraction/engines/easyocr.py,sha256=790GSUgftgqugO5JPNLtnLcDWsGVQ3VMgn4t0OwBz-o,9635
+textextraction/engines/tesseract.py,sha256=62KCvAGcCZrhj3BJ2qR9k-lELR0_8MMOTVZ-aWrJDXg,6061
+textextraction-0.1.3.dist-info/licenses/LICENSE,sha256=sHj3ASqagylri0gigBhLat152XwrzC4S0D7c3yyQ6hA,1099
+textextraction-0.1.3.dist-info/METADATA,sha256=VNvGoaKkwEM8l-BmblQGmrzluNYLDiN1wq5_E1WjRto,6082
+textextraction-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+textextraction-0.1.3.dist-info/top_level.txt,sha256=3deIjaxwpoomlewXIVOcJn9HMP1Um0MhQvpXRqUDOkI,15
+textextraction-0.1.3.dist-info/RECORD,,
