@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: polars_legacy_hash
+Version: 0.0.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Dist: polars>=1.5.0
+License-File: LICENSE
+Summary: Polars 0.20.10 hash function as a plugin library
+Author: Matt Richards
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+This plugin provides the polars 0.20.10 hash function as a standalone plugin, for a subset of types.
+
+TODO pixi makefile equivalent? / is uv enough?
+
+
+
+## Development
+`uv run python`
+`uv run pytest -rP`
+
