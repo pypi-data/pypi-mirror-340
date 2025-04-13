@@ -1,0 +1,49 @@
+[project]
+name = "jsdesign-mcp"
+version = "0.0.3"
+description = "jsdesign mcp - A Python package for interacting with JSDesign"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+
+license = {text = "MIT"}
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+keywords = ["jsdesign", "design", "api", "mcp"]
+
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+    "flask==3.0.2",
+    "flask-cors==4.0.0",
+    "flask-sock==0.7.0",
+    "gevent-websocket==0.10.1",
+]
+
+[project.scripts]
+jsdesign-mcp = "jsdesign_mcp.server:main"
+
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/jsdesign_mcp"
+"Bug Tracker" = "https://github.com/yourusername/jsdesign_mcp/issues"
+"Documentation" = "https://github.com/yourusername/jsdesign_mcp#readme"

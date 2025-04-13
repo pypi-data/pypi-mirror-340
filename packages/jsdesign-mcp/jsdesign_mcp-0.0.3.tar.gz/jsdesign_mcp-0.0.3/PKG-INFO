@@ -1,0 +1,60 @@
+Metadata-Version: 2.4
+Name: jsdesign-mcp
+Version: 0.0.3
+Summary: jsdesign mcp - A Python package for interacting with JSDesign
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/jsdesign_mcp
+Project-URL: Bug Tracker, https://github.com/yourusername/jsdesign_mcp/issues
+Project-URL: Documentation, https://github.com/yourusername/jsdesign_mcp#readme
+Keywords: jsdesign,design,api,mcp
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: flask==3.0.2
+Requires-Dist: flask-cors==4.0.0
+Requires-Dist: flask-sock==0.7.0
+Requires-Dist: gevent-websocket==0.10.1
+Dynamic: license-file
+
+# JSDesign MCP
+
+一个用于与 JSDesign 交互的 Python 包。
+
+## 安装
+
+```bash
+pip install jsdesign-mcp
+```
+
+## 使用方法
+
+```bash
+jsdesign-mcp --server localhost:8080
+```
+
+## 功能特性
+
+- 连接到 JSDesign
+- 获取文档信息
+- 创建和修改设计元素
+- 批量操作支持
+- 异步 API 支持
+
+## 许可证
+
+MIT License
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request！ 
