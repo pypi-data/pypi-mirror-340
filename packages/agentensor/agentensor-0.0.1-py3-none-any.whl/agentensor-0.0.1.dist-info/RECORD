@@ -1,0 +1,10 @@
+agentensor/__init__.py,sha256=q_xtykXlbfOMT4e0rlS-LqNVewgcSDKKJN8EAN4ekXA,22
+agentensor/loss.py,sha256=Gtit_dgCRaT4-KzwaahoB9Prik64ZD60CuSaXa6HFLg,1531
+agentensor/module.py,sha256=4sq14LdGUwIZSpxsAQzuSVEZXq0xsGYpuYrfdIx_5Cw,682
+agentensor/optim.py,sha256=_YQDi5AX1vqAlRXEw3TYaty3_BoFVCHrWZIrSv8wXgU,1217
+agentensor/tensor.py,sha256=9yMxugXJy8aLniPPe3TSv52Ui5ll6QHD4IwPzcqRKwM,1686
+agentensor/train.py,sha256=-pdhyJgoqj-wprL9gz1g4-jI0ZOoPwJUBbf_gGVBxpU,2179
+agentensor-0.0.1.dist-info/METADATA,sha256=TXVk6ma6mRb9AtD8wLjMtDavll29bI4ob7pxqncAle8,1989
+agentensor-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+agentensor-0.0.1.dist-info/licenses/LICENSE,sha256=UMhWnNnpcD5pmbMMRSZGXPtDuafJDTSZtzuvH245gAo,1070
+agentensor-0.0.1.dist-info/RECORD,,
