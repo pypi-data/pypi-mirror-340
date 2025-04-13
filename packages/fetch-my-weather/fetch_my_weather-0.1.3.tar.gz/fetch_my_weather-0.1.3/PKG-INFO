@@ -1,0 +1,227 @@
+Metadata-Version: 2.4
+Name: fetch-my-weather
+Version: 0.1.3
+Summary: A beginner-friendly Python package for fetching weather data, designed for educational use.
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/michael-borck/fetch-my-weather
+Project-URL: Issues, https://github.com/michael-borck/fetch-my-weather/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: requests>=2.25.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-mock>=3.10.0; extra == "dev"
+Requires-Dist: ruff>=0.1.6; extra == "dev"
+Requires-Dist: mypy>=1.5.0; extra == "dev"
+Requires-Dist: twine==6.0.1; extra == "dev"
+Dynamic: license-file
+
+# fetch-my-weather
+
+A beginner-friendly Python package for fetching weather data, designed for educational use.
+
+## Features
+
+- 🌤️ Easy access to weather data from wttr.in
+- 🌙 Moon phase information
+- 🗺️ Location-based weather (cities, airports, coordinates)
+- 🌍 Multiple language support
+- 📊 Text and PNG output formats
+- 🚀 Built-in caching to be nice to the wttr.in service
+- 🛡️ Beginner-friendly error handling (no exceptions)
+- 📚 Designed for teaching Python and API interactions
+- 🤖 LLM-ready with comprehensive [LLM guide](LLM-GUIDE.md) you can upload to AI assistants
+
+## Installation
+
+```bash
+pip install fetch-my-weather
+```
+
+## Quick Start
+
+```python
+import fetch_my_weather
+
+# Get weather for your current location (based on IP)
+current_weather = fetch_my_weather.get_weather()
+print(current_weather)
+
+# Get weather for Berlin in metric units
+berlin_weather = fetch_my_weather.get_weather(location="Berlin", units="m")
+print(berlin_weather)
+
+# Get moon phase for a specific date
+moon = fetch_my_weather.get_weather(is_moon=True, moon_date="2025-07-04")
+print(moon)
+```
+
+## Teaching Applications
+
+fetch-my-weather is designed as a teaching tool for:
+
+- Introducing API interactions in a beginner-friendly way
+- Demonstrating HTTP requests without exception handling complexity
+- Teaching caching concepts
+- Working with different data formats (text and binary/PNG)
+- Understanding URL construction and query parameters
+- Processing and displaying weather data in applications
+
+### Mini-Projects
+
+The package includes a collection of ready-to-use mini-projects in the `docs/mini-projects/` directory:
+
+- **Beginner projects**: Weather dashboard, multi-city checker, image saver
+- **Intermediate projects**: Weather-based recommendations, forecast tracking, wallpaper changer
+- **Advanced projects**: Notification system, data analyzer, home automation, weather-based game
+
+These projects provide practical examples and serve as great teaching resources or starting points for your own applications.
+
+## Usage Guide
+
+### Getting Weather Data
+
+```python
+import fetch_my_weather
+
+# Basic usage - current location
+weather = fetch_my_weather.get_weather()
+
+# Specific location
+nyc_weather = fetch_my_weather.get_weather(location="New York")
+
+# Airport code
+lax_weather = fetch_my_weather.get_weather(location="lax")
+
+# Geographic coordinates
+coord_weather = fetch_my_weather.get_weather(location="48.8567,2.3508")
+
+# Compact view
+compact_weather = fetch_my_weather.get_weather(view_options="0")
+
+# Compact view + quiet (no city name in header)
+compact_quiet = fetch_my_weather.get_weather(view_options="0q")
+
+# Units: metric (default), USCS (u), or wind in m/s (M)
+us_units = fetch_my_weather.get_weather(units="u")
+
+# Different language
+spanish = fetch_my_weather.get_weather(lang="es")
+```
+
+### Getting Moon Phase Data
+
+```python
+import fetch_my_weather
+
+# Current moon phase
+moon = fetch_my_weather.get_weather(is_moon=True)
+
+# Moon phase for specific date
+christmas_moon = fetch_my_weather.get_weather(is_moon=True, moon_date="2025-12-25")
+
+# Moon with location hint (affects timing)
+paris_moon = fetch_my_weather.get_weather(is_moon=True, moon_location_hint=",+Paris")
+```
+
+### Getting PNG Weather Images
+
+```python
+import fetch_my_weather
+
+# Weather as PNG (returns bytes)
+london_png = fetch_my_weather.get_weather(location="London", is_png=True)
+
+# Save PNG to file
+with open("london_weather.png", "wb") as f:
+    f.write(london_png)
+
+# PNG with options (transparency)
+transparent_png = fetch_my_weather.get_weather(location="Tokyo", is_png=True, png_options="t")
+```
+
+### Configuration Settings
+
+```python
+import fetch_my_weather
+
+# Change cache duration (in seconds, 0 to disable)
+fetch_my_weather.set_cache_duration(1800)  # 30 minutes
+
+# Clear the cache
+fetch_my_weather.clear_cache()
+
+# Set a custom user agent
+fetch_my_weather.set_user_agent("My Weather App v1.0")
+```
+
+### Error Handling
+
+```python
+import fetch_my_weather
+
+# fetch-my-weather never raises exceptions, it returns error messages as strings
+result = fetch_my_weather.get_weather(location="NonExistentPlace12345")
+
+# Check if result is an error message
+if isinstance(result, str) and result.startswith("Error:"):
+    print(f"Something went wrong: {result}")
+else:
+    print("Weather data:", result)
+```
+
+## Complete Parameter Reference
+
+The `get_weather()` function accepts these parameters:
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `location` | str | Location identifier (city name, airport code, coordinates, etc.) |
+| `units` | str | Units system: `m` (metric, default), `u` (US/imperial), `M` (wind in m/s) |
+| `view_options` | str | Display options: `0`-`3` (forecast days), `n` (narrow), `q` (quiet), etc. |
+| `lang` | str | Language code (e.g., `en`, `fr`, `es`, `ru`, `zh-cn`) |
+| `is_png` | bool | If `True`, return PNG image as bytes instead of text |
+| `png_options` | str | PNG-specific options: `p` (padding), `t` (transparency), etc. |
+| `is_moon` | bool | If `True`, show moon phase instead of weather |
+| `moon_date` | str | Date for moon phase in `YYYY-MM-DD` format (with `is_moon=True`) |
+| `moon_location_hint` | str | Location hint for moon phase (e.g., `,+US`, `,+Paris`) |
+
+## Documentation
+
+📚 **Full documentation is now live at [michael-borck.github.io/fetch-my-weather](https://michael-borck.github.io/fetch-my-weather/)!**
+
+The documentation includes:
+- 📘 Detailed [user guide](https://michael-borck.github.io/fetch-my-weather/user-guide/) with examples
+- 🛠️ [Mini-projects](https://michael-borck.github.io/fetch-my-weather/mini-projects/README/) for learning (beginner to advanced)
+- 🎓 [Teaching resources](https://michael-borck.github.io/fetch-my-weather/teaching-guide/) for educators
+- 📋 [Technical documentation](https://michael-borck.github.io/fetch-my-weather/technical-doc/) for developers
+
+## AI Assistant Integration
+
+🤖 This package includes an [LLM guide](LLM-GUIDE.md) specifically designed for AI assistants.
+
+To use with AI assistants:
+1. Download the [LLM-GUIDE.md](LLM-GUIDE.md) file
+2. Upload it to your AI assistant (like Claude, ChatGPT, etc.)
+3. The AI can now help you use the package more effectively
+
+## License
+
+MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributors
+
+This project is maintained by [Michael Borck](https://github.com/michael-borck) with contributions from various individuals. See [AUTHORS.md](AUTHORS.md) for a complete list of contributors.
+
+## Acknowledgments
+
+This package is a wrapper around the amazing [wttr.in](https://github.com/chubin/wttr.in) service created by [Igor Chubin](https://github.com/chubin). Please be respectful of the wttr.in service by not making too many requests.
