@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: SR23002UNO
+Version: 0.1
+Summary: Liberia para resolver ecuaciones
+Home-page: https://github.com/davidsixco/CDA135-GT02-SR23002UNO
+Author: David Enrique Sixco Ramos
+Author-email: sr23002@ues.edu.sv
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+Liberia para resolver ecuaciones
