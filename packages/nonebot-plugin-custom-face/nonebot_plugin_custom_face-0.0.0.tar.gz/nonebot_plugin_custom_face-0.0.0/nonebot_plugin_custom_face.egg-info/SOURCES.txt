@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+nonebot_plugin_custom_face/__init__.py
+nonebot_plugin_custom_face.egg-info/PKG-INFO
+nonebot_plugin_custom_face.egg-info/SOURCES.txt
+nonebot_plugin_custom_face.egg-info/dependency_links.txt
+nonebot_plugin_custom_face.egg-info/top_level.txt
