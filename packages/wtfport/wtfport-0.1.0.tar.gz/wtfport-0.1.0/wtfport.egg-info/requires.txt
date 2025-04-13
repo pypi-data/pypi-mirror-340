@@ -1,0 +1,7 @@
+psutil
+click
+
+[dev]
+build
+twine
+pytest
