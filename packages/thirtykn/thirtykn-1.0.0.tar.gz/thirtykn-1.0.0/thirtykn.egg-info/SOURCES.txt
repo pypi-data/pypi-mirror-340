@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+thirtykn.py
+thirtykn.egg-info/PKG-INFO
+thirtykn.egg-info/SOURCES.txt
+thirtykn.egg-info/dependency_links.txt
+thirtykn.egg-info/top_level.txt
