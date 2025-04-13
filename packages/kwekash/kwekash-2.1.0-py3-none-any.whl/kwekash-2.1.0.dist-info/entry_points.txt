@@ -1,0 +1,2 @@
+[console_scripts]
+kwekash = kwekash.__main__:main
