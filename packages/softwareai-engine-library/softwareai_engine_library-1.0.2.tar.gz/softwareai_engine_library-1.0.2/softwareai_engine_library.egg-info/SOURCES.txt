@@ -1,0 +1,9 @@
+pyproject.toml
+setup.cfg
+setup.py
+softwareai_engine_library/__init__.py
+softwareai_engine_library.egg-info/PKG-INFO
+softwareai_engine_library.egg-info/SOURCES.txt
+softwareai_engine_library.egg-info/dependency_links.txt
+softwareai_engine_library.egg-info/requires.txt
+softwareai_engine_library.egg-info/top_level.txt
