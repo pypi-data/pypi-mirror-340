@@ -1,0 +1,13 @@
+ecuaciones/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecuaciones/biseccion.py,sha256=65Li4dubX_SgOrAhMVTxzsjh-QjXPQe11w0B6W3pD3A,531
+ecuaciones/cramer.py,sha256=EGvjzZ1h0naKY6QAQKmN4x8aIt_JbCKE_6Df9vko8Wk,419
+ecuaciones/gauss.py,sha256=UUHDg-pB1QExx76CBG82tPmkw4EJT2Hv19BnmAGoCtg,850
+ecuaciones/gauss_jordan.py,sha256=0q3xctu_aqaG35R6h-ldxub7DC2fvWWl3xECNUwtYL8,547
+ecuaciones/gauss_seidel.py,sha256=zwy1CmohTEuk_UpNFzKpC1ee0dTNAMpby6O4Zb-ylEs,621
+ecuaciones/jacobi.py,sha256=aEo_nGK2zMvbQIrghmLbpdtcBjpqcE9jV1To60S66BQ,544
+ecuaciones/lu.py,sha256=D4uuLf9GY16cVEL-M8-p-Fy1QLy3h3jM0PsTj2C4VjA,291
+ecuaciones-0.1.5.dist-info/licenses/LICENCE,sha256=JhYhdBYWkBZmfOuugzXIhZqpDD1_DxLU2YoqrKf5p3A,1074
+ecuaciones-0.1.5.dist-info/METADATA,sha256=ZHLyBQlMdat2j8yBrK_O8_mY6dyJZWc3fmkmzsSZajI,801
+ecuaciones-0.1.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ecuaciones-0.1.5.dist-info/top_level.txt,sha256=6aINymVo3A7nqDGYr3wnctq6u4e0nVfPdCJl3qw_OWg,11
+ecuaciones-0.1.5.dist-info/RECORD,,
