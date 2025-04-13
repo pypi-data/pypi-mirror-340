@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: mscope
+Version: 0.1.0
+Summary: mscope allows you to find emails by username
+Home-page: https://github.com/oakwide/mscope
+Author: oakwide
+Author-email: mscope@nomail.net
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: dnspython
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+---
+
+##  `README.md`
+
+```markdown
+# mscope — OSINT tool for discovering emails by username
+
+`mscope` is a command-line tool that generates and checks possible email addresses based on provided usernames and domain patterns. It is designed for OSINT investigations and recon purposes.
+
+---
+
+##  Features
+
+- Email generation using templates and domains
+- DNS-based MX record validation
+- SMTP-based email verification (non-intrusive)
+- Multi-threaded scanning
+- Simple CLI interface
+- Fully customizable domain/pattern lists
+
+---
+
+##  Installation
+
+### Via pip:
+
+```bash
+pip install mscope
+
+mscope
