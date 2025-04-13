@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: manifoldx
+Version: 0.1.0
+Summary: A Python package for building & running AI app node
+Author: Manifold Team
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: docker>=6.1.3
+Requires-Dist: fastapi>=0.104.1
+Requires-Dist: gradio>=4.19.2
+Requires-Dist: torch>=2.1.0
+Requires-Dist: uvicorn>=0.24.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: fastapi-mcp==0.2.0
+
+# Manifold
+
+Manifold is a Python package for building high-performance distributed systems. It provides a robust framework for managing distributed applications using Docker containers and modern web technologies.
+
+## Features
+
+- Easy construction and management of distributed systems
+- Integrated Docker container management
+- High-performance API endpoints based on FastAPI
+- Intuitive UI interface using Gradio
+- GPU support with PyTorch integration
+
+## Installation
+
+```bash
+pip install manifold
+```
+
+## Usage
+
+Basic example:
+
+```python
+from manifold.hub import Manifold
+
+# Create a Manifold instance
+app = Manifold(title='My Distributed App', version='1.0.0')
+
+# Add API endpoint
+@app.get("/api/hello")
+async def hello():
+    return {"message": "Hello from Manifold!"}
+```
+
+For more detailed examples and documentation, please refer to the [official documentation](https://github.com/your-username/manifold).
+
+## Requirements
+
+- Python 3.6 or higher
+- Docker
+- NVIDIA GPU drivers (for GPU support)
+
+## License
+
+MIT License
