@@ -1,0 +1,121 @@
+english: {{ english }}
+chinese: {{ chinese }}
+columns:
+  - prop: create_time
+    label: 创建时间
+    type: datetime
+    width: 120
+
+  - prop: status
+    label: 状态
+    type: review
+    width: 120
+    search:
+      type: select
+
+  - prop: serial
+    label: 合同编号
+    width: 120
+    form:
+      span: 24
+      type: input
+      required: true
+    fuzzy: true
+
+  - prop: client_id
+    label: 委托单位
+    type: map
+    width: 150
+    form:
+      span: 24
+      type: select
+      required: true
+
+  - prop: client_name
+    label: 客户名称
+    type: map
+    width: 150
+    search:
+      type: input
+      width: 120
+    hidden: true
+
+  - prop: address
+    label: 地址
+    width: 120
+    form:
+      span: 24
+      type: input
+      required: true
+    fuzzy: true
+
+  - prop: project_name
+    label: 项目名称
+    type: clamp
+    width: 180
+    form:
+      span: 24
+      type: input
+      required: true
+
+  - prop: date
+    label: 日期
+    type: date
+    form:
+      span: 24
+      required: true
+    hidden: true
+
+  - prop: contact
+    label: 联系人
+    width: 80
+    search:
+      type: input
+      width: 120
+    form:
+      span: 24
+      type: input
+      required: true
+
+  - prop: telephone
+    label: 电话
+    width: 110
+    form:
+      span: 24
+      type: input
+      required: true
+
+  - prop: duration
+    label: 检测周期
+    width: 120
+    form:
+      span: 24
+      type: input
+
+  - prop: need_invoice
+    label: 是否开票
+    type: bool
+    width: 80
+
+  - prop: value
+    label: 项目金额
+    width: 80
+
+  - prop: sales_id
+    label: 业务员
+    type: map
+    width: 80
+    search:
+      type: select
+    form:
+      span: 24
+      type: select
+      required: true 
+
+  - prop: notes
+    label: 备注
+    width: 120
+    form:
+      span: 24
+      type: input
+    fuzzy: true
