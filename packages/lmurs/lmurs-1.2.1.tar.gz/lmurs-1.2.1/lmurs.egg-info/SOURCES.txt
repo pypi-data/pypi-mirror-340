@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+version
+lmurs.egg-info/PKG-INFO
+lmurs.egg-info/SOURCES.txt
+lmurs.egg-info/dependency_links.txt
+lmurs.egg-info/requires.txt
+lmurs.egg-info/top_level.txt
