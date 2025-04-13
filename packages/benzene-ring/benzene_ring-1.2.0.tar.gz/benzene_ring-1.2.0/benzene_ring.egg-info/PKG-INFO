@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: benzene_ring
+Version: 1.2.0
+Summary: A better statistics module of python
+Home-page: https://github.com/python-abc1024/benzene_ring
+Author: yangjinhe
+Author-email: python_abc@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# py_statistics
+This is a Python library used for statistics, which includes many functions, such as plotting, obtaining data fluctuations, calculating data averages, and other commonly used statistical methods.
