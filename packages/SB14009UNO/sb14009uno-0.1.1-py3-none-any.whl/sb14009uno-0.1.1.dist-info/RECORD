@@ -1,0 +1,13 @@
+SB14009UNO/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SB14009UNO/biseccion.py,sha256=65Li4dubX_SgOrAhMVTxzsjh-QjXPQe11w0B6W3pD3A,531
+SB14009UNO/cramer.py,sha256=bjoceIy-KrXQCq9P7sP8B1m2IbqdPOV1IDg7iktIMdg,483
+SB14009UNO/gauss.py,sha256=EJNjZmYKuXgg0ST8St3EFVWxqgNpFTHCyDQdqr2YwMM,1154
+SB14009UNO/gauss_jordan.py,sha256=0q3xctu_aqaG35R6h-ldxub7DC2fvWWl3xECNUwtYL8,547
+SB14009UNO/gauss_seidel.py,sha256=VcWoaWXi59Aebaf3okOFo3t_oovGVbIFnpTrsrjJXog,680
+SB14009UNO/jacobi.py,sha256=am9fx5319HFuToXxMFKqmkCb6JGtdoXFyQC7ue2srw0,744
+SB14009UNO/lu_solve.py,sha256=KuGI-iUdR5TBirfHL3ckJBqKSfK8N7h-wEvIn4P_vFM,319
+sb14009uno-0.1.1.dist-info/licenses/LICENCE,sha256=JhYhdBYWkBZmfOuugzXIhZqpDD1_DxLU2YoqrKf5p3A,1074
+sb14009uno-0.1.1.dist-info/METADATA,sha256=OkqGFjRyQ-xMBrbCCuu0VHuSMkKR0HcSwTVi4qDa2ME,801
+sb14009uno-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sb14009uno-0.1.1.dist-info/top_level.txt,sha256=WXaPdf-aP-4LwL_jKVtLHXlrfZT1nMDlAauso8wbekw,11
+sb14009uno-0.1.1.dist-info/RECORD,,
