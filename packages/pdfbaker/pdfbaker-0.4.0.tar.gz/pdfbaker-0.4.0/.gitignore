@@ -1,0 +1,25 @@
+# Python/uv generated files
+__pycache__/
+*.py[cod]
+wheels/
+*.egg-info
+/dist/
+
+# Cache
+/.pytest_cache
+/.ruff_cache
+.coverage
+
+# venv
+/.venv
+
+# PyCharm
+.idea/
+
+# Backup files
+**.~
+*.swp
+
+# Example build/dist directories
+/examples/build/
+/examples/dist/
