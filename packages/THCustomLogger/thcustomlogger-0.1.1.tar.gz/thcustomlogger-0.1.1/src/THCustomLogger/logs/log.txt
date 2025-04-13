@@ -1,0 +1,20 @@
+2025-04-12 20:19:40.493 | Line: 118 logger_setup.main                 | INFO    : Done.
+**********************************************************************************
+2025-04-12 20:19:40.493 | Line: 119 logger_setup.main                 | INFO    : Done.
+----------
+2025-04-12 20:19:40.493 | Line: 120 logger_setup.main                 | INFO    : Done.
+fffffffffff
+//////////////////////////////////////////////////////////////////////////////////
+2025-04-12 20:19:40.493 | Line: 122 logger_setup.main                 | DEBUG   : debug message
+2025-04-12 20:19:40.493 | Line: 123 logger_setup.main                 | INFO    : hello world
+2025-04-12 20:19:40.493 | Line: 124 logger_setup.main                 | WARNING : Oh No
+2025-04-12 20:19:40.493 | Line: 125 logger_setup.main                 | ERROR   : Error
+2025-04-12 20:19:40.493 | Line: 126 logger_setup.main                 | CRITICAL: Critical
+2025-04-12 20:19:40.507 | Line: 127 logger_setup.main                 | INFO    : Commit hash: f633ac2edf0e15e8a1507b5371de653d21b9ded2
+                                                                                  Latest tag:
+2025-04-12 20:19:40.507 | Line: 134 logger_setup.example              | ERROR   : division by zero
+Traceback (most recent call last):
+  File "/Users/tylerhaunreiter/Desktop/Python/CustomLogger/src/THCustomLogger/logger_setup.py", line 132, in example
+    1 / 0
+    ~~^~~
+ZeroDivisionError: division by zero

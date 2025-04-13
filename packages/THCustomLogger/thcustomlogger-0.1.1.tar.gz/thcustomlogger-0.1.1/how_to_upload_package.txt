@@ -1,0 +1,22 @@
+How to upload package to pypi
+
+# 1. Check required tools:
+python -m pip install --upgrade pip
+python -m pip install --upgrade build
+python -m pip install --upgrade twine
+
+# 2. Clean up all build artifacts
+rm -rf build/ dist/ *.egg-info/
+
+# 3. Build new distribution
+python -m build
+
+# 4. Check the distribution
+twine check dist/*
+
+# 5. Upload to TestPyPI
+python -m twine upload --repository testpypi dist/*
+pip install --index-url https://test.pypi.org/simple/ your-package-name
+
+# 6. Upload to PyPI (when ready)
+python -m twine upload dist/*
