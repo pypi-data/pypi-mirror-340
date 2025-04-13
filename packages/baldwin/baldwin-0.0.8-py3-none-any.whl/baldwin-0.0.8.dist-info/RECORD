@@ -1,0 +1,13 @@
+baldwin/__init__.py,sha256=F--2vlUtecqV6dfCulqfPca9vSmeZCWcSlq3MltMgfQ,44
+baldwin/__main__.py,sha256=7xKOM7FqRjhwJgK30RfKKpTNZCw0DJp5EiKo2KhtqSY,86
+baldwin/lib.py,sha256=U3NLmy9VGk_pC_veb3r4pHqvDJSwuRIikewWnAZxUvQ,7942
+baldwin/main.py,sha256=PrSKsF5zdG9VzWvZUpBkmfhpkweTbVnb8kNroiMSlNA,2030
+baldwin/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+baldwin/resources/default_gitattributes.txt,sha256=uGoWTSVgPmdGB2EUIROkTz3FikGpNGhdS95SuuvoCRo,984
+baldwin/resources/default_gitignore.txt,sha256=oyxukNyK6F778C2jc7oIwosP7ou1WTdbuWwkpgGZtJA,3022
+baldwin/resources/prettier.config.json,sha256=-Hher3B02YflULYn0IYOG_a-rDxpaaaQ0QXD30-5IgQ,387
+baldwin-0.0.8.dist-info/LICENSE.txt,sha256=Y6e04wkVzxa82z5bhkF3-38WGKbISh0E28Eo0IxiOBU,1082
+baldwin-0.0.8.dist-info/METADATA,sha256=2KKR3CwsxeSDUqAQEuU2uQ9ChdL_3pOwkfR4HBMrBSM,4819
+baldwin-0.0.8.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+baldwin-0.0.8.dist-info/entry_points.txt,sha256=16CO-Z2MW3o6hkxwJplFgnyJuHuTngwrPqCNdSQAOcc,65
+baldwin-0.0.8.dist-info/RECORD,,
