@@ -1,0 +1,8 @@
+#cache
+__pycache__
+cache
+.pytest_cache
+
+
+pyproject_stuff.txt
+dist
