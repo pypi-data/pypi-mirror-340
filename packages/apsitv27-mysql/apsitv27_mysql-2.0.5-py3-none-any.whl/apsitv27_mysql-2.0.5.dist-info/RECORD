@@ -1,0 +1,10 @@
+apsitv27_mysql/Dockerfile,sha256=85XGeHFzLM6imkrso_kIcE2MaYD7ZCBdzZoYRYsC9Po,353
+apsitv27_mysql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apsitv27_mysql/entrypoint.sh,sha256=7-jYMzi0Kv1ZhZRtV7BvM_IcFnbsbbKM5Wk7XSC1uDo,1493
+apsitv27_mysql/install_docker.sh,sha256=fMHfMU9ydlT8nJkv-ixXOKzbf-O0kmHr4ONwNCJEDn8,4140
+apsitv27_mysql/main.py,sha256=vCX88VmDTZ2zt89jWSZSfxuM3wmuxlhjxxoQCKV4yBs,21244
+apsitv27_mysql-2.0.5.dist-info/METADATA,sha256=bvC1oRU1id-K0_SBTaOLOZyZhoTgxj4P4QchR3BJ6mI,615
+apsitv27_mysql-2.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+apsitv27_mysql-2.0.5.dist-info/entry_points.txt,sha256=F9dljlvNp968G3NO3mx41BGQGfEDth15zjLR_rmdUjI,85
+apsitv27_mysql-2.0.5.dist-info/top_level.txt,sha256=0YoXNSKdjWk4P445sGE5DAn1wFdkh_nXPZYFu_w70tc,15
+apsitv27_mysql-2.0.5.dist-info/RECORD,,

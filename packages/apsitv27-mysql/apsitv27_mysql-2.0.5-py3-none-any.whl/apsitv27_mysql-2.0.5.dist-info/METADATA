@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: apsitv27-mysql
+Version: 2.0.5
+Summary: MySQL Database Server Manager with persistent storage
+Home-page: https://github.com/apsitv27/apsitv27-mysql
+Author: apsitv27
+Author-email: 23104195@apsit.edu.in
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: docker
+Requires-Dist: setuptools>=65.0.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
