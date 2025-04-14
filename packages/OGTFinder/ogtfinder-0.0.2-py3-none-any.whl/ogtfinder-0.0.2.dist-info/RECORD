@@ -1,0 +1,11 @@
+ogtfinder/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+ogtfinder/checks.py,sha256=oaoJYu_o8IE51WpyzGimwn-K6LxS5UWQUgpG_CuXY4Y,2410
+ogtfinder/extractData.py,sha256=liCEbaszOa1y9bTDwE9f65wdruR-bOrnHmJFizRIkv8,3112
+ogtfinder/ogtfinder.py,sha256=pz6LhFxSi11r3bCLa0f_gO4QtVugf0Y0OGTAb2mvt84,4753
+ogtfinder/data/AAdata.json,sha256=tV4sXM2lWZkEDBJ57SYWGTaY9QrVVvtptSR2v7EV_6U,17035
+ogtfinder/data/mlp_rmse.pkl,sha256=Vv5LGo1rNuAICRi5HLpdAfAYURicNYvlSaRQXekLy8k,160414
+ogtfinder-0.0.2.dist-info/METADATA,sha256=XzAq6MToyMp-n6i-jjKaWN-2h4vX8uhZC9DtOqo0uak,4158
+ogtfinder-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ogtfinder-0.0.2.dist-info/entry_points.txt,sha256=C-_Cliwgv2MxuxS8jYV8wjWOeskhZFLh4RTEJFofsy4,55
+ogtfinder-0.0.2.dist-info/licenses/LICENSE,sha256=jSmR8tNFgagseTe0QSIFOchrmQLK1XdU0i1Bo-nGxMA,1066
+ogtfinder-0.0.2.dist-info/RECORD,,

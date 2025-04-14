@@ -1,0 +1,2 @@
+[console_scripts]
+ogtfinder = ogtfinder.ogtfinder:main
