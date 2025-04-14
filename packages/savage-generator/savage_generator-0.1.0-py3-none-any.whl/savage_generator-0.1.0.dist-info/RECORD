@@ -1,0 +1,16 @@
+elements/__init__.py,sha256=N5mpJpaXekHoJX9YMPhIiyTyuj7UE1TzJmJzr0nfZRg,386
+elements/element.py,sha256=OXZvEm_i75l6n_YSax9tvz70li7x0Ym6u600bJZaZo0,2632
+elements/group.py,sha256=2geQxKScQ9jpO7ZdS7LQDd2sgqyo6zLNZ0fGBekR128,627
+elements/text.py,sha256=SH6skv-_-Ya8rGgsC4yssVAtKQPRYbTQXrXar8KOybA,527
+elements/shapes/__init__.py,sha256=zOVEFGr9AjxJowXi_Go846JzFJMKVnZ4XmjUawDT9L0,275
+elements/shapes/circle.py,sha256=YkEtl8AkGD8moh0LbpLpaBvyLO8hy7tknuevE_LdYQ4,265
+elements/shapes/ellipse.py,sha256=p-erg486b1rtOxyeqwTDxjeiJLAeGuU7QL2DFKQiyn8,310
+elements/shapes/line.py,sha256=-Ics9bsvNyYvr1hZr7QQzX7wU_SEDs77l5lF49DZnRk,304
+elements/shapes/polygon.py,sha256=3SALXwSug5RhqKidw9URwXhfI666PpHCh8OezSlbt3c,580
+elements/shapes/polyline.py,sha256=FFe1tKlXGCnTMQmJveQyFpbAEhiirfL-Q_gdQ6i5g8o,582
+elements/shapes/rect.py,sha256=_vbna_muechewKhU5criqJSish7UnGKBkgG2YJnOrJ4,449
+elements/shapes/shape.py,sha256=r18y-J6fpA6_vNd9v1lmJ9RSzK5Nn7luy6gP8pnONI8,339
+savage_generator-0.1.0.dist-info/METADATA,sha256=NcOoqZdG49XKIS39_wYAvu8GHvZhfDcG2Hgb14N_KMA,3087
+savage_generator-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+savage_generator-0.1.0.dist-info/top_level.txt,sha256=P234v05bIfWEu70xXa7NstWngKm3jZ2Gf-4pGWHdDKE,9
+savage_generator-0.1.0.dist-info/RECORD,,
