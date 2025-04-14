@@ -1,0 +1,10 @@
+auroradb/api/api.py,sha256=csUQTkmz7ULdgUWh0OmFxfFTNDjPXJlmMuuljPtwhZs,484
+auroradb/scratch/encdec.py,sha256=anYj1szThX485oGG2VAhx6_zT8EJU25sawpnu1RVNcw,1762
+auroradb/src/client.py,sha256=Np7AY2okPG1x4x87WBEUdz_u_MAmyuMZgaDusZX74Co,578
+auroradb/test/test_api.py,sha256=Sgk7KgsyK3RiYev5an5Gr-LtxzeRHxm3_HFCAuwW8ZU,719
+auroradb/test/test_client.py,sha256=Ek0TS75lCD1HU_B3DB8Tx0NwC9fUyz8CIIzK6CMe5TI,689
+auroradb-0.0.1.dist-info/licenses/LICENSE,sha256=E2Uynj57T25_qeYKqAEt08RP0ki5hLku-KABBkrBzVI,1072
+auroradb-0.0.1.dist-info/METADATA,sha256=3bsZ1-7880cUj9n6fSmtlwoj36cdAqHv1kgc8096GsI,425
+auroradb-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+auroradb-0.0.1.dist-info/top_level.txt,sha256=nT9ZV-b1t_rmOamnxMgHL7DiEKMsMoM2jeQsXSgBP0E,9
+auroradb-0.0.1.dist-info/RECORD,,
