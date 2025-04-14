@@ -1,0 +1,14 @@
+odoo/addons/hr_timesheet_editable_top/README.rst,sha256=csyYjz_sHzGs5A1LVO3xkUGhkGyU2Eb86s9pLWYTf1U,3001
+odoo/addons/hr_timesheet_editable_top/__init__.py,sha256=8oks3cFU30zmCQFCGdYSbQ-VXva420SHrlHiSzZkF6g,65
+odoo/addons/hr_timesheet_editable_top/__manifest__.py,sha256=1DEnHS3a2IVDmdaKaMIlxZY0Pp8a-hYxfCCysAPjTtw,567
+odoo/addons/hr_timesheet_editable_top/i18n/hr_timesheet_editable_top.pot,sha256=MSiEHPDUKhvGZ0dHQExrrZDUtp-bjziejrPpkzYMeWg,341
+odoo/addons/hr_timesheet_editable_top/i18n/it.po,sha256=gyR2FmNliDLUD0s8XGoDtRr26ox40irTcuP5K19gi6I,411
+odoo/addons/hr_timesheet_editable_top/readme/CONTRIBUTORS.md,sha256=paJDJm-InIRgNoZvQBdEtZ5rz-Pkc-RUDdz3dbMsJTo,112
+odoo/addons/hr_timesheet_editable_top/readme/DESCRIPTION.md,sha256=ds2Z3ie3vE_pKOrAIOjcXrAs6P7ma1G8myU4c0JCHxs,133
+odoo/addons/hr_timesheet_editable_top/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/hr_timesheet_editable_top/static/description/index.html,sha256=RziNfO-GQ6KGh6xvLTFgJ_ITmZSh0RuAgLqiOBW8Qys,12362
+odoo/addons/hr_timesheet_editable_top/views/hr_analytic_timesheet.xml,sha256=6crZQH22SZIkXXhFM57eEth1qhm3nRAt-luIWdPVXO8,519
+odoo_addon_hr_timesheet_editable_top-17.0.1.0.0.1.dist-info/METADATA,sha256=6WqmjzH5V5TISLLRex60gKfn3pOabIO8VZjdO9jaej8,3553
+odoo_addon_hr_timesheet_editable_top-17.0.1.0.0.1.dist-info/WHEEL,sha256=9fEMia4zL7ZuZbnCOrcYogUhmn4XFIVaJ8G4YGI31xc,81
+odoo_addon_hr_timesheet_editable_top-17.0.1.0.0.1.dist-info/top_level.txt,sha256=QE6RBQ0QX5f4eFuUcGgU5Kbq1A_qJcDs-e_vpr6pmfU,4
+odoo_addon_hr_timesheet_editable_top-17.0.1.0.0.1.dist-info/RECORD,,
