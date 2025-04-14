@@ -1,0 +1,1 @@
+chess_uci_mcp

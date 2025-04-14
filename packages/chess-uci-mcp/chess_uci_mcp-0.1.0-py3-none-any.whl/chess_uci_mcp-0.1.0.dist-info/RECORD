@@ -1,0 +1,10 @@
+chess_uci_mcp/__init__.py,sha256=GMEVNlTVfokWxECs0Wh0YVZfIEhuTQd55X6IzGyWXXs,139
+chess_uci_mcp/__main__.py,sha256=J1dIEWcRyQ_SabB8aLwh6CYjCjBB0HEIxxffFtUslAQ,2143
+chess_uci_mcp/engine.py,sha256=REjVR8GL0bvPaZnKPfuMBrdppbeQ87_cWhdxcTW2m-c,6038
+chess_uci_mcp/server.py,sha256=kqR_vDtDqfwPmRIO_-HD3ijdtlzWR3moYqs10p5Pves,5902
+chess_uci_mcp-0.1.0.dist-info/licenses/LICENSE,sha256=Ee_mOIHAArZ9TRZ0Gwt3Bv45W1oFr39JMMA61_oy1wY,1068
+chess_uci_mcp-0.1.0.dist-info/METADATA,sha256=ehCggptEZ_IlIikm__OFtfe6WcQKGZzTTtEs2Kv4pB0,3368
+chess_uci_mcp-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+chess_uci_mcp-0.1.0.dist-info/entry_points.txt,sha256=x0_QCNo6xEKIh2omKgR6YgBSCGhKWzgmxaSwpKwwq7Y,62
+chess_uci_mcp-0.1.0.dist-info/top_level.txt,sha256=EPY631lIIXqeKjGI0cibWqugWDN_ycfnLuJcw-RFPQE,14
+chess_uci_mcp-0.1.0.dist-info/RECORD,,
