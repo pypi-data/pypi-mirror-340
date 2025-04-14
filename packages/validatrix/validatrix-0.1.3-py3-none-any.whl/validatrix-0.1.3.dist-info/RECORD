@@ -1,0 +1,16 @@
+validatrix/__init__.py,sha256=jqW90Saqq42KDgQYyx954TsGZdATc2Z5UZO5uem7uyc,516
+validatrix/DAC_interface/DAC_interface.py,sha256=d9HuL_JL_57WJNvM_UpVLiNdm0GAJV3moE9VRQ-t_20,2032
+validatrix/DAC_interface/__init__.py,sha256=XoiWjfphC70cPYcgX_b4yA0_jZvxGhFaGsnGP1e7WrE,196
+validatrix/can_interface/__init__.py,sha256=joDOZTI3tPP2fy8e1OvCCFlYF_rW6Gw7WctjUSB3PW0,169
+validatrix/can_interface/can_interface.py,sha256=3ZASg8_zPTeglwdpgtCynCdcaWmBNVvD7TtrF-xyHKU,7630
+validatrix/data_collection/__init__.py,sha256=1h4bmE7QKZ-Z7clBvwDpOHZctrtscZryXwRrhKJVABk,223
+validatrix/data_collection/data_collection_interface.py,sha256=FDScI1JyXRsSioN41Hmhlk9x0IATRod-_kqoFs2dUD8,5869
+validatrix/thermistor_emulation/__init__.py,sha256=cbH17nxMcLbnft4tajlqTGeaGyKTbplDhwYEFIXaMcU,233
+validatrix/thermistor_emulation/thermistor_emulation_interface.py,sha256=k_lqGM72Qb47y2nLCUNsb81jt5AkZTN2DuECEFeK5Z8,2729
+validatrix/utils/__init__.py,sha256=leXxMeQ5jWAhnuJE6rT37quptRG3RRM55rVHH7iBDUQ,177
+validatrix/utils/helpers.py,sha256=I8Aqp3MI39MDbrSTeLsUDX1rcra2-u2G4lBLkurG9Vs,1575
+validatrix-0.1.3.dist-info/licenses/LICENSE,sha256=gSD-a0QSybjZTgQQA1vta7UjMT4M_mK7D6u533fShXc,1090
+validatrix-0.1.3.dist-info/METADATA,sha256=6I8ZYM1H69WHLo3ncfb8mwlugamOY0emM1nwfytQ3HM,1644
+validatrix-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+validatrix-0.1.3.dist-info/top_level.txt,sha256=mCIwPG02eDsqF4bARwRU5ztLYlrdEPwkVhnjMYFZ1bM,11
+validatrix-0.1.3.dist-info/RECORD,,
