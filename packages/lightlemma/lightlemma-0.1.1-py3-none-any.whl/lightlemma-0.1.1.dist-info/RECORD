@@ -1,0 +1,8 @@
+lightlemma/__init__.py,sha256=Xuj12Rnd5xG5b02jAmbChxREEf-8TrWPtEwQ39qrBq4,188
+lightlemma/lemmatizer.py,sha256=Cqa7Lj3Zjk_Lq2pBK9FE_4UY2u_Q8k0Sk6ppLTzXqeg,14557
+lightlemma/stemmer.py,sha256=AJjvfV9I0eeTB1mxHtUBbJd1zSpWYYFNwVAtj-Y0K2o,6326
+lightlemma/data/irregular_forms.json,sha256=-AmJwnMzxp_E2T9WvNTBOZsi3Rr-g7KuTmtMmSBYXQI,6458
+lightlemma-0.1.1.dist-info/METADATA,sha256=WzOglkKRq1CZrzkgBwGBiJUT_XXm47J0OGAmOO2J2nQ,4182
+lightlemma-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+lightlemma-0.1.1.dist-info/licenses/LICENSE,sha256=_lI_tVBXaz8dRpJYl7MFY-acQBAfi_pkl0vSSZWGCN0,1065
+lightlemma-0.1.1.dist-info/RECORD,,
