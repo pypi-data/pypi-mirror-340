@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: snakemk-util
+Version: 1.0.3
+Summary: utility functions for snakemake
+Home-page: https://github.com/Hoeze/snakemk_util
+Author: Florian Hölzlwimmer
+Author-email: git.ich@frhoelzlwimmer.de
+License: MIT license
+Platform: UNKNOWN
+Requires-Dist: snakemake (<8,>=7)
+Provides-Extra: develop
+Requires-Dist: bumpversion ; extra == 'develop'
+Requires-Dist: wheel ; extra == 'develop'
+
+utility functions for snakemake
+
