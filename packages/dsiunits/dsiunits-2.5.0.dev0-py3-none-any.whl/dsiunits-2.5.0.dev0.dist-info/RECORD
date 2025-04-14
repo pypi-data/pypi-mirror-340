@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dsiParser.py,sha256=MMqRZlrehn1p26FhyhQ5yui1-jZhknlDLXr3PXoD6fM,13428
+dsiUnitNode.py,sha256=FR6EwpaP-YK3lT3dKCNYAchwt0oWx1LnjmBmuvnRhA8,9144
+dsiUnits.py,sha256=8U6iMocrkjCpcCBxy2H_pyDhw-wPFqfqa8F9tM5cYOw,29216
+regexGenerator.py,sha256=umkOZ93Q4hpwkEqJ-l4itQekFZb9diaUFlSSu06i5Rw,3348
+unitStrings.py,sha256=gzoRxWKC_utrmFrqeCLOxRczM0YP9Bf3e39Y-pEf2LE,14839
+dsiunits-2.5.0.dev0.dist-info/licenses/LICENSE,sha256=ListzFM7LvlJ1cYCe2QW70teXZrN6P6k-aDimwPO2Ko,26516
+dsiunits-2.5.0.dev0.dist-info/METADATA,sha256=Hyssp4PrM-M0tuJYzfM3W70Q2eEQxhaJILUi3vxCOsE,33758
+dsiunits-2.5.0.dev0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dsiunits-2.5.0.dev0.dist-info/top_level.txt,sha256=BfuJv86YD4wPhc6bbgW_dBzFMBsDQN4d7bIkd_Vqv5A,67
+dsiunits-2.5.0.dev0.dist-info/RECORD,,
