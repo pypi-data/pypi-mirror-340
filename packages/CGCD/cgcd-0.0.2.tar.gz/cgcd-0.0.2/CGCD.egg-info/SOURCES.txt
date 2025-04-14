@@ -1,0 +1,10 @@
+LICENCE.txt
+README.md
+setup.py
+CGCD/__init__.py
+CGCD/analyzetools.py
+CGCD.egg-info/PKG-INFO
+CGCD.egg-info/SOURCES.txt
+CGCD.egg-info/dependency_links.txt
+CGCD.egg-info/requires.txt
+CGCD.egg-info/top_level.txt
