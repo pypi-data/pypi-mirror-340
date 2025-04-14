@@ -1,0 +1,70 @@
+# drift-detect
+
+**drift-detect** is a Python package that helps detect distributional drift between two datasets.
+
+It provides functionality for drift detection using univariate statistical tests for both **numerical and categorical features**. The package also **tracks if the distribution of NULL values has changed**. Multiple hypothesis testing is handled via **Bonferroni and False Discovery Rate (FDR) corrections**.
+
+## ✅ Identify Which Features Have Drifted
+drift-detect now also identifies **which specific features** (numerical or categorical) are **statistically different** across datasets — allowing for more targeted diagnostics and root-cause analysis of data drift.
+
+
+## 📌 Key Features 
+
+### 🔍 Non-Parametric Univariate Statistical Tests:
+
+- **Detects drift in numerical features** using the **Kolmogorov–Smirnov Test (KS Test)**
+- **Detects drift in categorical features** using the **Chi-squared Test of Independence**
+- **Detects changes in missingness** using **Fisher’s Exact Test**
+
+### ✅ Multiple Hypothesis Correction:
+
+- **Bonferroni Correction**: Controls the family-wise error rate by adjusting significance thresholds.
+- **False Discovery Rate (FDR)**: Uses Benjamini–Hochberg procedure to control the proportion of false positives.
+
+### 🧠 Feature-Level Drift Insights:
+
+- Returns a **summary table** of test statistics, p-values, and corrected p-values
+- Clearly indicates **which features** show significant distributional drift  
+- Helps in **interpreting what has changed**, not just that something has
+
+## 🚀 Installation
+
+```bash
+pip install drift-detect
+```
+
+## Usage/Examples
+
+```python
+import pandas as pd
+from detectdrift import DetectDrift
+
+# Create Sample Datasets
+sample_size = 1000
+categories = ['A', 'B', 'C']
+probabilities = [0.5, 0.3, 0.2]  
+data1 = pd.DataFrame({
+            'numerical_feature': np.random.normal(0, 1, 1000), 
+            'categorical_feature' :  np.random.choice(categories, size=sample_size, p=probabilities)
+        })
+data2 = pd.DataFrame({
+    'numerical_feature': np.random.normal(0, 1, 1000),  
+     'categorical_feature' :  np.random.choice(categories, size=sample_size, p=probabilities)
+    })
+
+# List columns to be tested
+numerical_cols = ['numerical_feature']
+categorical_cols = ['categorical_feature']
+
+# Initialize DetectDrift with the data and feature columns
+drift_detector = DetectDrift(data1, data2, numerical_cols, categorical_cols)
+
+# Perform drift detection
+drift_detected = drift_detector.detect_drift()
+
+# Output the result
+if drift_detected:
+    print("Distribution Drift Detected!")
+else:
+    print("No Drift Detected.")
+```
