@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: coherent.cli
+Version: 0.4.2
+Author-Email: "Jason R. Coombs" <jaraco@jaraco.com>
+Summary: Command-line interface for Coherent Software Development System
+Requires-Python: >= 3.9
+Requires-Dist: coherent.test
+Requires-Dist: typer
+Requires-Dist: coherent.build
+Requires-Dist: jaraco.vcs
+Requires-Dist: jaraco.versioning
+Provides-Extra: test
+Provides-Extra: doc
+Project-URL: Source, https://github.com/coherent-oss/coherent.cli
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+
+[![](https://img.shields.io/pypi/v/coherent.cli)](https://pypi.org/project/coherent.cli)
+
+![](https://img.shields.io/pypi/pyversions/coherent.cli)
+
+[![](https://github.com/coherent-oss/coherent.cli/actions/workflows/main.yml/badge.svg)](https://github.com/coherent-oss/coherent.cli/actions?query=workflow%3A%22tests%22)
+
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
+[![Coherent Software Development System](https://img.shields.io/badge/coherent%20system-informational)](https://github.com/coherent-oss/system)
+
+Command-line interface for the
+[Coherent Software Development System](https://bit.ly/coherent-system>).
