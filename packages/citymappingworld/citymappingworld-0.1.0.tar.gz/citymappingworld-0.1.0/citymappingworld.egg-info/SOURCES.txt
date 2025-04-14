@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+citymappingworld/__init__.py
+citymappingworld/core.py
+citymappingworld/worldcitymaster.json
+citymappingworld.egg-info/PKG-INFO
+citymappingworld.egg-info/SOURCES.txt
+citymappingworld.egg-info/dependency_links.txt
+citymappingworld.egg-info/top_level.txt
+tests/test.py
