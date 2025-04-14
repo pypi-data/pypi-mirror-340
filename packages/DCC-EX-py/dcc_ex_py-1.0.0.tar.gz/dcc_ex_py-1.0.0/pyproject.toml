@@ -1,0 +1,55 @@
+[project]
+name = "DCC-EX_py"
+version = "1.0.0"
+dynamic = [
+    "dependencies",
+]
+description = "A simple way to connect to your DCC-EX controlled model railroad using python code without having to write DCC-EX commands into code. "
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = [
+    "DCC-EX_py",
+]
+license = {text = "MIT"}
+authors = [
+  {name = "Kaiden Richardson", email = "kaidencr@gmail.com"},
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Documentation = "https://github.com/Zenith08/DCC-EX_py/wiki"
+Repository = "https://github.com/Zenith08/DCC-EX_py"
+
+[tool]
+[tool.setuptools.packages.find]
+include = ["dcc_ex_py*"]
+exclude = ["docs*"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+
+[tool.flake8]
+exclude = [
+    "docs",
+]
+max-line-length = 200
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_loop = "function"  # Explicitly set loop scope
+
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
