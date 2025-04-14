@@ -1,0 +1,16 @@
+damascus/__init__.py,sha256=V59TCJT1ETbSNjL97-MX3dOkWgVKtI-al6upprrY1FY,567
+damascus/cli.py,sha256=SkwM9wRhSR9Lf2Aho1EBQiV14mYUQPmD_iOr5-4hPI4,2230
+damascus/cli_parser.py,sha256=7QaTzZN07vNLnqs8TwTqi88wney9flRdJ629xTLLPqg,1524
+damascus/client.py,sha256=OZFUYcRJ6P39BqpOVUAfr1UDfx6N8LiyRWMFWWLDxkM,5930
+damascus/exceptions.py,sha256=HUD01nAqfjI9WdLijCGAq-KhdLjxmXcBA6pngTuBaLw,1348
+damascus/core/__init__.py,sha256=ni4YVD24WDiEOMKyLVnUn0lc7gPn5961b_Nmo0KC-ZU,286
+damascus/core/generator.py,sha256=bVWgYS6JOtzc4tYaGX_swUdZpy453wCpafydywKv010,18664
+damascus/core/schema.py,sha256=Nr3WzJ0DobVdte5mnVgo5vD74HlKEq6nAPoljDWhqNk,17875
+damascus/core/sdkgen.py,sha256=4plaqy9E-g0fB6BmCNnb0_5avJO-NtMeqadJYfk4psc,27398
+damascus/core/template.py,sha256=20f4NfahRp159uqJQWscJCCOvIlngQ-lAgLv1Yzb-FM,1552
+damascus/core/types.py,sha256=HXa289bmTEknx05xRTzeehQbSEBRoO0-x2UwW5tYLQY,3263
+damascus-0.1.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+damascus-0.1.0.dist-info/METADATA,sha256=wo9UWEdHLHLhvPuWFslbE0udeQKB6f8kYgsGjWSNQ70,4509
+damascus-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+damascus-0.1.0.dist-info/top_level.txt,sha256=AqvfmiYbnIsQjHr1dV8gPXF3h9KC9L3tVsjpDo8_UoY,9
+damascus-0.1.0.dist-info/RECORD,,
