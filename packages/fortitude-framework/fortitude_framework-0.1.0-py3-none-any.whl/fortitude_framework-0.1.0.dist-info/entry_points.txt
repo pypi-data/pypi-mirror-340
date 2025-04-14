@@ -1,0 +1,3 @@
+[console_scripts]
+fort=fortitude.cli.fort:main
+
