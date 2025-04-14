@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/k8ops/__init__.py
+src/k8ops/node_drain_analyzer.py
+src/k8ops.egg-info/PKG-INFO
+src/k8ops.egg-info/SOURCES.txt
+src/k8ops.egg-info/dependency_links.txt
+src/k8ops.egg-info/entry_points.txt
+src/k8ops.egg-info/top_level.txt

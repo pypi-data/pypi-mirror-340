@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=65.0.0"]  # Or "hatchling>=1.0.0"
+build-backend = "setuptools.build_meta"  # Or "hatchling.build"
+
+[project]
+name = "k8ops"
+version = "0.0.1"
+description = "Kubernetes Operations Tools"
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+authors = [
+    {name = "nomagicln", email = "nomagicln@gmail.com"},
+]
+keywords = ["kubernetes", "k8s", "operations", "tools"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: System Administrators",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.scripts]
+node-drain-analyzer = "k8ops.node_drain_analyzer:main"
+
+[project.urls]
+"Homepage" = "https://github.com/nomagicln/k8ops"
+"Bug Tracker" = "https://github.com/nomagicln/k8ops/issues"
