@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README-zh.md
+README.md
+pyproject.toml
+src/pyrandcracker/__init__.py
+src/pyrandcracker/matrix_utils.py
+src/pyrandcracker/randcracker.py
+src/pyrandcracker/sagemath_support.py
+src/pyrandcracker.egg-info/PKG-INFO
+src/pyrandcracker.egg-info/SOURCES.txt
+src/pyrandcracker.egg-info/dependency_links.txt
+src/pyrandcracker.egg-info/requires.txt
+src/pyrandcracker.egg-info/top_level.txt
+tests/test_rand32.py
