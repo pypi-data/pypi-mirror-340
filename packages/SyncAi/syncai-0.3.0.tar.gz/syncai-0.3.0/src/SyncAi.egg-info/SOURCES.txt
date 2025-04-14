@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/SyncAi.egg-info/PKG-INFO
+src/SyncAi.egg-info/SOURCES.txt
+src/SyncAi.egg-info/dependency_links.txt
+src/SyncAi.egg-info/entry_points.txt
+src/SyncAi.egg-info/top_level.txt
+src/syncai/__init__.py
+src/syncai/cil.py
+src/syncai/main.py
