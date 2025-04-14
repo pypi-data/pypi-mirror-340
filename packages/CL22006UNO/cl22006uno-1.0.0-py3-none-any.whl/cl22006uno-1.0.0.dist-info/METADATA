@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: CL22006UNO
+Version: 1.0.0
+Summary: Liberia para resolver ecuaciones lineales y no lineales sin usar librerias aparte
+Home-page: https://github.com/JosueCLopez/CDA135-GT02-CL22006UNO
+Author: Josue Israel Colocho Lopez
+Author-email: CL22006@ues.edu.sv
+License: MIT
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
+
+# CDA135-GT02-CL22006UNO
