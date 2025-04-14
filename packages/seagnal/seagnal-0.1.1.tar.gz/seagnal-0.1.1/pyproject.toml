@@ -1,0 +1,39 @@
+[project]
+name = "seagnal"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.3.0",
+    "bitsandbytes>=0.45.2",
+    "datasets>=3.2.0",
+    "deepspeed>=0.16.3",
+    "flash-attn>=2.7.3",
+    "matplotlib>=3.10.0",
+    "peft>=0.14.0",
+    "pillow>=11.1.0",
+    "qwen-vl-utils>=0.0.10",
+    "seaborn>=0.13.2",
+    "setuptools>=75.8.0",
+    "tabulate>=0.9.0",
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "tqdm>=4.67.1",
+    "transformers",
+    "trl",
+     "vllm>=0.7.3",
+    "wandb>=0.19.6",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+[tool.uv.sources]
+trl = { git = "https://github.com/nph4rd/trl", rev = "f66f3d1b5aa52b0a6c0850a929d829693b9a73cf" }
+transformers = { git = "https://github.com/nph4rd/transformers", rev = "fix-processor-mutability" }
+
+[tool.uv]
+no-build-isolation-package = ["flash-attn"]
