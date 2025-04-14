@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+readerllamaindex/pineconer.py
+readerllamaindex.egg-info/PKG-INFO
+readerllamaindex.egg-info/SOURCES.txt
+readerllamaindex.egg-info/dependency_links.txt
+readerllamaindex.egg-info/requires.txt
+readerllamaindex.egg-info/top_level.txt
+test/test.py
