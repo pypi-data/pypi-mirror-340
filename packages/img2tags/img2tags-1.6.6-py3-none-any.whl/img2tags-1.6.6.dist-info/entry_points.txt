@@ -1,0 +1,2 @@
+[console_scripts]
+img2tags = img2tags.img2tags:main
