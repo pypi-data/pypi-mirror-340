@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: dj3base
+Version: 0.3.1
+Summary: dj3base contains some small tools for Django.
+Author-email: three-kinds <3179158552@qq.com>
+License: MIT
+Project-URL: Homepage, https://github.com/three-kinds/dj3base
+Project-URL: Source, https://github.com/three-kinds/dj3base
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django
+Requires-Dist: a3exception>=0.3.0
+Requires-Dist: a3json_struct>=0.3.0
+
+# dj3base
+
+English | [简体中文](README_ZH.md)
+
+`dj3base` contains some small tools for `Django`.
+
+## 1. Introduction
+
+* `admin`: Use `OrderedAdminSite` to customize the order of apps and models.
+* `views`: Use `PostJsonView` to handle POST-JSON-style requests.
+* `utils`: Some utility functions.
+
+## 2. Usage
+
+### Install
+
+```shell
+pip install dj3base
+
+```
+### Examples
+
+* OrderedAdminSite
+
+```python
+from django.contrib.auth.models import User, Group
+from django.contrib.auth.admin import UserAdmin, GroupAdmin
+from django.contrib.auth.apps import AppConfig
+from dj3base.admin.ordered_admin_site import OrderedAdminSite
+
+
+class MyAdminSite(OrderedAdminSite):
+    ordered_apps = {
+        AppConfig: {
+            "index": 1,
+            "models": {
+                Group: {"index": 1},
+                User: {"index": 2},
+            }
+        }
+    }
+
+
+my_admin_site = OrderedAdminSite(name='my_admin')
+my_admin_site.register(User, UserAdmin)
+my_admin_site.register(Group, GroupAdmin)
+
+# in urls.py
+from django.urls import path
+
+urlpatterns = [
+    path('admin/', my_admin_site.urls),
+]
+
+```
+
+* PostJsonView
+
+```python
+from dj3base.views import PostJsonView
+from a3json_struct import struct
+
+
+class RequestStruct(struct.JsonStruct):
+    message: str = struct.CharField(min_length=1, max_length=10)
+
+    
+class EchoView(PostJsonView):
+    request_struct_cls = RequestStruct
+
+    def handle_post(self, request_struct: RequestStruct, custom_params: dict) -> dict:
+        return {"message": f"hello {request_struct.message}"}
+
+```

@@ -1,0 +1,3 @@
+django
+a3exception>=0.3.0
+a3json_struct>=0.3.0
