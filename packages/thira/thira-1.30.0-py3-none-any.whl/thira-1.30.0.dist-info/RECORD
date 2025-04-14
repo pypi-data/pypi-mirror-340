@@ -1,0 +1,11 @@
+thira/__init__.py,sha256=14aAT7dMwgZTFXDWJoJx76S-VFG1r_rTG3FA2Hq0Ek8,219
+thira/binary.py,sha256=sMm8Kv0EIN1R45WyjcabtjqhxFiRSTDOnktdtwuh20c,1861
+thira/cli.py,sha256=5U2gESUNOAf-UuqDLl-TmBEjxFxbU4GGnezXuqH8NgM,556
+thira/hooks.py,sha256=ldY5rjgKf9PPR6692uy5w5orVD5xHIYogJxAlMfQsg0,519
+thira/installer.py,sha256=YxFmbaKzIB7fml8tCWTWN5RksacsZvahQa7JKNq6440,6366
+thira/setup.py,sha256=38JilpqCYGSfSw2dsyKUGaJSWOlQru06u7o9dhgdJnI,1192
+thira/uninstaller.py,sha256=dV6q-3YU9vpdaRaq47AH5T6O7nNnvVuFKtENlmFFOHA,1172
+thira-1.30.0.dist-info/METADATA,sha256=bSN1HNklfaeoUxJm4yW3jL6ByywxnroHwqwgsmpgSbw,938
+thira-1.30.0.dist-info/WHEEL,sha256=XbeZDeTWKc1w7CSIyre5aMDU_-PohRwTQceYnisIYYY,88
+thira-1.30.0.dist-info/entry_points.txt,sha256=W6FkpNVzICb0xZYRUEBThGowjSNZP8Wn5vnlponrtgg,131
+thira-1.30.0.dist-info/RECORD,,

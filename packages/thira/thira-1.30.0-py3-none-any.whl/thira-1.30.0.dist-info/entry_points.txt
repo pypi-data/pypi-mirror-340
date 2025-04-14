@@ -1,0 +1,7 @@
+[console_scripts]
+thira=thira.cli:main
+thira-uninstall=thira.uninstaller:uninstall
+
+[poetry.plugin]
+thira=thira.hooks:ThiraPlugin
+
