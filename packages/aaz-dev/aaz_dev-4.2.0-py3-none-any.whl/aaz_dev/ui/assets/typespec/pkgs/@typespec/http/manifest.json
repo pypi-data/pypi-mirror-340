@@ -1,0 +1,1 @@
+{"name":"@typespec/http","version":"0.67.0","imports":{".":"./index.js","./streams":"./streams.js","./experimental":"./experimental.js","./experimental/typekit":"./experimental/typekit.js"}}
