@@ -1,0 +1,57 @@
+Metadata-Version: 2.4
+Name: nk20
+Version: 0.1.1
+Summary: ✨ One-function nk20 encoder/decoder using CJK Unified Ideographs (base-20000)
+Home-page: https://github.com/dzbuit/nk20
+Author: blueradiance
+Author-email: your@email.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# nk20
+
+✨ One-function nk20 encoder/decoder using CJK Unified Ideographs (base-20000)  
+**nk20 – Number Kilo 20 Numeric system (이만진수)**
+
+---
+
+## Install
+
+```bash
+pip install nk20
+```
+
+## Usage
+
+```python
+import nk20
+
+nk20(123456)     # → '漢字' 등 한자 조합 문자열
+nk20('漢字')     # → 123456
+```
+
+## Concept
+
+- Pass `int` → returns nk20 CJK string.
+- Pass `str` → returns original integer.
+- Based on Unicode range U+4E00 ~ U+9FFF (20,992 chars).
+- Lexicographically sortable & extremely compact.
+
+## License
+
+MIT
