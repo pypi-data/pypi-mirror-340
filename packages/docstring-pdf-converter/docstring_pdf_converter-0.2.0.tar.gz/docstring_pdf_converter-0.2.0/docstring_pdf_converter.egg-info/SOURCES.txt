@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+docstring_pdf_converter/__init__.py
+docstring_pdf_converter/config.py
+docstring_pdf_converter/exemplo.py
+docstring_pdf_converter/generate_pdf.py
+docstring_pdf_converter/main.py
+docstring_pdf_converter.egg-info/PKG-INFO
+docstring_pdf_converter.egg-info/SOURCES.txt
+docstring_pdf_converter.egg-info/dependency_links.txt
+docstring_pdf_converter.egg-info/entry_points.txt
+docstring_pdf_converter.egg-info/requires.txt
+docstring_pdf_converter.egg-info/top_level.txt
+tests/__init__.py
+tests/test_generate_pdf.py
