@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: snakemk_util
+Version: 2.0.0
+Summary: utility functions for snakemake
+Author-email: "Florian R. Hölzlwimmer" <git.ich@frhoelzlwimmer.de>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/Hoeze/snakemk_util
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: snakemake<10,>=8
+Provides-Extra: develop
+Requires-Dist: bumpversion; extra == "develop"
+Requires-Dist: wheel; extra == "develop"
+Provides-Extra: test
+Requires-Dist: pytest>=3.3.1; extra == "test"
+Requires-Dist: pytest-xdist; extra == "test"
+Requires-Dist: pytest-pep8; extra == "test"
+Requires-Dist: pytest-mock; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+
+# Snakemake utils
+Utility functions for snakemake
+
+## Examples
+### Loading snakemake object without actually running `snakemake`
+```python
+try:
+    snakemake
+except NameError:
+    from snakemk_util import load_rule_args
+    
+    snakefile_path = os.getcwd() + "/Snakefile"
+    snakemake = load_rule_args(
+        snakefile = snakefile_path,
+        rule_name = 'create_prediction_target',
+        default_wildcards={
+            'ds_dir': 'all_data'
+        }
+    )
+```
+
+## Installation
+`pip install snakemk_util`

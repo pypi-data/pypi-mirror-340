@@ -1,0 +1,2 @@
+[console_scripts]
+snakemk_util = snakemk_util.main:main
