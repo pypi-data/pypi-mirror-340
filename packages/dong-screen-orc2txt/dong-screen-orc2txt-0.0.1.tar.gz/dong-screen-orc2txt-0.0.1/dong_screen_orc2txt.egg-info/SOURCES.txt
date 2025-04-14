@@ -1,0 +1,9 @@
+README.md
+setup.py
+dong-screen-orc2txt/__init__.py
+dong-screen-orc2txt/recognizer.py
+dong_screen_orc2txt.egg-info/PKG-INFO
+dong_screen_orc2txt.egg-info/SOURCES.txt
+dong_screen_orc2txt.egg-info/dependency_links.txt
+dong_screen_orc2txt.egg-info/requires.txt
+dong_screen_orc2txt.egg-info/top_level.txt
