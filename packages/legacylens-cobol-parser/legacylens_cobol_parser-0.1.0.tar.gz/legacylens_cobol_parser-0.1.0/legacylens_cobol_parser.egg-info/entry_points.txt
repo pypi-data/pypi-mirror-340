@@ -1,0 +1,2 @@
+[console_scripts]
+legacylens_cobol_parser = cobol_parser.cli:main
