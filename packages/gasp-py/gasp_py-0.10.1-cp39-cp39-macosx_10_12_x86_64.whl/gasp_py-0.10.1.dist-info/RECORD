@@ -1,0 +1,8 @@
+gasp_py-0.10.1.dist-info/METADATA,sha256=hyp4Mlvgu0AvITkLuZ3JhsSfYwqdvRdDHbCXi70fdm8,10066
+gasp_py-0.10.1.dist-info/WHEEL,sha256=wHJF_CEf8iunUCO-5TgAB2fODgLo2kXl2exk1o5PiYU,104
+gasp_py-0.10.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gasp/__init__.py,sha256=RRRDrID0m7o4j_W8WaCM9bCDhtn-Kx7KhIJe6e34JDc,99
+gasp/__init__.pyi,sha256=ga7S7XVVFF4KJp-yzs9c5j05e3UxGOqBDX6XDGmlawI,883
+gasp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gasp/gasp.cpython-39-darwin.so,sha256=mulQZZhsotGvBRsjCa9r6pknOGz1gOL89-WtHb_VH5o,2416340
+gasp_py-0.10.1.dist-info/RECORD,,
