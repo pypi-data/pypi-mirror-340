@@ -1,0 +1,11 @@
+textcase/__init__.py,sha256=tmeBEXD2qTZcI4d1f-x6vTfGjB6wQ9tRCpRWh-QqmfQ,2191
+textcase/boundary.py,sha256=1jxUBt-OyzCZI_pk0SB7fKePb5k8seqsQz_QzXPp9HY,9362
+textcase/case.py,sha256=HDv00F8z38l3H_Me8lxJXyThcGJI33tFFUkeWhBP5fw,5027
+textcase/converter.py,sha256=O17sULcq42b1R8GTyCtUQvv0p4oVlDhD6jACxL8fuFY,4361
+textcase/pattern.py,sha256=9KuMoJMqyCtmRVcWLgnee4MdGOkx6AiKbo0slqlAKUs,3333
+textcase/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textcase-0.3.1.dist-info/licenses/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+textcase-0.3.1.dist-info/METADATA,sha256=a5ig5CV-eWq-9u_0KqdItfJYK_PY6dQZKh-kD8z5dQs,46073
+textcase-0.3.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+textcase-0.3.1.dist-info/top_level.txt,sha256=85eoLocwIFq1IRhaNBOmy9dSS4BzEBeHDG2K4oaRvsQ,9
+textcase-0.3.1.dist-info/RECORD,,
