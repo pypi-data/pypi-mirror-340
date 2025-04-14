@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Simplification and Cleanup Rule for a Python Project
+	1.	Remove Unused Imports:
+	▪	Regularly audit your imports. Use tools like ⁠flake8 or ⁠pylint to identify and remove any imports that are not utilized in the code.
+	2.	Eliminate Redundant Code:
+	▪	Identify and remove duplicate code. If the same logic appears multiple times, consider refactoring it into a function or method.
+	▪	Use tools like ⁠radon to measure code complexity and identify areas that can be simplified.
+	3.	Simplify Functions and Methods:
+	▪	Keep functions and methods short and focused. Each should do one thing and do it well.
+	▪	If a function exceeds 20 lines, evaluate whether it can be broken down into smaller, more manageable pieces.
+	4.	Use Descriptive Naming:
+	▪	Choose clear and descriptive names for variables, functions, and classes. This reduces the need for comments and makes the code self-explanatory.
+	5.	Remove Unused Variables and Functions:
+	▪	Regularly review your code to identify variables and functions that are never used and remove them.
+	▪	Use static analysis tools to help find unused variables and functions.
+	6.	Refactor Complex Structures:
+	▪	Replace complex data structures with simpler ones if they achieve the same result with less complexity.
+	▪	Favor built-in data structures like lists, sets, and dictionaries over custom implementations unless necessary.
+	7.	Minimize Dependencies:
+	▪	Avoid adding new dependencies unless absolutely necessary. This keeps the project lightweight and reduces maintenance overhead.
+	▪	Regularly review existing dependencies and remove those that are no longer needed.
+	8.	Automate Testing:
+	▪	Implement automated tests to ensure that removing or refactoring code does not break functionality.
+	▪	Use tools like ⁠pytest for comprehensive testing coverage.
+	9.	Document Sparingly but Effectively:
+	▪	Write documentation that is concise and directly related to explaining complex logic or usage. Avoid documenting the obvious.
+	10.	Iterative Review and Refactor:
+	▪	Regularly schedule time to review and refactor the codebase, removing anything that isn't serving a clear purpose.
+	11. Other Guidances
+		1.). The less code the better
+		2.) Ease up on the nested exception handling and deeply nested ifs
+		3.) Removing redundant code, and overly defensive programming patterns.
