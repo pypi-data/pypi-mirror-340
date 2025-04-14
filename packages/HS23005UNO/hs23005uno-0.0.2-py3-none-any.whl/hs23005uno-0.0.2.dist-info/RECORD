@@ -1,0 +1,14 @@
+HS23005UNO/_init_.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+HS23005UNO/biseccion.py,sha256=1IunO9ZblwDpQDiK-Yym4G8URMA2tCBrbUU2329Kcdc,472
+HS23005UNO/cramer.py,sha256=GkMoRO9OE8KQ39H0qxvabcy-iVCY4G1lhdolZH7eRbY,524
+HS23005UNO/gauss.py,sha256=MY4y3tm65D3NZbd5gGRA7cFyyPChMRQEWnt4N8EG95U,675
+HS23005UNO/gauss_jordan.py,sha256=2UO4_DEMqBhh6sPoeUhrZTucSPP5sT5I7t9KUUtKA40,604
+HS23005UNO/gauss_seidel.py,sha256=6bcsuwAO2n5cAGKZDRweIPduIYnYLd5lyCZ0ae-J8H8,630
+HS23005UNO/jacobi.py,sha256=3Zgv4GH3DvrYHAGd0HvLQLGtx3yOovFOOpZDFU8P5nI,543
+HS23005UNO/lu.py,sha256=hBQ2DLf-_n0t2FMXfkTyEd4B6XC-Bb2RFtIRG2tPUds,897
+hs23005uno-0.0.2.dist-info/licenses/LICENSE,sha256=qsQrCIIOU9xzTKE-cF2srP_ifsxG3m4AALrwD_T0sV8,1227
+hs23005uno-0.0.2.dist-info/METADATA,sha256=InKX5k6jwa0sqvtKsMahkEBa-rG-SXCXNX_0Fhxbqzo,1530
+hs23005uno-0.0.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+hs23005uno-0.0.2.dist-info/entry_points.txt,sha256=cst3U94bGBUpd90l-dIStyrQ-xTlxYXJhDpAEEoNCPk,52
+hs23005uno-0.0.2.dist-info/top_level.txt,sha256=x8_uW-bBdOvNLuaQtt82aun1_wfT6cQ-q80Yb-uOFRw,11
+hs23005uno-0.0.2.dist-info/RECORD,,

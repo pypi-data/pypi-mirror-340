@@ -1,0 +1,2 @@
+[console_scripts]
+hs23005uno = HS23005UNO.main:main
