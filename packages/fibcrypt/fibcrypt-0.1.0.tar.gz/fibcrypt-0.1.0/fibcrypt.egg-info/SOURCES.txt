@@ -1,0 +1,6 @@
+setup.py
+fibcrypt.egg-info/PKG-INFO
+fibcrypt.egg-info/SOURCES.txt
+fibcrypt.egg-info/dependency_links.txt
+fibcrypt.egg-info/requires.txt
+fibcrypt.egg-info/top_level.txt
