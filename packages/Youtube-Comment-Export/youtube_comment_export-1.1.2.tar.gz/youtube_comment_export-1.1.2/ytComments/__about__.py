@@ -1,0 +1,6 @@
+__title__ = "Youtube-Comment-Export"
+__description__ = "Export a YouTube channel Comments in a nice Excel format."
+__version__ = "1.1.2"
+__author__ = "Michaël AUGUSTE"
+__license__ = "MIT"
+__url__ = "https://github.com/Atem83/Youtube-Comment-Export"

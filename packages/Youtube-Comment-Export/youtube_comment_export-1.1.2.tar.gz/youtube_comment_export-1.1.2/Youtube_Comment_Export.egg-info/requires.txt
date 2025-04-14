@@ -1,0 +1,8 @@
+yt_dlp
+polars
+xlsxwriter
+colorama
+PySide6
+screeninfo
+requests
+packaging
