@@ -1,0 +1,77 @@
+Metadata-Version: 2.4
+Name: readmodule
+Version: 0.1.1
+Summary: MCP Server for reading OpenHarmony module code
+Author-email: lwt <liangweitao@openvalley.net>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           Copyright (c) 2024 Hunan OpenValley Digital Industry Development Co., Ltd.
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Keywords: mcp,openharmony,code-reader
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastmcp
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp[cli]>=1.6.0
+Dynamic: license-file
+
+# readmodule
+
+一个用于读取 OpenHarmony 模块代码的 MCP (Model Context Protocol) 服务器。
+
+## 介绍
+
+readmodule 是一个基于 MCP 协议的服务器，主要功能是读取指定 OpenHarmony 模块目录中的所有代码文件，包括子目录中的文件。它支持从各种文件类型中读取代码并以结构化格式返回内容。
+
+## 功能特点
+
+该工具支持读取以下类型的文件：
+
+- .md（Markdown 文件）
+- .ets（ETS 文件）
+- .ts（TypeScript 文件）
+- .json（JSON 文件）
+- .json5（JSON5 文件）
+- .cpp（C++ 源文件）
+- .h（C/C++ 头文件）
+
+## 安装
+
+```bash
+pip install readmodule
+```
+## 使用方法
+
+安装后可以通过以下命令启动服务器：
+
+```bash
+readmodule-mcp
+```
+
+
