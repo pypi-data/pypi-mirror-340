@@ -1,0 +1,9 @@
+ais140/__init__.py,sha256=02mE4gND-DUwwdnDIHEhuKJUVNl2C_OHHis5w2eUF_Y,53
+ais140/kpi.py,sha256=Iz0U30eo_FVErEIc5G-RlQ-lY2kO0Lv6vPbZ6GUqweE,3250
+ais140/parser.py,sha256=3rP3MvdsCkmJQKL0559FhUbxBbdyvE7TMbyzltMY-tM,6380
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_parser.py,sha256=c4iGIGPocF6HHvbfzN_EcAahe5zxnSPvqUX2AKdXA8c,2449
+ais140_parser-1.0.0.dist-info/METADATA,sha256=JPz9tTvbExJvMgRQS9EWe6Q69_LWV6YNgY08BgR6vYg,3603
+ais140_parser-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ais140_parser-1.0.0.dist-info/top_level.txt,sha256=CHr-Ch0El9ZK474EaP7tKdww4GXOI5iMKE8x_qOHYbY,13
+ais140_parser-1.0.0.dist-info/RECORD,,
