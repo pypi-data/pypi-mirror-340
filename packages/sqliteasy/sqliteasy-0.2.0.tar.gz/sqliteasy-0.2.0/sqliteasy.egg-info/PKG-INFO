@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: sqliteasy
+Version: 0.2.0
+Summary: An easy SQLite wrapper for Python.
+Author: Josué Arias Gauna
+Author-email: josuearias.crc@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-python
+Dynamic: summary
+
+# SQLiteasy
+
+**SQLiteasy** is a minimal Python wrapper around SQLite to help you manage databases with simple commands.  
+No need to write long SQL queries, just use easy Python methods.
+
+## Installation
+
+```bash
+pip install sqliteasy
