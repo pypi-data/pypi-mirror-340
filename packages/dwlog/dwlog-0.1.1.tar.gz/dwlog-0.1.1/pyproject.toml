@@ -1,0 +1,42 @@
+[project]
+name = "dwlog"
+version = "0.1.1"
+authors = [
+    {name = "Raffaele Mancuso",email = "raffaele.mancuso4@unibo.it"}
+]
+description = "Logging functionalities for data wrangling in Python (pandas)."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    'Environment :: Console',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Cython',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    "Topic :: Scientific/Engineering"
+]
+dependencies = [
+    "pandas"
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/raffaem/dwlog"
+Issues = "https://github.com/raffaem/dwlog/issues"
+
+[tool.poetry]
+packages = [{include = "dwlog", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
