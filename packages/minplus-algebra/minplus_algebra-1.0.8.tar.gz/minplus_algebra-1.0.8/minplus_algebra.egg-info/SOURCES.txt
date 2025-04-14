@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+minplus_algebra/__init__.py
+minplus_algebra.egg-info/PKG-INFO
+minplus_algebra.egg-info/SOURCES.txt
+minplus_algebra.egg-info/dependency_links.txt
+minplus_algebra.egg-info/requires.txt
+minplus_algebra.egg-info/top_level.txt
