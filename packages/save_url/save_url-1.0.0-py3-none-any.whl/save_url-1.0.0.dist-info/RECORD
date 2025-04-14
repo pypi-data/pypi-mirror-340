@@ -1,0 +1,13 @@
+save_url/__init__.py,sha256=vZKZN5dSwL0sxT2JV9v36Cuq_yX7SckvTEZpJ6ZfPKQ,143
+save_url/core.py,sha256=OkjfQHwXHogeCcvKJzFWnXS_xZxNEv9Go487WM_KhhU,4435
+save_url/locale/en/LC_MESSAGES/save_url.mo,sha256=-5Hgff2pmCFFbfqMcHAYXFXkXlPdLpoT0F_kuCmmPwM,424
+save_url/locale/en.po,sha256=R-WTCd9BzjpdZc8Cuk0kGMl_VvqaO208riGhnZupV6k,1816
+save_url/locale/es/LC_MESSAGES/save_url.mo,sha256=qQy6JvjOJ9TdpYOQjicW6vgAteSD8Mpo0_E6yS8X02I,1357
+save_url/locale/es.po,sha256=tuauzvFSryIm97xKJkDMNerIu89k_6vV8SnS9f2rkQc,2376
+save_url/locale/save_url.pot,sha256=dTHNKojmz_IldRZKG6dbLomwrzGlcJwzR-lMYOPTHBI,1658
+save_url/poethepoet.py,sha256=N7giQubKPfRjh2cAjcMk5l9l5lOWNypRR_m3K0m5SXI,1544
+save_url-1.0.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+save_url-1.0.0.dist-info/METADATA,sha256=JI-CePuBxwtYN8KzgAmzA13bWZIyedGuZzKtSjMjnhY,2354
+save_url-1.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+save_url-1.0.0.dist-info/entry_points.txt,sha256=LvhqkuP6v2_AeXqFxTYrd5fYvWhiSQOUGFKXwQrMAN4,59
+save_url-1.0.0.dist-info/RECORD,,
