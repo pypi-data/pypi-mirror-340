@@ -1,0 +1,22 @@
+[project]
+name = "md4llm"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AravindR-1", email = "dfsfsdds@upl-ltd.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "build>=1.2.2.post1",
+    "mcp[cli]>=1.6.0",
+    "pymupdf4llm>=0.0.21",
+    "twine>=6.1.0",
+]
+
+[project.scripts]
+md4llm = "md4llm:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
