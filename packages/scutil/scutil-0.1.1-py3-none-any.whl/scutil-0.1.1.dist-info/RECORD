@@ -1,0 +1,7 @@
+scutil/__init__.py,sha256=i7xvlJLhqF5xdKwfxJnXTeE4QGTNwIP-Jol8Dp5ITYE,140
+scutil/_settings.py,sha256=nn3N7BoOFVMr9kiaHeBgQsWbGYRDHMrjD1g53d_oOfU,903
+scutil/scanpy_utils.py,sha256=nAt7SloZ1tBRlIi65z46A5f_IwLkSZZafZ8VLGXB3xY,15155
+scutil/_utils/__init__.py,sha256=_fybByrPzR9A5G_TU4ZyLkbRAfNGSLQY3kFogDSEp6s,344
+scutil-0.1.1.dist-info/METADATA,sha256=7AC4RXPGkj3RF3jLK7BckjKGFDWRMO_OPW7eTJHJ0Vk,1303
+scutil-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+scutil-0.1.1.dist-info/RECORD,,
