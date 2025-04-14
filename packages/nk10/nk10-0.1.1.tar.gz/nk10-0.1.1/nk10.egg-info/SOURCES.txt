@@ -1,0 +1,9 @@
+LICENSE
+README.md
+nk10.py
+pyproject.toml
+setup.py
+nk10.egg-info/PKG-INFO
+nk10.egg-info/SOURCES.txt
+nk10.egg-info/dependency_links.txt
+nk10.egg-info/top_level.txt
