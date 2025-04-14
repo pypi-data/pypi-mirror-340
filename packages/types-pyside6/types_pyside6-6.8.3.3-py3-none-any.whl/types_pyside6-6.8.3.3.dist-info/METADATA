@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: types-pyside6
+Version: 6.8.3.3
+Summary: Types for PySide6
+Author-email: Inhwan Kim <moreih29@gmail.com>
+Classifier: Typing :: Stubs Only
+Requires-Python: >=3.11
+Requires-Dist: pyside6==6.8.3
+Description-Content-Type: text/markdown
+
+# Types for Pyside6
