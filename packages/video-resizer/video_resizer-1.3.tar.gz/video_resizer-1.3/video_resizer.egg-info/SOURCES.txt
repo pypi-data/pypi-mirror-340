@@ -1,0 +1,11 @@
+README.md
+setup.py
+video_resizer/__init__.py
+video_resizer/cli.py
+video_resizer/resizer.py
+video_resizer.egg-info/PKG-INFO
+video_resizer.egg-info/SOURCES.txt
+video_resizer.egg-info/dependency_links.txt
+video_resizer.egg-info/entry_points.txt
+video_resizer.egg-info/requires.txt
+video_resizer.egg-info/top_level.txt

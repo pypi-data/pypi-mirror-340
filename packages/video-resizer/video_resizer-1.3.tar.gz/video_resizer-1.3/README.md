@@ -1,0 +1,33 @@
+# Video Resizer
+
+A simple Python package to resize videos without losing quality using FFmpeg. Supports both **command-line interface (CLI)** and **Python** usage.
+
+---
+
+## Installation
+
+```bash
+pip install video-resizer
+
+Example: 
+video_resizer "input.mp4" "output.mp4" --width 1280 --height 720
+
+-------
+
+Python Usage:
+
+from video_resizer.resizer import resize_with_ffmpeg
+
+resize_with_ffmpeg(
+    input_path="input.mp4",
+    output_path="output.mp4",
+    width=1280,
+    height=720
+)
+
+------
+
+Requirements:
+
+Python 3.6+
+FFmpeg must be installed and accessible from your PATH
