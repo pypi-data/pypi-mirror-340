@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: flexium
+Version: 0.0.1
+Summary: flexium
+Author-email: Daniel Braun <braundaniel89@outlook.com>, Bar Dubovski <bar.dubovski@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch==2.5.1
+Requires-Dist: torchvision==0.20.1
+Requires-Dist: pynvml==12.0.0
+Requires-Dist: pydantic==2.10.6
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+
+# client
+
+to test run mock server:
+
+`python ./mock_server.py --device cuda:0`
