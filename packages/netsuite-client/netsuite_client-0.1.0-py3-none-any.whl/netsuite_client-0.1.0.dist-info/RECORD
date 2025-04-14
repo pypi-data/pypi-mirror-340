@@ -1,0 +1,8 @@
+netsuite_client/__init__.py,sha256=Ae0D4fkugeU3PaMrPcR5WXa_gp30voxkfYi3aZqAHj4,399
+netsuite_client/client.py,sha256=mu-KF4VM9EEDmTTBSulnwWSuoBiDn83uR4j3-Jee_hA,8051
+netsuite_client/tests/test_client.py,sha256=Vre1_hNPPHD3le5YXzPAFQzxOkOPJd5ZU4vD26nhx3k,5599
+netsuite_client-0.1.0.dist-info/licenses/LICENSE,sha256=EUkXuNcQahruqBk9hQ7O0uA1ObrOC6pzttPIeBrfCVc,1535
+netsuite_client-0.1.0.dist-info/METADATA,sha256=_4QbJ_nXH5G8xOOENA68UtKLT6nQ4HVCH-KT3qd2B3s,3034
+netsuite_client-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+netsuite_client-0.1.0.dist-info/top_level.txt,sha256=TKr_iG7wFzdlHExU1yE_gbLtKqBK44ZQBOoYcUoRfwM,16
+netsuite_client-0.1.0.dist-info/RECORD,,
