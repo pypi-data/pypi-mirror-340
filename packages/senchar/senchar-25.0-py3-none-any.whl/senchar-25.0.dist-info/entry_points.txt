@@ -1,0 +1,3 @@
+[console_scripts]
+senchar=senchar.__main__:main
+
