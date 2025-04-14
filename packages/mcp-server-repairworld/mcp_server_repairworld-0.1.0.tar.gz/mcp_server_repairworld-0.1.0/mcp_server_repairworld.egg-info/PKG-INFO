@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: mcp_server_repairworld
+Version: 0.1.0
+Summary: An MCP server that exposes tools for interacting with a repair API
+Author-email: Nikhil Purwant <nikhil@nikhilpurwant.com>
+License-Expression: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: mcp>=1.6.0
+
+# MCP Server: RepairWorld
+
+This is an [MCP (Model Context Protocol)](https://pypi.org/project/mcp/) server that exposes tools for interacting with a repair request API. It allows AI models to create, retrieve, and list repair requests using structured tools.
+
+## 🚀 Features
+
+- ✅ MCP-compliant server built with [`fastmcp`](https://pypi.org/project/mcp/)
+- 🔧 Tools to:
+  - Create a repair request
+  - View a repair request by ID
+  - View all repair requests
+- 🌐 Customizable API base URL and authentication key via CLI
+- 🧩 Easy to integrate with [Google Agent Development Kit (ADK)](https://google.github.io/adk-docs/), Claude or other MCP-compatible agents
+
+## 📦 Installation
+
+You can install this package from PyPI:
+
+```bash
+pip install mcp-server-repairworld

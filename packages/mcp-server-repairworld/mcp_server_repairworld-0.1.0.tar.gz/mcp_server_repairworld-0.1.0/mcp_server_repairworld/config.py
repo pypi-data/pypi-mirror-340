@@ -1,0 +1,3 @@
+API_BASE = None
+CUSTOMER_API_KEY = None
+HEADERS = None

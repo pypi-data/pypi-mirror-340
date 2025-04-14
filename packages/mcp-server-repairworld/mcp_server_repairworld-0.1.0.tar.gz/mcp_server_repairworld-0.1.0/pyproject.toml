@@ -1,0 +1,32 @@
+[project]
+name = "mcp_server_repairworld"
+version = "0.1.0"
+description = "An MCP server that exposes tools for interacting with a repair API"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+
+authors = [
+  { name = "Nikhil Purwant", email = "nikhil@nikhilpurwant.com"}
+]
+
+dependencies = [
+  "httpx>=0.28.1",
+  "mcp>=1.6.0"  # Replace with the correct version you're using
+]
+
+# [project.scripts]
+# mcp_server_repairworld = "mcp_server_repairworld.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["mcp_server_repairworld"]
+
+# [tool.setuptools.package-data]
+# mcp_server_repairworld = ["*"]
+
+[tool.setuptools.dynamic]
+readme = { file = "README.md" }
