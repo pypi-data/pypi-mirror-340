@@ -1,0 +1,10 @@
+obragtools/query/__init__.py,sha256=2qq5zW1oT7vcOrgMMr1VTvzmfm8oZ1G_9CDtfYjT6FA,30
+obragtools/query/core.py,sha256=Y4e8_tjWwZJJx0_KJRoEAVffN4labtEoetLBybNlNhg,2420
+obragtools/reader/__init__.py,sha256=7mFYf4mc9d4Qh4b9BpimGSFNm13oOouadRnH16cyoCc,152
+obragtools/reader/function.py,sha256=skrjl1V4taCAnCfff_Rief0zDUkQ8G1GNxjRrg-ro9A,2541
+obragtools/reader/reader.py,sha256=s3RFdt6XjI8-sHTuB7HaK6KkwVjapXi_G75CHOer2i4,2671
+obragtools/reader/utils.py,sha256=jCO7MHmiee-ggdcfb-jsPaY0yRg-Ytp4fcvGkADKUAs,5591
+obragtools-0.1.3.dist-info/METADATA,sha256=pqGbjhbsqvMg_8arTTLZ8Z8MsOuGuCL6Az8iZUsNUCM,1194
+obragtools-0.1.3.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+obragtools-0.1.3.dist-info/top_level.txt,sha256=jdkB1U_sj3zPyXh7uSOWI6R_VpD0OpxdUkImnU7wJrA,11
+obragtools-0.1.3.dist-info/RECORD,,
