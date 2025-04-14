@@ -1,0 +1,6 @@
+ibis-framework[sqlite]>=10.4.0
+click
+pandas
+sqlalchemy
+
+[test]
