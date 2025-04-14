@@ -1,0 +1,7 @@
+README.md
+setup.py
+NetDecom.egg-info/PKG-INFO
+NetDecom.egg-info/SOURCES.txt
+NetDecom.egg-info/dependency_links.txt
+NetDecom.egg-info/requires.txt
+NetDecom.egg-info/top_level.txt
