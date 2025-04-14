@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: django_group_user_permissions
+Version: 0.0.1
+Summary: A Django package for managing user permissions and groups.
+Home-page: https://github.com/rimalsparsha/django_group_user_permissions
+Author: Sparsha Rimal
+Author-email: sparsharimal@gmail.com
+License: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django :: 3.2
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# DJANGO GROUP_USER_PERMISSIONS
