@@ -1,0 +1,2 @@
+[console_scripts]
+node-drain-analyzer = k8ops.node_drain_analyzer:main
