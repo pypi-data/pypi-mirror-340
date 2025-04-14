@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "mlexplainer"
+version = "0.1.1"
+description = "Advanced ML explanation library for data scientists using modern frameworks."
+authors = ["ZacharieBUISSON <zacharie.buisson@orange.fr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^2.2.4"
+pandas = "^2.2.3"
+coverage = "^7.8.0"
+matplotlib = "^3.10.1"
+shap = "^0.47.1"
+
+
+[tool.poetry.group.codequality.dependencies]
+black = "^25.1.0"
+isort = "^6.0.1"
+pylint = "^3.3.6"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.setuptools]
+package-dir = {"" = "mlexplainer"}
+
+[tool.poetry.urls]
+repository = "https://github.com/ZacharieBuisson1/mlexplainer"

@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: mlexplainer
+Version: 0.1.1
+Summary: Advanced ML explanation library for data scientists using modern frameworks.
+Author: ZacharieBUISSON
+Author-email: zacharie.buisson@orange.fr
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: coverage (>=7.8.0,<8.0.0)
+Requires-Dist: matplotlib (>=3.10.1,<4.0.0)
+Requires-Dist: numpy (>=2.2.4,<3.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: shap (>=0.47.1,<0.48.0)
+Project-URL: repository, https://github.com/ZacharieBuisson1/mlexplainer
+Description-Content-Type: text/markdown
+
+# mlexplainer
+Create a general ml explainer package, mainly focus on the shapley's values explainability
+
