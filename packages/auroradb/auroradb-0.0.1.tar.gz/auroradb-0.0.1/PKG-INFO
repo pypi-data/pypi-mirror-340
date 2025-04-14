@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: auroradb
+Version: 0.0.1
+Summary: Aurora
+Author-email: Swapnil Raktale <swapnil.raktale@gmail.com>
+Maintainer-email: Swapnil Raktale <swapnil.raktale@gmail.com>
+License-Expression: MIT
+Keywords: aurora
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymongo
+Requires-Dist: bson
+Dynamic: license-file
+
+# auroradb
+Mocking hydra/sandra with MongoDB
