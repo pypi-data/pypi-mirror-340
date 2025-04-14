@@ -1,0 +1,13 @@
+inifix/__init__.py,sha256=fUhFAuHr3_BuL-Y90kAtASCZaCTGkO5pQSqm3pnP2gI,311
+inifix/_floatencoder.py,sha256=pfHGoZKOMcxQAm1fQOsBfzzlmagaOptALn60kJTWf-w,1370
+inifix/_format.py,sha256=FWLRPdogo6OyHlzfk_7tFIboCOX7y2znJMMKStMtsC0,3786
+inifix/_io.py,sha256=ieTNvlXdAbemXxITxF8LgpLVe0IF7H4FJBnTh2rzBgA,22256
+inifix/_typing.py,sha256=cM1cfiFPdBIsWK1pMSp9gWpOM-Bvqpgj7KIk7I-otGU,1255
+inifix/_validation.py,sha256=gB4Nu32nETVN6HY0D7cpGsWCgpAg6YZP7cg8D3qV8F0,5821
+inifix/_version.py,sha256=EpnWggpU3I3bIowyB7FXV3Zcyts1GzGL8AR1q4cl4RA,203
+inifix/format.py,sha256=DVTfLUvTTKMAHzJ5PEsON2YyACqUNa_18UIMm2Avn8E,375
+inifix/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inifix-6.1.1.dist-info/METADATA,sha256=dRdIxx33OWKP6yplNWFejYyTTKEfr70XbfPjmtLBK14,14474
+inifix-6.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+inifix-6.1.1.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+inifix-6.1.1.dist-info/RECORD,,
