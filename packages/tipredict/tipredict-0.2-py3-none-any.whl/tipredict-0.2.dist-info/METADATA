@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: tipredict
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26.0
+Requires-Dist: pandas>=1.3.4
+Requires-Dist: tqdm>=4.66.4
+
+# tipredict
+
+## 📊 Model Info
+
+The models in this package were trained on [Alibaba Cluster-Trace-v2018](https://github.com/alibaba/clusterdata/blob/master/cluster-trace-v2018/schema.txt).  
+Measurements for CPU and memory average are based on the instance metrics provided in the trace dataset.
+
+---
+
+## ⚠️ CUDA Installation Notice
+
+Since CUDA wheels are not always installable via standard `pip install`, you must install `torch` and `torch-geometric` manually.
+
+### ✅ Recommended Versions
+
+These versions are tested and compatible (others might work, but ensure compatibility):
+
+- `torch==2.0.0+cu118`
+- `torch-geometric==2.6.1`
+- Requires Python ≥ **3.10**
+
+### 📦 Manual Installation Instructions
+
+```bash
+pip install torch==2.0.0+cu118 --extra-index-url https://download.pytorch.org/whl/cu118
+
+pip install torch-scatter -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+pip install torch-sparse -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+pip install torch-cluster -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+pip install torch-spline-conv -f https://data.pyg.org/whl/torch-2.0.0+cu118.html
+
+pip install torch-geometric==2.6.1
+```
+
+---
+
+## 🧠 Functions
+
+```python
+from tipredict import preprocess_GNN, run_pretrained, preprocess_dagtransformer, normalize
+```
+
+---
+
+## 📥 Inputs (Note: CSV files must include headers!)
+
+### 🔹 Input 1: Workflow CSV
+
+Shape: `number_workflows × (34 task-level features × number_tasks)`  
+(Predicted task features should be set to `0`.)
+
+#### Task-Level Features (Aggregated over instances):
+
+- `count`: Count of instances  
+- `mean_ca`, `var_ca`, `max_ca`, `min_ca`, `med_ca`, `skew_ca`, `kurt_ca`: Stats for **CPU average usage**
+- `mean_cm`, `var_cm`, `max_cm`, `min_cm`, `med_cm`, `skew_cm`, `kurt_cm`: Stats for **CPU max usage**
+- `mean_ma`, `var_ma`, `max_ma`, `min_ma`, `med_ma`, `skew_ma`, `kurt_ma`: Stats for **Memory average usage**
+- `mean_mm`, `var_mm`, `max_mm`, `min_mm`, `med_mm`, `skew_mm`, `kurt_mm`: Stats for **Memory max usage**
+- `mean_t`, `var_t`, `max_t`, `min_t`: Stats for **running time**
+- `maxtime`: Actual runtime
+
+---
+
+### 🔹 Input 2: DAG CSV
+
+Shape: `number_workflows × ((2 × number_tasks + 1) × number_tasks)`
+
+Each task includes **15 features** representing graph connectivity.
+
+#### DAG Feature Example (for 3-task workflow):
+
+> (If a node has multiple incoming/outgoing edges, the feature value is `10 / number_of_edges`)
+
+```
+# Task 1
+1o_1 0         # no edge to 1
+1o_2 5         # edge to 2
+1o_3 5         # edge to 3
+1i_1 0         # no incoming from 1
+1i_2 0
+1i_3 0
+
+# Task 2
+2o_1 0
+2o_2 0
+2o_3 10        # edge to 3
+2i_1 10        # incoming from 1
+2i_2 0
+2i_3 0
+
+# Task 3
+3o_1 0
+3o_2 0
+3o_3 0
+3i_1 5
+3i_2 5
+3i_3 0
+```
+
+---
+
+## ⚙️ Applications
+
+```python
+# GNN preprocessing
+preprocess_GNN(num_tasks, feature_csv, dag_csv)
+
+# DAGTransformer preprocessing
+preprocess_dagtransformer(num_tasks, feature_csv, dag_csv)
+
+# Normalize task-level features (tasks × 34)
+normalize(features)
+
+# Run pretrained models
+run_pretrained(
+    model="GAT",                    # or "GIN", "GraphSAGE", "GNN_ensemble", "DAGTransformer", "DT&GNN"
+    num_tasks=7,
+    memory=True,                   # if False, predicts CPU
+    data_GNN=...,                  # output of preprocess_GNN
+    data_DAGTransformer=...,       # output of preprocess_dagtransformer
+    penultimateLayer=False         # if True, returns penultimate layer output
+)
+```
+
+---
+
+
