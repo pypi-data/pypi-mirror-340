@@ -1,0 +1,17 @@
+src/Dataset.py,sha256=PgWoodznESrqakETsx2qzUSm44YzZdCaAUbC2kVZ9GQ,1475
+src/__init__.py,sha256=tjd1a7FZwzFyWhmYABIArww97GyYGbqeH5eyPsWRo4c,13
+src/layers.py,sha256=R4q_CgBNYpBr3V57GdMcDFnfqB4IjKvw0uvrPnLaLIA,2206
+src/loss.py,sha256=VRVv0rhXhOOIXFMrSipV-dSM-NPs3dbzPFzmMPb-jgE,2444
+src/preprocess.py,sha256=5cl2vFkmjVnDno6lx2sV4UvX7gxqT2uh3WGvi3a2X0E,2291
+src/run_scMAGCA.py,sha256=dQuC-dgzX2AgDYIJXj1A5ch2vKtShWi_ogxlkoCNLOg,8260
+src/run_scMAGCA_3omics.py,sha256=kK-7oMapl0I7uV-y6ljBPY6RAi0UnhzlAbtkWl_6mWs,6003
+src/run_scMAGCA_batch.py,sha256=3Pdpf420Drxaj_AzVAf79n3Ucw-9aXHUYuSM0636Rhg,4735
+src/scMAGCA.py,sha256=wFWN96VrSCYutQOy2s4ytOtAUaRAm11sY67LTaINLQo,13704
+src/scMAGCA_3omics.py,sha256=Nq4b3_EjFO88xhAFpqdBoQ3zUGf5FHk7jynO8aH7NJU,13921
+src/scMAGCA_batch.py,sha256=ir4f1VbTWSZDVBfYl1iiu_LtMMx-4vycL6fWzRws2FE,9857
+src/utils.py,sha256=2YGu769wYiDrjEjHPHrZHdvUir_32TLaIKKPzN_uQQU,6815
+scMAGCA-1.0.2.dist-info/LICENSE,sha256=ACwmltkrXIz5VsEQcrqljq-fat6ZXAMepjXGoe40KtE,1069
+scMAGCA-1.0.2.dist-info/METADATA,sha256=h2ULf70dFw7aHjmnYyMXpYnBikgPZX770bSj0EIroXE,4447
+scMAGCA-1.0.2.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+scMAGCA-1.0.2.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+scMAGCA-1.0.2.dist-info/RECORD,,
