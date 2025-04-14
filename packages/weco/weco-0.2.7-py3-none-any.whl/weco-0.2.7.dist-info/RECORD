@@ -1,0 +1,11 @@
+weco/__init__.py,sha256=6ZYuD51wx6bytYdLFMvzihYrpBlSxiFbmuiEl0z_AFo,124
+weco/api.py,sha256=8rIf2Fy3tN6GW7BG1CaggtfE9pW56I1erzwLCgawcVE,3511
+weco/cli.py,sha256=h8FevpztBob7OziDTIKh4y9CSnehkHJp2ydts6V6DhM,17317
+weco/panels.py,sha256=HHWmrnc2EJBJ8AEHb8mxlq30m-3q0j_4axc0r17sTnE,12349
+weco/utils.py,sha256=hhIebUPnetFMfNSFfcsKVw1TSpeu_Zw3rBPPnxDie0U,3911
+weco-0.2.7.dist-info/licenses/LICENSE,sha256=p_GQqJBvuZgkLNboYKyH-5dhpTDlKs2wq2TVM55WrWE,1065
+weco-0.2.7.dist-info/METADATA,sha256=AlBfVky2jZ6C2MnB8k_WkSMyucTeTE1Ias3y3_4bVsE,14577
+weco-0.2.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+weco-0.2.7.dist-info/entry_points.txt,sha256=ixJ2uClALbCpBvnIR6BXMNck8SHAab8eVkM9pIUowcs,39
+weco-0.2.7.dist-info/top_level.txt,sha256=F0N7v6e2zBSlsorFv-arAq2yDxQbzX3KVO8GxYhPUeE,5
+weco-0.2.7.dist-info/RECORD,,
