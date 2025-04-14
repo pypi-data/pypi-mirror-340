@@ -1,0 +1,119 @@
+Metadata-Version: 2.2
+Name: topydo
+Version: 0.15
+Summary: A powerful todo.txt application for the console
+Home-page: https://github.com/topydo/topydo
+Author: Bram Schoenmakers
+Author-email: bram@topydo.org
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+License-File: AUTHORS.md
+Requires-Dist: arrow>=0.7.0
+Requires-Dist: colorama>=0.2.5; sys_platform == "win32"
+Provides-Extra: columns
+Requires-Dist: urwid>=1.3.0; extra == "columns"
+Requires-Dist: watchdog>=0.8.3; extra == "columns"
+Provides-Extra: ical
+Requires-Dist: icalendar; extra == "ical"
+Provides-Extra: prompt
+Requires-Dist: prompt_toolkit>=0.53; extra == "prompt"
+Requires-Dist: watchdog>=0.8.3; extra == "prompt"
+Provides-Extra: test
+Requires-Dist: coverage>=4.3; extra == "test"
+Requires-Dist: freezegun; extra == "test"
+Requires-Dist: green; extra == "test"
+Requires-Dist: icalendar; extra == "test"
+Requires-Dist: pylint>=1.7.1; extra == "test"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
+
+topydo - a powerful todo.txt application
+========================================
+
+[![Build Status](https://travis-ci.org/topydo/topydo.svg?branch=master)](https://travis-ci.org/topydo/topydo) [![codecov.io](https://codecov.io/github/topydo/topydo/coverage.svg?branch=master)](https://codecov.io/github/topydo/topydo?branch=master) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/2957b80fffa0460bbb0e1ff7948f0ee7)](https://www.codacy.com/app/bram85/topydo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bram85/topydo&amp;utm_campaign=Badge_Grade) [![PyPI version](https://badge.fury.io/py/topydo.svg)](https://badge.fury.io/py/topydo)
+
+topydo is a powerful todo list application using the [todo.txt format][1].
+
+It has three user interfaces:
+
+* Command Line Interface (CLI) - originally inspired by the [todo.txt CLI][2]
+  by Gina Trapani.
+* Prompt mode - a convenience mode for the CLI. Launch with `topydo prompt`.
+* Column mode - a text based user interface (TUI) with customizable columns and
+  vim-like bindings. Launch with `topydo columns`.
+
+![png][6]
+
+Features
+--------
+
+Feature-wise, the todo.txt format is quite limited, but can be extended using
+tags. topydo natively supports some of these tags to implement:
+
+* **Due** and **start dates**;
+* Maintain **dependencies** between todo items;
+* **recurring** todo items;
+
+topydo also offers:
+
+* Fine-grained control on **sorting** and **grouping** items;
+* Customizable output;
+* Some conveniences when adding new items (e.g. adding creation date and use
+  **relative dates**);
+* Additional output formats to iCalendar, JSON and Graphviz Dot;
+* Aliases for frequently used commands.
+* Text based todo identifiers, which are more stable and convenient than
+  line-based todo identifiers.
+
+Yet, topydo is fully todo.txt compliant. The text file can be processed by
+other todo.txt tools (but they may not interpret the tags properly).
+
+The documentation on [the TiddlyWiki][4] provides more information about the
+features and how to use topydo.
+
+Installation
+------------
+
+Simply install with:
+
+    pip3 install topydo
+
+If you wish to use column mode: install additional dependencies with:
+
+    pip3 install topydo[columns]
+
+Similarly, for prompt mode you can install additional dependencies with:
+
+    pip3 install topydo[prompt]
+
+Demo
+----
+
+CLI mode:
+
+![gif][5]
+
+[1]: https://github.com/ginatrapani/todo.txt-cli/wiki/The-Todo.txt-Format
+[2]: https://github.com/ginatrapani/todo.txt-cli
+[3]: https://github.com/bram85/todo.txt-tools
+[4]: https://topydo.org/
+[5]: https://raw.githubusercontent.com/topydo/topydo/master/docs/topydo.gif
+[6]: https://raw.githubusercontent.com/topydo/topydo/master/docs/columns.png
