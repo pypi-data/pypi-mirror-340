@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/document_model.py
+src/napstech_models.egg-info/PKG-INFO
+src/napstech_models.egg-info/SOURCES.txt
+src/napstech_models.egg-info/dependency_links.txt
+src/napstech_models.egg-info/top_level.txt
