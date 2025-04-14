@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: funlib.persistence
+Version: 0.6.1
+Summary: Interfaces for data (arrays and graphs) and storage formats (databases and file formats)
+Author-email: William Patton <pattonw@hhmi.org>, Jan Funke <funkej@hhmi.org>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: zarr<3,>=2
+Requires-Dist: numcodecs<0.16.0,>0.13
+Requires-Dist: iohub>=0.2.0b0
+Requires-Dist: funlib.geometry>=0.3.0
+Requires-Dist: networkx>=3.0.0
+Requires-Dist: pymongo>=4.0.0
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: dask>=2024.0.0
+Requires-Dist: toml>=0.10.0
+Requires-Dist: psycopg2-binary>=2.9.5
+Provides-Extra: dev
+Requires-Dist: coverage>=7.7.1; extra == "dev"
+Requires-Dist: mypy>=1.15.0; extra == "dev"
+Requires-Dist: pytest>=8.3.5; extra == "dev"
+Requires-Dist: pytest-mock>=3.14.0; extra == "dev"
+Requires-Dist: ruff>=0.11.2; extra == "dev"
+Requires-Dist: types-networkx; extra == "dev"
+Requires-Dist: types-psycopg2; extra == "dev"
+Requires-Dist: types-toml; extra == "dev"
+Dynamic: license-file
+
+[![tests](https://github.com/funkelab/funlib.persistence/actions/workflows/tests.yaml/badge.svg)](https://github.com/funkelab/funlib.persistence/actions/workflows/tests.yaml)
+[![ruff](https://github.com/funkelab/funlib.persistence/actions/workflows/ruff.yaml/badge.svg)](https://github.com/funkelab/funlib.persistence/actions/workflows/ruff.yaml)
+[![mypy](https://github.com/funkelab/funlib.persistence/actions/workflows/mypy.yaml/badge.svg)](https://github.com/funkelab/funlib.persistence/actions/workflows/mypy.yaml)
+[![pypi](https://github.com/funkelab/funlib.persistence/actions/workflows/publish.yaml/badge.svg)](https://pypi.org/project/funlib.persistence/)
+
+# funlib.persistence
+Interfaces for data (arrays and graphs) and storage formats (databases and file formats)
+
+# installation
+Regular installation for usage:
+`pip install funlib.persistence`
+
+Developer installation including pytest etc.:
+`pip install funlib.persistence[dev]`
+
