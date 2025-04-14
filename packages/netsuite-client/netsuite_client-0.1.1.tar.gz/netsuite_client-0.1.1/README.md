@@ -1,0 +1,74 @@
+# NetSuite Client
+
+A Python client library for interacting with NetSuite's REST and SuiteQL APIs.
+
+## Features
+
+- OAuth 1.0 authentication with NetSuite
+- Support for REST API calls
+- SuiteQL query execution
+- Custom scriptlet execution
+
+## Installation
+
+```bash
+pip install netsuite-client
+```
+
+## Quick Start
+
+```python
+from netsuite_client import NetSuiteClient
+
+# Initialize the client
+client = NetSuiteClient(
+    realm="YOUR_REALM",
+    account="YOUR_ACCOUNT",
+    consumer_key="YOUR_CONSUMER_KEY",
+    consumer_secret="YOUR_CONSUMER_SECRET",
+    token_id="YOUR_TOKEN_ID",
+    token_secret="YOUR_TOKEN_SECRET"
+)
+
+# Execute a SuiteQL query
+results = client.get_suiteql_query("SELECT * FROM transaction WHERE tranDate = '2024-01-01'")
+
+# Execute a custom scriptlet
+results = client.get_scriptlet({"script": "123", "deploy": "1"})
+```
+
+## Authentication
+
+This library uses OAuth 1.0 for authentication. You'll need to set up an integration record in your NetSuite account to get the required credentials:
+
+1. Go to Setup > Integration > Manage Integrations > New
+2. Enable Token-Based Authentication
+3. Copy the Consumer Key and Consumer Secret
+4. Create an Access Token and copy the Token ID and Token Secret
+
+## Configuration
+
+The following parameters are required to initialize the client:
+
+- `realm`: Your NetSuite realm ID
+- `account`: Your NetSuite account ID (the xxxxx part of xxxxx.app.netsuite.com)
+- `consumer_key`: OAuth consumer key from your integration record
+- `consumer_secret`: OAuth consumer secret from your integration record
+- `token_id`: OAuth token ID from your access token
+- `token_secret`: OAuth token secret from your access token
+
+Optional parameters:
+- `timeout`: Request timeout in seconds (default: 60)
+- `logger`: Custom logger instance (default: standard logging)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the BSD 3-Clause License - see the [LICENSE](LICENSE) file for details.
+
+## Credits
+
+Created and maintained by Continuous AI, Inc. 
