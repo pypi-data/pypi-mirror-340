@@ -1,0 +1,11 @@
+inception_audittrail_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inception_audittrail_logger/audittrail_elastic.py,sha256=xlznTB1wKbG_PvZ23YuXjpwaYfyJCy4K5EeGk5IRzFk,933
+inception_audittrail_logger/audittrail_mongo.py,sha256=ljvjBD-0dieMkjvKKzVNeLV5-PJ_l7PJg36ghqaEtqM,917
+inception_audittrail_logger/format_data.py,sha256=bAWNBtu1MSHtkGCPl7_eQn72e5X1c6_U9Ric2_4PlSQ,5100
+inception_audittrail_logger/logging_audittrail.py,sha256=qpSg0zkVGQvC2NVvj0BocK23UBIQ10sCZtsq3v81yiE,2374
+inception_audittrail_logger/settings_audittrail.py,sha256=OgypCGlvBUIuID1XhhF8KEOdYoJRFzdHA5DxsC1sT1A,2242
+inception_audittrail_logger-0.1.22.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inception_audittrail_logger-0.1.22.dist-info/METADATA,sha256=Twriund7osQ5J14PjXKPsOeYqZpaotuAb-JYphbMMfY,902
+inception_audittrail_logger-0.1.22.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+inception_audittrail_logger-0.1.22.dist-info/top_level.txt,sha256=guGqRwLKTUclwpUvQEiu-FeMlEnGUwAdyctc4cr-UiY,28
+inception_audittrail_logger-0.1.22.dist-info/RECORD,,
