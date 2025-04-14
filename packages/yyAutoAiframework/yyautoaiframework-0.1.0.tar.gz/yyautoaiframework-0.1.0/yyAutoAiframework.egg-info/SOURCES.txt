@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+yyAutoAiframework/__init__.py
+yyAutoAiframework.egg-info/PKG-INFO
+yyAutoAiframework.egg-info/SOURCES.txt
+yyAutoAiframework.egg-info/dependency_links.txt
+yyAutoAiframework.egg-info/requires.txt
+yyAutoAiframework.egg-info/top_level.txt
