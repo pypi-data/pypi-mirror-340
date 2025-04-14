@@ -1,0 +1,215 @@
+--- You MUST have SUDO privileges to setup or update Keystack! ---
+--- If your SUDO require you to enter your password interactively, then you must install this as the root user --- 
+
+DESCRIPTION:
+   Use this script to do one of the followings:
+       -setup:      For new installation
+       -update:     Update an existing docker Keystack image and update your existing keystackSystemSettings.env
+       -getSamples: Generate samples for your environment.
+                    Must have already ran setup.
+
+REQUIREMENTS:
+   - sudo priviledges
+   - Python 3.7+
+   - For setup: pip install -r requirements.txt
+
+   - For a non-docker installation:
+        - keystack-<version>-py3-none-any.whl
+        - Add your python bin path to your .bashrc file and source it so you could use the "keystack" CLI
+
+   - For Docker installation: You should have docker-compose installed. Not a must-have.
+
+   - Linux OS
+   - Minimum: 4 Cores / 16G RAM 
+     (This depends on usage. Increase resources for heavier usage)
+   - storage: Minimum 50G  
+     (This depends on the amount of save results that you archived. 
+      You must remove not needed results to save storage space or have a large storage volume.)
+
+   SETUP: Setting up Keystack requires two steps:
+         Install Keystack either for Docker or a pip installation in a native Linux OS.
+         This instruction only comes with a Docker image (The recommended way)
+	      Pip install requires a .whl file, which you can only get privately.
+
+         Note> This installation will attempt to use docker-compose to bring up the Keystack container and Mongo container.
+               If this script detects that you don't have docker-compose installed, it will default to using 
+               the "docker run" command.  The problem with this is that you must use a static IP address. 
+               0.0.0.0/localhost/dns won't work on the web browser.
+
+         Step 1> pip install -r requirements.txt
+
+         Step 2> For Docker installation:
+	                 Enter: python3 setupKeystack.py -setup docker
+      
+                 For non Docker installation:
+                    1> Enter: pip install keystackSetup_<version>.whl 
+                    2> Enter: pthon3 setupKeystack -setup linux
+   
+         Step 3> Log out and log back in.
+                 The reason is because the installation just added you to the user group Keystack.
+                 In order to access the new Keystack folders, you must log out and log back in.
+
+   UPDATE:
+        python setupKeystack.py -update <docker or linux>
+
+	     The -update parameter will not create Keystack folders.
+	     This will update your existing /path/KeystackSystem/keystackSystemSettings.env,
+        services files if there are new params, update your local sample files and install a new docker Keystack image.
+        Update will not remove your current data and files.
+
+        For non-docker update:
+            pip install keystackSetup_<version>.whl -U
+
+   GET SAMPLES:
+         python3 setupKeystack.py -getSamples -sampleDest <dest path>
+
+         This will create a folder called KeystackSamples containing all up-to-date samples to the <dest path>.
+
+COMES WITH:
+   - Docker image: dockerKeystack_<version>.tar
+   - Keystack Modules
+
+INSTALL and RUN DOCKER IMAGES:
+   The followings are performed during setup
+      - Install Mongod: docker pull mongo:6.0.2
+      - Install Keystack: docker load -i dockerKeystack_<version>.tar
+
+   If you do not have docker-compose installed:
+      # Assuming that you installed Keystack folders in /opt
+      - Start Mongod:   docker run -d -p 27017:27017 -v /opt/KeystackSystem/MongoDB:/data/db --name mongo --rm mongo
+
+      - Start Keystack: docker run -p 8028:8028 -p 443:443 -d -v /opt/KeystackTests:/opt/KeystackTests -v /opt/KeystackSystem:/opt/KeystackSystem --name keystack --rm keystack:0.6.5
+
+   If you have docker compose or docker-compose:
+      - docker compose up -d or docker-compose up -d
+
+   Run containers manually:
+      - docker run -d -p 27017:27017 -v /opt/KeystackSystem/MongoDB:/data/db --name mongo --rm mongo:6.0.2
+      - docker run -p 8028:8028 -p 443:443 -d -v /opt/KeystackTests:/opt/KeystackTests -v /opt/KeystackSystem:/opt/KeystackSystem --name keystack --rm keystack:0.6.5
+
+FOR NEW SETUP:
+   Step 1> 
+     - Enter: python3 setupKeystack.py -setup <docker or linux>
+     
+     - This step will ask you a few questions to create the necessary Keystack folders.
+
+     - The setup will create a keystack user and a Keystack group on your Linux host.
+
+     - The setup will put you (the person running this setup) to the Keystack group so you 
+       could access Keystack folders.
+
+     - NOTE! You must manually add other Keystack users to the Keystack group in order for them to use Keystack.
+             Otherwise, they have no acces to enter Keystack folders.
+
+             sudo groupadd -aG Keystack <user>
+   
+     - Do not change the file and folder ownerships because the container requires mounting
+       folders as volumes for read/write with specific user/group uid and gid. 
+       The Keystack container operates as user "keystack".
+
+     - When you create new files and folders in KeystackTests, you must:
+          - chown -R :Keystack <file> or <folder>
+          - chmod -R 770 <file> or <folder>
+
+      WHAT YOU NEED TO KNOW FOR RUNNING SETUP:
+
+      You will need to know where to install Keystack folders.
+      For example, if you enter: /opt
+      Setup will install the following folders: /opt/KeystackTests and /opt/KeystackSystem
+
+      For non Docker installation:
+         During the setup, you will need to know the full path to the Python version 3.
+            For example, if you normally enter python3.10 to run python apps, enter on CLI to get the full path:  which python3.10
+            For example: /usr/local/python3.10.0/bin/python3.10
+
+   STEP 2> You must log out and log back in to be able to access the Keystack folders
+           because this installation just added you to the Keystack group and all the Keystack
+           folders are owned by the Keystack group. 
+           
+           Either logout or 
+           - Enter: pkill -KILL -u <your login name>
+
+   STEP 3> Test it out!
+
+      Go to where you installed Keystack:
+        - cd /path/KeystackTests/Docker
+            - ./dockerQuickTest.sh <version>
+
+        - For REST API samples: Get and edit from the installation folder: Templates/restApiSamples
+          Change the IP address and port to your setup's IP.  Port is 8028.
+
+       - Test results are located in: /path/KeystackTests/Results
+       - You could archive results to the folder: /path/KeystackTests/ResultsArchive.
+         Results in this folder will never get deleted autoamtically. 
+
+KEYSTACK COMES WITH THE FOLLOWING Modules and Playbooks:
+   - CustomPythonScripts
+       - You could run standalone as-is python scripts.
+       - And you could integrate tightly with Keystack so your python scripts
+         could consume your env resources dynamically such as ip addresses, login credentials,
+         etc, inside your python scripts by doing this in your script:
+
+               from keystackEnv import keystackObj
+
+               # Instead of using print, use the followings which will get logged into testcase test.log:
+               keystackObj.logInfo()                                                                
+               keystackObj.logWarning() <-- This will show in logs and summary report
+               keystackObj.logDebug()   <-- This will show in logs
+               keystackObj.logFailed()  <-- This will show failures in your logs and summary report
+               keystackObj.logError()   <-- This will abort the script immediately
+
+               # Get dynamic variables from the Env parameter/values that was used in the playbook                              
+               keystackObj.logInfo(f': {keystackObj.moduleProperties["envParams"]["server1"]}')
+
+               keystackObj.logWarning('This is a sample warning message from a script')
+               keystackObj.logDebug('This is a sample debug message')
+
+               # Createfailures using logFailed() 
+               keystackObj.logFailed('Failed: This is a sample test failed message')
+
+           
+   - Other modules are upon request: LoadCore, AirMosaic, IxSuiteStore
+
+GET FAMILIAR WITH KEYSTACK:
+   Use /path/KeystackTests/Modules/CustomPythonScripts to get familiar with Keystack.
+      Playbook: /path/KeystackTests/Playbooks/Samples/pythonSample.yml
+
+KEYSTACK FEATURES:
+   Settings: /path/KeystackSystem/keystackSystemSettings.env
+   
+   -group <name>     :A name of a folder to store the results. Defaults to "Default" group.
+   -awsS3            :Automatically upload results to your AWS S3 bucket 
+   -jira             :Automatically open a bug defect in Jira 
+   -trackResults     :Plot results in a CSV file for charting and graphing
+   -emailResults     :Email results to a list of people 
+   -sessionId <name> :Give your test a name to identify your test in the results folder
+   -holdEnvsIfFailed :Keep the test env reserved for debugging. Manually releasing the env when done.
+   -pauseOnError     :Pause the test upon each failure fore debugging.
+   -abortTestOnFailure :Abort the test as soon as it encounters a failure or error.
+
+   
+   - CUSTOMZING THE TEST REPORT layout:
+     To see how, look inside: /path/KeystackSystem/keystackSystemSettings.env.
+
+   
+TROUBLESHOOTING:
+   - Edit keystackSystemSettings.env
+        - keystack_mongoDbIp=<Actual ip address>
+        - keystack_localHostIp=<Actual ip address>
+
+   - docker container stop <mongodb> <keystack>
+   - docker container rm <mongodb> <keystack>
+   - docker run -d -p 27017:27017 -v /opt/KeystackSystem/MongoDB:/data/db --name mongo --rm mongo:6.0.2
+   - docker run -p 8028:8028 -p 443:443 -it -v /opt/KeystackTests:/opt/KeystackTests -v /opt/KeystackSystem:/opt/KeystackSystem --name keystack --rm --entrypoint bash keystack:0.8.0
+
+   When done:
+      - Exit container
+      - Edit keystackSystemSettings.env
+        - keystack_mongoDbIp=0.0.0.0
+        - keystack_localHostIp=0.0.0.0
+      - docker container rm <keystack>
+      - docker run -p 8028:8028 -p 443:443 -d -v /opt/KeystackTests:/opt/KeystackTests -v /opt/KeystackSystem:/opt/KeystackSystem --name keystack --rm keystack:<version>
+       
+
+
+
