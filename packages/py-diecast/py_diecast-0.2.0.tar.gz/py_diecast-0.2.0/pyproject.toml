@@ -1,0 +1,53 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-diecast"
+version = "0.2.0"  # Post-hardening release
+description = "A Python tool to enforce type hints as runtime assertions."
+readme = "README.md"
+requires-python = ">=3.8" # Specify minimum Python version
+authors = [
+    { name = "toast", email = "toast@bytebot.site" },
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",  # Or 3 - Alpha / 5 - Production/Stable
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+[project.urls]
+Homepage = "https://github.com/GWUDCAP/diecast"
+Repository = "https://github.com/GWUDCAP/diecast"
+# Add dependencies here if needed later, e.g.,
+# dependencies = [
+#     "some-dependency"
+# ]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # Look for packages in the 'src' directory 
+
+# Add this section for pytest configuration
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",      # Correct path relative to project root (diecast/)
+] 
+
+# Logging configuration - proper options from pytest documentation
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(levelname)-8s %(name)s: %(message)s"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+
+# Remove unsupported 'loggers' option 
