@@ -1,0 +1,6 @@
+setup.py
+indexingretrieval/__init__.py
+indexingretrieval.egg-info/PKG-INFO
+indexingretrieval.egg-info/SOURCES.txt
+indexingretrieval.egg-info/dependency_links.txt
+indexingretrieval.egg-info/top_level.txt
