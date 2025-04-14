@@ -1,0 +1,16 @@
+[project]
+name = "jam-student-grade-tracker"
+version = "0.1.1"
+description = "A simple CLI jam-student-grade-tracker"
+authors = [{name = "JamilaYDhedhi", email = "nurjamila1@gmail.com"}]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "rich>=14.0.0",
+]
+[project.scripts]
+tracker = "main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]    # Use setuptools instead of hatchling
+build-backend = "setuptools.build_meta"
