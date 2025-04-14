@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: bbqudit
+Version: 0.0.1
+Summary: Generalisation of bivariate bicycle codes to qudits.
+Project-URL: Homepage, https://github.com/e-kneip/qudit-bivariate-bicycle
+Author-email: "Eleanor F. Kneip" <eleanor.kneip.24@ucl.ac.uk>
+License-Expression: MIT
+License-File: LICENSE
+Requires-Dist: galois
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Description-Content-Type: text/markdown
+
+# qudit-bivariate-bicycle
+Implementation of the bivariate bicycle code for qudits.
