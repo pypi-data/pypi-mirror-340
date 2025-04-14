@@ -1,0 +1,11 @@
+z3c/breadcrumb/README.rst,sha256=HRviTg6uVPzUL80m8dwCfHvfmtt280WP7jzsm359kog,5351
+z3c/breadcrumb/__init__.py,sha256=kZld9hAwZKsWJcPEwCtTJPjkO9rCnyRtfK-2JheqTbI,18
+z3c/breadcrumb/browser.py,sha256=MLTDx_AN-KvXDWcY8Ui0CWLscSiAWN6GT2Eue_kEMUY,3226
+z3c/breadcrumb/configure.zcml,sha256=ppKlZaTsp3P8BOXS5-AiLvxZYK_4kRJD89FdDger9vo,450
+z3c/breadcrumb/interfaces.py,sha256=UFKAIO66UMc0N2KRQAwZwilbfIUGBDNa_aqBwTxa--Y,1517
+z3c/breadcrumb/tests.py,sha256=tCe1gdlzpToWpM9OqQWWjYT9-Gk0iAu14foNo9p3FHw,1994
+z3c_breadcrumb-4.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+z3c_breadcrumb-4.0.dist-info/METADATA,sha256=MoyhiJDR0FdH4_xfQMGfZe8qd5GOKX0l5gkVKJEt_5A,9157
+z3c_breadcrumb-4.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+z3c_breadcrumb-4.0.dist-info/top_level.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c_breadcrumb-4.0.dist-info/RECORD,,
