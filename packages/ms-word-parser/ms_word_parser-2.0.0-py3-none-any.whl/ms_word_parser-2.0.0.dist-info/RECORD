@@ -1,0 +1,9 @@
+ms_word_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ms_word_parser/parse_docx.py,sha256=eTGg1AU6hV8JfvNkx3B4aq7mSwztQgTB2pQW7DTOnO8,95734
+ms_word_parser/tips.py,sha256=8Vlqcz_JO9HLVu8eU9hDot1Rf3nCYjL4r13NVkUX-jg,12037
+ms_word_parser-2.0.0.dist-info/licenses/LICENSE,sha256=pe-DVIu63goM_LGiJROZ9QwDjHVRAAVAtvGJp2Dqd9M,1072
+ms_word_parser-2.0.0.dist-info/METADATA,sha256=UC7XaRyeIOugQ8JCtRg6imgRn_S0A3vpXZND13Aqhdg,7853
+ms_word_parser-2.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ms_word_parser-2.0.0.dist-info/entry_points.txt,sha256=HlUOARkVz43tGSOZauWW6WuSm9v8qF_eoVX64j-tVcU,62
+ms_word_parser-2.0.0.dist-info/top_level.txt,sha256=zd60pH05AaF5jrnZMOnlh6j8RUXj_YWF5orwLApj7hc,15
+ms_word_parser-2.0.0.dist-info/RECORD,,
