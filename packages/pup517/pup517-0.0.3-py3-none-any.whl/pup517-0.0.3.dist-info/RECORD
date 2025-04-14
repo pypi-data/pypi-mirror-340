@@ -1,0 +1,12 @@
+pup517/__about__.py,sha256=SGc1Y4mNZxRucqqGfNuu0IE3Y6Pvz1M3xSdOsooouhw,127
+pup517/__init__.py,sha256=4Jt0zBMVNb7w745CBBt-HaIC3acsSxOARhEVqyGh2BA,105
+pup517/backend.py,sha256=1OFx1OwiS2lA6lbcFXkyUpx3-wO7bFYMxxm445I8D8s,1855
+pup517/fetch.py,sha256=oN2eRZ204_zm8KKFQcYzaxRTtDeEtUlnkKvqVtrz8KE,3081
+pup517/pkg.py,sha256=X8YVoCaWnPJg80THcB4WsRppQQBuwqTisYMSnqFWHLA,8797
+pup517/build_system/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pup517/build_system/base.py,sha256=E_eRbS2S-f1tPasu3Q4p4yzG_r9KeVVMtD-ZhnZAhzY,1883
+pup517/build_system/simple_cc.py,sha256=qAlpiR_pBOETB-jicbxNLDp5ld8sSm-Jw27YFy1zqW4,1733
+pup517-0.0.3.dist-info/METADATA,sha256=I-aygPnGUAabQhRAjlcaLxmEjyC0_yY5-oCogV4z4bY,1709
+pup517-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pup517-0.0.3.dist-info/licenses/LICENSE.txt,sha256=2rS46QxOPuqEaHSGjM05lEGf_Fe-V1Zq0gEg983cES8,1097
+pup517-0.0.3.dist-info/RECORD,,
