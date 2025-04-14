@@ -1,0 +1,13 @@
+ndjsonlib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ndjsonlib/data_file.py,sha256=nnd1OtU8o9ofuDWWC7cyRn5CZmlKx_IrZQ1j6y_Rito,3834
+ndjsonlib/dataset_name.py,sha256=a55MSBeWexmdAm2tp2I1dEKZ33RT5kHEUAra1YQHjLg,2869
+ndjsonlib/json_data_file.py,sha256=jJuaa6a38wh9qPQUJW29ieBfEag9gy15BsaGNsdoneM,5836
+ndjsonlib/metadata_file.py,sha256=8yxAXZLPnI6ZbH-1Wswc7xIvQyaXbOA5dLUASC0qHGs,2484
+ndjsonlib/ndjson_data_file.py,sha256=TuztCC1CBftmNfGm1F8_Xa_U-59HJmL7FmG1Ib2CCrc,3387
+ndjsonlib/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ndjsonlib/models/dataset.py,sha256=vDGNvaFlXO4dpnoI_eVDmo0jzkF7vJvPNL8DtdqzimA,1349
+ndjsonlib-0.0.4.dist-info/licenses/LICENSE.md,sha256=Iuor3BO0gZ-M_OnRnNxoqzDb3u2ZKmifdR2jpwUezXw,1103
+ndjsonlib-0.0.4.dist-info/METADATA,sha256=Z49RI2i3Xdg_4CVbzscOa-RZXFdjMRZAhTwdJNV9cSM,2267
+ndjsonlib-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+ndjsonlib-0.0.4.dist-info/top_level.txt,sha256=8P4WwpUQQH_kMaH-rF0tBEqBB4kr1aKAJOWAF5_bnuk,10
+ndjsonlib-0.0.4.dist-info/RECORD,,
