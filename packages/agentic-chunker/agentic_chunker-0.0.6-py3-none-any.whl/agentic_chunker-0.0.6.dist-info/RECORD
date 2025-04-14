@@ -1,0 +1,9 @@
+agentic_chunker/__init__.py,sha256=pbJfiGXEyX_Fp7k_K0MsXo3ec3u_T_8hcf1mILsTB_8,65
+agentic_chunker/main.py,sha256=hiJQAhOulvUnDCSitKxZMNzJrldilqvjtymMRzcHAus,3078
+agentic_chunker/prompts.py,sha256=QyMUSAKoufZFeRQ3VHsGcfLzGM2YeMkgBVFyt1NNSl8,1763
+agentic_chunker/version.py,sha256=CzcXzRPJNqTNVzWp48bKd5k9CaHSjpVkLYKkiQcGpAY,21
+agentic_chunker-0.0.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+agentic_chunker-0.0.6.dist-info/METADATA,sha256=0decfjHFrPSb1QD3Hs9MQLjiuy9u_cYxaaJG6t78Hk0,1674
+agentic_chunker-0.0.6.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+agentic_chunker-0.0.6.dist-info/top_level.txt,sha256=_o-yRSwsmnRU2G9XfYK11-sRZb6ZK6HaAFmGokV56AE,16
+agentic_chunker-0.0.6.dist-info/RECORD,,
