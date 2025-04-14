@@ -1,0 +1,10 @@
+README.md
+setup.py
+custom_terminal/__init__.py
+custom_terminal/main.py
+custom_terminal.egg-info/PKG-INFO
+custom_terminal.egg-info/SOURCES.txt
+custom_terminal.egg-info/dependency_links.txt
+custom_terminal.egg-info/entry_points.txt
+custom_terminal.egg-info/requires.txt
+custom_terminal.egg-info/top_level.txt
