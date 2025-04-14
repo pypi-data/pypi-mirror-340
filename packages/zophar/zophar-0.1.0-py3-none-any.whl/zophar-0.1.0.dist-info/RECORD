@@ -1,0 +1,10 @@
+zophar/__init__.py,sha256=LPWLYHYWgCl0RFekqPzy8h1K2z2ehz0snbyETHxInX0,169
+zophar/__main__.py,sha256=EnU7l9a5IM67l76YmYQXWnM552FZfxP0uZj9lPShyQs,858
+zophar/browser.py,sha256=7fO0gx2C02kcs5st7rZneOetVxdZPp68y6DPaLHFdHM,5684
+zophar/const.py,sha256=DZkKYCoSTOQiyDRhmYq3QS5gXFKl246qs9y7Aly6Iuc,85
+zophar/models.py,sha256=EwlucXvpEd1cxdHn4slKBgWhSu3ytM-44_DwjQTydU8,2006
+zophar/parsers.py,sha256=klJTn96d05_xGaUPxoCpnumARvubQnA58bjWTZmQ0Gk,6280
+zophar-0.1.0.dist-info/METADATA,sha256=0-GWZreewEaUEx5CHu3O4p9dd6MINRn0jb1UHFyxkBE,1759
+zophar-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+zophar-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+zophar-0.1.0.dist-info/RECORD,,
