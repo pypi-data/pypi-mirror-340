@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+netsuite_client/__init__.py
+netsuite_client/client.py
+netsuite_client.egg-info/PKG-INFO
+netsuite_client.egg-info/SOURCES.txt
+netsuite_client.egg-info/dependency_links.txt
+netsuite_client.egg-info/requires.txt
+netsuite_client.egg-info/top_level.txt
+netsuite_client/tests/test_client.py
