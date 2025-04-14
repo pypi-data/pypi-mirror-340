@@ -1,0 +1,5 @@
+bc_device_sdk-0.3.6.dist-info/METADATA,sha256=8JBb7pp8XX0F6zg0sD2cGACmJZaioNSVAvFkSxmiY20,286
+bc_device_sdk-0.3.6.dist-info/WHEEL,sha256=tAGdc4C2KTz7B2CZ8Jf3DcKSAviAbCg44UH9ma2gYww,96
+bc_device_sdk/__init__.py,sha256=hEr5uADQKpxYX-xX8tzUdrxK9fg8RBKp4D84QPdR4-M,135
+bc_device_sdk/bc_device_sdk.cp311-win_amd64.pyd,sha256=ItJ0UpZf42sNprL7oIfWCOzTI62nBkjIzfVgnk9Yhmk,11050496
+bc_device_sdk-0.3.6.dist-info/RECORD,,
