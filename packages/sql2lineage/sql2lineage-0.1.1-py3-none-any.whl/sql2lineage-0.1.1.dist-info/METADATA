@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: sql2lineage
+Version: 0.1.1
+Summary: Create lineage graphs from SQL queries
+Author: Sean Conkie
+License: MIT
+Project-URL: Homepage, https://github.com/sean-conkie/sql2lineage
+Project-URL: Source, https://github.com/sean-conkie/sql2lineage
+Project-URL: Tracker, https://github.com/sean-conkie/sql2lineage/issues
+Keywords: sql,data lineage
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: networkx<4.0.0,>=3.4.2
+Requires-Dist: pydantic<3.0.0,>=2.7.1
+Requires-Dist: sqlglot<27.0.0,>=26.13.0
+Dynamic: license-file
+
+# sql2lineage
+
+[![Lint Code Base](https://github.com/sean-conkie/sql2lineage/actions/workflows/lint.yml/badge.svg)](https://github.com/sean-conkie/sql2lineage/actions/workflows/lint.yml)
+[![Test Code Base](https://github.com/sean-conkie/sql2lineage/actions/workflows/test.yml/badge.svg)](https://github.com/sean-conkie/sql2lineage/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/sean-conkie/sql2lineage/graph/badge.svg?token=ZOM3PNJ2SL)](https://codecov.io/gh/sean-conkie/sql2lineage)
