@@ -1,0 +1,11 @@
+bbq/__init__.py,sha256=htmqMxvDYifZRY3gwbFuDokDpYdqA5N-GTMHJZP0Kyk,76
+bbq/bbq_code.py,sha256=_PBnjXoNu11x8URD7OEDguVR_O5MmpSxuyN2fzj9LMM,45874
+bbq/polynomial.py,sha256=4KrALHoLE7R-SIecjCS_sNcSBP7ZEzcP4gxwAHYkzgI,2374
+bbq/utils.py,sha256=teZxyyvxdGxDcpsiB7G-5gJQ0DzvRFrakT0piF8Pm4w,388
+bbq/examples/gross-code.ipynb,sha256=qfja_qTRQIA-H17528Z7Yede6arae_3C7vF4CVG2Xn0,305871
+bbq/examples/other-codes.ipynb,sha256=_wsq9gF6WoTM7hcwIRZCVzt-TFbdxIwUH0mXe3AGRbU,447
+bbq/examples/toric-code.ipynb,sha256=4LQSWeZF259gEuG_bx4mus_-xJq19sr_0YyHe6p20iU,101498
+bbqudit-0.0.1.dist-info/METADATA,sha256=8M-5_bJMitOLdL32VBkbYlhiVINlHw9-t8Yzijg1Acc,530
+bbqudit-0.0.1.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+bbqudit-0.0.1.dist-info/licenses/LICENSE,sha256=568pQU61Vo7R1W3QF4MFbfc1WATPMrQlZEQTR4wacPY,1091
+bbqudit-0.0.1.dist-info/RECORD,,
