@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ifireflylib"
+version = "0.3.0"
+description = "A client package for Firefly database"
+readme = "README.md"
+authors = [{ name = "IDSolutions", email = "info@innovativedevsolutions.org" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Database",
+]
+keywords = ["firefly", "database"]
+dependencies = []
+requires-python = ">=3.13"
+
+[project.urls]
+Homepage = "https://gitea.innovativedevsolutions.org/IDSolutions/ifireflylib"
+Documentation = "https://gitea.innovativedevsolutions.org/IDSolutions/ifireflylib#readme"
+Repository = "https://gitea.innovativedevsolutions.org/IDSolutions/ifireflylib.git"
+"Bug Tracker" = "https://gitea.innovativedevsolutions.org/IDSolutions/ifireflylib/issues"
+
+[tool.setuptools]
+packages = ["ifireflylib"]
+
+[tool.setuptools.package-data]
+ifireflylib = ["native/*"]
