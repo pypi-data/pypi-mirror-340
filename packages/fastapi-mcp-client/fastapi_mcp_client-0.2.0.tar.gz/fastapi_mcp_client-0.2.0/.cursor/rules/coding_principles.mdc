@@ -1,0 +1,70 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+## Coding Principles: Clean, Minimal, and Practical
+
+**Core Philosophy:** Write elegant, simple code that speaks for itself. Aim for clarity and maintainability. Less, better code is preferred. Operate like an experienced engineer focused on robust, understandable solutions.
+
+- Focus on the areas of code relevant to the task
+- Do not touch code that is unrelated to the task
+- Write thorough tests for all major functionality
+- Avoid making major changes to the patterns and architecture of how a feature works, after it has shown to work well, unless explicitly instructed
+- Always think about what other methods and areas of code might be affected by code changes
+- No defensive programming patterns. Never!!
+---
+
+**1. Meaningful Naming & Clarity**
+    *   **Reveal Purpose:** Variable, function, class, and file names should clearly convey their purpose, existence, and usage.
+    *   **Self-Documenting:** Strive for code that is clear enough to understand without comments.
+    *   **Avoid Ambiguity:** Use descriptive names. Avoid abbreviations unless universally understood and agreed upon.
+    *   **Constants Over Magic Numbers:** Replace hard-coded values with descriptively named constants. Keep constants organized (e.g., top of file, dedicated constants file).
+
+**2. Function & Method Design**
+    *   **Single Responsibility:** Each function/method should do exactly one thing and do it well.
+    *   **Small Functions:** Keep functions short, ideally under 10 lines if possible. If a function requires comments to explain *what* it does internally, it's likely too complex and should be broken down.
+    *   **Testability:** Design functions to be easily testable in isolation.
+
+**3. Code Structure & Organization**
+    *   **Clean Architecture:** Keep related code together. Organize files and folders logically with consistent naming conventions.
+    *   **File Size Limits:** Avoid excessively long files. Aim to keep files under 200-300 lines; refactor if they grow larger.
+    *   **Flat Structure:** Avoid deep nesting of conditionals or loops. Favor early returns (`guard clauses`) over complex `else` blocks.
+    *   **Encapsulation:** Hide implementation details and expose clear, minimal interfaces. Move complex conditional logic into well-named functions or methods.
+
+**4. Simplicity & DRY (Don't Repeat Yourself)**
+    *   **Prefer Simplicity:** Always choose the simplest viable solution. Avoid premature optimization or unnecessary complexity.
+    *   **Eliminate Duplication:** Actively look for and remove code duplication. Check if similar functionality already exists elsewhere in the codebase. Extract repeated logic into reusable functions, classes, or modules to maintain a single source of truth.
+
+**5. Comments & Documentation**
+    *   **Comment the *Why*, Not the *What*:** Use comments primarily to explain *why* something is done in a particular way, especially for complex logic, non-obvious design decisions, or necessary workarounds.
+    *   **Minimal Comments:** Avoid commenting on code that is already clear. Remove redundant, overly verbose, or obvious comments.
+    *   **API Documentation:** Document public APIs clearly.
+
+**6. Error Handling & Logging**
+    *   **Graceful Handling:** Handle errors elegantly. Focus on recovery paths where possible.
+    *   **Minimize Nesting:** Avoid deeply nested `try-catch` blocks.
+    *   **Targeted Logging:** Log only what is essential for troubleshooting production issues. Avoid excessive debug logs in production code.
+
+**7. Testing**
+    *   **Test-Driven Approach:** Write tests before fixing bugs to ensure the fix works and prevent regressions.
+    *   **Readable Tests:** Keep tests clear, concise, and maintainable.
+    *   **Comprehensive Coverage:** Test core functionality thoroughly, including edge cases and error conditions. Focus on unit tests.
+    *   **No Mocking/Stubbing in Prod/Dev:** Mocking and fake data patterns are strictly for testing environments. Never introduce them into code affecting development or production builds.
+
+**8. Maintenance, Refactoring & Change Management**
+    *   **Continuous Improvement:** Refactor code continuously. Leave the codebase cleaner than you found it.
+    *   **Address Tech Debt:** Fix technical debt early before it compounds.
+    *   **Careful Changes:** Only make changes that are requested or clearly understood and related to the task at hand.
+    *   **Existing Patterns First:** When fixing issues, exhaust options using existing implementations and patterns before introducing new ones. If a new pattern is necessary, remove the old implementation afterward.
+    *   **Avoid One-Off Scripts:** Avoid writing scripts directly in application files, especially if they are only meant to be run once.
+
+**9. Environment Considerations**
+    *   **Environment Awareness:** Write code that considers the differences and requirements of various environments (e.g., development, testing, production).
+    *   **Configuration Safety:** Never overwrite configuration files (like `.env`) without explicit confirmation.
+
+**10. Version Control (Git)**
+    *   **Clear Commits:** Write clear, concise, and descriptive commit messages explaining the *why* behind the change.
+    *   **Small, Focused Commits:** Make small, atomic commits that represent a single logical change.
+    *   **Meaningful Branches:** Use descriptive branch names that indicate the purpose (e.g., `feat/add-user-auth`, `fix/resolve-login-bug`).

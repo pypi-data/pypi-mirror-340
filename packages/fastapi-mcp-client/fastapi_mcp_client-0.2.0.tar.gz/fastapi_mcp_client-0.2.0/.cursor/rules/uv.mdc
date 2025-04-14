@@ -1,0 +1,197 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# UV Package Manager Guide
+
+This guide covers best practices for using `uv`.
+
+## Installation
+
+Install `uv` using the official install script:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+## Modern Project Setup with UV
+
+### Project Structure Best Practices
+
+- Organize source code in a `src/` directory (e.g., `src/my_package/`)
+- Keep tests in a separate `tests/` directory
+- Use `pyproject.toml` as the central configuration file
+- Never use `uv pip install` use `uv add` instead
+
+### Configure `pyproject.toml`
+
+Replace traditional files (`setup.py`, `requirements.txt`, `MANIFEST.in`) with a single `pyproject.toml`:
+
+```toml
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "my-package"
+version = "0.1.0"
+description = "Description of my package"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+    # Other runtime dependencies
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.1",
+    "pytest-cov",
+    "ruff",
+    # Testing and development tools
+]
+
+# For src/ layout:
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+```
+
+## Virtual Environment Management
+
+Create and activate a virtual environment:
+
+```bash
+# Create a virtual environment (default name .venv)
+uv venv
+
+# Specify Python version if needed
+uv venv --python 3.10
+
+# Activate the environment
+source .venv/bin/activate  # Linux/Mac
+# or
+.venv\Scripts\activate     # Windows
+```
+
+## Dependency Management
+
+### Adding Dependencies
+
+Add packages and automatically update `pyproject.toml`:
+
+```bash
+# Add runtime dependencies
+uv add fastapi uvicorn
+
+# Add development dependencies
+uv add --dev pytest pytest-cov ruff
+
+# Add with specific version constraints
+uv add "fastapi>=0.100.0"
+```
+
+### Locking Dependencies
+
+Generate a lock file for reproducible builds:
+
+```bash
+# Lock all dependencies
+uv lock
+
+# Include dev dependencies in lock file
+uv lock --dev
+```
+
+### Installing Dependencies
+
+Install from the lock file:
+
+```bash
+# Install all dependencies from lock file
+uv sync
+
+# Install including dev dependencies
+uv sync --all-extras
+# or
+uv sync --dev  # if using optional dev dependencies
+```
+
+### Running Scripts
+
+Run Python scripts directly with the virtual environment:
+
+```bash
+uv run script.py
+
+# Or with arguments
+uv run script.py --arg1 value1
+```
+
+## Project Workflow with UV
+
+1. **Initial setup:**
+   ```bash
+   git clone <repository-url>
+   cd project-dir
+   uv venv
+   source .venv/bin/activate
+   uv sync --all-extras
+   ```
+
+2. **During development:**
+   ```bash
+   # Add a new dependency
+   uv add new-package
+   
+   # Run tests
+   uv run -m pytest
+   
+   # Run the application
+   uv run -m uvicorn main:app --reload
+   ```
+
+## Troubleshooting
+
+### Common Issues
+
+- **"Bad Interpreter" / Wrong Command Version:** The shell runs commands from outside the virtual environment.
+  - **Check:** Run `which <command>` to see which executable is found first.
+  - **Fix:** Ensure `.venv/bin` is prioritized in your `PATH` when the venv is active.
+
+- **Dependencies Resolved but Not Installed:** Packages are missing after `uv sync`.
+  - **Fix:** Try this sequence:
+    ```bash
+    # Remove existing env and lock
+    rm -rf uv.lock .venv
+    
+    # Create fresh environment
+    uv venv
+    source .venv/bin/activate
+    
+    # Regenerate lock file and sync
+    uv lock --dev
+    uv sync --all-extras
+    ```
+
+- **Package Not Found After Installation:** The package might not be in your project's dependencies.
+  - **Fix:** Add it properly with `uv add package-name` rather than installing directly.
+
+## Docker Integration
+
+When using UV with Docker:
+
+1. Install UV in your Dockerfile:
+   ```dockerfile
+   RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+2. Use UV for dependency installation:
+   ```dockerfile
+   COPY pyproject.toml uv.lock ./
+   RUN uv sync
+   ```
+
+3. For development environments, consider volume mounting your code directory to avoid rebuilding the image for code changes. 
