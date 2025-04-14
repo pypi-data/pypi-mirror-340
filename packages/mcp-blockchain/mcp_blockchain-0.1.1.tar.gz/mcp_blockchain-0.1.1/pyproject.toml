@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mcp-blockchain"
+version = "0.1.1"
+description = "A production-grade blockchain server built using MCP (Model Context Protocol)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+keywords = ["blockchain", "ethereum", "mcp", "web3"]
+authors = [
+    { name = "Rajan Shukla", email = "rshukla2k@gmail.com" }
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "mcp[cli]>=1.2.0",
+    "web3>=6.0.0",
+    "eth-utils>=2.0.0",
+    "requests>=2.31.0",
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+    "pytest-cov>=6.1.1",
+    "mcp-server>=0.1.4",
+]
+
+[project.scripts]
+mcp-blockchain = "mcp_blockchain.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mcp_blockchain"]
