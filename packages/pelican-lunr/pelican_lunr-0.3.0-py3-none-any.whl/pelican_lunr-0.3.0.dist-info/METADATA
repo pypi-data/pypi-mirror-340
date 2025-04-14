@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: pelican-lunr
+Version: 0.3.0
+Summary: A plugin for Pelican to add lunr.js search functionality
+License-Expression: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: beautifulsoup4~=4.13.3
+Requires-Dist: pelican>=4.9.0
+Requires-Dist: lunr~=0.8.0
+Dynamic: license-file
+
+# Pelican-Lunr
+
+Plugin for Pelican to use Lunr.js for integrated search.
