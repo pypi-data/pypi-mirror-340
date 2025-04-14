@@ -1,0 +1,33 @@
+Metadata-Version: 2.4
+Name: upassist
+Version: 0.0.4
+Summary: Official Upasist Cloud API python SDK
+Author-email: michael7nightingale <suslanchikmopl@gmail.com>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/upassist-cloud/upassist-python
+Project-URL: Issues, https://github.com/upassist-cloud/upassist-python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# Official Upassist Cloud Python SDK
+
+## Installation
+
+```
+pip install upassist
+```
+
+## Heartbeat event
+
+```python
+import upassist
+
+upassist.config.API_KEY = 'you-api-key'
+
+heartbeat = upassist.Heartbeat("cron-job-foo")
+heartbeat.event()
+```
