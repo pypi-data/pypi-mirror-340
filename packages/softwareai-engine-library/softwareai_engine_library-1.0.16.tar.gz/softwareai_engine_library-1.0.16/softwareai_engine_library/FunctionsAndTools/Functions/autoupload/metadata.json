@@ -1,0 +1,52 @@
+{
+    "type": "function",
+    "function": {
+        "name": "autoupload",
+        "description": "Realiza um upload de arquivos para a main de um repositorio ja existente",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "softwarepypath": {
+                    "type": "string",
+                    "description": "Nome do repositorio no GitHub."
+                },
+                "repo_name": {
+                    "type": "string",
+                    "description": "Caminho relativo junto ao arquivo"
+                },
+                "token": {
+                    "type": "string",
+                    "description": "Nome da branch principal geralmente main."
+                }
+            },
+            "required": [
+                "softwarepypath",
+                "repo_name",
+                "token"
+            ]
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
