@@ -1,0 +1,21 @@
+[build-system]
+requires = ["pup517"]
+build-backend = "pup517.backend"
+
+[project]
+name = "pup-zig-bin"
+version = "0.14.0.post2"
+
+[[pup517.srcuris]]
+type = "http_archive"
+url = "https://ziglang.org/download/0.14.0/zig-linux-x86_64-0.14.0.tar.xz"
+sha256 = "473ec26806133cf4d1918caf1a410f8403a13d979726a9045b421b685031a982"
+strip_components = 1
+
+[pup517.hooks]
+install = [
+    "default",
+    'cp zig "${PUP_BINDIR}/"',
+    'mkdir -p "${PUP_DATADIR}/lib"',
+    'cp -r lib "${PUP_DATADIR}/lib/zig"',
+]
