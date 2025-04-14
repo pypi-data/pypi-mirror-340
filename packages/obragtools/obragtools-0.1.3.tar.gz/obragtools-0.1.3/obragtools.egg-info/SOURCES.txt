@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+obragtools.egg-info/PKG-INFO
+obragtools.egg-info/SOURCES.txt
+obragtools.egg-info/dependency_links.txt
+obragtools.egg-info/requires.txt
+obragtools.egg-info/top_level.txt
+obragtools/query/__init__.py
+obragtools/query/core.py
+obragtools/reader/__init__.py
+obragtools/reader/function.py
+obragtools/reader/reader.py
+obragtools/reader/utils.py
+test/test_query.py
+test/test_reader.py
