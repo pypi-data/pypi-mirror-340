@@ -1,0 +1,15 @@
+a4f_local/__init__.py,sha256=SRaFlV_Y1UdorNw4VzxxZ1Q2dJk77XXYwhfic2zlDx4,472
+a4f_local/client.py,sha256=spWwLFRu1ed1SdxIIRowjJcWJ1o9orGW1n250h8EcJU,5227
+a4f_local/providers/__init__.py,sha256=NvrXltlpBKZQcruAdK8pb5T6s4ERbGw-znA3e7cDLs4,136
+a4f_local/providers/_discovery.py,sha256=5v5XHXHC_F6odbu6M26bOxBsev7rog9WWn5ZL-yMEsg,6841
+a4f_local/providers/provider_1/__init__.py,sha256=x207YiGwh9OU0koEWpRa_oEj2vUMt6OBSu4MQcxh5wA,290
+a4f_local/providers/provider_1/tts/__init__.py,sha256=641omM7M_ByPxzEBpNrW1OAHgb3As_8ROajovtINWbw,228
+a4f_local/providers/provider_1/tts/engine.py,sha256=4bT2ofhRq-UhezdLz8V34ZgrDIniTAL_rRM5CD5LrRg,5296
+a4f_local/types/__init__.py,sha256=_iJt41XX3HMljO51d-E2dqNGCRxzpTwlVCDIPUVAzj0,438
+a4f_local/types/audio.py,sha256=rTj7HkaSB1QBiRKTixN93KemIcXm5-Xo8xM8F-M1Rjk,1629
+a4f_local/types/chat.py,sha256=FtX1B0hK9EDEjpXLyyF4uUDwPhkoSd7SOAgi8otdWvk,1680
+a4f_local-0.1.1.dist-info/licenses/LICENSE,sha256=RwHSd-JXJFVyyOytiSI9ayV9jHy4YSXP-E6T9jjbRBw,5309
+a4f_local-0.1.1.dist-info/METADATA,sha256=SqWfUaz2rsEW8-5KRNF32QHxjTxrwrCtzjxOGEMr-9E,10321
+a4f_local-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+a4f_local-0.1.1.dist-info/top_level.txt,sha256=AvOQbFSyQ3y66EtHBxB6MNbPfxB7JvkbqdpshGBE0O0,10
+a4f_local-0.1.1.dist-info/RECORD,,
