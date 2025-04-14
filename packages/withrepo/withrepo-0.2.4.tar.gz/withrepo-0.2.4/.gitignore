@@ -1,0 +1,16 @@
+# Mac
+.DS_Store
+
+# Python
+__pycache__
+
+# UV
+.venv
+
+
+# Pytest
+.pytest_cache
+
+
+# Ruff
+.ruff_cache
