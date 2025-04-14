@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+platforms = ["Linux x86, x86-64"]
+
+[tool.setuptools.packages.find]
+include = ["sopel_meetbot", "sopel_meetbot.*"]
+namespaces = false
+
+[tool.setuptools.dynamic]
+readme = { file=["README.md", "NEWS"], content-type="text/markdown" }
+
+[project]
+name = "sopel-meetbot"
+version = "1.1.0"
+description = "The meetbot plugin formerly shipped with Sopel prior to version 8.0."
+
+authors = [
+  { name="dgw", email="dgw@technobabbl.es" },
+]
+
+license = "EFL-2.0"
+license-files = ["COPYING"]
+dynamic = ["readme"]
+
+classifiers = [
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "Topic :: Communications :: Chat :: Internet Relay Chat",
+]
+keywords = [
+  "sopel",
+  "plugin",
+  "bot",
+  "irc",
+]
+
+requires-python = ">=3.8, <4"
+dependencies = [
+  "sopel>=8.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sopel-irc/sopel-meetbot"
+"Bug Tracker" = "https://github.com/sopel-irc/sopel-meetbot/issues"
+
+[project.entry-points."sopel.plugins"]
+"meetbot" = "sopel_meetbot.plugin"

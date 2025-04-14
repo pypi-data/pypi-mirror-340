@@ -1,0 +1,18 @@
+## Changelog
+
+### 1.1.0
+
+Changed:
+* Require Sopel 8.0+ (#5)
+
+Fixed:
+* Sopel 8 moved built-in plugins from `.modules` to `.builtins` (#6)
+
+Meta:
+* Modernize package layout & metadata (#5)
+* Automate PyPI releases using Trusted Publishing
+
+
+### 1.0.0
+
+Initial release of `meetbot.py` from Sopel 7.1.x as its own package.

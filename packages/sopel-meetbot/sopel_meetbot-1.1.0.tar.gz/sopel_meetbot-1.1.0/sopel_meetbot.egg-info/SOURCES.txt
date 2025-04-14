@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+pyproject.toml
+sopel_meetbot/__init__.py
+sopel_meetbot/plugin.py
+sopel_meetbot.egg-info/PKG-INFO
+sopel_meetbot.egg-info/SOURCES.txt
+sopel_meetbot.egg-info/dependency_links.txt
+sopel_meetbot.egg-info/entry_points.txt
+sopel_meetbot.egg-info/requires.txt
+sopel_meetbot.egg-info/top_level.txt
