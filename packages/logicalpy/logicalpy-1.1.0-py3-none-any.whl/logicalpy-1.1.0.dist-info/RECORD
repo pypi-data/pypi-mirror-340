@@ -1,0 +1,9 @@
+logicalpy/__init__.py,sha256=T1U2O9zRbJIbG38Ewc7jGy0-jnlypzqy5oRXr1KbjSM,153
+logicalpy/base.py,sha256=bedy60bpSW-u47oMuFbR_SCf3ZY5kr9C1Qe0EOvzQI8,14593
+logicalpy/normal_forms.py,sha256=NmkonTUsleinm9PyQ8fpQak-2DyQio0cqmfw-EjvR2w,6778
+logicalpy/resolution.py,sha256=XRiLrbqonTAeaUWmJAPQgTPCwpZLJgsYSivgbA3YFl4,8003
+logicalpy/semantics.py,sha256=ckW5-dxQg8dD-x5Vnc2L5UzsK9fdLLJSZOPw8RyWQYU,10357
+logicalpy-1.1.0.dist-info/METADATA,sha256=N-yO4uN4rkWQPE3PqoQ-w8SnC-QHq66Ay-vtg5uJzjM,2393
+logicalpy-1.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+logicalpy-1.1.0.dist-info/licenses/LICENSE,sha256=AJbUQ37_J46p0szZk-_ady3Be_ljtfB3mq1EItWSS7g,1087
+logicalpy-1.1.0.dist-info/RECORD,,
