@@ -1,0 +1,110 @@
+Metadata-Version: 2.4
+Name: simple-cli-otus
+Version: 0.0.0
+Summary: Asynchronous CLI framework with command routing and advanced prompt features.
+Author-email: Gabriel <datreallystupidmartis@gmail.com>
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Terminals
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic<3,>=1.10
+Requires-Dist: typing-extensions>=4.0
+Provides-Extra: dev
+Requires-Dist: black>=23.3; extra == "dev"
+Requires-Dist: mypy>=1.3; extra == "dev"
+Requires-Dist: pytest>=7.3; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21; extra == "dev"
+Dynamic: license-file
+
+# Simple CLI
+
+Asynchronous framework in which you can create interactive command line interfaces with:
+- Dynamic completion
+- Color schemes
+- Customizable prompts
+
+
+## Quick start
+
+### Installation 
+```bash
+pip install simple-cli-otus
+```
+### Basic usage
+
+```python
+
+from SimpleCLI import CommandLineInterface, CommandLineInterfaceConfig
+import asyncio
+
+config = CommandLineInterfaceConfig(
+    PROMPT_FORMAT_STRING=">>> ",
+    TRANSIENT_PROMPT=True,
+    SUGGESTION_COLORS="green"
+)
+
+cli = CommandLineInterface(config)
+
+@cli.command()
+async def hello(name: str = "world"):
+    """User greeting."""
+    print(f"Hello, {name}!")
+
+@cli.command(arg_spec={
+    'status': {
+        'flags': ['-s', '--status'],
+        'help': "Some status.",
+        'action': 'store_true'
+    }
+})
+async def check(status: bool = False):
+    """System checkup"""
+    if status:
+        print("System: OK")
+    else:
+        print("No status provided")
+
+# Running interface
+async def main():
+    await cli.start()
+    await cli.stop()
+if __name__ == "__main__":
+    asyncio.run(main())
+```
+### Features
+- ANSI color schemes
+- Autosuggestion by Tab
+- Asynchronous operations
+- Configuration via Pydantic-model
+
+### Restrictions
+Some configuration features are not implemented yet:
+- User role model
+- Output routing
+- Command conveyors
+- Log filtering
+
+## Development
+
+Clone repository and install in development mode:
+```bash
+git clone https://github.com/MartisCoding/SimpleCLI
+cd SimpleCLI
+pip install -e .[dev]
+```
+
+## License
+This project was developed under MIT Licence. 
+
+
+
