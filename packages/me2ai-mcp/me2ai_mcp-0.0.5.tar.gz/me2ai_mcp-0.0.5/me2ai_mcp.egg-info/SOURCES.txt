@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+me2ai_mcp.egg-info/PKG-INFO
+me2ai_mcp.egg-info/SOURCES.txt
+me2ai_mcp.egg-info/dependency_links.txt
+me2ai_mcp.egg-info/requires.txt
+me2ai_mcp.egg-info/top_level.txt
