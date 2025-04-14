@@ -1,0 +1,725 @@
+Metadata-Version: 2.4
+Name: clipsight
+Version: 0.2.1
+Summary: A distributed image crawling system based on Playwright
+Home-page: https://gitee.com/duckweeds7/clip-sight
+Author: duckweeds7
+Author-email: duckweeds7@gmail.com
+Project-URL: Bug Tracker, https://gitee.com/duckweeds7/clip-sight/issues
+Project-URL: Documentation, https://gitee.com/duckweeds7/clip-sight/wikis
+Project-URL: Source Code, https://gitee.com/duckweeds7/clip-sight
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Multimedia :: Graphics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi>=0.68.1
+Requires-Dist: uvicorn>=0.15.0
+Requires-Dist: python-dotenv>=0.19.0
+Requires-Dist: loguru>=0.5.3
+Requires-Dist: playwright>=1.20.0
+Requires-Dist: minio>=7.1.0
+Requires-Dist: redis>=4.0.2
+Requires-Dist: elasticsearch>=7.17.0
+Requires-Dist: celery>=5.2.0
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: pillow>=8.3.0
+Requires-Dist: numpy>=1.21.0
+Requires-Dist: scikit-learn>=0.24.0
+Requires-Dist: python-multipart>=0.0.5
+Requires-Dist: pydantic>=1.8.0
+Requires-Dist: httpx>=0.23.0
+Requires-Dist: tenacity>=8.0.0
+Requires-Dist: prometheus-client>=0.12.0
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: tensorflow>=2.8.0
+Requires-Dist: transformers>=4.15.0
+Requires-Dist: torch>=1.10.0
+Requires-Dist: torchvision>=0.11.0
+Requires-Dist: faiss-cpu>=1.7.0
+Requires-Dist: sentence-transformers>=2.2.0
+Requires-Dist: beautifulsoup4>=4.9.0
+Requires-Dist: lxml>=4.9.0
+Requires-Dist: requests>=2.26.0
+Requires-Dist: aiofiles>=0.8.0
+Requires-Dist: python-jose>=3.3.0
+Requires-Dist: passlib>=1.7.4
+Requires-Dist: bcrypt>=3.2.0
+Requires-Dist: pytest>=6.2.5
+Requires-Dist: pytest-asyncio>=0.16.0
+Requires-Dist: pytest-cov>=2.12.0
+Requires-Dist: black>=21.7b0
+Requires-Dist: isort>=5.9.0
+Requires-Dist: flake8>=3.9.0
+Requires-Dist: mypy>=0.910
+Requires-Dist: pre-commit>=2.15.0
+Requires-Dist: setuptools>=45.0.0
+Requires-Dist: wheel>=0.37.0
+Requires-Dist: twine>=3.4.0
+Requires-Dist: build>=0.7.0
+Requires-Dist: setuptools_scm>=6.2.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Clip-Sight (剪瞳): 分布式图片爬虫系统 | Distributed Image Crawler System
+
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+[![PyPI version](https://badge.fury.io/py/clipsight.svg)](https://badge.fury.io/py/clipsight)
+
+[English](#clip-sight-distributed-image-crawler-system) | [中文](#clip-sight-分布式图片爬虫系统)
+
+## 项目介绍 | Project Introduction
+
+ClipSight (剪瞳) 是一个双关语义的名字：
+- Clip（剪切/片段）+ Sight（视野）：模仿自媒体创作者"剪切新闻-获取视野"的工作流
+- 中文"剪瞳"暗示用剪刀（工具）打开新视界
+
+## Clip-Sight: Distributed Image Crawler System
+
+A distributed image crawling system based on Playwright, supporting high-concurrency image collection, processing, and storage.
+
+### Features
+
+- Browser instance pool management based on Playwright
+- Redis task queue with priority processing
+- Asynchronous image download and processing pipeline
+- Elasticsearch similar image search
+- MinIO distributed storage
+- Docker containerization deployment
+- Comprehensive monitoring and logging system
+- Keyword-based image search with similarity scoring
+- Task progress tracking and management
+- Automatic retry mechanism for failed operations
+
+### System Requirements
+
+- Python 3.11+
+- Redis 6.0+
+- Elasticsearch 7.0+
+- MinIO Server
+- Docker (optional)
+- Playwright
+
+### Quick Start
+
+1. Clone the repository
+```bash
+git clone https://gitee.com/duckweeds7/clip-sight.git
+cd clip-sight
+```
+
+2. Install dependencies
+```bash
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+.\venv\Scripts\activate  # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Install Playwright browsers
+playwright install
+```
+
+3. Configure environment variables
+```bash
+cp .env.example .env
+# Edit .env file with your configuration
+```
+
+4. Start services
+```bash
+# Start Redis, Elasticsearch, and MinIO using Docker Compose
+docker-compose up -d
+
+# Start the worker service
+python -m src.worker.main
+
+# Start the web service
+python -m src.web.app
+```
+
+### Docker Deployment
+
+1. Build the image
+```bash
+docker build -t clip-sight .
+```
+
+2. Run containers
+```bash
+docker-compose up -d
+```
+
+### Architecture
+
+#### Components
+
+1. **Browser Pool**
+   - Manages Playwright browser instances
+   - Automatic reconnection and error handling
+   - Configurable maximum instance count
+
+2. **Task Consumer**
+   - Redis task queue management
+   - Priority queue support
+   - Task deduplication mechanism
+
+3. **Image Pipeline**
+   - Asynchronous concurrent downloads
+   - Image validation and processing
+   - Automatic retry mechanism
+
+4. **Storage**
+   - MinIO distributed storage
+   - Metadata management
+   - Chunked upload support
+
+5. **Search**
+   - Elasticsearch integration
+   - Similar image search
+   - TF-IDF keyword expansion
+   - Similarity scoring based on keyword matches
+
+### Monitoring
+
+- Task queue length
+- Image download success rate
+- Processing latency statistics
+- Storage usage
+- Search performance metrics
+
+### Data Management
+
+Use the `scripts/reset_data.sh` script to manage your data:
+
+```bash
+# Make the script executable
+chmod +x scripts/reset_data.sh
+
+# Run the script
+./scripts/reset_data.sh
+```
+
+Available options:
+1. Delete ES indices
+2. Delete MinIO images
+3. Delete Redis task data
+4. Delete all data
+5. Delete MinIO images by task ID
+6. Check and fix environment variables
+
+### Development
+
+1. **Code Structure**
+```
+clip-sight/
+├── src/
+│   ├── worker/         # Worker service
+│   ├── web/           # Web interface
+│   ├── storage/       # Storage management
+│   └── search/        # Search functionality
+├── scripts/           # Utility scripts
+├── tests/            # Test cases
+└── docker/           # Docker configuration
+```
+
+2. **Testing**
+```bash
+# Run tests
+pytest tests/
+```
+
+### License
+
+MIT License
+
+---
+
+## Clip-Sight: 分布式图片爬虫系统
+
+基于 Playwright 的分布式图片爬虫系统，支持高并发图片采集、处理和存储。
+
+### 特性
+
+- 基于 Playwright 的浏览器实例池管理
+- Redis 任务队列和优先级处理
+- 异步图片下载和处理管道
+- Elasticsearch 相似图片搜索
+- MinIO 分布式存储
+- Docker 容器化部署
+- 完善的监控和日志系统
+- 基于关键词的图片搜索和相似度评分
+- 任务进度跟踪和管理
+- 失败操作自动重试机制
+
+### 系统要求
+
+- Python 3.11+
+- Redis 6.0+
+- Elasticsearch 7.0+
+- MinIO Server
+- Docker (可选)
+- Playwright
+
+### 快速开始
+
+1. 克隆项目
+```bash
+git clone https://gitee.com/duckweeds7/clip-sight.git
+cd clip-sight
+```
+
+2. 安装依赖
+```bash
+# 创建并激活虚拟环境
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# 或
+.\venv\Scripts\activate  # Windows
+
+# 安装依赖
+pip install -r requirements.txt
+
+# 安装 Playwright 浏览器
+playwright install
+```
+
+3. 配置环境变量
+```bash
+cp .env.example .env
+# 编辑 .env 文件，配置必要的参数
+```
+
+4. 启动服务
+```bash
+# 使用 Docker Compose 启动 Redis、Elasticsearch 和 MinIO
+docker-compose up -d
+
+# 启动 worker 服务
+python -m src.worker.main
+
+# 启动 web 服务
+python -m src.web.app
+```
+
+### Docker 部署
+
+1. 构建镜像
+```bash
+docker build -t clip-sight .
+```
+
+2. 运行容器
+```bash
+docker-compose up -d
+```
+
+### 架构说明
+
+#### 组件
+
+1. **浏览器池**
+   - 管理 Playwright 浏览器实例
+   - 自动重连和异常处理
+   - 可配置最大实例数
+
+2. **任务消费者**
+   - Redis 任务队列管理
+   - 支持优先级队列
+   - 任务去重机制
+
+3. **图片处理管道**
+   - 异步并发下载
+   - 图片验证和处理
+   - 自动重试机制
+
+4. **存储系统**
+   - MinIO 分布式存储
+   - 元数据管理
+   - 分块上传支持
+
+5. **搜索系统**
+   - Elasticsearch 集成
+   - 相似图片搜索
+   - TF-IDF 关键词扩展
+   - 基于关键词匹配的相似度评分
+
+### 监控指标
+
+- 任务队列长度
+- 图片下载成功率
+- 处理延迟统计
+- 存储使用情况
+- 搜索性能指标
+
+### 数据管理
+
+使用 `scripts/reset_data.sh` 脚本管理数据：
+
+```bash
+# 添加执行权限
+chmod +x scripts/reset_data.sh
+
+# 运行脚本
+./scripts/reset_data.sh
+```
+
+可用选项：
+1. 删除 ES 索引
+2. 删除 MinIO 图片
+3. 删除 Redis 任务数据
+4. 删除所有数据
+5. 按任务 ID 删除 MinIO 图片
+6. 检查并修复环境变量
+
+### 开发
+
+1. **代码结构**
+```
+clip-sight/
+├── src/
+│   ├── worker/         # Worker 服务
+│   ├── web/           # Web 界面
+│   ├── storage/       # 存储管理
+│   └── search/        # 搜索功能
+├── scripts/           # 工具脚本
+├── tests/            # 测试用例
+└── docker/           # Docker 配置
+```
+
+2. **测试**
+```bash
+# 运行测试
+pytest tests/
+```
+
+### 许可证
+
+MIT License
+
+## 功能特点
+
+- 支持多任务并行处理
+- 基于 Playwright 的浏览器自动化
+- MinIO 对象存储
+- Elasticsearch 相似图片搜索
+- Redis 任务队列
+- FastAPI Web 界面
+- Docker 容器化部署
+
+## 技术栈
+
+- Python 3.8+
+- FastAPI
+- Playwright
+- MinIO
+- Elasticsearch
+- Redis
+- Celery
+- Docker
+
+## 安装说明
+
+### 使用 pip 安装
+
+```bash
+# 安装包
+pip install clipsight
+
+# 安装 Playwright 浏览器
+playwright install chromium
+
+# 创建配置文件
+cp .env.example .env
+```
+
+### 从源码安装
+
+```bash
+# 克隆仓库
+git clone https://github.com/duckweeds7/clip-sight.git
+cd clip-sight
+
+# 创建虚拟环境
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+# 或
+.venv\Scripts\activate  # Windows
+
+# 安装依赖
+pip install -r requirements.txt
+
+# 安装 Playwright 浏览器
+playwright install chromium
+
+# 创建配置文件
+cp .env.example .env
+```
+
+## 使用说明
+
+### 启动服务
+
+1. 使用 Docker Compose（推荐）：
+```bash
+docker-compose up -d
+```
+
+2. 手动启动：
+```bash
+# 启动 web 服务
+clipsight
+
+# 启动 worker
+clipsight-worker
+```
+
+### 访问 Web 界面
+
+打开浏览器访问：http://localhost:8000
+
+### 创建爬虫任务
+
+1. 通过 Web 界面：
+   - 访问 http://localhost:8000
+   - 点击"新建任务"
+   - 输入关键词和数量
+   - 点击"开始爬取"
+
+2. 通过 API：
+```bash
+curl -X POST "http://localhost:8000/api/tasks" \
+     -H "Content-Type: application/json" \
+     -d '{"keywords": ["cat", "dog"], "max_images": 100}'
+```
+
+### 查看任务状态
+
+1. 通过 Web 界面：
+   - 访问 http://localhost:8000
+   - 在任务列表中查看状态
+
+2. 通过 API：
+```bash
+curl "http://localhost:8000/api/tasks"
+```
+
+## 开发指南
+
+### 项目结构
+
+```
+clip-sight/
+├── src/                    # 源代码
+│   ├── browser/           # 浏览器管理
+│   ├── crawler/           # 爬虫实现
+│   ├── pipeline/          # 数据处理管道
+│   ├── search/            # 相似图片搜索
+│   ├── storage/           # 存储管理
+│   ├── web/               # Web 界面
+│   └── worker/            # 后台任务
+├── tests/                 # 测试用例
+├── docker/                # Docker 配置
+├── scripts/               # 工具脚本
+└── docs/                  # 文档
+```
+
+### 开发环境设置
+
+1. 安装开发依赖：
+```bash
+pip install -r requirements-dev.txt
+```
+
+2. 运行测试：
+```bash
+pytest
+```
+
+3. 代码格式化：
+```bash
+black .
+isort .
+```
+
+### 提交代码
+
+1. 创建新分支：
+```bash
+git checkout -b feature/your-feature
+```
+
+2. 提交更改：
+```bash
+git add .
+git commit -m "feat: add your feature"
+```
+
+3. 推送到远程：
+```bash
+git push origin feature/your-feature
+```
+
+## 许可证
+
+本项目采用 MIT 许可证 - 详见 [LICENSE](LICENSE) 文件
+
+## 配置指南 | Configuration Guide
+
+### 必需的外部服务 | Required External Services
+
+ClipSight 依赖以下外部服务，在使用前需要正确配置：
+
+1. **Redis 服务**
+   - 版本要求：6.0+
+   - 默认配置：
+     ```env
+     REDIS_HOST=localhost
+     REDIS_PORT=6379
+     REDIS_DB=0
+     ```
+   - 安装指南：
+     - [Docker方式](#docker-部署)
+     - [手动安装](https://redis.io/download)
+
+2. **Elasticsearch 服务**
+   - 版本要求：7.0+
+   - 默认配置：
+     ```env
+     ES_HOST=localhost
+     ES_PORT=9200
+     ES_INDEX=clipsight
+     ```
+   - 安装指南：
+     - [Docker方式](#docker-部署)
+     - [手动安装](https://www.elastic.co/downloads/elasticsearch)
+
+3. **MinIO 服务**
+   - 版本要求：最新版
+   - 默认配置：
+     ```env
+     MINIO_ENDPOINT=localhost:9000
+     MINIO_ACCESS_KEY=minioadmin
+     MINIO_SECRET_KEY=minioadmin
+     MINIO_BUCKET=clipsight
+     ```
+   - 安装指南：
+     - [Docker方式](#docker-部署)
+     - [手动安装](https://docs.min.io/docs/minio-quickstart-guide.html)
+
+### 环境变量配置 | Environment Variables
+
+1. 复制环境变量模板：
+   ```bash
+   cp .env.example .env
+   ```
+
+2. 编辑 `.env` 文件，配置所有必需的服务：
+   ```env
+   # Redis配置
+   REDIS_HOST=localhost
+   REDIS_PORT=6379
+   REDIS_DB=0
+
+   # Elasticsearch配置
+   ES_HOST=localhost
+   ES_PORT=9200
+   ES_INDEX=clipsight
+
+   # MinIO配置
+   MINIO_ENDPOINT=localhost:9000
+   MINIO_ACCESS_KEY=your_access_key
+   MINIO_SECRET_KEY=your_secret_key
+   MINIO_BUCKET=clipsight
+
+   # 其他配置
+   MAX_WORKERS=4
+   MAX_BROWSER_INSTANCES=2
+   ```
+
+### 快速启动所有服务 | Quick Start All Services
+
+使用 Docker Compose 可以一键启动所有必需的服务：
+
+```bash
+# 启动所有服务
+docker-compose up -d
+
+# 检查服务状态
+docker-compose ps
+```
+
+### 手动配置服务 | Manual Service Configuration
+
+如果不想使用 Docker，可以手动安装和配置每个服务：
+
+1. **Redis**
+   ```bash
+   # Ubuntu/Debian
+   sudo apt-get install redis-server
+   
+   # CentOS/RHEL
+   sudo yum install redis
+   
+   # 启动服务
+   sudo systemctl start redis
+   ```
+
+2. **Elasticsearch**
+   ```bash
+   # 下载并安装
+   wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.0-linux-x86_64.tar.gz
+   tar -xzf elasticsearch-7.17.0-linux-x86_64.tar.gz
+   
+   # 启动服务
+   ./elasticsearch-7.17.0/bin/elasticsearch
+   ```
+
+3. **MinIO**
+   ```bash
+   # 下载 MinIO
+   wget https://dl.min.io/server/minio/release/linux-amd64/minio
+   chmod +x minio
+   
+   # 启动服务
+   ./minio server /data
+   ```
+
+### 验证服务配置 | Verify Service Configuration
+
+使用以下命令验证服务是否正确配置：
+
+```bash
+# 检查 Redis
+redis-cli ping
+
+# 检查 Elasticsearch
+curl http://localhost:9200
+
+# 检查 MinIO
+mc alias set myminio http://localhost:9000 minioadmin minioadmin
+mc ls myminio
+```
