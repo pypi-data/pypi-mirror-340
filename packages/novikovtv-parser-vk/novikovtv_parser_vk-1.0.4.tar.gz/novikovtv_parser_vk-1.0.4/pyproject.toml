@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling >= 1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["novikovtv_parser_vk"]
+
+[project]
+name = "novikovtv-parser-vk"
+version = "1.0.4"
+authors = [
+    { name="Tsuedewn", email="kutner.co@gmail.com" },
+    { name="domster704", email="domster704@mail.ru" },
+]
+description = "This is the VK search engine parser"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    'Programming Language :: Python :: 3.11',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent'
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/asianetsievskaya/parser-yandex"
