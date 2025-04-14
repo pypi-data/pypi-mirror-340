@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+matrixx.egg-info/PKG-INFO
+matrixx.egg-info/SOURCES.txt
+matrixx.egg-info/dependency_links.txt
+matrixx.egg-info/requires.txt
+matrixx.egg-info/top_level.txt
+tests/test_matrix_utils.py
