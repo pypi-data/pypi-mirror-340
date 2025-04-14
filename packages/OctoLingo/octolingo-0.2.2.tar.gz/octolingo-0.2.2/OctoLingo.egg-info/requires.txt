@@ -1,0 +1,12 @@
+googletrans==4.0.0-rc1
+easyocr>=1.4
+pillow>=8.0.0
+
+[:extra == "pdf"]
+pdf2image>=1.14.0
+
+[all]
+pdf2image>=1.14.0
+
+[pdf]
+pdf2image>=1.14.0
