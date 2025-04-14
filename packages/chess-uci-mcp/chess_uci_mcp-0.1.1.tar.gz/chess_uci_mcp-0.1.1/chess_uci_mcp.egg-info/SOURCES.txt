@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+./chess_uci_mcp/__init__.py
+./chess_uci_mcp/__main__.py
+./chess_uci_mcp/engine.py
+./chess_uci_mcp/server.py
+chess_uci_mcp/__init__.py
+chess_uci_mcp/__main__.py
+chess_uci_mcp/engine.py
+chess_uci_mcp/server.py
+chess_uci_mcp.egg-info/PKG-INFO
+chess_uci_mcp.egg-info/SOURCES.txt
+chess_uci_mcp.egg-info/dependency_links.txt
+chess_uci_mcp.egg-info/entry_points.txt
+chess_uci_mcp.egg-info/requires.txt
+chess_uci_mcp.egg-info/top_level.txt
