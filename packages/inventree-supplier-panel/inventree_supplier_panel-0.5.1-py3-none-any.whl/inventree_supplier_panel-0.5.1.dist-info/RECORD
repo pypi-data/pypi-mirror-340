@@ -1,0 +1,17 @@
+inventree_supplier_panel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inventree_supplier_panel/digikey.py,sha256=JUWmEisrxsNummfLG70INqL4_xM_4_l3Pug4YFyt7l8,13082
+inventree_supplier_panel/farnell.py,sha256=N6WrQV6IjlLH_Foh7paRh-LiOrb4XpLldxa-wdLiUls,3114
+inventree_supplier_panel/meta_access.py,sha256=wJEGV4uaSBZXC3I0F_tAd8AxBuugjxiiSFu3XQm_InM,815
+inventree_supplier_panel/mouser.py,sha256=5pNkVZn62d5q0tYZyNtliSLDuXvAyrfjGvBnaQJIE_Y,10210
+inventree_supplier_panel/request_wrappers.py,sha256=F1gLq4TXBEWojrfFkwnCfdFdPxNt9wpGURchsRotYQk,1850
+inventree_supplier_panel/supplier_panel.py,sha256=y-OVbrFqVpp23msNzOnZfe-QNz8vksSeyTY0XgVMw7w,16425
+inventree_supplier_panel/test_supplier_panel.py,sha256=W5ZrudeB3bBXOLQSRNU51rnkmqJE__rkk5tPugzHDEo,7264
+inventree_supplier_panel/version.py,sha256=WYIr_SRS2g6ezqI6qPiON9-QvhigF0RSMFDxWoNWdI4,25
+inventree_supplier_panel/templates/supplier_panel/add_supplierpart.html,sha256=aJLSafCT0MTE6CNj2JG-48pPCuFvhcf-pTPJlB7soNI,2021
+inventree_supplier_panel/templates/supplier_panel/mouser.html,sha256=_qdp68zam0vCsB-yNCkB_GuwTbwIfXPGVZ_tmslwPN4,5508
+inventree_supplier_panel-0.5.1.dist-info/licenses/LICENSE,sha256=z0KzW69FNQZm8j7jdjwjmjMNPn6UIC5ioGhjP44nZ64,1064
+inventree_supplier_panel-0.5.1.dist-info/METADATA,sha256=1eLf-wehVdL-myF2EC0GK3kf-DKPL6j6heXOjAWtCaU,14957
+inventree_supplier_panel-0.5.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+inventree_supplier_panel-0.5.1.dist-info/entry_points.txt,sha256=Tnbg88wJALWj7OmoqVN-BNIatFJLsAZV32C7roBJXYg,98
+inventree_supplier_panel-0.5.1.dist-info/top_level.txt,sha256=bjASFPmpp8JaFz4FTeM7olEKL-g7BNo5BVttyI3W4Ew,25
+inventree_supplier_panel-0.5.1.dist-info/RECORD,,
