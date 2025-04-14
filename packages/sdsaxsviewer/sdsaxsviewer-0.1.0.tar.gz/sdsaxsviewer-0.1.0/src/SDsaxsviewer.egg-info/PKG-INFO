@@ -1,0 +1,76 @@
+Metadata-Version: 2.4
+Name: SDsaxsviewer
+Version: 0.1.0
+Summary: A graphical tool for visualizing SAXS data files
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Project-URL: Homepage, https://github.com/yourusername/sdfileviewer
+Project-URL: Bug Tracker, https://github.com/yourusername/sdfileviewer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: tifffile
+Requires-Dist: fabio
+Requires-Dist: PySide6
+Dynamic: license-file
+
+# SD SAXS File Viewer
+
+A graphical tool for visualizing SAXS (Small-Angle X-ray Scattering) data files in TIFF and EDF formats.
+
+## Features
+
+- Support for TIFF and EDF file formats
+- Interactive visualization with adjustable contrast
+- Multiple colormap options
+- Various normalization methods (Linear, Log, Power)
+- Zoom lock feature for comparing multiple images
+- Dark-themed UI for comfortable viewing
+
+## Installation
+
+```bash
+pip install sdfileviewer
+```
+
+## Usage
+
+After installation, you can run the application with:
+
+```bash
+# Run as a module
+python -m sdfileviewer
+
+# Or if entry points are installed
+sdfileviewer
+```
+
+## Requirements
+
+- Python 3.7+
+- PySide6
+- NumPy
+- Matplotlib
+- tifffile
+- fabio
+
+## Development
+
+To contribute:
+
+```bash
+git clone https://github.com/yourusername/sdfileviewer.git
+cd sdfileviewer
+pip install -e .
+```
+
+## License
+
+MIT License
