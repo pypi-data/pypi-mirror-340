@@ -1,0 +1,9 @@
+google_map_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+google_map_scraper/scraper.py,sha256=_yy-xZORaxk5730kjwulhzTgmtyhzYs87OcFME60rwA,6539
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_scraper.py,sha256=C7QvCI4e-N5KIlNS1sUjAFT43Z1CDm0Pc8_Xa-0ZjRg,140
+google_map_scraper-1.0.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+google_map_scraper-1.0.0.dist-info/METADATA,sha256=xvA4XcRO6GOQq-vALu64PZfwtAtX5kn7OcSxohqGLbw,2986
+google_map_scraper-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+google_map_scraper-1.0.0.dist-info/top_level.txt,sha256=4BXqYtp79eJUBBjJR4UuPPwGb3erlqDM8ZIiJFsi51s,25
+google_map_scraper-1.0.0.dist-info/RECORD,,
