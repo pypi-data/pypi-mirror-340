@@ -1,0 +1,10 @@
+custom_terminal/__init__.py,sha256=Lsn1xxVKbDlLv_rf7weaJ8d1g2iySvtzQdTu3VCyzM0,47
+custom_terminal/main.py,sha256=xevcnJly1smL_KbPiVJ_i6T4QH-D-4G4hAz41l3t9nE,1556
+custom_terminal/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_terminal/commands/base_commands.py,sha256=6bMePxdj34sAM9cLreF0zy5Zuja7pJqHVBeJpXuFBHQ,792
+custom_terminal/commands/weather.py,sha256=BG0N6JZYZKVLumUHsr2j2Ts57X7ezcufydDxnmiaZpE,1430
+custom_terminal-0.1.7.dist-info/METADATA,sha256=LVlOKdew_OKBU9ZPK7kDqcZ_byog4rSydKft-Ze8FBE,738
+custom_terminal-0.1.7.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+custom_terminal-0.1.7.dist-info/entry_points.txt,sha256=KUFoHyaK3FKdr99XzfWlGzB8lA0gHwmAwVRt_GoG040,52
+custom_terminal-0.1.7.dist-info/top_level.txt,sha256=O4qCj_MvYR_3ktX6wstrImtKZ1SfyGJsbO-3Gevrhkc,16
+custom_terminal-0.1.7.dist-info/RECORD,,
