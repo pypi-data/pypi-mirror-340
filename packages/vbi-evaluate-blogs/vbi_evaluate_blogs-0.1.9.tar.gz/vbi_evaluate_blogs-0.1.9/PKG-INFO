@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: vbi_evaluate_blogs
+Version: 0.1.9
+Summary: A package for evaluating PDFs with text, image, and fact-checking modules.
+Home-page: https://github.com/leeminhoon/vbi_evaluate_blogs
+Author: LeeMinHoon
+Author-email: hunglm@gfigroup.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: langchain
+Requires-Dist: langchain-openai
+Requires-Dist: langchain-community
+Requires-Dist: python-dotenv
+Requires-Dist: pymupdf
+Requires-Dist: pillow
+Requires-Dist: requests
+Requires-Dist: trafilatura
+Requires-Dist: playwright
