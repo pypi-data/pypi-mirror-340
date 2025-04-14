@@ -1,0 +1,15 @@
+
+[agno]
+agno
+pymongo
+openai
+
+[all]
+agno
+pymongo
+openai
+crewai[tools]
+
+[crewai]
+crewai[tools]
+pymongo
