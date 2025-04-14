@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+SVDC/SVDC.py
+SVDC/SVDC_CMA.py
+SVDC/__init__.py
+SVDClassifier.egg-info/PKG-INFO
+SVDClassifier.egg-info/SOURCES.txt
+SVDClassifier.egg-info/dependency_links.txt
+SVDClassifier.egg-info/top_level.txt
