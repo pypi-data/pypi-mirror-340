@@ -1,0 +1,2 @@
+[console_scripts]
+docstring-pdf-converter = docstring_pdf_converter.main:main
