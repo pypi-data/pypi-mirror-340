@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: readerllamaindex
+Version: 0.1.2
+Summary: RAG读取与构建index知识库
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: llama-index>=0.12.30
+Requires-Dist: llama-index-vector-stores-pinecone>=0.4.5
+Requires-Dist: llama-index-vector-stores-postgres>=0.4.2
+Requires-Dist: pinecone>=6.0.2
+Requires-Dist: python-dotenv>=1.1.0
+Requires-Dist: toolsz>=0.1.2
+
+# ReaderLLamaIndex
+读取数据到RAG的能力
+
+## 常规操作
+
+### 导出环境
+```
+uv export --format requirements-txt > requirements.txt
+```
+### 更新文档
+```
+mkdocs serve # 预览
+mkdocs gh-deploy -d ../.temp # 同步到github网站
+```
+### 发布
+```
+uv build
+uv publish
+```
+### 运行测试并同步到测试服务
+```
+bash run_test.sh
+```
