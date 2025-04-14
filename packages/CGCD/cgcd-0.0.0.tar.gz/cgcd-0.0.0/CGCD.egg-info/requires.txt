@@ -1,0 +1,11 @@
+math
+numpy
+pandas
+matplotlib
+scipy
+IPython
+plotly
+os
+shutil
+io
+openpyxl
