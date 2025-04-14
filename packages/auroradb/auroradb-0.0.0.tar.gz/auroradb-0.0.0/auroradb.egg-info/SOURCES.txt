@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+auroradb.egg-info/PKG-INFO
+auroradb.egg-info/SOURCES.txt
+auroradb.egg-info/dependency_links.txt
+auroradb.egg-info/requires.txt
+auroradb.egg-info/top_level.txt
+auroradb/api/api.py
+auroradb/scratch/encdec.py

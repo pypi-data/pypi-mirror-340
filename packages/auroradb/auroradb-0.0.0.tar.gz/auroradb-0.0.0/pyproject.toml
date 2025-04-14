@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+  {name = "Swapnil Raktale", email = "swapnil.raktale@gmail.com"}
+]
+maintainers = [
+{name = "Swapnil Raktale", email = "swapnil.raktale@gmail.com"}
+]
+description = "Aurora"
+readme = "README.md"
+license = "MIT"
+dynamic = ["version"]
+name = "auroradb"
+dependencies = [
+  "pymongo",
+  "bson",
+]
+requires-python = ">= 3.9"
+keywords = ["aurora"]
