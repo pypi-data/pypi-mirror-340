@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geegle"
+version = "0.0.3"
+description = "A CLI chat app with web search and session management"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "Apache 2.0"}
+authors = [
+    {name = "oha", email = "aaronoh2015@gmail.com"}
+]
+keywords = ["chat", "cli", "search", "openai"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+dependencies = [
+    "openai==1.73.0",
+    "anthropic==0.49.0",
+    "pydantic==2.11.3",
+    "python-dotenv==1.1.0",
+    "rich==13.0.0",
+    "prompt_toolkit==3.0.0",
+    "requests==2.32.3",
+    "selenium==4.31.0",
+    "webdriver-manager==4.0.0",
+    "beautifulsoup4==4.13.3",
+    "keyring==25.6.0"
+]
+
+[project.scripts]
+geegle = "geegle.main:run"
