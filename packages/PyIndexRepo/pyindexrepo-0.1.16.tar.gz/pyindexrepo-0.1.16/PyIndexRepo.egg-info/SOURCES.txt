@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+PyIndexRepo.egg-info/PKG-INFO
+PyIndexRepo.egg-info/SOURCES.txt
+PyIndexRepo.egg-info/dependency_links.txt
+PyIndexRepo.egg-info/requires.txt
+PyIndexRepo.egg-info/top_level.txt
+pyindexrepo/__init__.py
+pyindexrepo/dispersion_formulas.py
+pyindexrepo/main.py
+tests/test_formulas.py
+tests/test_material.py
