@@ -1,0 +1,11 @@
+[package]
+name = "shacl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+representation = { path = "../representation" }
+triplestore = {path="../triplestore"}
+thiserror.workspace = true
+oxrdf.workspace = true
+polars.workspace = true
