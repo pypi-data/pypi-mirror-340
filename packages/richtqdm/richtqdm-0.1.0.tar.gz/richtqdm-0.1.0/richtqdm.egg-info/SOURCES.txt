@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+core.py
+pyproject.toml
+richtqdm.egg-info/PKG-INFO
+richtqdm.egg-info/SOURCES.txt
+richtqdm.egg-info/dependency_links.txt
+richtqdm.egg-info/requires.txt
+richtqdm.egg-info/top_level.txt
