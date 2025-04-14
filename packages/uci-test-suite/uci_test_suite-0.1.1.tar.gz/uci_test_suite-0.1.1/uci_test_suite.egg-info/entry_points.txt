@@ -1,0 +1,2 @@
+[console_scripts]
+uci-test-suite = uci_test_suite.__main__:main

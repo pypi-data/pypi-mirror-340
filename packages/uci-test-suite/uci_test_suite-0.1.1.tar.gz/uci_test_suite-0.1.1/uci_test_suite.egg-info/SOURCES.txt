@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+./uci_test_suite/__init__.py
+./uci_test_suite/__main__.py
+./uci_test_suite/engine.py
+./uci_test_suite/tests.py
+uci_test_suite/__init__.py
+uci_test_suite/__main__.py
+uci_test_suite/engine.py
+uci_test_suite/tests.py
+uci_test_suite.egg-info/PKG-INFO
+uci_test_suite.egg-info/SOURCES.txt
+uci_test_suite.egg-info/dependency_links.txt
+uci_test_suite.egg-info/entry_points.txt
+uci_test_suite.egg-info/requires.txt
+uci_test_suite.egg-info/top_level.txt
