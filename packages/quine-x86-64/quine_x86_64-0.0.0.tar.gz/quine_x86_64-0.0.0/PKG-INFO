@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: quine-x86-64
+Version: 0.0.0
+Summary: Dummy release for name reservation.
+License: AGPL-3.0-or-later
+Author: Hendrik M Halkow
+Author-email: hendrik@halkow.com
+Requires-Python: >=3.13
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Quine compiler backend for x86_64
+
+Dummy placeholder package for the Quine compiler backend targeting x86_64.
+
