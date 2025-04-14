@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+lib_cld.egg-info/PKG-INFO
+lib_cld.egg-info/SOURCES.txt
+lib_cld.egg-info/dependency_links.txt
+lib_cld.egg-info/top_level.txt
