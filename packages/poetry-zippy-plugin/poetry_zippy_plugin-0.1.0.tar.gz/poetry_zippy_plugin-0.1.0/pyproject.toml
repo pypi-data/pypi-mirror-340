@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "poetry-zippy-plugin"
+version = "0.1.0"
+description = "Poetry plugin to install dependencies to a target directory and create zip files for deploying to AWS Lambda"
+authors = ["Adam McKay <adam@beepboop.digital>"]
+readme = "README.md"
+packages = [{include = "poetry_zippy_plugin", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+poetry = "^2.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+pytest-cov = "^6.1.1"
+pytest-mock = "^3.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+zippy = "poetry_zippy_plugin.plugin:ZippyPlugin"
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.pytest.ini_options]
+# Add options for pytest here
+addopts = "--cov=src/poetry_zippy_plugin --cov-report=term-missing --cov-report=html"
+
+[tool.coverage.run]
+source = ["src/poetry_zippy_plugin"]
+omit = [
+    "src/poetry_zippy_plugin/__init__.py", # Often empty
+    # Add other files/patterns to omit if necessary
+]
+
+[tool.coverage.report]
+# Fail if coverage drops below this threshold (e.g., 80%)
+# Start with a lower value and increase as test coverage improves
+fail_under = 50
+show_missing = true
