@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: ipgelo
+Version: 0.1.0
+Summary: A Python module that can get geolocation data from an IP Address.
+Author: cocoa
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ipgelo
+
+Ipgelo is a super simple Python module that can make getting IP Geolocation much easier.
+
+## Installation
+
+pip install ipgelo
+
+##  Example
+
+import ipgelo
+
+geo = ipgelo.geo('8.8.8.8')
+
+## Variables
+
+country, countrycode, city, zip, lat, lon, timezone
+These are the variables that are defined after running ipgelo.geo(''). This can be either IPv4, or IPv6.
