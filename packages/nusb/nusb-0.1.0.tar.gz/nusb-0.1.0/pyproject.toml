@@ -1,0 +1,41 @@
+[project]
+name = "nusb"
+description = "Python bindings to nusb"
+readme = "README.md"
+authors = [
+    {name = "Vegard Storheil Eriksen", email = "zyp@jvnv.net"},
+]
+license = {text = "MIT"}
+dependencies = [
+]
+requires-python = ">=3.10"
+dynamic = ["version"]
+
+[build-system]
+requires = ["maturin>=1.8,<2.0", "cffi>=1.17"]
+build-backend = "maturin"
+
+[tool.pdm.scripts]
+test.cmd = "pytest tests/"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "class"
+asyncio_default_test_loop_scope = "class"
+filterwarnings = [
+    "ignore:.*amaranth.hdl.rec:DeprecationWarning",
+]
+
+[dependency-groups]
+dev = [
+    "maturin-import-hook>=0.2.0",
+    "maturin>=1.8,<2.0",
+    "cffi>=1.17",
+    "pip>=25.0.1",
+]
+test = [
+    "pytest>=8.3.5",
+    "pytest-asyncio>=0.26.0",
+    "facedancer>=3.1.0",
+    "cynthion>=0.1.8",
+]
