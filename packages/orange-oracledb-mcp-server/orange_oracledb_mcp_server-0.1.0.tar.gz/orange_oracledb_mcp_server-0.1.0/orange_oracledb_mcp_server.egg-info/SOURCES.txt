@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+oracledb_mcp_server/__init__.py
+oracledb_mcp_server/__main__.py
+oracledb_mcp_server/utils.py
+orange_oracledb_mcp_server.egg-info/PKG-INFO
+orange_oracledb_mcp_server.egg-info/SOURCES.txt
+orange_oracledb_mcp_server.egg-info/dependency_links.txt
+orange_oracledb_mcp_server.egg-info/entry_points.txt
+orange_oracledb_mcp_server.egg-info/requires.txt
+orange_oracledb_mcp_server.egg-info/top_level.txt
