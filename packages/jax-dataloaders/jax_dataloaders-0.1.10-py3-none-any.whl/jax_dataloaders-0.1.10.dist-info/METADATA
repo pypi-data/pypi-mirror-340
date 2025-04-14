@@ -1,0 +1,206 @@
+Metadata-Version: 2.1
+Name: jax-dataloaders
+Version: 0.1.10
+Summary: A high-performance data loading library for JAX
+Home-page: https://github.com/carrycooldude/JAX-Dataloader
+Author: Kartikey Rawat
+Author-email: rawatkari554@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax>=0.4.13
+Requires-Dist: jaxlib>=0.4.13
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: pillow>=10.0.0
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: typing-extensions>=4.5.0
+Provides-Extra: all
+Requires-Dist: pandas>=2.0.0; extra == "all"
+Requires-Dist: pillow>=10.0.0; extra == "all"
+Provides-Extra: csv
+Requires-Dist: pandas>=2.0.0; extra == "csv"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+Requires-Dist: sphinx>=7.0.0; extra == "dev"
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == "dev"
+Requires-Dist: sphinx-autodoc-typehints>=1.0.0; extra == "dev"
+Provides-Extra: image
+Requires-Dist: pillow>=10.0.0; extra == "image"
+Provides-Extra: json
+Requires-Dist: pandas>=2.0.0; extra == "json"
+
+# JAX DataLoader
+
+A high-performance data loading library for JAX applications.
+
+[![PyPI version](https://img.shields.io/pypi/v/jax-dataloaders.svg)](https://pypi.org/project/jax-dataloaders/)  
+📦 **PyPI**: [jax-dataloaders](https://pypi.org/project/jax-dataloaders/)  
+📘 **Documentation**: [https://carrycooldude.github.io/JAX-Dataloader/](https://carrycooldude.github.io/JAX-Dataloader/)  
+🌐 **Live Website (Netlify)**: [https://jax-dataloader.netlify.app/](https://jax-dataloader.netlify.app/)  
+🔗 **GitHub Repo**: [https://github.com/carrycooldude/JAX-Dataloader](https://github.com/carrycooldude/JAX-Dataloader)
+
+---
+
+## Features
+
+- Efficient data loading with memory management  
+- Support for CSV, JSON, and image data  
+- Data augmentation and preprocessing  
+- Progress tracking  
+- Caching  
+- Multi-GPU support  
+- Memory monitoring and auto-tuning  
+
+---
+
+## Installation
+
+```bash
+pip install jax-dataloaders
+```
+
+---
+
+## Usage
+
+### Basic Usage
+
+```python
+from jax_dataloader import DataLoader, DataLoaderConfig
+
+# Create configuration
+config = DataLoaderConfig(
+    batch_size=32,
+    shuffle=True,
+    loader_type="csv",
+    data_path="data.csv"
+)
+
+# Create data loader
+dataloader = DataLoader(config)
+
+# Iterate over batches
+for batch_data, batch_labels in dataloader:
+    print(f"Batch shape: {batch_data.shape}")
+```
+
+### Advanced Usage
+
+```python
+from jax_dataloader import DataLoader, DataLoaderConfig
+from jax_dataloader.transform import Transform
+
+# Create transform
+transform = Transform()
+transform.add(lambda x: x * 2)  # Example transform
+
+# Create configuration
+config = DataLoaderConfig(
+    batch_size=32,
+    shuffle=True,
+    loader_type="json",
+    data_path="data.json",
+    transform=transform,
+    num_workers=4,
+    prefetch_factor=2
+)
+
+# Create data loader
+dataloader = DataLoader(config)
+
+# Iterate over batches
+for batch_data, batch_labels in dataloader:
+    print(f"Batch shape: {batch_data.shape}")
+```
+
+---
+
+## Documentation
+
+📘 Full documentation available at:  
+[https://carrycooldude.github.io/JAX-Dataloader/](https://carrycooldude.github.io/JAX-Dataloader/)
+
+---
+
+## Development
+
+### Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/carrycooldude/JAX-Dataloader.git
+cd JAX-Dataloader
+```
+
+2. Create a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install development dependencies:
+
+```bash
+pip install -e ".[dev]"
+```
+
+---
+
+### Testing
+
+Run tests:
+
+```bash
+pytest
+```
+
+---
+
+### Building Documentation
+
+```bash
+cd docs
+make html
+```
+
+---
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Author
+
+Kartikey Rawat
+
+---
+
+## Project Links
+
+- 🔗 GitHub Repo: [https://github.com/carrycooldude/JAX-Dataloader](https://github.com/carrycooldude/JAX-Dataloader)
+- 📦 PyPI: [https://pypi.org/project/jax-dataloaders/](https://pypi.org/project/jax-dataloaders/)
+- 📘 Docs: [https://carrycooldude.github.io/JAX-Dataloader/](https://carrycooldude.github.io/JAX-Dataloader/)
+- 🌐 Website: [https://jax-dataloader.netlify.app/](https://jax-dataloader.netlify.app/)
+
+---
