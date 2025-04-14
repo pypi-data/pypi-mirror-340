@@ -1,0 +1,13 @@
+tax/__init__.py,sha256=n9oN9nKMfJZuCJtcFQZvzFLuCcG9FcdLEjTe_SZbdbI,20
+tax/invoice/__init__.py,sha256=X4YUCDuK-M6VPZWylR7J_Lghnq0W470KXqvt45VNrew,75
+tax/invoice/client.py,sha256=zgb17IOhzuPEeizl7QKk55uxOPz0g-QtPD-xU89gUr4,859
+tax/invoice/api/__init__.py,sha256=2qXquy7NRTkEFo5hij7jA8I2JWDpZbNR14E_pSetmvw,26
+tax/invoice/api/auth.py,sha256=5E5BCMfDm3rqG4n9Mtg7ZBhc2WwjCB-4DmnlCH4kvec,2614
+tax/invoice/api/face.py,sha256=gEB9tbjUULh7_7rhfZAiOeAFqoHs2GX04f9JxTjasDQ,1570
+tax/invoice/api/invoice.py,sha256=hPUlh19midO2hcwloNfbdDw08NzCVjwGWrQguod8TI0,1675
+tax/invoice/utils/__init__.py,sha256=AwS28LQvXQatyMQHUBTY4gAYaSzjXfmTL6xdJfFFabo,29
+tax/invoice/utils/http.py,sha256=GW3Ck-eIq5iGhyLF1G2FavbFkOdcRfPRxjz43MhXFes,3050
+tax_invoice-1.0.1.dist-info/METADATA,sha256=2Jwe5vxjzPtwWExqkDfUFkW74s5LnvRiztKuYnifkOQ,1965
+tax_invoice-1.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tax_invoice-1.0.1.dist-info/top_level.txt,sha256=qYMlcMeF9WjSqpfILdqJW6rObb85O4KShIFYNJCVQLE,4
+tax_invoice-1.0.1.dist-info/RECORD,,
