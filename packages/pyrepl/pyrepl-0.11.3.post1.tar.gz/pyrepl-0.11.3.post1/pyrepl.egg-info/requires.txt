@@ -1,0 +1,10 @@
+
+[dev]
+ruff==0.9.3
+pyrepl[tests]
+
+[tests]
+pytest
+pytest-coverage
+pytest-timeout
+pexpect
