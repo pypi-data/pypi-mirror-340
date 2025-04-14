@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HS23005UNO"
+version = "0.0.2"
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+description = "Libreria para resolver sistema de ecuaciones lineales y no lineales."
+authors = [
+    {name = "Noel Alejandro Hernandez Salinas", email = "hs23005@ues.edu.sv"}
+]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "numpy"
+]
+
+[project.scripts]
+hs23005uno = "HS23005UNO.main:main"
+
+[tool.setuptools]
+packages = ["HS23005UNO"]
