@@ -1,0 +1,12 @@
+novikovtv_parser_vk/__init__.py,sha256=f8Cbch0QxsZqT2WBHZ_Axzc-aBFO5ua7gIMWQ1wi1ts,41
+novikovtv_parser_vk/parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novikovtv_parser_vk/parser/main.py,sha256=V4LIDFEk0Fuopl3b6cgvhz1ZmLFKzBGXQc8xr4XPOoA,1464
+novikovtv_parser_vk/parser/selenium_vk_parser/SeleniumVkParser.py,sha256=8JsJa72naKT6S3FUYwd7Sbbw55fx3DgFpBwEP47xG-M,9037
+novikovtv_parser_vk/parser/selenium_vk_parser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novikovtv_parser_vk/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+novikovtv_parser_vk/util/env.py,sha256=F5aJ2CVA7O9vZruAkOOwUDogO1Q-NjJ98MbIixlHiG4,747
+novikovtv_parser_vk/util/singleton.py,sha256=x5jtuFyVMdDTTK9fZzY2MIlti7IvMCLeaw3E8KCtY6s,422
+novikovtv_parser_vk-1.0.3.dist-info/METADATA,sha256=NGhnR6OGxhap4TLG5VZGVkqxJF0aqmSYpAvjKTGBftc,1495
+novikovtv_parser_vk-1.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+novikovtv_parser_vk-1.0.3.dist-info/licenses/LICENSE,sha256=8mlZGgD6dDnqioQugi3G2fIZB0ZVuHL-UJfTGrSWx7U,1064
+novikovtv_parser_vk-1.0.3.dist-info/RECORD,,
