@@ -1,0 +1,2 @@
+juntagrico>=1.7.0
+django-multiselectfield==0.1.12
