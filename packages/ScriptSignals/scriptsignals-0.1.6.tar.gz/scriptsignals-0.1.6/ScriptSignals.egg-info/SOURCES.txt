@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ScriptSignals.egg-info/PKG-INFO
+ScriptSignals.egg-info/SOURCES.txt
+ScriptSignals.egg-info/dependency_links.txt
+ScriptSignals.egg-info/top_level.txt
+ScriptsSignal/__init__.py
+ScriptsSignal/signal.py
