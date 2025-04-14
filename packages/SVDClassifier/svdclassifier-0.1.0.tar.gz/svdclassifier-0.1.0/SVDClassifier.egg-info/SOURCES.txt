@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+SVDClassifier.egg-info/PKG-INFO
+SVDClassifier.egg-info/SOURCES.txt
+SVDClassifier.egg-info/dependency_links.txt
+SVDClassifier.egg-info/top_level.txt
