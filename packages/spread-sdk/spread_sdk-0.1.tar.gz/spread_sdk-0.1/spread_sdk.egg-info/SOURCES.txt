@@ -1,0 +1,7 @@
+setup.py
+spread_sdk.py
+spread_sdk.egg-info/PKG-INFO
+spread_sdk.egg-info/SOURCES.txt
+spread_sdk.egg-info/dependency_links.txt
+spread_sdk.egg-info/requires.txt
+spread_sdk.egg-info/top_level.txt

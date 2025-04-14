@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: spread-sdk
+Version: 0.1
+Summary: Binance Internal Spread Monitoring SDK
+Home-page: https://github.com/binance/spread-sdk
+Author: TechOps
+Author-email: support@binance.com
+Requires-Dist: websockets
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
