@@ -1,0 +1,2 @@
+[console_scripts]
+hey-plot = bedrock.plot:hello_plt
