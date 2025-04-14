@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: emmett-mcp
+Version: 0.1.0
+Summary: MCP extension for Emmett framework
+Project-URL: Homepage, https://github.com/gi0baro/emmett-mcp
+Project-URL: Funding, https://github.com/sponsors/gi0baro
+Project-URL: Source, https://github.com/gi0baro/emmett-mcp
+Project-URL: Issues, https://github.com/gi0baro/emmett-mcp/issues
+Author-email: Giovanni Barillari <g@baro.dev>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Keywords: automation,emmett,llm,mcp
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Requires-Dist: emmett-core~=1.3
+Requires-Dist: httpx~=0.28
+Requires-Dist: mcp-min~=20241105.160
+Description-Content-Type: text/markdown
+
+# Emmett-MCP
+
+An extension for [Emmett](https://emmett.sh) and [Emmett55](https://github.com/emmett-framework/emmett55) to build [MCP servers](https://modelcontextprotocol.io).
+
+> **Note**: Emmett-MCP only supports the [SSE transport](https://modelcontextprotocol.io/specification/2024-11-05/basic/transports#http-with-sse).
+
+## In a nutshell
+
+```python
+from emmett55 import App
+from emmett_mcp import MCP, MCPModule
+
+app = App(__name__)
+mcp = app.use_extension(MCP)
+
+mcp_server: MCPModule = app.mcp_module(__name__, "mcp", url_prefix="/mcp")
+
+@mcp_server.resource("echo://{message}")
+def echo_resource(message: str) -> str:
+    return f"Resource echo: {message}"
+
+@mcp_server.tool()
+def echo_tool(message: str) -> str:
+    return f"Tool echo: {message}"
+
+@mcp_server.prompt()
+def echo_prompt(message: str) -> str:
+    return f"Please process this message: {message}"
+```
+
+## License
+
+Emmett-MCP is released under BSD license. Check the LICENSE file for more details.
