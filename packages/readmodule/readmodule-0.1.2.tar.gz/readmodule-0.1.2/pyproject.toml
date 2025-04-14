@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readmodule"
+version = "0.1.2"
+authors = [
+    {name = "lwt", email = "liangweitao@openvalley.net"},
+]
+description = "MCP Server for reading OpenHarmony module code"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12", 
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "Development Status :: 4 - Beta",
+    "Topic :: Utilities",
+]
+keywords = ["mcp", "openharmony", "code-reader"]
+dependencies = [
+    "fastmcp",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+]
+    
+license = {file = "LICENSE"}
+    
+[project.scripts]
+readmodule-mcp = "readmodule.server:start_server"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["readmodule"]
