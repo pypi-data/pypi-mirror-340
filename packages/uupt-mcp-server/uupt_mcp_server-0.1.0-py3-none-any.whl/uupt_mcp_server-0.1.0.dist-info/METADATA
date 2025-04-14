@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: uupt-mcp-server
+Version: 0.1.0
+Summary: uupt.com openapi mcp server
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: requests>=2.32.3
+
+A lightweight Python package for creating orders on the uupt.com OpenAPI platform via the MCP protocol.
