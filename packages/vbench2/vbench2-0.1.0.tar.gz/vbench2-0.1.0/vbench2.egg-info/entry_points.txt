@@ -1,0 +1,2 @@
+[console_scripts]
+vbench2 = vbench2.cli.vbench2:main
