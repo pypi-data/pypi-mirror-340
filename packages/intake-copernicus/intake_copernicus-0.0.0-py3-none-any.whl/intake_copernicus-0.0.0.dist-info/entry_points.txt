@@ -1,0 +1,2 @@
+[intake.drivers]
+copernicus_marine = intake_copernicus.source:CopernicusMarineSource
