@@ -1,0 +1,13 @@
+little_timmy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+little_timmy/__main__.py,sha256=bX8abpuLDmXEwQdHrPMs_6CbuSylmA5U0RHzJi3QQR0,5019
+little_timmy/config_loader.py,sha256=fArZfJV932Qrrd67AshkKebaGTN0hET66dh--2Eqgys,7333
+little_timmy/duplicated_var_finder.py,sha256=iqW0X-hE15qErUX8bjyAgIyUdpQLXu0-1qYXNvl7coo,5408
+little_timmy/taml.py,sha256=GNIKg0ZoKowWhAlVb9zvW34Hk2HNBmJcfLsqX7bCnuc,6163
+little_timmy/unused_var_finder.py,sha256=iUoAQyOy7MEoiaXWcaTKRHeVkErGQltquN8qjrxP264,5701
+little_timmy/utils.py,sha256=wIVIHzkeNAxvqT3cOhex8lA-FNr0hj5dSEdF1jwpi6E,1994
+little_timmy-3.0.0.dist-info/licenses/LICENSE,sha256=UcPjJPA4FUCvkQf6wukpp46yaoSW2fhlzJdOZqlt0Xw,1060
+little_timmy-3.0.0.dist-info/METADATA,sha256=AwY0I_tNIGD6AJ9T9YwqvemA8lmJ3BRYGrFYuewKEqU,7294
+little_timmy-3.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+little_timmy-3.0.0.dist-info/entry_points.txt,sha256=mp01M3BzSQIpsVAx0VlWLlJ7faVY8NsPMXC7bncSMX0,60
+little_timmy-3.0.0.dist-info/top_level.txt,sha256=2lib01CGmASI6T2QtInuqrgoNZo7D0E4YAK12jaXyvg,13
+little_timmy-3.0.0.dist-info/RECORD,,
