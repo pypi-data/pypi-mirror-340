@@ -1,0 +1,15 @@
+README.rst
+pyproject.toml
+setup.py
+weathervane.service
+tests/test_config.py
+tests/test_data_sources.py
+tests/test_parser.py
+tests/test_parser_methods.py
+tests/test_recursion.py
+tests/test_weathervaneConfigParser.py
+tests/test_weathervaneinterface.py
+weathervane/weathervane.egg-info/PKG-INFO
+weathervane/weathervane.egg-info/SOURCES.txt
+weathervane/weathervane.egg-info/dependency_links.txt
+weathervane/weathervane.egg-info/top_level.txt
