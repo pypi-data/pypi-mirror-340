@@ -1,0 +1,70 @@
+#pragma once
+#include <cstring>
+
+{% include "../math.jinja" %}
+
+/**
+ * A {{ task }} chain for tabular data
+ */
+namespace tinyml4all {
+    {% include "../Input.jinja" with context %}
+    {% include "../Output.jinja" with context %}
+
+    // processing blocks
+    {% for block in blocks %}
+    {{ block.convert_to("c++", class_name=block | var()) }}
+    {% endfor %}
+
+    /**
+     * Chain class
+     * {{ this }}
+     */
+     class {{ class_name or "Chain" }} {
+        public:
+            Input input;
+            Output output;
+
+            /**
+             * Transform array input
+             */
+            bool operator()(float *inputs) {
+                return operator()({% for var in variables.inputs %}inputs[{{ loop.index0 }}]{% if not loop.last %}, {% endif %}{% endfor %});
+            }
+
+            /**
+             * Transform const array input
+             */
+            bool operator()(const float *inputs) {
+                return operator()({% for var in variables.inputs %}inputs[{{ loop.index0 }}]{% if not loop.last %}, {% endif %}{% endfor %});
+            }
+
+            /**
+             * Transform variadic input
+             */
+            bool operator()({{ variables.inputs | spread_signature(const=True) }}) {
+                // assign variables to input
+                {% for var in variables.inputs %}
+                    input.{{ var.name | var() }} = {{ var.name | var() }};
+                {% endfor %}
+
+                // run blocks
+                {% for block in blocks %}
+                    // {{ block }}
+                    block{{ loop.index }}(input, output);
+
+                    if (!block{{ loop.index }}.isReady())
+                        return false;
+                {% endfor %}
+
+                {% include "../classmap.jinja" %}
+
+                return true;
+            }
+
+        protected:
+            {% for block in blocks %}
+                // {{ block }}
+                {{ block | var() }} block{{ loop.index }};
+            {% endfor %}
+    };
+}
