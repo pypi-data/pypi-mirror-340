@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: mpesa-integration
+Version: 0.1.0
+Summary: A Python package for M-Pesa STK Push integration (Till and Paybill)
+Home-page: https://github.com/seven7-AI/mpesa-integration
+Author: thought vision
+Author-email: arapbiisubmissions@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.28.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# M-Pesa Integration
+
+A Python package for M-Pesa STK Push integration supporting both Till and Paybill payments.
+
+## Installation
+
+```bash
+pip install mpesa-integration
