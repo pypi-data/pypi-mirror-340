@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glasbeyish"
+version = "0.2.0"
+authors = [
+    { name = "Andrew Tapia", email = "andrew.tapia@uky.edu" }
+]
+description =  "A library for generating color palettes with distinct colors"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "heap-mapping >= 0.1.0",
+    "multiset-key-dict >= 0.2.1",
+    "nice-colorsys >= 0.2.0",
+    "numpy",
+    "hsluv"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/actapia/glasbeyish"
+"Bug Tracker" = "https://github.com/actapia/glasbeyish"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["glasbeyish"]
