@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "RP23005UNO"
+version = "1.0.0"
+description = "Librería para resolver sistemas de ecuaciones"
+authors = [ {name = "Jennifer Pleitez", email = "rp23005@ues.edu.sv" }]
+license = { text = "MIT" }
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+keywords = ["ecuaciones", "álgebra lineal", "bisección", "gauss", "jacobi"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Education",
+    "Topic :: Scientific/Engineering :: Mathematics"
+]
+
+[project.urls]
+"Repository" = "https://github.com/rp23005/RP23005UNO.git"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools]
+packages = ["rp23005uno"]
