@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: resy-mcp
+Version: 0.1.0
+Summary: An MCP Server for Resy
+Author-email: Arunav Gupta <arunavgupta01@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.11
+Requires-Dist: mcp>=1.6.0
+Description-Content-Type: text/markdown
+
+# Resy MCP Server
