@@ -1,0 +1,7 @@
+polars_financial/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+polars_financial/days.py,sha256=kUJlx3P9vB8CYqpGcz7aerExsXmkms4iUW6olI85R78,37
+polars_financial/metrics.py,sha256=ScbADMjbql4Xg0f_ZBUf2rvdBOXmqYz57egvNPcwvVE,4963
+polars_financial/test/test_metrics.py,sha256=NUmuweAyVHgcSF4TkTQYCUBgu0rTkQBfnl7TwEqkZcU,6486
+polars_financial-0.1.0.dist-info/METADATA,sha256=dd-SO6gwM6QXQ793MXgm7ieUDoeNzXYio2aHV3vfeBo,537
+polars_financial-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+polars_financial-0.1.0.dist-info/RECORD,,
