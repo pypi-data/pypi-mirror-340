@@ -1,0 +1,134 @@
+Metadata-Version: 2.4
+Name: tomlserializer
+Version: 0.2.0
+Summary: Add your description here
+Author-email: raoul grouls <Raoul.Grouls@han.nl>
+Requires-Python: >=3.11
+Requires-Dist: loguru>=0.7.3
+Description-Content-Type: text/markdown
+
+# TOMLSerializer 📝
+
+A powerful and flexible Python library for serializing Python objects to TOML format with robust type handling support.
+
+## ✨ Features
+
+- 🔄 Serializes Python dataclasses to TOML format and back
+- 🏷️ Preserves type information during serialization
+- 📦 Supports complex data types including:
+  - 🔢 Basic types (int, float, str, bool)
+  - 📚 Collections (list, dict, set, tuple)
+  - 📂 Path objects
+  - 🎯 Callable functions
+  - ❓ Optional fields
+  - 🔀 Union types
+  - 🪢 Nested data structures
+  - 🕳️ Empty collections
+  - 👨‍👦 Inheritance hierarchies
+
+## 🚀 Installation
+
+```bash
+pip install tomlserializer  # Package name may vary
+```
+
+## 🏃 Quick Start
+
+```python
+from dataclasses import dataclass
+from pathlib import Path
+from tomlserializer import TOMLSerializer
+
+@dataclass
+class Config:
+    name: str
+    values: list[int]
+    output_path: Path
+    enabled: bool
+
+# Create an instance
+config = Config(
+    name="example",
+    values=[1, 2, 3],
+    output_path=Path("/tmp/output"),
+    enabled=True
+)
+
+# Save to TOML
+TOMLSerializer.save(config, "config.toml")
+
+# Load from TOML
+loaded_data = TOMLSerializer.load_typed_dict("config.toml")
+```
+
+## 🔧 Advanced Usage
+
+### 🛠️ Custom Type Registration
+
+You can register custom type handlers for serialization and deserialization:
+
+```python
+def custom_type_to_toml(value):
+    return str(value)
+
+def custom_type_from_toml(value):
+    return CustomType(value)
+
+TOMLSerializer.register_type(CustomType, custom_type_to_toml, custom_type_from_toml)
+```
+
+### 🌟 Supporting Complex Types
+
+The library handles various complex scenarios:
+
+```python
+@dataclass
+class ComplexConfig:
+    # Optional fields
+    optional_value: Optional[int] = None
+
+    # Union types
+    flexible_field: Union[str, int]
+
+    # Nested collections
+    nested_dict: Dict[str, Dict[str, int]]
+
+    # Function references
+    callback: Callable
+```
+
+### 👨‍👦 Inheritance Support
+
+```python
+@dataclass
+class BaseConfig:
+    base_field: str
+
+@dataclass
+class DerivedConfig(BaseConfig):
+    derived_field: int
+
+# Both base and derived fields are preserved during serialization
+```
+
+## 📋 Type Support
+
+The library includes built-in support for:
+- 🔢 Basic types (int, float, str, bool)
+- 📚 Collection types (list, dict, set, tuple)
+- 📂 Pathlib Path objects
+- 🎯 Python functions (via module path resolution)
+- ❌ None values
+- ❓ Optional fields
+- 🔀 Union types
+
+## ⚠️ Error Handling
+
+The library includes robust error handling for:
+- 🚫 Invalid file paths
+- 🔄 Type conversion errors
+- ❗ Missing required fields
+- 🏗️ Invalid TOML syntax
+
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit pull requests.
