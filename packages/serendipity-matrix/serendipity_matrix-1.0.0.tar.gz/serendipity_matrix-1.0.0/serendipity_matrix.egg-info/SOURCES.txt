@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+serendipity_matrix/__init__.py
+serendipity_matrix/serendipity_matrix.py
+serendipity_matrix.egg-info/PKG-INFO
+serendipity_matrix.egg-info/SOURCES.txt
+serendipity_matrix.egg-info/dependency_links.txt
+serendipity_matrix.egg-info/requires.txt
+serendipity_matrix.egg-info/top_level.txt
