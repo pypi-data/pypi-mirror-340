@@ -1,0 +1,13 @@
+py_nlp_utils/__init__.py,sha256=dbqF1C6bwCW5KMXqBci5yVOjcK0UucaseYAb-WIkKa8,2872
+py_nlp_utils/deepseek_calc_tokens.py,sha256=N2TSvDXuTn7YlYeWACjUoSUtPg1SH6H4DzAPRYiPlQs,2211
+py_nlp_utils/openai_calc_tokens.py,sha256=bu6jjPS5rnlWQfTlTkKu_rieIv3cq_nTQLjKQWhZfpo,6163
+py_nlp_utils/transformers_calc_tokens.py,sha256=vNqUXzbt5UNlO6yPuOmt3RjkSMvJ_7ZNeLl7CKMDri8,772415
+py_nlp_utils/who_is_unk.py,sha256=1tGlIXh_TItlxdQCQpgpWT6CLRNyD2JOb3WPuEgJyJA,1531
+py_nlp_utils/deepseek_tokenizer/v2/tokenizer.json,sha256=QfO_ZCE9qMAS2L0IcaWKH99wRj6PCPEQ3bsQgvUp9mk,4607451
+py_nlp_utils/deepseek_tokenizer/v2/tokenizer_config.json,sha256=MRger3k5TqJnKNley1T-fIQT5vVghduryLCBgTQ4Dsg,1279
+py_nlp_utils/deepseek_tokenizer/v3/tokenizer.json,sha256=7Lb5_DaYlDRvBRH0B0ynXO5c1fOwbQLxujX805-OEh0,7847602
+py_nlp_utils/deepseek_tokenizer/v3/tokenizer_config.json,sha256=FEptkrYBK6608qxB1I7TRY51j5d6D7XK91_wdpj8hEw,3585
+py_nlp_utils-0.0.1.dev5.dist-info/licenses/LICENSE,sha256=eJHWS57LxSgCzKKOkFw4s2TtN8h26r5u8fUH4wjyoM0,1081
+py_nlp_utils-0.0.1.dev5.dist-info/WHEEL,sha256=G2gURzTEtmeR8nrdXUJfNiB3VYVxigPQ-bEQujpNiNs,82
+py_nlp_utils-0.0.1.dev5.dist-info/METADATA,sha256=vnklRq4C5Yu4HG-HYAZp4R_A0A9vtwrtjv9BOu9acPc,1047
+py_nlp_utils-0.0.1.dev5.dist-info/RECORD,,
