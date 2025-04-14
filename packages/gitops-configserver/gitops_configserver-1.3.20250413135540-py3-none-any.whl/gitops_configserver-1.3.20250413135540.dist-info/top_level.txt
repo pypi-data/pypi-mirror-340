@@ -1,0 +1,6 @@
+config
+dist
+docs
+gitops_configserver
+resources
+tests
