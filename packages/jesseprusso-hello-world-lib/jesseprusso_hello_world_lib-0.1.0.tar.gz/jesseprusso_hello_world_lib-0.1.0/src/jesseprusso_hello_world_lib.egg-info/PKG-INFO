@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: jesseprusso-hello-world-lib
+Version: 0.1.0
+Summary: Uma biblioteca simples para gerenciar tarefas
+Author-email: Jessé <jesseprusso@gmail.com>
+Project-URL: Homepage, https://github.com/seu_usuario/hello-world-lib
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# hello-world-lib 📝
+
+Uma biblioteca Python simples de gerenciamento de tarefas, desenvolvida com boas práticas e estrutura modular. Ideal para estudos e projetos iniciais.
+
+## 🚀 Funcionalidades
+
+- Adicionar tarefas
+- Listar tarefas
+- Remover tarefas por índice
+- Uso de context manager para controle de escopo
+- Estrutura de projeto com boas práticas

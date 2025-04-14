@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/hello_world/__init__.py
+src/hello_world/main.py
+src/hello_world/model/task.py
+src/hello_world/services/tasks_service.py
+src/jesseprusso_hello_world_lib.egg-info/PKG-INFO
+src/jesseprusso_hello_world_lib.egg-info/SOURCES.txt
+src/jesseprusso_hello_world_lib.egg-info/dependency_links.txt
+src/jesseprusso_hello_world_lib.egg-info/top_level.txt
