@@ -1,0 +1,2 @@
+[console_scripts]
+dlmscli = dlms_crypto_tool.cli:main

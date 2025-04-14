@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dlms_crypto_tool"
+version = "0.0.1"
+description = "A tool for encrypting, decrypting, and authenticating DLMS APDU messages."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "ricgeek", email = "solidkind@gmail.com" }
+]
+requires-python = ">=3.6"
+dependencies = [
+    "cryptography"
+]
+
+[project.scripts]
+dlmscli = "dlms_crypto_tool.cli:main"
