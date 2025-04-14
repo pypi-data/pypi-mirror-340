@@ -1,0 +1,11 @@
+README.md
+setup.py
+ais140/__init__.py
+ais140/kpi.py
+ais140/parser.py
+ais140_parser.egg-info/PKG-INFO
+ais140_parser.egg-info/SOURCES.txt
+ais140_parser.egg-info/dependency_links.txt
+ais140_parser.egg-info/top_level.txt
+tests/__init__.py
+tests/test_parser.py
