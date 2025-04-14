@@ -1,0 +1,5 @@
+mcp[cli]>=1.6.0
+requests>=2.31.0
+httpx>=0.24.0
+build>=1.0.0
+twine>=4.0.0 

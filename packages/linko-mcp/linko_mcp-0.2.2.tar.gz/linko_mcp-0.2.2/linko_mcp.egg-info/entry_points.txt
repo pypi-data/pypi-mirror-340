@@ -1,0 +1,3 @@
+[console_scripts]
+mcp-server-linko = linko_mcp.linko_mcp:main
+mcp-server-linko-for-ai = linko_mcp.linko_for_AI:main
