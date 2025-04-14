@@ -1,0 +1,63 @@
+[tool.poetry]
+name = "thira"
+version = "1.22.0"
+description = "A Git hooks manager and commit message linter"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ervan0707/thira"
+repository = "https://github.com/ervan0707/thira"
+documentation = "https://github.com/ervan0707/thira#readme"
+keywords = ["git", "hooks", "commit", "lint", "cli"]
+packages = [
+    { include = "thira" }
+]
+include = [
+    "thira/**/*",
+    "lib/binary/.gitkeep"
+]
+
+[tool.poetry.scripts]
+thira = "thira.run:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tomli = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# Change the post-install configuration
+[tool.poetry.plugins."poetry.application.plugin"]
+post_install = "thira.install:install_binary"
+
+# Remove this section as it's causing the error
+# [tool.poetry.build]
+# script = "thira:post_install"
+# generate-setup-file = true
+
+[tool.poetry-version-plugin]
+source = "pyproject"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/ervan0707/thira/issues"
+
+# Development configurations
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+black = "^22.0"
+isort = "^5.0"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
