@@ -1,0 +1,2 @@
+[console_scripts]
+filytics = Filytics.cli:main

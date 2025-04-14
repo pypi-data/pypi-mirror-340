@@ -1,0 +1,12 @@
+Filytics/__init__.py,sha256=EkmLsFk-D0O1sL5AJNQu1UsUZmuLE3hJK4LOVbWshEA,50
+Filytics/analyzer.py,sha256=fsNhKKg3IYdiNLalLyjPCTS0mCSJ9bMaS1HRK1CgtS4,5285
+Filytics/cli.py,sha256=WZyTSSmO1F4yHgPJiSdziPD-QsYNnHZG6a-4H4qK6Vg,4119
+Filytics/reporter.py,sha256=3vqHfncQTDx9P7bhSoWaNpek68dvrDFTd8qxk1b6_Ys,5861
+Filytics/treeview.py,sha256=1538TlpgfhOiAaaIoWsmpGMrS7ZD9jefo_1LcM7YA4c,1580
+Filytics/utils.py,sha256=pqCRMtlYEU2yA_EJ16S0Qmi-CAraoSfwGsaBuf_W9vs,2239
+filytics-1.0.0.dist-info/licenses/LICENSE,sha256=qNELMB0QzaudFYKbCrapdYCgyktRqafRfrM7ZSggg-I,955
+filytics-1.0.0.dist-info/METADATA,sha256=XRUqVScQ5nmazArjHCz28iZMsj8CCUW8LNhH038W0Ow,2447
+filytics-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+filytics-1.0.0.dist-info/entry_points.txt,sha256=ZERYkVtrrvU5bWT5Qjk7bLMuzMhmB7R767A0VI8EkyI,47
+filytics-1.0.0.dist-info/top_level.txt,sha256=9alvYwlNzmTuvRvM7aMBH4Xdp6MIhW9p94wPtKh_ww4,9
+filytics-1.0.0.dist-info/RECORD,,
