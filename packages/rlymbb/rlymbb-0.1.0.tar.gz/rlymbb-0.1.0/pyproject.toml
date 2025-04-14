@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rlymbb"
+version = "0.1.0"
+authors = [
+    {name="rlybb", email="sordealpro@gmail.com"},
+]
+description = "reqwest"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.25.0",  # Spécifiez la version minimale si nécessaire
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rlyv/"
