@@ -1,0 +1,8 @@
+README.md
+setup.py
+sqliteasy/__init__.py
+sqliteasy/modules.py
+sqliteasy.egg-info/PKG-INFO
+sqliteasy.egg-info/SOURCES.txt
+sqliteasy.egg-info/dependency_links.txt
+sqliteasy.egg-info/top_level.txt
