@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EMolES"
+dynamic = ["version"]
+readme = "README.md"
+description = "A repo to calculate the electronic structures of electrolyte molecules."
+authors = [
+    {name = "Liu Mingkang", email = "1660810667@qq.com"}
+]
+license = {file = "LICENSE.txt"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Science/Research",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "dptb",
+    "scipy",
+    "pyscf",
+    "scikit-learn",
+    "tqdm",
+    "torch",
+    "py3Dmol",
+]
+
+[tool.setuptools.dynamic]
+version = {file = ["version.txt"]}
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov",
+    "black",
+    "isort",
+    "flake8",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Franklalalala/EMolES"
+"Bug Tracker" = "https://github.com/Franklalalala/EMolES/issues"
+
+[tool.setuptools]
+packages = ["emoles"]
+
