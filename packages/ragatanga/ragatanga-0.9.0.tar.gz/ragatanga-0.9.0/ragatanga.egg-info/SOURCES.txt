@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+ragatanga.egg-info/PKG-INFO
+ragatanga.egg-info/SOURCES.txt
+ragatanga.egg-info/dependency_links.txt
+ragatanga.egg-info/requires.txt
+ragatanga.egg-info/top_level.txt
+resources/__init__.py
+shared/__init__.py
