@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+google_map_scraper.egg-info/PKG-INFO
+google_map_scraper.egg-info/SOURCES.txt
+google_map_scraper.egg-info/dependency_links.txt
+google_map_scraper.egg-info/requires.txt
+google_map_scraper.egg-info/top_level.txt
+tests/__init__.py
+tests/test_scraper.py
