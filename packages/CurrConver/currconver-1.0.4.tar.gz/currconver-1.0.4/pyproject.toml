@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.entry-points.console_scripts]
+currconv = "currconver.__main__:main"
+
+[tool.hatch.packages]
+include = ["currconver"]
+
+[project]
+name = "CurrConver"
+version = "1.0.4"
+authors = [
+  { name="William B", email="willdev2025@outlook.com" },
+]
+description = "A Python3 Currency Converter using Stocks"
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Operating System :: OS Independent"
+]
+license = "CC0-1.0"
+license-files = ["LICENSE"]
+dependencies = [
+    "requests"
+]
+[project.urls]
+Homepage = "https://github.com/Wdboyes13/currencyconverter"

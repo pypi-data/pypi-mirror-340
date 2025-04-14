@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include OS-SUPPORT.md
+include SECURITY.md
