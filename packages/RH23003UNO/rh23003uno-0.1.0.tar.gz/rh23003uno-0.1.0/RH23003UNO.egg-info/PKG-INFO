@@ -1,0 +1,116 @@
+Metadata-Version: 2.4
+Name: RH23003UNO
+Version: 0.1.0
+Summary: Este paquete contiene métodos numéricos en Python
+Author: Isai Hidalgo
+Author-email: isai.arh18@gmail.com
+License: MIT
+Keywords: métodos numéricos,python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/plain
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: summary
+
+# MÃ©todos NumÃ©ricos en Python
+
+Este repositorio contiene implementaciones en Python de varios **mÃ©todos numÃ©ricos fundamentales** utilizados para resolver problemas matemÃ¡ticos como bÃºsqueda de raÃ­ces y resoluciÃ³n de sistemas de ecuaciones lineales. Estos mÃ©todos son comÃºnmente usados en computaciÃ³n cientÃ­fica, ingenierÃ­a y matemÃ¡ticas aplicadas.
+
+## ðŸ”§ MÃ©todos Implementados
+
+# 1. MÃ©todo de BisecciÃ³n
+**FunciÃ³n:** `biseccion()`  
+Encuentra una raÃ­z de una funciÃ³n continua en un intervalo dado `[a, b]` utilizando el **mÃ©todo de bisecciÃ³n**.  
+- **Entradas:** funciÃ³n `f`, intervalo `[a, b]`, tolerancia, nÃºmero mÃ¡ximo de iteraciones  
+- **Salida:** raÃ­z aproximada, nÃºmero de iteraciones  
+- **Extras:** Muestra el progreso por iteraciÃ³n si `verbose=True`.
+
+---
+
+# 2. Regla de Cramer
+**FunciÃ³n:** `cramer(coefficient, ind_terms)`  
+Resuelve un sistema de ecuaciones lineales usando la **Regla de Cramer**.  
+- **Entradas:**  
+  - `coefficient`: Matriz de coeficientes (NxN)  
+  - `ind_terms`: Vector de tÃ©rminos independientes (Nx1)  
+- **Salida:** Vector con las soluciones
+
+---
+
+# 3. DescomposiciÃ³n LU
+**FunciÃ³n:** `descomposicion_lu(coefficient, ind_terms)`  
+Resuelve un sistema usando **descomposiciÃ³n LU** (algoritmo de Doolittle).  
+- **Entradas:** Matriz de coeficientes y vector de tÃ©rminos independientes  
+- **Salida:** Vector soluciÃ³n `x`  
+- **Nota:** Incluye sustituciÃ³n hacia adelante y hacia atrÃ¡s.
+
+---
+
+# 4. EliminaciÃ³n de Gauss
+**FunciÃ³n:** `gauss(coefficient, ind_terms)`  
+Resuelve un sistema lineal usando **eliminaciÃ³n de Gauss** con pivoteo parcial.  
+- **Entradas:** Matriz de coeficientes y vector de tÃ©rminos independientes  
+- **Salida:** Vector soluciÃ³n `x`
+
+---
+
+# 5. Gauss-Jordan
+**FunciÃ³n:** `gauss_jordan(coefficient, ind_terms)`  
+Resuelve un sistema lineal usando **eliminaciÃ³n Gauss-Jordan**, reduciendo la matriz a su forma escalonada reducida.  
+- **Entradas:** Matriz de coeficientes y vector de tÃ©rminos independientes  
+- **Salida:** Vector soluciÃ³n `x`
+
+---
+
+# 6. MÃ©todo Iterativo de Gauss-Seidel
+**FunciÃ³n:** `gauss_seidel(A, b, tol=1e-10, max_iter=1000)`  
+Resuelve un sistema lineal iterativamente usando el **mÃ©todo de Gauss-Seidel**.  
+- **Entradas:** Matriz de coeficientes `A`, vector de tÃ©rminos independientes `b`  
+- **Salida:** Vector soluciÃ³n `x`  
+- **Notas:**  
+  - Usa una estimaciÃ³n inicial `[10, 10, 10]`  
+  - Muestra los valores en cada iteraciÃ³n  
+  - Convergencia basada en la norma de la diferencia entre iteraciones.
+
+---
+
+# 7. MÃ©todo Iterativo de Jacobi
+**FunciÃ³n:** `jacobi(A, b, tol=1e-10, max_iter=1000)`  
+Resuelve un sistema lineal usando el **mÃ©todo iterativo de Jacobi**.  
+- **Entradas:** Matriz de coeficientes `A`, vector de tÃ©rminos independientes `b`  
+- **Salida:** Vector soluciÃ³n `x`  
+- **Notas:**  
+  - EstimaciÃ³n inicial `[10, 10, 10]`  
+  - Muestra el progreso de cada iteraciÃ³n  
+  - Se detiene si la convergencia se alcanza dentro de la tolerancia.
+
+---
+
+Requisitos
+- Python 3.x
+- `numpy`
+
+Instala las dependencias:
+```bash
+pip install numpy
+
+
+Change Log 
+===========
+
+0.1.0 (12-04-25)
+----------------
+- First release
