@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: factrainer
+Version: 0.1.0
+Summary: Framework Agnostic Cross-validation Trainer
+Author-email: ritsuki1227 <ritsuki1227@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: factrainer-core
+Provides-Extra: all
+Requires-Dist: factrainer-catboost; extra == 'all'
+Requires-Dist: factrainer-lightgbm; extra == 'all'
+Requires-Dist: factrainer-sklearn; extra == 'all'
+Requires-Dist: factrainer-xgboost; extra == 'all'
+Provides-Extra: catboost
+Requires-Dist: factrainer-catboost; extra == 'catboost'
+Provides-Extra: lightgbm
+Requires-Dist: factrainer-lightgbm; extra == 'lightgbm'
+Provides-Extra: sklearn
+Requires-Dist: factrainer-sklearn; extra == 'sklearn'
+Provides-Extra: xgboost
+Requires-Dist: factrainer-xgboost; extra == 'xgboost'
+Description-Content-Type: text/markdown
+
+# Framework Agnostic Cross-validation Trainer
+
+WIP
