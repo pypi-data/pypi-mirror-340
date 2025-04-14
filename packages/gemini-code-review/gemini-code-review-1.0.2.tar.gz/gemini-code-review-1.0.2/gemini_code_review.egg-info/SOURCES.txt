@@ -1,0 +1,13 @@
+setup.py
+gemini/__init__.py
+gemini/commit_code.py
+gemini/review_code-precious.py
+gemini/review_code-precious1.py
+gemini/review_code.py
+gemini/review_code2.py
+gemini_code_review.egg-info/PKG-INFO
+gemini_code_review.egg-info/SOURCES.txt
+gemini_code_review.egg-info/dependency_links.txt
+gemini_code_review.egg-info/entry_points.txt
+gemini_code_review.egg-info/requires.txt
+gemini_code_review.egg-info/top_level.txt
