@@ -1,0 +1,4 @@
+dist/
+*.txt
+venv/
+__pycache__/
