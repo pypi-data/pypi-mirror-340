@@ -1,0 +1,9 @@
+README.rst
+setup.py
+backports/__init__.py
+backports.lzma_defi_corrected.egg-info/PKG-INFO
+backports.lzma_defi_corrected.egg-info/SOURCES.txt
+backports.lzma_defi_corrected.egg-info/dependency_links.txt
+backports.lzma_defi_corrected.egg-info/top_level.txt
+backports/lzma/__init__.py
+backports/lzma/_lzmamodule.c
