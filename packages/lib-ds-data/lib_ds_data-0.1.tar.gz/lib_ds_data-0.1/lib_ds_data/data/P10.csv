@@ -1,0 +1,11 @@
+gender,churn,age,service_type,tenure,feature1,feature2,cluster
+Male,1,35,Internet,12,5.1,2.2,1
+Female,0,28,Phone,24,4.8,2.5,2
+Male,1,45,Internet,6,6.3,3.1,1
+Female,0,32,Internet,15,5.4,2.8,3
+Male,0,60,Phone,36,5.9,2.9,2
+Female,1,22,Internet,3,5.2,2.3,1
+Male,0,40,Phone,20,4.7,2.4,3
+Female,1,55,Internet,10,6.0,2.7,1
+Male,0,50,Phone,30,5.5,2.6,2
+Female,1,30,Internet,18,5.3,2.9,1
