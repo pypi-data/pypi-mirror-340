@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+SimpleCLI/__init__.py
+SimpleCLI/core.py
+simple_cli_otus.egg-info/PKG-INFO
+simple_cli_otus.egg-info/SOURCES.txt
+simple_cli_otus.egg-info/dependency_links.txt
+simple_cli_otus.egg-info/requires.txt
+simple_cli_otus.egg-info/top_level.txt
