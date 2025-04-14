@@ -1,0 +1,2 @@
+[console_scripts]
+dnsrobocert = dnsrobocert.core.main:main
