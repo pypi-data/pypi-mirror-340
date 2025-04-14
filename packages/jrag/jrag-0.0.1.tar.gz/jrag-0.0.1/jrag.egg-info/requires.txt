@@ -1,0 +1,15 @@
+jsonpath_ng
+
+[dev]
+pytest>=7.0
+pytest-cov
+flake8>=5.0
+flake8-pyproject
+black>=22.0
+python-semantic-release>=8.0
+build>=0.10
+twine>=4.0
+wheel
+setuptools
+pip-audit
+pre-commit>=3.0
