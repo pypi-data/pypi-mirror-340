@@ -1,0 +1,13 @@
+autoreqgen/__init__.py,sha256=6BiuMUkhwQp6bzUZSF8np8F1NwCltEtK0sPBF__tepU,23
+autoreqgen/cli.py,sha256=7phCpt3aBYAUnZs4zWx0XWErXdPbaXyBeN2Fi5qiOsQ,2261
+autoreqgen/docgen.py,sha256=x4nmPIDkPUrdITYHqsVLG-6mJdeWZEWbIv9sa0BHaP8,1526
+autoreqgen/formatter.py,sha256=VfCwDPDXekn58YfW5K0pBKi_EED9Dm3RC2rvTCVM_bg,834
+autoreqgen/requirements.py,sha256=OFVcHRcsR932dBvDn8bP625hpfnutZdoxFYukh3-vJc,930
+autoreqgen/scanner.py,sha256=0vXnuM-pH0uR6vS_BitMiNH9t-x-kZ93mKog6ZzbhHs,1801
+autoreqgen/utils.py,sha256=lAkCmeH79hyumzMP5APlGSO93GWVAd2VmD6Cf8kqKu8,708
+autoreqgen-0.1.18.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoreqgen-0.1.18.dist-info/METADATA,sha256=uGCY4OugUCSmZgGYlETx2_8jjKU75mxPWpgRLGKCNoM,2960
+autoreqgen-0.1.18.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+autoreqgen-0.1.18.dist-info/entry_points.txt,sha256=sgRHD0I2nl1XD4OaFLv1pd-WG9TuVmF8uTRwdRpNIww,50
+autoreqgen-0.1.18.dist-info/top_level.txt,sha256=TAnUOc11WlSukCRFJR8uy9CPsGUblfojEgtxkArHgpw,11
+autoreqgen-0.1.18.dist-info/RECORD,,
