@@ -1,0 +1,41 @@
+[tool.poetry]
+requires-poetry = ">=2.0,<3.0"
+
+[project]
+name = "dora-lead-time-metric"
+description = "A tool to calculate the DORA Lead Time metric"
+version = "0.2.1"
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "python-dotenv (>=1.1.0,<2.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "matplotlib (>=3.10.0,<4.0.0)",
+    "numpy (>=2.2.3,<3.0.0)",
+    "pandas (>=2.2.3,<3.0.0)",
+]
+
+[[tool.poetry.packages]]
+include = "dora_lead_time"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[project.authors]]
+name = "Sualeh Fatehi"
+email = "sualeh@hotmail.com"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+jupyter = "^1.1.1"
+pytest-cov = "^6.1.1"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+[project.scripts]
+dora-lead-time-metric = "dora_lead_time.main:main"
