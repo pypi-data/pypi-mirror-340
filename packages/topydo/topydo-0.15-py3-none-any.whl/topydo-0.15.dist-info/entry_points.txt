@@ -1,0 +1,2 @@
+[console_scripts]
+topydo = topydo.ui.UILoader:main
