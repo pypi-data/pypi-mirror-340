@@ -1,0 +1,7 @@
+qcaas_client/__init__.py,sha256=MFb_mVYvEmycTC-pfvT7HYb0Fkl05fbFWAJL7y_wUJk,648
+qcaas_client/client.py,sha256=2tQyK2SsOgr5Dpy-5EweypVvL0ecHSRjOJaNEA_hbpA,34005
+qcaas_client/commandline.py,sha256=L2uCDJc1jFiXYPID89N5GYheBOCZM7e6vqkJBKhPVns,3767
+oqc_qcaas_client-3.19.0.dist-info/LICENSE,sha256=QLuir-bmX65rAuxvwoPdtzjR99_YwBheQ1If0_-O9xs,1453
+oqc_qcaas_client-3.19.0.dist-info/METADATA,sha256=lvl1j-CzoyL8O2P1ygzKsR15ScugT-4auhzb4ofF8Qc,3810
+oqc_qcaas_client-3.19.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+oqc_qcaas_client-3.19.0.dist-info/RECORD,,
