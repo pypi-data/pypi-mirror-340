@@ -1,0 +1,7 @@
+async_sendgrid/__init__.py,sha256=2h-QsO0eMNWe5M4Vhn7bIOX49cN_DnfWCGxeDVK1O0g,91
+async_sendgrid/sendgrid.py,sha256=bdjPoAfR57rhStY0NBOOZfv4N6yQnB0_U0r6OGu6_1Y,3236
+async_sendgrid/utils.py,sha256=BkC6Rp85hYdGrcbLT88NAdxyDkZOGOW_oItpP8ediA8,440
+sendgrid_async-2.0.2.dist-info/LICENSE,sha256=lhyk0WUUeCVN-p-PcxQMXIxkjzPzITlqzzJ8KFTO1vA,1058
+sendgrid_async-2.0.2.dist-info/METADATA,sha256=7BeMDLwu9UM5-gYB4jXPYBa4QubecLz0goCVWstY_94,2817
+sendgrid_async-2.0.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+sendgrid_async-2.0.2.dist-info/RECORD,,
