@@ -1,0 +1,14 @@
+requests>=2.20.0
+pydantic>=2.0.0
+
+[dev]
+a4f-local[docs,test]
+build
+twine
+
+[docs]
+sphinx>=4.0.0
+sphinx-rtd-theme>=1.0.0
+
+[test]
+pytest>=6.0
