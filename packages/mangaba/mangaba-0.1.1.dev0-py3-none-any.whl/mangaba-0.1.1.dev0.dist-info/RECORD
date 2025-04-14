@@ -1,0 +1,11 @@
+mangaba/__init__.py,sha256=2xRKYQejGT5aNCTTfqfQUdMZIE4vxrDSiVTzmTLqN_o,1927
+mangaba/cases/__init__.py,sha256=W_cN__6t5kFf0UMGnROD7NpKGIlOnqyWa8qcZdej8uQ,194
+mangaba/cases/cases.py,sha256=nbZU3mq7nrFJaDViWjRgzvNz2MZcCHAiw2qYOAO7Gxw,2671
+mangaba/config/__init__.py,sha256=D7VUlOdWoG-NbyjmajSCEcdvWYqIhSXGrypT0Fn6aRA,172
+mangaba/config/api.py,sha256=LnW9SsjMtVt7M50Imsk-ApQcsyQGv1XGFLB0gXiPe_Y,1276
+mangaba/core/__init__.py,sha256=Z-2uGFz5bkfkJd1Uo26eWX5_SBdzizSKQfkkOQBshsQ,261
+mangaba/core/models.py,sha256=o0YeWyRPLdHgNsRdAyv9Jj9AUTsp0KoyrM1Qffpz0jk,5799
+mangaba-0.1.1.dev0.dist-info/METADATA,sha256=LiYPUNHHkg7uEOGBs-QidycHEpdugKFPxHot2lIOviU,5201
+mangaba-0.1.1.dev0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mangaba-0.1.1.dev0.dist-info/top_level.txt,sha256=tHYKmCpoW9WhW7XwnvZMJGNvbRaKKqf-1adi_9m6anw,8
+mangaba-0.1.1.dev0.dist-info/RECORD,,
