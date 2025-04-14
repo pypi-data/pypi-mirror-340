@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+canonicalwebteam/canonicalwebteam.directory_parser.egg-info/PKG-INFO
+canonicalwebteam/canonicalwebteam.directory_parser.egg-info/SOURCES.txt
+canonicalwebteam/canonicalwebteam.directory_parser.egg-info/dependency_links.txt
+canonicalwebteam/canonicalwebteam.directory_parser.egg-info/requires.txt
+canonicalwebteam/canonicalwebteam.directory_parser.egg-info/top_level.txt
+canonicalwebteam/directory_parser/__init__.py
+canonicalwebteam/directory_parser/app.py
+canonicalwebteam/directory_parser/templates/sitemap_children.xml
+canonicalwebteam/directory_parser/templates/sitemap_template.xml
