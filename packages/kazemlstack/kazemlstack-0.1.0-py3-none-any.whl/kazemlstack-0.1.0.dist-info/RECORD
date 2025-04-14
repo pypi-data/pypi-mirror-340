@@ -1,0 +1,9 @@
+kazemlstack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kazemlstack/cli/train_vit_cifar.py,sha256=mMuTHdxB_pT7E7QxS9N5T9Dy0KlDl1Myk6zB0Xsrkrw,343
+kazemlstack/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kazemlstack/data/cifar.py,sha256=AyWVMW9HXo7wR4nBJV6pHl-22mSChYdP_y4FWNeYsH4,1459
+kazemlstack/model/ViT.py,sha256=ynGtJ9x3VyQErOSZms8XxAqruovrfFf9VUQRgHCjXg0,3869
+kazemlstack/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kazemlstack-0.1.0.dist-info/METADATA,sha256=Jh2ZAyr842zY6p2SPqwtguuRO5mbIqY64MLVhYRNQ1Q,2066
+kazemlstack-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+kazemlstack-0.1.0.dist-info/RECORD,,
