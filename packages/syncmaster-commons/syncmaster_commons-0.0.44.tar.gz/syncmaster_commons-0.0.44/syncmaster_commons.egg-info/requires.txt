@@ -1,0 +1,6 @@
+pydantic
+setuptools
+pytest
+langchain
+langchain-openai
+python-dotenv
