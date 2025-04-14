@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: nk30
+Version: 1.0.1
+Summary: ✨ One-function nk30 encoder/decoder using Hangul + Hanja (base-30000)
+Home-page: https://github.com/dzbuit/nk30
+Author: blueradiance
+Author-email: none@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# nk30
+
+✨ One-function nk30 encoder/decoder using Hangul + Hanja (base-30000)  
+**nk30 – Hybrid Number Kilo 30 Numeric system (삼만진수)**
+
+## Install
+
+```bash
+pip install nk30
+```
+
+## Usage
+
+```python
+import nk30
+
+nk30(123456)     # → '각漢' 형태의 문자
+nk30('각漢')     # → 123456
+```
+
+## Concept
+
+- Pass `int` → returns Hangul + Hanja encoded string
+- Pass `str` → returns original integer
+- Unicode based, lexicographically sortable
+- Extremely compact numeric representation
+- Ideal for short identifiers, symbolic compression, encoding systems
+
+## License
+
+MIT
