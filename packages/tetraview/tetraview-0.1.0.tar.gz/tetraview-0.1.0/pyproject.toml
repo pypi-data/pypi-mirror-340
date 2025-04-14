@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tetraview"
+authors = [
+    { name = "Henri Payno", email = "henri.payno@esrf.fr" },
+    { name = "Pierre Paleo", email = "pierre.paleo@esrf.fr" },
+    { name = "Pierre-Olivier Autran", email = "pierre-olivier.autran@esrf.fr" },
+    { name = "Jibril Mammeri", email= "jibril.mammeri@esrf.fr" },
+    { name = "Jérôme Lesaint", email = "jerome.lesaint@esrf.fr" },
+
+]
+dynamic = ["version"]
+description = "tetraview - Interactive tomography visualization GUI"
+readme = "README.md"
+requires-python = ">=3.8"  # Qt6 and modern Python compatibility
+keywords = [
+    "tomography",
+    "reconstruction",
+    "X-ray imaging",
+    "GUI",
+    "Qt",
+    "Nabu",
+    "interactive",
+    "synchrotron",
+]
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 3 - Alpha",  # Adjust based on maturity
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Environment :: X11 Applications :: Qt", 
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "silx",
+]
+
+[project.optional-dependencies]
+dev = [
+    "isort>=5.12.0",        # Import sorting
+    "flake8>=6.0.0",        # Linting
+    "black>=23.3.0",        # Code formatting
+    "sphinx>=7.0.0",        # Documentation
+    "pytest>=7.4.0",        # Testing
+    "sphinx-rtd-theme",     # Optional: Sphinx theme
+]
+doc = ["sphinx", "sphinx-rtd-theme"]
+
+[project.urls]
+#Homepage = "https://gitlab.esrf.fr/tomotools/tetraview"
+#Repository = "https://gitlab.esrf.fr/tomotools/tetraview.git"
+#Documentation = "https://gitlab.esrf.fr/tomotools/tetraview/blob/main/README.md" 
+#Changelog = "https://gitlab.esrf.fr/tomotools/tetraview/blob/main/CHANGELOG.md"
+
+[project.scripts]
+tetraview = "tetraview.main:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "tetraview.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["tetraview*"]
+exclude = ["tests*"]
+
+[tool.setuptools.package-data]
+"tetraview" = ["nabu.conf"]
+
+[tool.isort]
+profile = "black"  # Align with black formatting
+line_length = 88   # Match black's default
+
+[tool.black]
+line-length = 88
+target-version = ["py38"]
