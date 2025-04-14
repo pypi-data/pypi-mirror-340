@@ -1,0 +1,38 @@
+Metadata-Version: 2.4
+Name: steel-model
+Version: 0.1.1
+Summary: Add your description here
+Requires-Python: >=3.13
+Requires-Dist: black
+Requires-Dist: cartopy
+Requires-Dist: dash
+Requires-Dist: dash-extensions
+Requires-Dist: dash-leaflet
+Requires-Dist: fiona
+Requires-Dist: folium
+Requires-Dist: geopandas
+Requires-Dist: geopy
+Requires-Dist: ipython
+Requires-Dist: matplotlib
+Requires-Dist: mocker
+Requires-Dist: networkx
+Requires-Dist: openpyxl
+Requires-Dist: osm2geojson
+Requires-Dist: osmnx
+Requires-Dist: pandas
+Requires-Dist: pycountry
+Requires-Dist: pydantic
+Requires-Dist: pydantic-settings
+Requires-Dist: pyomo
+Requires-Dist: python-dotenv
+Requires-Dist: reverse-geocoder
+Requires-Dist: rich
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: sentry-sdk
+Description-Content-Type: text/markdown
+
+# Steel Model
+
+[Documentation](./docs/README.md). 

@@ -1,0 +1,5 @@
+[console_scripts]
+recreate_plants_sample_data = steelo.entrypoints.cli:recreate_plants_sample_data
+run_simulation = steelo.entrypoints.cli:run_full_simulation
+show_cost_of_x_on_map = steelo.entrypoints.cli:show_cost_of_x_on_map
+show_plants_on_map = steelo.entrypoints.cli:show_plants_on_map
