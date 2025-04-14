@@ -1,0 +1,15 @@
+stv_path_converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stv_path_converter/main.py,sha256=sczAb06j2RRQOaPNyBRoIQUcquYdIEvCihjdE07t-gI,1090
+stv_path_converter/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stv_path_converter/core/converter.py,sha256=tE62J4GcTxFanb6QMP7vOIVAjdnrk6fHrDX5xi3x6O0,6979
+stv_path_converter/core/stv_parse.py,sha256=CKaEm4o3cODuZo1Cvvbg9inOa-CWHhiSXPdN1CjDFV4,2008
+stv_path_converter/text/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stv_path_converter/text/change_text.py,sha256=7zG662c4N-IbcvaUsb4LLb2NdJIYotO7f4AgsxTkpXk,2120
+stv_path_converter/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stv_path_converter/utils/head.py,sha256=ax4_kdxAtcmA6V08FREzq6C-CyA7Q8hl6nhZNVbu41M,132
+stv_path_converter/utils/lic.py,sha256=xOreNeAFauiI6pA8bGHgqCZSuBmrzg34OMbUTwpmiRc,1151
+stv_path_converter-0.0.1.dist-info/METADATA,sha256=fF7cb4cUL0na6J7qG77WMy8mvMuK-z-JSoGB1nXQ5VI,4765
+stv_path_converter-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+stv_path_converter-0.0.1.dist-info/entry_points.txt,sha256=YD3V2oaA3e6OBYsO0ZJhb2FRXv4RJz7yK-yVCm7kkQ8,58
+stv_path_converter-0.0.1.dist-info/top_level.txt,sha256=riX6n3T3_7DonAH1uRxSWkHiZbwcoVHi1JEZjAY--Dk,19
+stv_path_converter-0.0.1.dist-info/RECORD,,
