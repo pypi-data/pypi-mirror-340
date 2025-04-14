@@ -1,0 +1,3 @@
+[console_scripts]
+commit = gemini.commit_code:command_git_commit
+review = gemini.review_code:command_review
