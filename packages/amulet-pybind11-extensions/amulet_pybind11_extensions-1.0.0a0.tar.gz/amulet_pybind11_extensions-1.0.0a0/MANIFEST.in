@@ -1,0 +1,3 @@
+recursive-include src/pybind11_extensions *.hpp *Config.cmake
+
+prune tests
