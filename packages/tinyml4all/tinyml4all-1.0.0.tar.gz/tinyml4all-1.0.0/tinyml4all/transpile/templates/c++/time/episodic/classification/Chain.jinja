@@ -1,0 +1,142 @@
+#include <cmath>
+#include <iostream>
+#include <unistd.h>
+
+
+typedef int uint8_t;
+typedef int uint16_t;
+typedef int uint32_t;
+
+{% include "../../../math.jinja" %}
+{% include "../../../np.jinja" %}
+
+
+namespace tinyml4all {
+    {% include "../../../Input.jinja" with context %}
+    {% include "../../../Output.jinja" with context %}
+
+    // pre-processing steps
+    {% for step in pre %}{{ step.convert_to("c++", class_name=step | var()) }}{% endfor %}
+
+    // windowing
+    {% include "./Window.jinja" with context %}
+
+    // ovr
+    {% for chain in chains %}{{ chain.convert_to("c++", class_name=chain | var()) }}{% endfor %}
+
+    /**
+     * Chain class
+     * {{ this }}
+     */
+     class {{ class_name or "Chain" }} {
+        public:
+            Input input;
+            Output output;
+            Input inputs[{{ chains | length }}];
+            Output outputs[{{ chains | length }}];
+
+            /**
+             * Transform array input
+             */
+            bool operator()(float *inputs) {
+                return operator()({% for var in variables.inputs %}inputs[{{ loop.index0 }}]{% if not loop.last %}, {% endif %}{% endfor %});
+            }
+
+            /**
+             * Transform const array input
+             */
+            bool operator()(const float *inputs) {
+                return operator()({% for var in variables.inputs %}inputs[{{ loop.index0 }}]{% if not loop.last %}, {% endif %}{% endfor %});
+            }
+
+            /**
+             * Transform input
+             */
+            bool operator()({{ variables.inputs | spread_signature(const=True) }}) {
+                // assign variables to input
+                {% for var in variables.inputs %}
+                    input.{{ var.name | var() }} = {{ var.name | var() }};
+                {% endfor %}
+
+                // run pre-processing steps
+                {% for step in pre %}
+                    // {{ step }}
+                    pre{{ loop.index }}(input, outputs[0]);
+
+                    if (!pre{{ loop.index }}.isReady())
+                        return false;
+                {% endfor %}
+
+                // windowing
+                window(input, outputs[0]);
+
+                if (!window.isReady())
+                    return false;
+
+                // feature extraction + ovr for each binary classification chain
+                {% for chain in chains %}
+                    inputs[{{ loop.index0 }}].copyFrom(input);
+                    chain{{ loop.index }}(window, inputs[{{ loop.index0 }}], outputs[{{ loop.index0 }}]);
+                {% endfor %}
+
+                // get positive classification with highest score
+                int8_t idx = -1;
+                float score = 0;
+
+                for (uint8_t i = 0; i < {{ chains | length }}; i++) {
+                    if (outputs[i].classification.idx > 0 && outputs[i].classification.score > score) {
+                        idx = i;
+                        score = outputs[i].classification.score;
+                    }
+                }
+
+                output.classification.prevIdx = output.classification.idx;
+                output.classification.prevScore = output.classification.score;
+                output.classification.idx = idx;
+                output.classification.score = score;
+
+                return true;
+            }
+
+            bool dump(std::string t) {
+                //std::cout << "DUMP: INPUT" << std::endl;
+
+                {% for var in variables.all %}
+                    //std::cout << "input.{{ var | var }}" << " = " << input.{{ var | var }} << std::endl;
+                {% endfor %}
+
+                {% for j, chain in enumerate(chains) %}
+                    //std::cout << "DUMP: INPUT[{{ j }}]" << std::endl;
+                    {% for var in variables.all %}
+                        //std::cout << "inputs[{{ j }}].{{ var | var }}" << " = " << inputs[{{ j }}].{{ var | var }} << std::endl;
+                    {% endfor %}
+                {% endfor %}
+
+                //std::cout << "DUMP: OUTPUT" << std::endl;
+
+                if (output.classification.idx < 0)
+                    return false;
+
+                std::cout << "T=" << t << std::endl;
+
+                {% for j, chain in enumerate(chains) %}
+                    std::cout << "outputs[{{ j }}].classification.idx = " << outputs[{{ j }}].classification.idx << ", score=" << outputs[{{ j }}].classification.score << std::endl;
+                {% endfor %}
+                std::cout << "output.classification.idx = " << output.classification.idx << ", score=" << output.classification.score << std::endl;
+                std::cout << "-----------" << std::endl;
+
+                return true;
+            }
+
+        protected:
+            {% for step in pre %}
+                // {{ step }}
+                {{ step | var() }} pre{{ loop.index }};
+            {% endfor %}
+            Window window;
+            {% for chain in chains %}
+                // {{ chain }}
+                {{ chain | var() }} chain{{ loop.index }};
+            {% endfor %}
+     };
+}

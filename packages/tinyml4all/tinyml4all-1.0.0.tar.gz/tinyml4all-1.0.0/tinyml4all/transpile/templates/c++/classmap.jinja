@@ -1,0 +1,11 @@
+{% if classmap %}
+    switch (output.classification.idx) {
+        {% for label, index in classmap.items() %}
+        case {{ index }}:
+            strcpy(output.classification.label, "{{ label[:30] }}");
+            break;
+        {% endfor %}
+        default:
+            strcpy(output.classification.label, "unknown");
+    }
+{% endif %}
