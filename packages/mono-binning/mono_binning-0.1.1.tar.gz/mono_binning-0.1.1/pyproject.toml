@@ -1,0 +1,78 @@
+
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[metadata]
+name = "mono-binning"
+version = "0.1.1"
+description = "Advanced monotonic binning, IV/WOE transformation, and random forest feature importance with parallel processing support"
+authors = [{name = "Anvesh reddy minukuri", email = "anvcse2007@gmail.com"}]
+readme = "README.md"
+url="https://github.com/anvcse562/mono-binning"
+requires-python = ">=3.8"
+long-description = """
+# Mono Binning
+
+Mono Binning provides advanced monotonic binning techniques along with IV/WOE transformations. It also integrates feature importance via random forest models, with support for parallel processing.
+
+## Example 1: `calculate_iv()` – Main IV/WOE Calculation
+
+This is how you can use `calculate_iv()` to calculate IV and WOE.
+
+### Code:
+
+```python
+from mono_binning import calculate_iv
+iv_summary, df_woe, woe_maps = calculate_iv(df, target='default_flag', execution='sequential')  # or 'concurrent'
+```
+iv_summary
+# Output:
+#  Feature     IV   WOE
+#  loan_amt   0.32   1.5
+#  income     0.47   0.8
+"""
+
+
+long-description-content-type = "text/x-rst" 
+dependencies = [
+    "pandas>=1.3.0",
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+    "scikit-learn>=1.0.0",
+    "matplotlib>=1.0.0",
+    "pyarrow>=6.0.0; python_version >= '3.8'"  # Optional for better pandas performance
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Data Scientists",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project]
+name = "mono-binning"
+version = "0.1.1"
+dependencies = [
+    "pandas>=1.3.0",
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+    "scikit-learn>=1.0.0",
+    "matplotlib>=1.0.0",
+    "pyarrow>=6.0.0; python_version >= '3.8'"  # Optional for better pandas performance
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=6.0.0",
+    "pytest-cov>=2.8.0"
+]
+
+dev = [
+    "pytest>=6.0.0",
+    "pandas>=1.3.0",
+    "numpy>=1.21.0",
+    "scipy>=1.7.0",
+    "jupyter"
+]
