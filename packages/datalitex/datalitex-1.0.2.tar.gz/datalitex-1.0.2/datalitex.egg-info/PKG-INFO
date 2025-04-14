@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: datalitex
+Version: 1.0.2
+Summary: Datalitex: Smart Data Assistant for Cleaning, Analyzing & Visualizing CSV and DataFrames
+Home-page: https://github.com/vinaydesai/datalitex
+Author: Vinay Desai
+Author-email: vinay.desai@example.com
+Keywords: data analysis pandas datalysis cleaning visualization
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Python: >=3.7
+License-File: LICENCE
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
