@@ -1,0 +1,27 @@
+[project]
+name='bulk-docker-inspection'
+description='Whats in there!'
+authors = [
+    { name = 'Carter Fendley' }
+]
+version='0.0.0'
+license = {file = "LICENSE"}
+
+dependencies = [
+    "cloudpickle"
+]
+
+[project.urls]
+Homepage = "https://github.com/CarterFendley/bulk-docker-inspection"
+
+[tool.setuptools.packages.find]
+include = ["bulk_docker_inspection*"]
+
+[project.optional-dependencies]
+dev = [
+    "tox",
+    "pytest",
+    "pytest-cov",
+    "pytest-unordered"
+
+]
