@@ -1,0 +1,95 @@
+Metadata-Version: 2.4
+Name: mcp-blockchain
+Version: 0.1.0
+Summary: A production-grade blockchain server built using MCP (Model Context Protocol)
+Author-email: Rajan Shukla <rshukla2k@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: blockchain,ethereum,mcp,web3
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Requires-Dist: eth-utils>=2.0.0
+Requires-Dist: mcp-server>=0.1.4
+Requires-Dist: mcp[cli]>=1.2.0
+Requires-Dist: pytest-asyncio>=0.26.0
+Requires-Dist: pytest-cov>=6.1.1
+Requires-Dist: pytest>=8.3.5
+Requires-Dist: requests>=2.31.0
+Requires-Dist: web3>=6.0.0
+Description-Content-Type: text/markdown
+
+# MCP Blockchain
+
+A production-grade blockchain server built using MCP (Model Context Protocol).
+
+## Features
+
+- Ethereum Address Validator
+- Gas Fee Estimator (Public RPC)
+- Wallet Balance Checker
+- Smart Contract Ownership Checker
+
+## Installation
+
+```bash
+uvx mcp-blockchain
+```
+
+## Usage
+
+After installation, you can use the MCP Blockchain server with Claude for Desktop or any other MCP client.
+
+### Configuration
+
+Add the following to your Claude Desktop configuration (`~/Library/Application Support/Claude/claude_desktop_config.json`):
+
+```json
+{
+    "mcpServers": {
+        "blockchain-tools": {
+            "command": "mcp-blockchain"
+        }
+    }
+}
+```
+
+### Available Tools
+
+1. **Ethereum Address Validator**
+   - Validates Ethereum addresses including checksum verification
+
+2. **Gas Fee Estimator**
+   - Gets current gas fees from Ethereum mainnet using public RPC
+   - Shows base fee and gas price in Gwei
+
+3. **Wallet Balance Checker**
+   - Checks ETH balance of any Ethereum address
+
+4. **Smart Contract Ownership Checker**
+   - Verifies if a contract implements the Ownable interface
+   - Retrieves the owner address if available
+
+## Development
+
+```bash
+# Clone the repository
+git clone https://github.com/rjn32s/mcp-blockchain.git
+cd mcp-blockchain
+
+# Create virtual environment
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# Install development dependencies
+uv add -e .
+```
+
+## License
+
+MIT License
