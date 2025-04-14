@@ -1,0 +1,106 @@
+Metadata-Version: 2.4
+Name: CGCD
+Version: 0.0.0
+Summary: Computer Glow Curve Deconvolution
+Home-page: https://github.com/JFBenavente/CGCD
+Author: JF Benavente, JE Tenopala
+Author-email: jf.benavente@ciemat.es, jtenopalap1800@alumno.ipn.mx
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: math
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: IPython
+Requires-Dist: plotly
+Requires-Dist: os
+Requires-Dist: shutil
+Requires-Dist: io
+Requires-Dist: openpyxl
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# CGCD
+This Python library enables the analysis of thermoluminescent (TL) glow curves. It currently includes two main functions:
+
+PeakDetection
+This function detects potential peaks present in a TL glow curve. It requires the following input parameters:
+
+DataFrame: A pandas.DataFrame with two columns. The first column should contain temperature values (in degrees Celsius), and the second column should contain the corresponding light intensity for each temperature point.
+
+Smoothing level (smoothing_level): An integer between 0 and 4. A value of 0 applies very strong smoothing, while 4 applies minimal smoothing.
+
+Resolution (channels): An integer indicating the number of channels used to analyze the curve, which affects the resolution of peak detection.
+
+Derivative factor (derivative_factor): A numerical value that multiplies the intensity of the second derivative, used to enhance peak detection.
+
+As a result, the function returns a pandas.DataFrame containing the intensity of each detected peak and the corresponding temperature at which the maximum is estimated to occur.
+
+Deconvolution
+This function performs a deconvolution fit of experimental TL glow curves using a mathematical model based on first-order kinetics. It supports both discrete and continuous trapped charge density distributions, allowing either Gaussian, exponential, or localized (discrete) peak modeling.
+
+Input parameters:
+
+df: A pandas.DataFrame containing two columns — temperature values (in °C or K) and corresponding TL intensities.
+
+p: A 4×n vector (as a 1D list or NumPy array of length 4×n), representing the initial guess for each kinetic parameter of the n peaks, in the following order:
+[I₁_max, E₁_a, T₁_max, σ₁, ..., Iₙ_max, Eₙ_a, Tₙ_max, σₙ]
+
+l_w: A 4×n vector specifying the lower bounds for each parameter during the fitting process, in the same format as p.
+
+p_w: A 4×n vector specifying the upper bounds for each parameter during fitting, also in the same format as p.
+
+max_iter: An integer specifying the maximum number of iterations allowed for the numerical optimization method. This controls the convergence behavior during the fitting process. 
+
+ROI: A tuple or list defining the region of interest, as the minimum and maximum temperatures that delimit the fitting area (e.g., [start_temp, end_temp]).
+
+models: A list or vector of length n defining the model type for each component peak. Each element must be one of:
+
+'G' – for a continuous Gaussian trap distribution
+
+'E' – for a continuous Exponential trap distribution
+
+'L' – for a Localized (discrete) trap distribution
+
+
+The function returns two pandas.DataFrame objects:
+
+Kinetic Parameters DataFrame: Contains the estimated parameters for each contribution:
+
+I<sub>max</sub> (a.u.)
+
+E<sub>a</sub> (eV)
+
+T<sub>max</sub> (K)
+
+σ (eV)
+
+Statistical Residuals DataFrame: Reports a statistical analysis of the residuals from the curve fitting, helping evaluate the quality and reliability of the deconvolution.
+
+## Characteristics
+
+- ✅ Easy to use
+- ⚡ Fast and efficient
+- 🔧 Compatible with Python 3.7+
+
+## Installation
+
+You can install the library using pip:
+
+```bash
+pip install CGCD==0.0.0
