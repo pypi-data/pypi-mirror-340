@@ -1,0 +1,234 @@
+Metadata-Version: 2.4
+Name: rabbitmv-mcp
+Version: 0.1.1
+Summary: RabbitMV MCP Service - A Model Context Protocol implementation for media data services
+Project-URL: Homepage, https://github.com/rabbitmv/rabbitmv-mcp
+Project-URL: Repository, https://github.com/rabbitmv/rabbitmv-mcp.git
+Project-URL: Issues, https://github.com/rabbitmv/rabbitmv-mcp/issues
+Author-email: RabbitMV Team <team@rabbitmv.com>
+License: MIT
+Keywords: mcp,media,service,video
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.12
+Requires-Dist: httpx>=0.24.0
+Requires-Dist: mcp[cli]>=0.1.0
+Requires-Dist: orjson>=3.9.0
+Requires-Dist: pydantic>=2.5.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: uvloop>=0.19.0; sys_platform != 'win32'
+Provides-Extra: dev
+Requires-Dist: black>=23.9.0; extra == 'dev'
+Requires-Dist: isort>=5.12.0; extra == 'dev'
+Requires-Dist: mypy>=1.5.0; extra == 'dev'
+Requires-Dist: pytest-asyncio>=0.21.0; extra == 'dev'
+Requires-Dist: pytest-cov>=4.1.0; extra == 'dev'
+Requires-Dist: pytest>=7.4.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# RabbitMV MCP Service
+
+基于 Model Context Protocol 实现的数据服务，提供视频、文章、演员、角色和网站数据的访问能力。
+
+## 特性
+
+- 基于 MCP (Model Context Protocol) SDK 构建
+- 提供标准化的数据访问工具
+- 支持多种数据过滤和查询方式
+- 内置缓存机制
+- 完整的错误处理和日志记录
+- 类型注解和全面的测试覆盖
+
+## 系统要求
+
+- Python 3.12 或更高版本
+- 支持 asyncio 的操作系统（Linux, macOS, Windows）
+
+## 安装
+
+1. 确保已安装 uv：
+
+```bash
+pip install uv
+```
+
+2. 克隆仓库：
+
+```bash
+git clone https://github.com/yourusername/rabbitmv-mcp.git
+cd rabbitmv-mcp
+```
+
+3. 创建并激活虚拟环境：
+
+```bash
+uv venv
+source .venv/bin/activate  # Linux/macOS
+# 或
+.venv\Scripts\activate  # Windows
+```
+
+4. 安装依赖：
+
+```bash
+uv pip install -r requirements.txt
+```
+
+5. 安装开发依赖（可选）：
+
+```bash
+uv pip install -r requirements.txt[dev]
+```
+
+## 配置
+
+1. 复制示例配置文件：
+
+```bash
+cp .env.example .env
+```
+
+2. 根据需要修改 `.env` 文件中的配置项：
+
+- `LOG_LEVEL`: 日志级别 (DEBUG, INFO, WARNING, ERROR)
+- `CACHE_TIME`: 缓存时间（秒）
+- `NEED_AUTH`: 是否启用鉴权
+- `AUTH_KEY`: 鉴权密钥
+- `IMG_URL`: 图片域名前缀
+
+## MCP 工具
+
+服务提供以下 MCP 工具：
+
+### 1. get_vod - 视频数据工具
+
+获取视频相关数据。
+
+参数：
+- `ids`: 视频ID，多个用逗号分隔
+- `t`: 分类ID
+- `h`: 几小时内的数据
+- `wd`: 关键词搜索
+- `year`: 年份范围，如:2020或2020-2023
+- `from`: 播放器组标识
+- `isend`: 是否完结 (1完结，0未完结)
+- `ac`: 是否获取详情 (detail获取详情)
+- `pg`: 页码，默认1
+- `pagesize`: 每页数量，默认20，最大100
+
+### 2. get_art - 文章数据工具
+
+获取文章相关数据。
+
+参数：
+- `ids`: 文章ID，多个用逗号分隔
+- `t`: 分类ID
+- `h`: 几小时内的数据
+- `wd`: 关键词搜索
+- `ac`: 是否获取详情
+- `pg`: 页码
+- `pagesize`: 每页数量
+
+### 3. get_actor - 演员数据工具
+
+获取演员相关数据。
+
+参数：
+- `ids`: 演员ID，多个用逗号分隔
+- `t`: 分类ID
+- `h`: 几小时内的数据
+- `wd`: 关键词搜索
+- `ac`: 是否获取详情
+- `pg`: 页码
+- `pagesize`: 每页数量
+
+### 4. get_role - 角色数据工具
+
+获取角色相关数据。
+
+参数：
+- `ids`: 角色ID，多个用逗号分隔
+- `t`: 分类ID
+- `h`: 几小时内的数据
+- `wd`: 关键词搜索
+- `ac`: 是否获取详情
+- `pg`: 页码
+- `pagesize`: 每页数量
+
+### 5. get_website - 网站数据工具
+
+获取网站相关数据。
+
+参数：
+- `ids`: 网站ID，多个用逗号分隔
+- `t`: 分类ID
+- `h`: 几小时内的数据
+- `wd`: 关键词搜索
+- `ac`: 是否获取详情
+- `pg`: 页码
+- `pagesize`: 每页数量
+
+## 开发指南
+
+### 运行测试
+
+```bash
+uv pip install -r requirements.txt[dev]  # 如果还没有安装开发依赖
+pytest
+```
+
+### 代码格式化
+
+```bash
+black .
+isort .
+```
+
+### 类型检查
+
+```bash
+mypy .
+```
+
+## 使用示例
+
+```python
+from modelcontextprotocol import MCPClient
+
+async def main():
+    client = MCPClient()
+    
+    # 获取视频列表
+    result = await client.call_tool("get_vod", {
+        "pg": 1,
+        "pagesize": 20,
+        "wd": "示例"
+    })
+    print(result)
+    
+    # 获取文章详情
+    result = await client.call_tool("get_art", {
+        "ids": "1",
+        "ac": "detail"
+    })
+    print(result)
+
+asyncio.run(main())
+```
+
+## 特别说明
+
+- 所有接口支持缓存机制，缓存时间通过 `CACHE_TIME` 环境变量配置
+- 接口支持鉴权，通过 `NEED_AUTH` 和 `AUTH_KEY` 环境变量控制
+- 图片地址支持配置域名前缀，通过 `IMG_URL` 环境变量设置
+- 所有数据查询都支持基于 ID、分类、时间和关键词的过滤
+- 详情模式（ac=detail）会返回更完整的数据内容
+- 项目使用 uv 进行依赖管理，确保依赖安装的确定性和可重现性
+
+## 许可证
+
+MIT
