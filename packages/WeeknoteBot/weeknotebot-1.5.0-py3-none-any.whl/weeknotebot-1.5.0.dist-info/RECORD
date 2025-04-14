@@ -1,0 +1,14 @@
+weeknotebot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weeknotebot/cli.py,sha256=LUG9nf4m_8kxjGLJsgCQqBc0riy49NB7k5Hoa2UHQ9E,2735
+weeknotebot/config_manager.py,sha256=vhSFEZVtBSMSDcMsUM7YZN6mkplZW7AWMNIRpnwrrVs,2032
+weeknotebot/generator.py,sha256=3U3n3IQ10P3Miu9KFk55Hlmpcum3N3gBEV6OoNoZqxw,2801
+weeknotebot/sources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weeknotebot/sources/anilist_stats.py,sha256=pr6lM9FjSkJi17v10j2jrrBXOSwGi5vpb6G9X2h1G6U,2321
+weeknotebot/sources/feed.py,sha256=OR8bcD9KqyaFXlPxOuhjPQUoCikvY0X3OS6Qpo57cAU,997
+weeknotebot/sources/fix_links.py,sha256=lXE675vlnEskCBCAP3MI86FHfqdhnc6Zcv9ppzezB5E,256
+weeknotebot/sources/goodreads_shelf.py,sha256=Cqj7oGmBzr4jiNTiUmKNX1NO_GmKifV8Hw3_XWEzzPY,607
+weeknotebot/sources/text_api.py,sha256=zF1RZJgSZya-kZkWlqFBsKVVKpyW9v_bzUh_0LrOlYA,584
+weeknotebot-1.5.0.dist-info/METADATA,sha256=A6Pi3V3FXvY9XGucX50cjNdDOswyAGsQz1PRH_X7miM,1119
+weeknotebot-1.5.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+weeknotebot-1.5.0.dist-info/entry_points.txt,sha256=0aHVaRzF_A55f-VJgyAqLq7r8CUmV6_CM1c8_0zj6W4,48
+weeknotebot-1.5.0.dist-info/RECORD,,
