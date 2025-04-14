@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: request-forwarder-client
+Version: 1.0.1
+Summary: A client for consuming request forwarder server requests
+Home-page: https://github.com/avrilfanomar/request-forwarder-client
+Author: Andrii Andriichuk
+Author-email: andrey000mar@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paho-mqtt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Request Forwarder Client
+
+A lightweight client for receiving and executing requests from request forwarder server.
+
+Mandatory OS variable:
+```sh
+export REQUEST_FORWARDER_TOKEN=<your_token>
+```
+
+Optional OS variables:
+```sh
+export REQUEST_FORWARDER_BROKER=<your custom server ip/host>
+export REQUEST_FORWARDER_MODE=<anything except 'exec' will just print the request>
+```
+
+## Installation
+```sh
+pip install request-forwarder-client
+```
+
+## License
+This project is licensed under the Apache 2.0 license. See the [LICENSE](LICENSE) file for details.
