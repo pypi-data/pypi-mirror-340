@@ -1,0 +1,13 @@
+donate_a_pytest/__init__.py,sha256=Tw4Yp5ftLNd8nUkp2dQLB2MI_Te-FqlCNMNYtwjogt0,580
+donate_a_pytest/decorators.py,sha256=ra0qpw2SIh1IMlFhUw8qAQUJo6FiS5AqVm8jGq0OFyI,1748
+donate_a_pytest/generators.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+donate_a_pytest/interface.py,sha256=b6-0VlkasUKNUQ0hvQ3GNA6Uwgig9IO3Gh_wYOo2A3M,858
+donate_a_pytest/main.py,sha256=zDaGsdjJnP-vFIvBpvsH9hMEmCDhLsuuP2lie8W4Uzw,3845
+donate_a_pytest/model.py,sha256=ShgX412QI2qWBwMpwWQDKmxedf8dAK68VZKX4kBxQs8,3124
+donate_a_pytest/plugin.py,sha256=zt2qXK0o_mu2c4xoFdNkcvecwvRmfpRWMbiGBo_r250,3113
+donate_a_pytest/tests_crawler.py,sha256=wIMOU5hlGB8HSRbmJwFlxyctQsqb-4UfZDJLdeniqes,2795
+donate_a_pytest/utils.py,sha256=vsf1t-zTPAGUChAK9SRwTMtT8bVR9ugInfX4vsspD2I,1471
+donate_a_pytest-0.1.4.dist-info/METADATA,sha256=80pKvbtViylBPN3TrxM1jf_P4d885tE_BCHtN664wA8,8887
+donate_a_pytest-0.1.4.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+donate_a_pytest-0.1.4.dist-info/entry_points.txt,sha256=xjbtyd-0Q6E7J3Smmvq2qNxMuN9u3nqTV6_7zMtA1zE,101
+donate_a_pytest-0.1.4.dist-info/RECORD,,
