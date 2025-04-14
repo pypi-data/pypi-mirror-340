@@ -1,0 +1,133 @@
+Metadata-Version: 2.4
+Name: firefly-viewer
+Version: 1.0.4
+Summary: A web-based viewer for Firefly databases
+Home-page: https://gitea.innovativedevsolutions.org/IDSolutions/firefly-viewer
+Author: IDSolutions
+Author-email: IDSolutions <info@innovativedevsolutions.org>
+License: MIT License
+        
+        Copyright (c) 2025 IDSolutions
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: Homepage, https://gitea.innovativedevsolutions.org/IDSolutions/firefly-viewer
+Project-URL: Documentation, https://gitea.innovativedevsolutions.org/IDSolutions/firefly-viewer#readme
+Project-URL: Repository, https://gitea.innovativedevsolutions.org/IDSolutions/firefly-viewer.git
+Project-URL: Bug Tracker, https://gitea.innovativedevsolutions.org/IDSolutions/firefly-viewer/issues
+Keywords: firefly,database,viewer,web,flask
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Database :: Front-Ends
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: redis
+Requires-Dist: python-dotenv
+Requires-Dist: ifireflylib
+Requires-Dist: click
+Requires-Dist: waitress
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# Firefly Database Viewer
+
+A web-based viewer for Firefly databases with support for strings, lists, and hash tables.
+
+## Features
+
+- View all Firefly database keys and their values
+- Support for different data types (string, list, hash)
+- Modern, responsive UI with dark mode support
+- Real-time data refresh
+- Color-coded data type indicators
+
+## Installation
+
+### From Source
+
+1. Clone the repository and navigate to the project directory
+
+2. Create a virtual environment (recommended):
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+3. Install the package in development mode:
+```bash
+pip install -e .
+```
+
+### Using pip (when published)
+
+```bash
+pip install firefly-viewer
+```
+
+## Configuration
+
+Create a `.env` file in your working directory with your Firefly connection details:
+
+```env
+FIREFLY_HOST=localhost
+FIREFLY_PORT=6379
+FIREFLY_PASSWORD=your_password
+FIREFLY_DEBUG=false
+```
+
+## Usage
+
+### Command Line Interface
+
+Start the viewer using the command-line interface:
+
+```bash
+firefly-viewer
+```
+
+Options:
+- `--host`: Host to bind to (default: 0.0.0.0)
+- `--port`: Port to bind to (default: 5000)
+- `--debug/--no-debug`: Enable/disable debug mode
+
+Example:
+```bash
+firefly-viewer --host 127.0.0.1 --port 8000 --debug
+```
+
+### Web Interface
+
+1. Open your web browser and navigate to the URL shown in the console (default: http://localhost:5000)
+2. Use the "Refresh Data" button to update the view with the latest database contents
+3. Toggle between light and dark themes using the theme button
+
+## Requirements
+
+- Python 3.7+
+- Firefly database server
+- Modern web browser
