@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: ezencode
+Version: 0.7
+Summary: A simple text encoder: EZ Encode
+Author-email: "Rayshawn Levy (sneekyfoxx)" <sneekyfoxx09@gmail.com>
+Maintainer-email: "Rayshawn Levy (sneekyfoxx)" <sneekyfoxx09@gmail.com>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Keywords: EZ,decode,encode,ez,ezencode
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+
+> **EZ Encode** is a simple custom encoder that has a
+> *two* layer encoding mechanism which makes it a bit more secure.
+> Though, the conecpt could be improved upon it works really well.
+
+#### *Example*:
+
+```python
+# import the ezencode classe
+from ezencode import ezencode
+
+# Generate some text to encode
+data = "Hello, world! The encoder and decoder really works. \n\n"
+
+# Encode the data
+encoded = ezencode(data).encode()    # encode and store the encoded data
+
+# Decode the data
+decoded = ezencode(encoded).decode() # decode and store the decoded data
+
+print("Encoded: ", encoded, end="\n")  # print the encoded data
+print("Decoded: ", decoded, end="\n")  # print the decoded data
+
+# The code shown above is the typical usage of ezencode
+# The code below is a special use case and is not always necessary
+
+# Encode the encoded data as bytes and write it to a file
+#
+#     encoded = ezencode(data).encode(as_bytes=True, write_out=True)
+#
+# The file name will be ./ezencode-creation_time.bin
+# To decode the data, just read the file into ezencode's decode method
+#
+#     with open('./ezencode-creation_time.bin', 'rb') as bin_file:
+#         data = bin_file.read()
+#         decoded = ezencode(data).decode()
+#
+# Then, print the decoded data
+#     print(decoded)
+```
