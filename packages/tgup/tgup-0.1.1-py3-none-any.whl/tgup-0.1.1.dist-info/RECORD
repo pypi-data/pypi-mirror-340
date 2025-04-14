@@ -1,0 +1,13 @@
+tgup/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgup/client.py,sha256=wmjSqMZOi473w7OKIEMOnPaQoV9eGf7XRF7BtW6uJwE,1622
+tgup/config.py,sha256=t6M6TL6plug1SreclElSGNYHlSilccQNqQHqLdD1-V8,346
+tgup/progress_bar.py,sha256=aFnmpXYUhyVGHffgUCGBsM16XbA79Jqbnhay1Weqak0,207
+tgup/telegram_upload_client.py,sha256=z1LdqqDzzW2TDFMkjAzJnmTX1uI4O0pZwoVKWde4JwQ,14644
+tgup/upload.py,sha256=kDBYii6Rkg26XOrj4BcnaztKk7TfHni1lwCwuuPuqEE,3678
+tgup/utils.py,sha256=mvTQz8pwZKwEDw8gwSwx2YAXaJsi4BOSOFYtXPnjtJM,2213
+tgup/video.py,sha256=1ijreCuQLBY8tjqOI2N0DMKgzGRxgFjBHfdimoQ1JmQ,3379
+tgup-0.1.1.dist-info/METADATA,sha256=Lf1yVFL6MA3k-nyeQEsGLtfS_9gAUvv9RN0Sx8BW0wM,2203
+tgup-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+tgup-0.1.1.dist-info/entry_points.txt,sha256=F6007miSmv1JvRKhVRfYO4x4hexqxMPoNo5WMqjSUac,42
+tgup-0.1.1.dist-info/top_level.txt,sha256=W5r6mvmWSO_7y1QwFhFisFpRm1pBL-e2OtzNUukrtzY,5
+tgup-0.1.1.dist-info/RECORD,,
