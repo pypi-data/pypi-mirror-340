@@ -1,0 +1,13 @@
+docstring_pdf_converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docstring_pdf_converter/config.py,sha256=1b_FPO5903V9Kli0v0j38-zHVTnSsVw1NFUzCbz76j0,473
+docstring_pdf_converter/exemplo.py,sha256=rWmsRtJj0B4BhkncSvjyHIYWTdIYurqeYGzkc46arzU,1181
+docstring_pdf_converter/generate_pdf.py,sha256=5s35HpThZdQv1icO0aqdVhDzbcSYASgRfHVBTUheKO8,4679
+docstring_pdf_converter/main.py,sha256=iGN-zhnC-wrd8el0M2tJmxYOg25V2GncNcMgeudFpq4,1726
+docstring_pdf_converter-0.2.0.dist-info/licenses/LICENSE,sha256=cL3waPd7K-nL5Sn2G06ojSxahyWjhhdCewy6OIMMrOI,1095
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_generate_pdf.py,sha256=p4yCMz0THPUtSSfq1TtIl10xJnm7APD1tx4dVRY7Fh0,1832
+docstring_pdf_converter-0.2.0.dist-info/METADATA,sha256=qXFwY5kz8errrXoRMgyy8TQEGsex78tzKHJULEJHd7I,3185
+docstring_pdf_converter-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+docstring_pdf_converter-0.2.0.dist-info/entry_points.txt,sha256=NY5FfO1NMH8SL6l044vpEQQszBoswJ8-_9vkErgWUbE,78
+docstring_pdf_converter-0.2.0.dist-info/top_level.txt,sha256=3p8qc44BDaGwK5b71i9hlr-u-gGLBYDy1wCHaIUN5Tk,30
+docstring_pdf_converter-0.2.0.dist-info/RECORD,,
