@@ -1,0 +1,12 @@
+README.md
+setup.py
+apostrofo_models_sdk/__init__.py
+apostrofo_models_sdk/client.py
+apostrofo_models_sdk/constants.py
+apostrofo_models_sdk/exceptions.py
+apostrofo_models_sdk/models.py
+apostrofo_models_sdk.egg-info/PKG-INFO
+apostrofo_models_sdk.egg-info/SOURCES.txt
+apostrofo_models_sdk.egg-info/dependency_links.txt
+apostrofo_models_sdk.egg-info/requires.txt
+apostrofo_models_sdk.egg-info/top_level.txt
