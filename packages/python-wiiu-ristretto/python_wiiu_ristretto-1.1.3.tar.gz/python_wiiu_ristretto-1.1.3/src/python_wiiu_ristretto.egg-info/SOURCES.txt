@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/python_wiiu_ristretto/__init__.py
+src/python_wiiu_ristretto/hardware.py
+src/python_wiiu_ristretto/wiiu.py
+src/python_wiiu_ristretto.egg-info/PKG-INFO
+src/python_wiiu_ristretto.egg-info/SOURCES.txt
+src/python_wiiu_ristretto.egg-info/dependency_links.txt
+src/python_wiiu_ristretto.egg-info/requires.txt
+src/python_wiiu_ristretto.egg-info/top_level.txt
