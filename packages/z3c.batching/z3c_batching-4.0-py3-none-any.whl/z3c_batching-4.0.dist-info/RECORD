@@ -1,0 +1,13 @@
+z3c/batching/README.rst,sha256=EKqa_14cQRpfc_3faW1pqD6Q0i9EgMk5QTS4FEzol0c,5603
+z3c/batching/__init__.py,sha256=7_6GsPFhnQr5jB1eW6-Ipq6ThaRFSUw3C_IJDFLdkhk,17
+z3c/batching/batch.py,sha256=uuvRtgQJ_PxlFw22BqHG78uhaOxmffbioyENSekiLAo,8951
+z3c/batching/configure.zcml,sha256=V4yq1f4c6CKXnOAeVwGGhJNTfAICWhVTERptqn-I228,234
+z3c/batching/interfaces.py,sha256=sRogqNrSHAB8GuyjylZOWymRURDCvuCX8wRema5TpoI,3469
+z3c/batching/subset.py,sha256=5XpSuAQV0mgEGwfptTfyDJZrU0_ct-7v2SsCvp-niew,3249
+z3c/batching/subset.rst,sha256=yutXz21kRGvcJ6Rl5o9JzwRy574RhYkrAy7wQfZLER8,1769
+z3c/batching/tests.py,sha256=8UtOPZxqsjqM7_UuJTtgk3Qajb-rgVLgmq3bvjSRVs4,1145
+z3c_batching-4.0.dist-info/LICENSE.txt,sha256=PmcdsR32h1FswdtbPWXkqjg-rKPCDOo_r1Og9zNdCjw,2070
+z3c_batching-4.0.dist-info/METADATA,sha256=xpOZ4GgjkXPM8GSEoa243eGyqguQz48zOqKv3FAGgQs,10351
+z3c_batching-4.0.dist-info/WHEEL,sha256=jB7zZ3N9hIM9adW7qlTAyycLYW9npaWKLRzaoVcLKcM,91
+z3c_batching-4.0.dist-info/top_level.txt,sha256=4IdyINjld7m2QfMrXUzjX5iV4pLTBx0DBASmKaA1wJc,4
+z3c_batching-4.0.dist-info/RECORD,,
