@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: automatix_cmd
+Version: 2.5.99
+Summary: Automation wrapper for bash and python commands
+Home-page: https://github.com/vanadinit/automatix_cmd
+Author: Johannes Paul
+Author-email: vanadinit@quantentunnel.de
+License: MIT
+Keywords: bash,shell,command,automation,process,wrapper,devops,system administration
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: summary
+
+# automatix
+Automation wrapper for bash and python commands. Extended Features version.
+
+
+# DESCRIPTION
+
+All the work of this fork is integrated and continued in the original
+repository now. Please use https://github.com/seibert-media/automatix.
+
+To switch your installation remove automatix_cmd and install automatix
+thereafter.
+
+    pip uninstall automatix_cmd
+    pip install automatix

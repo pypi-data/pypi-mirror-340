@@ -1,0 +1,8 @@
+README.md
+setup.py
+automatix/__init__.py
+automatix_cmd.egg-info/PKG-INFO
+automatix_cmd.egg-info/SOURCES.txt
+automatix_cmd.egg-info/dependency_links.txt
+automatix_cmd.egg-info/entry_points.txt
+automatix_cmd.egg-info/top_level.txt
