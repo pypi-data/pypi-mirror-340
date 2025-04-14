@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+savage/__init__.py
+savage/graphic.py
+savage_generator.egg-info/PKG-INFO
+savage_generator.egg-info/SOURCES.txt
+savage_generator.egg-info/dependency_links.txt
+savage_generator.egg-info/requires.txt
+savage_generator.egg-info/top_level.txt
+tests/test_graphic.py
