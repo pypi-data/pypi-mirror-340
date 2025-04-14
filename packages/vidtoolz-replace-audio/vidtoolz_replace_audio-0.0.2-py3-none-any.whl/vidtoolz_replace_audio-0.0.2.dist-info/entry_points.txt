@@ -1,0 +1,2 @@
+[vidtoolz_plugins]
+repaudio = vidtoolz_replace_audio:repaudio_plugin
