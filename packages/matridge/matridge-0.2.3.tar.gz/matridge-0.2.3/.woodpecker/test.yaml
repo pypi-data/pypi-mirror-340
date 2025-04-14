@@ -1,0 +1,35 @@
+# DO NOT EDIT
+# Generated from .copier-answers.yml
+
+when:
+  event: [push, pull_request]
+  path: [pyproject.toml, uv.lock, "**/*.py", ".woodpecker/test.yaml"]
+
+variables:
+  - &ci-image codeberg.org/${CI_REPO_OWNER}/matridge:ci
+
+steps:
+  update-venv:
+    image: *ci-image
+    pull: true
+    commands:
+      - uv sync --all-groups --all-extras
+
+  ruff:
+    image: *ci-image
+    depends_on: update-venv
+    commands:
+      - ruff check
+      - ruff format --check
+
+  mypy:
+    image: *ci-image
+    depends_on: update-venv
+    commands:
+      - mypy
+
+  test:
+    image: *ci-image
+    depends_on: update-venv
+    commands:
+      - python -m pytest tests
