@@ -1,0 +1,39 @@
+# Secrets etc
+.env
+
+# Ignore Python bytecode files
+*.py[cod]
+
+# Ignore __pycache__ directories
+__pycache__/
+
+# Ignore ruff cache
+.ruff_cache/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# macOS stuff
+.DS_Store
+
+*Global-Steel-Plant-Tracker-April-2024-Standard-Copy-V1.xlsx
+
+# scratch data
+data
+
+# jupyter notebooks
+.ipynb_checkpoints
+beth_data_preprocessing_backup.ipynb
+baseload_power_optimization_backup.ipynb
+
+# coverage
+.coverage
+
+# macOS oddities
+.DS_Store
+
+# Django frontend
+frontend/django/build/
