@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+agentic_chunker/__init__.py
+agentic_chunker/main.py
+agentic_chunker/prompts.py
+agentic_chunker/version.py
+agentic_chunker.egg-info/PKG-INFO
+agentic_chunker.egg-info/SOURCES.txt
+agentic_chunker.egg-info/dependency_links.txt
+agentic_chunker.egg-info/requires.txt
+agentic_chunker.egg-info/top_level.txt
