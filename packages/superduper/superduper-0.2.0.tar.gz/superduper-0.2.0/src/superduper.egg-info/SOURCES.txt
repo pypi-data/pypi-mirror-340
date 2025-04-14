@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/markdowngiver2/__init__.py
+src/markdowngiver2/__main__.py
+src/markdowngiver2/server.py
+src/superduper.egg-info/PKG-INFO
+src/superduper.egg-info/SOURCES.txt
+src/superduper.egg-info/dependency_links.txt
+src/superduper.egg-info/requires.txt
+src/superduper.egg-info/top_level.txt
