@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/MM22025UNO.egg-info/PKG-INFO
+src/MM22025UNO.egg-info/SOURCES.txt
+src/MM22025UNO.egg-info/dependency_links.txt
+src/MM22025UNO.egg-info/requires.txt
+src/MM22025UNO.egg-info/top_level.txt
