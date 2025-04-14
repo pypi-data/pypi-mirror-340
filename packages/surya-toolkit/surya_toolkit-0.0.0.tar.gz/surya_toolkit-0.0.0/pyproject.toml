@@ -1,0 +1,16 @@
+[project]
+name = "surya-toolkit"
+version = "0.0.0"
+description = ""
+authors = [
+    {name = "SuryaSekhar14",email = "suryasekhardatta22@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
