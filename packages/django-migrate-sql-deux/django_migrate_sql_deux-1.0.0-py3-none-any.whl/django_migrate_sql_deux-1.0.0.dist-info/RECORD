@@ -1,0 +1,13 @@
+django_migrate_sql/__init__.py,sha256=RsZjRjMprNcDm97wqRRSk6rTLgTX8N0GyicZyZ8OsBQ,22
+django_migrate_sql/autodetector.py,sha256=e_y_xFtc1SKk34dJuuQ8a0NfaGjhsgdmuD9xrflbUUQ,13501
+django_migrate_sql/config.py,sha256=uYms22MPVPt3obvb9-a7TvzFgZrSK1gR4KDMGZuQlfw,1391
+django_migrate_sql/graph.py,sha256=MWKiZhzuWF4sCMV3elQ8kqV2yljL4PSHHykNV-YZHOo,4111
+django_migrate_sql/operations.py,sha256=8j3FO4xO9i2KXQp3wag82crTVEl7W4Wh_gQMqOsrXKE,7577
+django_migrate_sql/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_migrate_sql/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_migrate_sql/management/commands/makemigrations.py,sha256=EY3m265PDgx4MKz_sx8gczqd_24Q9MobgjjoD5l_ngI,5535
+django_migrate_sql_deux-1.0.0.dist-info/licenses/LICENSE,sha256=AMfBy7--KzNJGEN6xLEy_-kdwvQP70Ck5y7jLGYmPrs,754
+django_migrate_sql_deux-1.0.0.dist-info/METADATA,sha256=F84DGVO25FRWnRBzOVWtIVr1cd7b5HRDCuuiWVVFWTY,11064
+django_migrate_sql_deux-1.0.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_migrate_sql_deux-1.0.0.dist-info/top_level.txt,sha256=At0os64aXXqAwg_WvAa6d9BIoiYXjhHeC84IaUVre3Q,19
+django_migrate_sql_deux-1.0.0.dist-info/RECORD,,
