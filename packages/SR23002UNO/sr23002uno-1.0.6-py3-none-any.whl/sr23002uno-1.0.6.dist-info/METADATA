@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: SR23002UNO
+Version: 1.0.6
+Summary: Liberia para resolver ecuaciones lineales y no lineales
+Home-page: https://github.com/sr230002/CDA135-GT02-SR23002UNO
+Author: David Enrique Sixco Ramos
+Author-email: sr23002@ues.edu.sv
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+Liberia para resolver ecuaciones
+
+Instalar setuptools
+pip install setuptools
+
+Instalar Twine
+pip install twine
+
+Para crear una versión
+python setup.py sdist bdist_wheel
+
+Para subir una versión a PyPi
+python -m twine upload dist/*
