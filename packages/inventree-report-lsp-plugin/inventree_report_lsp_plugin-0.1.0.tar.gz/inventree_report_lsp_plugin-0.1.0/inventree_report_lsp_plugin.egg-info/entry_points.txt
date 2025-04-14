@@ -1,0 +1,5 @@
+[console_scripts]
+inventree-report-lsp = report_lsp.lsp.server:cli
+
+[inventree_plugins]
+reporteditor = report_lsp.core:ReportEditor
