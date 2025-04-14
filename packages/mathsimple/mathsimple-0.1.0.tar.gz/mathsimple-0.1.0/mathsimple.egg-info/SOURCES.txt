@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+mathsimple/__init__.py
+mathsimple/operations.py
+mathsimple.egg-info/PKG-INFO
+mathsimple.egg-info/SOURCES.txt
+mathsimple.egg-info/dependency_links.txt
+mathsimple.egg-info/top_level.txt
+tests/test_operations.py

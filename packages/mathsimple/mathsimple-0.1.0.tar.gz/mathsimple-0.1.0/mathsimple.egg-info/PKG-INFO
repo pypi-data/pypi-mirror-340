@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: mathsimple
+Version: 0.1.0
+Summary: A simple math package for basic arithmetic
+Author: rama
+Author-email: rama5864@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# mathsimple
+
+**mathsimple** is a simple Python package that provides basic arithmetic operations: addition, subtraction, multiplication, and division.
+
+---
+
+## ðŸ“¦ Installation
+
+You can install this package directly from PyPI:
+
+```bash
+pip install mathsimple
