@@ -1,0 +1,2 @@
+[console_scripts]
+stv_path = stv_path_converter.main:main
