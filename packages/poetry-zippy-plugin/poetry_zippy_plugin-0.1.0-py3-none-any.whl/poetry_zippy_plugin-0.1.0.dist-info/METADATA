@@ -1,0 +1,105 @@
+Metadata-Version: 2.3
+Name: poetry-zippy-plugin
+Version: 0.1.0
+Summary: Poetry plugin to install dependencies to a target directory and create zip files for deploying to AWS Lambda
+Author: Adam McKay
+Author-email: adam@beepboop.digital
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: poetry (>=2.0.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Poetry Zippy Plugin
+
+A Poetry plugin that installs packages to a target directory and creates deployment packages,
+particularly useful for AWS Lambda functions and other deployment scenarios.
+
+## Installation
+
+```bash
+poetry self add poetry-zippy-plugin
+```
+
+## Usage
+
+```bash
+# Install all dependencies to a specific directory
+poetry zippy --target ./lambda_dependencies
+
+# Install dependencies and copy source code in one command
+poetry zippy --target ./lambda_dependencies --source ./my_lambda_function
+
+# Exclude specific file patterns when copying source
+poetry zippy --target ./lambda_dependencies --source ./my_lambda_function --exclude "*.tmp,test/*"
+
+# Create a ZIP file from the target directory
+poetry zippy --target ./lambda_dependencies --source ./my_lambda_function --zip ./deployment.zip
+
+# Create a ZIP file directly without keeping a target directory
+poetry zippy --source ./my_lambda_function --zip ./deployment.zip
+
+# Install with specific dependency groups
+poetry zippy --target ./lambda_dependencies --only prod
+# or
+poetry zippy --target ./lambda_dependencies --with dev
+# or exclude specific groups
+poetry zippy --target ./lambda_dependencies --without test
+```
+
+## Options
+
+- `--target`, `-t`: The target directory where dependencies will be installed (required unless --zip is used)
+- `--source`, `-s`: The source directory to copy into the target directory
+- `--exclude`, `-e`: Comma-separated patterns to exclude when copying source files
+- `--zip`, `-z`: Path to the ZIP file to create from the target directory
+- `--only`: The only dependency groups to include (comma-separated)
+- `--with`: The optional dependency groups to include (comma-separated)
+- `--without`: The dependency groups to skip (comma-separated)
+- `--platform`: Only use wheels compatible with this platform tag (e.g., manylinux2014_x86_64)
+- `--implementation`: Only use wheels compatible with this Python implementation (e.g., cp)
+- `--python-version`: The Python interpreter version to use for wheel and 'Requires-Python' compatibility checks
+- `--pip`: Additional arguments to pass directly to pip install
+
+Note: The plugin automatically excludes common Python cache directories and files like `__pycache__/`, `*.pyc`, `*.pyo`, `*.pyd`, `.git/`, `.pytest_cache/`, and `.coverage`.
+
+## AWS Lambda Deployment Example
+
+This plugin is particularly useful for preparing AWS Lambda function deployments.
+Here's an example workflow:
+
+1. Set up your Poetry project with your Lambda function code
+2. Install dependencies, copy your code, and create a deployment ZIP in one command:
+   ```bash
+   # Create a final ZIP with a clean target directory
+   poetry zippy --target ./lambda_package --source ./my_lambda_function --only prod --zip ./lambda_deployment.zip
+   
+   # Or create the ZIP directly without keeping a target directory
+   poetry zippy --source ./my_lambda_function --only prod --zip ./lambda_deployment.zip
+   
+   # Specify platform and Python version for Lambda compatibility
+   poetry zippy --target ./lambda_package --source ./my_lambda_function --platform manylinux2014_x86_64 --python-version 3.9 --zip ./lambda_deployment.zip
+   
+   # Pass additional pip arguments
+   poetry zippy --target ./lambda_package --source ./my_lambda_function --pip "--no-binary :all: --no-cache-dir" --zip ./lambda_deployment.zip
+   ```
+3. Deploy the ZIP file to AWS Lambda:
+   ```bash
+   aws lambda update-function-code --function-name MyFunction --zip-file fileb://lambda_deployment.zip
+   ```
+
+## How It Works
+
+The plugin performs the following steps:
+
+1. Resolves dependencies using Poetry's lock file
+2. Installs each package to the target directory using pip
+3. Copies source files (if specified) while respecting exclude patterns
+4. Creates a ZIP file (if requested) containing all installed packages and source files
+5. Cleans up temporary directories (if used)
+
+The plugin ensures that all dependencies are installed in a way that's compatible with AWS Lambda's requirements, including handling platform-specific wheels and Python version compatibility.
+
