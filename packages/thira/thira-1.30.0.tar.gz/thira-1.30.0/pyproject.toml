@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "thira"
+version = "1.30.0"
+description = "A Git hooks manager and commit message linter"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+homepage = "https://github.com/ervan0707/thira"
+repository = "https://github.com/ervan0707/thira"
+documentation = "https://github.com/ervan0707/thira#readme"
+keywords = ["git", "hooks", "commit", "lint", "cli"]
+packages = [{include = "thira"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.31.0"
+pathlib = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^1.4.0"
+
+[tool.poetry.scripts]
+thira = "thira.cli:main"
+thira-uninstall = "thira.uninstaller:uninstall"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.plugins."poetry.plugin"]
+thira = "thira.hooks:ThiraPlugin"
