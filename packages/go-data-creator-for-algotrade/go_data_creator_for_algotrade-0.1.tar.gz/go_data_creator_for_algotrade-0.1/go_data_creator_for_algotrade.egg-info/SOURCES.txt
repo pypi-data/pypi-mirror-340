@@ -1,0 +1,9 @@
+README.md
+setup.py
+go_data_creator_for_algotrade/__init__.py
+go_data_creator_for_algotrade/data_creator.py
+go_data_creator_for_algotrade.egg-info/PKG-INFO
+go_data_creator_for_algotrade.egg-info/SOURCES.txt
+go_data_creator_for_algotrade.egg-info/dependency_links.txt
+go_data_creator_for_algotrade.egg-info/requires.txt
+go_data_creator_for_algotrade.egg-info/top_level.txt

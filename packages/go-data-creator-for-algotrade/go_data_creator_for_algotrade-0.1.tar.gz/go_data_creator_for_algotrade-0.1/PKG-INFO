@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: go_data_creator_for_algotrade
+Version: 0.1
+Summary: A data creation and formatting tool for algo trading
+Home-page: UNKNOWN
+Author: okan.uregen
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+A tool for reading and formatting data from SQL Server for algorithmic trading.
+
