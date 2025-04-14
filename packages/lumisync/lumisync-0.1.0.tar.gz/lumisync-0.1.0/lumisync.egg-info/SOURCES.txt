@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+lumisync/lumisync.py
+lumisync.egg-info/PKG-INFO
+lumisync.egg-info/SOURCES.txt
+lumisync.egg-info/dependency_links.txt
+lumisync.egg-info/entry_points.txt
+lumisync.egg-info/requires.txt
+lumisync.egg-info/top_level.txt
+lumisync/modes/MonitorSync.py
+lumisync/modes/MusicSync.py
+lumisync/utils/GetData.py
+lumisync/utils/GetDevices.py
+lumisync/utils/SendData.py
