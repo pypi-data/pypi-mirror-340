@@ -1,0 +1,7 @@
+README.md
+ghidralib.py
+pyproject.toml
+ghidralib.egg-info/PKG-INFO
+ghidralib.egg-info/SOURCES.txt
+ghidralib.egg-info/dependency_links.txt
+ghidralib.egg-info/top_level.txt
