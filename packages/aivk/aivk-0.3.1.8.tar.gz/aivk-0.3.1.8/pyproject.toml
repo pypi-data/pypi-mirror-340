@@ -1,0 +1,33 @@
+[project]
+name = "aivk"
+version = "0.3.1.8"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "LIghtJUNction", email = "lightjunction.me@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "click>=8.1.8",
+    "fastapi>=0.115.12",
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.6.0",
+    "python-dotenv>=1.1.0",
+    "requests>=2.32.3",
+    "toml>=0.10.2",
+]
+
+# 修正入口点，移除src前缀
+[project.scripts]
+aivk = "aivk.cli.__main__:cli"
+
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+# 保持src布局配置
+[tool.hatch.build]
+packages = ["src"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aivk"]
