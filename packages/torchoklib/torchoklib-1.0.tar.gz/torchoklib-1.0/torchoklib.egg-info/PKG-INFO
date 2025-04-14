@@ -1,0 +1,5 @@
+Metadata-Version: 2.2
+Name: torchoklib
+Version: 1.0
+Requires-Dist: numpy>=2.1.3
+Dynamic: requires-dist
