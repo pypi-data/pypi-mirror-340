@@ -1,0 +1,8 @@
+hello_world/__init__.py,sha256=RRHYddC02ttUNvEo8vYiEGJnHqMA2vI1uobcekdpkfA,78
+hello_world/main.py,sha256=eYNmNvAt8EGKX-TdZPBin8QZ5hxRaryefltc5ktF1WQ,363
+hello_world/model/task.py,sha256=YoArPS6wzMJduLivZ6l9i3dSWzuuqn4Wt8IZBV3cLgE,82
+hello_world/services/tasks_service.py,sha256=ugbWJUxq5ypk0ga2ZnRsnbr0Kygu7PVyCTeAaWLhEV4,706
+jesseprusso_hello_world_lib-0.1.0.dist-info/METADATA,sha256=-Y3s2x18O_y61-ySi447iRRHH2NIMgrnRqSC8fmg9Yk,685
+jesseprusso_hello_world_lib-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+jesseprusso_hello_world_lib-0.1.0.dist-info/top_level.txt,sha256=vY8b2A8Sa2-5PUXRoDjDABQ-zMBnaxTqNarDpG9ub2s,12
+jesseprusso_hello_world_lib-0.1.0.dist-info/RECORD,,
