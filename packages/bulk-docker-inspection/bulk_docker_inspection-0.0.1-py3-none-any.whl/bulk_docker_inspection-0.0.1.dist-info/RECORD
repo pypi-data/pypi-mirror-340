@@ -1,0 +1,12 @@
+bulk_docker_inspection/__init__.py,sha256=yyz4dlCRw_ANUQ5reVlXFv3XP8OWh7Gay_e2BQcjXjs,71
+bulk_docker_inspection/importlib_runner.py,sha256=2Bw7Spb6Ug4xX_nYTfAF3dcpKvyeHwZte9gbcyPbSpw,1201
+bulk_docker_inspection/main.py,sha256=d7fQV8gz05FefU59zCEHPleKc-UOY39m9-4-TF--m1s,14754
+bulk_docker_inspection/runner.py,sha256=XB3sTmJ6sNe2pXxO06F4qOvhnm5Oer2SIi7JbHdViqo,827
+bulk_docker_inspection/samples/__init__.py,sha256=HIjsgTqI3coI9JFAQsWCNUZ4frN3zXdn1eEI2qdSO1w,53
+bulk_docker_inspection/samples/python_info.py,sha256=tuUkUwRYxStb5iDUufwDTQchujS59bUufIOV0aGbmF8,130
+bulk_docker_inspection/samples/system_info.py,sha256=6yPBz1CWfcdUGuuVi98NKGsv8Ur4qF8lsSsZtJipbYg,325
+bulk_docker_inspection-0.0.1.dist-info/licenses/LICENSE,sha256=PElxAOOW00VxMqJMRnQKvpr9vLSL1LgLVG_JYxgY8FM,1070
+bulk_docker_inspection-0.0.1.dist-info/METADATA,sha256=8vQysZrFGzZJhPSyYeZRVgdKQtmq3A0NdUJ5XJ0FHTs,1687
+bulk_docker_inspection-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+bulk_docker_inspection-0.0.1.dist-info/top_level.txt,sha256=eZY3uP7yv3HQmGRrumHB3CRSV2IzaEA1w6swRRoQ8uE,23
+bulk_docker_inspection-0.0.1.dist-info/RECORD,,
