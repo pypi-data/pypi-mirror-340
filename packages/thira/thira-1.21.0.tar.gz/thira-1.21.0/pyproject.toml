@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "thira"
+version = "1.21.0"
+description = "A Git hooks manager and commit message linter"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/ervan0707/thira"
+repository = "https://github.com/ervan0707/thira"
+documentation = "https://github.com/ervan0707/thira#readme"
+keywords = ["git", "hooks", "commit", "lint", "cli"]
+packages = [
+    { include = "thira" }
+]
+
+[tool.poetry.scripts]
+thira = "thira.run:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+tomli = "^2.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+# Change this to use proper entry points
+[tool.poetry.plugins."poetry.plugin"]
+install = "thira.install:install_binary"
+
+[tool.poetry-version-plugin]
+source = "pyproject"
