@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: FRIB_ML
+Version: 0.5
+Summary: This package is used for creating training data and training a machine learning model for the FRIB level scheme project
+Home-page: https://github.com/Justint814/FRIB_ML
+Author: Justin Traywick
+Author-email: jtraywick8@gmail.com
+License: MIT
+Download-URL: https://github.com/Justint814/FRIB_ML/archive/refs/tags/frib4.tar.gz
+Description: UNKNOWN
+Keywords: Machine,Learning,ML,train,data,level
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
