@@ -1,0 +1,13 @@
+withrepo/__init__.py,sha256=SIMmzwl7ZQNvlfz-nU5QqJqH1kpmkoHBhMUTwvB73Bs,391
+withrepo/constants.py,sha256=Cv04ZsqOAmLGkdTU1tF-eC-Trd5PZ49agMxmuZPb7So,293
+withrepo/download.py,sha256=YXpIUi95KuagSB_uzPF56WzzzXCE6Fg_CKXRIV8Oh1U,4213
+withrepo/utils.py,sha256=VgJfc270MAdGlRje_e5ukrdF5DpgkxyC4KQtYBUE9mw,4166
+withrepo/withrepo.py,sha256=1sDHD-wbMJ5tyOoDEmliAj1GXNxEAfq5nKNZ3ibfQkI,8570
+withrepo/resources/__init__.py,sha256=E1e7MPI_pgjXtz6y_7verzRandjbI-6eayVAGIbKjAE,200
+withrepo/resources/languages.py,sha256=qCsW7nnD0Rb2zlyUnL5uhEBKbOq90GQLIynO1n9htrU,77367
+withrepo/resources/tree_sitter.py,sha256=wG5D32H0bkbxRqX7u0_C39RMBKeo6UgCPutUS8VLMKQ,913
+withrepo/resources/vendor.py,sha256=8Pw0onLeuNxwX6kY64nyZpnsEuW2HkM8ZBCk4xpoFCo,7482
+withrepo-0.2.4.dist-info/METADATA,sha256=DsaRlv3P2uMQTXJfUhAFR34ZmVJkpAe0KrcnpFsjfyI,2113
+withrepo-0.2.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+withrepo-0.2.4.dist-info/licenses/LICENSE,sha256=PQ3-J6z5aVdmGJQRziKHraF3A_DK-dR8jAWkfIY57mA,1074
+withrepo-0.2.4.dist-info/RECORD,,
