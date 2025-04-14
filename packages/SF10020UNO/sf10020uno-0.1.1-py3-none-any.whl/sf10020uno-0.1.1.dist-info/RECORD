@@ -1,0 +1,14 @@
+sf10020uno/Biseccion.py,sha256=_aPgvFM6ysFoz-NI9aXlfg5GXTW5cQeMGZJsqcRg0K4,1293
+sf10020uno/Cramer.py,sha256=kIshftf4Ooe7ZMog45L8PaKpgTrOw5arpLnpH8oNr7c,1622
+sf10020uno/Descomposicion_LU.py,sha256=bExGdcAAyd191n_APSDqmVzPWtooHL5fcpZnwXNycX4,2263
+sf10020uno/Gauss.py,sha256=bZdhOzq6jNUwJoaGIA8jn1RjbBSZX4jtRV0lrFwg3E8,3037
+sf10020uno/Gauss_Jordan.py,sha256=hw6Z4WIIv-SeSrknSsDNpe6k4wbOLNaqs04V1PFHoTI,2384
+sf10020uno/Gauss_Seidel.py,sha256=2xqZq8yBdztgqtIfk-T1FDWvnFsmXZCJ43_2j0bbpDo,1965
+sf10020uno/Jacobi.py,sha256=OgA0iyPjkQLjdAoGjDfDrYg80Fw-0eLIZIkplmF-Hw0,2002
+sf10020uno/Resolver.py,sha256=a3UIi56-F3TXNp9HeCsH-UTjxRcqtT0oRwaOl1g1SGc,1374
+sf10020uno/__init__.py,sha256=jhf2PcK2rupL8jet-qDQQO9ge12Ob87-9YJhFLBBP6k,224
+sf10020uno-0.1.1.dist-info/licenses/LICENSE,sha256=Kqk7jM2Hkr3VaragYeejCn0ea4DgV1XkKqiR5bP0uE4,246
+sf10020uno-0.1.1.dist-info/METADATA,sha256=GCZQjE5uZvJLvhwG8pQtVGcZFrU-SwMUfGOPbs8yUqc,521
+sf10020uno-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sf10020uno-0.1.1.dist-info/top_level.txt,sha256=Q0iHvviwYf_M05j5P3jkF2Bl-6u_IEPdCOK0OvySZik,11
+sf10020uno-0.1.1.dist-info/RECORD,,
