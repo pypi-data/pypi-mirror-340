@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: l-command
+Version: 0.1.0
+Summary: Smart file and directory viewer
+Project-URL: Homepage, https://github.com/gyu-don/l-command
+Project-URL: Repository, https://github.com/gyu-don/l-command
+Author-email: gyu-don <takumi.kt@gmail.com>
+License: Apache-2.0
+License-File: LICENSE
+Keywords: cli,directory-viewer,file-viewer,ls
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Utilities
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# L command
+
+`l` コマンドは、 `less` のかわりにも `ls` のかわりにもなる新しいコマンドです。ファイルやディレクトリの中身をスマートに判別し、最適な方法で表示します。
+
+## Usage
+
+- `l /path/to/file`: ファイルの内容を適切な方法で表示します
+  - ファイルが短い場合: `cat` として表示
+  - ファイルが長い場合: `less -RFX` として表示
+  - JSONファイルの場合: `jq` を使用して整形表示
+- `l /path/to/directory`: `ls -la --color=auto /path/to/directory` として働きます
+- `l /path/to/json`: JSONファイルを検出し、`jq` を使用して整形表示します
+
+## 詳細な動作仕様
+
+- ファイルサイズや行数を自動判別し、短ければ `cat`、長ければ `less` を使用
+- ターミナルの高さを自動検出し、ファイルの行数がターミナルの高さを超える場合は `less` を使用
+- JSONファイルの自動検出と整形
+  - 拡張子が `.json` のファイル
+  - 拡張子がなくても、先頭部分が `{` または `[` で始まるUTF-8ファイル
+  - `jq empty` による構文チェックを行い、無効なJSONはデフォルト表示にフォールバック
+  - 大きなJSONファイル（10MB以上）はデフォルト表示にフォールバック
+- ディレクトリの自動判別と一覧表示
+
+## オプション
+
+現在はコマンドライン引数は以下のとおりです：
+
+- 位置引数 `path`: 表示するファイルまたはディレクトリのパス (デフォルト: カレントディレクトリ `.`)
+
+## ユースケース
+
+- 単に中身を見たい時に `l file.txt`
+- ディレクトリの内容を一目で確認したい時に `l ./myfolder`
+- JSONファイルを整形して読みたいとき `l data.json`
