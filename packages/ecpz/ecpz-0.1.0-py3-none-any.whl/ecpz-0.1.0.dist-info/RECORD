@@ -1,0 +1,10 @@
+ecpz/__init__.py,sha256=FRVh-LC1Hb6OaFq-wSkL8TXhnWfE1rVVuasx8JDfXlk,29
+ecpz/cli.py,sha256=TdVP3b2nhg-D4AYu92zoAvqcFBWNOiQpi2GfayVNTJI,5867
+ecpz/quine.cpp,sha256=6mQO2kjbxjB78lQoCkXjhunnOYKT0r6VNB78n9gYBvw,381
+ecpz/subprocess.h,sha256=C_IIpAi6LH5jc51ioKSSoT-QsBEyFHdoNchVYp75AEM,36389
+ecpz/subprocess.hpp,sha256=dCSXu2X2UJtTsDk3B1QyOXM1GlNfpIXRzSN2Br75RyE,7004
+ecpz-0.1.0.dist-info/LICENSE,sha256=o-Ps33-8Q9W19eH0vnE35WvTnR4TflV2UQEDwOl0mXQ,1101
+ecpz-0.1.0.dist-info/METADATA,sha256=VS07cklU0BUF4NEkaW85Vvezkk8a2sfSopQlH45dvYY,5107
+ecpz-0.1.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+ecpz-0.1.0.dist-info/entry_points.txt,sha256=tr3WUDrk2F3Tbi-_e9f96RYXxC5vnhL2wxIx_uoaPDs,37
+ecpz-0.1.0.dist-info/RECORD,,
