@@ -1,0 +1,9 @@
+chatterbox_io/__init__.py,sha256=OQDlIw7iRTnB1Vd1h4JvWsHCSzDIHoYLhsTbW-ZGt3Q,156
+chatterbox_io/client.py,sha256=KG1xuh41fwufUufhAKNmw5uw6a4Ni2x7A09KcBoAdwc,4041
+chatterbox_io/models.py,sha256=qb3cdwbSGkHd4JW27Np3zh72m9xcMJBuAsa_81Vg0k4,2131
+chatterbox_io/websocket.py,sha256=8cCff3gs3I74OtxbbQkd0qVl6rswgirH5cUhVvMOL_M,4662
+chatterbox_io-0.2.0.dist-info/licenses/LICENSE.md,sha256=PtNFHEwaicIh0JG-L4oX-8Cex6aeT59a9TijmfewlxU,1087
+chatterbox_io-0.2.0.dist-info/METADATA,sha256=1fUvJJGYdAEUH6q9GV09Ztgql5Lo76zbnVZOdrO8I6g,7481
+chatterbox_io-0.2.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+chatterbox_io-0.2.0.dist-info/top_level.txt,sha256=V7yyQCErP9OkhILa8_jLENPam-jo0FeZuNPE9dnycb4,14
+chatterbox_io-0.2.0.dist-info/RECORD,,
