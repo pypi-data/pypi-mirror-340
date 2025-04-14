@@ -1,0 +1,10 @@
+uci_test_suite/__init__.py,sha256=nhWS_LfNJWkNMOhIApU9X5hi9sbSBP0i-uX-E9aRnOI,143
+uci_test_suite/__main__.py,sha256=rCVedn2mP6x2fvcojIew12Ij_-tGCXGdAtdftfeGx54,4337
+uci_test_suite/engine.py,sha256=klcG7lC7_xvtsGB8DT6uVx3TO8GxNkhe5RpQhm9Rgkk,5311
+uci_test_suite/tests.py,sha256=txO4voX1UJUeb0YkivXU0Sc5wDyLNV1M77USe7eV1BQ,23397
+uci_test_suite-0.1.1.dist-info/licenses/LICENSE,sha256=9EeBNqtUqqk6Eo4B_aK7gh6riXCzTVufzdjjmrKFgEU,1067
+uci_test_suite-0.1.1.dist-info/METADATA,sha256=DD1h70JSwMtm43s1gQmoeWQESYy8EGMUEqBNGj3xvm0,3612
+uci_test_suite-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+uci_test_suite-0.1.1.dist-info/entry_points.txt,sha256=raAUR0n9GuDdIHElxOcGIIcy0b_WFwfrg9A5vr1iAXo,64
+uci_test_suite-0.1.1.dist-info/top_level.txt,sha256=64f8fz4J58W4Rrztmrnwch7Zg9f4MkkWCQB7xztTbEM,15
+uci_test_suite-0.1.1.dist-info/RECORD,,
