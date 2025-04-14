@@ -1,0 +1,2 @@
+[console_scripts]
+mongo-easy = mongo_easy.cli.__main__:main
