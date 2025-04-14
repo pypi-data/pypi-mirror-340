@@ -1,0 +1,86 @@
+version: '3.8'
+
+services:
+  # Web服务
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.web
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_HOST=redis
+      - ES_HOST=elasticsearch
+      - MINIO_ENDPOINT=minio:9000
+    depends_on:
+      - redis
+      - minio
+      - elasticsearch
+    volumes:
+      - ./src:/app/src
+      - ./logs:/app/logs
+    networks:
+      - app-network
+
+  # Redis服务
+  redis:
+    image: redis:6.0
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    networks:
+      - app-network
+
+  # MinIO服务
+  minio:
+    image: minio/minio
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    volumes:
+      - minio_data:/data
+    command: server /data --console-address ":9001"
+    networks:
+      - app-network
+
+  # Elasticsearch服务
+  elasticsearch:
+    image: elasticsearch:7.17.0
+    environment:
+      - discovery.type=single-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+    ports:
+      - "9200:9200"
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    networks:
+      - app-network
+
+  worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+    depends_on:
+      - redis
+      - elasticsearch
+      - minio
+    environment:
+      - REDIS_HOST=redis
+      - ES_HOST=elasticsearch
+      - MINIO_ENDPOINT=minio:9000
+    volumes:
+      - ./logs:/app/logs
+
+volumes:
+  redis_data:
+  minio_data:
+  es_data:
+
+networks:
+  app-network:
+    driver: bridge 

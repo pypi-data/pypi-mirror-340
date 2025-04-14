@@ -1,0 +1,10 @@
+include LICENSE
+include README.md
+include requirements.txt
+include pyproject.toml
+include src/__init__.py
+
+recursive-include src *.py
+recursive-include tests *.py
+recursive-include scripts *.sh
+recursive-include scripts *.py 
