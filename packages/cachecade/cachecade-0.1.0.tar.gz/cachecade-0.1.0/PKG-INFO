@@ -1,0 +1,47 @@
+Metadata-Version: 2.4
+Name: cachecade
+Version: 0.1.0
+Summary: A flexible caching decorator for Flask that supports Replit, Redis, and in-memory storage.
+Home-page: https://github.com/ppicazo/cachecade
+Author: Your Name
+Author-email: paul@picazo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask>=1.0
+Requires-Dist: replit>=0.0.1
+Provides-Extra: redis
+Requires-Dist: redis>=3.5.3; extra == "redis"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Cachecade
+
+**Cachecade** is a flexible caching package for Flask applications that supports multiple backends with a prioritized fallback mechanism. Out of the box, it supports:
+
+- **Replit Key–Value Store**
+- **Redis**
+- **In-Memory Caching**
+
+## Features
+
+- **Prioritized Storage Engines:** By default, Cachecade uses `['replit', 'redis', 'memory']` as the order of precedence.
+- **TTL Support:** Cache entries have a time-to-live (TTL) after which they are considered stale.
+- **Decorator-Based Caching:** Easily cache function results by using the provided decorator.
+
+## Installation
+
+Clone this repository and install it with pip:
+
+```bash
+pip install .
