@@ -1,0 +1,7 @@
+x_client/__init__.py,sha256=FoH3FB0FI_1-kaQfAyekHdloMbIpa64K6B6jgGh3ltA,898
+x_client/aiohttp.py,sha256=HlIhibD0Tip9ewYA8yGaTrljJkKwmph8L2btUh-18uc,2501
+x_client/http.py,sha256=FD_Ff8MpYcw0ajxtG9Nb-B9-qf7XpECK4umtY-uxp2M,1218
+xn_client-0.0.5.dist-info/METADATA,sha256=S40Ruff3KpScosFgxdLRoiBEBLDAVGyOszbyQQyPEoM,533
+xn_client-0.0.5.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+xn_client-0.0.5.dist-info/top_level.txt,sha256=NKyQPwyG4KcdIcx5g8zr3VtuyehwvAYeYtAoOLEnafw,9
+xn_client-0.0.5.dist-info/RECORD,,
