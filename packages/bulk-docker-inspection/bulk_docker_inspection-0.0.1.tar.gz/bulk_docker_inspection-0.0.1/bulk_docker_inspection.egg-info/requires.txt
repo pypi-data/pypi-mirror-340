@@ -1,0 +1,7 @@
+cloudpickle
+
+[dev]
+tox
+pytest
+pytest-cov
+pytest-unordered
