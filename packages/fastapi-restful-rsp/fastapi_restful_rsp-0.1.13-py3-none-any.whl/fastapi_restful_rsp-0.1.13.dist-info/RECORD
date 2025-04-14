@@ -1,0 +1,7 @@
+fastapi_restful_rsp/__init__.py,sha256=TBjoHP216jO8nUXbP8kqaFoqgmY_tOFvan_04NmmNo4,210
+fastapi_restful_rsp/custom_decorator.py,sha256=24FvBzGfy2302hTNClNPBovtCbgyXkzD6snewdEG4H4,4282
+fastapi_restful_rsp/models.py,sha256=rQdTXtwGTkNipgv2iIgJQC5qmupZrvuLyym2S1QTbpE,300
+fastapi_restful_rsp/restful_rsp.py,sha256=qJpaPECVuD1qRla8HVFha99DpZdWvGQzlVBk3vQnnps,216
+fastapi_restful_rsp-0.1.13.dist-info/METADATA,sha256=NJdciMuECFPqjpUqWw0Yp0nGGQjFJjzautzwVJ3p80c,1494
+fastapi_restful_rsp-0.1.13.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+fastapi_restful_rsp-0.1.13.dist-info/RECORD,,
