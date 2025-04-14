@@ -1,0 +1,4 @@
+python-can>=4.0.0
+cantools>=36.0.0
+adafruit-circuitpython-mcp4725>=1.4.6
+adafruit-blinka>=8.0.0
