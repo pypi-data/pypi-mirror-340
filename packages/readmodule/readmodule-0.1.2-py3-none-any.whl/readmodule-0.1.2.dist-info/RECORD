@@ -1,0 +1,9 @@
+readmodule/__init__.py,sha256=e0RMjyOnO_aDHG8iQxJiC2vcgUsGR75tw-nVN9HeWPs,82
+readmodule/__main__.py,sha256=79bqhVMVkuxhLqOLjtb22g0VYZEZiMhbj_z55fHsdj4,150
+readmodule/server.py,sha256=_7X5kmxWaobncdGuS7iBCCrgrBNdzjfL0rXUAgrFUCE,3708
+readmodule-0.1.2.dist-info/licenses/LICENSE,sha256=0FrlGxnOWLBzDeaK4gGjMlGkYR4ePzvvTP989yIiBuM,788
+readmodule-0.1.2.dist-info/METADATA,sha256=SYVtvDNcd9umdushtSMFBCB-0lHt9WPZ0S_4cWt1I38,2590
+readmodule-0.1.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+readmodule-0.1.2.dist-info/entry_points.txt,sha256=AvZFMoChiB1OEwwWRS9zYObtpExPDmEju5ld-LYotp4,66
+readmodule-0.1.2.dist-info/top_level.txt,sha256=R67fYa48EmNqVgoPb4WZVLDu9nCwpEZjJLKXYGD_B-s,11
+readmodule-0.1.2.dist-info/RECORD,,
