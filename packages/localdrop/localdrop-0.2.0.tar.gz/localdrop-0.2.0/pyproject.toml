@@ -1,0 +1,16 @@
+[project]
+name = "localdrop"
+version = "0.2.0"
+description = "Local file sharing tool"
+readme = "README.md"
+authors = [
+  { name="yasir-dev1",email="yasireposta3@gmail.com"}
+]
+license = { text = "MIT" }
+dependencies = [
+    "click",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
