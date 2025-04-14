@@ -1,0 +1,2 @@
+[console_scripts]
+tetraview = tetraview.main:main
