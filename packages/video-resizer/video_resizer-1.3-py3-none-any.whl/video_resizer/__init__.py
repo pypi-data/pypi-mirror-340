@@ -1,0 +1,1 @@
+from video_resizer.resizer import resize_with_ffmpeg
