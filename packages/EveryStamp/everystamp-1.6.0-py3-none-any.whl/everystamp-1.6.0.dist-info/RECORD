@@ -1,0 +1,12 @@
+everystamp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+everystamp/cutters.py,sha256=tec4HBlcEyJ5VpZrHc2G08PcCLLskn3H0xmggkWyTR8,4407
+everystamp/downloaders.py,sha256=K6mV39n3gCJADneM04kwrxvt-9o7KrX8pNQOg0zTfeg,31425
+everystamp/everystamp.py,sha256=Pl-dZ1sj_8NwGIfu_K9rHrXCQmc9SAzUAK-9_0NW3cY,47073
+everystamp/plotters.py,sha256=n-ZVYFKF82iTda0UZq8GjgUwfmyxhf1oxEaGBH5rG5A,20034
+everystamp/tonemapping/__init__.py,sha256=KmAjCz4SKCA49AMXMziHmuEi6ew5Bui-MBQkfYnUGA8,1434
+everystamp/tonemapping/lhdr.py,sha256=1N6NBIOz_LZ7YeLGY9ZjdE_EsiUavxcTelfJiGGJ6RQ,19901
+everystamp-1.6.0.dist-info/METADATA,sha256=aSKiMtpUqp6_SKxBcifofsvx45qo3agyyTKvkVoc_1Q,988
+everystamp-1.6.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+everystamp-1.6.0.dist-info/entry_points.txt,sha256=aV4_foFFtdCDw3CHILUqmcVoeGsSlgrtHBxfmF8OzBc,58
+everystamp-1.6.0.dist-info/top_level.txt,sha256=9V2lxHUGlq_dw9HjucxyS4j4cfQytyX64uAukcAQonU,11
+everystamp-1.6.0.dist-info/RECORD,,
