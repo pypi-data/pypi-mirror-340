@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: circe-py
+Version: 0.3.6.post1
+Summary: Circe: Package for building co-accessibility networks from ATAC-seq data.
+Home-page: https://github.com/cantinilab/circe
+Author: Remi-Trimbour
+Author-email: remi.trimbour@pasteur.fr
+Maintainer: Remi-Trimbour
+Maintainer-email: remi.trimbour@gmail.com
+Requires-Python: >=3.8,<4.0
+License-File: LICENSE.txt
+Requires-Dist: Cython
+Requires-Dist: numpy<2.0.0
+Requires-Dist: pandas>=2.1.1
+Requires-Dist: scikit-learn>=1.6
+Requires-Dist: joblib>=1.1.0
+Requires-Dist: scanpy>=1.8.1
+Requires-Dist: rich>=10.12.0
+Requires-Dist: dask
+Requires-Dist: distributed
+Provides-Extra: downloads
+Requires-Dist: pybiomart; extra == "downloads"
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+None
