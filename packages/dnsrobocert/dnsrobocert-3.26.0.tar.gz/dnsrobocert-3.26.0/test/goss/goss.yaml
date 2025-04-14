@@ -1,0 +1,18 @@
+file:
+  /etc/dnsrobocert/config.yml:
+    exists: true
+    mode: "0644"
+    owner: root
+    group: root
+    filetype: file
+    contains: []
+  /usr/local/bin/dnsrobocert:
+    exists: true
+    mode: "0755"
+    owner: root
+    group: root
+    filetype: file
+    contains: []
+process:
+  dnsrobocert:
+    running: true

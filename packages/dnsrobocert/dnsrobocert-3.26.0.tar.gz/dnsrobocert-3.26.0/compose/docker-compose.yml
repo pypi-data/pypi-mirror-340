@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  dnsrobocert:
+    image: adferrand/dnsrobocert
+    container_name: dnsrobocert
+    env_file: .env
+    volumes:
+    - $ROOT/letsencrypt:/etc/letsencrypt
+    - $ROOT/dnsrobocert:/etc/dnsrobocert
+    environment:
+    - VERSION=latest
+    restart: always
