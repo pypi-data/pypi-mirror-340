@@ -1,0 +1,2 @@
+[console_scripts]
+ragazap = app.main:run_app

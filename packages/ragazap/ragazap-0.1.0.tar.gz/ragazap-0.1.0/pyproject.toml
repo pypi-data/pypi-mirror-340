@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ragazap"
+version = "0.1.0"
+description = "WhatsApp Multi-Capability Protocol (MCP) Server"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "JQuant Team", email = "info@jquant.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+dependencies = [
+    "fastapi>=0.115.0",
+    "mcp>=1.6.0",
+    "pydantic>=2.0.0",
+    "uvicorn>=0.17.0",
+    "redis>=4.5.0",
+    "httpx>=0.24.0",
+    "loguru>=0.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "build>=1.0.0",
+    "twine>=4.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jquant/whatsapp-mcp-server"
+"Bug Tracker" = "https://github.com/jquant/whatsapp-mcp-server/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]  # Include the app directory and its subdirectories
+exclude = ["tests*"]
+
+[project.scripts]
+ragazap = "app.main:run_app"
