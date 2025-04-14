@@ -1,0 +1,13 @@
+spinspg/__init__.py,sha256=oAtVrcS_gwUexeFX3ml7gGBvTjjTwn7zjD7cpMferTU,347
+spinspg/automorphisms.json,sha256=qnuS4DHu4TudWE8dcMxyiMG_YVjL5CNDDD73TBdcTUw,28080
+spinspg/core.py,sha256=RmG3289XmGpP77FHOZxaLaycZMN9nm20wRAz2PPs4VY,3370
+spinspg/group.py,sha256=yP3o_q_x9isVdJpjBKIX3sV3_PR5qjtIbXZ9YHNFCBU,12102
+spinspg/permutation.py,sha256=exr0knvDExKnm-EUleGaJezoPRt5ZZF8QBQ4qAnZTvk,2166
+spinspg/pointgroup.py,sha256=uWOjfTqjH4063gk8dPaR2sq6QD7JsKcm5z42WqNhUT0,49659
+spinspg/spin.py,sha256=rKGidCdZVYDaSrCue-TkRCkZ_qvgZtVPyxe0o2UxdsU,5347
+spinspg/utils.py,sha256=0v2QJjYatziFMiSSCPtaZVt7qfo15ZtMpStZp2eaUFs,823
+spinspg-0.1.6.dist-info/licenses/LICENSE,sha256=6cEtz-BwSKDx9zF0QdvZYsQ4Yg4Galv6740B1W9mwm0,1502
+spinspg-0.1.6.dist-info/METADATA,sha256=_TSavzmL7waZw1dMQsbOxiEujC3oJk4ly6ZktyI_4QQ,6439
+spinspg-0.1.6.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+spinspg-0.1.6.dist-info/top_level.txt,sha256=9RNW1yCPkBYp1N2n0e5X4aHmCFitaZ29yXmHyhLpzBM,8
+spinspg-0.1.6.dist-info/RECORD,,
