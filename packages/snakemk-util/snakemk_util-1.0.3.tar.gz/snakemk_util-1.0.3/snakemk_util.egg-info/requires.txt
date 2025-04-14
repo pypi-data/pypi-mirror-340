@@ -1,0 +1,5 @@
+snakemake<8,>=7
+
+[develop]
+bumpversion
+wheel
