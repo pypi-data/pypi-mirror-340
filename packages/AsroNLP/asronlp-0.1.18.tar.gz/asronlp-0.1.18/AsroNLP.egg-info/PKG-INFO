@@ -1,0 +1,115 @@
+Metadata-Version: 2.2
+Name: AsroNLP
+Version: 0.1.18
+Summary: Paket NLP untuk pengolahan teks Bahasa Indonesia
+Home-page: https://github.com/asroharun6/AsroNLP
+Author: Asro
+Author-email: info@raharja.info
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Indonesian
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas
+Requires-Dist: nltk
+Requires-Dist: openpyxl
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# AsroNLP - NLP for Indonesian Text Processing
+
+AsroNLP is a Natural Language Processing (NLP) package for processing Indonesian text. It includes functionalities such as stopword removal, stemming, sentiment analysis, and visualizations.
+
+## Features
+
+- **Preprocessing**: Tokenization, case folding, stopword removal, and normalization.
+- **Sentiment Analysis**: Analyzes sentiment based on a predefined lexicon of positive and negative words.
+- **Visualizations**: WordCloud and Top 10 Frequent Words for each sentiment (Positive, Negative, Neutral).
+- **Support for custom resources**: Easily load stopwords, lexicons, and other resources from local files.
+
+## Requirements
+
+To install all the necessary libraries and dependencies, follow these steps:
+
+### Step 1: Install Python
+
+Make sure you have Python 3.x installed. You can download it from [python.org](https://www.python.org/downloads/).
+
+### Step 2: Set Up Virtual Environment (optional but recommended)
+
+It's a good practice to use a virtual environment to manage dependencies for your project.
+
+1. Create a virtual environment:
+
+   ```bash
+   python -m venv venv
+   ```
+2. Activate the virtual environment:
+
+   - On Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+
+### Step 3: Install Dependencies
+
+You can install the required libraries by running:
+
+```bash
+pip install -r requirements.txt
+
+Or By Manual
+nltk
+pandas
+openpyxl
+matplotlib
+swifter
+rich
+wordcloud
+Sastrawi
+
+Result Will Be
+Sentiment Distribution Pie Chart:
+
+Displays percentages alongside counts for each sentiment (Positive, Negative, Neutral).
+
+Source Type Distribution Bar Chart:
+
+Shows counts and percentages for Media and Individual source types.
+
+Word Cloud:
+
+Generates a WordCloud for each sentiment (Positive, Negative, Neutral).
+
+Top 10 Frequent Words:
+
+Displays the top 10 frequent words for each sentiment with their percentages.
+
+Expected Outputs:
+Sentiment Distribution: Pie chart showing how sentiments are distributed.
+
+Source Type Distribution: Bar chart showing Media vs Individual source counts and percentages.
+
+Word Cloud: Displays the most frequent words for each sentiment.
+
+Top 10 Frequent Words: Bar chart with word frequencies and their contribution to the total word count.
+
+Next Steps:
+Ensure the required resources (e.g., stopwords.txt, kamuskatabaku.xlsx, etc.) are in the data folder.
+
+Run the script using:
+```
