@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: datalitex
+Version: 1.0.0
+Summary: Datalitex: A smart data assistant for data analysts and scientists — clean, transform, visualize and analyze datasets with ease.
+Home-page: https://github.com/yourusername/datalitex
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: numpy>=1.18.0
+Requires-Dist: matplotlib>=3.0.0
+Requires-Dist: seaborn>=0.10.0
+Requires-Dist: scikit-learn>=0.22.0
+
+# Datalitex
+
+**Datalitex** is a simple and powerful data analysis toolkit for Python. Designed especially for students, data analysts, and developers, it provides one-line solutions for data cleaning, transformation, visualization, and exploration.
+
+## 📦 Features
+
+- 🧼 Data cleaning (null handling, duplicates, formatting)
+- 🔍 Easy filtering, querying, and manipulation
+- 📊 Quick plots: bar, line, box, pie, scatter, heatmap, pairplot
+- 📈 Outlier detection using IQR & Z-score
+- 🧠 GroupBy summaries, crosstab, pivot tables
+- 🚀 Feature importance using correlation & ANOVA
+
+## 📥 Installation
+
+```bash
+pip install datalitex
