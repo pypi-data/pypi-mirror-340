@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+asciidoc_table_width_adjuster/__init__.py
+asciidoc_table_width_adjuster/main.py
+column_width.egg-info/PKG-INFO
+column_width.egg-info/SOURCES.txt
+column_width.egg-info/dependency_links.txt
+column_width.egg-info/top_level.txt
