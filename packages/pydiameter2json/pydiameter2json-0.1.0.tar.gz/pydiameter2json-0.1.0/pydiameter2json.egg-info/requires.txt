@@ -1,0 +1,3 @@
+diameter-codec>=1.0.3
+python-diameter>=0.7.4
+typer>=0.15.2

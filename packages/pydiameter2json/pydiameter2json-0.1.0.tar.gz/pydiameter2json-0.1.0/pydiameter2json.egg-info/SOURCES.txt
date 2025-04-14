@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+pydiameter2json/__init__.py
+pydiameter2json/__main__.py
+pydiameter2json/main.py
+pydiameter2json.egg-info/PKG-INFO
+pydiameter2json.egg-info/SOURCES.txt
+pydiameter2json.egg-info/dependency_links.txt
+pydiameter2json.egg-info/requires.txt
+pydiameter2json.egg-info/top_level.txt
