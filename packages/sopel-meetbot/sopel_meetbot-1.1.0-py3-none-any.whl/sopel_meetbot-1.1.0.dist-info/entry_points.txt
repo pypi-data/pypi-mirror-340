@@ -1,0 +1,2 @@
+[sopel.plugins]
+meetbot = sopel_meetbot.plugin

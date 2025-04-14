@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: sopel-meetbot
+Version: 1.1.0
+Summary: The meetbot plugin formerly shipped with Sopel prior to version 8.0.
+Author-email: dgw <dgw@technobabbl.es>
+License-Expression: EFL-2.0
+Project-URL: Homepage, https://github.com/sopel-irc/sopel-meetbot
+Project-URL: Bug Tracker, https://github.com/sopel-irc/sopel-meetbot/issues
+Keywords: sopel,plugin,bot,irc
+Platform: Linux x86, x86-64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel>=8.0
+Dynamic: license-file
+
+# sopel-meetbot
+
+The `meetbot` plugin formerly shipped with Sopel prior to version 8.0.
+
+_Note: Not super actively maintained. Open an issue if you're interested in
+taking over this particular piece of the project!_
+
+
+## Installation
+
+Place `meetbot.py` into `~/.sopel/plugins/`
+
+## Configuration
+
+```ini
+[meetbot]
+meeting_log_path = ~/www/meetings
+# Path to where the plugin should store meeting logs.
+# Intended to be served by a webserver (Apache, Nginx, etc.)
+
+meeting_log_baseurl = https://example.com/~sopel/meetings
+# Where the above path can be accessed via HTTP(S)
+# (omit trailing slash)
+# This will be used to build links to the finished meeting logs.
+```
+
+## Special thanks
+
+All contributors to [the original `meetbot` plugin for
+Sopel](https://github.com/sopel-irc/sopel/commits/master/sopel/modules/meetbot.py).
+
+## Changelog
+
+### 1.1.0
+
+Changed:
+* Require Sopel 8.0+ (#5)
+
+Fixed:
+* Sopel 8 moved built-in plugins from `.modules` to `.builtins` (#6)
+
+Meta:
+* Modernize package layout & metadata (#5)
+* Automate PyPI releases using Trusted Publishing
+
+
+### 1.0.0
+
+Initial release of `meetbot.py` from Sopel 7.1.x as its own package.
