@@ -1,0 +1,2 @@
+[console_scripts]
+video_resizer = video_resizer.cli:main
