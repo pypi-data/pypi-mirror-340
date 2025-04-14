@@ -1,0 +1,16 @@
+paddle2onnx/__init__.py,sha256=ZQH1tthxBen8BjO08ojcnT03HkSj97VZHRymyC-av1g,3432
+paddle2onnx/command.py,sha256=iKGfAimI8CUBn08ZFaEji30wj1sRZgjAf2uzKKQsTh0,6218
+paddle2onnx/convert.py,sha256=g5AGPGqvo2BPEa776bHR11aS4WPVtcryyWe3xBZM1h4,12201
+paddle2onnx/convert_to_fp16.py,sha256=Qeirh9TAIzl64KKUcMNCFscvTobbFIQIQG76yRytWXw,1333
+paddle2onnx/optimize.py,sha256=r-SGhkOWd6RK2MfVUdih_KoakHzpUWkk5KUX_qu3UFs,1626
+paddle2onnx/paddle2onnx_cpp2py_export.cpython-38-darwin.so,sha256=lswvOSpo9LEq2L1a8tWEauvtPQOdoirnY09MSOfKdRQ,10363088
+paddle2onnx/utils.py,sha256=2DPmGNfmrw78ImSeZYVzcuXqw_jsk_2HMKIb2L5bI5s,5281
+paddle2onnx/version.py,sha256=Rwn153snjAFHYYFE7EeVchGIMM2muZyc_8jLSjCS1vA,513
+paddle2onnx/proto/CMakeLists.txt,sha256=Y7sqyzmOQ2bxlAtjQkcJh23lXE23ToNXkbSr9RqPul0,430
+paddle2onnx/proto/p2o_paddle.proto,sha256=Bj5_qwEV0MBmva0H8kB9_UFmStNzt9tu-LbZ1VyZBf8,7254
+paddle2onnx-2.0.0a5.dist-info/LICENSE,sha256=unfdYjtkQWOBINBvBCbbgPkDLEV9rBj0rY8fBv2X4ts,11437
+paddle2onnx-2.0.0a5.dist-info/METADATA,sha256=uuPBemn0X-OZvs3ktFpgHE7EA-kNyI3ZY3Rnc2-FkJY,5850
+paddle2onnx-2.0.0a5.dist-info/WHEEL,sha256=vn0rPzIFW_cy9oTAXDva20oAP4wj96jExmONQdrjHdE,112
+paddle2onnx-2.0.0a5.dist-info/entry_points.txt,sha256=SRI9Ej_kX_0WOPSKjcrKxycMY7s6Po67XU9OqeoQDcI,57
+paddle2onnx-2.0.0a5.dist-info/top_level.txt,sha256=PhCD8iFooa9uVSW4Yp2u9LfJF0e_XsunzshpXj9rtvc,12
+paddle2onnx-2.0.0a5.dist-info/RECORD,,
