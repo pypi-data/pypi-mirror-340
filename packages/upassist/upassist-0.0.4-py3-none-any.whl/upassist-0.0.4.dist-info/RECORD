@@ -1,0 +1,15 @@
+upassist/__init__.py,sha256=o900N-xMNGNwysTS0tgYT4autp3JPalzPnyGgIuUJKA,236
+upassist/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upassist/config.py,sha256=2DXtikicw_r5m9jv0esMaYOI88q_4VOpmVhh_2E8imM,111
+upassist/errors.py,sha256=baaL5FoeCt5FGMmL6QfYhCTnGOZ0xv3BFkTq6buhY1A,36
+upassist/client/__init__.py,sha256=5Zgth0bi9FPAxkojXx6VxKBo67_QgsDzsnmycxLqDQ4,191
+upassist/client/_async.py,sha256=Ln8H697gLkKxnbkwTclxyFa7FAWITz4saIAVXbPQ8ls,932
+upassist/client/_sync.py,sha256=0XITvF-ny61iwPIroA4DAdm22FZQJmAWMj76oh95_-U,879
+upassist/client/abstract.py,sha256=x2PwYBjvBji_XoQTgtTSYBZRYJ_XgPmlxml_tArOp20,1214
+upassist/entities/__init__.py,sha256=73TY3tl4IjxFnWRZvWhfy23isFKNjtMpiX8flkdIsmw,59
+upassist/entities/heartbeat.py,sha256=DN6x7PARjY3baL5b0Li8ZxXF2U_TXsxKN_pIve9ASZM,2350
+upassist-0.0.4.dist-info/licenses/LICENSE,sha256=UIp30ue1HZit7tMmSK0SS3swJBqOcLLnLJn5LY5YdNE,1036
+upassist-0.0.4.dist-info/METADATA,sha256=MMgb-IvvZjtD82lAqsxeAbPWaXI8n7A8hyaJp4DTBhY,780
+upassist-0.0.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+upassist-0.0.4.dist-info/top_level.txt,sha256=KzqBbLLOp38SlWMSglKlbxn51T5uNw4CzjSV6NvfGTk,9
+upassist-0.0.4.dist-info/RECORD,,
