@@ -1,0 +1,17 @@
+torchok/__init__.py,sha256=wHxtEjzeA1IFcMafNxg29L9I93lEqzzIM_8unREDzhg,28
+torchok/example.py,sha256=MKrvFQ2HVt4vx4Bnk1jAqDBdLvMDakuKsbxWn_MPN58,1154
+torchok/tensor.py,sha256=YsBoDHEhwSFUCa5FohNvVov9rmPuBAovYlLYlUxtVuc,6212
+torchok/autogradik/__init__.py,sha256=15K1yXANO0S3gNhFYAa5dJXlvBVPz30zLku6C2aHkXI,30
+torchok/autogradik/functions.py,sha256=IO7NOCO_WMPliKxlwSuPPGLJjZy9LX6FxcAPvTyIoi4,11789
+torchok/nn/__init__.py,sha256=DD_T0dgnEnTgjuuUFZemG7zVP5_Mf4JqsEqpZ7heNrM,102
+torchok/nn/layers.py,sha256=QHTIwafHeZV43hxkLOhCdP8wGqOLE-Yjxwuy_uqB5dQ,2783
+torchok/nn/losses.py,sha256=yGKL-eIzdK9mFWM66tOvYLfAWDi0QIamUzXIDFGfIIQ,862
+torchok/nn/module.py,sha256=zn6GiJmUCYb-kSCu22tTEf3ya6iyI_pmFTtmUfuqwHM,1774
+torchok/optim/__init__.py,sha256=Vpjx8E0WJMwZSKDnripIDzfixEYGYPPgAvuEykKMikE,113
+torchok/optim/adam.py,sha256=VZEY7ZNA_MXt5fqvOTtW1wlUuIiHeB9ADxsHkA106Fg,1144
+torchok/optim/rmsprop.py,sha256=x4T-JmCE6e-rlcksvF3_cwQ0z3FxOs9q9Jr0sSzvqfs,685
+torchok/optim/sgd.py,sha256=41BLnw7Cfav9SfyLabHD5WnEFNQ0qDDNT3-QV1aGl1I,649
+torchoklib-1.0.dist-info/METADATA,sha256=TirFr2GMEXcrbPx86hL_40r2ALz8vhh5dbg1-pozP-w,108
+torchoklib-1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+torchoklib-1.0.dist-info/top_level.txt,sha256=7YczhPyhutFC3QyID-TBq-pJNLdC60N_Z5f2Cs_f4M0,8
+torchoklib-1.0.dist-info/RECORD,,
