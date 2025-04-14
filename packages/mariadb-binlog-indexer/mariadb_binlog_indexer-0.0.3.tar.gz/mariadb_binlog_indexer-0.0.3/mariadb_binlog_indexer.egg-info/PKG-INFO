@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mariadb-binlog-indexer
+Version: 0.0.3
+Summary: MariaDB Binlog Indexer for Faster Querying
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+MariaDB Binlog Indexer
+
