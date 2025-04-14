@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="row">
+    <div class="tab-content pt-2" id="tab-content">
+        <div class="tab-pane {{'active' if tab=='storage' }}" id="tab_storage" role="tabpanel">
+            {% include 'storage.html' %}
+        </div>
+        {% for c in project.collections %}
+        {% set collection_config = project.collections[c]['config'] %}
+        <div class="tab-pane {{ 'active' if tab==collection_config.short_title }}" id="tab_{{ c }}" role="tabpanel">
+        </div>
+        {% endfor %}
+        <div class="tab-pane {{'active' if tab=='publish' }}" id="tab_publish_{{ project.name }}"
+            data-url="{{ url_for('publication', projectname=project.name) }}" role="tabpanel">
+            <span class="spinner-border spinner-border-sm" role="status"></span>
+        </div>
+    </div>
+</div>
+
+<div class=" modal fade" id="xpathParserModal" tabindex="-1" aria-labelledby="xpathParserModalLabel" aria-hidden="true">
+</div>
+
+<div class="modal fade" id="teiExplorer" tabindex="-1" aria-labelledby="teiExplorerLabel" aria-hidden="true">
+</div>
+
+{% endblock %}
