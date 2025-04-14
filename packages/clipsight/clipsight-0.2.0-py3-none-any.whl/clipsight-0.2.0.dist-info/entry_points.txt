@@ -1,0 +1,3 @@
+[console_scripts]
+clipsight = src.web.app:main
+clipsight-worker = src.worker.main:main
