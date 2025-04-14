@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: goblinfish-testing-pact
+Version: 0.0.6
+Summary: Unit-testing extensions that prescribe active contract testing.
+Author-email: Brian Allbee <brian.allbee+goblinfish.pact@gmail.com>
+Maintainer-email: Brian Allbee <brian.allbee+goblinfish.pact@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Brian D. Allbee
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Repository, https://bitbucket.org/stonefish-software-studio/goblinfish-testing-pact
+Project-URL: LinkedIn Article v.0.0.0, https://www.linkedin.com/pulse/goblinfish-testing-pact-000-prescribing-active-contract-brian-allbee-eza4c
+Project-URL: LinkedIn Article: v.0.0.1, https://www.linkedin.com/pulse/goblinfish-testing-pact-001-prescribing-active-contract-brian-allbee-okrkc
+Project-URL: LinkedIn Article: v.0.0.2, https://www.linkedin.com/pulse/goblinfish-testing-pact-002-prescribing-active-contract-brian-allbee-tiizc
+Keywords: testing,unittest,pytest
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Testing :: Unit
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# The goblinfish.testing.pact Package
+
+> Provides mix-in classes to prescribe (require) "active contract testing" — requiring that every source-code element has a corresponding test-suite element where the package classes are applied.
+
+> ![CAUTION]
+> Until this package reaches a 1.x version it is still very much a work in progress, and the interfaces and outcomes may change radically and without warning. It is usable, and meeting its goals, as of v.0.0.3.
+
+## Quick Start
+
+Install in your project:
+
+```shell
+# Install with pip
+pip install goblinfish-testing-pact
+```
+
+```shell
+# Install with pipenv
+pipenv install goblinfish-testing-pact
+```
+
+From there, see the [Manually creating a pact test-suite](MANUAL-SETUP.md) for a detailed walkthrough of the manual processes involved in setting up PACT testing across a code-base.
+
+## Contribution guidelines
+
+At this point, contributions are not accepted — I need to finish configuring the repository, deciding on whether I want to set up automated builds for pull-requests, and probably several other items. That said, if you have an idea that you want to propose as an addition, a bug that you want to call out, etc., please feel free to contact the maintainer(s) (see below).
+
+## Who do I talk to?
+
+The current maintainer(s) will always be listed in the `[maintainers]` section of [the `pyproject.toml` file](https://bitbucket.org/stonefish-software-studio/goblinfish-testing-pact-package/src/main/pyproject.toml) in the repository.
+
