@@ -1,0 +1,10 @@
+darca_space_manager/__init__.py,sha256=6AUGfKrSf8AOH2nUqMwWUZT4Ay3nH1KkZItEsno8YIM,196
+darca_space_manager/__version__.py,sha256=vUOhWYmupwt7WOXObAwB18gdI8Icjf2tmEb_3nKxGIY,121
+darca_space_manager/config.py,sha256=c_3ZSISns--BU1U9sJzMomwFxL2KuXSk1Dlib_PVeyo,642
+darca_space_manager/space_executor.py,sha256=zI_gh1aBSWReYowgPN_-JO28aBhNAHRlJH26JVa8twQ,5947
+darca_space_manager/space_file_manager.py,sha256=jU1lR11c1PUJhkvE21GZtzTZZUUWEqCbpTpXOQxmGfU,13521
+darca_space_manager/space_manager.py,sha256=Dtwdl1SzdpdHZ5ft7ZrbioaqK5Y2wnZ_HoXOZfxiFcI,17337
+darca_space_manager-0.6.0.dist-info/LICENSE,sha256=mamKWkd0iITZ78cCzCyP79_islOb6dkuZZ5LMcqBMbg,1066
+darca_space_manager-0.6.0.dist-info/METADATA,sha256=Q0pvq-uZNYoOI5rr7xzybbnF0KCI_JJ9Nh-8xDnc2_M,4499
+darca_space_manager-0.6.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+darca_space_manager-0.6.0.dist-info/RECORD,,
