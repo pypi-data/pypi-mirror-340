@@ -1,0 +1,7 @@
+[console_scripts]
+cybs-db = cybsuite.cyberdb.__main__:main
+cybs-review = cybsuite.review.__main__:main
+cybs-workspace = cybsuite.workspace.__main__:main
+cybsuite-db = cybsuite.cyberdb.__main__:main
+cybsuite-review = cybsuite.review.__main__:main
+cybsuite-workspace = cybsuite.workspace.__main__:main
