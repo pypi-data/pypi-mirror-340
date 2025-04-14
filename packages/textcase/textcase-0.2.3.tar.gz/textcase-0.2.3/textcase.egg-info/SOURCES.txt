@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+textcase/__init__.py
+textcase/boundary.py
+textcase/case.py
+textcase/converter.py
+textcase/pattern.py
+textcase.egg-info/PKG-INFO
+textcase.egg-info/SOURCES.txt
+textcase.egg-info/dependency_links.txt
+textcase.egg-info/top_level.txt
