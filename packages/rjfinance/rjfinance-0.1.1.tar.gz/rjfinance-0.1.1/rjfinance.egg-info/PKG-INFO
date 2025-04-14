@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: rjfinance
+Version: 0.1.1
+Summary: A package for stock pattern extraction and matching using cosine similarity
+Home-page: UNKNOWN
+Author: Rayjada Jyotiradityasing
+Author-email: rjyotiraditya@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# rjfinance
+
+**A Python library for generating and matching stock price & volume patterns using cosine similarity.**
+
+---
+
+## 📖 Project Overview
+
+**rjfinance** is a lightweight, experimental Python package crafted for traders, data scientists, and financial analysts eager to dive into pattern-based technical analysis. This library empowers you to identify recurring patterns in stock price and volume data, offering a streamlined way to explore market behavior. It helps you:  
+
+- **Generate** historical price and volume patterns from CSV data, capturing key market movements.  
+- **Store** these patterns in a reusable format for quick reference.  
+- **Match** real-time stock data against your pattern library using cosine similarity, a robust mathematical approach.  
+- **Predict** potential future percentage moves based on the closest historical match.  
+
+**Why use rjfinance?**  
+Analyzing stock patterns manually can be a tedious and error-prone task. **rjfinance** automates this process, saving you time and effort while delivering consistent results. By leveraging cosine similarity—a technique widely used in data science to measure vector similarity—it ensures accurate pattern matching, even across varying scales of data.  
+
+**Who is it for?**  
+- **Traders**: Perfect for backtesting pattern-driven strategies with historical data.  
+- **Data Scientists**: Ideal for those experimenting with machine learning in financial markets.  
+- **Analysts**: A handy tool for automating repetitive pattern-recognition workflows.  
+
+> ⚠️ **Disclaimer:**  
+> This library is designed for informational and educational purposes only. It is *not* intended as financial advice. Always conduct thorough research and consult professionals before making investment decisions.
+
+---
+
+## 🚀 Installation
+
+Installing `rjfinance` is a breeze with `pip`:  
+
+```bash
+pip install rjfinance
+
