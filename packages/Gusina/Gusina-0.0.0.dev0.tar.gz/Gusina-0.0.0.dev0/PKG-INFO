@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: Gusina
+Version: 0.0.0.dev0
+Summary: Gusina is an easy engine. Start of development: 13.04.2025
+Home-page: UNKNOWN
+Author: Vladik
+Author-email: vladhruzd25@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7

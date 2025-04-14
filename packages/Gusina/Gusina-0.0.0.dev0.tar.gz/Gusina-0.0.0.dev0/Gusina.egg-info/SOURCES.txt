@@ -1,0 +1,8 @@
+README.md
+setup.py
+Gusina.egg-info/PKG-INFO
+Gusina.egg-info/SOURCES.txt
+Gusina.egg-info/dependency_links.txt
+Gusina.egg-info/top_level.txt
+gusina/__init__.py
+gusina/core.py
