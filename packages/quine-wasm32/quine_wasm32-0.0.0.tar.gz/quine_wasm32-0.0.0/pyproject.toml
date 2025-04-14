@@ -1,0 +1,17 @@
+[project]
+name = "quine-wasm32"
+version = "0.0.0"
+description = "Dummy release for name reservation."
+authors = [{name = "Hendrik M Halkow", email = "hendrik@halkow.com"}]
+license = {text = "AGPL-3.0-or-later"}
+readme = "README.md"
+requires-python = ">=3.13"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+  { include = "quine_wasm32", from = "src" }
+]
