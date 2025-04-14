@@ -1,0 +1,2 @@
+[console_scripts]
+json-explore = json_explore:json_explore
