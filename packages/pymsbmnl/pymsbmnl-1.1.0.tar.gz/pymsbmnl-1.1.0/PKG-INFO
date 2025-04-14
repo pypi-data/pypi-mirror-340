@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: pymsbmnl
+Version: 1.1.0
+Summary: Python library for Nintendo's MSBT & MSBF formats (Mario & Luigi Modding fork).
+License: Apache-2.0
+Keywords: nintendo,lms,msbt,msbf,modding
+Author: Aurum
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Project-URL: Repository, https://github.com/MnL-Modding/pymsbmnl
+Description-Content-Type: text/markdown
+
+# pymsb *(M&L Modding fork)*
+**pymsb** provides implementations for Nintendo's homemade MSBT and MSBF file formats. Features that are exclusive to games can be handled by implementing custom adapter classes.
+
+**Although this fork is maintained by the Mario & Luigi Modding organization,** it contains no hardcoded M&L-specific code and is intended to act as a continuation of the original `pymsb`, which was archived.
+
+## Setup
+This library requires **Python 3.10** or newer.
+
