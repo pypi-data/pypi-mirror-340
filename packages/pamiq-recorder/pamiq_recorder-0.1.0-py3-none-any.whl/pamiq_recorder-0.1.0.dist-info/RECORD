@@ -1,0 +1,10 @@
+pamiq_recorder/__init__.py,sha256=t6_LMZAyOA5nrO_5F0GH0sZ9RN8YHDyALYB7RJqlX-E,287
+pamiq_recorder/audio.py,sha256=PIh3tPqMXab6Zrw5wFRE4HzYZC_iFcQXYQ8CiPRJotU,6542
+pamiq_recorder/base.py,sha256=icyMyWs-l0reIYkzyFN8r-Et8_Fgzq0ul2NSkLZHUv8,1271
+pamiq_recorder/csv.py,sha256=afH8YP7Rh52l7A4mCeYZ9NRC-Oic3S3isD_74_XrH9M,3401
+pamiq_recorder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pamiq_recorder/video.py,sha256=pzBODWUESCKfMCr4GO9p5u1oY3OyyfrY33FJRIYu8ow,4861
+pamiq_recorder-0.1.0.dist-info/METADATA,sha256=dRBO8D03dsx9I3aV4kQxCHVnojLj_aGR--h6SBnDd-8,5664
+pamiq_recorder-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pamiq_recorder-0.1.0.dist-info/licenses/LICENSE,sha256=lNWM76WyHEVHruSyBMS42sgxgI07Zc4_2SVN_Ifk7zI,1065
+pamiq_recorder-0.1.0.dist-info/RECORD,,
