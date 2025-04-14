@@ -1,0 +1,15 @@
+datagouv/__init__.py,sha256=Y49GVRJ0-tupidVCfHAI9hzFd4xpHvTSa8WY3-IiUKo,138
+datagouv/base_object.py,sha256=YTjLVct8h4e9-R8NqTHg4GDDfPdoA88zAvdOD3uJsBY,2458
+datagouv/client.py,sha256=TQzRb8J0GWXJPuAdz2T4-snW6KdcgNRnWRaEiuMNqlU,2163
+datagouv/dataset.py,sha256=j4bPKImqUMu4bvp6JCa1C0QZcW0KIv9t3_kY2qDKuEE,1862
+datagouv/resource.py,sha256=egBq81Afblt4SdvCF-lmzJsgfteBromvaVISzFt22PA,6666
+datagouv/retry.py,sha256=0fayZYzDna1X7B1xPtNvbzoZKTdLTp6hwNMVwg6hy7I,1106
+datagouv_client-0.1.0.dev96.data/data/share/datagouv_client/CHANGELOG.md,sha256=0YFUkxvsYwm05Xn6koVBzCW1VimxUTDfDKN3ABgC8aA,404
+datagouv_client-0.1.0.dev96.data/data/share/datagouv_client/LICENSE.AGPL.txt,sha256=2N5ReRelkdqkR9a-KP-y-shmcD5P62XoYiG-miLTAzo,34519
+datagouv_client-0.1.0.dev96.data/data/share/datagouv_client/README.md,sha256=PTWJTRFzIdTuMAS7-uewIpR2T3TLcEyeqnFSxHdQJIA,7114
+datagouv_client-0.1.0.dev96.dist-info/licenses/LICENSE.AGPL.txt,sha256=2N5ReRelkdqkR9a-KP-y-shmcD5P62XoYiG-miLTAzo,34519
+datagouv_client-0.1.0.dev96.dist-info/METADATA,sha256=alZm5B5T5e3rHC5yWd_ryWOJxF3SGWVraPBSaeZPHWY,1023
+datagouv_client-0.1.0.dev96.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+datagouv_client-0.1.0.dev96.dist-info/entry_points.txt,sha256=NeJWNkK-PE6Q5oyt9dpfsUbUXQodDrWno3Y5y67Bxxk,60
+datagouv_client-0.1.0.dev96.dist-info/top_level.txt,sha256=S-cKN269gInRKuR9MExBxXW9BR6GLqreSW4gBp4OvhY,9
+datagouv_client-0.1.0.dev96.dist-info/RECORD,,
