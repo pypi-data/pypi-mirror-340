@@ -1,0 +1,16 @@
+aivk/__about__.py,sha256=saQqQp8WZMb1gur5f0n3uZmGkm5ebVRct7KF89orwUQ,11123
+aivk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aivk/aivk.py,sha256=lVL4VPz3c4kWCgjPtL4uuQLNmgwK92q1ffAsv5El02k,25
+aivk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aivk/base/fs.py,sha256=xroi3w9jJX1q2dCOLBCbfpe76gs2eZeGeYMGEwTIRY8,12428
+aivk/base/models.py,sha256=DwXGtsoNfbgZjmfkxkGKEWzc7qJepI0XXNJZ2jOxXJw,5235
+aivk/base/utils.py,sha256=1EmGJ3g6nsEIPTEC5wj6ccfbJ_-JodeU66_FrKgMe6o,18460
+aivk/cli/__init__.py,sha256=4gi4X_OsOwnitlLyXeh9WtlIiWvqk1oER2fPyUaOVF4,134
+aivk/cli/__main__.py,sha256=_WYqn-Igrg6u0gvMTd6W153pdOOIxwRaQUdQZ-GorUE,17527
+aivk/mcp/__main__.py,sha256=_gyfcKhlmIKEejFs-yZHllUg-9DL6QQUVDKHtPEH-ic,53
+aivk/mcp/server.py,sha256=MC5n528z8o4osbH86972fjiv9qah1gixYsONyr_5mws,7063
+aivk-0.3.2.0.dist-info/METADATA,sha256=td_uUf16EvwL1IxWd2IjhOzK035InTJebBQRXE0Af4c,818
+aivk-0.3.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+aivk-0.3.2.0.dist-info/entry_points.txt,sha256=3MVKofgm0wxA4phFtdWiinLVdvo8Lkw9A-qZXL6oaUE,47
+aivk-0.3.2.0.dist-info/licenses/LICENSE,sha256=K6DovarQ8F3Zhy_oeaARVKpkRaQbzqIbbSbgx1Rcfks,1091
+aivk-0.3.2.0.dist-info/RECORD,,
