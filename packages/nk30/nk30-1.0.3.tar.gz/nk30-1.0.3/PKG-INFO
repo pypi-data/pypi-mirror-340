@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: nk30
+Version: 1.0.3
+Summary: nk30: Hangul + Hanja base-30000 numeral encoder/decoder
+Home-page: https://github.com/dzbuit/nk30
+Author: blueradiance
+Author-email: none@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# nk30
+
+nk30: Hangul + Hanja base-30000 numeral encoder/decoder  
+**Compatible with kn30 but renamed for namespace clarity.**
+
+## Install
+
+```bash
+pip install nk30
+```
+
+## Usage
+
+```python
+from nk30 import encode_nk30, decode_nk30
+
+s = encode_nk30(123456)
+n = decode_nk30(s)
+print(s, n)
+```
