@@ -1,0 +1,6 @@
+[console_scripts]
+thira=thira.run:main
+
+[poetry.plugin]
+install=thira.install:install_binary
+
