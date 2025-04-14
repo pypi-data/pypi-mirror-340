@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+src/SMVLibreria/__init__.py
+src/SMVLibreria.egg-info/PKG-INFO
+src/SMVLibreria.egg-info/SOURCES.txt
+src/SMVLibreria.egg-info/dependency_links.txt
+src/SMVLibreria.egg-info/top_level.txt

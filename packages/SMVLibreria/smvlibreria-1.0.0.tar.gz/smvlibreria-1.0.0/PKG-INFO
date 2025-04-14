@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: SMVLibreria
+Version: 1.0.0
+Summary: Libreria para sumar dos números
+Home-page: https://github.com/greenmay99/semovi_libreria
+Author: @greenmay, @juan
+Author-email: maydaymm66@yahoo.com, juan@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+Esta es una ibreria de suma como práctica 
+para publicar librerias en PyPI.
+
+Actualmente estamos trabajando en la librería.
