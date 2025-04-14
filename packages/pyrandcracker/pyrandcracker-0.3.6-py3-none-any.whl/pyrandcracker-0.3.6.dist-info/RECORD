@@ -1,0 +1,9 @@
+pyrandcracker/__init__.py,sha256=OeLhv1YR3aRPrkDMyQwo-eaIj90sUNZx3Px56mIAumE,88
+pyrandcracker/matrix_utils.py,sha256=MKW9peFos_4pFzMcoVgyoe33I3VYNp1wjhPOun661h0,4125
+pyrandcracker/randcracker.py,sha256=wyCsHtP65ECLLxwsMMXDk-ANNe6X8Fp23SR7Oo0FqRg,13062
+pyrandcracker/sagemath_support.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyrandcracker-0.3.6.dist-info/LICENSE,sha256=NosTn7tDTlWMkR5eVJiqReRUPZyY_N7OivlMlAzqX9c,1112
+pyrandcracker-0.3.6.dist-info/METADATA,sha256=QfUukn9jo83c3IcE8brSsTGwAc0r98GTlG06yzAO4Io,8345
+pyrandcracker-0.3.6.dist-info/WHEEL,sha256=iAkIy5fosb7FzIOwONchHf19Qu7_1wCWyFNR5gu9nU0,91
+pyrandcracker-0.3.6.dist-info/top_level.txt,sha256=9r0TGVJO8QvZsEIAzEres_NRRo8nJMIOqVl6_Xkb7eY,14
+pyrandcracker-0.3.6.dist-info/RECORD,,
