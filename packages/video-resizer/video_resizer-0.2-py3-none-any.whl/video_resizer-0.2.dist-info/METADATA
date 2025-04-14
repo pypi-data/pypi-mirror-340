@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: video-resizer
+Version: 0.2
+Summary: A Python package to resize videos without losing quality using FFmpeg
+Author: Pratibha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: ffmpeg-python
+

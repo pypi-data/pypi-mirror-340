@@ -1,0 +1,8 @@
+video_resizer/__init__.py,sha256=mio5li6w5-BHnsPZIkS7lOr9Bz8Vsdm85V0JR9TlFts,52
+video_resizer/cli.py,sha256=GiIK9K1COogmGcRnmL6BiQYSBUqGMMlvhrSqCEYKVaQ,669
+video_resizer/resizer.py,sha256=8swzWaqx3y07xWiypBRSKoA0YY_R3IkUdy9lM8U_HKs,638
+video_resizer-0.2.dist-info/METADATA,sha256=1e58VhOS2LutMkNIdzvkeb-oJ3mYFM_SESK9DwtUslo,289
+video_resizer-0.2.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+video_resizer-0.2.dist-info/entry_points.txt,sha256=z4o3z0RquBD8wTpd32k5LnciC72DrEThhyh9gQgMjSQ,57
+video_resizer-0.2.dist-info/top_level.txt,sha256=7Dqe94QcjmsfO9tZGHPBjfWpb4xXJK-aMq6Cce_glAw,14
+video_resizer-0.2.dist-info/RECORD,,
