@@ -1,0 +1,16 @@
+nox_actions/__init__.py,sha256=0JknAUM1hvHN7qGAy-r46uRzmmi3WZ3VUQqsAHDXFFI,35
+nox_actions/codetest.py,sha256=PWr2n7wyGXp8skvfhTihQcZU1LUYR7LGdcqirTXScVo,787
+nox_actions/lint.py,sha256=3bv3AeJBsmdZ4x1Ehj6PnFMz7xpDwv8cVKiTldQDQ94,1207
+nox_actions/release.py,sha256=u7u7VhG_qjrRPhf1p_GR7T0ezlCiOf8rVtF0NiSNCvc,1334
+nox_actions/utils.py,sha256=EV8o_Hhi77C4eJjDsQmT9-rqX9RHX96VoWBn2mesCMo,140
+tests/__init__.py,sha256=a4qwqm08HH_qxccrgZ5SqF64Work6evzXCFrPnL7BT8,44
+tests/conftest.py,sha256=SZkai5TP8i3yckrJt6N9EBwmgdDIkVadmKuGFcLHKeo,12929
+tests/test_imports.py,sha256=Jk9lM_VLLQmUnDyMtSeJu4Y1NGxcqVE5dI38YnpLxrU,504
+tests/test_server.py,sha256=VjE9OOORSjsF0b8fXeJ8mBdP4x1XtWFsP_bNG9GvWOk,10083
+tests/data/yaml/entity_schema.yaml,sha256=CB08NEwI3WHw1Qy5X3zgoZ3DmdVz6JlUBrX0gRswq6E,7898
+tests/data/yaml/schema.yaml,sha256=YyWlTfNG6Y0b46bXVZ3VesZq_un5FQx6ZViCX3it0N4,16176
+orange_shotgrid_mcp_server-0.2.5.dist-info/METADATA,sha256=lzpgqQV1G4u-MLi7Gp9zWZ-cVcTfLbVEntdOaXsH75c,6557
+orange_shotgrid_mcp_server-0.2.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+orange_shotgrid_mcp_server-0.2.5.dist-info/entry_points.txt,sha256=uCmMfAvAGtDAe-Jt8EEnzY_bSM2TRMON_KHekoxWNKI,72
+orange_shotgrid_mcp_server-0.2.5.dist-info/licenses/LICENSE,sha256=tJf0Pz8q_65AjEkm3872K1cl4jGil28vJO5Ko_LhUqc,1060
+orange_shotgrid_mcp_server-0.2.5.dist-info/RECORD,,
