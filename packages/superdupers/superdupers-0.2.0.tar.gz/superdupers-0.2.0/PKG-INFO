@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: superdupers
+Version: 0.2.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: mcp[cli]>=1.6.0
+Requires-Dist: pymupdf4llm>=0.0.21
+Requires-Dist: twine>=6.1.0
+
+# MCP
