@@ -1,0 +1,79 @@
+[project]
+name = "n2k"
+version = "0.1.0"
+description = "Library to communicate with NMEA2000 devices."
+authors = [
+    {name = "Finn Böger", email="finnboeger@googlemail.com"},
+]
+license = "MIT"
+license-files = ["LICENSE.txt"]
+readme = "README.md"
+requires-python = ">=3.7"
+
+keywords = ["NMEA2000", "CAN"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: Software Development :: Embedded Systems :: Controller Area Network (CAN)",
+    "Topic :: Software Development :: Libraries",
+]
+
+dependencies = [
+    "python-can>=4.5"
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=25.1",
+    "setuptools>=78.1",
+]
+docs = [
+    "sphinx>=8.2",
+    "sphinx-autodoc-typehints>=3.1",
+    "sphinx-rtd-theme>=3.0",
+]
+
+[project.urls]
+homepage = "https://github.com/finnboeger/NMEA2000"
+documentation = "https://github.com/finnboeger/NMEA2000"
+repository = "https://github.com/finnboeger/NMEA2000"
+
+[build-system]
+requires = [
+    "setuptools >= 78.1",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+exclude = [
+    ".git",
+    ".ruff_cache",
+    ".venv",
+    ".vscode",
+    "docs/build",
+]
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["F405","E501","D101","D102","D103","COM812","ARG001","D212","ARG002","D400","D415","FIX002",
+          "TD002","TD003","T201","ERA001","ANN204","PLR2004","PLR0913","ANN001","FBT001","D100","D107",
+          "FA100","UP006","ANN201","D105","F401","I001","ANN202","RET505","TD004","FBT002","TD005","D205",
+          "D301","N815","S101","UP035","B007","F403","PLR1714","C901","D401","B008","TD006","D202","EM103",
+          "RSE102","TC001","D200","PLR0911","PLR0912","UP032","FBT003","A001","INP001","PIE790","SIM102",
+          "SIM105","PTH100","PERF401","D104","D404","RUF002","UP007","D203"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+typeCheckingMode = "standard"

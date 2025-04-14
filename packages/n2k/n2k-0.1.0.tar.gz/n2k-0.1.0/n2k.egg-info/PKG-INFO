@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: n2k
+Version: 0.1.0
+Summary: Library to communicate with NMEA2000 devices.
+Author: Finn Böger
+Author-email: Finn Böger <finnboeger@googlemail.com>
+License-Expression: MIT
+Project-URL: homepage, https://github.com/finnboeger/NMEA2000
+Project-URL: documentation, https://github.com/finnboeger/NMEA2000
+Project-URL: repository, https://github.com/finnboeger/NMEA2000
+Keywords: NMEA2000,CAN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Embedded Systems :: Controller Area Network (CAN)
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: python-can>=4.5
+Provides-Extra: dev
+Requires-Dist: black>=25.1; extra == "dev"
+Requires-Dist: setuptools>=78.1; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: sphinx>=8.2; extra == "docs"
+Requires-Dist: sphinx-autodoc-typehints>=3.1; extra == "docs"
+Requires-Dist: sphinx-rtd-theme>=3.0; extra == "docs"
+Dynamic: author
+Dynamic: license-file
+
+# NMEA2000
+NMEA2000 library for Raspberry Pi. Fork of https://github.com/ttlappalainen/NMEA2000
+
+This library is still in an alpha state and is currently missing support for the following:
+
+- several messages (as noted by the `todo` comments in [n2k/messages.py](n2k/messages.py)
+- testing for the included messages
+- support for transport protocol messages
+- support for group functions
+- proper logging
+- good documentation. For now only the expected values for the messages are documented
+
+The interface for creating messages will likely change in the future.
+There is currently no pypi package, thus the library needs to be installed manually using `python setup.py build && python setup.py install`
