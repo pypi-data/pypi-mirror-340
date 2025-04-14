@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+lib_hck/__init__.py
+lib_hck.egg-info/PKG-INFO
+lib_hck.egg-info/SOURCES.txt
+lib_hck.egg-info/dependency_links.txt
+lib_hck.egg-info/top_level.txt
+lib_hck/data/Heecking_tutorials.pdf
+lib_hck/data/P10.csv
+lib_hck/data/P2.csv
+lib_hck/data/names.png
