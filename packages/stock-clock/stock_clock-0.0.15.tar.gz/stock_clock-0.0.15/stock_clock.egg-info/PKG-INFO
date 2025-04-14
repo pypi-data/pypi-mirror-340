@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: stock-clock
+Version: 0.0.15
+Summary: Utils for Stock-Clock
+Author: Stock-Clock
+Author-email: stockclock@126.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.28
+Requires-Dist: polars[all]>=0.19
+Requires-Dist: pymysql>=1.1
+Requires-Dist: sqlalchemy>=2.0
+Requires-Dist: numpy>=1.24
+Requires-Dist: mysql-connector-python>=8.0
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: typing-extensions>=4.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Stock-Clock
+
