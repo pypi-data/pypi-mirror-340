@@ -1,0 +1,13 @@
+boto3
+requests
+pytest
+opencv-python
+setuptools
+gradio
+numpy
+pyaudio
+sounddevice
+pydub
+textual
+openai
+typing_extensions
