@@ -1,0 +1,11 @@
+api:
+  base_url: null
+  headers: null
+web:
+  browser: chrome
+  headers: null
+  headless: false
+  maximized: false
+  state: null
+  web_url: null
+  window_size: null
