@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+ft_package/__init__.py
+ft_package/main.py
+ft_package_bgursoy.egg-info/PKG-INFO
+ft_package_bgursoy.egg-info/SOURCES.txt
+ft_package_bgursoy.egg-info/dependency_links.txt
+ft_package_bgursoy.egg-info/top_level.txt
