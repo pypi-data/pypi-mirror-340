@@ -1,0 +1,392 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Cloud-Native Development Workflow
+
+This document outlines our recommended cloud-native development workflow - a comprehensive approach for building, testing, and deploying modern applications that can be containerized, deployed to Kubernetes, and easily maintained by distributed teams.
+
+## Core Principles
+
+Our cloud-native development workflow is guided by these key principles:
+
+1. **Infrastructure as Code (IaC)** - All environments defined and versioned as code
+2. **Environment Parity** - Development mirrors production to prevent "works on my machine" issues
+3. **Immutable Deployments** - Container images are built once and promoted across environments
+4. **Automation First** - Automate everything from testing to deployment
+5. **Shift Left** - Move testing, security, and operational concerns earlier in the development process
+6. **Observability** - Build systems that are transparent and debuggable from the start
+
+## Workflow Overview
+
+```mermaid
+graph LR
+    A[Local Development] --> B[Unit/Integration Tests]
+    B --> C[Build & Push Container]
+    C --> D[Deploy to Dev Environment]
+    D --> E[End-to-End Tests]
+    E --> F[Deploy to Staging]
+    F --> G[Load/Performance Tests]
+    G --> H[Deploy to Production]
+    H --> I[Monitoring & Observability]
+```
+
+## Environment Configuration Management
+
+### Environment Variables & `.env` Files
+
+Our approach uses `.env` files to manage configuration in a secure, consistent way:
+
+- `.env.example` - Template committed to version control, documents required variables
+- `.env` - Local development variables, never committed
+- `.env.test` - Testing-specific configuration
+- Container environment variables injected via Docker Compose or Kubernetes ConfigMaps/Secrets
+
+**Best Practices:**
+
+1. **Default to Local Development** - Configure `.env` for direct local usage:
+   ```
+   DB_HOST=localhost
+   DB_PORT=9100  # Mapped port on host
+   ```
+
+2. **Override in Docker Compose** - Add container-specific settings:
+   ```yaml
+   environment:
+     DB_HOST: core_db
+     DB_PORT: 5432
+   ```
+
+3. **Use Service Names for Inter-Container Communication**:
+   - Use service names (not localhost) in Docker Compose networks 
+   - Example: `GROUNDING_MCP_ENDPOINT=http://grounding_app:9001`
+
+4. **Secret Management**:
+   - Development: Use `.env` files (never committed)
+   - Production: Use Kubernetes Secrets or a dedicated secret management service
+
+## Development Environments
+
+### 1. Local Development Loop (Fastest Feedback)
+
+This approach provides the quickest development experience:
+
+```bash
+# Start only dependency services (database, etc.)
+docker compose up -d core_db
+
+# Install dependencies
+uv sync --all-extras
+
+# Run the application locally with hot-reload
+uvicorn main:app --reload --port 9000 --host 0.0.0.0
+```
+
+**Benefits:**
+- Immediate code changes with hot-reload
+- Access to local debugging tools
+- Fastest feedback loop
+- Database persistence between restarts
+
+### 2. Containerized Development
+
+For development closer to production:
+
+```bash
+# Build and start all services including your application
+docker compose up --build -d
+
+# View logs
+docker compose logs -f core_app
+```
+
+**Alternatives and Extensions:**
+
+For teams deeply invested in Kubernetes, consider these developer-focused Kubernetes tools:
+- [Skaffold](mdc:https:/skaffold.dev): Handles the workflow for building, pushing, and deploying applications
+- [Tilt](mdc:https:/tilt.dev): Smart rebuilds and live updates for Kubernetes
+- [DevSpace](mdc:https:/devspace.sh): Lightweight client-only tool for Kubernetes development
+- [Telepresence](mdc:https:/www.telepresence.io): Local development for Kubernetes microservices
+
+## Testing Strategy
+
+Our test strategy follows the [Test Pyramid](mdc:https:/martinfowler.com/articles/practical-test-pyramid.html) approach:
+
+### 1. Unit Tests (Most Numerous)
+
+Test individual functions and classes in isolation:
+
+```bash
+# Run unit tests
+pytest tests/unit/
+
+# With coverage
+pytest tests/unit/ --cov=src/
+```
+
+**Best Practices:**
+- Keep unit tests fast (milliseconds)
+- Mock external dependencies
+- Aim for high coverage of core business logic
+
+### 2. Integration Tests
+
+Test interactions between components:
+
+```bash
+# Run integration tests
+pytest tests/integration/
+
+# Using test database and containers
+ENV=testing pytest tests/integration/
+```
+
+**Best Practices:**
+- Use test containers for databases and other services
+- Configure dedicated test databases/schemas
+- Test API contracts and database interactions
+
+### 3. End-to-End Tests
+
+Test complete user workflows:
+
+```bash
+# Full system E2E tests
+docker compose -f docker-compose.yml -f docker-compose.test.yml up --exit-code-from e2e_tests
+```
+
+**Best Practices:**
+- Focus on critical user journeys
+- Run against deployed environments
+- Use realistic but controlled test data
+
+## Containerization Strategy
+
+### Docker Best Practices
+
+1. **Multi-stage Builds** - Keep images small and secure:
+   ```dockerfile
+   # Build stage
+   FROM python:3.10-slim AS builder
+   WORKDIR /app
+   
+   RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+   COPY pyproject.toml uv.lock ./
+   RUN uv sync
+   
+   # Runtime stage
+   FROM python:3.10-slim
+   WORKDIR /app
+   
+   # Copy only what's needed from builder
+   COPY --from=builder /app/.venv/ ./.venv/
+   COPY ./src ./src
+   
+   # Non-root user for security
+   USER nobody
+   
+   CMD ["uvicorn", "main:app", "--host", "0.0.0.0"]
+   ```
+
+2. **Use `.dockerignore`** - Exclude unnecessary files:
+   ```
+   .git/
+   .venv/
+   __pycache__/
+   *.pyc
+   *.pyo
+   .pytest_cache/
+   .coverage
+   htmlcov/
+   ```
+
+3. **Dependency Management** - Use uv for modern Python:
+   ```bash
+   # Add dependencies to pyproject.toml
+   uv add "fastapi>=0.100.0"
+   
+   # Use lock file for reproducible builds
+   uv lock
+   ```
+
+## CI/CD Pipeline
+
+Our CI/CD approach follows these stages:
+
+### 1. Continuous Integration
+
+On every push:
+- Run linters and formatters (Ruff)
+- Run unit and integration tests
+- Build container image
+- Scan for vulnerabilities (Trivy)
+- Publish image to registry
+
+Example GitHub Actions workflow:
+```yaml
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: |
+          pip install uv
+          uv sync --all-extras
+      - name: Lint
+        run: ruff check .
+      - name: Test
+        run: pytest
+  
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          push: true
+          tags: ${{ secrets.REGISTRY }}/myapp:${{ github.sha }}
+```
+
+### 2. Continuous Deployment
+
+Automated promotions through environments:
+- Deploy to development automatically
+- Deploy to staging after manual approval
+- Deploy to production after staging validation
+
+## Kubernetes Deployment Strategy
+
+For production Kubernetes deployments:
+
+### 1. Helm Charts
+
+Use Helm for packaging Kubernetes manifests:
+```yaml
+# values.yaml
+replicaCount: 2
+
+image:
+  repository: myregistry/myapp
+  tag: latest
+  pullPolicy: Always
+
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
+  requests:
+    cpu: 200m
+    memory: 256Mi
+```
+
+### 2. GitOps with Flux or ArgoCD
+
+Manage deployments using GitOps principles:
+- Environment configurations in Git
+- Automatic synchronization with clusters
+- Declarative, version-controlled deployments
+
+## Observability Strategy
+
+Cloud-native applications need comprehensive observability:
+
+### 1. Logging
+
+Structured JSON logs to centralized platform:
+```python
+logger.info("User registered", extra={"user_id": user.id, "email_domain": domain})
+```
+
+### 2. Metrics
+
+- Application metrics with Prometheus
+- Business KPIs and SLIs/SLOs
+- Resource utilization monitoring
+
+### 3. Tracing
+
+- Distributed tracing with OpenTelemetry
+- Trace context propagation across services
+- Performance bottleneck identification
+
+## Security Considerations
+
+Security is integrated throughout the workflow:
+
+### 1. DevSecOps Practices
+
+- Container image scanning
+- Dependency vulnerability checks
+- Secret scanning in code
+- SAST/DAST in pipeline
+
+### 2. Security Configurations
+
+- Network policies
+- RBAC for Kubernetes
+- Least privilege principles
+
+## Collaboration Model
+
+Effective team collaboration:
+
+### 1. Git Workflow
+
+- Feature branches with pull requests
+- Branch protection rules
+- Required reviews and status checks
+
+### 2. Documentation
+
+- README.md with quickstart
+- Architecture Decision Records (ADRs)
+- API documentation
+
+## Tools and Technologies
+
+Our cloud-native workflow leverages these key tools:
+
+| Category | Tools |
+|----------|-------|
+| Local Development | Docker, Docker Compose, uv |
+| Testing | pytest, pytest-cov |
+| CI/CD | GitHub Actions, GitLab CI, Jenkins |
+| Container Registry | Docker Hub, ECR, GCR |
+| Container Orchestration | Kubernetes, Helm |
+| Observability | Prometheus, Grafana, OpenTelemetry |
+| Security | Trivy, Dependabot |
+
+## Common Issues and Solutions
+
+| Issue | Solution |
+|-------|----------|
+| Container build failures | Check Docker build context and image size |
+| Kubernetes deployment issues | Validate manifests and check pod logs |
+| Environment variable problems | Verify .env files and secret management |
+| Slow development feedback | Use hot-reload and volume mounts |
+| Database connection failures | Check connection strings and network policies |
+
+## References
+
+- [12 Factor App Methodology](mdc:https:/12factor.net)
+- [CNCF Cloud Native Definition](mdc:https:/github.com/cncf/foundation/blob/master/charter.md)
+- [Docker Development Best Practices](mdc:https:/docs.docker.com/develop/dev-best-practices)
+- [Kubernetes Documentation](mdc:https:/kubernetes.io/docs/home)
+- [Test Pyramid](mdc:https:/martinfowler.com/articles/practical-test-pyramid.html)
+- [GitOps Principles](mdc:https:/www.gitops.tech) 
