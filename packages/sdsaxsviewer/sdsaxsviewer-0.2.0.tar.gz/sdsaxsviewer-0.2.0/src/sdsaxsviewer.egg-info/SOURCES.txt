@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/sdsaxsviewer/__init__.py
+src/sdsaxsviewer/__main__.py
+src/sdsaxsviewer/main.py
+src/sdsaxsviewer.egg-info/PKG-INFO
+src/sdsaxsviewer.egg-info/SOURCES.txt
+src/sdsaxsviewer.egg-info/dependency_links.txt
+src/sdsaxsviewer.egg-info/entry_points.txt
+src/sdsaxsviewer.egg-info/requires.txt
+src/sdsaxsviewer.egg-info/top_level.txt
