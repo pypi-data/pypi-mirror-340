@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/RP23005UNO.egg-info/PKG-INFO
+src/RP23005UNO.egg-info/SOURCES.txt
+src/RP23005UNO.egg-info/dependency_links.txt
+src/RP23005UNO.egg-info/requires.txt
+src/RP23005UNO.egg-info/top_level.txt
+src/rp23005uno/__init__.py
+src/rp23005uno/lineales.py
+src/rp23005uno/no_lineales.py
