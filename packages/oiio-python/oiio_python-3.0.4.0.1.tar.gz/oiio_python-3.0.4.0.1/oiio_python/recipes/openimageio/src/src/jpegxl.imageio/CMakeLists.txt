@@ -1,0 +1,8 @@
+# Copyright Contributors to the OpenImageIO project.
+# SPDX-License-Identifier: Apache-2.0
+# https://github.com/AcademySoftwareFoundation/OpenImageIO
+
+add_oiio_plugin (jxlinput.cpp jxloutput.cpp
+                    INCLUDE_DIRS ${libjxl_INCLUDE_DIRS}
+                    LINK_LIBRARIES libjxl::libjxl
+                    DEFINITIONS "USE_JXL")
