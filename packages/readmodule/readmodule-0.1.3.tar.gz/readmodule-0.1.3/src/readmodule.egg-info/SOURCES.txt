@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/readmodule/__init__.py
+src/readmodule/__main__.py
+src/readmodule/server.py
+src/readmodule.egg-info/PKG-INFO
+src/readmodule.egg-info/SOURCES.txt
+src/readmodule.egg-info/dependency_links.txt
+src/readmodule.egg-info/entry_points.txt
+src/readmodule.egg-info/requires.txt
+src/readmodule.egg-info/top_level.txt

@@ -1,0 +1,2 @@
+[console_scripts]
+readmodule = readmodule.server:start_server
