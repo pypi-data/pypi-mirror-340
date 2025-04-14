@@ -1,0 +1,10 @@
+README.md
+setup.py
+mariadb_binlog_indexer/__init__.py
+mariadb_binlog_indexer/indexer.py
+mariadb_binlog_indexer/utils.py
+mariadb_binlog_indexer.egg-info/PKG-INFO
+mariadb_binlog_indexer.egg-info/SOURCES.txt
+mariadb_binlog_indexer.egg-info/dependency_links.txt
+mariadb_binlog_indexer.egg-info/requires.txt
+mariadb_binlog_indexer.egg-info/top_level.txt
