@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+lib_clo/__init__.py
+lib_clo.egg-info/PKG-INFO
+lib_clo.egg-info/SOURCES.txt
+lib_clo.egg-info/dependency_links.txt
+lib_clo.egg-info/top_level.txt
+lib_clo/data/CC_Practical_7.pdf
+lib_clo/data/Cloiud_Computing_Practical 6.docx
+lib_clo/data/CloudComputing_Practical1.docx
+lib_clo/data/Cloud_Computing_Practical2.docx
+lib_clo/data/Cloud_Computing_Practical3.docx
+lib_clo/data/Cloud_Computing_Practical4.docx
+lib_clo/data/Cloud_Computing_Practical5_Updated.docx
