@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+chattemplates.egg-info/PKG-INFO
+chattemplates.egg-info/SOURCES.txt
+chattemplates.egg-info/dependency_links.txt
+chattemplates.egg-info/requires.txt
+chattemplates.egg-info/top_level.txt

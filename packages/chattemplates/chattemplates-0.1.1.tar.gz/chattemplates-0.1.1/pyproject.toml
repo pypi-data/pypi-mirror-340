@@ -1,0 +1,15 @@
+[project]
+name = "chattemplates"
+version = "0.1.1"
+description = "Tool to understand chat templates"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "jinja2>=3.1.6",
+    "langchain-core>=0.3.51",
+    "protobuf>=6.30.2",
+    "pydantic>=2.11.3",
+    "sentencepiece>=0.2.0",
+    "textual>=3.1.0",
+    "transformers>=4.51.2",
+]
