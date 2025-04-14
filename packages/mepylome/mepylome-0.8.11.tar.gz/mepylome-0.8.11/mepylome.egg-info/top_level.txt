@@ -1,0 +1,9 @@
+cachedir
+docs
+examples
+mepylome
+pybindings
+scripts
+src
+tests
+trash
