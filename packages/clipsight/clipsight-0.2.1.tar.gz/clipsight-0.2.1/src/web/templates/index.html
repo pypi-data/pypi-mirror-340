@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ app.title }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .container { max-width: 1200px; }
+        .card { margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .task-card { cursor: pointer; transition: all 0.3s; }
+        .task-card:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .task-status {
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        .status-pending { background-color: #ffd700; }
+        .status-processing { background-color: #87ceeb; }
+        .status-completed { background-color: #90ee90; }
+        .status-failed { background-color: #ff6b6b; }
+        .search-container {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .search-box {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 250px;
+        }
+        .search-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .image-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            transition: transform 0.3s;
+        }
+        .image-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .image-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .image-info {
+            padding: 15px;
+        }
+        .image-info h6 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .image-info p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        .image-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .image-tag {
+            background: #e9ecef;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            color: #495057;
+        }
+        .progress {
+            height: 8px;
+            margin-top: 10px;
+        }
+        .task-details {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">{{ app.title }}</a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- 创建任务表单 -->
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h5 class="card-title mb-0">创建新任务</h5>
+            </div>
+            <div class="card-body">
+                <form id="taskForm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="keywords" class="form-label">关键词（多个关键词用逗号分隔）</label>
+                                <input type="text" class="form-control" id="keywords" required>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label for="maxImages" class="form-label">最大图片数量</label>
+                                <input type="number" class="form-control" id="maxImages" value="20" min="1" max="100">
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex align-items-end">
+                            <button type="button" class="btn btn-primary w-100" onclick="createTask()">创建任务</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- 搜索栏 -->
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="searchTaskId" placeholder="任务ID（可选）" class="search-input">
+                <input type="text" id="searchKeywords" placeholder="关键词（多个关键词用空格分隔）" class="search-input">
+                <button onclick="searchImages()" class="search-button">搜索</button>
+            </div>
+        </div>
+
+        <!-- 任务列表 -->
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h5 class="card-title mb-0">任务列表</h5>
+            </div>
+            <div class="card-body">
+                <div id="taskList" class="row"></div>
+            </div>
+        </div>
+
+        <!-- 图片列表 -->
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                <h5 class="card-title mb-0">图片列表</h5>
+            </div>
+            <div class="card-body">
+                <div id="imageList" class="image-grid"></div>
+            </div>
+        </div>
+
+        <!-- 搜索结果 -->
+        <div id="searchResults" class="image-grid" style="display: none;"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    // 创建任务
+    async function createTask() {
+        const keywords = document.getElementById('keywords').value.split(',').map(k => k.trim());
+        const maxImages = document.getElementById('maxImages').value;
+        
+        try {
+            const response = await fetch('/api/tasks', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    keywords: keywords,
+                    max_images: parseInt(maxImages)
+                })
+            });
+            
+            const result = await response.json();
+            if (result.task_id) {
+                alert('任务创建成功！');
+                loadTasks();
+            }
+        } catch (error) {
+            console.error('创建任务失败:', error);
+            alert('创建任务失败，请稍后重试');
+        }
+    }
+
+    // 加载任务列表
+    async function loadTasks() {
+        try {
+            const response = await fetch('/api/tasks');
+            const tasks = await response.json();
+            
+            const taskList = document.getElementById('taskList');
+            taskList.innerHTML = '';
+            
+            tasks.forEach(task => {
+                const taskCard = document.createElement('div');
+                taskCard.className = 'col-md-4 mb-3';
+                taskCard.innerHTML = `
+                    <div class="card task-card" onclick="loadTaskImages('${task.task_id}')">
+                        <div class="card-body">
+                            <h6 class="card-title">
+                                任务ID: ${task.task_id}
+                                <span class="task-status status-${task.status}">${task.status}</span>
+                            </h6>
+                            <div class="task-details">
+                                <p>关键词: ${task.keywords.join(', ')}</p>
+                                <p>最大图片数: ${task.max_images}</p>
+                                <p>创建时间: ${new Date(task.created_at).toLocaleString()}</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: ${task.progress || 0}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                taskList.appendChild(taskCard);
+            });
+        } catch (error) {
+            console.error('加载任务列表失败:', error);
+        }
+    }
+
+    // 加载任务图片
+    async function loadTaskImages(taskId) {
+        try {
+            const response = await fetch(`/api/tasks/${taskId}/images`);
+            const images = await response.json();
+            
+            const imageList = document.getElementById('imageList');
+            const searchResults = document.getElementById('searchResults');
+            
+            // 显示图片列表，隐藏搜索结果
+            imageList.style.display = 'grid';
+            searchResults.style.display = 'none';
+            imageList.innerHTML = '';
+            
+            if (images.length === 0) {
+                imageList.innerHTML = '<div class="col-12 text-center"><p>该任务没有图片</p></div>';
+                return;
+            }
+            
+            images.forEach(image => {
+                const imageCard = document.createElement('div');
+                imageCard.className = 'image-card';
+                imageCard.innerHTML = `
+                    <img src="${image.url}" alt="任务图片">
+                    <div class="image-info">
+                        <h6>图片信息</h6>
+                        <p>任务ID: ${image.task_id || taskId}</p>
+                        <p>大小: ${(image.size / 1024).toFixed(2)} KB</p>
+                        <p>爬取时间: ${new Date(image.created_at).toLocaleString()}</p>
+                        <div class="image-tags">
+                            ${(image.tags || []).map(tag => `<span class="image-tag">${tag}</span>`).join('')}
+                        </div>
+                        <p>描述: ${image.description || '无'}</p>
+                        <p>MinIO 路径: ${image.detected_objects[0] || '无'}</p>
+                    </div>
+                `;
+                imageList.appendChild(imageCard);
+            });
+        } catch (error) {
+            console.error('加载图片失败:', error);
+            alert('加载图片失败，请稍后重试');
+        }
+    }
+
+    // 搜索图片
+    async function searchImages() {
+        const taskId = document.getElementById('searchTaskId').value;
+        const keywords = document.getElementById('searchKeywords').value;
+        
+        try {
+            // 显示加载中
+            const searchResults = document.getElementById('searchResults');
+            const imageList = document.getElementById('imageList');
+            
+            searchResults.innerHTML = '<div class="col-12 text-center"><p>搜索中...</p></div>';
+            searchResults.style.display = 'grid';
+            imageList.style.display = 'none';
+            
+            const response = await fetch(`/api/search?task_id=${taskId}&keywords=${keywords}`);
+            const results = await response.json();
+            
+            searchResults.innerHTML = '';
+            
+            if (results.length === 0) {
+                searchResults.innerHTML = '<div class="col-12 text-center"><p>没有找到匹配的图片</p></div>';
+                return;
+            }
+            
+            results.forEach(result => {
+                const imageCard = document.createElement('div');
+                imageCard.className = 'image-card';
+                imageCard.innerHTML = `
+                    <img src="${result.url}" alt="搜索结果图片">
+                    <div class="image-info">
+                        <h6>搜索结果</h6>
+                        ${keywords ? `<p>相似度: ${(result.score * 100).toFixed(2)}%</p>` : ''}
+                        <p>任务ID: ${result.task_id || '未知'}</p>
+                        <p>爬取时间: ${new Date(result.created_at).toLocaleString()}</p>
+                        <div class="image-tags">
+                            ${(result.tags || []).map(tag => `<span class="image-tag">${tag}</span>`).join('')}
+                        </div>
+                        <p>描述: ${result.description || '无'}</p>
+                        <p>MinIO 路径: ${result.detected_objects[0] || '无'}</p>
+                    </div>
+                `;
+                searchResults.appendChild(imageCard);
+            });
+        } catch (error) {
+            console.error('搜索失败:', error);
+            alert('搜索失败，请稍后重试');
+        }
+    }
+
+    // 页面加载时加载任务列表
+    document.addEventListener('DOMContentLoaded', loadTasks);
+    </script>
+</body>
+</html> 
