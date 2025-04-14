@@ -1,0 +1,40 @@
+[package]
+name = "serde_tombi"
+version = "0.0.1"
+authors.workspace = true
+edition.workspace = true
+description = "A TOML serialization file format using Tombi."
+repository.workspace = true
+license.workspace = true
+readme = "README.md"
+
+[dependencies]
+ast = { workspace = true }
+chrono = { workspace = true }
+config = { workspace = true }
+date-time = { workspace = true }
+diagnostic = { workspace = true }
+document = { workspace = true }
+document-tree = { workspace = true }
+formatter = { workspace = true }
+futures = { workspace = true }
+indexmap = { workspace = true }
+itertools = { workspace = true }
+parser = { workspace = true }
+schema-store = { workspace = true }
+serde = { workspace = true }
+text = { workspace = true }
+textwrap = { workspace = true }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+toml-text = { workspace = true }
+toml-version = { workspace = true }
+tracing = { workspace = true }
+typed-builder = { workspace = true }
+url = { workspace = true }
+
+[dev-dependencies]
+maplit = { workspace = true }
+pretty_assertions = { workspace = true }
+test-lib = { workspace = true }
+tokio = { workspace = true, features = ["macros"] }
