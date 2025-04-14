@@ -1,0 +1,8 @@
+django_querysets_single_query_fetch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_querysets_single_query_fetch/apps.py,sha256=bx-f77edsY9G9s8BXzv8tCnpB7hL8IehLRbQDjc11ew,198
+django_querysets_single_query_fetch/service.py,sha256=yAnuVgF2_b5SqnXXYRWLWPIxbAIGbJOu3ZOGk_I-M68,18888
+django_querysets_single_query_fetch/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_querysets_single_query_fetch-0.0.13.dist-info/METADATA,sha256=dU8VcGPnN0-xbtZOGVJOrvXPWscJtNYUDoNDczEu7H8,5190
+django_querysets_single_query_fetch-0.0.13.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_querysets_single_query_fetch-0.0.13.dist-info/top_level.txt,sha256=BscJ2Xgwvz7dMu6fYahIX_ov84xKn89lh96J9mlLuSo,36
+django_querysets_single_query_fetch-0.0.13.dist-info/RECORD,,
