@@ -1,0 +1,29 @@
+{
+  "author": "",
+  "description": "",
+  "devDependencies": {
+    "@taplo/cli": "^0.7.0",
+    "markdownlint-cli": "^0.44.0",
+    "npm-run-all2": "^7.0.2",
+    "pyright": "^1.1.399"
+  },
+  "engines": {
+    "npm": "Use pnpm instead of npm!"
+  },
+  "license": "",
+  "main": "",
+  "name": "img2tags",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "format": "run-p format:md format:toml",
+    "format:md": "markdownlint -f ./*.md doc/*.md",
+    "format:toml": "taplo format *.toml",
+    "test": ":",
+    "lint": "run-p lint:md lint:pyright lint:toml",
+    "lint:md": "markdownlint *.md docs/*.md",
+    "lint:pyright": "pyright",
+    "lint:toml": "taplo format --check *.toml"
+  },
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.5.2"
+}
