@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: aigpt
+Version: 0.1
+Summary: Python βιβλιοθήκη για επικοινωνία με το OpenAI API μέσω requests
+Author: panoscodergr
+Author-email: panosgiannoulis76@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
