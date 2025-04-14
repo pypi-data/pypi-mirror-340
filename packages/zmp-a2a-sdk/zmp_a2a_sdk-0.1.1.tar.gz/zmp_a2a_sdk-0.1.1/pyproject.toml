@@ -1,0 +1,29 @@
+[project]
+name = "zmp-a2a-sdk"
+version = "0.1.1"
+description = "Agent2Agent samples SDK"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "asyncclick>=8.1.8",
+    "asyncio>=3.4.3",
+    "click>=8.1.8",
+    "httpx>=0.28.1",
+    "httpx-sse>=0.4.0",
+    "pydantic>=2.10.6",
+    "sse-starlette>=2.2.1",
+    "starlette>=0.46.1",
+    "uvicorn>=0.34.0",
+    "jwcrypto>=1.5.6",
+    "pyjwt>=2.10.1",
+]
+
+[tool.poetry]
+package-mode = true
+packages = [
+    { include = "common", to = "zmp_a2a_sdk"},
+]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
