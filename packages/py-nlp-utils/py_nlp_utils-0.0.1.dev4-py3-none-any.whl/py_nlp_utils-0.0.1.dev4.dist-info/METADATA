@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: py-nlp-utils
+Version: 0.0.1.dev4
+Summary: To avoid reimplemening simple NLP wheels
+Keywords: nlp,utils,transformers,openai,deepseek
+Author-email: Shen Fuchen <sfc@tju.edu.cn>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-Expression: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Utilities
+License-File: LICENSE
+Requires-Dist: transformers ; extra == "deepseek"
+Requires-Dist: tiktoken ; extra == "openai"
+Requires-Dist: transformers ; extra == "transformers"
+Project-URL: Homepage, https://github.com/phuturesh/nlp_utils
+Provides-Extra: deepseek
+Provides-Extra: openai
+Provides-Extra: transformers
+
+# To avoid reimplemening simple NLP wheels
+
+## Now can
+- Calculate LLM token nums: `num_tokens_from_messages()`
+- Reveal <unk> tokens in a BPE-processed text: `check_unk_after_bpe()`
+
