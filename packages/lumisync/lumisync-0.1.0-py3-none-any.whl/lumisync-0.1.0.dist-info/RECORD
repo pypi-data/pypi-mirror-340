@@ -1,0 +1,12 @@
+lumisync/lumisync.py,sha256=ZV5xXSWlKaO6aJ-1JPfeg6lJkJ1ZO9VqGrQjtHPt9S8,1250
+lumisync/modes/MonitorSync.py,sha256=eG9fBnhGbKAQQt5z_rz-0--HL_ym-7x_FOUu3o_9vKM,2403
+lumisync/modes/MusicSync.py,sha256=3lq5deiedxRqeEHMUb4z-Ekgtvl0E_H8-UmW1OrdQ2U,1362
+lumisync/utils/GetData.py,sha256=80Afp7U0p5X5UDnwP9oBbZNE7xoD6Buh8x9i0Z3FPYc,1064
+lumisync/utils/GetDevices.py,sha256=vc8UhMQpTCg2BvEfxL2s2czFaE2bs9cFwf6Oofo-W50,2502
+lumisync/utils/SendData.py,sha256=ME_HvNDd_mUZ4BBB-LnN8fVLtAxAEOMTCmpw_NG4utA,1189
+lumisync-0.1.0.dist-info/licenses/LICENSE,sha256=kmROH_LYai92mAVr7Y3tTIsP2q1C34Xn2hw82ZCUPg8,1063
+lumisync-0.1.0.dist-info/METADATA,sha256=J5C0NlOrS881unXIAGcRPBPf5JZ0Xn4J_XcXvnVnSvg,3547
+lumisync-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+lumisync-0.1.0.dist-info/entry_points.txt,sha256=j9SELGoE-tnDbV5GIZPGsR4Jy19y64kXkBcZlxVdiAo,52
+lumisync-0.1.0.dist-info/top_level.txt,sha256=l5npyF2s0gSBQvmOBOEfHoMNi2Q4FiQrW027X8-0xD8,9
+lumisync-0.1.0.dist-info/RECORD,,
