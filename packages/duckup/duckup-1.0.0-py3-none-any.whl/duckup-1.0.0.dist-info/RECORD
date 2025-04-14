@@ -1,0 +1,9 @@
+duckup/__init__.py,sha256=pzkfsVzL_X5J_gEoPK-3Mp-VN-n6elK5sJgLYjwjg5U,346
+duckup/cli.py,sha256=lG3zO1NOeehnQXmUR05WD5pmWEazstJ3Az4az-Cq-ls,9042
+duckup/migrate.py,sha256=pqcZNTY2A1MA7Zub74dyrBI6U6SQpNLFrc6m2Lti4mc,13818
+duckup/queries.py,sha256=xtsbGdDoz8iHnujsDTziqW4a8-ht0oZtVMAVvUhfcu4,1411
+duckup-1.0.0.dist-info/LICENSE.md,sha256=Zzx5EBzLq4WmlJwK437EkbCc2-0gW2z-gVXZzNkQFkM,1072
+duckup-1.0.0.dist-info/METADATA,sha256=h9_WQhBhwTJjfKr0uj2iubbIORAVyMiyOTPXSqg-aVY,7389
+duckup-1.0.0.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+duckup-1.0.0.dist-info/entry_points.txt,sha256=COdYOzv_ccEleJYNLFnTl1XXkv4uhoY4yyYLMPUBEiU,42
+duckup-1.0.0.dist-info/RECORD,,

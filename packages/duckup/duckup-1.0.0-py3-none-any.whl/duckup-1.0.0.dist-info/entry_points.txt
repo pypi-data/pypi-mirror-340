@@ -1,0 +1,3 @@
+[console_scripts]
+duckup=duckup.cli:main
+
