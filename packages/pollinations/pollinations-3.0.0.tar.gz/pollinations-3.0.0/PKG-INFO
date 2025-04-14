@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: pollinations
+Version: 3.0.0
+Summary: pollinations.ai | Free AI Image, Text, and Audio Generation
+Author-email: "git.pollinations.ai" <git.pollinations.ai@gmail.com>
+License: MIT
+Project-URL: Website, https://pollinations.ai/
+Project-URL: SDK-Repository, https://github.com/pollinations-ai/pollinations.ai
+Project-URL: Discord, https://discord.gg/8HqSRhJVxn
+Project-URL: Github, https://github.com/pollinations
+Project-URL: YouTube, https://www.youtube.com/channel/UCk4yKnLnYfyUmCCbDzOZOug
+Project-URL: Instagram, https://instagram.com/pollinations_ai
+Project-URL: Twitter, https://twitter.com/pollinations_ai
+Keywords: pollinations,pollinations.ai,pollinations-ai,pollinations_ai,ai,api,sdk,wrapper,free
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: httpx
+Requires-Dist: pillow
