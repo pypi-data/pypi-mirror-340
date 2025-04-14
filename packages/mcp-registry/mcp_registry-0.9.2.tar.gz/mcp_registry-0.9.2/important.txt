@@ -1,0 +1,19 @@
+{
+  "exa": [
+    "search"
+  ],
+  "claude": [
+    "dispatch_agent",
+    "Bash",
+    "BatchTool",
+    "GlobTool",
+    "GrepTool",
+    "LS",
+    "View",
+    "Edit",
+    "Replace",
+    "WebFetchTool"
+  ]
+}
+#    "ReadNotebook",
+#    "NotebookEditCell",
