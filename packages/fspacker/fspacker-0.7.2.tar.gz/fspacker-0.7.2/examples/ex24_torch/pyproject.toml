@@ -1,0 +1,11 @@
+[project]
+name = "ex24-torch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "sympy>=1.13.3",
+    "torchvision>=0.14.1",
+    "typing-extensions>=4.13.1",
+]
