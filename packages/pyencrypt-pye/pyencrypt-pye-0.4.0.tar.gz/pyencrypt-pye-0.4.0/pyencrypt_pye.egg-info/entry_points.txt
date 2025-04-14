@@ -1,0 +1,2 @@
+[console_scripts]
+pyencrypt = pyencrypt.cli:cli
