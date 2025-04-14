@@ -1,0 +1,12 @@
+License
+README.md
+pyproject.toml
+setup.py
+src/MG23117UNO/__init__.py
+src/MG23117UNO/fraccion.py
+src/MG23117UNO/metodos.py
+src/MG23117UNO.egg-info/PKG-INFO
+src/MG23117UNO.egg-info/SOURCES.txt
+src/MG23117UNO.egg-info/dependency_links.txt
+src/MG23117UNO.egg-info/requires.txt
+src/MG23117UNO.egg-info/top_level.txt
