@@ -1,0 +1,13 @@
+dsapi_llmclient-0.1.0.dist-info/licenses/LICENSE,sha256=_mQKLR8xIiA2pVgOcMJr683e_jJw2wJCmUEk5KcqF4s,1126
+llmclient/__init__.py,sha256=8p_T64TCiXo9RfLPTFA_RR-La3W5LZLSL66LONcJBY4,264
+llmclient/cache.py,sha256=TcqK2i6xiIkRrSaO_8KNNSFxF1V2DtTTb0QYyDe70U4,5496
+llmclient/client.py,sha256=IFmnxxqATm_REBzb9kkd_igmy1dfTtg_YbcCRWmaqIg,7057
+llmclient/config.py,sha256=K72PU16d3O_Ab9Zqz_GJlJHOAJpgVXMyrg0DLC81_k0,4280
+llmclient/logger.py,sha256=sXlh1j0G-cRju7uf71hmbL4gZNMY_cr9SUyyjdxGLvk,4578
+llmclient/utils.py,sha256=SbnqBodve58a9ix6Ic-10hX2ovMhiegIGFDOoWdgnNQ,3106
+tests/__init__.py,sha256=TsKIq3xZjNpa7_tH5v0pNvSVGx8Iv8LJkZekNXmaMA8,20
+tests/test_basic.py,sha256=L7Q6jBUL6n6or2C82xYoSVtJOcq2y23wbH5zclO6MvI,3335
+dsapi_llmclient-0.1.0.dist-info/METADATA,sha256=odaolmpeAfQV3KYMiJTfRddXWyz_e6Spu8SRuINhbHg,4916
+dsapi_llmclient-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+dsapi_llmclient-0.1.0.dist-info/top_level.txt,sha256=T3eNhV-Wxp8Bn4I_yRYbVYBuH52yGWX__oVSHbcX6QM,16
+dsapi_llmclient-0.1.0.dist-info/RECORD,,
