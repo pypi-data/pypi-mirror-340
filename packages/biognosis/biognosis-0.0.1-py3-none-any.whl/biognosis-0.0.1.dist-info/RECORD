@@ -1,0 +1,11 @@
+biognosis/version.py,sha256=38759739897f24fcdc50e78ebaa04c063c43d444d3a3eb0ad6f20bd8e86d5972,961
+biognosis/__init__.py,sha256=d6db3ab6c4f6db81f839757d63859fd44537f76f06b59171ba8f52f235f26e83,156
+biognosis/api.py,sha256=9ffbdb2cf0e822ff68b6a1e3e29c98d232f82da979ae43a9afa0864ccf1e390d,386
+biognosis/cli.py,sha256=192cce7e0619c9723cb7b305ab94a1c4840bdb4a0d661349b4cd8d2a32e62f18,512
+biognosis/py.typed,sha256=01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b,1
+biognosis/__main__.py,sha256=453cd2b710cebefdba24aaa12b6f637f03ce2b4debfc0e246342bad154483baa,126
+biognosis-0.0.1.dist-info/licenses/LICENSE,sha256=4be0ec343e3bf11fd54321a6b576d5616ebb7d18898f741f63c517209e33bcb2,1076
+biognosis-0.0.1.dist-info/WHEEL,sha256=a77f4251c0f6db962579c616a6b1d7cf825367be8db8f5d245046ce8ff723666,79
+biognosis-0.0.1.dist-info/entry_points.txt,sha256=4e3ecc4e5aa51eb98c760ceeb793ae397b1b9946e4ad18790126ebe4140df77b,50
+biognosis-0.0.1.dist-info/METADATA,sha256=97014a4788bdf20b5f274adf477e48c0e3176b376084b81116cd2d76caa5b9b5,11919
+biognosis-0.0.1.dist-info/RECORD,,
