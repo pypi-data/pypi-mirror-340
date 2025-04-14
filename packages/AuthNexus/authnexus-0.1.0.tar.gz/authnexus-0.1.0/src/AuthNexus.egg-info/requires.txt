@@ -1,0 +1,10 @@
+pydantic>=2.0
+python-jose[cryptography]>=3.3
+webauthn>=1.2.0
+httpx>=0.24
+
+[fastapi]
+fastapi>=0.95
+
+[flask]
+flask>=2.0
