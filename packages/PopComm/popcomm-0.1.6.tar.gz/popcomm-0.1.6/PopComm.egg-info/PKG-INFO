@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: PopComm
+Version: 0.1.6
+Summary: Population-level cell-cell communication analysis tool
+Home-page: https://github.com/yourgithub/popcomm
+Author: Mengwei Li
+Author-email: limengwei833@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: joblib
+Requires-Dist: matplotlib
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scanpy
+Requires-Dist: scikit_learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: statsmodels
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+
+# Changelog
+
+## [0.1.6] - 2025-04-14
+### Added
+- Improved parameter annotations for several functions to enhance clarity and usability.
+
+## [0.1.5] - 2025-04-12
+### Fixed
+- Resolved a bug in `dot_plot()` where `p_val = 0` caused a divide-by-zero warning during `-log10(p_val)` calculation.
+
+## [0.1.4] - 2025-04-12
+### Added
+- Added `save_path` parameter to all visualization functions, allowing users to export plots directly to files.
+
+## [0.1.3] - 2025-04-12
+### Added
+- Introduced a `cutoff` parameter to the `circle_plot()` function, allowing users to filter out low-weight interactions for clearer visualization.
+
