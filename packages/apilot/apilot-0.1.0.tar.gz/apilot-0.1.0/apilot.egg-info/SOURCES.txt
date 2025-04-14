@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+apilot/__init__.py
+apilot/version.py
+apilot.egg-info/PKG-INFO
+apilot.egg-info/SOURCES.txt
+apilot.egg-info/dependency_links.txt
+apilot.egg-info/requires.txt
+apilot.egg-info/top_level.txt
