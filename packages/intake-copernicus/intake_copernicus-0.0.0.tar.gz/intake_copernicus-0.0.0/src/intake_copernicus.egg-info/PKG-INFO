@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: intake_copernicus
+Version: 0.0.0
+Summary: Intake driver for the Copernicus Marine client
+Author-email: Oceanum Developers <developers@oceanum.science>
+Maintainer-email: Oceanum Developers <developers@oceanum.science>
+License: MIT license
+Project-URL: bugs, https://github.com/oceanum/intake_copernicus/issues
+Project-URL: changelog, https://github.com/oceanum/intake_copernicus/blob/master/changelog.md
+Project-URL: homepage, https://github.com/oceanum/intake_copernicus
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: copernicusmarine
+Requires-Dist: intake
+Requires-Dist: typer
+Provides-Extra: dev
+Requires-Dist: coverage; extra == "dev"
+Requires-Dist: ipdb; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: sphinx; extra == "dev"
+Requires-Dist: tox; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Dynamic: license-file
+
+=================
+intake-copernicus
+=================
+
+
+.. image:: https://img.shields.io/pypi/v/intake_copernicus.svg
+        :target: https://pypi.python.org/pypi/intake_copernicus
+
+.. image:: https://img.shields.io/travis/oceanum/intake_copernicus.svg
+        :target: https://travis-ci.com/oceanum/intake_copernicus
+
+.. image:: https://readthedocs.org/projects/intake-copernicus/badge/?version=latest
+        :target: https://intake-copernicus.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
+
+
+
+Intake driver for the Copernicus Marine client
+
+
+* Free software: MIT license
+* Documentation: https://intake-copernicus.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage

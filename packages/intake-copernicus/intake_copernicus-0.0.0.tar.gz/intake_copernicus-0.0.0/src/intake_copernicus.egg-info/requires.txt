@@ -1,0 +1,14 @@
+copernicusmarine
+intake
+typer
+
+[dev]
+coverage
+ipdb
+ipython
+mypy
+pytest
+ruff
+sphinx
+tox
+twine
