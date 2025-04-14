@@ -1,0 +1,250 @@
+# PyDeevo: Advanced Neural Architecture Evolution Framework
+
+PyDeevo is a comprehensive framework for neural network architecture search, hyperparameter optimization, and efficient training. It integrates modern deep learning tools into a cohesive, modular ecosystem:
+
+- **PyTorch Lightning**: For structured, scalable deep learning
+- **Optuna**: For efficient hyperparameter optimization
+- **PyGAD**: For evolutionary architecture search
+- **Polars & DuckDB**: For high-performance data processing and analytics
+- **Advanced Utils**: For distributed training, profiling, and deployment
+
+## 🔥 Key Features
+
+### 🧬 Architecture Search & Optimization
+- **Evolutionary Architecture Search**: Discover optimal network architectures using genetic algorithms
+- **Multi-level Optimization**: Search both architecture space and hyperparameter space efficiently
+- **Flexible Encodings**: Support for MLP and CNN architecture evolution
+
+### 🚀 Performance & Scaling
+- **Distributed Training**: Seamless scaling from single GPU to multi-node with FSDP/DDP
+- **Memory Optimization**: Activation checkpointing, mixed precision, and other memory-saving techniques
+- **Batch Size Optimization**: Automatically find optimal batch sizes for your hardware
+
+### 📊 Data Processing & Analytics
+- **High-Performance DataFrames**: Fast data processing with Polars integration
+- **SQL Analytics**: Powerful SQL-based analytics with DuckDB
+- **Efficient Memory Management**: Stream data from disk to model with minimal memory footprint
+- **ETL Pipelines**: Build data pipelines with SQL and Polars transformations
+- **Analytical Workflows**: Create and execute complex analytical pipelines
+
+### 🔍 Profiling & Benchmarking
+- **Model Analysis**: Profile inference time, memory usage, and computational complexity (FLOPs)
+- **Architecture Comparison**: Benchmark different architectures with comprehensive metrics
+- **Training Insights**: Monitor performance during training with detailed profiling
+
+### 📦 Deployment & Inference
+- **Model Export**: Export to ONNX, TorchScript, and SafeTensors formats
+- **Inference Optimization**: Quantization and other performance optimizations
+- **Security**: Protection against deserialization vulnerabilities
+
+## 🛠️ Installation
+
+```bash
+pip install pydeevo
+```
+
+Or install from source:
+
+```bash
+git clone https://github.com/example/pydeevo.git
+cd pydeevo
+pip install -e .
+```
+
+## 🚀 Quick Start
+
+### Evolutionary Architecture Search
+
+```python
+from pydeevo import PyDeevo
+from pydeevo.models.base import FlexibleModule
+
+# Initialize PyDeevo
+pydeevo = PyDeevo(base_dir="./output")
+
+# Evolutionary search for optimal architecture
+result = pydeevo.evolve_architecture(
+    input_shape=input_shape,
+    output_size=output_size,
+    train_loader=train_loader,
+    val_loader=val_loader,
+    network_type="mlp",
+    population_size=20,
+    num_generations=10
+)
+
+# Get best architecture and train final model
+best_architecture = result["best_architecture"]
+best_hyperparams = result["best_hyperparameters"]
+model = FlexibleModule(architecture=best_architecture, **best_hyperparams)
+```
+
+### Data Processing with Polars
+
+```python
+from pydeevo.utils.data import (
+    PolarsDataProcessor, 
+    DatasetBuilder, 
+    normalize_features, 
+    create_polynomial_features
+)
+
+# Create processor and builder
+processor = PolarsDataProcessor(cache_dir="./data_cache")
+builder = DatasetBuilder(processor)
+
+# Define preprocessing steps
+preprocessing_steps = [
+    normalize_features(feature_cols, method='z-score'),
+    create_polynomial_features(['feature1', 'feature2'], degree=2)
+]
+
+# Create PyTorch datasets
+train_dataset, val_dataset, test_dataset = builder.from_file(
+    file_path="data.csv",
+    feature_cols=feature_cols,
+    target_col="target",
+    preprocessing_steps=preprocessing_steps,
+    cache_key="processed_data"
+)
+```
+
+### SQL Analytics with DuckDB
+
+```python
+from pydeevo.utils.database import (
+    AnalyticalDataManager,
+    sql_to_pytorch_dataset
+)
+
+# Set up analytics manager
+analytics = AnalyticalDataManager("analytics.duckdb")
+
+# Load data
+analytics.load_data("customers.csv", "customers")
+analytics.load_data("transactions.csv", "transactions")
+
+# Run analytical query
+results = analytics.execute_sql("""
+    SELECT c.segment, AVG(t.amount) as avg_spend
+    FROM customers c
+    JOIN transactions t ON c.customer_id = t.customer_id
+    GROUP BY c.segment
+""", cache_key="segment_analysis")
+
+# Create PyTorch dataset directly from SQL
+dataset = sql_to_pytorch_dataset(
+    db_path="analytics.duckdb",
+    query="SELECT * FROM prepared_features",
+    feature_cols=["feature1", "feature2", "feature3"],
+    target_col="target"
+)
+```
+
+### Distributed Training
+
+```python
+from pydeevo.utils.distributed import DistributedTrainingHelper, MemoryOptimization
+import torch.nn as nn
+
+# Set up distributed training
+dist_helper = DistributedTrainingHelper(
+    precision='16-mixed',
+    devices='auto',
+    strategy='auto'
+)
+
+# Apply memory optimizations
+model = MemoryOptimization.optimize_memory_usage(
+    model, 
+    use_channels_last=True,
+    use_compile=True
+)
+
+# Set up Fabric
+fabric = dist_helper.setup_fabric(transformer_modules=[nn.Linear, nn.Conv2d])
+model, optimizer = dist_helper.setup_model_and_optimizer(model, optimizer_fn)
+```
+
+### Model Profiling and Export
+
+```python
+from pydeevo.utils.profiling import ModelProfiler, FlopsCalculator
+from pydeevo.utils.export import ModelExporter
+
+# Profile model performance
+profiler = ModelProfiler(model, input_shape=(batch_size, *input_dim))
+memory_stats = profiler.profile_memory_usage()
+inference_stats = profiler.profile_inference_time()
+flops = FlopsCalculator(model, input_shape).calculate_flops()
+
+# Export for deployment
+exporter = ModelExporter(model, input_shape=(1, *input_dim))
+export_paths = exporter.export_all_formats()  # ONNX, TorchScript, SafeTensors
+```
+
+## 🧩 Framework Components
+
+PyDeevo is built with modularity in mind. Major components include:
+
+### `models`
+- `FlexibleModule`: Adaptable PyTorch Lightning module for MLPs
+- `CNNModule`: Adaptable module for convolutional networks
+
+### `evolution`
+- Architecture encodings for genetic algorithms
+- Multi-level optimization strategies
+- Evolutionary search implementations
+
+### `optimization`
+- Hyperparameter optimization with Optuna
+- Search space definitions and strategies
+
+### `training`
+- Extended Lightning training utilities
+- Custom callbacks for visualization and monitoring
+
+### `utils`
+- **data**: High-performance data processing with Polars
+- **database**: SQL analytics with DuckDB integration
+- **distributed**: Utilities for distributed training and memory optimization
+- **profiling**: Performance analysis and benchmarking
+- **export**: Model export and deployment optimization
+
+## 🔬 Advanced Use Cases
+
+PyDeevo supports advanced deep learning workflows:
+
+1. **Large Model Training**: Train models too large for a single GPU using memory optimization techniques and model sharding
+2. **Complex Feature Engineering**: Create sophisticated features with Polars before training
+3. **SQL-Based Data Pipelines**: Use DuckDB for efficient data preparation and feature engineering
+4. **Production Deployment**: Export optimized models with quantization for inference
+5. **Performance Optimization**: Profile and optimize models for specific hardware targets
+6. **End-to-End ML Workflows**: From data ingestion to model training and deployment in a single framework
+
+## 📚 Example Gallery
+
+See the `examples` directory for full implementations:
+
+- `mnist_example.py`: Basic architecture search for MNIST
+- `cifar10_example.py`: CNN architecture search for CIFAR-10
+- `hyperopt_example.py`: Hyperparameter optimization with fixed architecture
+- `distributed_example.py`: Distributed training with Lightning Fabric
+- `polars_example.py`: Data processing with Polars integration
+- `duckdb_example.py`: SQL analytics with DuckDB integration
+
+## 📋 Requirements
+
+- Python 3.8+
+- PyTorch 1.9+
+- PyTorch Lightning 2.0+
+- Optuna 3.0+
+- PyGAD 2.18+
+- Polars 0.19+
+- DuckDB 0.8+
+- NumPy 1.20+
+- Matplotlib 3.5+
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

@@ -1,0 +1,30 @@
+[project]
+name = "pydeevo"
+version = "0.0.1"
+description = """PyDeevo is a comprehensive framework for neural network architecture search, hyperparameter optimization, and efficient training. It integrates modern deep learning tools into a cohesive, modular ecosystem:
+
+PyTorch Lightning: For structured, scalable deep learning
+Optuna: For efficient hyperparameter optimization
+PyGAD: For evolutionary architecture search
+Polars & DuckDB: For high-performance data processing and analytics
+Advanced Utils: For distributed training, profiling, and deployment"""
+readme = "README.md"
+authors = [
+    { name = "Björn Bethge", email = "" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "altair[all]>=5.5.0",
+    "duckdb>=1.2.2",
+    "lightning>=2.5.1",
+    "optuna>=4.2.1",
+    "polars>=1.27.0",
+    "pygad>=3.4.0",
+    "sqlglot>=26.12.1",
+    "usearch>=2.17.6",
+    "zenml>=0.80.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
