@@ -1,0 +1,47 @@
+[tool.setuptools_scm]
+write_to = "pyrepl/_version.py"
+
+[tool.ruff]
+target-version = "py38"
+exclude = ["pyrepl/_version.py",]
+
+[tool.ruff.lint]
+select = [
+  # pycodestyle
+  "E",
+  # Pyflakes
+  "F",
+  # pyupgrade
+  "UP",
+  # flake8-bugbear
+  "B",
+  # flake8-simplify
+  "SIM",
+  # isort
+  "I",
+]
+ignore = ["F401", "E741"]
+
+[tool.ruff.lint.per-file-ignores]
+"pyrepl/console.py" = ["B027"]
+
+[tool.pytest]
+testpaths = ["tests"]
+addopts = ["-ra", "--timeout=10"]
+filterwarnings = ["error"]
+
+[tool.coverage.run]
+include = ["pyrepl/*", "tests/*"]
+parallel = true
+branch = true
+
+[tool.coverage.paths]
+source = [
+    "pyrepl",
+    "pyrepl/",
+    "*/lib/python*/site-packages/pyrepl/",
+    "*/pypy*/site-packages/pyrepl/",
+]
+
+[tool.coverage.report]
+show_missing = true
