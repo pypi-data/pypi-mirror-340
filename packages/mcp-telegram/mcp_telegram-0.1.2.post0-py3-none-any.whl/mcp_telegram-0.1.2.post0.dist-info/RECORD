@@ -1,0 +1,11 @@
+mcp_telegram/__init__.py,sha256=Qd-f8z2Q2vpiEP2x6PBFsJrpACWDVxFKQk820MhFmHo,59
+mcp_telegram/cli.py,sha256=yLCws5RD-WOiKO-0QBCJr8fLzWq7wqPhKy5bnEG-UKc,7146
+mcp_telegram/server.py,sha256=T0lnon1qgsztc2kS6N0_TBEIIl51ZwixWn9OtF-3W-A,10105
+mcp_telegram/telegram.py,sha256=Ivg_i98WtzycTaOLjKKQob2_f54l6NYsCuhabugVc54,13332
+mcp_telegram/types.py,sha256=eMmgnUZoSlkkc70HLEMlTzutJD4nr6G7lwn6uexjD-g,5927
+mcp_telegram/utils.py,sha256=S2SQcABU40tDETkGxe2zIIMGvn_ZPaiOttfUOrbqAYc,3108
+mcp_telegram-0.1.2.post0.dist-info/METADATA,sha256=YRWYp3jPwNCxiqHW6N_hCbATWJOCZ9TRHC912mL29iw,6061
+mcp_telegram-0.1.2.post0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_telegram-0.1.2.post0.dist-info/entry_points.txt,sha256=fm_7_qWyxBal3hh2HfD4G6GUc4SJeItzp14Jn-zuj4A,50
+mcp_telegram-0.1.2.post0.dist-info/licenses/LICENSE,sha256=Cpg5Tz3_FJQV8NOOzmADUeaqxvmlBFRcXzfA-SvG3p8,1071
+mcp_telegram-0.1.2.post0.dist-info/RECORD,,
