@@ -1,0 +1,59 @@
+Metadata-Version: 2.4
+Name: abobuilder
+Version: 0.1.2
+Summary: abobuilder
+Home-page: https://www.github.com/ifilot/abobuilder
+Author: Ivo Filot
+Author-email: Ivo Filot <i.a.w.filot@tue.nl>
+Maintainer-email: Ivo Filot <i.a.w.filot@tue.nl>
+License: GPL-3.0-or-later
+Project-URL: Homepage, https://www.github.com/ifilot/abobuilder
+Project-URL: Bug Tracker, https://www.github.com/ifilot/abobuilder/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: pyqint
+Requires-Dist: pytessel
+Dynamic: author
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# ABO Builder
+
+**ABO Builder** is a Python package designed to build `.abo` files, which are
+used by the [Managlyph](https://www.managlyph.nl) software to generate
+stereoscopic visualizations, particularly for anaglyph (red/cyan) rendering of
+molecular or structural models.
+
+## Purpose
+
+The goal of `abobuilder` is to simplify the creation of `.abo` packages —
+structured collections of geometry, metadata, and styling instructions —
+enabling users to create vivid anaglyph renderings of 3D scenes using the
+Managlyph viewer.
+
+## Features
+
+- Build `.abo` files from electronic structure calculations
+- Automatically include atomic and orbital data
+- Set colors, transparency, and styling for each element
+- Export `.abo` packages ready for use in Managlyph
+
+## Installation
+
+You can install `abobuilder` using pip:
+
+```bash
+pip install abobuilder
+```
+
+or via Anaconda
+
+```bash
+conda install -c ifilot abobuilder
+```
