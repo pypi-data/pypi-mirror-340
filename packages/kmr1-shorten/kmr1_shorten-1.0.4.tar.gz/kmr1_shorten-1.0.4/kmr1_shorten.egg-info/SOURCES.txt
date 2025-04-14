@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kmr1_shorten/__init__.py
+kmr1_shorten/shorten.py
+kmr1_shorten.egg-info/PKG-INFO
+kmr1_shorten.egg-info/SOURCES.txt
+kmr1_shorten.egg-info/dependency_links.txt
+kmr1_shorten.egg-info/entry_points.txt
+kmr1_shorten.egg-info/top_level.txt

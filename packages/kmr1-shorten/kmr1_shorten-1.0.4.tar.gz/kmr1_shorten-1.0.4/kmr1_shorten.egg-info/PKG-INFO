@@ -1,0 +1,35 @@
+Metadata-Version: 2.4
+Name: kmr1-shorten
+Version: 1.0.4
+Summary: Kmr¹ APIを使用してURLを短縮するコマンドラインツール
+Author: Lapius7bot Technology Co.
+Author-email: contact-us@lapius7.com
+License: MIT
+Project-URL: Source, https://github.com/Lapius7/pip.kmr1-shorten
+Project-URL: Bug Tracker, https://github.com/Lapius7/pip.kmr1-shorten/issues
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: license-file
+Dynamic: project-url
+Dynamic: summary
+
+# kmr1-shorten [![PyPI Downloads](https://static.pepy.tech/badge/kmr1-shorten)](https://pepy.tech/projects/kmr1-shorten)
+
+Kmr¹ APIを使用してURLを短縮するコマンドラインツールです。
+Kmr¹API公式ドキュメント https://api.kmr1.org/v1/use
+
+## インストール
+```bash
+pip install kmr1-shorten
+```
+
+## 使用方法(どちらでも同じ)
+```
+kmr1-shorten <URL> [-c <カスタム文字列>]
+k1s <URL> [-c <カスタム文字列>]
+```
