@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aiohttp2pydantic/aiohttp2pydantic/__init__.py
+aiohttp2pydantic/aiohttp2pydantic.egg-info/PKG-INFO
+aiohttp2pydantic/aiohttp2pydantic.egg-info/SOURCES.txt
+aiohttp2pydantic/aiohttp2pydantic.egg-info/dependency_links.txt
+aiohttp2pydantic/aiohttp2pydantic.egg-info/requires.txt
+aiohttp2pydantic/aiohttp2pydantic.egg-info/top_level.txt
