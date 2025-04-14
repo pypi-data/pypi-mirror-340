@@ -1,0 +1,84 @@
+# olivepy
+
+This is a tool used to process data directly from the shell using python.
+
+It was developed to wrap some basic functionality such as list and type casting, imports, line by line parsing etc.
+
+```quote
+The olive python (Liasis olivaceus) is a species of snake in the family Pythonidae.
+```
+
+## Usage
+
+A very basic example of `olivepy` parses an input string as an integer
+
+```shell
+$ printf '0x123' | olivepy -t int
+291
+
+$ printf '0b1010' | olivepy -t int
+10
+```
+
+Another simple example shows the input parsed as a list of integers
+
+```shell
+$ printf '0x123 0x345' | olivepy -t int --list
+[291, 837]
+```
+
+You can also set a delimiter for splitting the string into a list
+
+```shell
+$ printf '0x123:0x345' | olivepy -t int --list -d ':'
+[291, 837]
+```
+
+The result of the input parsing is placed in the `_` variable. The remaining arguments are used as the body of a lambda function and the result is returned
+
+```shell
+$ printf '0x123 0x345' | olivepy -t int --list 'hex(sum(_))'
+0x468
+```
+
+If you wish to run multiple commands separated by line, lambda can be problematic. In this case you can use a normal named function (The function name `__f__` so avoid overriding it).
+
+```shell
+$ printf '0x123 0x345' | olivepy -t int --list -f 's = sum(_); l = len(_); return s/l'
+564.0
+```
+
+You can also import libraries using a comma separated list. Use : to import from and ! to import as.
+
+```shell
+$ printf '{"cmd": "ls"}' | olivepy --import 'os:system!s,json:loads' 's(loads(_).get("cmd"))'
+LICENSE        README.md      __pycache__    pyproject.toml src            tests
+0
+```
+
+As you can see in the above example, the lambda function returned a value of 0 and it was printed in the output. If you wish tou have the command executed in the main body use the `--main` flag.
+
+```shell
+$ printf '{"cmd": "ls"}' | olivepy --import 'os:system!s,json:loads' -m 's(loads(_).get("cmd"))'
+LICENSE        README.md      __pycache__    pyproject.toml src            tests
+```
+
+If you wish to run the commands line by line instead of on the entire input, you can use the `--line` option.
+
+```shell
+$ printf '123\n124\n' | olivepy -l -t int '_ + 1'
+124
+125
+```
+
+You can use the `--pre` and `--post` options to set some code to run before and after the main body
+
+```shell
+$ printf '123\n124\n' | olivepy -l -t int -m --pre 'x=111' --post 'print(x)' 'x += _'
+358
+```
+
+```shell
+$ printf '123 124\n' | olivepy -t int -m -l --list -d ' ' --pre 'b = 123' --post 'print(b + sum(a))' 'a = [x+2 for x in _]'
+374
+```

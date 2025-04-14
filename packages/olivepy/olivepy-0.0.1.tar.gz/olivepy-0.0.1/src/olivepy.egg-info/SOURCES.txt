@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/olivepy.py
+src/olivepy.egg-info/PKG-INFO
+src/olivepy.egg-info/SOURCES.txt
+src/olivepy.egg-info/dependency_links.txt
+src/olivepy.egg-info/entry_points.txt
+src/olivepy.egg-info/top_level.txt
