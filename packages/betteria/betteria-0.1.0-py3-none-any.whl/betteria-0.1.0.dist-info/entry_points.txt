@@ -1,0 +1,2 @@
+[console_scripts]
+betteria = betteria.cli:main
