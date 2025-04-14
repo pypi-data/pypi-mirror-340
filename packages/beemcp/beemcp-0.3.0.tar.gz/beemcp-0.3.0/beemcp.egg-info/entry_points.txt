@@ -1,0 +1,2 @@
+[console_scripts]
+beemcp = beemcp.beemcp:main
