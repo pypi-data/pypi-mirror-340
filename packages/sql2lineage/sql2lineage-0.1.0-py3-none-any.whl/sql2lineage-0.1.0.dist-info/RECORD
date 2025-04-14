@@ -1,0 +1,8 @@
+sql2lineage/__init__.py,sha256=-7KKVWPpgQvH4XcYcAuIjjttWXiz5JvCl1-GrO0HwSA,79
+sql2lineage/graph.py,sha256=Y_dtsUsiXbsckaYGRkEH84dIMZJnFy8ClUsnyuP_mMs,3887
+sql2lineage/model.py,sha256=xk8N3FRvcGd5hIH0Cei838V11-STLyh6optiD6zaY_U,13566
+sql2lineage/parser.py,sha256=Gy4rE7bS-itP-QkaV5HdZk3CFMfz_ulDFs1QzC56uTg,4831
+sql2lineage-0.1.0.dist-info/METADATA,sha256=w7aJBZrcB-dlCp2A6yKOVq3q_PTpxWmm6Z9xecgKsF0,925
+sql2lineage-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+sql2lineage-0.1.0.dist-info/top_level.txt,sha256=yymj3vnejpqq4hjOzYP6pvhShq2BvU7L4Q0oagyjr8s,12
+sql2lineage-0.1.0.dist-info/RECORD,,

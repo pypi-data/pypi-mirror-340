@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: sql2lineage
+Version: 0.1.0
+Summary: Create lineage graphs from SQL queries
+Author-email: Sean Conkie <sean.conkie@sky.uk>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: networkx<4.0.0,>=3.4.2
+Requires-Dist: pydantic<3.0.0,>=2.7.1
+Requires-Dist: sqlglot<27.0.0,>=26.13.0
+
+# sql2lineage
+
+[![Lint Code Base](https://github.com/sean-conkie/sql2lineage/actions/workflows/lint.yml/badge.svg)](https://github.com/sean-conkie/sql2lineage/actions/workflows/lint.yml)
+[![Test Code Base](https://github.com/sean-conkie/sql2lineage/actions/workflows/test.yml/badge.svg)](https://github.com/sean-conkie/sql2lineage/actions/workflows/test.yml)
+[![codecov](https://codecov.io/gh/sean-conkie/sql2lineage/graph/badge.svg?token=ZOM3PNJ2SL)](https://codecov.io/gh/sean-conkie/sql2lineage)
