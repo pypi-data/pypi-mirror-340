@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: rssmcp
+Version: 0.1.0
+Summary: Simple RSS MCP Server
+Author-email: Lunran <feitcounter@gmail.com>
+Requires-Python: >=3.10.16
+Requires-Dist: feedparser>=6.0.11
+Requires-Dist: mcp>=1.6.0
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: types-pyyaml>=6.0.12.20250402
+Description-Content-Type: text/markdown
+
+# rssmcp MCP server
+
+Simple RSS MCP Server
+
+## Components
+
+### Tools
+
+The server implements one tool:
+- get_rss: Fetches RSS feeds and returns entries as formatted text
+  - Takes "feed_name" and "since" as required string arguments
+  - "export_result" as an optional boolean parameter (defaults to false)
+  - Returns formatted feed entries as text and optionally exports to a file
+
+## Quickstart
+
+### Install
+
+<details>
+  <summary>Published Servers Configuration</summary>
+  ```
+  "mcpServers": {
+    "rssmcp": {
+      "command": "uvx",
+      "args": [
+        "rssmcp"
+      ]
+    }
+  }
+  ```
+</details>
