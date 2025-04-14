@@ -1,0 +1,33 @@
+[project]
+name = "types-pyside6"
+version = "6.8.3.3"
+description = "Types for PySide6"
+authors = [
+    { name = "Inhwan Kim", email = "moreih29@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyside6==6.8.3",
+]
+classifiers = [
+    "Typing :: Stubs Only",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "**/*.pyi",
+    "**/py.typed",
+]
+zip-safe = false
+
+[tool.hatch.build.targets.wheel]
+packages = ["types-pyside6"]
+package-dir = {"types-pyside6" = "PySide6-stubs"}
+
+[tool.mypy]
+strict = true
