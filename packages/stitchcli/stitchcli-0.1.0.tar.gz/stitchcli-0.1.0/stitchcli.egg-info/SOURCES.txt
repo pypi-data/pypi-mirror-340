@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+stitchcli.egg-info/PKG-INFO
+stitchcli.egg-info/SOURCES.txt
+stitchcli.egg-info/dependency_links.txt
+stitchcli.egg-info/requires.txt
+stitchcli.egg-info/top_level.txt
