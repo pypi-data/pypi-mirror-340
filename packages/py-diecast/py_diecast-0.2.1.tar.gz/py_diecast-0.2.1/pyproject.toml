@@ -1,0 +1,46 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-diecast"
+version = "0.2.1"  # Add keywords for PyPI visibility
+description = "A Python tool to enforce type hints as runtime assertions."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    { name = "ToastX", email = "toast_x@bytebot.site" },
+]
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+keywords = ["type hints", "typing", "runtime", "assertions", "validation", "decorator", "static analysis", "dynamic analysis"]
+
+[project.urls]
+Homepage = "https://github.com/GWUDCAP/diecast"
+Repository = "https://github.com/GWUDCAP/diecast"
+
+[tool.setuptools.packages.find]
+where = ["src"]  # Look for packages in the 'src' directory 
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",      # Relative to project root (diecast/)
+] 
+
+log_cli = true
+log_cli_level = "DEBUG"
+log_cli_format = "%(levelname)-8s %(name)s: %(message)s"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
