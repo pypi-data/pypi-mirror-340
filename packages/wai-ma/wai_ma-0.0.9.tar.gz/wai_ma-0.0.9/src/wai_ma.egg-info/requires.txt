@@ -1,0 +1,4 @@
+numpy
+scikit-learn
+wai_common
+wai_test
