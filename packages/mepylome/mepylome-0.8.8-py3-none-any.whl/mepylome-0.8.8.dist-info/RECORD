@@ -1,0 +1,17 @@
+mepylome/__init__.py,sha256=Xkdn9nLJtqqJLa31_GOtYo2Gs3W1o7pTlg2D3M9XNXg,2045
+mepylome/cli.py,sha256=B853WAmjXzctcFvwKNwx3yb9VQHAnBaRmBBCIjpg3Rs,12344
+mepylome/data/config.toml,sha256=y-QxZqPH4KigV_nFftbAn-EhBqETHOGs7wKMv9ThX2M,3110
+mepylome/data/gaps.csv.gz,sha256=dyasVkFUNWcClYUKslPPQ0R6h7KEURt7ecxCnY_zTjM,3589
+mepylome/data/hg19_genes.tsv.gz,sha256=p8w2TcDaujrIDBtvVPVD1ddgjgpaLDD4DbfTFkwMYZU,748103
+mepylome/data/methylation_class_acronyms.tsv.gz,sha256=eDqobunTWuIIKg2WtEBzdWzC8WxypRVTXBZMl9Vy2D0,5073
+mepylome/data/tutorial.csv.gz,sha256=OF5U6dyYJDMFWLkKyaer3NXaU0v916d0Rj91QasgoS8,1170
+mepylome/data/assets/dropdown.css,sha256=oXn2uqqwcXs3dwa4hLSYbjwKfchZb4ECuqxbaQ7qykA,129
+mepylome/data/assets/favicon.svg,sha256=TTimj2pjXg1_bKPX3AHCbxRn7L5T9TmvXxSrtiYwbek,5591
+mepylome/data/assets/mepylome.svg,sha256=9x6QFIZHFmtICTsqXWANmQnLr_1RPggFT22qdJd0P84,9987
+mepylome/data/assets/mepylome_raw.svg,sha256=stEvE9BZjK6TDfIy2K_JGBoisSptjrGYJgBPXvaa45A,6125
+mepylome-0.8.8.dist-info/licenses/LICENSE,sha256=jbfp0gNWL4QgnsT8qy8GwKT5LvP-Y5PjgVlgAYtIlVc,1068
+mepylome-0.8.8.dist-info/METADATA,sha256=Rc0N14lZ81D5G91iaE6TxZc7KuzUENtpzSuILmLn0_Y,5616
+mepylome-0.8.8.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+mepylome-0.8.8.dist-info/entry_points.txt,sha256=xRcuHfhxarTES1Rd7RmtR8wbweMLhgfdXoGLhmHqtCA,57
+mepylome-0.8.8.dist-info/top_level.txt,sha256=cmbW2akpYG_SdSthHWWQqosq9xihh0QGnKJRjHBPXDI,9
+mepylome-0.8.8.dist-info/RECORD,,
