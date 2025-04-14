@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gemini-code-review
+Version: 1.0.1
+Summary: code review via diff
+Home-page: https://xxx.com
+Author: xuwuqiang
+Author-email: xwqiang2008@outlook.com
+License: MIT Licence
+Keywords: gitlab,ai,code review
+Platform: any
+
+code review via diff with ai model
