@@ -1,0 +1,13 @@
+phenofetch/__init__.py,sha256=UVJViJXwouujU8Nap0yO_03rQtZ1GUfkL8CAnBpdREk,740
+phenofetch/cam_meta.py,sha256=384_kNQGO7jQxTHt7b6bfqofsAhJbdCzrsbaUPWi10Q,9360
+phenofetch/daily_links.py,sha256=9TMHnb70xAfSTnfDKVzs84AdhlmBJEyoHd724LpbQFk,21807
+phenofetch/phenofetch.py,sha256=85oJE1F5WBZuY2nkXkocTjE0Xcwdpl_khlJzm-16dv0,21015
+phenofetch/site_info.py,sha256=McyGrEAov2yQ7aLLgIXhXW9LLGShwYY73sXjzjPh8bo,30857
+phenofetch/site_stats.py,sha256=EO0MRBifPJM7whNXXzZ3tiIkdSp_8zynvMqKfkMSAWc,9618
+phenofetch/size_estimate.py,sha256=aIYwZ_3e9_exkPxNF4iDF7-hTfvutHEYk_Jz60qRoFY,26899
+phenofetch-0.2.1.dist-info/licenses/LICENSE,sha256=XKsa2skJxT9FSHyCLpgk82K58iLCH_lhj8WzQTWS9dU,11548
+phenofetch-0.2.1.dist-info/METADATA,sha256=872wnJ9KyxqD5ws57ikptV37zqKQY_RjLffqZL99ny0,8136
+phenofetch-0.2.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+phenofetch-0.2.1.dist-info/entry_points.txt,sha256=qdAKDgOjOeYPk0jEkH_4QVD-suHz8BWmiwKbPTz69kI,47
+phenofetch-0.2.1.dist-info/top_level.txt,sha256=luBgV2LXHr1rGAtVfZZEWecCNc8EjzEBHfWv7oPTg_4,58
+phenofetch-0.2.1.dist-info/RECORD,,
