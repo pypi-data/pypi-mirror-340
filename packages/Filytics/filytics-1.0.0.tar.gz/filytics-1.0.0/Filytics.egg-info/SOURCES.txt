@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+Filytics/__init__.py
+Filytics/analyzer.py
+Filytics/cli.py
+Filytics/reporter.py
+Filytics/treeview.py
+Filytics/utils.py
+Filytics.egg-info/PKG-INFO
+Filytics.egg-info/SOURCES.txt
+Filytics.egg-info/dependency_links.txt
+Filytics.egg-info/entry_points.txt
+Filytics.egg-info/requires.txt
+Filytics.egg-info/top_level.txt
+tests/test_analyzer.py
