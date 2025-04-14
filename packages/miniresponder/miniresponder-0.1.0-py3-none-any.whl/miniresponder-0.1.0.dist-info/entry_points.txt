@@ -1,0 +1,2 @@
+[console_scripts]
+miniresponder = miniresponder:miniresponder.main
