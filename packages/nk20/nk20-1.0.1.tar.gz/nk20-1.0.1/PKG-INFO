@@ -1,0 +1,45 @@
+Metadata-Version: 2.4
+Name: nk20
+Version: 1.0.1
+Summary: nk20: Hanja base-20000 numeral encoder/decoder
+Home-page: https://github.com/dzbuit/nk20
+Author: blueradiance
+Author-email: none@example.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# nk20
+
+nk20: Hanja-based base-20000 numeral encoder/decoder  
+**nk20 – 이만진수 기반 정보 압축**
+
+## Install
+
+```bash
+pip install nk20
+```
+
+## Usage
+
+```python
+from nk20 import encode_nk20, decode_nk20
+
+s = encode_nk20(123456)
+n = decode_nk20(s)
+print(s, n)
+```
