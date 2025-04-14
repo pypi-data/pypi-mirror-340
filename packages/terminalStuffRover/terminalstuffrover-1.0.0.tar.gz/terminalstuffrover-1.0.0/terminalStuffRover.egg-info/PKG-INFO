@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: terminalStuffRover
+Version: 1.0.0
+Summary: A silly little terminal toy for printing goofy stuff.
+Author: Selman Yalçın
+Author-email: selmanyalcin16@gmail.com
+Keywords: terminal,fun,random,silly,print,rover,ascii
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+# terminalStuffRover
+
+A silly little terminal library that prints goofy and ridiculous outputs just for fun.
+
+Sometimes, terminal life is too serious. `terminalStuff` is here to fix that — by doing absolutely nothing useful.
+
+## Features
+
+- 💥 Random goofy messages
+- 🔄 Repeated prints that annoy your terminal
+- 🎉 Useless color text (maybe)
+
+## Installation
+
+```bash
+pip install terminalStuffRover

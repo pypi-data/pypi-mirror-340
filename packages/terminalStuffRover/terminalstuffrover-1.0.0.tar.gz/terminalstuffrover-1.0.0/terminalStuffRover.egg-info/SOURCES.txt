@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+terminalStuffRover.egg-info/PKG-INFO
+terminalStuffRover.egg-info/SOURCES.txt
+terminalStuffRover.egg-info/dependency_links.txt
+terminalStuffRover.egg-info/top_level.txt
+terminalStuffRoverLibrary/__init__.py
+terminalStuffRoverLibrary/terminalStuffRover.py
