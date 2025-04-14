@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="report_picking_motoscoot_wms" inherit_id="stock.report_picking">
+        <xpath expr="//p[@t-field='o.note']" position="after">
+            <div class="clearfix">
+                <div class="row">
+                    <div t-attf-class="col-6 text-center">
+                        <div t-if="o.previous_pick_ids">
+                            <div>
+                                <strong>Picks:</strong>
+                            </div>
+                            <t t-foreach="o.previous_pick_ids" t-as="pick">
+                                <div style="margin-bottom:35px;">
+                                    <div>
+                                        <img
+                                            t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', pick.name, 600, 100)"
+                                            style="width:300px;height:50px;"
+                                            alt="Barcode"
+                                        />
+                                    </div>
+                                    <div>
+                                        <span t-field="pick.name" />
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                        <div t-elif="o.related_pick_ids">
+                            <div>
+                                <strong>Picks:</strong>
+                            </div>
+                            <t t-foreach="o.related_pick_ids" t-as="pick">
+                                <div style="margin-bottom:35px;">
+                                    <div>
+                                        <img
+                                            t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', pick.name, 600, 100)"
+                                            style="width:300px;height:50px;"
+                                            alt="Barcode"
+                                        />
+                                    </div>
+                                    <div>
+                                        <span t-field="pick.name" />
+                                    </div>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                    <div t-attf-class="col-6 text-center">
+                        <div t-if="o.next_pick_id">
+                            <div>
+                                <strong>Next Picking Reference:</strong>
+                            </div>
+                            <div>
+                                <img
+                                    t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.next_pick_id.name, 600, 100)"
+                                    style="width:300px;height:50px;"
+                                    alt="Barcode"
+                                />
+                            </div>
+                            <div>
+                                <span t-field="o.next_pick_id.name" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
