@@ -1,0 +1,68 @@
+Metadata-Version: 2.3
+Name: dwlog
+Version: 0.1.1
+Summary: Logging functionalities for data wrangling in Python (pandas).
+License: MIT
+Author: Raffaele Mancuso
+Author-email: raffaele.mancuso4@unibo.it
+Requires-Python: >=3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: pandas
+Project-URL: Homepage, https://github.com/raffaem/dwlog
+Project-URL: Issues, https://github.com/raffaem/dwlog/issues
+Description-Content-Type: text/markdown
+
+# dwlog
+Logging functionalities for data wrangling in Python.
+
+Similar to [tidylog](https://github.com/elbersb/tidylog) but for Python.
+
+Currently it supports pandas only, but PRs for Modin/polars/whatever are welcome!
+
+PRs to add pandas functions are also welcome!
+
+Remember to:
+
+1. `import dwlog.pandas` _after_ `import pandas as pd`
+2. Initialize the logger `logging.basicConfig(level=logging.INFO)` 
+
+## Example
+
+```
+>python
+Python 3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas as pd
+>>> import numpy as np
+>>> import logging
+>>> import dwlog.pandas
+>>> logging.basicConfig(level=logging.INFO)
+>>> df = pd.DataFrame({"a":[1,1,2,np.nan,3,np.nan],"b":[5,5,6,7,np.nan,np.nan]})
+>>> _ = df.drop_duplicates()
+INFO:dwlog:Dropped 1/6 (16.67%) duplicated rows, remains 5/6 (83.33%) rows
+>>> _ = df.dropna()
+INFO:dwlog:Dropped 3/6 (50.0%) rows
+>>> _ = df.dropna(subset=['a'])
+INFO:dwlog:Dropped 2/6 (33.33%) rows
+>>> df.to_excel("test.xlsx", index=False, sheet_name="Sheet1")
+>>> df2 = pd.read_excel("test.xlsx", sheet_name="Sheet1")
+INFO:dwlog:Read Excel file 'test.xlsx' with shape (5 x 2)
+>>> from pathlib import Path
+>>> Path("test.xlsx").unlink(missing_ok=True)
+```
+
+
+
