@@ -1,0 +1,14 @@
+fp_ops/__init__.py,sha256=LhYzBZ0MBqxJ8DZyrVv7QpvXzKIeLc_ogxj_WDrRBxk,230
+fp_ops/composition.py,sha256=NPpseopo26CrR-WfvCxsD51ZfjTLjPQrbxfuJAprF8M,17943
+fp_ops/context.py,sha256=yL1o6GWGE4-lsmiAi7DxgMyXmHU5TT2X9lTnaxh7K7g,2057
+fp_ops/decorators.py,sha256=RZz-4DRsaqH7pW85tlnYdj9BQ81tXaRnx3KdqhNeJxk,44
+fp_ops/flow.py,sha256=hyC0pxBsc48dulfjBNyVhJNOzNMrYAi1H3fuPRmtals,14244
+fp_ops/operator.py,sha256=dZu2LTQ7Y7SfflYZ_f7uEDEHZd9m_oz2tmC9pq3zwPs,46310
+fp_ops/placeholder.py,sha256=Gkw2T4U0CsxZ43T7Ia8NoQBdnS1JaPuR-yxEy1ki_tQ,231
+fp_ops/primitives.py,sha256=akCPSWhown2Yl3aYRmd2atruKVCNoHu627tXMcxd9yA,59
+fp_ops/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fp_ops/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fp_ops-0.1.4.dist-info/LICENSE,sha256=N1htirqt-NJOo-N2xLJ4VJwCA4_P8mf_pnmmb97jpvg,1054
+fp_ops-0.1.4.dist-info/METADATA,sha256=yZQN1CV55kt8Bfwuf71_jlWsaVrmoDvTS_uu4OFaLfk,6767
+fp_ops-0.1.4.dist-info/WHEEL,sha256=fGIA9gx4Qxk2KDKeNJCbOEwSrmLtjWCwzBz351GyrPQ,88
+fp_ops-0.1.4.dist-info/RECORD,,
