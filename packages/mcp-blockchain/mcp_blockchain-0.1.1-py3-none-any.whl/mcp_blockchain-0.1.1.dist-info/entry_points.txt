@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-blockchain = mcp_blockchain.__main__:main
