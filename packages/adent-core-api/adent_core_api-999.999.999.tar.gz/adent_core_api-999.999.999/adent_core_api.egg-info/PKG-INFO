@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: adent-core-api
+Version: 999.999.999
+Description-Content-Type: text/markdown
+
+# Research package for install analytics for removed packages
+
+## Description
+
+Removed packages could be squatted by someone creating risks for supply-chain.
+This package shouldn't be installed by someone, but it has rich statistics in the past. 
+You could reach me for research collaboration: cybersec@protsenko.dev
