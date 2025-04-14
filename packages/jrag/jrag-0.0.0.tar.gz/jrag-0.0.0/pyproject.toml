@@ -1,0 +1,96 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jrag"
+version = "0.0.0"
+description = "Convert json to string for RAG applications."
+readme = "README.md"
+authors = [
+    { name="Cormac Rynne" },
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "jsonpath_ng"
+]
+
+[project.urls]
+Homepage = "https://github.com/cormac-rynne/jrag/"
+Repository = "https://github.com/cormac-rynne/jrag/"
+"Bug Tracker" = "https://github.com/cormac-rynne/jrag/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov",
+    "flake8>=5.0",
+    "flake8-pyproject",
+    "black>=22.0",
+    "python-semantic-release>=8.0",
+    "build>=0.10",
+    "twine>=4.0",
+    "wheel",
+    "setuptools",
+    "pip-audit",
+    "pre-commit>=3.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["jrag"]
+
+[tool.black]
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html#configuration-via-a-file
+line-length = 120
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311', 'py312'] # Specify supported Python versions
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.pytest.ini_options]
+# https://docs.pytest.org/en/latest/reference/reference.html#configuration-options
+pythonpath = ["jrag"]
+testpaths = [
+    "tests",
+]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = [
+    "-v",
+    "-ra",
+    "--cov=jrag",
+    "--cov-report=term-missing",
+    "--cov-fail-under=80",
+]
+
+[tool.flake8]
+max-line-length = 120
+extend-ignore = ["E203", "W503"] # conflicts with black
+exclude = [
+    ".git",
+    "__pycache__",
+    ".venv",
+    "build",
+    "dist",
+    "notebooks",
+]
+
+[tool.semantic_release]
+version_variables = ["jrag/__init__.py:__version__"]
+version_toml = ["pyproject.toml:project.version"]
+branch = "main"
+repository = "github"
+# upload_to_pypi = true
+upload_to_release = true
+# build_command = "pip install build && python -m build"
+commit_subject = "chore(release): :bookmark: {version}"
+changelog_file = "CHANGELOG.md"
+hvcs = "github"

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+jrag/__init__.py
+jrag/jrag.py
+jrag.egg-info/PKG-INFO
+jrag.egg-info/SOURCES.txt
+jrag.egg-info/dependency_links.txt
+jrag.egg-info/requires.txt
+jrag.egg-info/top_level.txt
+tests/test_jrag.py
