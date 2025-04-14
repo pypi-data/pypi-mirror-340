@@ -1,0 +1,23 @@
+/**
+ * Handle all outputs
+ * TODO
+ */
+ class Output {
+    public:
+        struct {
+            float value;
+        } regression;
+        struct {
+            uint8_t idx;
+            uint8_t prevIdx;
+            float score;
+            float prevScore;
+            char label[32];
+            char prevLabel[32];
+        } classification;
+
+        Output() {
+            classification.idx = 0;
+            classification.score = 0;
+        }
+ };
