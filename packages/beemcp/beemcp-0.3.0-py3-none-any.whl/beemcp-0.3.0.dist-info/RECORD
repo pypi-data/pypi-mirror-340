@@ -1,0 +1,15 @@
+beemcp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beemcp/bee.py,sha256=qCudjft-PlvLS78a3-AjBTla-xrdcLyQurOTKDpYFmw,21671
+beemcp/beemcp.py,sha256=T33CNplyroQCgjOhcjMpLk5nHut5qu59ECiL2tHh7lc,15981
+beemcp/conversation.py,sha256=FlgwDClYUlXcaVsw3KcO8j_kUGBhg1Irq-a6f6YB-1M,4362
+beemcp/fact.py,sha256=_cfnpefVXiF4iA187udHQcnb8hvMCJRAzMrY-FgiiyU,2255
+beemcp/location.py,sha256=cfPkkGHIIxd3r7ikgEbQe2l86v1v6sp9_S0C1hnnWgg,4403
+beemcp/manual_testing.py,sha256=Q5UlqH7wxWV1oKDeBGzu0rKYlRxB4xnJCZBXOZK6Dvc,4623
+beemcp/todo.py,sha256=hOd0sCSPZp6RR0ny3EC4VLF8elhE39wo_0XF-Hgj3pk,2109
+beemcp/utils.py,sha256=xlfnw1ZQzLM2IZvvBx__y2dbfiC-A79rUAe2mO99iPI,3910
+beemcp-0.3.0.dist-info/licenses/LICENSE,sha256=bpKHlXK45O-zD1bdF35czRvW6nnOYjMwfbZ3TztFdSk,1071
+beemcp-0.3.0.dist-info/METADATA,sha256=sSlWhUpAvGef--2o1uKJcW_ZZh1oOylIpy24gUAN58E,15356
+beemcp-0.3.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+beemcp-0.3.0.dist-info/entry_points.txt,sha256=2y9QWXH5tBzgNHvh9De_r8w5sPTFDIQsv18MHzmK3ss,46
+beemcp-0.3.0.dist-info/top_level.txt,sha256=YbPCs0hteC22y9MU5X9GovxYQqITxkSd9-pr29JCF24,7
+beemcp-0.3.0.dist-info/RECORD,,
