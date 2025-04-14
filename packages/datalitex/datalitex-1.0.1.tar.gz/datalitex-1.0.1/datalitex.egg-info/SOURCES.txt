@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+datalitex/__init__.py
+datalitex.egg-info/PKG-INFO
+datalitex.egg-info/SOURCES.txt
+datalitex.egg-info/dependency_links.txt
+datalitex.egg-info/requires.txt
+datalitex.egg-info/top_level.txt
