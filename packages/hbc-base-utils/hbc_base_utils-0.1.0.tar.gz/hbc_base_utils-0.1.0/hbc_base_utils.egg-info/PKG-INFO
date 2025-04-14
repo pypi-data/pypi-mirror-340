@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: hbc-base-utils
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sqlalchemy>=2.0.40
+Dynamic: license-file
+
+# hbc_core_utils-
+抽象出一些常用的方法作为公共的库

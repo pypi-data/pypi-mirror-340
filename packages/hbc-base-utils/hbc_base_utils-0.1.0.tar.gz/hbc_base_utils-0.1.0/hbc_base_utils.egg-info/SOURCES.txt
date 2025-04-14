@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+hbc_base_utils.egg-info/PKG-INFO
+hbc_base_utils.egg-info/SOURCES.txt
+hbc_base_utils.egg-info/dependency_links.txt
+hbc_base_utils.egg-info/requires.txt
+hbc_base_utils.egg-info/top_level.txt
