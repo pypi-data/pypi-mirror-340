@@ -1,0 +1,16 @@
+django_hornet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_hornet/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django_hornet/apps.py,sha256=TLprmTeYhDt6mai090ik8YpdD4w-N-25ixgt25WOAsk,145
+django_hornet/manager.py,sha256=nsmfKZ0BV19vBlxe77BbvIkY8FMtBvrefsVIezkzLEU,1299
+django_hornet/middleware.py,sha256=nLPU_7wYOYiO_Egi7YeKm3P2yXtmSjFbuw9bEQqCNtk,3606
+django_hornet/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+django_hornet/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_hornet/views.py,sha256=V_gsEj8qiY8dMh6KyF2jvoB3tSDsjkQplj5lJHFSntE,1208
+django_hornet/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_hornet/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_hornet/templatetags/hornet_heplers.py,sha256=Ao7bmwATiVUzfIOLA6uHPZN7GWJJ9Zet8IB0Hw7p15I,574
+django_hornet-0.0.1.dist-info/licenses/LICENSE,sha256=zsrBQ1bBhDoonJZzpkYj5mYF-8E_DLtrlzPE1tv4Yyk,1071
+django_hornet-0.0.1.dist-info/METADATA,sha256=WQQGHKO0M3TrbPyvzq2idqq0y-8da2wr-EZ2NdveTso,2929
+django_hornet-0.0.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_hornet-0.0.1.dist-info/top_level.txt,sha256=_WhTwKZ-BQ8poFwH-VVA_EGOVDqEK50IedlAxH7-7tk,14
+django_hornet-0.0.1.dist-info/RECORD,,
