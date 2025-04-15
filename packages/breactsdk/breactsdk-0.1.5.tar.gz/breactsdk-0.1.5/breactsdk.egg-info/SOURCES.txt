@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+env.example
+requirements.txt
+setup.cfg
+setup.py
+breactsdk/__init__.py
+breactsdk/client.py
+breactsdk/config.py
+breactsdk.egg-info/PKG-INFO
+breactsdk.egg-info/SOURCES.txt
+breactsdk.egg-info/dependency_links.txt
+breactsdk.egg-info/requires.txt
+breactsdk.egg-info/top_level.txt
