@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "r00parser_docs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx",
+    "beautifulsoup4",
+    "markdownify",
+    "r00logger",
+]
+
+[tool.uv.sources]
+r00logger = { path = "../../../libs/logger", editable = true }
+r00secret = { path = "../../../libs/secret", editable = true }
+r00arango_connector = { path = "../../../libs/arango-connector", editable = true }
+
+[project.scripts]
+parser-docs = "r00parser_docs.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["r00parser_docs"]
