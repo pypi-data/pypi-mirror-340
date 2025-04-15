@@ -1,0 +1,26 @@
+{
+  "name": "gradio_sourceselector",
+  "version": "0.7.9",
+  "description": "Gradio UI packages",
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "private": false,
+  "main_changeset": true,
+  "exports": {
+    ".": "./Index.svelte",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@gradio/atoms": "0.7.7",
+    "@gradio/icons": "0.6.0",
+    "@gradio/statustracker": "0.7.2",
+    "@gradio/utils": "0.5.1"
+  },
+  "overrides": {
+    "es5-ext": "0.10.52"
+  },
+  "devDependencies": {
+    "@gradio/preview": "0.10.1"
+  }
+}
