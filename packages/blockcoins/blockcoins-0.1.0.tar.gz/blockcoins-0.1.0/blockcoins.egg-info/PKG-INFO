@@ -1,0 +1,36 @@
+Metadata-Version: 2.4
+Name: blockcoins
+Version: 0.1.0
+Summary: A bot to automatically farm BlockCoins on blockcoin.vercel.app
+Home-page: https://github.com/Gamma7113131/blockcoins
+Author: Vegeta
+Author-email: Gamma.scratch@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12.8
+Description-Content-Type: text/markdown
+Requires-Dist: blockcoin
+Requires-Dist: requests
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# blockcoins
+
+Automate BlockCoin farming on [blockcoin.vercel.app](https://blockcoin.vercel.app).
+
+## Install
+
+```bash
+pip install git+https://github.com/yourusername/blockcoins.git
+```
+
+```bash
+pip install blockcoins
