@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+flask_inputfilter/InputFilter.py
+flask_inputfilter/__init__.py
+flask_inputfilter.egg-info/PKG-INFO
+flask_inputfilter.egg-info/SOURCES.txt
+flask_inputfilter.egg-info/dependency_links.txt
+flask_inputfilter.egg-info/requires.txt
+flask_inputfilter.egg-info/top_level.txt
