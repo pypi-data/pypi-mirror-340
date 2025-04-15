@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+  "hatch_plugins/custom_metadata.py",
+  "metadata.json"
+]
+
+[project]
+name = "Tyradex"
+dynamic = ["version", "authors", "description"]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/LassaInora/Tyradex"
+Issues = "https://github.com/LassaInora/Tyradex/issues"
+
+[tool.hatch.metadata.hooks.custom]
+path = "custom_metadata.py"
