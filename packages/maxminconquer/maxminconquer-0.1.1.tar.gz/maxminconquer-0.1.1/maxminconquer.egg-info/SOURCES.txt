@@ -1,0 +1,9 @@
+README.md
+setup.py
+maxminconquer/__init__.py
+maxminconquer/find_max.py
+maxminconquer/find_min.py
+maxminconquer.egg-info/PKG-INFO
+maxminconquer.egg-info/SOURCES.txt
+maxminconquer.egg-info/dependency_links.txt
+maxminconquer.egg-info/top_level.txt
