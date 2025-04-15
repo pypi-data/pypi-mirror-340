@@ -1,0 +1,8 @@
+README.md
+setup.py
+ekacare.egg-info/PKG-INFO
+ekacare.egg-info/SOURCES.txt
+ekacare.egg-info/dependency_links.txt
+ekacare.egg-info/requires.txt
+ekacare.egg-info/top_level.txt
+tests/test_client.py
