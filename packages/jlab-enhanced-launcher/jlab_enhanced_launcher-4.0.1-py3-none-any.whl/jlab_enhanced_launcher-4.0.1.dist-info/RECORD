@@ -1,0 +1,15 @@
+jlab_enhanced_launcher/__init__.py,sha256=6SNixU-NaCYni8AFhoDHPFoImVQjp__-bj5UbJOnMCo,601
+jlab_enhanced_launcher/_version.py,sha256=JeGliRD4D5iT8e2Ol2TB3cqTySs_ow9Auaw5n-ApWPY,171
+jlab_enhanced_launcher-4.0.1.data/data/share/jupyter/labextensions/@jlab-enhanced/launcher/package.json,sha256=Z5oGjKiZEiC36_7YdHfLRrHYTCKPT8U4AT45Q_kBpHI,6184
+jlab_enhanced_launcher-4.0.1.data/data/share/jupyter/labextensions/@jlab-enhanced/launcher/schemas/@jlab-enhanced/launcher/package.json.orig,sha256=V5tTaOE6NXXymgpy4i2rU930yc1m1gh-UbZgb01pdl0,6966
+jlab_enhanced_launcher-4.0.1.data/data/share/jupyter/labextensions/@jlab-enhanced/launcher/schemas/@jlab-enhanced/launcher/plugin.json,sha256=uJJ40_Q8U2T1BsWhVUXM2XwmlPDB5DRmkU7CH0K6Ty0,1086
+jlab_enhanced_launcher-4.0.1.data/data/share/jupyter/labextensions/@jlab-enhanced/launcher/static/859.f47162317de4384762e7.js,sha256=9HFiMX3kOEdi56nICIZhGRwoJ8ysdtP2Ym4MIX880_Q,13426
+jlab_enhanced_launcher-4.0.1.data/data/share/jupyter/labextensions/@jlab-enhanced/launcher/static/912.e59b5f08a56a18069774.js,sha256=5ZtfCKVqGAaXdLHyesHOMeL6ReqO1nRsARwb_ytcz-Q,10937
+jlab_enhanced_launcher-4.0.1.data/data/share/jupyter/labextensions/@jlab-enhanced/launcher/static/remoteEntry.d5d5d61346725adb3a89.js,sha256=1dXWE0ZyWts6ibVhNzzI-1U0ivb0JN8el97vliDm0TA,7462
+jlab_enhanced_launcher-4.0.1.data/data/share/jupyter/labextensions/@jlab-enhanced/launcher/static/style.js,sha256=SzSZMTtjf5ONmsyHlymVZgeeotPGK1OjJ1NQTOIFJL8,166
+jlab_enhanced_launcher-4.0.1.data/data/share/jupyter/labextensions/@jlab-enhanced/launcher/static/third-party-licenses.json,sha256=W6N2sSD7tQihMqQk64F9xMd1Flfr2KO97esAiHUOYdM,2453
+jlab_enhanced_launcher-4.0.1.data/data/share/jupyter/labextensions/@jlab-enhanced/launcher/install.json,sha256=aVDMdYvqlxEf2mmYH0J3WzCo_loGWK0mqgccrn6V4wI,205
+jlab_enhanced_launcher-4.0.1.dist-info/METADATA,sha256=dJyMJ4BVed4Ck6KfK48Whb16DzxKXwgnyHLjZy3y7o4,6674
+jlab_enhanced_launcher-4.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+jlab_enhanced_launcher-4.0.1.dist-info/licenses/LICENSE,sha256=l5-KTxbIZaMdSvqltfX8mnMKL3iavIB1cwa7oMFDFa0,1526
+jlab_enhanced_launcher-4.0.1.dist-info/RECORD,,
