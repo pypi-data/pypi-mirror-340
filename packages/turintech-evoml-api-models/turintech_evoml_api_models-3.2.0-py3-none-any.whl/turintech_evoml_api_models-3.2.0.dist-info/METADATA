@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: turintech-evoml-api-models
+Version: 3.2.0
+Summary: Library with all data models used across the various APIs
+Home-page: https://turintech.ai
+Author: Turing Intelligence Technology
+Author-email: support@turintech.ai
+License: TURING INTELLIGENCE TECHNOLOGY LIMITED END-USER LICENCE
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8,<4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic[dotenv]<3.0.0,>=1.10.17
+Requires-Dist: backports.cached-property==1.0.2
+Requires-Dist: numpy<3.0.0,>=1.19.1
+
+UNKNOWN
+
