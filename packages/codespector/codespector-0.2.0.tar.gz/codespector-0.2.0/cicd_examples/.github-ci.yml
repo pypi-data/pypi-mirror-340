@@ -1,0 +1,64 @@
+name: Codespector Review
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+env:
+  CODESPECTOR_RESULT_FILE: "codespector/result.md"
+  CODESPECTOR_COMBINED_FILE: "codespector/combined.json"
+
+jobs:
+  codespector:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+          pip install codespector
+
+      - name: Fetch target branch
+        run: git fetch origin ${{ github.base_ref }}
+
+      - name: Run Codespector
+        env:
+          CODESPECTOR_CHAT_TOKEN: ${{ secrets.CODESPECTOR_CHAT_TOKEN }}
+          CODESPECTOR_SYSTEM_CONTENT: ${{ secrets.CODESPECTOR_SYSTEM_CONTENT }}
+          CODESPECTOR_PROMPT_CONTENT: ${{ secrets.CODESPECTOR_PROMPT_CONTENT }}
+          CODESPECTOR_RESULT_FILE: ${{ secrets.CODESPECTOR_RESULT_FILE }}
+          CODESPECTOR_CHAT_AGENT: ${{ secrets.CODESPECTOR_CHAT_AGENT }}
+        run: |
+          codespector \
+            --chat-token $CODESPECTOR_CHAT_TOKEN \
+            --chat-agent $CODESPECTOR_CHAT_AGENT \
+            --compare-branch origin/${{ github.base_ref }}...HEAD
+            --system-content $CODESPECTOR_SYSTEM_CONTENT
+            --prompt-content $CODESPECTOR_PROMPT_CONTENT
+            --result-file $CODESPECTOR_RESULT_FILE
+
+      - name: Post review comment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          COMMENT_CONTENT=$(cat ${CODESPECTOR_RESULT_FILE} | jq -Rs .)
+          gh pr comment ${{ github.event.pull_request.number }} --body "${COMMENT_CONTENT}"
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: codespector-results
+          path: |
+            ${{ env.CODESPECTOR_RESULT_FILE }}
+            ${{ env.CODESPECTOR_COMBINED_FILE }}
+          retention-days: 1
