@@ -1,0 +1,13 @@
+textextraction/__init__.py,sha256=5BZItqQLLGI1Sc0MiRy6AwC4BiUoJSD3MtB8-Wo1a5s,884
+textextraction/_markdown_output.py,sha256=U7tjxgkMA8eudehmV8YDTvekjXVpLha01_MQcapJfEE,2706
+textextraction/_table_utils.py,sha256=C8KgzE8xynIC3jkUpk828qh3dU6xphub-xqL6lQREFU,6842
+textextraction/cli.py,sha256=eD4yqMgVdwFg3R8mH0T0Ud2Qm3Kw0iT5AIGiXHGkCrg,1643
+textextraction/image_processor.py,sha256=Q7Ht6saOpMS5QCZvVdBIzwttp6FmVAlrvu86lmV7J28,6159
+textextraction/pdf_processor.py,sha256=57ZEmMPQfrJxYS_KAXbPuuJTTk7VrkAxfqAaf5lJAyI,10629
+textextraction/pdf_unlocker.py,sha256=1pvyDCkCo0Uoxp2M6BLzKLqDwpCe2FOGxtpnVaNxdRE,3832
+textextraction/scanned_pdf_processor.py,sha256=zrg1Q4xq1mBQqCod_Wmzyju_WZJxJLJdZ2LDhJbTA8g,14738
+textextraction-0.1.4.dist-info/licenses/LICENSE,sha256=sHj3ASqagylri0gigBhLat152XwrzC4S0D7c3yyQ6hA,1099
+textextraction-0.1.4.dist-info/METADATA,sha256=2_B5Tw7YGBqwB6leitoIhjw4YemYrjrnuxVUJ8WZ7UM,6554
+textextraction-0.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+textextraction-0.1.4.dist-info/top_level.txt,sha256=3deIjaxwpoomlewXIVOcJn9HMP1Um0MhQvpXRqUDOkI,15
+textextraction-0.1.4.dist-info/RECORD,,
