@@ -1,0 +1,82 @@
+---
+title: Proto Board Data
+boards:
+  EV06X38A:
+    description: PIC32CXSG41 Curiosity Ultra
+    partNumber: EV06X38A
+    web_link: https://www.microchip.com/en-us/development-tool/EV06X38A
+    img: https://www.microchip.com/content/dam/mchp/mrt-dam/products/mc32/230112-mc32-ev06x38a-145x145-md.jpg
+    serial_series: AZP222800023
+    mcu_part_number: 32CX1025SG41128
+    program_tool: PKOB4
+    kit_name: MPLAB® PKoB4 In-Circuit Debugger
+    product_string: MPLAB® PKoB 4
+    kit_parser_pid: 8978
+    kit_parser_version: v3.0.4
+    connection:
+      interfaceType: hid
+      vid: 1240
+      pid: 33035
+
+  EV09H35A:
+    description: PIC32CX SG61 Curiosity Ultra
+    partNumber: EV09H35A
+    web_link: https://www.microchip.com/en-us/development-tool/ev09h35a
+    img: https://www.microchip.com/content/dam/mchp/mrt-dam/products/mc32/230112-mc32-EV09H35A-145x145-md.jpg
+    serial_series: 020057605RYN
+    mcu_part_number: ""
+    program_tool: PKOB4
+    kit_name: MPLAB® PKoB4 In-Circuit Debugger
+    product_string: CRYPTOAUTH_ARIEL
+    kit_parser_pid: 8978
+    kit_parser_version: v1.1.0
+    connection:
+      interfaceType: hid
+      vid: 1003
+      pid: 33035
+
+  EV16W43A:
+    description: PIC32CZCA90 CUltra
+    partNumber: EV16W43A
+    web_link: https://www.microchip.com/en-us/development-tool/ev16w43a
+    img: https://www.microchip.com/content/dam/mchp/mrt-dam/products/mc32/231014-mc32-photo-ev16w43a-angle-transparent.jpg
+    serial_series: AZP030000014
+    mcu_part_number: 32CZ8110CA90208
+    program_tool: PKOB4
+    kit_name:  MPLAB® PKoB4 In-Circuit Debugger
+    product_string: TPDS HID Kit Protocol
+    kit_parser_pid: 63
+    kit_parser_version: v1.1.0
+    connection:
+      interfaceType: hid
+      vid: 1240
+      pid: 63
+    devices:
+      - deviceName: PIC32CZCA90
+        partInterface:
+          interfaceType: i2c
+          address: 0xC0
+
+  EV33A17A:
+    description: PIC32CKSG01 CUltra
+    partNumber: EV33A17A
+    web_link: https://www.microchip.com/en-us/development-tool/ea14v17a
+    img: https://www.microchip.com/content/dam/mchp/mrt-dam/products/mc32/230207-mc32-ea14v17a-145x145-md.jpg
+    serial_series: DSE010000061
+    mcu_part_number: 32CK2051SG01144
+    program_tool: PKOB4
+    kit_name:  MPLAB® PKoB4 In-Circuit Debugger
+    product_string: PIC32CK_SG01_TPDS_HID
+    kit_parser_pid: 63
+    kit_parser_version: v1.1.0
+    connection:
+      interfaceType: hid
+      vid: 1240
+      pid: 63
+    devices:
+      - deviceName: PIC32CK2051SG01144
+        partInterface:
+          interfaceType: i2c
+          address: 0xC0
+
+

@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.example.org/hsmSecureFlash"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:hsmsf="http://www.example.org/hsmSecureFlash">
+
+
+
+    <complexType name="flashType">
+    	<sequence>
+    		<element name="rtlKey" type="hsmsf:aes256RawKeyType"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
+    		<element name="tamperKey" type="hsmsf:aes256RawKeyType"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
+    		<element name="flashKey" type="hsmsf:flashKeyType"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
+    		<element name="pageHeader" type="hsmsf:pageHeaderType"
+    			maxOccurs="1" minOccurs="1">
+    		</element>
+    		<element name="variableSlots" type="hsmsf:variableSlotsType"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
+    		<element name="tamperLogs" type="hsmsf:tamperLogsType"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
+    		<element name="corrupt" type="hsmsf:corruptType" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    	<anyAttribute></anyAttribute>
+    </complexType>
+
+
+
+    <complexType name="flashKeyType">
+    	<sequence>
+    		<choice>
+    			<element name="rawFlashKey" type="hsmsf:aes256RawKeyType"></element>
+    			<element name="wrappedFlashKey"
+    				type="hsmsf:aes256WrappedKeyType">
+    			</element>
+    		</choice>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="pageHeaderType">
+    	<sequence>
+    		<element name="pageSequenceNumber" maxOccurs="1"
+    			minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="65535"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="lifecycleState" maxOccurs="1"
+    			minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="open"></enumeration>
+    					<enumeration value="secure"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="secureBootConfiguration" maxOccurs="1"
+    			minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="simultaneous"></enumeration>
+    					<enumeration value="sequential"></enumeration>
+    					<enumeration value="disabled"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="endorsementKeySlot" maxOccurs="1"
+    			minOccurs="0">
+    			<simpleType>
+    				<restriction base="int">
+    					<minExclusive value="0"></minExclusive>
+    					<maxExclusive value="255"></maxExclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="endorsementCertificateSlot" maxOccurs="1"
+    			minOccurs="0">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="lastFwHashSlot" maxOccurs="1"
+    			minOccurs="0">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="secondLastFwHashSlot" maxOccurs="1"
+    			minOccurs="0">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="firmwareProtectionMetadata"
+    			type="hsmsf:firmwareProtectionMetadataType" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="firmwareRevision"
+    			type="hsmsf:firmwareRevisionType" maxOccurs="1" minOccurs="0">
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="tamperLogsType">
+    	<sequence>
+    		<element name="tamperLog" type="hsmsf:tamperLogType" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="variableSlotsType">
+    	<sequence>
+    		<element name="variableSlot" type="hsmsf:variableSlotType" maxOccurs="unbounded" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="aes256RawKeyType">
+    	<sequence>
+    		<element name="key" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="64"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="aes128RawKeyType">
+    	<sequence>
+    		<element name="key" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="32"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="aes192RawKeyType">
+    	<sequence>
+    		<element name="key" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="48"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="aesXts256RawKeyType">
+    	<sequence>
+    		<element name="key" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="128"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="aesXts128RawKeyType">
+    	<sequence>
+    		<element name="key" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="64"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="aesXts192RawKeyType">
+    	<sequence>
+    		<element name="key" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="96"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="aes256WrappedKeyType">
+    	<sequence>
+    		<element name="key">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="96"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="firmwareProtectionMetadataType">
+    	<sequence>
+    		<element name="enabled">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="on"></enumeration>
+    					<enumeration value="off"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="firmwareRevisionType">
+	    <sequence>
+	    	<element name="majorVersion">
+	    		<simpleType>
+	    			<restriction base="int">
+	    				<minInclusive value="0"></minInclusive>
+	    				<maxInclusive value="255"></maxInclusive>
+	    			</restriction>
+	    		</simpleType>
+	    	</element>
+	    	<element name="minorVersion">
+	    		<simpleType>
+	    			<restriction base="int">
+	    				<minInclusive value="0"></minInclusive>
+	    				<maxInclusive value="255"></maxInclusive>
+	    			</restriction>
+	    		</simpleType>
+	    	</element>
+	    	<element name="patchVersion">
+	    		<simpleType>
+	    			<restriction base="int">
+	    				<minInclusive value="0"></minInclusive>
+	    				<maxInclusive value="255"></maxInclusive>
+	    			</restriction>
+	    		</simpleType>
+	    	</element>
+	    	<element name="designator">
+	    		<simpleType>
+	    			<restriction base="string">
+	    				<enumeration value="prealpha"></enumeration>
+	    				<enumeration value="alpha1"></enumeration>
+	    				<enumeration value="alpha2"></enumeration>
+	    				<enumeration value="alpha3"></enumeration>
+	    				<enumeration value="alpha4"></enumeration>
+	    				<enumeration value="alpha5"></enumeration>
+	    				<enumeration value="beta"></enumeration>
+	    				<enumeration value="final"></enumeration>
+	    			</restriction>
+	    		</simpleType>
+	    	</element>
+	    	<element name="buildNumber">
+	    		<simpleType>
+	    			<restriction base="int">
+	    				<minInclusive value="0"></minInclusive>
+	    				<maxInclusive value="15"></maxInclusive>
+	    			</restriction>
+	    		</simpleType>
+	    	</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="tamperLogType">
+    	<sequence>
+    		<element name="fractionalTime">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxExclusive value="32768"></maxExclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="time" type="int"></element>
+    		<element name="log">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="2"></minLength>
+    					<maxLength value="40"></maxLength>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="variableSlotType">
+    	<sequence>
+    		<element name="header" type="hsmsf:variableSlotHeaderType"></element>
+    		<element name="validAfter" type="int"></element>
+    		<element name="validBefore" type="int"></element>
+    		<element name="data" type="hsmsf:variableSlotDataType"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="variableSlotHeaderType">
+    	<sequence>
+    		<element name="index" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="storage" type="hsmsf:slotStorageType" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="variableSlotDataType">
+    	<choice>
+    		<element name="rawKey" type="hsmsf:rawSlotType"></element>
+    		<element name="symmetricalKey"
+    			type="hsmsf:symmetricalKeyType">
+    		</element>
+    		<element name="asymmetricalKey"
+    			type="hsmsf:asymmetricalKeyType">
+    		</element>
+    		<element name="storedSignature"
+    			type="hsmsf:storedSignatureType">
+    		</element>
+    		<element name="storedIV" type="hsmsf:storedIVType"></element>
+    		<element name="rollbackData" type="hsmsf:versionType"></element>
+    	</choice>
+    </complexType>
+    
+    <complexType name="slotPermissionsType"></complexType>
+
+    <complexType name="slotStorageType">
+    	<sequence>
+    		<element name="apl" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="3"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="hsmOnly" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="storageType" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="unencrypted"></enumeration>
+    					<enumeration value="flashKeyEncrypted"></enumeration>
+    					<enumeration value="tamperKeyEncrypted"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="rawSlotType">
+    	<sequence>
+    		<element name="length" type="int"></element>
+    		<element name="data" type="hexBinary"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="symmetricalKeyType">
+    	<choice>
+    		<element name="aes" type="hsmsf:aesKeyType"></element>
+    		<element name="chacha" type="hsmsf:chachaKeyType"></element>
+    		<element name="tdes" type="hsmsf:tdesKeyType"></element>
+    		<element name="des" type="hsmsf:desKeyType"></element>
+    	</choice>
+    </complexType>
+
+    <complexType name="aesKeyType">
+    	<choice>
+    		<element name="aesEcbKey" type="hsmsf:aesEcbKeyType"></element>
+
+    		<element name="aesCbcKey" type="hsmsf:aesCbcKeyType"></element>
+    		<element name="aesCtrKey" type="hsmsf:aesCbcKeyType"></element>
+    		<element name="aesCfbKey" type="hsmsf:aesCbcKeyType"></element>
+    		<element name="aesOfbKey" type="hsmsf:aesCbcKeyType"></element>
+    		<element name="aesXtsKey" type="hsmsf:aesXtsKeyType"></element>
+    		<element name="aesGcmKey" type="hsmsf:aesGcmKeyType"></element>
+    		<element name="aesCmacKey" type="hsmsf:aesEcbKeyType"></element>
+    		<element name="aesCcmKey" type="hsmsf:aesCcmKeyType"></element>
+    	</choice>
+    </complexType>
+
+
+    <complexType name="aesKeyDataType">
+    	<choice>
+    		<element name="aes128" type="hsmsf:aes128RawKeyType"></element>
+    		<element name="aes192" type="hsmsf:aes192RawKeyType"></element>
+    		<element name="aes256" type="hsmsf:aes256RawKeyType"></element>
+    	</choice>
+    </complexType>
+
+    <complexType name="aesEcbKeyType">
+    	<sequence>
+    		<element name="key" type="hsmsf:aesKeyDataType" maxOccurs="1" minOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="aesCbcKeyType">
+    	<sequence>
+    		<element name="nvmIv" type="boolean" maxOccurs="1" minOccurs="0"></element>
+    		<element name="nvmCtx" type="boolean" maxOccurs="1" minOccurs="0"></element>
+    		<element name="key" type="hsmsf:aesKeyDataType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="iv" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="32"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="ctx" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="32"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="aesXtsKeyType">
+    	<sequence>
+    		<element name="nvmIv" type="boolean" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="nvmCtx" type="boolean" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="key" type="hsmsf:aesXtsKeyDataType" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="iv" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="32"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="ctx" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="32"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="aesGcmKeyType">
+    	<sequence>
+    		<element name="nvmIv" type="boolean" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="nvmCtx" type="boolean" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="key" type="hsmsf:aesKeyDataType" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="iv" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="24"></length>
+    					<pattern value="[0-9a-zA-Z]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="ctx" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="64"></length>
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="add" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="aesCcmKeyType">
+    	<sequence>
+    		<element name="key" type="hsmsf:aesKeyDataType" maxOccurs="1" minOccurs="1"></element>
+    		<element name="authField" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="0"></minLength>
+    					<maxLength value="32"></maxLength>
+    					<pattern value="[0-9a-fA-Z]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="nonce" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="14"></minLength>
+    					<maxLength value="26"></maxLength>
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="chachaKeyType">
+    	<choice>
+    		<element name="withAead" type="hsmsf:chachaWithAeadKeyType"></element>
+    		<element name="withoutAead"
+    			type="hsmsf:chachaWithoutAeadKeyType">
+    		</element>
+    		<element name="poly1305" type="hsmsf:chachaPoly1305KeyType"></element>
+    	</choice>
+    </complexType>
+
+    <complexType name="chachaWithAeadKeyType">
+    	<sequence>
+    		<element name="key" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="64"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="nonce" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="24"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="aad"  maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string" >
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="chachaWithoutAeadKeyType">
+    	<sequence>
+    		<element name="key" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    					<length value="64"></length>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="nonce" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="24"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="iv" type="int" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="chachaPoly1305KeyType"></complexType>
+
+    <complexType name="aesXtsKeyDataType">
+    	<choice>
+    		<element name="aes128" type="hsmsf:aesXts128RawKeyType"></element>
+    		<element name="aes192" type="hsmsf:aesXts192RawKeyType"></element>
+    		<element name="aes256" type="hsmsf:aesXts256RawKeyType"></element>
+    	</choice>
+    </complexType>
+
+    <complexType name="tdesKeyType">
+    	<sequence>
+    		<choice>
+    			<element name="ecb" type="hsmsf:tdesEcbKeyType"></element>
+    			<element name="cbc" type="hsmsf:tdesCbcKeyType"></element>
+    			<element name="cmac" type="hsmsf:tdesEcbKeyType"></element>
+    		</choice>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="desKeyDataType">
+    	<sequence>
+    		<element name="key">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="14"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="tdesEcbKeyType">
+    	<sequence>
+    		<element name="key" type="hsmsf:desKeyDataType" minOccurs="3" maxOccurs="3"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="tdesCbcKeyType">
+    	<sequence>
+    		<element name="nvmIv" type="boolean" maxOccurs="1" minOccurs="0"></element>
+    		<element name="key" type="hsmsf:desKeyDataType" minOccurs="3"
+    			maxOccurs="3">
+    		</element>
+    		<element name="iv" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="16"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="desKeyType">
+    		<choice>
+    			<element name="ecb" type="hsmsf:desEcbKeyType"></element>
+    			<element name="cbc" type="hsmsf:desCbcKeyType"></element>
+    			<element name="cmac" type="hsmsf:desEcbKeyType"></element>
+    		</choice>
+    </complexType>
+    
+    <complexType name="desEcbKeyType">
+    	<sequence>
+    		<element name="key" type="hsmsf:desKeyDataType" minOccurs="1" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="desCbcKeyType">
+    	<sequence>
+    		<element name="nvmIv" type="boolean" maxOccurs="1" minOccurs="0"></element>
+    		<element name="key" type="hsmsf:desKeyDataType" minOccurs="1"
+    			maxOccurs="1">
+    		</element>
+    		<element name="iv" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="16"></length>
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    
+
+    <complexType name="asymmetricalKeyType">
+    	<sequence>
+    		<element name="generateKey" type="hsmsf:generateKeyType" maxOccurs="1" minOccurs="0"></element>
+    	<choice>
+    		<element name="ecc" type="hsmsf:eccKeyType"></element>
+    		<element name="rsa" type="hsmsf:rsaKeyType"></element>
+    		<element name="dh" type="hsmsf:dhKeyType"></element>
+    		<element name="dsa" type="hsmsf:dsaKeyType"></element>
+    	</choice>
+    	</sequence>
+    </complexType>
+
+    <complexType name="eccKeyType">
+    	<sequence>
+    		<choice>
+				<element name="weierstrassPrime" type="hsmsf:weierstrassPrimeKeyType"></element>
+				<element name="weierstrassBinary" type="hsmsf:weierstrassBinaryKeyType"></element>
+				<element name="edwards" type="hsmsf:edwardsKeyType"></element>
+				<element name="montgomery" type="hsmsf:montgomeryKeyType"></element>
+				<element name="eddsa" type="hsmsf:eddsaKeyType"></element>
+			</choice>
+    	</sequence>
+    </complexType>
+
+    <complexType name="rsaKeyType">
+    	<sequence>
+    		<element name="size">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="RSA1024"></enumeration>
+    					<enumeration value="RSA2048"></enumeration>
+    					<enumeration value="RSA4096"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="usage" type="boolean"></element>
+    		<element name="crt" type="boolean"></element>
+    		<element name="modulusN">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="publicKey">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="privateKey" type="hsmsf:rsaPrivateKeyType">
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="dhKeyType">
+    	<sequence>
+    		<element name="domain" type="hsmsf:dhDomainType" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="publicKey">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="privateKey">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="dsaKeyType">
+    	<sequence>
+    		<element name="sizeP" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="1"></minInclusive>
+    					<maxInclusive value="127"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="sizeQ" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<maxInclusive value="15"></maxInclusive>
+    					<minInclusive value="1"></minInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="domain" type="hsmsf:dsaDomainType"
+    			maxOccurs="1" minOccurs="1">
+    		</element>
+    		<element name="publicKey" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="privateKey" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="weierstrassPrimeKeyType">
+    	<sequence>
+    		<element name="size" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="1"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="parameterA" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="0"></enumeration>
+    					<enumeration value="-3"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="usage" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="algoUsed" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="domain" type="hsmsf:weiestrassPrimeDomainType"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
+    		<element name="publicKey"
+    			type="hsmsf:weierstrassPrimePublicKeyType" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="privateKey"
+    			type="hsmsf:weierstrassPrimePrivateKeyType" maxOccurs="1" minOccurs="0">
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="weierstrassBinaryKeyType">
+    	<sequence>
+    		<element name="size" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="parameterA" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="usage" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="algoUsed" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="domain"
+    			type="hsmsf:weierstrassBinaryDomainType" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="publicKey"
+    			type="hsmsf:weierstrassBinaryPublicKeyType" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    		<element name="privateKey"
+    			type="hsmsf:weierstrassBinaryPrivateKeyType" maxOccurs="1"
+    			minOccurs="0">
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="edwardsKeyType">
+    	<sequence>
+    		<element name="size" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="usage" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="algoUsed" type="string" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="domain" type="hsmsf:edwardsDomainType"
+    			maxOccurs="1" minOccurs="1">
+    		</element>
+    		<element name="publicKey" type="hsmsf:edwardsPublicKeyType"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
+    		<element name="privateKey" type="hsmsf:edwardsPrivateKeyType" maxOccurs="1" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="montgomeryKeyType">
+    	<sequence>
+    		<element name="size" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="publicKey" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="privateKey" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="eddsaKeyType">
+    	<sequence>
+    		<element name="publicKey" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="64"></length>
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="privateKey" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="64"></length>
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="weiestrassPrimeDomainType">
+    	<sequence>
+    		<element name="modulusP" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="orderN" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="generatorGx" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="generatorGy" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="parameterA" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="parameterB" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="weierstrassPrimePublicKeyType">
+    	<sequence>
+    		<element name="x" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="y" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="weierstrassPrimePrivateKeyType">
+    	<sequence>
+    		<element name="key">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="weierstrassBinaryDomainType">
+    	<sequence>
+    		<element name="reductionPolynominal" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="orderN" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="generatorGx" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="generatorGy" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="parameterA" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="parameterB" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="weierstrassBinaryPublicKeyType">
+    	<sequence>
+    		<element name="x">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="y">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="weierstrassBinaryPrivateKeyType">
+    	<sequence>
+    		<element name="key">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="edwardsDomainType">
+    	<sequence>
+    		<element name="modulusP" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="orderN" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="generatorGx" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="generatorGy" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="parameterD" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="edwardsPublicKeyType">
+    	<sequence>
+    		<element name="x" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="y" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="edwardsPrivateKeyType">
+    	<sequence>
+    		<element name="key" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="rsaPrivateKeyType">
+    	<sequence>
+    		<choice>
+    			<element name="woCRT"
+    				type="hsmsf:rsaPrivateKeyNoCRTType">
+    			</element>
+    			<element name="wCRT" type="hsmsf:rsaPrivateKeyCRTType"></element>
+    		</choice>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="rsaPrivateKeyNoCRTType">
+    	<sequence>
+    		<element name="lambdaN" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="exponent" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="rsaPrivateKeyCRTType">
+    	<sequence>
+    		<element name="p" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="q" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="dp" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="dq" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="qMinus1ModP" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="dhDomainType">
+    	<sequence>
+    		<element name="moduleP">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="generatorG">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="dsaDomainType">
+    	<sequence>
+    		<element name="modulusP">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="modulusQ">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="generatorG">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="storedSignatureType">
+    	<sequence>
+    		<element name="type" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="md5"></enumeration>
+    					<enumeration value="sha1"></enumeration>
+    					<enumeration value="sha224"></enumeration>
+    					<enumeration value="sha256"></enumeration>
+    					<enumeration value="sha384"></enumeration>
+    					<enumeration value="sha512"></enumeration>
+    					<enumeration value="md5Hmac"></enumeration>
+    					<enumeration value="sha1Hmac"></enumeration>
+    					<enumeration value="sha224Hmac"></enumeration>
+    					<enumeration value="sha256Hmac"></enumeration>
+    					<enumeration value="sha384Hmac"></enumeration>
+    					<enumeration value="sha512Hmac"></enumeration>
+    					<enumeration value="signature"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="keySlot" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="data" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="storedIVType">
+    	<sequence>
+    		<element name="type" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="md5"></enumeration>
+    					<enumeration value="sha1"></enumeration>
+    					<enumeration value="sha224"></enumeration>
+    					<enumeration value="sha256"></enumeration>
+    					<enumeration value="sha384"></enumeration>
+    					<enumeration value="sha512"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="data">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9A-Fa-f]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+
+    <element name="flash" type="hsmsf:flashType"></element>
+
+    <complexType name="generateKeyType">
+    	<sequence>
+    		<element name="storePrivate" type="boolean"></element>
+    		<element name="storePublic" type="boolean"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="corruptType">
+    	<attribute name="pageHeader" type="boolean" default="false"></attribute>
+    	<attribute name="flashKey" type="boolean" default="false"></attribute>
+    	<attribute name="flashSessionKey" type="boolean" default="false"></attribute>
+    	<attribute name="tamperSessionKey" type="boolean" default="false"></attribute>
+    	<attribute name="unencryptedHash" type="boolean" default="false"></attribute>
+    	<attribute name="flashKeySectionHash" type="boolean" default="false"></attribute>
+    	<attribute name="tamperKeySectionHash" type="boolean" default="false"></attribute>
+    </complexType>
+
+    <complexType name="versionType">
+    	<sequence>
+    		<element name="version" type="hsmsf:firmwareRevisionType"
+    			minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="imageDesc" type="hsmsf:imageDescType"
+    			minOccurs="0" maxOccurs="1">
+    		</element>
+    		<element name="srcAddress" minOccurs="0" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="8"></length>
+    					<pattern value="[0-9a-fA-F]*"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="imageDescType">
+    	<sequence>
+    		<element name="imageType" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="HSM Firmware"></enumeration>
+    					<enumeration value="HOST Boot Image"></enumeration>
+    					<enumeration value="HOST Program Image"></enumeration>
+    					<enumeration value="Configuration Image"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="validationStage" minOccurs="0"
+    			maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="loadStage" minOccurs="0" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="imageNumber" minOccurs="0" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+</schema>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/FirmwareMetadata" xmlns:tns="http://www.example.org/FirmwareMetadata" elementFormDefault="qualified">
+
+    <element name="firmwareMetadata" type="tns:firmwareMetadataType"></element>
+    
+    <complexType name="firmwareMetadataType">
+    	<sequence>
+    		<element name="formatVersion" minOccurs="0" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="1"></minInclusive>
+    					<maxInclusive value="2"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="sequenceNumber" minOccurs="0" maxOccurs="1"
+    			type="unsignedShort" />
+    		<element name="signatureMetadata"
+    			type="tns:fwSignatureMetadataType" minOccurs="1" maxOccurs="1">
+    		</element>
+    		<element name="image" type="tns:imageType" minOccurs="1"
+    			maxOccurs="16">
+    		</element>
+    		<element name="addressOfMetadata1"  minOccurs="0"
+    			maxOccurs="1" >
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="8"></length>
+    					<pattern value="[0-9a-fA-F]*"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="addressOfMetadata2"  minOccurs="0"
+    			maxOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="8"></length>
+    					<pattern value="[0-9a-fA-F]*"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="addressOfPtrToMetadata1"  minOccurs="0"
+    			maxOccurs="1" >
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="8"></length>
+    					<pattern value="[0-9a-fA-F]*"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="addressOfPtrToMetadata2"  minOccurs="0"
+    			maxOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="8"></length>
+    					<pattern value="[0-9a-fA-F]*"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="addressVariableSlotStorage"  minOccurs="0"
+    			maxOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="8"></length>
+    					<pattern value="[0-9a-fA-F]*"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="fwSignatureMetadataType">
+    	<sequence>
+    		<element name="algorithm">
+    			<simpleType>
+    				<restriction base="string">
+						<enumeration value="Sha 1"/>
+						<enumeration value="Sha 224"/>
+						<enumeration value="Sha 256"/>
+						<enumeration value="Sha 384"/>
+						<enumeration value="Sha 512"/>
+    					<enumeration value="SHA 256 HMAC"></enumeration>
+    					<enumeration value="VSS Defined"></enumeration>
+						<enumeration value="CRC 32"/>
+    					<enumeration value="None"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="slotNumber">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="254"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="hashAlgo" type="tns:HashAlgorithm"
+    			maxOccurs="1" minOccurs="0">
+    		</element>
+			<element name="hashSlot">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="254"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+			
+    	</sequence>
+    	<attribute name="corrupt" type="boolean" default="false"></attribute>
+    </complexType>
+
+    <complexType name="imageType">
+    	<sequence>
+    		<element name="srcAddress">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="8"></length>
+    					<pattern value="[0-9a-fA-F]*"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="dstAddress">
+    			<simpleType>
+    				<restriction base="string">
+    					<length value="8"></length>
+    					<pattern value="[0-9A-Fa-f]*"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="maxSizeOfImage" type="int"></element>
+    		<element name="firmwareVersion"
+    			type="tns:firmwareVersionType">
+    		</element>
+    		<element name="imageMetaData"
+    			type="tns:imageMetaDataType">
+    		</element>
+    		<element name="encryptionMetaData"
+    			type="tns:encryptionMetaDataType">
+    		</element>
+    		<element name="signatureMetaData"
+    			type="tns:signatureMetaDataType">
+    		</element>
+    		<element name="imageFileInputPath" type="string"></element>
+    		<element name="imageFormat">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="Microchip Hex Format"></enumeration>
+    					<enumeration value="FPGA Hex Format"></enumeration>
+    					<enumeration value="Binary File"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="firmwareVersionType">
+    	<sequence>
+    		<element name="majorVersion">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="minorVersion">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="patchVersion">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="designator">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="prealpha"></enumeration>
+    					<enumeration value="alpha1"></enumeration>
+    					<enumeration value="alpha2"></enumeration>
+    					<enumeration value="alpha3"></enumeration>
+    					<enumeration value="alpha4"></enumeration>
+    					<enumeration value="alpha5"></enumeration>
+    					<enumeration value="beta"></enumeration>
+    					<enumeration value="final"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="buildNumber">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="15"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="imageMetaDataType">
+    	<sequence>
+    		<element name="type">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="HSM Firmware"></enumeration>
+    					<enumeration value="HOST Boot Image"></enumeration>
+    					<enumeration value="HOST Program Image"></enumeration>
+    					<enumeration value="Configuration Image"></enumeration>
+
+    					<enumeration value="Not Included in Firmware Metadata"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+			<element name="rollbackProtEnable" type="boolean"/>
+			<element name="validationStage" type="int"/>
+			<element name="loadStage" type="int"/>
+			<element name="rollbackProtSlot" type="int"/>
+			
+    	</sequence>
+    </complexType>
+    
+    <complexType name="encryptionMetaDataType">
+    	<sequence>
+    		<element name="encrypted" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="keyWrapped" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="keyVariableSlot" maxOccurs="1"
+    			minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="255"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="unwrappedKey" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<pattern value="[0-9a-fA-F]+"></pattern>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    	<attribute name="corruptWrappedKey" type="boolean" default="false"></attribute>
+    </complexType>
+    <complexType name="imgSlotStorageType">
+    	<sequence>
+    		<element name="apl" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="3"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="hsmOnly" type="boolean" maxOccurs="1"
+    			minOccurs="1">
+    		</element>
+    		<element name="storageType" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<enumeration value="unencrypted"></enumeration>
+    					<enumeration value="flashKeyEncrypted"></enumeration>
+    					<enumeration value="tamperKeyEncrypted"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="signatureMetaDataType">
+    	<sequence>
+    		<element name="signatureStored" type="boolean"></element>
+    		<element name="storage" type="tns:imgSlotStorageType" minOccurs="0" maxOccurs="1"></element>
+    		<element name="algorithmUsed">
+    			<simpleType>
+    				<restriction base="string">
+						<enumeration value="Sha 1"/>
+						<enumeration value="Sha 224"/>
+						<enumeration value="Sha 256"/>
+						<enumeration value="Sha 384"/>
+						<enumeration value="Sha 512"/>
+    					<enumeration value="SHA 256 HMAC"></enumeration>
+    					<enumeration value="VSS Defined"></enumeration>
+						<enumeration value="CRC 32"/>
+    					<enumeration value="None"></enumeration>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		<element name="slot" type="int"></element>
+    		<element name="hashAlgo" type="tns:HashAlgorithm" minOccurs="1" maxOccurs="1"></element>
+			<element name="hashSlot">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    					<maxInclusive value="254"></maxInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    	</sequence>
+    	<attribute name="corrupt" type="boolean" default="false"></attribute>
+    </complexType>
+
+    <simpleType name="HashAlgorithm">
+    	<restriction base="string">
+    		<enumeration value="MD5"></enumeration>
+    		<enumeration value="SHA1"></enumeration>
+    		<enumeration value="SHA224"></enumeration>
+    		<enumeration value="SHA256"></enumeration>
+    		<enumeration value="SHA384"></enumeration>
+    		<enumeration value="SHA512"></enumeration>
+    	</restriction>
+    </simpleType>
+</schema>

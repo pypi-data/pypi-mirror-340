@@ -1,0 +1,951 @@
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67238 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Started (2608d3e1) 
+	From: Mailbox Driver Queue ID (9f364311) 
+	To: Mailbox Driver Queue ID (9f364311)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67270 
+Size: 56 Type: Event 
+	Event: CSM: Initialization Complete Event ID (eb4807a4) 
+	From: Command Validator/Dispatcher Queue ID (b86d733c) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E672A8 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Started (2608d3e1) 
+	From: External DMA  Driver Queue ID (5d17cb32) 
+	To: External DMA  Driver Queue ID (5d17cb32)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E672E0 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Started (2608d3e1) 
+	From: Crypto  Driver Queue ID (24f9ebea) 
+	To: Crypto  Driver Queue ID (24f9ebea)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67318 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Started (2608d3e1) 
+	From: Auxillary Interface Driver Queue ID (27725713) 
+	To: Auxillary Interface Driver Queue ID (27725713)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67350 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Started (2608d3e1) 
+	From: Flash  Driver Queue ID (851fef1) 
+	To: Flash  Driver Queue ID (851fef1)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67388 
+Size: 56 Type: Event 
+	Event: CSM: Initialization Complete Event ID (eb4807a4) 
+	From: Flash  Driver Queue ID (851fef1) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E673C0 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Success (4be316a7) 
+	From: Flash  Driver Queue ID (851fef1) 
+	To: Flash  Driver Queue ID (851fef1)
+Size: 40 Type: Event Handled Result 
+	State Machine: PC Flash Main State Machine (e50d02b7)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Started (2608d3e1)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E673F8 
+Size: 56 Type: Event 
+	Event: CSM: Initialization Complete Event ID (eb4807a4) 
+	From: Mailbox Driver Queue ID (9f364311) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67430 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Success (4be316a7) 
+	From: Mailbox Driver Queue ID (9f364311) 
+	To: Mailbox Driver Queue ID (9f364311)
+Size: 40 Type: Event Handled Result 
+	State Machine: Mailbox Driver: State Machine Id (72b902e8)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Started (2608d3e1)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Initialization Complete Event ID (eb4807a4)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67468 
+Size: 56 Type: Event 
+	Event: CSM: Initialization Complete Event ID (eb4807a4) 
+	From: Crypto  Driver Queue ID (24f9ebea) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E674A0 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Success (4be316a7) 
+	From: Crypto  Driver Queue ID (24f9ebea) 
+	To: Crypto  Driver Queue ID (24f9ebea)
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Driver Main State Machine (3b175ed7)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Started (2608d3e1)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Mailbox Driver: State Machine Id (72b902e8)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Success (4be316a7)
+	Result: Event Handled (0)  
+Size: 40 Type: State Machine Change 
+	State Machine: Mailbox Driver: State Machine Id (72b902e8)
+	Old State: HSM Initialization State (23b26ef8)
+	New State: Mailbox Driver: Waiting for Commands State Id (8038826f)
+	Event: HSM Task Initialization Success (4be316a7)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E674D8 
+Size: 56 Type: Event 
+	Event: CSM: Initialization Complete Event ID (eb4807a4) 
+	From: External DMA  Driver Queue ID (5d17cb32) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67510 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Success (4be316a7) 
+	From: External DMA  Driver Queue ID (5d17cb32) 
+	To: External DMA  Driver Queue ID (5d17cb32)
+Size: 40 Type: Event Handled Result 
+	State Machine: External DMA Driver Main State Machine (bb849e2f)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Started (2608d3e1)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Driver Main State Machine (3b175ed7)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Success (4be316a7)
+	Result: Event Handled (0)  
+Size: 40 Type: State Machine Change 
+	State Machine: Crypto Driver Main State Machine (3b175ed7)
+	Old State: HSM Initialization State (23b26ef8)
+	New State: HSM Ready State (4bcec585)
+	Event: HSM Task Initialization Success (4be316a7)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67548 
+Size: 56 Type: Event 
+	Event: CSM: Initialization Complete Event ID (eb4807a4) 
+	From: Auxillary Interface Driver Queue ID (27725713) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67580 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Success (4be316a7) 
+	From: Auxillary Interface Driver Queue ID (27725713) 
+	To: Auxillary Interface Driver Queue ID (27725713)
+Size: 40 Type: Event Handled Result 
+	State Machine: PC Auxilary Interface Driver Main State Machine (43002543)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Started (2608d3e1)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: PC Flash Main State Machine (e50d02b7)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Success (4be316a7)
+	Result: Event Handled (0)  
+Size: 40 Type: State Machine Change 
+	State Machine: PC Flash Main State Machine (e50d02b7)
+	Old State: HSM Initialization State (23b26ef8)
+	New State: HSM Ready State (4bcec585)
+	Event: HSM Task Initialization Success (4be316a7)  
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Initialization Complete Event ID (eb4807a4)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: PC Auxilary Interface Driver Main State Machine (43002543)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Success (4be316a7)
+	Result: Event Handled (0)  
+Size: 40 Type: State Machine Change 
+	State Machine: PC Auxilary Interface Driver Main State Machine (43002543)
+	Old State: HSM Initialization State (23b26ef8)
+	New State: HSM Ready State (4bcec585)
+	Event: HSM Task Initialization Success (4be316a7)  
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Initialization Complete Event ID (eb4807a4)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: External DMA Driver Main State Machine (bb849e2f)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Success (4be316a7)
+	Result: Event Handled (0)  
+Size: 40 Type: State Machine Change 
+	State Machine: External DMA Driver Main State Machine (bb849e2f)
+	Old State: HSM Initialization State (23b26ef8)
+	New State: HSM Ready State (4bcec585)
+	Event: HSM Task Initialization Success (4be316a7)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E675B8 
+Size: 56 Type: Event 
+	Event: Auxiliary Interface Driver: Initialization Done event id (1ab2d281) 
+	From: Auxillary Interface Driver Queue ID (27725713) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Initialization Complete Event ID (eb4807a4)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Wait for Auxilary Interface Initialization State ID (b6f5a27)
+	Event: Secure Storage Manager: Init state: Check for Token State ID (1ab2d281)
+	Result: Unknown Result (ed2da5c1)  
+Size: 40 Type: State Machine Change 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Old State: Secure Storage Manager: Init state: Wait for Auxilary Interface Initialization State ID (b6f5a27)
+	New State: Secure Storage Manager: Init state: Check for Token State ID (ed2da5c1)
+	Event: Auxiliary Interface Driver: Initialization Done event id (1ab2d281)  
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Initialization Complete Event ID (eb4807a4)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: CheckTokenHdlr: Init: Allocate message to auxint to lock the memory location (5be9e5a9)
+	Location: 0x00E67350 
+Size: 56 Type: Event 
+	Event: Auxiliary Interface Driver: Set the host offset event id (f63b67ff) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: Auxillary Interface Driver Queue ID (27725713)
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: Auxiliary Interface Driver: Initialization Done event id (1ab2d281)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Initialization Complete Event ID (eb4807a4)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Allocate event to reply to a lock address Request (d107f783)
+	Location: 0x00E67238 
+Size: 56 Type: Event 
+	Event: Auxiliary Interface Driver: Host offset has been locked event id (90088a0a) 
+	From: Auxillary Interface Driver Queue ID (27725713) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: PC Auxilary Interface Driver Main State Machine (43002543)
+	Current State: HSM Ready State (4bcec585)
+	Event: Auxiliary Interface Driver: Set the host offset event id (f63b67ff)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Check for Token State ID (ed2da5c1)
+	Event: Secure Storage Manager: Init state: Wait for Auxilary Interface Lock Address State ID (90088a0a)
+	Result: Unknown Result (b45bcdf6)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: CheckTokenHdlr: Init: Allocate message to auxint to lock the memory location (5be9e5a9)
+	Location: 0x00E67270 
+Size: 56 Type: Event 
+	Event: Auxiliary Interface Driver: Unlock the host address event id (41b23af4) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: Auxillary Interface Driver Queue ID (27725713)
+Size: 40 Type: State Machine Change 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Old State: Secure Storage Manager: Init state: Check for Token State ID (ed2da5c1)
+	New State: Secure Storage Manager: Init state: Wait for Auxilary Interface Lock Address State ID (b45bcdf6)
+	Event: Auxiliary Interface Driver: Host offset has been locked event id (90088a0a)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Allocate event to reply to a lock address Request (d107f783)
+	Location: 0x00E672E0 
+Size: 56 Type: Event 
+	Event: Auxiliary Interface Driver: The host address has been unlocked event id (ac391a9) 
+	From: Auxillary Interface Driver Queue ID (27725713) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: PC Auxilary Interface Driver Main State Machine (43002543)
+	Current State: HSM Ready State (4bcec585)
+	Event: Auxiliary Interface Driver: Unlock the host address event id (41b23af4)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Aux Interface: Init: Allocate message to auxint to lock the memory location (de9be869)
+	Location: 0x00E67430 
+Size: 56 Type: Event 
+	Event: Auxiliary Interface Driver: Set the host offset event id (f63b67ff) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: Auxillary Interface Driver Queue ID (27725713)
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: Auxiliary Interface Driver: Host offset has been locked event id (90088a0a)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Allocate event to reply to a lock address Request (d107f783)
+	Location: 0x00E672A8 
+Size: 56 Type: Event 
+	Event: Auxiliary Interface Driver: Host offset has been locked event id (90088a0a) 
+	From: Auxillary Interface Driver Queue ID (27725713) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: PC Auxilary Interface Driver Main State Machine (43002543)
+	Current State: HSM Ready State (4bcec585)
+	Event: Auxiliary Interface Driver: Set the host offset event id (f63b67ff)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Wait for Auxilary Interface Lock Address State ID (b45bcdf6)
+	Event: Auxiliary Interface Driver: The host address has been unlocked event id (ac391a9)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: Auxiliary Interface Driver: The host address has been unlocked event id (ac391a9)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Wait for Auxilary Interface Lock Address State ID (b45bcdf6)
+	Event: Auxiliary Interface Driver: Host offset has been locked event id (90088a0a)
+	Result: Event Handled (0)  
+Size: 40 Type: State Machine Change 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Old State: Secure Storage Manager: Init state: Wait for Auxilary Interface Lock Address State ID (b45bcdf6)
+	New State: Secure Storage Manager: Init state: Wait for Page Header Hash State ID (7b01dc61)
+	Event: Auxiliary Interface Driver: Host offset has been locked event id (90088a0a)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: Data Event Memory Block Allocator (24b78f1c)
+	Reason: Unknown Reason (0)
+	Location: 0x00E675F8 
+Size: 72 Type: Event 
+	Event: Crypto Driver: Hash Block Event Id (673a99ba) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: Crypto  Driver Queue ID (24f9ebea)
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: Auxiliary Interface Driver: Host offset has been locked event id (90088a0a)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Event Message, Interrupt Received for the Crypto DMA (68d56471)
+	Location: 0x00E674A0 
+Size: 56 Type: Event 
+	Event: EIC Interrupt Occurred Event (f53f6fae) 
+	From: Crypto  Driver Queue ID (24f9ebea) 
+	To: Crypto  Driver Queue ID (24f9ebea)
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Current State: Crypto Ready State, Wait state. (f0f037d0)
+	Event: Crypto Ready State.  Crypto DMA has been started (673a99ba)
+	Result: Unknown Result (f457feb2)  
+Size: 40 Type: State Machine Change 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Old State: Crypto Ready State, Wait state. (f0f037d0)
+	New State: Crypto Ready State, For Crypto DMA to Complete State. (1ad4dd91)
+	Event: Crypto Driver: Hash Block Event Id (673a99ba)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Driver Main State Machine (3b175ed7)
+	Current State: HSM Ready State (4bcec585)
+	Event: Crypto Driver: Hash Block Event Id (673a99ba)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Allocate Event to move from crypto config state to wait for dma to be done state (1426a926)
+	Location: 0x00E67318 
+Size: 56 Type: Event 
+	Event: Crypto Driver: Hash Block Complete Event Id (d7b8189) 
+	From: Crypto  Driver Queue ID (24f9ebea) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Current State: Crypto Ready State, For Crypto DMA to Complete State. (1ad4dd91)
+	Event: Crypto Ready State.  Crypto DMA has completed (f53f6fae)
+	Result: Unknown Result (af0831fa)  
+Size: 40 Type: State Machine Change 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Old State: Crypto Ready State, For Crypto DMA to Complete State. (1ad4dd91)
+	New State: Crypto Ready State, Wait state. (f0f037d0)
+	Event: EIC Interrupt Occurred Event (f53f6fae)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E673C0 
+Size: 56 Type: Event 
+	Event: Auxiliary Interface Driver: Unlock the host address event id (41b23af4) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: Auxillary Interface Driver Queue ID (27725713)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: Data Event Memory Block Allocator (24b78f1c)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67650 
+Size: 64 Type: Event 
+	Event: CSM: Set Lifecycle State Event ID (8b2d4e96) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: Data Event Memory Block Allocator (24b78f1c)
+	Reason: Unknown Reason (0)
+	Location: 0x00E676A8 
+Size: 64 Type: Event 
+	Event: CSM: Set Secure Boot State Event ID (17d83127) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Wait for Page Header Hash State ID (7b01dc61)
+	Event: Secure Storage Manager: Init state: Need the Hash of the Unencrypted Segment Calculated Result (d7b8189)
+	Result: Unknown Result (c0445d0d)  
+Size: 40 Type: State Machine Change 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Old State: Secure Storage Manager: Init state: Wait for Page Header Hash State ID (7b01dc61)
+	New State: Secure Storage Manager: Init state: Wait Unencrypted Segment Hash State ID (ece7e9ca)
+	Event: Crypto Driver: Hash Block Complete Event Id (d7b8189)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67510 
+Size: 56 Type: Event 
+	Event: CSM: Lifecycle State Set Event ID (1f32a956) 
+	From: CSM Driver Queue ID (143057b8) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Driver Main State Machine (3b175ed7)
+	Current State: HSM Ready State (4bcec585)
+	Event: EIC Interrupt Occurred Event (f53f6fae)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Set Lifecycle State Event ID (8b2d4e96)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: Data Event Memory Block Allocator (24b78f1c)
+	Reason: Unknown Reason (0)
+	Location: 0x00E675F8 
+Size: 72 Type: Event 
+	Event: Crypto Driver: Hash Block Event Id (673a99ba) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: Crypto  Driver Queue ID (24f9ebea)
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: Crypto Driver: Hash Block Complete Event Id (d7b8189)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Allocate event to reply to a lock address Request (d107f783)
+	Location: 0x00E67388 
+Size: 56 Type: Event 
+	Event: Auxiliary Interface Driver: The host address has been unlocked event id (ac391a9) 
+	From: Auxillary Interface Driver Queue ID (27725713) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: PC Auxilary Interface Driver Main State Machine (43002543)
+	Current State: HSM Ready State (4bcec585)
+	Event: Auxiliary Interface Driver: Unlock the host address event id (41b23af4)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67580 
+Size: 56 Type: Event 
+	Event: CSM: Secure Boot State Set Event ID (8a477cdb) 
+	From: CSM Driver Queue ID (143057b8) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Set Secure Boot State Event ID (17d83127)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Wait Unencrypted Segment Hash State ID (ece7e9ca)
+	Event: CSM: Lifecycle State Set Event ID (1f32a956)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Event Message, Interrupt Received for the Crypto DMA (68d56471)
+	Location: 0x00E673F8 
+Size: 56 Type: Event 
+	Event: EIC Interrupt Occurred Event (f53f6fae) 
+	From: Crypto  Driver Queue ID (24f9ebea) 
+	To: Crypto  Driver Queue ID (24f9ebea)
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Current State: Crypto Ready State, Wait state. (f0f037d0)
+	Event: Crypto Ready State.  Crypto DMA has been started (673a99ba)
+	Result: Unknown Result (f457feb2)  
+Size: 40 Type: State Machine Change 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Old State: Crypto Ready State, Wait state. (f0f037d0)
+	New State: Crypto Ready State, For Crypto DMA to Complete State. (1ad4dd91)
+	Event: Crypto Driver: Hash Block Event Id (673a99ba)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Lifecycle State Set Event ID (1f32a956)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Wait Unencrypted Segment Hash State ID (ece7e9ca)
+	Event: Auxiliary Interface Driver: The host address has been unlocked event id (ac391a9)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Driver Main State Machine (3b175ed7)
+	Current State: HSM Ready State (4bcec585)
+	Event: Crypto Driver: Hash Block Event Id (673a99ba)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Allocate Event to move from crypto config state to wait for dma to be done state (1426a926)
+	Location: 0x00E67468 
+Size: 56 Type: Event 
+	Event: Crypto Driver: Hash Block Complete Event Id (d7b8189) 
+	From: Crypto  Driver Queue ID (24f9ebea) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Current State: Crypto Ready State, For Crypto DMA to Complete State. (1ad4dd91)
+	Event: Crypto Ready State.  Crypto DMA has completed (f53f6fae)
+	Result: Unknown Result (af0831fa)  
+Size: 40 Type: State Machine Change 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Old State: Crypto Ready State, For Crypto DMA to Complete State. (1ad4dd91)
+	New State: Crypto Ready State, Wait state. (f0f037d0)
+	Event: EIC Interrupt Occurred Event (f53f6fae)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: Auxiliary Interface Driver: The host address has been unlocked event id (ac391a9)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Driver Main State Machine (3b175ed7)
+	Current State: HSM Ready State (4bcec585)
+	Event: EIC Interrupt Occurred Event (f53f6fae)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Wait Unencrypted Segment Hash State ID (ece7e9ca)
+	Event: CSM: Secure Boot State Set Event ID (8a477cdb)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Secure Boot State Set Event ID (8a477cdb)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Wait Unencrypted Segment Hash State ID (ece7e9ca)
+	Event: Secure Storage Manager: Init state: All keys have been decrypted, ready to load (d7b8189)
+	Result: Unknown Result (2429e3c8)  
+Size: 40 Type: State Machine Change 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Old State: Secure Storage Manager: Init state: Wait Unencrypted Segment Hash State ID (ece7e9ca)
+	New State: Secure Storage Manager: Init state: Load Keys State ID (493e74ef)
+	Event: Crypto Driver: Hash Block Complete Event Id (d7b8189)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 40 Type: Memory Allocation Fail 
+	Who: Unknown Process (0)
+	Category: Key Descriptor Memory Category (97019cb0)
+	Reason: Allocating key space (d98fd17c)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E674D8 
+Size: 56 Type: Event 
+	Event: HSM Task Enter Secure Boot State (ead52500) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: Crypto Driver: Hash Block Complete Event Id (d7b8189)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager: Init state: Sub State Machine ID (f0212d6e)
+	Current State: Secure Storage Manager: Init state: Load Keys State ID (493e74ef)
+	Event: HSM Task Enter Secure Boot State (ead52500)
+	Result: Event Handled (0)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Enter Secure Boot State (ead52500)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E675B8 
+Size: 56 Type: Event 
+	Event: CSM: Initialization Complete Event ID (eb4807a4) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 40 Type: State Machine Change 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Old State: HSM Initialization State (23b26ef8)
+	New State: HSM Secure Boot Processing State (4da83b1e)
+	Event: HSM Task Enter Secure Boot State (ead52500)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67548 
+Size: 56 Type: Event 
+	Event: HSM Task Initialization Success (4be316a7) 
+	From: CSM Driver Queue ID (143057b8) 
+	To: CSM Driver Queue ID (143057b8)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Unknown Reason (0)
+	Location: 0x00E67350 
+Size: 56 Type: Event 
+	Event: HSM Task Enter Secure Boot State (ead52500) 
+	From: CSM Driver Queue ID (143057b8) 
+	To: Command Validator/Dispatcher Queue ID (b86d733c)
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: CSM: Initialization Complete Event ID (eb4807a4)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: Data Event Memory Block Allocator (24b78f1c)
+	Reason: Unknown Reason (69cc7cd7)
+	Location: 0x00E67650 
+Size: 64 Type: Event 
+	Event: Set up the External DMA Input in direct mode Event Id (b34b690c) 
+	From: Unknown Queue (deff401b) 
+	To: External DMA  Driver Queue ID (5d17cb32)
+Size: 40 Type: Event Handled Result 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Initialization Success (4be316a7)
+	Result: Event Handled (0)  
+Size: 40 Type: State Machine Change 
+	State Machine: CSM Driver Main State Machine (c8583b2d)
+	Old State: HSM Initialization State (23b26ef8)
+	New State: HSM Ready State (4bcec585)
+	Event: HSM Task Initialization Success (4be316a7)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: Data Event Memory Block Allocator (24b78f1c)
+	Reason: Unknown Reason (af452303)
+	Location: 0x00E676A8 
+Size: 40 Type: Event Handled Result 
+	State Machine: Command Validator / Dispatcher Main State Machine (f9836403)
+	Current State: HSM Initialization State (23b26ef8)
+	Event: HSM Task Enter Secure Boot State (ead52500)
+	Result: Event Handled (0)  
+Size: 40 Type: State Machine Change 
+	State Machine: Command Validator / Dispatcher Main State Machine (f9836403)
+	Old State: HSM Initialization State (23b26ef8)
+	New State: HSM Secure Boot Processing State (4da83b1e)
+	Event: HSM Task Enter Secure Boot State (ead52500)  
+Size: 60 Type: Event 
+	Event: External DMA Input in direct mode configured Event Id (6cd9fb06) 
+	From: External DMA  Driver Queue ID (5d17cb32) 
+	To: Unknown Queue (deff401b)
+Size: 40 Type: Event Handled Result 
+	State Machine: External DMA Driver Main State Machine (bb849e2f)
+	Current State: HSM Ready State (4bcec585)
+	Event: Set up the External DMA Input in direct mode Event Id (b34b690c)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: Data Event Memory Block Allocator (24b78f1c)
+	Reason: Unknown Reason (37c8b8f1)
+	Location: 0x00E675F8 
+Size: 72 Type: Event 
+	Event: Crypto Driver: Hash Block Event Id (673a99ba) 
+	From: Secure Storage Manager Queue ID (c83fbb6e) 
+	To: Crypto  Driver Queue ID (24f9ebea)
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Event Message, Interrupt Received for the Crypto DMA (68d56471)
+	Location: 0x00E67270 
+Size: 56 Type: Event 
+	Event: EIC Interrupt Occurred Event (f53f6fae) 
+	From: Crypto  Driver Queue ID (24f9ebea) 
+	To: Crypto  Driver Queue ID (24f9ebea)
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Current State: Crypto Ready State, Wait state. (f0f037d0)
+	Event: Crypto Ready State.  Crypto DMA has been started (673a99ba)
+	Result: Unknown Result (f457feb2)  
+Size: 40 Type: State Machine Change 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Old State: Crypto Ready State, Wait state. (f0f037d0)
+	New State: Crypto Ready State, For Crypto DMA to Complete State. (1ad4dd91)
+	Event: Crypto Driver: Hash Block Event Id (673a99ba)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Driver Main State Machine (3b175ed7)
+	Current State: HSM Ready State (4bcec585)
+	Event: Crypto Driver: Hash Block Event Id (673a99ba)
+	Result: Event Handled (0)  
+Size: 48 Type: Memory Allocation Success 
+	Who: Unknown Process (0)
+	Category: Events Memory Category (35ee6dc9)
+	Allocator: No Data Event Memory Block Allocator (369385dd)
+	Reason: Allocate Event to move from crypto config state to wait for dma to be done state (1426a926)
+	Location: 0x00E67238 
+Size: 56 Type: Event 
+	Event: Crypto Driver: Hash Block Complete Event Id (d7b8189) 
+	From: Crypto  Driver Queue ID (24f9ebea) 
+	To: Secure Storage Manager Queue ID (c83fbb6e)
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Current State: Crypto Ready State, For Crypto DMA to Complete State. (1ad4dd91)
+	Event: Crypto Ready State.  Crypto DMA has completed (f53f6fae)
+	Result: Unknown Result (af0831fa)  
+Size: 40 Type: State Machine Change 
+	State Machine: Crypto Ready State.  State Machine (2fa30df4)
+	Old State: Crypto Ready State, For Crypto DMA to Complete State. (1ad4dd91)
+	New State: Crypto Ready State, Wait state. (f0f037d0)
+	Event: EIC Interrupt Occurred Event (f53f6fae)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Secure Storage Manager Main State Machine (85b49463)
+	Current State: HSM Secure Boot Processing State (4da83b1e)
+	Event: Crypto Driver: Hash Block Complete Event Id (d7b8189)
+	Result: Event Not Handled (1)  
+Size: 40 Type: Event Handled Result 
+	State Machine: Crypto Driver Main State Machine (3b175ed7)
+	Current State: HSM Ready State (4bcec585)
+	Event: EIC Interrupt Occurred Event (f53f6fae)
+	Result: Event Handled (0)  
+Size: 40 Type: Unknown log type 

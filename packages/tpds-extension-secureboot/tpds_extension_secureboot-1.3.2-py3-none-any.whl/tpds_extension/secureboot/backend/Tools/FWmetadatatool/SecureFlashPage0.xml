@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<hsmsf:flash
+	xmlns:hsmsf="http://www.example.org/hsmSecureFlash"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/hsmSecureFlash hsmSecureFlash.xsd ">
+	<hsmsf:rtlKey>
+		<hsmsf:key>a22bc3dfc36315f9d01ca67249916428a01e86aea9094b81609995a0f03f8a89</hsmsf:key>
+	</hsmsf:rtlKey>
+	<hsmsf:tamperKey>
+		<hsmsf:key>19f3d83c08eafd29178449e36cee6ac3bcd8e71f139c3b7e7b0fdbe1d82477d0</hsmsf:key>
+	</hsmsf:tamperKey>
+	<hsmsf:flashKey>
+		<hsmsf:rawFlashKey>
+			<hsmsf:key>f1306072225f4424d5ff428a5df68e3fb7a202f45360f2a8a858040c1239a617</hsmsf:key>
+		</hsmsf:rawFlashKey>
+	</hsmsf:flashKey>
+	<hsmsf:pageHeader>
+		<hsmsf:pageSequenceNumber>19612</hsmsf:pageSequenceNumber>
+		<hsmsf:lifecycleState>open</hsmsf:lifecycleState>
+		<hsmsf:secureBootConfiguration>disabled</hsmsf:secureBootConfiguration>
+		<hsmsf:lastFwHashSlot>219</hsmsf:lastFwHashSlot>
+		<hsmsf:secondLastFwHashSlot>86</hsmsf:secondLastFwHashSlot>
+		<hsmsf:firmwareProtectionMetadata>
+			<hsmsf:enabled>off</hsmsf:enabled>
+		</hsmsf:firmwareProtectionMetadata>
+		<hsmsf:firmwareRevision>
+			<hsmsf:majorVersion>156</hsmsf:majorVersion>
+			<hsmsf:minorVersion>19</hsmsf:minorVersion>
+			<hsmsf:patchVersion>224</hsmsf:patchVersion>
+			<hsmsf:designator>alpha3</hsmsf:designator>
+			<hsmsf:buildNumber>5</hsmsf:buildNumber>
+		</hsmsf:firmwareRevision>
+	</hsmsf:pageHeader>
+	<hsmsf:variableSlots>
+		<hsmsf:variableSlot>
+			<hsmsf:header>
+				<hsmsf:index>5</hsmsf:index>
+				<hsmsf:storage>
+					<hsmsf:apl>3</hsmsf:apl>
+					<hsmsf:hsmOnly>1</hsmsf:hsmOnly>
+					<hsmsf:storageType>unencrypted</hsmsf:storageType>
+				</hsmsf:storage>
+			</hsmsf:header>
+			<hsmsf:validAfter>2014137357</hsmsf:validAfter>
+			<hsmsf:validBefore>1754944968</hsmsf:validBefore>
+			<hsmsf:data>
+				<hsmsf:asymmetricalKey>
+					<hsmsf:generateKey>
+						<hsmsf:storePrivate>false</hsmsf:storePrivate>
+						<hsmsf:storePublic>true</hsmsf:storePublic>
+					</hsmsf:generateKey>
+					<hsmsf:ecc>
+						<hsmsf:weierstrassPrime>
+							<hsmsf:size>32</hsmsf:size>
+							<hsmsf:usage>true</hsmsf:usage>
+							<hsmsf:algoUsed>false</hsmsf:algoUsed>
+							<hsmsf:privateKey>
+								<hsmsf:key>612e833b29170a92784c574271b5ac4ecc99902c117e226389aa7f02629f0afb</hsmsf:key>
+							</hsmsf:privateKey>
+						</hsmsf:weierstrassPrime>
+					</hsmsf:ecc>
+				</hsmsf:asymmetricalKey>
+			</hsmsf:data>
+		</hsmsf:variableSlot>
+	</hsmsf:variableSlots>
+	<hsmsf:corrupt flashKey="false" flashKeySectionHash="false" flashSessionKey="false" pageHeader="false" tamperKeySectionHash="false" tamperSessionKey="false" unencryptedHash="false"/>
+</hsmsf:flash>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tns:firmwareMetadata xmlns:tns="http://www.example.org/FirmwareMetadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/FirmwareMetadata FirmwareMetadata.xsd ">
+  <tns:formatVersion>1</tns:formatVersion>
+  <tns:sequenceNumber>1</tns:sequenceNumber>
+  <tns:signatureMetadata corrupt="false">
+    <tns:algorithm>VSS Defined</tns:algorithm>
+    <tns:slotNumber>5</tns:slotNumber>
+    <tns:hashAlgo>SHA384</tns:hashAlgo>
+    <tns:hashSlot>0</tns:hashSlot>
+  </tns:signatureMetadata>
+  <tns:image>  
+    <tns:srcAddress>0c0e0000</tns:srcAddress>
+    <tns:dstAddress>10000000</tns:dstAddress>
+    <tns:maxSizeOfImage>122880</tns:maxSizeOfImage>
+    <tns:firmwareVersion>
+      <tns:majorVersion>0</tns:majorVersion>
+      <tns:minorVersion>0</tns:minorVersion>
+      <tns:patchVersion>0</tns:patchVersion>
+      <tns:designator>prealpha</tns:designator>
+      <tns:buildNumber>0</tns:buildNumber>
+    </tns:firmwareVersion>
+    <tns:imageMetaData>
+      <tns:type>HSM Firmware</tns:type>
+      <tns:rollbackProtEnable>false</tns:rollbackProtEnable>
+      <tns:validationStage>0</tns:validationStage>
+      <tns:loadStage>0</tns:loadStage>
+      <tns:rollbackProtSlot>0</tns:rollbackProtSlot>
+    </tns:imageMetaData>
+    <tns:encryptionMetaData corruptWrappedKey="false">
+      <tns:encrypted>false</tns:encrypted>
+      <tns:keyWrapped>false</tns:keyWrapped>
+      <tns:keyVariableSlot>0</tns:keyVariableSlot>
+      <tns:unwrappedKey>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</tns:unwrappedKey>
+    </tns:encryptionMetaData>
+    <tns:signatureMetaData corrupt="false">
+      <tns:signatureStored>false</tns:signatureStored>
+      <tns:storage>
+        <tns:apl>0</tns:apl>
+        <tns:hsmOnly>true</tns:hsmOnly>
+        <tns:storageType>unencrypted</tns:storageType>
+      </tns:storage>
+      <tns:algorithmUsed>Sha 384</tns:algorithmUsed>
+      <tns:slot>0</tns:slot>
+      <tns:hashAlgo>MD5</tns:hashAlgo>
+      <tns:hashSlot>0</tns:hashSlot>
+    </tns:signatureMetaData>
+    <tns:imageFileInputPath>C:\Users\C20616\.trustplatform\pic32cz_ca90_secure_boot\HSM_pic32cksg01.hex</tns:imageFileInputPath>
+    <tns:imageFormat>Microchip Hex Format</tns:imageFormat>
+  </tns:image>
+  <tns:image>
+    <tns:srcAddress>0C000000</tns:srcAddress>
+    <tns:dstAddress>0C000000</tns:dstAddress>
+    <tns:maxSizeOfImage>102400</tns:maxSizeOfImage>
+    <tns:firmwareVersion>
+      <tns:majorVersion>0</tns:majorVersion>
+      <tns:minorVersion>0</tns:minorVersion>
+      <tns:patchVersion>0</tns:patchVersion>
+      <tns:designator>prealpha</tns:designator>
+      <tns:buildNumber>0</tns:buildNumber>
+    </tns:firmwareVersion>
+    <tns:imageMetaData>
+      <tns:type>HOST Program Image</tns:type>
+      <tns:rollbackProtEnable>false</tns:rollbackProtEnable>
+      <tns:validationStage>0</tns:validationStage>
+      <tns:loadStage>0</tns:loadStage>
+      <tns:rollbackProtSlot>0</tns:rollbackProtSlot>
+    </tns:imageMetaData>
+    <tns:encryptionMetaData corruptWrappedKey="false">
+      <tns:encrypted>false</tns:encrypted>
+      <tns:keyWrapped>false</tns:keyWrapped>
+      <tns:keyVariableSlot>0</tns:keyVariableSlot>
+      <tns:unwrappedKey>000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</tns:unwrappedKey>
+    </tns:encryptionMetaData>
+    <tns:signatureMetaData corrupt="false">
+      <tns:signatureStored>false</tns:signatureStored>
+      <tns:storage>
+        <tns:apl>0</tns:apl>
+        <tns:hsmOnly>true</tns:hsmOnly>
+        <tns:storageType>unencrypted</tns:storageType>
+      </tns:storage>
+      <tns:algorithmUsed>Sha 384</tns:algorithmUsed>
+      <tns:slot>0</tns:slot>
+      <tns:hashAlgo>MD5</tns:hashAlgo>
+      <tns:hashSlot>0</tns:hashSlot>
+    </tns:signatureMetaData>
+    <tns:imageFileInputPath>C:/Users/C20616/.trustplatform/pic32cz_ca90_secure_boot/led_app_pic32cksg01.hex</tns:imageFileInputPath>
+	
+
+    <tns:imageFormat>Microchip Hex Format</tns:imageFormat>
+  </tns:image>
+
+  <tns:addressOfMetadata1>0c0df800</tns:addressOfMetadata1>
+  <tns:addressOfMetadata2>0c005000</tns:addressOfMetadata2>
+  <tns:addressOfPtrToMetadata1>0a000080</tns:addressOfPtrToMetadata1>
+  <tns:addressOfPtrToMetadata2>0a0000a0</tns:addressOfPtrToMetadata2>
+  
+  
+</tns:firmwareMetadata>
