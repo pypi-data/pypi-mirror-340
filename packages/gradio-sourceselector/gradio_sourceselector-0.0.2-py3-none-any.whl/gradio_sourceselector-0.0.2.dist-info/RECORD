@@ -1,0 +1,10 @@
+gradio_sourceselector/__init__.py,sha256=y7CMEKR4SbSC4wuTdr6zXMga8sFNqIcNOhbd4rJXnq8,78
+gradio_sourceselector/sourceselector.py,sha256=CUV_gvYEUavtqMpBPE6VywQYS1gEGTcjuxgq4eqKEPg,9422
+gradio_sourceselector/sourceselector.pyi,sha256=lMwWWxKPTBbjI5ql5IiBjnPnzdbiwEgSEBA9j8HCC8A,43893
+gradio_sourceselector/templates/component/index.js,sha256=EiYRnZ4fQ9OkJCGfDNR82KTp8tgCovcyW8YBnYofBzs,133748
+gradio_sourceselector/templates/component/style.css,sha256=2h5suE6XPHDz0IxY-g1ISBVxTeQb-9fHrYZYS31CEMw,15678
+gradio_sourceselector/templates/example/index.js,sha256=whKsI951dwyVmbuLHWfYNUVhC04bK9_Hm6icZVZfpvk,1723
+gradio_sourceselector/templates/example/style.css,sha256=Aj4k-S41TV83pot-J9j9Fi2UonrXHFC1Jl4Zb1xaYo4,61
+gradio_sourceselector-0.0.2.dist-info/METADATA,sha256=-NC3W5QC-3JdCaPtVxFzF4dkTvihopb4Ud_HTljWKb4,10863
+gradio_sourceselector-0.0.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gradio_sourceselector-0.0.2.dist-info/RECORD,,
