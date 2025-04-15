@@ -1,0 +1,16 @@
+qas/__init__.py,sha256=_Q-JCdSddo3GroPNqhORptBmzTQ7WfBbHtxcsu7c5FY,439
+qas/basic_details.py,sha256=9hn3fXCbQIg5nEURELYDObL5NI5vj51UOmeG6RV3s-0,1310
+qas/company_name.py,sha256=upe_eXjdIlp2chpwKI_MPkno0At6zqy6v6PWadnMv-E,2662
+qas/constants.py,sha256=QaWUnMX4PqEJfjfLPgWkzXaFVeajU7_33xv48xy8IhU,1389
+qas/designation.py,sha256=s0QDApspZ95MzIj6YCiESe81KNk9JkebOtuyR_GKtxw,636
+qas/education.py,sha256=H-C0IL-aXgpcB03J-7wMskXYFAJ1yZoEtRkkS7WykTk,772
+qas/get_context.py,sha256=D3BSEpoHe1hZUSd8hyu4V191iDELBZ33F2VNcEH3m0Q,1699
+qas/llm.py,sha256=eZFfpcjwsff-lh4lHFetTn28KTC6ti6vkr3mQAn1ptY,3032
+qas/nlp.py,sha256=RjaMSq9sSZndJlqndKlP44Faju6BWa6Xv0mmRyAh4u0,2142
+qas/skills.py,sha256=wDWeRRfwZzkSgyli9iGVsrQe7EDlTJY7nlk5yGpevz4,822
+qas/test.py,sha256=UgfT1kgPtJz3vkT3qLu9Cu0EjcBbq337qbP7ksf2ll8,1248
+qasi-0.1.4.dist-info/licenses/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qasi-0.1.4.dist-info/METADATA,sha256=w-iiQaJyAtFHFWu5GBieBJVYRE_Z5y5Wl390f2ghhZY,998
+qasi-0.1.4.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+qasi-0.1.4.dist-info/top_level.txt,sha256=rTGKtYGKZSaFW8XxTi9wgLMOmySp1zc5IV1AF8Sw9vc,4
+qasi-0.1.4.dist-info/RECORD,,
