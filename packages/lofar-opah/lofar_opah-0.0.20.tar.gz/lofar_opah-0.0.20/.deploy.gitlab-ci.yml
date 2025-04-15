@@ -1,0 +1,65 @@
+variables:
+  STATION: "LOFAR station to deploy on"
+
+stages:
+  - render
+  - deploy
+
+.components:
+  parallel:
+    matrix:
+      - COMPONENT:
+          - grafana-rpc-server
+          - control-restapi-server
+
+render_levant:
+  extends: .components
+  stage: deploy
+  image:
+    name: hashicorp/levant
+    entrypoint: [ "" ]
+  script:
+    - |
+      levant render \
+        -var image_tag="${CI_COMMIT_REF_SLUG}" \
+        -var station="${STATION}" \
+        infra/jobs/station/${COMPONENT}.levant.nomad > ${STATION}-${COMPONENT}.nomad
+
+      # make sure all variables are filled in,
+      # see also https://github.com/hashicorp/levant/pull/308
+      ! fgrep "<no value>" ${STATION}-${COMPONENT}.nomad
+  artifacts:
+    paths:
+      - ${STATION}-${COMPONENT}.nomad
+
+deploy_nomad:
+  extends: .components
+  stage: deploy
+  # gitlab evaluates parallel.matrix after needs/dependencies,
+  # so we cannot use $COMPONENT in the dependencies.
+  # we depend on all render_levant jobs instead.
+  needs:
+    - render_levant
+  dependencis:
+    - render_levant
+  image:
+    name: hashicorp/nomad
+    entrypoint: [ "" ]
+  environment:
+    name: $STATION
+  script:
+    - |
+      if [ "${STATION}" == "dts-lab" ]; then
+          # dts-lab test station
+          HOSTNAME="dts-lab.lofar.net"
+      else
+          # core/remote station
+          HOSTNAME="${STATION}c.control.lofar"
+      fi
+
+      nomad job run -address="http://${HOSTNAME}:4646" ${STATION}-${COMPONENT}.nomad
+
+workflow:
+  name: 'deploy on $STATION'
+  rules:
+    - when: always

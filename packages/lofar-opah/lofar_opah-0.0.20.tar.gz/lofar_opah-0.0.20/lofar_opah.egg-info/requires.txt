@@ -1,0 +1,14 @@
+lofar-lotus>=0.0.5
+lofar-sid>=1.0.16
+logfmter
+numpy
+prometheus-client
+grpcio
+grpcio-reflection
+grpcio-tools
+flask
+waitress
+flask_cors
+flasgger
+types-flask-cors
+types-waitress

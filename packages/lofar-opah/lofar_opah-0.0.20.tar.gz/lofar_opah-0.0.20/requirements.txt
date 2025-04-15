@@ -1,0 +1,17 @@
+lofar-lotus>=0.0.5 # Apache 2
+lofar-sid>=1.0.16 # Apache 2
+
+logfmter # MIT
+
+numpy # BSD3
+prometheus-client # Apache 2
+
+grpcio # Apache 2
+grpcio-reflection
+grpcio-tools # Apache 2
+flask
+waitress
+flask_cors
+flasgger
+types-flask-cors
+types-waitress
