@@ -1,0 +1,9 @@
+src/mcp_obsidian/__init__.py,sha256=KNZ1bD9ZGfyZwlv91Ueeega_1lsRDLs2fYQDgNbBdtc,212
+src/mcp_obsidian/obsidian.py,sha256=B3VieSLAH9DJdVKfeD9SjWkeUJojrFpUrCM0pvMLp4k,8963
+src/mcp_obsidian/server.py,sha256=L3jv0mwkv7IZbRf5hqTHvRQBk2J7B7JiCE7DnjUq5-Y,2618
+src/mcp_obsidian/tools.py,sha256=ZmKnJce77CFbP_XSgyfii6ZcYY9AQm4-mKl5j9yaKUQ,19744
+orange_mcp_obsidian-0.2.1.dist-info/METADATA,sha256=Wt8F2AMNcoxl2yTeXwzf1eOkNobW3wDP-bJf0oSsDbQ,4143
+orange_mcp_obsidian-0.2.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+orange_mcp_obsidian-0.2.1.dist-info/entry_points.txt,sha256=BUYiUhqJ2-0VaG9TfXZxPdNqP97DV4PMRwOn5h-y1HE,51
+orange_mcp_obsidian-0.2.1.dist-info/licenses/LICENSE,sha256=aobgw57x81e_H9rAkS7f3nBK8dQvzTTcX5tHJNIcP4U,1074
+orange_mcp_obsidian-0.2.1.dist-info/RECORD,,
