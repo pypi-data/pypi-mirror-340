@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+textextraction/__init__.py
+textextraction/_markdown_output.py
+textextraction/_table_utils.py
+textextraction/cli.py
+textextraction/image_processor.py
+textextraction/pdf_processor.py
+textextraction/pdf_unlocker.py
+textextraction/scanned_pdf_processor.py
+textextraction.egg-info/PKG-INFO
+textextraction.egg-info/SOURCES.txt
+textextraction.egg-info/dependency_links.txt
+textextraction.egg-info/requires.txt
+textextraction.egg-info/top_level.txt
