@@ -1,0 +1,2 @@
+stomp.py==8.2.0
+requests==2.32.3
