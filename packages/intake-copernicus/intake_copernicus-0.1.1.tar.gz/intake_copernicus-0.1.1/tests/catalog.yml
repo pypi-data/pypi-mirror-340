@@ -1,0 +1,30 @@
+metadata:
+  version: 1
+
+sources:
+  cmems_mod_glo_phy_my_0.083deg_P1D-m:
+    description: Global Ocean Physics Reanalysis Surface - Glorys
+    metadata:
+      name: Global Ocean Physics Reanalysis Surface
+      coordinates:
+        t: time
+        y: latitude
+        x: longitude
+      url: https://resources.marine.copernicus.eu/?option=com_csw&view=details&product_id=GLOBAL_REANALYSIS_PHY_001_030
+      tags:
+        - mercator
+        - ocean
+        - copernicus
+        - surface
+        - glorys
+        - current
+        - reanalysis
+    driver: copernicus_marine
+    args:
+      dataset_id: cmems_mod_glo_phy_my_0.083deg_P1D-m
+      username: null
+      password: null
+      service: geoseries
+      minimum_depth: 0
+      maximum_depth: 1
+      squeeze: True
