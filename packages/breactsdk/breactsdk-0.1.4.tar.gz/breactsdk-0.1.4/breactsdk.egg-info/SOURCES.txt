@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+breactsdk.egg-info/PKG-INFO
+breactsdk.egg-info/SOURCES.txt
+breactsdk.egg-info/dependency_links.txt
+breactsdk.egg-info/requires.txt
+breactsdk.egg-info/top_level.txt
