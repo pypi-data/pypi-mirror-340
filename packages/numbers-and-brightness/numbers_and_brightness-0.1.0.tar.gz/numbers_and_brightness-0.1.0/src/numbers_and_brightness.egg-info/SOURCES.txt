@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/numbers_and_brightness/__init__.py
+src/numbers_and_brightness/cli.py
+src/numbers_and_brightness/defaults.py
+src/numbers_and_brightness/gui.py
+src/numbers_and_brightness/numbers_and_brightness.py
+src/numbers_and_brightness.egg-info/PKG-INFO
+src/numbers_and_brightness.egg-info/SOURCES.txt
+src/numbers_and_brightness.egg-info/dependency_links.txt
+src/numbers_and_brightness.egg-info/entry_points.txt
+src/numbers_and_brightness.egg-info/requires.txt
+src/numbers_and_brightness.egg-info/top_level.txt
