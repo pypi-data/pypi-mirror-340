@@ -1,0 +1,136 @@
+Metadata-Version: 2.4
+Name: authnexus
+Version: 0.1.1
+Summary: Enterprise-Grade Authentication Framework with Modern Security Protocols
+Author-email: Satwik Mishra <satwikmishra46@gmail.com>
+License: AGPL-3.0
+Project-URL: Homepage, https://github.com/satwikmishra11/authnexus
+Project-URL: Documentation, https://authnexus.readthedocs.io
+Project-URL: Changelog, https://github.com/satwikmishra11/authnexus/releases
+Project-URL: Issues, https://github.com/satwikmishra11/authnexus/issues
+Keywords: authentication,security,webauthn,oauth,jwt
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Framework :: FastAPI
+Classifier: Framework :: Flask
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cryptography>=42.0
+Requires-Dist: python-jose[cryptography]>=3.3
+Requires-Dist: webauthn>=1.2.0
+Requires-Dist: pydantic>=2.0
+Requires-Dist: httpx>=0.24
+Requires-Dist: typing-extensions>=4.0
+Provides-Extra: security
+Requires-Dist: bandit>=1.7; extra == "security"
+Requires-Dist: safety>=2.3; extra == "security"
+Requires-Dist: semgrep>=1.0; extra == "security"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0; extra == "dev"
+Requires-Dist: ruff>=0.0.28; extra == "dev"
+Requires-Dist: mypy>=1.0; extra == "dev"
+Requires-Dist: build>=0.10; extra == "dev"
+Dynamic: license-file
+
+# AuthNexus
+
+Enterprise-Grade Authentication for Modern Python Applications
+
+[![PyPI Version](https://img.shields.io/pypi/v/authnexus)](https://pypi.org/project/authnexus/)
+[![License](https://img.shields.io/badge/License-AGPL--3.0-blue)](https://opensource.org/licenses/AGPL-3.0)
+[![Coverage](https://codecov.io/gh/satwikmishra11/authnexus/branch/main/graph/badge.svg)](https://codecov.io/gh/satwikmishra11/authnexus)
+[![Security Scan](https://img.shields.io/badge/Security-Trivy%20%7C%20Bandit%20%7C%20Safety-informational)](SECURITY.md)
+
+AuthNexus is a security-focused authentication library implementing modern standards with enterprise-grade features.
+
+## Features
+
+- Passwordless Authentication (WebAuthn/FIDO2 Certified)
+- Zero-Trust Security Model with real-time risk assessment
+- Security Monitoring with automated anomaly detection
+- OAuth 2.1 & OpenID Connect compliant
+- Framework agnostic (FastAPI & Flask supported)
+- Compliance templates for GDPR, PCI DSS, HIPAA
+- Modular architecture for custom implementations
+
+## Installation
+
+```bash
+pip install authnexus
+```
+For development with security tools:
+```bash
+pip install authnexus[dev,security]
+```
+Quick Start
+```bash
+from fastapi import FastAPI, Depends
+from authnexus import AuthNexus, SecurityConfig
+
+app = FastAPI()
+auth = AuthNexus(
+    secret_key="your-256bit-secret",
+    security=SecurityConfig(risk_threshold=0.85)
+)
+
+@app.post("/login")
+async def login(username: str, password: str):
+    token = auth.create_token(user_id="user123")
+    return {"access_token": token}
+
+@app.get("/secure-data")
+async def secure_data(user: dict = Depends(auth.verify_token)):
+    return {"message": "Authenticated access", "user": user}
+```
+Documentation
+Full documentation available at:
+https://authnexus.readthedocs.io
+
+Includes:
+
+Implementation guides
+
+Security best practices
+
+Architecture documentation
+
+Monitoring configuration
+
+Contributing
+See CONTRIBUTING.md for:
+
+Bug reporting guidelines
+
+Feature request process
+
+Development setup instructions
+
+Testing standards
+
+Security
+AuthNexus implements:
+
+Regular third-party audits
+
+Automated dependency scanning
+
+Responsible disclosure policy
+
+Read our SECURITY.md for vulnerability reporting procedures.
+
+License
+AuthNexus is licensed under the GNU AGPLv3
+Commercial licenses available for enterprise use
+
+AuthNexus © 2024 - Satwik Mishra| Contact@satwikmishra46@gmail.com
+
