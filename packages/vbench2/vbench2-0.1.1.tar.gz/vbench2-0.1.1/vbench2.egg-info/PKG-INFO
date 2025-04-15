@@ -1,0 +1,308 @@
+Metadata-Version: 2.2
+Name: vbench2
+Version: 0.1.1
+Summary: Video generation benchmark
+License: Apache Software License 2.0
+Project-URL: Source, https://github.com/Vchitect/VBench/tree/master/VBench-2.0
+Description-Content-Type: text/markdown
+Requires-Dist: accelerate==1.2.1
+Requires-Dist: addict==2.4.0
+Requires-Dist: aiohappyeyeballs==2.4.4
+Requires-Dist: aiohttp==3.11.11
+Requires-Dist: aiosignal==1.3.2
+Requires-Dist: albucore==0.0.19
+Requires-Dist: albumentations==1.4.19
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: antlr4-python3-runtime==4.9.3
+Requires-Dist: anyio==4.8.0
+Requires-Dist: args==0.1.0
+Requires-Dist: async-timeout==5.0.1
+Requires-Dist: attrs==24.3.0
+Requires-Dist: av==14.0.1
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: bitsandbytes==0.42.0
+Requires-Dist: blis==1.2.0
+Requires-Dist: boto3==1.26.90
+Requires-Dist: botocore
+Requires-Dist: braceexpand==0.1.7
+Requires-Dist: catalogue==2.0.10
+Requires-Dist: certifi==2024.12.14
+Requires-Dist: charset-normalizer==3.4.1
+Requires-Dist: click==8.1.8
+Requires-Dist: clint==0.5.1
+Requires-Dist: cloudpickle==3.1.1
+Requires-Dist: confection==0.1.5
+Requires-Dist: contourpy==1.3.1
+Requires-Dist: cycler==0.12.1
+Requires-Dist: cymem==2.0.11
+Requires-Dist: datasets==3.2.0
+Requires-Dist: decorator==5.1.1
+Requires-Dist: decord==0.6.0
+Requires-Dist: deep-sort-realtime==1.3.2
+Requires-Dist: deepspeed==0.12.6
+Requires-Dist: defusedxml==0.7.1
+Requires-Dist: diffusers==0.32.1
+Requires-Dist: dill==0.3.8
+Requires-Dist: distro==1.9.0
+Requires-Dist: docker-pycreds==0.4.0
+Requires-Dist: easydict==1.13
+Requires-Dist: einops==0.8.0
+Requires-Dist: einops-exts==0.0.4
+Requires-Dist: exceptiongroup==1.2.2
+Requires-Dist: fairscale==0.4.13
+Requires-Dist: fastapi==0.115.6
+Requires-Dist: filelock==3.13.1
+Requires-Dist: filterpy==1.4.5
+Requires-Dist: fire==0.4.0
+Requires-Dist: flowlib==0.6.6.8
+Requires-Dist: fonttools==4.55.3
+Requires-Dist: frozenlist==1.5.0
+Requires-Dist: fsspec==2024.2.0
+Requires-Dist: ftfy==6.3.1
+Requires-Dist: fvcore==0.1.5.post20221221
+Requires-Dist: gdown==5.2.0
+Requires-Dist: gitdb==4.0.12
+Requires-Dist: GitPython==3.1.44
+Requires-Dist: h11==0.14.0
+Requires-Dist: h5py==3.12.1
+Requires-Dist: hjson==3.1.0
+Requires-Dist: hpsv2==1.2.0
+Requires-Dist: httpcore==1.0.7
+Requires-Dist: httpx==0.28.1
+Requires-Dist: huggingface-hub==0.27.1
+Requires-Dist: idna==3.10
+Requires-Dist: imageio==2.37.0
+Requires-Dist: imageio-ffmpeg==0.6.0
+Requires-Dist: importlib_metadata==8.5.0
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: iopath==0.1.10
+Requires-Dist: ipdb==0.13.13
+Requires-Dist: ipython==8.32.0
+Requires-Dist: Jinja2==3.1.3
+Requires-Dist: jiter==0.8.2
+Requires-Dist: jmespath==1.0.1
+Requires-Dist: joblib==1.4.2
+Requires-Dist: kiwisolver==1.4.8
+Requires-Dist: kornia==0.5.6
+Requires-Dist: kornia_rs==0.1.8
+Requires-Dist: langcodes==3.5.0
+Requires-Dist: lazy_loader==0.4
+Requires-Dist: logger==1.4
+Requires-Dist: lvis==0.5.3
+Requires-Dist: MarkupSafe==2.1.5
+Requires-Dist: matplotlib==3.10.0
+Requires-Dist: mmdet==3.0.0
+Requires-Dist: mmengine==0.10.5
+Requires-Dist: mmyolo==0.6.0
+Requires-Dist: mpmath==1.3.0
+Requires-Dist: msgpack==1.1.0
+Requires-Dist: multidict==6.1.0
+Requires-Dist: multiprocess==0.70.16
+Requires-Dist: murmurhash==1.0.12
+Requires-Dist: networkx==3.2.1
+Requires-Dist: nltk==3.9.1
+Requires-Dist: numpy==1.26.3
+Requires-Dist: omegaconf==2.3.0
+Requires-Dist: onnx==1.17.0
+Requires-Dist: onnxruntime==1.16.3
+Requires-Dist: open_clip_torch==2.30.0
+Requires-Dist: openai==1.59.5
+Requires-Dist: opencv-python==4.10.0.84
+Requires-Dist: opencv-python-headless==4.10.0.84
+Requires-Dist: openmim==0.3.9
+Requires-Dist: packaging==24.2
+Requires-Dist: pandas==2.2.3
+Requires-Dist: peft==0.14.0
+Requires-Dist: pillow==10.2.0
+Requires-Dist: platformdirs==4.3.6
+Requires-Dist: pluggy==1.5.0
+Requires-Dist: portalocker==3.1.1
+Requires-Dist: preshed==3.0.9
+Requires-Dist: prettytable==3.14.0
+Requires-Dist: propcache==0.2.1
+Requires-Dist: protobuf==3.20.3
+Requires-Dist: py-cpuinfo==9.0.0
+Requires-Dist: pyarrow==18.1.0
+Requires-Dist: pycocoevalcap==1.2
+Requires-Dist: pycocotools==2.0.8
+Requires-Dist: pydantic==2.10.4
+Requires-Dist: pydantic_core==2.27.2
+Requires-Dist: pyecharts==2.0.8
+Requires-Dist: pynvml==12.0.0
+Requires-Dist: pyparsing==3.2.1
+Requires-Dist: PySocks==1.7.1
+Requires-Dist: pytest==7.2.0
+Requires-Dist: pytest-split==0.8.0
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.2
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: qudida==0.0.4
+Requires-Dist: regex==2024.11.6
+Requires-Dist: requests==2.32.3
+Requires-Dist: rich==13.9.4
+Requires-Dist: safetensors==0.5.2
+Requires-Dist: scenedetect==0.6.5.2
+Requires-Dist: scikit-image==0.25.0
+Requires-Dist: scikit-learn==1.6.0
+Requires-Dist: scipy==1.15.0
+Requires-Dist: seaborn==0.13.2
+Requires-Dist: selenium==4.29.0
+Requires-Dist: sentencepiece==0.2.0
+Requires-Dist: sentry-sdk==2.19.2
+Requires-Dist: setproctitle==1.3.4
+Requires-Dist: shapely==2.0.7
+Requires-Dist: simplejson==3.20.1
+Requires-Dist: six==1.17.0
+Requires-Dist: smmap==5.0.2
+Requires-Dist: snapshot-selenium==0.0.2
+Requires-Dist: sniffio==1.3.1
+Requires-Dist: soupsieve==2.6
+Requires-Dist: spacy==3.8.4
+Requires-Dist: srsly==2.5.1
+Requires-Dist: stack-data==0.6.3
+Requires-Dist: starlette==0.41.3
+Requires-Dist: sympy==1.13.1
+Requires-Dist: tabulate==0.9.0
+Requires-Dist: termcolor==2.5.0
+Requires-Dist: terminaltables==3.1.10
+Requires-Dist: thinc
+Requires-Dist: thop==0.1.1.post2209072238
+Requires-Dist: threadpoolctl==3.5.0
+Requires-Dist: tifffile==2025.1.10
+Requires-Dist: tiktoken==0.8.0
+Requires-Dist: timesformer-pytorch==0.4.1
+Requires-Dist: timm==0.4.12
+Requires-Dist: tokenizers==0.21.1
+Requires-Dist: tomli==2.2.1
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: traitlets==5.14.3
+Requires-Dist: transformers==4.47.1
+Requires-Dist: triton==3.1.0
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: tzdata==2024.2
+Requires-Dist: ultralytics==8.3.68
+Requires-Dist: unicorn==2.1.1
+Requires-Dist: urllib3==1.26.15
+Requires-Dist: wandb==0.19.2
+Requires-Dist: wasabi==1.1.3
+Requires-Dist: wcwidth==0.2.13
+Requires-Dist: webdataset==0.2.100
+Requires-Dist: websocket==0.2.1
+Requires-Dist: websocket-client==1.8.0
+Requires-Dist: wordcloud==1.9.4
+Requires-Dist: xxhash==3.5.0
+Requires-Dist: yacs==0.1.8
+Requires-Dist: yapf==0.43.0
+Requires-Dist: yarl==1.18.3
+Requires-Dist: yolov5
+Requires-Dist: zipp==3.21.0
+Requires-Dist: mediapipe
+Requires-Dist: retina-face
+Requires-Dist: retinaface-pytorch
+Requires-Dist: supervision
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: summary
+
+![vbench_logo](https://raw.githubusercontent.com/Vchitect/VBench/master/asset/vbench_logo_short.jpg)
+
+**VBench-2.0** is a comprehensive benchmark suite for video generative models. You can use **VBench-2.0** to evaluate video generation models from 18 different ability aspects.
+
+This project is the PyPI implementation of the following research:
+> **VBench-2.0: Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness**<br>
+> [Dian Zheng](https://zhengdian1.github.io/)<sup>∗</sup>, [Ziqi Huang](https://ziqihuangg.github.io/)<sup>∗</sup>, [Hongbo Liu](https://github.com/Alexios-hub), [Kai Zou](https://github.com/Jacky-hate), [Yinan He](https://github.com/yinanhe), [Fan Zhang](https://github.com/zhangfan-p), [Yuanhan Zhang](https://zhangyuanhan-ai.github.io/),  [Jingwen He](https://scholar.google.com/citations?user=GUxrycUAAAAJ&hl=zh-CN), [Wei-Shi Zheng](https://www.isee-ai.cn/~zhwshi/)<sup>+</sup>, [Yu Qiao](http://mmlab.siat.ac.cn/yuqiao/index.html)<sup>+</sup>, [Ziwei Liu](https://liuziwei7.github.io/)<sup>+</sup><br>
+
+
+
+[![Paper](https://img.shields.io/badge/VBench-2.0%20Report-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2503.21755)
+[![Project Page](https://img.shields.io/badge/Project-Page-green?logo=googlechrome&logoColor=green)](https://vchitect.github.io/VBench-2.0-project/)
+[![Video](https://img.shields.io/badge/YouTube-Video-c4302b?logo=youtube&logoColor=red)](https://www.youtube.com/watch?v=kJrzKy9tgAc)
+[![HuggingFace](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Leaderboard-blue)](https://huggingface.co/spaces/Vchitect/VBench_Leaderboard)
+[![Visitor](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FVchitect%2FVBench&count_bg=%23FFA500&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://hits.seeyoufarm.com)
+
+## Installation
+```
+conda install psutil
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu118
+python -m pip install ninja
+python -m pip install git+https://github.com/Dao-AILab/flash-attention.git@v2.7.2.post1
+pip install vbench2
+pip install mmcv==2.2.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.4/index.html --no-cache-dir
+pip install retinaface_pytorch==0.0.8 --no-deps
+```
+
+## Usage
+
+<!-- ### Evaluate Your Own Videos
+We support evaluating any video. Simply provide the path to the video file, or the path to the folder that contains your videos. There is no requirement on the videos' names. -->
+<!-- - Note: We support customized videos / prompts for the following dimensions: `'subject_consistency', 'background_consistency', 'motion_smoothness', 'dynamic_degree', 'aesthetic_quality', 'imaging_quality'` -->
+
+
+<!-- To evaluate videos with customed input prompt, run our script with `--mode=custom_input`:
+```bash
+python evaluate.py \
+    --dimension $DIMENSION \
+    --videos_path /path/to/folder_or_video/ \
+    --mode=custom_input
+```
+alternatively you can use our command:
+```bash
+vbench evaluate \
+    --dimension $DIMENSION \
+    --videos_path /path/to/folder_or_video/ \
+    --mode=custom_input
+``` -->
+
+### Evaluation on the Standard Prompt Suite of VBench-2.0
+
+##### command line 
+```bash
+    vbench2 evaluate --videos_path $VIDEO_PATH --dimension $DIMENSION
+```
+For example:
+```bash
+    vbench2 evaluate --videos_path "sampled_videos/HunyuanVideo/Human_Interaction" --dimension "Human_Interaction"
+    srun -p video-aigc-3 --gres=gpu:1 vbench2 evaluate --videos_path "/mnt/petrelfs/zhengdian/zhengdian/VBench2.0/sample_video/HunyuanVideo/Human_Interaction" --dimension "Human_Interaction"
+```
+##### python
+```python
+    from vbench2 import VBench2
+    my_VBench = VBench2(device, <path/to/VBench_full_info.json>, <path/to/save/dir>)
+    my_VBench.evaluate(
+        videos_path = <video_path>,
+        name = <name>,
+        dimension_list = [<dimension>, <dimension>, ...],
+    )
+```
+For example: 
+```python
+    from vbench2 import VBench2
+    my_VBench = VBench2(device, "vbench2/VBench2_full_info.json", "evaluation_results")
+    my_VBench.evaluate(
+        videos_path = "sampled_videos/HunyuanVideo/Human_Interaction",
+        name = "HunyuanVideo_Human_Interaction",
+        dimension_list = ["Human_Interaction"],
+    )
+```
+
+## Prompt Suite
+
+We provide prompt lists are at `prompts/`. 
+
+Check out [details of prompt suites](https://github.com/Vchitect/VBench/tree/master/VBench-2.0/prompts), and instructions for [**how to sample videos for evaluation**](https://github.com/Vchitect/VBench/tree/master/VBench-2.0/prompts).
+
+## Citation
+
+   If you find this package useful for your reports or publications, please consider citing the VBench-2.0 paper:
+
+   ```bibtex
+    @article{zheng2025vbench2,
+        title={{VBench-2.0}: Advancing Video Generation Benchmark Suite for Intrinsic Faithfulness},
+        author={Zheng, Dian and Huang, Ziqi and Liu, Hongbo and Zou, Kai and He, Yinan and Zhang, Fan and Zhang, Yuanhan and He, Jingwen and Zheng, Wei-Shi and Qiao, Yu and Liu, Ziwei},
+        journal={arXiv preprint arXiv:2503.21755},
+        year={2025}
+    }
+   ```
