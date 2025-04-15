@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+orange_mcp_server_pox.egg-info/PKG-INFO
+orange_mcp_server_pox.egg-info/SOURCES.txt
+orange_mcp_server_pox.egg-info/dependency_links.txt
+orange_mcp_server_pox.egg-info/requires.txt
+orange_mcp_server_pox.egg-info/top_level.txt
