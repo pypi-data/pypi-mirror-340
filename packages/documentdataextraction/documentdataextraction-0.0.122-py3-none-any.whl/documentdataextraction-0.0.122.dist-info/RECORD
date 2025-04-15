@@ -1,0 +1,10 @@
+documentdataextraction/GenerateExtractTemplate.py,sha256=xFQLZxG_yNIhqSX-cQU1erBjMNBryaL4j4Qei1c8O7A,15318
+documentdataextraction/GoogleCloudAIDataExtractor.py,sha256=MEMde6_2ftDIAPmWVkI3A2TD-pNGdjkg9TVDbKYtZhc,2057
+documentdataextraction/OpenAIDataExtractor.py,sha256=mMDLFQwXYnNIgvUnmSlAJtP07Kxl6CARz7vMJ7zX7zU,71346
+documentdataextraction/__init__.py,sha256=xbdZe-BW6pau_LHLsmE4ArvUx8Jq60wcuYbh6b8Zm9E,97
+documentdataextraction/data_extractor.py,sha256=9ZssNdYfuOJ_wTmQukVw6OTI3skYSAvNW-STYvNFlLo,25590
+documentdataextraction-0.0.122.dist-info/LICENCE.txt,sha256=2qX9IkEUBx0VJp1Vh9O2dsRwE-IpYId0lXDyn7OVsJ8,1073
+documentdataextraction-0.0.122.dist-info/METADATA,sha256=dEjTwRSO_B4yJpAJjfRoZoesPHCpIeFVAmKjYz-l5Hk,992
+documentdataextraction-0.0.122.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+documentdataextraction-0.0.122.dist-info/top_level.txt,sha256=taEbXAAJc3t8awOVwH0T27Og25LLFSGtCTpHTIwa7e0,23
+documentdataextraction-0.0.122.dist-info/RECORD,,
