@@ -1,0 +1,8 @@
+tqdm
+tiktoken
+
+[all]
+pygments>=2.10.0
+
+[highlighting]
+pygments>=2.10.0
