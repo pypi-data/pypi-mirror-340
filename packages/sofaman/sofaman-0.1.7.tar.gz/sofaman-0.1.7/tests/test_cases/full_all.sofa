@@ -1,0 +1,149 @@
+#
+# Sample sofa model that exercises all the supported elements.
+#
+
+import "simple_all.sofa"
+import style "default.css"
+
+# --------
+
+package Retail.CRM:
+    visibility: public
+
+# --------
+
+diagrams:
+    - Overview
+    - "CRM Ecosystem"
+    - "Technical Architecture":
+        type: component
+
+# --------
+
+stereotype Regulatory: [GDPR]
+stereotype Security: [PIDRelevant]
+
+# --------
+
+actor Client
+actor RelationshipManager
+
+# --------
+
+component RESTService:
+    ports: [443]
+
+component CustomerDB:
+    name: Customer Database
+    description:|
+        Holds customer data
+    stereotypes: [Regulatory.GDPR]
+    package: Retail.CRM
+    ports: [443, SOAP, REST1]
+    diagrams:
+        Overview: 
+            style: dark
+
+component CustomerSearch(RESTService):
+    package: Retail
+    ports: [443]
+
+relation CustomerSearch@443 flow CustomerDB@REST1:
+    name: Execute search query
+    description: |
+        Search for customers by name or address
+    stereotypes: [Regulatory.GDPR]
+    protocol: HTTPS
+    diagrams: [Overview, "CRM Ecosystem"]
+    payload: CustomerName, CustomerAddress
+    "Sync/Async": sync
+
+component ManagementService
+
+relation CustomerSearch bi-flow ManagementService
+
+# --------
+
+primitives: [String, Boolean]
+
+# --------
+
+class Person:
+    stereotypes: [Security.PIDRelevant]
+    description: |
+        Represents a person, who could be either a customer or a relationship manager
+    literals:
+        - CUSTOMER
+        - LEAD
+    attributes:
+        name: 
+            cardinality: 1
+            type: String
+            visibility: public
+            description: |
+                Name of the person.
+
+    operations:
+        fullName:
+            visibility: public
+            description: |
+                Full name of the person
+            parameters:
+                firstName:
+                    type: String
+                lastName:
+                    type: String
+                fullName:
+                    type: String
+                    direction: return
+        address:
+            parameters: [street, city, country]
+
+# --------
+
+interface Product:
+    attributes:
+        name: 
+            cardinality: 1
+            type: String
+        is_active:
+            cardinality: 0..1
+            type: Boolean
+
+# --------
+
+class Account
+relation Account implements Product
+
+class CurrentAccount
+relation CurrentAccount inherits Account
+
+class SavingsAccount
+relation SavingsAccount inherits Account
+
+relation Person aggregates Product:
+    source:
+        cardinality: 0..1
+    target:
+        cardinality: 1..*
+
+class PowerOfAttorney
+relation Person composes PowerOfAttorney
+relation PowerOfAttorney associates Person
+
+class PaymentChannel
+relation Account bi-associates PaymentChannel
+
+# -----
+
+domain CRM:
+    name: "Client Relationship Management"
+    capabilities:
+        - CDM
+        - "Customer Notes"
+        - "Case Management"
+
+# -----
+
+capability CDM:
+    name: Client Data Management
