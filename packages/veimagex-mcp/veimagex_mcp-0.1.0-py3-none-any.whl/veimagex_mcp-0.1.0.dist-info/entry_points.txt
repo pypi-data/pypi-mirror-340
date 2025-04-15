@@ -1,0 +1,2 @@
+[console_scripts]
+veimagex = veimagex_mcp.cli:main
