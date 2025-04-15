@@ -1,0 +1,113 @@
+Metadata-Version: 2.3
+Name: vvpet
+Version: 0.5.2
+Summary: Your little friend
+Author: Vojtech Velebny
+Author-email: velebnyvo@gymla.cz
+Requires-Python: >=3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# VVPET DOCUMENTATION
+
+**vvpet** is your personal pet, kinda like tamagochi
+
+## How to run
+
+The game itself is started using the `game()` function, hidden inside `vvpet_main`
+
+Therefore to run, you need the following:
+```
+from vvpet import vvpet_main
+
+vvpet_main.game()
+```
+
+(or name it as whatever alias you want, just run the function)
+
+## Basic usage
+
+>As of version 0.5.0, the game features a save/load system that creates new files in the same directory from which the game runs, letting
+you save your games. Do not edit nor delete the files if you don't want to lose the data (duh)
+
+### How the game functions
+
+#### Commands
+
+The game has 2 types of commands, `Utility` and `Action`.
+
+`Utility` commands are used to track / display information about your pet, and resources used in-game
+
+`Action` commands interact directly with the "world", some causing `ticks` to happen
+
+`Tick` is a unit of time, during which your pet loses some of their resources
+
+The list of available commands is stated below
+
+The main gameloop revolves around getting money in order to buy food and enrichment for your pet
+
+#### Resources
+
+You have several resources to keep track of, the main being your `money`. You start each game with a 100
+
+The next few are `pet` resources.
+
+`hunger`,
+`thirst`,
+and `fun` all function on a similiar basis, being replenished directly through food, or enrichment.
+
+Depletion of `fun` lowers `hunger` and `thirst` by 1 each tick, while `hunger` and `thirst` deplete `health`
+
+> This means that your pet can survive without `fun`, if you have enough food and drinks
+
+`health` starts at 10, and gets lowered when either of the 3 basic resources are depleted. Running out of health means game over
+
+`mood` is the final "resource", deriving from the mentioned 4, but only serving as a general look into the
+wellbeing of your pet
+
+### In-game commands
+
+>There is a `help` command in-game, this list is just more comprehensive
+
+#### Utility
+
+`stats` is the most basic and most frequented command, displaying your pet's resources
+
+`balance` shows your current money balance
+
+`inventory` lists your inventory contents
+
+`mood` displays the overall mood of your pet
+
+`save` and `load` do exacty what they sound like they do. You can save/load mid-game
+
+#### Actions
+
+>The following three commands do not cause a `tick` to happen
+
+`shop` is the main place to spend your money. Bought items go directly into your inventory.
+
+`feed` enables you to feed your pet, from your inventory.
+
+`pet` is the simplest and cheapest (free) way to gain `fun`
+
+--
+
+`work` is the boring way to get money, gaining from 10 to 20 `money`
+
+`casino`, or `gamble` is the *fun* way to get money. Currently, there are 2 games to choose from
+
+- `roulette`, marked in-game as `1` is the classic game, enabling you to bet either on a color or number. Color nets you `bet * 2`, where Number nets you `bet * 4`
+
+- `blackjack`, marked in-game as `2` is the game granting you the illusion of manipulating your chances. After betting, you get a chance to either `hit`, or `pass`. Your goal is to get as close to `21` as possible. After `pass`, the dealer makes his moves. Whoever overshoots, or is further away from `21`, loses. It nets you `bet * 2`
+
+
+`end`, or `exit` is the safe way to exit your game. You get a choice to `save` your game before the code exits.
+
+#### Admintools
+
+`admin.tick` is a command letting you force a tick to happen
+
