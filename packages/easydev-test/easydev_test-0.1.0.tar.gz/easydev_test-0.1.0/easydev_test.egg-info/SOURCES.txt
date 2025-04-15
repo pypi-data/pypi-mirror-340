@@ -1,0 +1,7 @@
+README.md
+main.py
+pyproject.toml
+easydev_test.egg-info/PKG-INFO
+easydev_test.egg-info/SOURCES.txt
+easydev_test.egg-info/dependency_links.txt
+easydev_test.egg-info/top_level.txt
