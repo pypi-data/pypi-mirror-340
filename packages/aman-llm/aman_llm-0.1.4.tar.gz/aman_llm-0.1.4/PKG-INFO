@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: aman_llm
+Version: 0.1.4
+Summary: Easy-to-use LLM interface to automate file and shell operations.
+Home-page: https://github.com/your-github/aman_llm
+Author: Aman
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: agno
+Requires-Dist: python-dotenv
+Requires-Dist: rich
+
+# aman_llm
+Simple package for AI-driven file and shell operations using Google's Gemini API.
+
+## Installation
+```bash
+pip install aman_llm
