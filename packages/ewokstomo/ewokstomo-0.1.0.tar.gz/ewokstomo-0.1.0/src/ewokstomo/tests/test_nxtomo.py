@@ -1,0 +1,64 @@
+import pytest
+import sys
+from ewokstomo.tasks.nxtomomill import H5ToNx
+from ewoks import execute_graph
+from pathlib import Path
+import importlib.resources as pkg_resources
+
+
+def get_json_file(file_name):
+    if sys.version_info >= (3, 10):
+        file_path = pkg_resources.files("ewokstomo.tests.workflows").joinpath(file_name)
+    else:
+        file_path = Path(__file__).parent / "workflows" / file_name
+    return file_path
+
+
+def get_data_file(file_name):
+    if sys.version_info >= (3, 10):
+        file_path = pkg_resources.files(f"ewokstomo.tests.data.{file_name}").joinpath(
+            f"{file_name}.h5"
+        )
+    else:
+        file_path = Path(__file__).parent / "data" / file_name / f"{file_name}.h5"
+    return file_path
+
+
+@pytest.mark.parametrize("Task", [H5ToNx])
+def test_nxtomomill(Task, tmpdir):
+    output_dir = tmpdir / "output"
+    output_dir.mkdir()
+    h5_file_path = get_data_file("TestEwoksTomo_0010")
+
+    task = Task(
+        inputs={
+            "bliss_hdf5_path": h5_file_path,
+            "output_dir": str(output_dir),
+        }
+    )
+    task.run()
+    expected_output = output_dir / "TestEwoksTomo_0010.nx"
+    assert str(Path(task.outputs.result).resolve()) == str(expected_output)
+    # assert Path(expected_output).is_file()
+
+
+@pytest.mark.parametrize("workflow", ["nxtomomill.json"])
+def test_nxtomomill_workflow(workflow, tmpdir):
+    output_dir = tmpdir / "output"
+    output_dir.mkdir()
+    h5_file_path = get_data_file("TestEwoksTomo_0010")
+    workflow_file_path = get_json_file(workflow)
+
+    output = execute_graph(
+        workflow_file_path,
+        inputs=[
+            {
+                "name": "bliss_hdf5_path",
+                "value": h5_file_path,
+            },
+            {"name": "output_dir", "value": str(output_dir)},
+        ],
+    )
+    expected_output = output_dir / "TestEwoksTomo_0010.nx"
+    assert str(Path(output["result"]).resolve()) == str(expected_output)
+    # assert Path(expected_output).is_file()
