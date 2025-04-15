@@ -1,0 +1,3 @@
+[console_scripts]
+l2ss-opah-control-restapi-server = lofar_opah.control_restapi.server:main
+l2ss-opah-grafana-rpc-server = lofar_opah.grafana_rpc.server:main
