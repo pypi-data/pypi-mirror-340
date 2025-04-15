@@ -1,0 +1,49 @@
+from ....Internal.Core import Core
+from ....Internal.CommandsGroup import CommandsGroup
+from ....Internal.Types import DataType
+from ....Internal.StructBase import StructBase
+from ....Internal.ArgStruct import ArgStruct
+from ....Internal.ArgSingleList import ArgSingleList
+from ....Internal.ArgSingle import ArgSingle
+
+
+# noinspection PyPep8Naming,PyAttributeOutsideInit,SpellCheckingInspection
+class AllCls:
+	"""All commands group definition. 1 total commands, 0 Subgroups, 1 group commands"""
+
+	def __init__(self, core: Core, parent):
+		self._core = core
+		self._cmd_group = CommandsGroup("all", core, parent)
+
+	def set(self, sec_pass_word: str, state: bool) -> None:
+		"""SCPI: DISPlay:ANNotation:[ALL] \n
+		Snippet: driver.display.annotation.all.set(sec_pass_word = 'abc', state = False) \n
+		Displays asterisks instead of the level and frequency values in the status bar of the instrument. We recommend that you
+		use this mode if you operate the instrument in remote control. \n
+			:param sec_pass_word: string
+			:param state: 1| ON| 0| OFF
+		"""
+		param = ArgSingleList().compose_cmd_string(ArgSingle('sec_pass_word', sec_pass_word, DataType.String), ArgSingle('state', state, DataType.Boolean))
+		self._core.io.write(f'DISPlay:ANNotation:ALL {param}'.rstrip())
+
+	# noinspection PyTypeChecker
+	class AllStruct(StructBase):
+		"""Response structure. Fields: \n
+			- 1 Sec_Pass_Word: str: string
+			- 2 State: bool: 1| ON| 0| OFF"""
+		__meta_args_list = [
+			ArgStruct.scalar_str('Sec_Pass_Word'),
+			ArgStruct.scalar_bool('State')]
+
+		def __init__(self):
+			StructBase.__init__(self, self)
+			self.Sec_Pass_Word: str = None
+			self.State: bool = None
+
+	def get(self) -> AllStruct:
+		"""SCPI: DISPlay:ANNotation:[ALL] \n
+		Snippet: value: AllStruct = driver.display.annotation.all.get() \n
+		Displays asterisks instead of the level and frequency values in the status bar of the instrument. We recommend that you
+		use this mode if you operate the instrument in remote control. \n
+			:return: structure: for return value, see the help for AllStruct structure arguments."""
+		return self._core.io.query_struct(f'DISPlay:ANNotation:ALL?', self.__class__.AllStruct())
