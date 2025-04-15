@@ -1,0 +1,14 @@
+2025-04-14 14:57:06,943 - INFO - Logging to file: test.log
+2025-04-14 14:57:06,943 - DEBUG - Logging initialized in DEBUG mode
+2025-04-14 14:57:06,944 - INFO - Documentation Extractor started
+2025-04-14 14:57:06,944 - DEBUG - Created temporary directory: /var/folders/_b/8q27qz850hq967ptd74hy3mw0000gn/T/tmpl22fi5zv
+2025-04-14 14:57:06,945 - INFO - Cloning repository https://github.com/owner/repo.git to temporary directory
+2025-04-14 14:57:07,305 - ERROR - Git clone failed: Cloning into '/var/folders/_b/8q27qz850hq967ptd74hy3mw0000gn/T/tmpl22fi5zv'...
+remote: Repository not found.
+fatal: repository 'https://github.com/owner/repo.git/' not found
+
+2025-04-14 14:57:07,307 - ERROR - Error during clone: Failed to clone repository: Cloning into '/var/folders/_b/8q27qz850hq967ptd74hy3mw0000gn/T/tmpl22fi5zv'...
+remote: Repository not found.
+fatal: repository 'https://github.com/owner/repo.git/' not found
+
+2025-04-14 14:57:07,308 - ERROR - Repository cloning failed. Exiting.

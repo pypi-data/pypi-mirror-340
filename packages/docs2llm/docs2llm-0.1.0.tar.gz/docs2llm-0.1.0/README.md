@@ -1,0 +1,82 @@
+# docs2llm
+
+A command-line tool to extract documentation from local directories and GitHub repositories, formatting it for use as context with Large Language Models (LLMs).
+
+## Purpose
+
+docs2llm helps you capture documentation from codebases to use as context for AI assistants and large language models. It searches for documentation files (markdown, text, etc.), processes them, and creates a single consolidated file that can be used as reference material for LLMs.
+
+## Features
+
+- Extract documentation from local directories or GitHub repositories
+- Automatically identify and process common documentation files
+- Prioritize README files and important documentation
+- Support for multiple file formats (Markdown, RST, TXT)
+- Format output for optimal LLM context
+- Control scan depth to manage output size
+- Clone specific branches from Git repositories
+- Detailed logging with configurable verbosity
+
+## Installation
+
+```bash
+# Install from PyPI
+pip install docs2llm
+
+```
+
+## Usage
+
+### Command Line Interface
+
+```bash
+# Extract docs from a local directory
+docs2llm /path/to/project --output context.txt
+
+# Extract docs from a GitHub repository
+docs2llm --git owner/repo --output context.txt
+
+# Specify a branch
+docs2llm --git owner/repo --branch develop
+
+# Control scan depth
+docs2llm /path/to/project --max-depth 2
+
+# Enable verbose logging
+docs2llm /path/to/project -v
+
+# Write logs to a file
+docs2llm /path/to/project --log-file extraction.log
+```
+
+### Options
+
+- `PATH`: Local directory containing documentation files
+- `--git`: GitHub repository URL or owner/repo format
+- `--output`: Output file name (default: llm_context.txt)
+- `--max-depth`: Maximum directory depth to search (default: 3)
+- `--branch`: Specific branch to clone (only used with --git)
+- `--verbose`, `-v`: Enable verbose logging
+- `--log-file`: Log to this file in addition to console
+
+### Python API
+
+```python
+from docs2llm import extract_documentation
+
+# Extract from local directory
+success = extract_documentation(
+    local_path="/path/to/project",
+    output_file="context.txt",
+    max_depth=3,
+    verbose=True
+)
+
+# Extract from GitHub repository
+success = extract_documentation(
+    git_repo="owner/repo",
+    output_file="context.txt",
+    branch="main",
+    verbose=True
+)
+```
