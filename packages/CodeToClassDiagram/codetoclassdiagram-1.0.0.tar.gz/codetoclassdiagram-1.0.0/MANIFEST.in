@@ -1,0 +1,2 @@
+include configs/internal_config.json
+include configs/config.json
