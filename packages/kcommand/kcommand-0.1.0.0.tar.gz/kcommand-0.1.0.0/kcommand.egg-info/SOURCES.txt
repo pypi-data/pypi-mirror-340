@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+kcommand/__init__.py
+kcommand/command.py
+kcommand.egg-info/PKG-INFO
+kcommand.egg-info/SOURCES.txt
+kcommand.egg-info/dependency_links.txt
+kcommand.egg-info/requires.txt
+kcommand.egg-info/top_level.txt
