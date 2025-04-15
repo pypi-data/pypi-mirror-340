@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dl_functions"
+version = "0.1.0"
+description = "description"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Hikmatyor Azatov", email = "azatovhikmatyor@gmail.com"}
+]
+dependencies = [
+  # List your dependencies here
+]
+
+[project.urls]
+"Homepage" = "https://github.com/azatovhikmatyor/dl_util"
