@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<opml version="2.0">
+ <head>
+  <title>My Feeds</title>
+ </head>
+ <body>
+  <outline text="Focus" title="Focus">
+   <outline text="GitHub Lunran Private" title="GitHub Lunran Private" type="rss" xmlUrl="https://github.com/Lunran.private.atom?token=ACPDKX2BDSMTOC2OKJEAGYV34Y2LG" />
+   <outline text="Weekly Kaggle News" title="Weekly Kaggle News" type="rss" xmlUrl="https://weeklykagglenews.substack.com/feed" />
+   <outline text="データ分析コンペアラート" title="データ分析コンペアラート" type="rss" xmlUrl="https://bsky.app/profile/did:plc:nrnuuftqms2ir5d426tin2w6/rss" />
+   <outline text="BlueSky Kaggle" title="BlueSky Kaggle" type="rss" xmlUrl="https://bsky.app/profile/did:plc:ape2auf7doiev7ljv3nkk7qm/rss" />
+   <outline text="Google News Kaggle" title="Google News Kaggle" type="rss" xmlUrl="https://news.google.com/rss/topics/CAAqJAgKIh5DQkFTRUFvS0wyMHZNR2R0WkdRMmNSSUNhbUVvQUFQAQ" />
+   <outline text="Google News 人工知能" title="Google News 人工知能" type="rss" xmlUrl="https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGRqTVhZU0FtcGhHZ0pLVUNnQVAB/sections/CAQiQ0NCQVNMQW9JTDIwdk1EZGpNWFlTQW1waEdnSktVQ0lOQ0FRYUNRb0hMMjB2TUcxcmVpb0pFZ2N2YlM4d2JXdDZLQUEqKggAKiYICiIgQ0JBU0Vnb0lMMjB2TURkak1YWVNBbXBoR2dKS1VDZ0FQAVAB" />
+  </outline>
+  <outline text="Blog" title="Blog">
+   <outline text="AI Boom" title="AI Boom" type="rss" xmlUrl="https://aiboom.net/feed" />
+   <outline text="OpenAI Blog" title="OpenAI Blog" type="rss" xmlUrl="https://blog.openai.com/rss/" />
+   <outline text="Huggingface Blog" title="Huggingface Blog" type="rss" xmlUrl="https://huggingface.co/blog/feed.xml" />
+   <outline text="Zenn NLP" title="Zenn NLP" type="rss" xmlUrl="https://zenn.dev/topics/nlp/feed" />
+   <outline text="Techfirm Blog" title="Techfirm Blog" type="rss" xmlUrl="https://www.techfirm.co.jp/blog/?feed=rss2" />
+  </outline>
+  <outline text="Misc" title="Misc">
+   <outline text="Gigazine" title="Gigazine" type="rss" xmlUrl="https://gigazine.net/news/rss_2.0/" />
+   <outline text="ITmedia Technology News" title="ITmedia Technology News" type="rss" xmlUrl="http://rss.itmedia.co.jp/rss/2.0/news_technology.xml" />
+   <outline text="Tamakino Blog" title="Tamakino Blog" type="rss" xmlUrl="http://tamakino.hatenablog.com/feed" />
+   <outline text="Hacker News" title="Hacker News" type="rss" xmlUrl="https://bsky.app/profile/did:plc:apeaukvxm3yedgqw5zcf5pwc/rss" />
+  </outline>
+  <outline text="Paper" title="Paper">
+   <outline text="Papers with Code: Trending" title="Papers with Code: Trending" type="rss" xmlUrl="https://us-east1-ml-feeds.cloudfunctions.net/pwc/trending" />
+   <outline text="Huggingface Daily Papers" title="Huggingface Daily Papers" type="rss" xmlUrl="https://rsshub.app/huggingface/daily-papers" />
+  </outline>
+ </body>
+</opml>
