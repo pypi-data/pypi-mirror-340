@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+blockcoins/__init__.py
+blockcoins/blockcoins.py
+blockcoins.egg-info/PKG-INFO
+blockcoins.egg-info/SOURCES.txt
+blockcoins.egg-info/dependency_links.txt
+blockcoins.egg-info/requires.txt
+blockcoins.egg-info/top_level.txt
