@@ -1,0 +1,21 @@
+set shell := ["nu", "-c"]
+
+# Set up Python environment with specified Python version
+bootstrap:
+    uv sync
+
+# Check static typing
+mypy:
+    uv run mypy azure_requests
+
+# Remove compiled assets
+clean:
+    rm --force --recursive --verbose build dist azure_requests.egg-info
+
+# Build the whole project, create a release
+build: clean bootstrap
+    uv build
+
+# Upload the release to PyPi
+upload:
+    uv publish
