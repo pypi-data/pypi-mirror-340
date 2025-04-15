@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mmdit-pytorch
+Version: 0.1.0
+Summary: A standalone implementation of a single block of Multimodal Diffusion Transformer (MMDiT) originally proposed in Scaling Rectified Flow Transformers for High-Resolution Image Synthesis (https://arxiv.org/abs/2403.03206) in PyTorch with minimal dependencies.
+Home-page: https://github.com/KennyStryker/mmdit-pytorch.git
+License: MIT
+Author: Kenny Stryker
+Author-email: nggkenny@gmail.com
+Requires-Python: >=3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: einops (>=0.8.1,<0.9.0)
+Requires-Dist: torch (>=2.6.0,<3.0.0)
+Project-URL: Repository, https://github.com/KennyStryker/mmdit-pytorch.git
+Description-Content-Type: text/markdown
+
+# mmdit-pytorch
+A standalone implementation of a single block of Multimodal Diffusion Transformer (MMDiT) originally proposed in Scaling Rectified Flow Transformers for High-Resolution Image Synthesis (https://arxiv.org/abs/2403.03206) in PyTorch with minimal dependencies.
+
