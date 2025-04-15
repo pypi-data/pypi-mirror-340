@@ -1,0 +1,2 @@
+[console_scripts]
+ezencoder = ezencode.EZencode:__main__
