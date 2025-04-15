@@ -1,0 +1,89 @@
+Metadata-Version: 2.4
+Name: aman_llm
+Version: 0.1.6
+Summary: Easy-to-use LLM interface to automate file and shell operations.
+Home-page: https://github.com/your-github/aman_llm
+Author: Aman
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: agno
+Requires-Dist: python-dotenv
+Requires-Dist: rich
+
+# aman_llm
+
+**`aman_llm`** is a simple Python package that enables AI-powered file and shell operations using Google's Gemini API. It uses agent-based logic to interpret natural language instructions and perform system-level tasks like creating files, navigating directories, and more — all powered by LLMs.
+
+---
+
+## 🚀 Installation
+
+```bash
+pip install aman_llm
+```
+
+---
+
+## 🔐 Environment Setup
+
+To use `aman_llm`, you must provide a Gemini API key.
+
+### Step 1: Get Your Gemini API Key
+
+Visit the following URL and generate your API key:
+
+👉 [https://aistudio.google.com/app/apikey](https://aistudio.google.com/app/apikey)
+
+### Step 2: Create a `.env` File
+
+In your project root, create a `.env` file and add the following:
+
+```env
+GOOGLE_API_KEY=your-gemini-api-key-here
+```
+
+This key will be used to authenticate with Gemini when calling the LLM.
+
+---
+
+## ✅ Example Usage
+
+```python
+from aman_llm import llm_call
+
+llm_call("Create a file named 'integer.txt' and write numbers 1 to 10 in it", stream=True)
+```
+
+---
+
+## 📂 Features
+
+- ✅ Create and modify text files using AI
+- ✅ Run shell commands like `ls`, `pwd`, `mkdir`, etc.
+- ✅ Delegate tasks between intelligent agents (File & Shell)
+- ✅ Powered by Google's `gemini-2.0-flash` model
+- ✅ Stream responses with rich markdown output
+
+---
+
+## ✨ Coming Soon
+
+- [ ] More tool integrations (e.g. web scraping, PDF generation)
+- [ ] Async version of the LLM interface
+- [ ] LangChain-style chaining
+
+---
+
+## 📜 License
+
+MIT License
+
+---
+
+## 👨‍💻 Created By
+
+**Aman Prasad**  
+🔗 [Connect on LinkedIn](https://www.linkedin.com/in/amanprasad/)
