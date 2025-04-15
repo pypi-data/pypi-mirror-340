@@ -1,0 +1,14 @@
+__pycache__/
+.mypy_cache/
+.venv/
+p3.9/
+p3.10/
+.ruff_cache/
+.pytest_cache/
+.DS_Store
+uv.lock
+micromamba/
+*.log
+*.png
+!Wetland.png
+reference.md
