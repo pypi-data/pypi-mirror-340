@@ -1,0 +1,5 @@
+karabo.daemontools==2.21.3
+karabo.karathon==2.21.3
+
+[with_cpp]
+karabo.cpp==2.21.3
