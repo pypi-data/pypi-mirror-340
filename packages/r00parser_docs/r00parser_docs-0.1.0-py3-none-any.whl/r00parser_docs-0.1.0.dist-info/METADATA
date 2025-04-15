@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: r00parser_docs
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.12
+Requires-Dist: beautifulsoup4
+Requires-Dist: httpx
+Requires-Dist: markdownify
+Requires-Dist: r00logger
