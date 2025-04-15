@@ -1,0 +1,7 @@
+JPype1==1.5.2
+JayDeBeApi==1.2.3
+aiohttp
+asyncio
+lxml
+pandas
+requests
