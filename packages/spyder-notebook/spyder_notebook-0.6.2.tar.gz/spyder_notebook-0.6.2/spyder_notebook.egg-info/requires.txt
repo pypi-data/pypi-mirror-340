@@ -1,0 +1,9 @@
+spyder<7,>=6
+nbformat
+notebook<7.4,>=7.3.3
+psutil
+qtpy
+qdarkstyle
+requests
+tornado
+traitlets
