@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+generate_reqs/__init__.py
+generate_reqs/cli.py
+generate_reqs.egg-info/PKG-INFO
+generate_reqs.egg-info/SOURCES.txt
+generate_reqs.egg-info/dependency_links.txt
+generate_reqs.egg-info/entry_points.txt
+generate_reqs.egg-info/requires.txt
+generate_reqs.egg-info/top_level.txt
