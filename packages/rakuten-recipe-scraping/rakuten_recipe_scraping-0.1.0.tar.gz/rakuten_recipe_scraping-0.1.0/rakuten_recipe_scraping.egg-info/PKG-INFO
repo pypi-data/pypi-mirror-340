@@ -1,0 +1,54 @@
+Metadata-Version: 2.4
+Name: rakuten_recipe_scraping
+Version: 0.1.0
+Summary: 楽天レシピのデータをスクレイピングするためのライブラリ
+Home-page: https://github.com/gesouni/rakuten_recipe_scraping
+Author: gesouni
+Author-email: w5eq4hgv7q6y@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# rakuten_recipe_scraping
+
+楽天レシピからレシピ情報をスクレイピングするPythonライブラリ。
+
+## 使い方
+
+### インストール
+
+```bash
+pip install rakuten_recipe_scraping
+```
+
+### サンプルコード
+
+```python
+from rakutenrecipescraping import rakutenrecipescraping
+
+rakuten = rakutenrecipescraping("https://recipe.rakuten.co.jp/recipe/1000000000/")
+data = rakuten.get_all()
+print(data)
+```
+
+## LICENSE
+
+このプロジェクトは MITライセンス のもとで公開されています。
+
+## 注意事項
+
+本プロジェクトは教育目的で作成されたものです。スクレイピングを行う際はターゲットサイトの `robots.txt` や利用規約に従ってリクエストを過度に送信しないよう注意してください。

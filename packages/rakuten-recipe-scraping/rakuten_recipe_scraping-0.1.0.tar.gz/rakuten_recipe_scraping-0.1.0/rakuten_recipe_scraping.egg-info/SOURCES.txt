@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+rakuten_recipe_scraping.egg-info/PKG-INFO
+rakuten_recipe_scraping.egg-info/SOURCES.txt
+rakuten_recipe_scraping.egg-info/dependency_links.txt
+rakuten_recipe_scraping.egg-info/requires.txt
+rakuten_recipe_scraping.egg-info/top_level.txt
+rakutenrecipescraping/__init__.py
+rakutenrecipescraping/scraping.py
