@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-add-1 = mcp_add.__init__:main
