@@ -1,0 +1,11 @@
+fitgirl/__init__.py,sha256=5g8cxaOGXIb-nJLap4cVqllBWAcZXS-6VCONC8V4iSg,898
+fitgirl/client.py,sha256=0hgx_ji_fP-rCOvjqfCyr4PlKDsnAodf-QEpHO_5HzI,5244
+fitgirl/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fitgirl/core/__init__.py,sha256=tdURUStWS4MVkxnqN3E0IKcJ7266NaW2Wvu_JsJuE0E,40
+fitgirl/core/abc.py,sha256=umyzdRCd0B1N7c1FxRPiT8CTg5v2hkCbt0bn7HqnJ40,2118
+fitgirl/core/parsers.py,sha256=kr0rRxmSLPyWzGfXPRFHSVEk6SZWQgoJ7S9UxwpjoAQ,4455
+fitgirl-0.1.1.dist-info/licenses/LICENSE,sha256=gEcqlN5lQZa0sO8OJyqt1pLYfRtmlkJnidCZAjQZFrk,1064
+fitgirl-0.1.1.dist-info/METADATA,sha256=UzWexVceFV0QKjv2b3FRQrNVrm71_SCanpD-ugclcVw,5983
+fitgirl-0.1.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+fitgirl-0.1.1.dist-info/top_level.txt,sha256=AiKK6WLO5KhfRAY2u8Dp8ER6j23aGC5YqVH5inZwVlQ,8
+fitgirl-0.1.1.dist-info/RECORD,,
