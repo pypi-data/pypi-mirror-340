@@ -1,0 +1,14 @@
+a2aflow/__init__.py,sha256=WjXYPG3sec3oC4-bnmLerTZ5KzKvX3ENHy565tYmvaQ,446
+a2aflow/client.py,sha256=fvLX1nnblBHmd3w9Z27SL1W9Z687Ub13dRKMlMPsWnY,2855
+a2aflow/core.py,sha256=3sTq99OLxSqOnr8zTDtCGsFeONIP8-5DV6R7J1UyuhM,2980
+a2aflow/main.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+a2aflow/models.py,sha256=kP0fyJSkDeA8w8hFGPg97BqKORNTNVzB_dRfofv3Pys,1876
+a2aflow/server.py,sha256=w-X3pqGmJ9GC-GVWQ_FeCn-aQ5MaZNlf0qQlEdVFOI4,7920
+a2aflow/tasks.py,sha256=IqwnQvzRL5NBr_KPOGkRae4MUlWyH4QYN5X59sQswGw,3919
+a2aflow/utils.py,sha256=EG6osMTzelpCVStWGZemI4ci4CObVrvU5fDIPNZLSao,1347
+a2aflow/adapters/__init__.py,sha256=xlatAS_YONnR8RlghYVZ6HmBrRjYBDM3Wz1larlGAF4,35
+a2aflow/utils/__init__.py,sha256=cqy9AjB_gIbm26ahF7mAjkLaN1K5EZToABUIpTt2KX4,32
+a2aflow-0.1.0.dist-info/METADATA,sha256=4YpeQ_23-4LrJsFZpbbg1n6j0AKo0__SEmTTU0r57n8,10006
+a2aflow-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+a2aflow-0.1.0.dist-info/licenses/LICENSE,sha256=r6jx4qm17lV1DJRwk-0qvXnDhwNjZvZGh93pxO9OmCc,1188
+a2aflow-0.1.0.dist-info/RECORD,,
