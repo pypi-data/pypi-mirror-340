@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: maxminconquer
+Version: 0.1.1
+Summary: A package to find the max and min values using divide and conquer.
+Home-page: https://github.com/your-username/maxminconquer
+Author: GIK
+Author-email: giksecon28@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+
+UNKNOWN
+
+
