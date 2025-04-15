@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+LICENSES/MIT.txt
+capture2go/__init__.py
+capture2go.egg-info/PKG-INFO
+capture2go.egg-info/SOURCES.txt
+capture2go.egg-info/dependency_links.txt
+capture2go.egg-info/top_level.txt

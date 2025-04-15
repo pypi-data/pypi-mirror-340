@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: capture2go
+Version: 0.0.1
+Summary: SDK for Capture2Go, the wearable sensor platform by SensorStim Neurotechnology GmbH.
+Author-email: SensorStim Neurotechnology GmbH <support@capture2go.com>
+License-Expression: MIT
+Project-URL: Homepage, https://capture2go.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSES/MIT.txt
+Dynamic: license-file
+
+# Capture2Go Python SDK
+<!--
+SPDX-FileCopyrightText: 2025 SensorStim Neurotechnology GmbH <support@capture2go.com>
+
+SPDX-License-Identifier: MIT
+-->
+
+Coming soon...
