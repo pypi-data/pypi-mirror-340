@@ -1,0 +1,2 @@
+[console_scripts]
+cmscribe = cmscribe.main:main
