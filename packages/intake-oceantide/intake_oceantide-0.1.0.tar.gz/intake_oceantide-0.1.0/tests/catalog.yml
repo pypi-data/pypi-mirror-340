@@ -1,0 +1,20 @@
+metadata:
+  version: 1
+
+sources:
+
+  oceantide_testing:
+    description: Oceantide testing dataset
+    metadata:
+      name: oceantide_testing
+      url: "https://oceanum.science"
+      tags:
+        - tide
+        - oceantide
+        - constituents
+        - accessor
+        - testing
+    driver: oceantide
+    args:
+      urlpath: "file://{{CATALOG_DIR}}/oceantide.zarr"
+      file_format: oceantide
