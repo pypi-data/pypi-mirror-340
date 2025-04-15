@@ -1,0 +1,11 @@
+numbers_and_brightness/__init__.py,sha256=uts-UpFTccoy4sDbSGFK5dLzYzeBNToACSO7HE7nZso,89
+numbers_and_brightness/cli.py,sha256=v_uo0VZDU4h2VM6BvuduCzYFtRGJCzRLptFjdH7DO9U,3484
+numbers_and_brightness/defaults.py,sha256=N910AgoOGKrvohj8Nd7VwRd29VUdudUM4AggQiAxOi4,238
+numbers_and_brightness/gui.py,sha256=zTkFYs4b4zNyeMqoi5dctoLmvlnsf4VX8b065W_iiok,7596
+numbers_and_brightness/numbers_and_brightness.py,sha256=dHTOIFTUl_KGpaXGcsiKcNTyy0A1B0FVE3hKZJCo0js,7705
+numbers_and_brightness-0.1.0.dist-info/licenses/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+numbers_and_brightness-0.1.0.dist-info/METADATA,sha256=7O86t6ObKNxLSIrez8AbQeubSKAw11xW6mwbg7M1_d0,5390
+numbers_and_brightness-0.1.0.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+numbers_and_brightness-0.1.0.dist-info/entry_points.txt,sha256=dliQIstF-YjffCeOFGLEGz9hoTeEIVax_yHfLLEqiQg,75
+numbers_and_brightness-0.1.0.dist-info/top_level.txt,sha256=h5pogZCxWCbl2aVLaRBQACSY1NFDymyyUmkPPTohAfc,23
+numbers_and_brightness-0.1.0.dist-info/RECORD,,
