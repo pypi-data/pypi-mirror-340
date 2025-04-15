@@ -1,0 +1,27 @@
+from flask import render_template, request
+
+class UserController:
+    @staticmethod
+    def index():
+        """List all users."""
+        return render_template("user/index.html")
+
+    @staticmethod
+    def create():
+        """Show form to create a new user."""
+        return render_template("user/create.html")
+
+    @staticmethod
+    def show(id):
+        """Show details of a single user."""
+        return render_template("user/show.html", id=id)
+
+    @staticmethod
+    def update(id):
+        """Handle update logic for a user."""
+        return f"Update user {id}"
+
+    @staticmethod
+    def delete(id):
+        """Handle deletion of a user."""
+        return f"Delete user {id}"
