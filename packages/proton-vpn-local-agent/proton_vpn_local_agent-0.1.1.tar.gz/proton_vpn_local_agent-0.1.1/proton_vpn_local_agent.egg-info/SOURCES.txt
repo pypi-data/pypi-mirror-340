@@ -1,0 +1,5 @@
+setup.py
+proton_vpn_local_agent.egg-info/PKG-INFO
+proton_vpn_local_agent.egg-info/SOURCES.txt
+proton_vpn_local_agent.egg-info/dependency_links.txt
+proton_vpn_local_agent.egg-info/top_level.txt

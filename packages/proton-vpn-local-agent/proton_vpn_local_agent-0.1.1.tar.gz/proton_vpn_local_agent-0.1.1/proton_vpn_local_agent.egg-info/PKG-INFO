@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: proton-vpn-local-agent
+Version: 0.1.1
+Summary: Local agent library
+Home-page: https://github.com/ProtonVPN/local-agent-rs
+Author: Proton AG
+Author-email: opensource@proton.me
+License: GPLv3
+Platform: Linux
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security
+Requires-Python: >=3.9
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: platform
+Dynamic: requires-python
+Dynamic: summary
