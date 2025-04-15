@@ -1,0 +1,13 @@
+python_seatsurfing-0.3.1.dist-info/licenses/LICENSE,sha256=3d2p4KTXhqd9A3n53nsTZMNqRIhBkFsOsoVk_u0Jt6w,1063
+seatsurfing/__init__.py,sha256=BwWKl50pW4hbeFy0Tipe8CzJWeOaJ8ak75uD-fBuFFw,2126
+seatsurfing/authentication.py,sha256=w6PKm8e88Z1-agcoy_Z0wgeFag4JY5gKoT-6dGQqjGU,590
+seatsurfing/booking.py,sha256=NkIVVFoTm3TGrHSfjXrGXETWksvjWKpHmgHyjWVHA1s,2795
+seatsurfing/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatsurfing/common/http_client.py,sha256=1HczBJqixhyIxvgEKFTH5AmPAh0fEwnzDqMVfeO2EFU,3539
+seatsurfing/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+seatsurfing/models/authentication.py,sha256=wFUn-svDnD1dsAxFqMP7LZbIzVBxgx_wFSMVd0EflfU,988
+seatsurfing/models/booking.py,sha256=3SE8hWB6x4sYBSZVnaBmOdjm0lSB2yDLV-VijByyZYg,1361
+python_seatsurfing-0.3.1.dist-info/METADATA,sha256=WE9C1c2QPyB5wB14SyjS3dSC4uW-iAdV8KPq1RaTwFI,1956
+python_seatsurfing-0.3.1.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+python_seatsurfing-0.3.1.dist-info/top_level.txt,sha256=HBETWdJC9rU1FE22TeODS7k856ui1vRIjTTcfL0lR8Y,12
+python_seatsurfing-0.3.1.dist-info/RECORD,,
