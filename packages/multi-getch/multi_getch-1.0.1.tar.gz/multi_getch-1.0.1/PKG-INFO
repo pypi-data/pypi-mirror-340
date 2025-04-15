@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: multi-getch
+Version: 1.0.1
+Summary: multiplatform getch
+Author: azzammuhyala
+Author-email: azzammuhyala@gmail.com
+License: MIT
+Keywords: getch,multiplatform getch,simple getch,get character
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# Multiplatform Getch
+
+Example:
+```py
+import getch
+
+print(end='Press any key...', flush=True)
+ch = getch.getch()
+print('\nYou pressed: {}'.format(ch))
+```

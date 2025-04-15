@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+getch/__init__.py
+getch/__init__.pyi
+multi_getch.egg-info/PKG-INFO
+multi_getch.egg-info/SOURCES.txt
+multi_getch.egg-info/dependency_links.txt
+multi_getch.egg-info/top_level.txt
