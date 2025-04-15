@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+src/prime_bits/__init__.py
+src/prime_bits/prime_bits.py
+src/prime_bits/utils.py
+src/prime_bits.egg-info/PKG-INFO
+src/prime_bits.egg-info/SOURCES.txt
+src/prime_bits.egg-info/dependency_links.txt
+src/prime_bits.egg-info/top_level.txt
