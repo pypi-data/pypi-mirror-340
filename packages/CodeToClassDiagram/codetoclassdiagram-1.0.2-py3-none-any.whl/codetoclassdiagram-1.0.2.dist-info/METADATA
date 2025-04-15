@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: CodeToClassDiagram
+Version: 1.0.2
+Summary: Génération de diagrammes de classes à partir d’un projet source.
+Author: Votre Nom
+Requires-Dist: regex
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
