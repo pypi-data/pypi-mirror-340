@@ -1,0 +1,55 @@
+Metadata-Version: 2.4
+Name: histalign
+Version: 0.0.1
+Summary: Processing workflow for histological image alignments to the Allen CCF.
+Project-URL: Documentation, https://github.com/olivierdelree/histalign#readme
+Project-URL: Issues, https://github.com/olivierdelree/histalign/issues
+Project-URL: Source, https://github.com/olivierdelree/histalign
+Author-email: Olivier Delrée <olivierdelree@protonmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: <3.11.1,>=3.10
+Requires-Dist: allensdk
+Requires-Dist: click
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pydantic
+Requires-Dist: pynrrd
+Requires-Dist: pyside6
+Requires-Dist: scikit-image
+Requires-Dist: vedo
+Description-Content-Type: text/markdown
+
+# histalign
+
+[![PyPI - Version](https://img.shields.io/pypi/v/histalign.svg)](https://pypi.org/project/histalign)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/histalign.svg)](https://pypi.org/project/histalign)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install histalign
+```
+
+## License
+
+`histalign` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+
+## References
+
+The icons were taken from [UXWing](https://uxwing.com/).
