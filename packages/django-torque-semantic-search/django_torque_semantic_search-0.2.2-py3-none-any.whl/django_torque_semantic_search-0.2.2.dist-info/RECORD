@@ -1,0 +1,15 @@
+django_torque_semantic_search-0.2.2.dist-info/licenses/LICENSE.md,sha256=MqCnOBu8uXsEOzRZWh9EBVfVz-kE9NkXcLCrtGXo2yU,34354
+semantic_search/__init__.py,sha256=jEAYnrD6KpvXXewb1HfdHiQ052RwRXIu2gGORAcr3Kc,72
+semantic_search/apps.py,sha256=3yAwDNeh6vE0FgCMKdF4f8df8wIqTQjRLpV4URs3sRI,172
+semantic_search/embedding_cache.py,sha256=5iVQ28eTwUZ9vnu3ug_ww9_DRhoE6ptGLoxk0o9OAuQ,1466
+semantic_search/llm.py,sha256=pS1mYHWa0UpmY8jpNutLuNjD5Et6SLdTkB3P6wp4S4g,1802
+semantic_search/models.py,sha256=Zb_fKFbZkUNr1p2Oi0SPqHnFt_L3qieo60Pyix4uP3A,815
+semantic_search/receivers.py,sha256=BkzDCyVQb62hGm-79PWzTT7QyQ_PzWf2mYJz84zURN0,4464
+semantic_search/utils.py,sha256=rXUxb9duSynOe9CAZHdLpQnXpf7ugBCSQHkLk4xlW-c,623
+semantic_search/version.py,sha256=m6kyaNpwBcP1XYcqrelX2oS3PJuOnElOcRdBa9pEb8c,22
+semantic_search/migrations/0001_initial.py,sha256=F_gLb64gF4MQgpiliFETDCZTLtiwXZRneiRGLuHUAJA,1739
+semantic_search/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_torque_semantic_search-0.2.2.dist-info/METADATA,sha256=TJKCARxH1PVxkAt64Op-h19NeaKHC6XsLHUzn8fwypQ,938
+django_torque_semantic_search-0.2.2.dist-info/WHEEL,sha256=CmyFI0kx5cdEMTLiONQRbGQwjIoR1aIYB7eCAQ4KPJ0,91
+django_torque_semantic_search-0.2.2.dist-info/top_level.txt,sha256=a5t1CdpLbqVFMZXEAUT1aFFlmx2NvJH-6KjbSTb3Pkc,16
+django_torque_semantic_search-0.2.2.dist-info/RECORD,,
