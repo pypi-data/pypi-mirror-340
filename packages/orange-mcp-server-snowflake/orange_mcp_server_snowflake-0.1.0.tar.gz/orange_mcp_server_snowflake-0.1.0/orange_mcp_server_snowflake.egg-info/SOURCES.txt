@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+orange_mcp_server_snowflake.egg-info/PKG-INFO
+orange_mcp_server_snowflake.egg-info/SOURCES.txt
+orange_mcp_server_snowflake.egg-info/dependency_links.txt
+orange_mcp_server_snowflake.egg-info/entry_points.txt
+orange_mcp_server_snowflake.egg-info/requires.txt
+orange_mcp_server_snowflake.egg-info/top_level.txt
