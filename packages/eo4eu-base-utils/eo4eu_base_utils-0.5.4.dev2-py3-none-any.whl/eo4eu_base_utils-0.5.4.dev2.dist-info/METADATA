@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: eo4eu_base_utils
+Version: 0.5.4.dev2
+Summary: General utilities for EO4EU
+Author-email: Apollon Grigoras <apollon@uoa.gr>
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: typing_extensions~=4.12; python_version <= "3.10"
+Provides-Extra: docs
+Requires-Dist: sphinx==8.2.3; extra == "docs"
+Requires-Dist: sphinx-rtd-theme==3.0.2; extra == "docs"
