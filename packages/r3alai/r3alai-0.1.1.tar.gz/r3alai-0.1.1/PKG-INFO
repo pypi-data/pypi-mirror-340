@@ -1,0 +1,56 @@
+Metadata-Version: 2.4
+Name: r3alai
+Version: 0.1.1
+Summary: A Python library for Random Set Neural Networks with uncertainty estimation
+Author: Arshia
+Author-email: arshia@r3al.ai
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch>=1.7.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: scikit-learn>=0.24.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# R3ALAI
+
+A Python library for Random Set Neural Networks with uncertainty estimation.
+
+## Installation
+
+```bash
+pip install r3alai
+```
+
+## Features
+
+- Random Set Neural Networks implementation
+- Uncertainty estimation capabilities
+- Active learning support
+- Conformal prediction methods
+
+## Usage
+
+```python
+import r3alai
+
+# Your code here
+```
+
+## License
+
+MIT License 
