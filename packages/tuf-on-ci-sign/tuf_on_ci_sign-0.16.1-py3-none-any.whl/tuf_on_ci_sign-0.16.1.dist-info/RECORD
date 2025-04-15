@@ -1,0 +1,12 @@
+tuf_on_ci_sign/__init__.py,sha256=Z-RK_c42nuaxCnq3IqlQgka_gh8Jy4PzkuNvh5yhuD8,204
+tuf_on_ci_sign/_common.py,sha256=sUHk4uuCni8P48q3nDB9Ei4OvFNFesW7vX21QO0Ty2Y,7723
+tuf_on_ci_sign/_signer_repository.py,sha256=rOYN1QLhbACgOMEjbhTxeqUmfGcng1uPg7x3enDbLHA,34525
+tuf_on_ci_sign/_user.py,sha256=1aeWxTOTE6puoDEs9XSzcV7SVnaQ9GcSg2w7IbUcf44,4039
+tuf_on_ci_sign/delegate.py,sha256=PJDNQ51Jnxzk3MdnXzHQ3uAbZsw0IXDQWj0H5Aa0Vvo,15169
+tuf_on_ci_sign/import_repo.py,sha256=IERhQLTjWExm0YbvGAGORIKET9xQpj3cGPEpr_hEXo0,8411
+tuf_on_ci_sign/sign.py,sha256=AsagSfWF5eNUfCqATTBhwwBANTGB1wq5D1nsjBExuMM,3002
+tuf_on_ci_sign-0.16.1.dist-info/METADATA,sha256=J19U9WPDeqp89PrBzcNCSOKaS6i7d0eugDxTC00y1co,830
+tuf_on_ci_sign-0.16.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+tuf_on_ci_sign-0.16.1.dist-info/entry_points.txt,sha256=JYXBCPR8dFNKMVh5PrspJyek5MXzLNR-32GK8i5gpL4,151
+tuf_on_ci_sign-0.16.1.dist-info/licenses/LICENSE,sha256=wK-etbSOGdsFeeh6VH-Su_IRLsQxqMfqRnEsIgZoa5k,1145
+tuf_on_ci_sign-0.16.1.dist-info/RECORD,,
