@@ -1,0 +1,16 @@
+sofaman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sofaman/sofa.py,sha256=jvSgV3-8J1jskWL8xXVbsHiPSuUOB2MiSBZB32v78bI,1084
+sofaman/sofamangen.py,sha256=gG3Lnyl_vcurIvYAl9mKd97BDhlMCVqztwx_evCMH1o,2775
+sofaman/generator/generator.py,sha256=bu0U70iVilBM70FYOWimBtvxL2MSaXP2HHWNTXDok38,1761
+sofaman/generator/plantuml.py,sha256=CN1CWow4FGTJ7_aG4apswIlsn5IuZiOC2UqXWqA31S0,5469
+sofaman/generator/uml2.py,sha256=bURmOewk_QmpGt8afC96ryCHopq7nldd9U4eJa-v_aE,18828
+sofaman/ir/ir.py,sha256=An19PIskMzMH09DlyfjHZaPyLaR3CI32VwvVEpSxMAw,7773
+sofaman/ir/model.py,sha256=Ps3W0Z6vzgTucac-KFKZzXTvF8r-H9NMGfotkgUezIA,30684
+sofaman/parser/sofa_parser.py,sha256=qEgfO3w0M87CpjfAOSfITNqVc9jkw_gudkKyRaeYLJ0,1049
+sofaman/parser/grammar/sofa.lark,sha256=TizRsNxJMbD4yp8NatcxMeLsbN3F8bp6Fjdn3gMGCRs,2831
+sofaman/tools/export/id_export.py,sha256=PEVSfjCk9yWHsXfLOUaH7k9sTK0BACmTKEtvuDS6xzY,1395
+sofaman-0.1.7.dist-info/METADATA,sha256=4-KrTP5_8jPG17JX4v_UBTIP7ZRaFcDZCzjIH2KwdFg,3229
+sofaman-0.1.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+sofaman-0.1.7.dist-info/entry_points.txt,sha256=CW7i4EYqmcvQ-uzkA36h_xWJ3bZxPNf7MGZ0wQxTdW4,56
+sofaman-0.1.7.dist-info/licenses/LICENSE,sha256=4mDZDyIYfHZJ_i2sy9IStm8-TxJpUzzhr0ttt26EIqg,1083
+sofaman-0.1.7.dist-info/RECORD,,
