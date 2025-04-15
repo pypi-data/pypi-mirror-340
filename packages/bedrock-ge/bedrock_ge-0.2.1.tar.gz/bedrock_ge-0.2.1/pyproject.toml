@@ -1,0 +1,65 @@
+[project]
+name = "bedrock-ge"
+version = "0.2.1"
+description = "Bedrock, the Open Source Foundation for Ground Engineering"
+authors = [
+    {name = "Bedrock", email = "info@bedrock.engineer"}
+]
+license = {text = "Apache Software License (Apache 2.0)"}
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "duckdb~=1.0",
+    "geopandas~=1.0",
+    "openpyxl~=3.0",
+    "pandera>=0.23.0",
+    "python-ags4~=1.0",
+    "sqlglot>=26.12.0",
+    "sqlmodel>=0.0.22",
+]
+keywords = [
+    "bedrock",
+    "ground engineering",
+    "geotechnical engineering",
+    "geotech",
+    "engineering geology",
+    "ground investigation",
+    "ground investigation data",
+    "gi data",
+    "geotechnical data",
+    "ags",
+    "aec",
+    "bim",
+    "gis",
+    "geo-bim"
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://bedrock.engineer/"
+Source = "https://github.com/bedrock-engineer/bedrock-ge"
+Documentation = "https://bedrock.engineer/docs/"
+Tracker = "https://github.com/bedrock-engineer/bedrock-ge/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "folium>=0.17.0",
+    "frictionless[excel]>=4.40.8",
+    "jupyter>=1.1.1",
+    "mapclassify>=2.8.1",
+    "marimo>=0.12.5",
+    "matplotlib>=3.9.2",
+    "mypy>=1.11.2",
+    "pandas-stubs>=2.2.2.240807",
+    "pytest>=8.3.3",
+    "ruff>=0.6.7",
+]
