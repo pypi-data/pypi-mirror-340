@@ -1,0 +1,12 @@
+[project]
+name = "blockcoins"
+version = "0.2.1"
+description = "A bot to automatically farm BlockCoins on blockcoin.vercel.app"
+authors = [{name="Vegeta", email="Gamma.scratch@gmail.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+dependencies = ["blockcoin"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
