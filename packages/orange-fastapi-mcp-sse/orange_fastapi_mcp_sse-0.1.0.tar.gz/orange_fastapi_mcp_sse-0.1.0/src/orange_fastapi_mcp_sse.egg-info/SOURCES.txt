@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/orange_fastapi_mcp_sse.egg-info/PKG-INFO
+src/orange_fastapi_mcp_sse.egg-info/SOURCES.txt
+src/orange_fastapi_mcp_sse.egg-info/dependency_links.txt
+src/orange_fastapi_mcp_sse.egg-info/entry_points.txt
+src/orange_fastapi_mcp_sse.egg-info/requires.txt
+src/orange_fastapi_mcp_sse.egg-info/top_level.txt
