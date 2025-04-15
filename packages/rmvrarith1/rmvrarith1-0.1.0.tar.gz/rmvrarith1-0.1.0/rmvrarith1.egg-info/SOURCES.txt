@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+rmvrarith1/__init__.py
+rmvrarith1/calculator.py
+rmvrarith1.egg-info/PKG-INFO
+rmvrarith1.egg-info/SOURCES.txt
+rmvrarith1.egg-info/dependency_links.txt
+rmvrarith1.egg-info/top_level.txt

@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: rmvrarith1
+Version: 0.1.0
+Summary: A simple math package for basic arithmetic
+Author: V Ramachandran
+Author-email: rmvrpmu@gmail.com
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: license-file
+Dynamic: requires-python
+Dynamic: summary
+
+#calc
+
+**calc** is a simple arithmetic package
+
+---
+
+you can install this package directly from PyPI
+
+pip install rmvr-calc
+
