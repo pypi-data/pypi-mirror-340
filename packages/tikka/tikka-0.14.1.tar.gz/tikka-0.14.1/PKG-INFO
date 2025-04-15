@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: tikka
+Version: 0.14.1
+Summary: Tikka is a fast and light Python/Tk client to manage your Ğ1 accounts
+Author-email: Vincent Texier <vit@free.fr>
+Requires-Python: >=3.7
