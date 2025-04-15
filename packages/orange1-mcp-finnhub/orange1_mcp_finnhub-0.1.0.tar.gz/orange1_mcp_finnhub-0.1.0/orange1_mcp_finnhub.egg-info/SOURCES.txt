@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+orange1_mcp_finnhub.egg-info/PKG-INFO
+orange1_mcp_finnhub.egg-info/SOURCES.txt
+orange1_mcp_finnhub.egg-info/dependency_links.txt
+orange1_mcp_finnhub.egg-info/requires.txt
+orange1_mcp_finnhub.egg-info/top_level.txt
